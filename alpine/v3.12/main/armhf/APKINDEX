@@ -11618,21 +11618,6 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:encodings font-alias mkfontscale mkfontdir fontconfig
 
-C:Q1tvm7NRCiA99hSBIGBgodSaJ6X6c=
-P:abuild-rootbld
-V:3.6.0-r0
-A:armhf
-S:1237
-I:4096
-T:Build packages in chroot
-U:https://git.alpinelinux.org/cgit/abuild/
-L:GPL-2.0-only
-o:abuild
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590677373
-c:8f7cf916fc0895b6d8061ded0ba65673f06764f4
-D:abuild bubblewrap gettext git
-
 C:Q1N2aQv/z7S+oTlMFKVdDLFSkQKBI=
 P:iniparser
 V:4.1-r0
@@ -16751,22 +16736,6 @@ t:1600187909
 c:40880457de10b4f94189e24a9fc8d2d063fbcd94
 i:docs curl=7.69.1-r1
 
-C:Q1QSL+PqL/1ba7Uh1SW9jdwfKMRW8=
-P:apkbuild-cpan
-V:3.6.0-r0
-A:armhf
-S:5776
-I:28672
-T:Script to generate perl APKBUILD from CPAN
-U:https://git.alpinelinux.org/cgit/abuild/
-L:GPL-2.0-only
-o:abuild
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590677373
-c:8f7cf916fc0895b6d8061ded0ba65673f06764f4
-D:perl perl-libwww perl-json perl-module-build-tiny perl-lwp-protocol-https
-p:cmd:apkbuild-cpan
-
 C:Q1I9C6bNrxXrFL+NSSHG9ESwA6vXM=
 P:graphviz
 V:2.44.0-r0
@@ -18521,6 +18490,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1600991000
 c:c8b5ea21f034e2a2ce267121ec4cfb7c2be8d2ef
 p:linux-firmware-any
+
+C:Q1Q8bo7sdjOkKnnAxiedHLUVY3XRg=
+P:apkbuild-gem-resolver
+V:3.6.0-r1
+A:armhf
+S:4024
+I:24576
+T:APKBUILD dependency resolver for RubyGems
+U:https://git.alpinelinux.org/cgit/abuild/
+L:GPL-2.0-only
+o:abuild
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1602223858
+c:b3fc85f1ac209b642fa1e5e564a49e69ac49611d
+D:ruby ruby-augeas
+p:cmd:apkbuild-gem-resolver
 
 C:Q1FH21mwczPBaKUNsM9XxQn1y10+c=
 P:ack
@@ -25167,6 +25152,21 @@ c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:lua5.1 so:libc.musl-armhf.so.1
 i:lua-evdev=2.2.1-r1 lua5.1
 
+C:Q13Ouf/hG5hNqlRwuqWDwAUksilZo=
+P:abuild-rootbld
+V:3.6.0-r1
+A:armhf
+S:1225
+I:4096
+T:Build packages in chroot
+U:https://git.alpinelinux.org/cgit/abuild/
+L:GPL-2.0-only
+o:abuild
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1602223858
+c:b3fc85f1ac209b642fa1e5e564a49e69ac49611d
+D:abuild bubblewrap gettext git
+
 C:Q1j5rFtnf9pZye0GWSyevWuIkd2dI=
 P:sic-doc
 V:1.2-r1
@@ -26928,6 +26928,21 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 i:docs perl-term-readkey=2.38-r3
+
+C:Q1ZTSUb1PmbjKHpxO4r17J+c7cW6Q=
+P:abuild-doc
+V:3.6.0-r1
+A:armhf
+S:9377
+I:36864
+T:Script to build Alpine Packages (documentation)
+U:https://git.alpinelinux.org/cgit/abuild/
+L:GPL-2.0-only
+o:abuild
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1602223858
+c:b3fc85f1ac209b642fa1e5e564a49e69ac49611d
+i:docs abuild=3.6.0-r1
 
 C:Q1Cf5p7qhpZ8PpGXfkAnPGHWEMLYk=
 P:perl-sub-install-doc
@@ -29422,6 +29437,22 @@ o:mandoc
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1588164907
 c:8a8b2879326b7c20a0a26ae8e096abcd267bdfa6
+
+C:Q1RRpwUNMKvOl/fCYeDTZ7XNDOpcw=
+P:abuild
+V:3.6.0-r1
+A:armhf
+S:75214
+I:323584
+T:Script to build Alpine Packages
+U:https://git.alpinelinux.org/cgit/abuild/
+L:GPL-2.0-only
+o:abuild
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1602223858
+c:b3fc85f1ac209b642fa1e5e564a49e69ac49611d
+D:fakeroot scanelf openssl apk-tools>=2.0.7-r1 libc-utils attr tar pkgconf patch lzip curl /bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libz.so.1
+p:cmd:abuild cmd:abuild-addgroup cmd:abuild-adduser cmd:abuild-apk cmd:abuild-fetch cmd:abuild-gzsplit cmd:abuild-keygen cmd:abuild-rmtemp cmd:abuild-sign cmd:abuild-sudo cmd:abuild-tar cmd:abump cmd:apkbuild-pypi cmd:apkgrel cmd:buildlab cmd:checkapk cmd:newapkbuild
 
 C:Q198KsLliLrCkfX18FFdZa/8Jrjc4=
 P:newt-dev
@@ -41531,22 +41562,6 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:pkgconfig
 p:pc:pthread-stubs=0.3
 
-C:Q137akb75M3vM8SIbC/PEFxyAKbQs=
-P:abuild
-V:3.6.0-r0
-A:armhf
-S:75181
-I:323584
-T:Script to build Alpine Packages
-U:https://git.alpinelinux.org/cgit/abuild/
-L:GPL-2.0-only
-o:abuild
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590677373
-c:8f7cf916fc0895b6d8061ded0ba65673f06764f4
-D:fakeroot scanelf openssl apk-tools>=2.0.7-r1 libc-utils attr tar pkgconf patch lzip curl /bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libz.so.1
-p:cmd:abuild cmd:abuild-addgroup cmd:abuild-adduser cmd:abuild-apk cmd:abuild-fetch cmd:abuild-gzsplit cmd:abuild-keygen cmd:abuild-rmtemp cmd:abuild-sign cmd:abuild-sudo cmd:abuild-tar cmd:abump cmd:apkbuild-pypi cmd:apkgrel cmd:buildlab cmd:checkapk cmd:newapkbuild
-
 C:Q1k267CriAyS80uBeJhqEr8F7FV1A=
 P:fail2ban-openrc
 V:0.11.1-r3
@@ -44773,6 +44788,22 @@ t:1584668293
 c:272545fd1927a3717d68253524bc8188cb625715
 D:so:libc.musl-armhf.so.1
 p:so:libfuse3.so.3=3.9.1
+
+C:Q1/Se+maUY9QztxYaQ1qBU4ihrKHc=
+P:apkbuild-cpan
+V:3.6.0-r1
+A:armhf
+S:5765
+I:28672
+T:Script to generate perl APKBUILD from CPAN
+U:https://git.alpinelinux.org/cgit/abuild/
+L:GPL-2.0-only
+o:abuild
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1602223858
+c:b3fc85f1ac209b642fa1e5e564a49e69ac49611d
+D:perl perl-libwww perl-json perl-module-build-tiny perl-lwp-protocol-https
+p:cmd:apkbuild-cpan
 
 C:Q1r/4Q91SobJHNsWFsPPoAR+Y7hEs=
 P:perl-mailtools-doc
@@ -56598,22 +56629,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 
-C:Q1YFPI32Pb2WowqBHlos0dgIfdXzQ=
-P:apkbuild-gem-resolver
-V:3.6.0-r0
-A:armhf
-S:4032
-I:24576
-T:APKBUILD dependency resolver for RubyGems
-U:https://git.alpinelinux.org/cgit/abuild/
-L:GPL-2.0-only
-o:abuild
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590677373
-c:8f7cf916fc0895b6d8061ded0ba65673f06764f4
-D:ruby ruby-augeas
-p:cmd:apkbuild-gem-resolver
-
 C:Q1k5leMy4X8eICckw0Lyp2DWuAstw=
 P:cairo-dbg
 V:1.16.0-r2
@@ -65434,21 +65449,6 @@ t:1583167112
 c:5f7faee855574435a5924b1cc148f17922369ee0
 D:popt-dev pc:openssl pkgconfig rabbitmq-c=0.10.0-r1
 p:pc:librabbitmq=0.10.0
-
-C:Q11oVbIHSF1Bk7nJHf5t5j/Q0xvYg=
-P:abuild-doc
-V:3.6.0-r0
-A:armhf
-S:9381
-I:36864
-T:Script to build Alpine Packages (documentation)
-U:https://git.alpinelinux.org/cgit/abuild/
-L:GPL-2.0-only
-o:abuild
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590677373
-c:8f7cf916fc0895b6d8061ded0ba65673f06764f4
-i:docs abuild=3.6.0-r0
 
 C:Q1SE7fY42Ah78G+vHgQBwJyQoaJ/4=
 P:kamailio-snmpstats
