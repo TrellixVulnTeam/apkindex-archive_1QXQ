@@ -436,6 +436,36 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1592662716
 c:253b8a827f0ef91026eb42c7cdd59c718ed598f3
 
+C:Q136PF3EWCFEz7wsEDMebmXMD0/tY=
+P:kamailio-http_async
+V:5.3.6-r0
+A:armhf
+S:75302
+I:188416
+T:Kamailio Asynchronous HTTP queries support
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libcurl.so.4 so:libevent-2.1.so.7
+
+C:Q1UWgwyob5oI5EwpE2S7zYkthy4FA=
+P:kamailio-extras
+V:5.3.6-r0
+A:armhf
+S:1159412
+I:2543616
+T:Kamailio extra modules
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libevent-2.1.so.7 so:libhiredis.so.0.14 so:libsrdb1.so.1 so:libsrutils.so.1
+
 C:Q1ZIYRxUwlrMwBTFf9t+Nji60tPak=
 P:libtirpc-static
 V:1.2.6-r0
@@ -968,6 +998,21 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1600340905
 c:6f980c129ce4413e5de916117187bb5ceecd8c4b
 
+C:Q1/j6+Cvrsy0bX5nGmfQ0WRnbAi04=
+P:kamailio-uuid
+V:5.3.6-r0
+A:armhf
+S:4411
+I:32768
+T:Kamailio UUID generator using libuuid
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libuuid.so.1
+
 C:Q1scqMyKW8m8J02HIi1DYsI+Kj+QQ=
 P:kmod-libs
 V:27-r0
@@ -1273,21 +1318,6 @@ t:1586114186
 c:596cd15e692776222d49da2700c6041b39ffbea9
 D:so:libc.musl-armhf.so.1
 p:cmd:bunzip2 cmd:bzcat cmd:bzcmp cmd:bzdiff cmd:bzegrep cmd:bzfgrep cmd:bzgrep cmd:bzip2 cmd:bzip2recover cmd:bzless cmd:bzmore
-
-C:Q1qh0YhWDVO0DPBLEKlqaiNgUH24w=
-P:kamailio-unixodbc
-V:5.3.4-r1
-A:armhf
-S:43375
-I:114688
-T:Kamailio Database drivers for unixodbc
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libodbc.so.2 so:libsrdb1.so.1
 
 C:Q13Ujf1ZOh9tT8sL3By2mrr/gI+iA=
 P:lighttpd-openrc
@@ -4140,20 +4170,20 @@ c:cef0201abc2c4336853bbf05be995aca19d02a97
 D:so:libc.musl-armhf.so.1 so:libncursesw.so.6 so:libpanelw.so.6 so:libreadline.so.8
 p:cmd:pspg
 
-C:Q1GJ50RY/tOpQ0ejhs1AkTT86mtrY=
-P:kamailio-ims
-V:5.3.4-r1
+C:Q1CPJs9D+wa2jFLZNf+WB3Jvr9Zjo=
+P:kamailio-postgres
+V:5.3.6-r0
 A:armhf
-S:1670613
-I:3776512
-T:Kamailio IP Multimedia Subsystem (IMS) support
+S:112019
+I:442368
+T:Database drivers for Postgres
 U:https://www.kamailio.org/
 L:GPL-2.0-or-later
 o:kamailio
 m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libkamailio_ims.so.0 so:libsrdb1.so.1 so:libsrutils.so.1 so:libxml2.so.2
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio kamailio-db so:libc.musl-armhf.so.1 so:libpq.so.5 so:libsrdb1.so.1 so:libsrdb2.so.1
 
 C:Q1KWPteRWK57hwFIWkoeoiOA0PoqE=
 P:lua5.3-lxc
@@ -4753,21 +4783,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 i:docs perl-digest-sha1=2.13-r12
-
-C:Q1+gIz3PvXd1VOo7be4ojkjqUhl2g=
-P:kamailio-mysql
-V:5.3.4-r1
-A:armhf
-S:86826
-I:405504
-T:Database drivers for Mysql
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio kamailio-db so:libc.musl-armhf.so.1 so:libmariadb.so.3 so:libsrdb1.so.1 so:libsrdb2.so.1
 
 C:Q1YeISiw3uOJfw88l8KIDh8U60kDA=
 P:jq-doc
@@ -5699,21 +5714,6 @@ m:Jeff Bilyk <jbilyk@gmail.com>
 t:1582391838
 c:c642cb7ab45ed41d9d80e6b6d177858c39c7075f
 D:nagios-plugins so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
-
-C:Q1+8gSNvKI5hiHO4Sie1RyhgdYQHU=
-P:kamailio-memcached
-V:5.3.4-r1
-A:armhf
-S:21065
-I:65536
-T:Kamailio memcached support
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libmemcached.so.11
 
 C:Q17UJVKj3WqjqKS9Z5avuBcUZC7B4=
 P:zstd-static
@@ -6763,22 +6763,6 @@ c:782c04fb52b91f8ae381f57d8c22d7086ede1b96
 D:tcl-dev libx11-dev libxft-dev fontconfig-dev tk=8.6.10-r1 pc:tcl>=8.6 pkgconfig
 p:pc:tk=8.6.10
 
-C:Q16dAcloQkBxjiwLTBlvcMqJPK2Fw=
-P:kamailio
-V:5.3.4-r1
-A:armhf
-S:4848494
-I:11505664
-T:Open Source SIP Server
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:gawk /bin/sh so:libc.musl-armhf.so.1 so:libdb-5.3.so so:libpcre.so.1 so:libz.so.1
-p:so:libkamailio_ims.so.0=0.1 so:libprint.so.1=1.2 so:libsrdb1.so.1=1.0 so:libsrdb2.so.1=1.0 so:libsrutils.so.1=1.0 so:libtrie.so.1=1.0 cmd:kamailio cmd:kambdb_recover cmd:kamcmd cmd:kamctl cmd:kamdbctl
-
 C:Q1a3G+sEjZy9LY+DfAnIJUCJ521oc=
 P:lvm2-doc
 V:2.02.186-r1
@@ -7669,21 +7653,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1577038063
 c:2c3c482d034409a5de8c2c754fc5985b06a97905
 D:libmagic=5.38-r0
-
-C:Q1MpsncRGLuyQCQor2ZM8wGeJvgL8=
-P:kamailio-authephemeral
-V:5.3.4-r1
-A:armhf
-S:34751
-I:106496
-T:Kamailio auth ephemeral (webrtc)
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
 
 C:Q18tvE5kk+sBDru+kAYkLPavq6O8o=
 P:samba-libnss-winbind
@@ -8593,6 +8562,21 @@ t:1587139622
 c:1ed20c2c04f77f28a29f650dc6dde74e3b5e3a8b
 D:uwsgi so:libc.musl-armhf.so.1
 
+C:Q10oRpKd0gADHaxARfQckd2yxE5jw=
+P:kamailio-mysql
+V:5.3.6-r0
+A:armhf
+S:87610
+I:405504
+T:Database drivers for Mysql
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio kamailio-db so:libc.musl-armhf.so.1 so:libmariadb.so.3 so:libsrdb1.so.1 so:libsrdb2.so.1
+
 C:Q18wpJJoki1vhn8tZgcXO8qgH6hog=
 P:lua5.1-dev
 V:5.1.5-r7
@@ -9209,21 +9193,6 @@ t:1579439846
 c:913acb2969385b33f97369e2627441e82919c6dd
 D:asterisk
 
-C:Q1Bhzj7g2GLXEszoRB3HG7P40I1fo=
-P:kamailio-websocket
-V:5.3.4-r1
-A:armhf
-S:66749
-I:163840
-T:Kamailio websocket support
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libunistring.so.2
-
 C:Q1/Rkb9lo7BMbueReQe/YQbEZ9whM=
 P:libxml2-dev
 V:2.9.10-r5
@@ -9644,21 +9613,6 @@ t:1585516438
 c:aab7107c5934a03ceaa638a10a215cacce41cd43
 D:so:libc.musl-armhf.so.1
 p:so:libgsm.so.1=1.0.12
-
-C:Q1gW6bCTrYsZHBf4wODGuEuw9OLy0=
-P:kamailio-dbg
-V:5.3.4-r1
-A:armhf
-S:25935684
-I:60383232
-T:Open Source SIP Server (debug symbols)
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:gawk
 
 C:Q1shBAYK3o2Z1Yg3VpaGPFUXjM+/E=
 P:libverto-libevent
@@ -10838,6 +10792,21 @@ t:1580253744
 c:bb0f76d2694e733199699699283ad716682efe5e
 D:check=0.14.0-r0 pkgconfig
 p:pc:check=0.14.0
+
+C:Q126GgdcyID97o5RZwQ/epgRf4Qzo=
+P:kamailio-sqlite
+V:5.3.6-r0
+A:armhf
+S:31072
+I:270336
+T:Database drivers for SQlite
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio kamailio-db so:libc.musl-armhf.so.1 so:libsqlite3.so.0 so:libsrdb1.so.1
 
 C:Q1LAnenqss7skxe4xBRoqKGVaIhz4=
 P:lua-openrc
@@ -12235,6 +12204,22 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-armhf.so.1
 i:lua5.3 lua-posixtz=0.5-r1
 
+C:Q1AuFgchMgHDIZXCNOPjXKvo5UVm4=
+P:kamailio
+V:5.3.6-r0
+A:armhf
+S:4854502
+I:11522048
+T:Open Source SIP Server
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:gawk /bin/sh so:libc.musl-armhf.so.1 so:libdb-5.3.so so:libpcre.so.1 so:libz.so.1
+p:so:libkamailio_ims.so.0=0.1 so:libprint.so.1=1.2 so:libsrdb1.so.1=1.0 so:libsrdb2.so.1=1.0 so:libsrutils.so.1=1.0 so:libtrie.so.1=1.0 cmd:kamailio cmd:kambdb_recover cmd:kamcmd cmd:kamctl cmd:kamdbctl
+
 C:Q1xEqjPdVphnZ/4JLWbkdMRV4F04s=
 P:perl-class-singleton
 V:1.5-r1
@@ -12744,21 +12729,6 @@ c:d140e9a31d3897b665df372c1ca8e1e3557c0ace
 D:so:libc.musl-armhf.so.1 so:libskarnet.so.2.9
 p:cmd:s6-basename cmd:s6-cat cmd:s6-chmod cmd:s6-chown cmd:s6-clock cmd:s6-cut cmd:s6-dirname cmd:s6-dumpenv cmd:s6-echo cmd:s6-env cmd:s6-expr cmd:s6-false cmd:s6-format-filter cmd:s6-grep cmd:s6-head cmd:s6-hiercopy cmd:s6-linkname cmd:s6-ln cmd:s6-ls cmd:s6-maximumtime cmd:s6-mkdir cmd:s6-mkfifo cmd:s6-nice cmd:s6-nuke cmd:s6-pause cmd:s6-printenv cmd:s6-quote cmd:s6-quote-filter cmd:s6-rename cmd:s6-rmrf cmd:s6-seq cmd:s6-sleep cmd:s6-sort cmd:s6-sync cmd:s6-tail cmd:s6-test cmd:s6-touch cmd:s6-true cmd:s6-uniquename cmd:s6-unquote cmd:s6-unquote-filter cmd:s6-update-symlinks cmd:seekablepipe
 
-C:Q17jTLY8uIHIMvRtdHs/N9ahkU4Gc=
-P:kamailio-radius
-V:5.3.4-r1
-A:armhf
-S:92103
-I:237568
-T:Kamailio RADIUS modules for Kamailio
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libfreeradius-client.so.2
-
 C:Q1D45Gpmq9+oP+xW6T0a6hlO+03Ac=
 P:nagios-plugins-http
 V:2.3.2-r0
@@ -13252,21 +13222,6 @@ t:1603102662
 c:081db7e18c7f433d70d051e49a1439efe0cd6990
 D:perl gmp-dev elfutils-dev bash so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
 
-C:Q16exUVOH/yQCpXjuIH6gvjIPRMFg=
-P:kamailio-extras
-V:5.3.4-r1
-A:armhf
-S:1157738
-I:2539520
-T:Kamailio extra modules
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libevent-2.1.so.7 so:libhiredis.so.0.14 so:libsrdb1.so.1 so:libsrutils.so.1
-
 C:Q133+MmcZh86Rhg4t4+lwWyXf+eQU=
 P:cjdns-doc
 V:20.6-r0
@@ -13356,6 +13311,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1585632275
 c:60424133be2e79bbfeff3d58147a22886f817ce2
 D:musl-utils
+
+C:Q1sr+w/HLFQ+RX6s/XjMev+RIQ5EQ=
+P:kamailio-lua
+V:5.3.6-r0
+A:armhf
+S:187786
+I:512000
+T:Kamailio Lua script support
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:liblua.so.5
 
 C:Q1hJRINOwVo7ZcgHW5tTqZZ+9rDU4=
 P:libffi
@@ -13844,6 +13814,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1590584128
 c:7445adce501f8473efdb93b17b5eaf2f1445ed4c
 
+C:Q1MzMiVnDem5GBuVQCh+GnXPLMFYE=
+P:kamailio-jansson
+V:5.3.6-r0
+A:armhf
+S:124888
+I:311296
+T:Kamailio Operations on json strings using jansson library
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libevent-2.1.so.7 so:libjansson.so.4
+
 C:Q1N3ivR2BujIoVsSdFq5/GI/l4+o8=
 P:eggdrop-doc
 V:1.8.4-r0
@@ -13978,21 +13963,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 D:perl-io-socket-ssl perl-net-ssleay
-
-C:Q1Zumdi7sihdHNXq+SaLlKVfA29AU=
-P:kamailio-sqlite
-V:5.3.4-r1
-A:armhf
-S:31079
-I:270336
-T:Database drivers for SQlite
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio kamailio-db so:libc.musl-armhf.so.1 so:libsqlite3.so.0 so:libsrdb1.so.1
 
 C:Q1B7b2Q45aFhEKM0YHPeYgAiO9nMU=
 P:cryptsetup-openrc
@@ -14440,21 +14410,6 @@ m:Ted Trask <ttrask01@yahoo.com>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:acf-core ipsec-tools
-
-C:Q13HToCHWlTuf6kAXUpWizoc5mie4=
-P:kamailio-kazoo
-V:5.3.4-r1
-A:armhf
-S:173699
-I:393216
-T:Kamailio Kazoo VoIP platform support
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libevent-2.1.so.7 so:libjson-c.so.5 so:librabbitmq.so.4 so:libsrdb1.so.1 so:libuuid.so.1
 
 C:Q1HMLVedr5OwKIbAqnB36XQxB9mFA=
 P:samba-doc
@@ -15100,21 +15055,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1592543942
 c:e684959dd09576a280eda8616faeb6c3dbd460ff
 i:docs dropbear=2019.78-r1
-
-C:Q1iZjgPCmcUdu53AE2DdCGmQbRRAw=
-P:kamailio-json
-V:5.3.4-r1
-A:armhf
-S:148292
-I:348160
-T:Kamailio Operations on json strings
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libevent-2.1.so.7 so:libjson-c.so.5 so:libsrutils.so.1
 
 C:Q1O+w+rTeX/XdHoIqd3SCE3ZJY4ms=
 P:goaccess-doc
@@ -16021,21 +15961,6 @@ t:1586113786
 c:07b9652003eee6c334b9e37f189ab59c2a6617a3
 D:/bin/sh so:libc.musl-armhf.so.1 so:libtirpc.so.3
 p:cmd:rpcbind cmd:rpcinfo
-
-C:Q1uYwKMtPuoz6n/7aNgL9ipbTadpo=
-P:kamailio-ldap
-V:5.3.4-r1
-A:armhf
-S:109285
-I:253952
-T:Kamailio LDAP search functions
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libldap-2.4.so.2 so:libsrdb2.so.1
 
 C:Q1uyVv49bTdxg7fn34vZNfFO50pgU=
 P:libaio
@@ -17078,21 +17003,6 @@ c:60a428a4c1d968e35626e302d12d9c4711100612
 D:so:libc.musl-armhf.so.1
 p:so:liblinenoise.so.0=0.0.0
 
-C:Q1hVH/JAveoce92Kf8igZC2WdrAgI=
-P:kamailio-jansson
-V:5.3.4-r1
-A:armhf
-S:124892
-I:311296
-T:Kamailio Operations on json strings using jansson library
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libevent-2.1.so.7 so:libjansson.so.4
-
 C:Q1x+pA9eQlDlJHCW+6vQm+9VFkX6A=
 P:glib-static
 V:2.64.6-r0
@@ -17862,21 +17772,6 @@ c:6022814d38d6ad1d3cc60bce55e5f8cb444518e7
 D:so:libc.musl-armhf.so.1
 p:cmd:fping
 
-C:Q1ymcX6o6evryyAyQ/gTEAKLOjWFg=
-P:kamailio-geoip2
-V:5.3.4-r1
-A:armhf
-S:12308
-I:45056
-T:Kamailio MaxMind GeoIP lookup support
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libmaxminddb.so.0
-
 C:Q1+y+8u0FD39Nm5Xa4nNcCBMAkfc4=
 P:perl-convert-color
 V:0.11-r1
@@ -18244,21 +18139,6 @@ t:1592931837
 c:01f12d5e9e364a5058294559fc44f535a791ad1e
 D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:librtlsdr.so.0 so:libsysfs.so.2
 p:cmd:rngd cmd:rngtest
-
-C:Q1B+p8tcDsohpzSHq5/TigQICuuPY=
-P:kamailio-python3
-V:5.3.4-r1
-A:armhf
-S:100371
-I:282624
-T:Kamailio Execute embedded Python3 scripts
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libpython3.8.so.1.0
 
 C:Q16DQudSTtCQGZTHPpaLiNqCeug5s=
 P:pssh-doc
@@ -19554,6 +19434,21 @@ c:f40b381639c404fc93ec1a8fa011e4c35a26ddfb
 D:python3 py3-setuptools
 p:py-future=0.18.2-r1 cmd:futurize cmd:pasteurize
 
+C:Q11MI1bI0jcFHjbZOvCwNb460Iieg=
+P:kamailio-dbtext
+V:5.3.6-r0
+A:armhf
+S:103410
+I:552960
+T:Database drivers for DBText
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio kamailio-db so:libc.musl-armhf.so.1 so:libsrdb1.so.1
+
 C:Q1VwHWe+3WMroM6pAdC4i4AFGVSC0=
 P:krb5-dev
 V:1.18.2-r0
@@ -20103,6 +19998,21 @@ o:libsrtp
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1577318484
 c:1f587772cfee9f9af983b14b82e23f1a327fb2e3
+
+C:Q1k3Vp6feQufb9jXGnHBRiVIlkeTk=
+P:kamailio-outbound
+V:5.3.6-r0
+A:armhf
+S:19152
+I:61440
+T:Kamailio RFC 5626 section 5 Outbound support
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
 
 C:Q1tc0t0HG2pjHdrTeKjDP1Ikgn3Yg=
 P:gsm-dev
@@ -21297,6 +21207,21 @@ t:1582128139
 c:3f1960d946b76a2b86fabf2427e4a078c11fde17
 D:lz4-libs=1.9.2-r0 pkgconfig
 p:pc:liblz4=1.9.2
+
+C:Q1IQDw1q4ExqCQkRnLXS4t69HHH24=
+P:kamailio-unixodbc
+V:5.3.6-r0
+A:armhf
+S:43371
+I:114688
+T:Kamailio Database drivers for unixodbc
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libodbc.so.2 so:libsrdb1.so.1
 
 C:Q18+maaHKti6B6M1EqFrbAgsqbJq8=
 P:freetds-dev
@@ -22604,21 +22529,6 @@ t:1603108962
 c:3345fe0b7e2d5aed8d3bb4bad3b2386442a9a50e
 D:nginx nginx-mod-devel-kit so:libc.musl-armhf.so.1
 
-C:Q1s0P+l72hnX9ynTa2/ORukvgFpp0=
-P:kamailio-xml
-V:5.3.4-r1
-A:armhf
-S:194050
-I:983040
-T:Kamailio XML related modules: xhttp_pi xmlrpc xmlops
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libsrdb1.so.1 so:libxml2.so.2
-
 C:Q1WGWX+zdZGYBCmB/F/4wOf1QcHDY=
 P:fish-tools
 V:3.1.2-r0
@@ -23173,21 +23083,6 @@ c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:/bin/sh so:libc.musl-armhf.so.1
 p:cmd:ez-ipupdate
 
-C:Q1LdIJSELJJnxlj/Jjl/MehS3motY=
-P:kamailio-utils
-V:5.3.4-r1
-A:armhf
-S:113538
-I:278528
-T:Kamailio miscelaneous utility functions
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libcurl.so.4 so:libsrdb1.so.1 so:libxml2.so.2
-
 C:Q176GgF6c9UzY7+tZqykU3QU8AEbM=
 P:libportaudiocxx
 V:190600.20161030-r1
@@ -23618,6 +23513,21 @@ t:1589906227
 c:34d13de82793c2e979a3b1d32f59fe85a936d839
 D:/bin/sh apk-tools dns-root-hints openrc
 p:cmd:migrate-dnscache-to-unbound
+
+C:Q1A5qDiSPoapg6/3r9WUyh8AVg+Wk=
+P:kamailio-presence
+V:5.3.6-r0
+A:armhf
+S:966450
+I:2142208
+T:Kamailio SIP Notify (Presence) support
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libcurl.so.4 so:libsrdb1.so.1 so:libsrutils.so.1 so:libxml2.so.2
 
 C:Q1RQjhXy+J/GAcSVq82yRxyOs8O4w=
 P:py3-more-itertools
@@ -24305,6 +24215,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:encodings font-alias mkfontscale mkfontdir fontconfig
+
+C:Q1kWKIlUVxKN548/Gvr/C0NcRXo9A=
+P:kamailio-cpl
+V:5.3.6-r0
+A:armhf
+S:216133
+I:466944
+T:Kamailio CPL (Call Processing Language) interpreter
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libsrdb1.so.1 so:libxml2.so.2
 
 C:Q144/B40JKiwtw2K7Smbwy7V8t5pk=
 P:lsyncd
@@ -26027,21 +25952,6 @@ c:2f88ea0ee94a2ea7729142fca3e23352932e9f31
 D:so:libc.musl-armhf.so.1
 p:so:libblkid.so.1=1.1.0
 
-C:Q19QrG7zTZhOfzWfPExAi/3cEEIQA=
-P:kamailio-ev
-V:5.3.4-r1
-A:armhf
-S:47318
-I:131072
-T:Kamailio Network event broadcast API
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libev.so.4
-
 C:Q1aSSeSKOY+n0gex+dW2RtNLTvdFc=
 P:acf-pingu
 V:0.4.0-r2
@@ -26716,21 +26626,6 @@ c:f0daafa26104492bf41371cccf3a324f02aa66ec
 D:sed file perl perl-archive-zip perl-carp perl-convert-tnef perl-compress-raw-zlib perl-convert-uulib perl-digest-md5 perl-io perl-exporter perl-io-compress perl-io-stringy perl-mime-tools perl-mailtools perl-socket perl-net-libidn perl-net-server perl-time-hires perl-unix-syslog perl-db perl-mail-dkim perl-io-socket-inet6 perl-mail-spamassassin /bin/sh
 p:amavisd-new=2.12.0-r0 cmd:amavisd cmd:amavisd-nanny cmd:amavisd-release
 
-C:Q1nIBZ4xJ1z7IWfTJnA7bTzKnbaWI=
-P:kamailio-redis
-V:5.3.4-r1
-A:armhf
-S:260571
-I:598016
-T:Kamailio Redis NoSQL support
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libhiredis.so.0.14 so:libsrdb1.so.1
-
 C:Q1TdLrBFoGODhT7XFUGS7fYihqRz0=
 P:f2fs-tools
 V:1.13.0-r0
@@ -27024,6 +26919,21 @@ c:2511d0a5a709c80d70a5b50747ceaacc935e11c5
 D:pkgconfig subunit-libs=1.3.0-r1
 p:pc:libcppunit_subunit=1.3.0 pc:libsubunit=1.3.0
 
+C:Q1A+kXqvuPxTbSE8tO8X6MdqzOJeE=
+P:kamailio-debugger
+V:5.3.6-r0
+A:armhf
+S:80907
+I:208896
+T:Kamailio debugging modules
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libprint.so.1 so:libsrutils.so.1
+
 C:Q12r0tx180k3zWXhRTjGKD9RHIwbE=
 P:lua-asn1
 V:2.2.0-r0
@@ -27287,21 +27197,6 @@ m:Leo <thinkabit.ukim@gmail.com>
 t:1582342733
 c:b43daa57de03dbd7f61a45102b23f0ba116bb85f
 i:lua5.1 lua-filesize=0.1.1-r1
-
-C:Q1Kdlawk+EsFpgSSE9ztpzTlTBG8o=
-P:kamailio-xmpp
-V:5.3.4-r1
-A:armhf
-S:53935
-I:131072
-T:Kamailio XMPP (Jabber) gateway
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libexpat.so.1
 
 C:Q1zE/wjqKXnq7HI1oyhgP7xTRV3Lw=
 P:mesa
@@ -27866,21 +27761,6 @@ t:1576766635
 c:847f69d918bc30fa090135efc6c4923ac9b6ff65
 D:perl-net-snmp
 p:cmd:tkmib
-
-C:Q1DRq1RrUilG7ydWUU6Xx6ErIzb1E=
-P:kamailio-outbound
-V:5.3.4-r1
-A:armhf
-S:19146
-I:61440
-T:Kamailio RFC 5626 section 5 Outbound support
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
 
 C:Q1ns/1xAP0ghsYChKQaDA32KuQsyI=
 P:perl-dbix-dbschema
@@ -28671,6 +28551,21 @@ t:1589482370
 c:0b992fa289a30c08cc698d7bedd763419dbd80e0
 D:python3
 p:py-toml=0.10.1-r0
+
+C:Q1GDMd25WRLca2krdH3c7QGz+YYbM=
+P:kamailio-openrc
+V:5.3.6-r0
+A:armhf
+S:1667
+I:16384
+T:Open Source SIP Server (OpenRC init scripts)
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+i:openrc kamailio=5.3.6-r0
 
 C:Q1/HDyg5hlj5gR3ozI/5S9IqHAjRM=
 P:lua5.3-augeas
@@ -30595,6 +30490,21 @@ c:1eb911922a7e818a6f314a68c0561bba008e6efd
 D:so:libc.musl-armhf.so.1 so:libpam.so.0 so:libpam_misc.so.0
 p:cmd:vlock
 
+C:Q1w0wD9RQXWTfOq9IJe0Hi1mBeHXQ=
+P:kamailio-ruby
+V:5.3.6-r0
+A:armhf
+S:67222
+I:200704
+T:Kamailio Execute embedded Ruby scripts
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libruby.so.2.7
+
 C:Q1xGWq1QkcTgc8KLBBveBNsl9g3UQ=
 P:tmux-zsh-completion
 V:5.8-r1
@@ -32249,21 +32159,6 @@ c:aaa7f43dbe8511ff1385f8ae704cbd18c2cb5eea
 D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libpq.so.5 so:libssl.so.1.1 so:libuuid.so.1 so:libxml2.so.2 so:libz.so.1
 p:cmd:oid2name cmd:pg_standby cmd:vacuumlo
 
-C:Q14GBupaB5D1EYttv5xnS2/VWebCA=
-P:kamailio-openrc
-V:5.3.4-r1
-A:armhf
-S:1666
-I:16384
-T:Open Source SIP Server (OpenRC init scripts)
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-i:openrc kamailio=5.3.4-r1
-
 C:Q1gR6RXFQx71lsLJNUp4+AiILw4Y0=
 P:nagios-plugins-log
 V:2.3.2-r0
@@ -33142,21 +33037,6 @@ c:2f88ea0ee94a2ea7729142fca3e23352932e9f31
 D:so:libblkid.so.1 so:libc.musl-armhf.so.1
 p:cmd:blkid
 
-C:Q1bpg1zEk9SFU3W3FIhxfFkfZV3LM=
-P:kamailio-ruby
-V:5.3.4-r1
-A:armhf
-S:67216
-I:200704
-T:Kamailio Execute embedded Ruby scripts
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libruby.so.2.7
-
 C:Q1vkF3tIH34jgWVHIpfc18W/YKGuQ=
 P:freetype-dev
 V:2.10.4-r0
@@ -33762,21 +33642,6 @@ t:1584211375
 c:81633f00dd52212d62c630bbf6f6c8a9bc1f29cd
 i:openrc rsync=3.1.3-r3
 
-C:Q1Owmi0ic6HAAU8fUbkZZxPUzTnPo=
-P:kamailio-sctp
-V:5.3.4-r1
-A:armhf
-S:55607
-I:139264
-T:Kamailio SCTP transport for Kamailio
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libsctp.so.1
-
 C:Q1/JRzJM+ortPoMu0OpLFVU/MoAJg=
 P:libaio-dev
 V:0.3.112-r1
@@ -33929,6 +33794,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1553598181
 c:8fc55c232e9fa17dcadca0e74421da600c95e1b9
 i:docs mini_httpd=1.30-r0
+
+C:Q1qFV5rxQtlQ+Qis52O6ZToniWoHk=
+P:kamailio-snmpstats
+V:5.3.6-r0
+A:armhf
+S:86364
+I:323584
+T:Kamailio SNMP statistics support
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libnetsnmp.so.35 so:libnetsnmpagent.so.35
 
 C:Q1Gc8dDsPQMhtOwqRrsnSKIEt4FuU=
 P:xen-hypervisor
@@ -34156,6 +34036,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1587584864
 c:63527af55a6024b9a7cd1be34613c6e1e091f857
 D:so:libc.musl-armhf.so.1 so:libruby.so.2.7
+
+C:Q1wZUswYnqQ4fn4AWy5WxDb0n66/Y=
+P:kamailio-ims
+V:5.3.6-r0
+A:armhf
+S:1675524
+I:3796992
+T:Kamailio IP Multimedia Subsystem (IMS) support
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libkamailio_ims.so.0 so:libsrdb1.so.1 so:libsrutils.so.1 so:libxml2.so.2
 
 C:Q1wpv3n3E3hawvh0DZ/hZTgDcrih4=
 P:ipsec-tools-doc
@@ -35141,21 +35036,6 @@ t:1580253744
 c:f327482678cf22cd5525d587d80bf3f00a22954a
 i:docs perl-error=0.17029-r0
 
-C:Q1swXb0CjGC6zTirJvCHLO7PrCZdE=
-P:kamailio-postgres
-V:5.3.4-r1
-A:armhf
-S:112015
-I:442368
-T:Database drivers for Postgres
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio kamailio-db so:libc.musl-armhf.so.1 so:libpq.so.5 so:libsrdb1.so.1 so:libsrdb2.so.1
-
 C:Q1xPIp/UBu4aVJK8iE+ESGE3dR0VI=
 P:logcheck
 V:1.3.20-r1
@@ -35248,6 +35128,21 @@ t:1584211375
 c:81633f00dd52212d62c630bbf6f6c8a9bc1f29cd
 D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libogg.so.0 so:libstdc++.so.6
 p:so:libFLAC++.so.6=6.3.0 so:libFLAC.so.8=8.3.0 cmd:flac cmd:metaflac
+
+C:Q19o43zw70dA8FJSs3OgVCba+CtR8=
+P:kamailio-radius
+V:5.3.6-r0
+A:armhf
+S:92104
+I:237568
+T:Kamailio RADIUS modules for Kamailio
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libfreeradius-client.so.2
 
 C:Q1Rx4rop9/wT/at7iECjq8MOhL5MI=
 P:perl-fcgi-doc
@@ -36248,21 +36143,6 @@ t:1566118930
 c:5bab3a37a4b7235a91cce66397969277d22bc058
 i:docs xinput=1.6.3-r0
 
-C:Q1jpp2a4dm/s+xCBzKyfbE/o+E+6E=
-P:kamailio-sqlang
-V:5.3.4-r1
-A:armhf
-S:190487
-I:462848
-T:Kamailio Squirrel Language (SQLang) for Kamailio
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libstdc++.so.6
-
 C:Q1sFUKyjWwN6P8WnQj+gsOM8IP6MM=
 P:mtx
 V:1.3.12-r2
@@ -36523,6 +36403,21 @@ t:1572968029
 c:ab83158c9ec7594e3c6adb2078c63aff946855e6
 D:py3-django py3-setuptools
 p:py-django-haystack=2.8.1-r1
+
+C:Q1g0ua2nekBdoTiNxhLehGMt5mXfI=
+P:kamailio-tls
+V:5.3.6-r0
+A:armhf
+S:250940
+I:585728
+T:Kamailio TLS support
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libssl.so.1.1
 
 C:Q1lXF5Zhb7Xpiy+0xT2WgN/RzK1I8=
 P:libtirpc
@@ -37482,6 +37377,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1592305554
 c:b8f92cf12ab6e48d1c3a7a0e590521581443e720
 i:docs busybox=1.31.1-r19
+
+C:Q1KCO26sDSdfGrNYWP3PjCarG20SI=
+P:kamailio-geoip2
+V:5.3.6-r0
+A:armhf
+S:12312
+I:45056
+T:Kamailio MaxMind GeoIP lookup support
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libmaxminddb.so.0
 
 C:Q1uh2erzOpjay0CLXarHFDwIDRLFM=
 P:testdisk
@@ -38529,6 +38439,21 @@ t:1574242810
 c:e3cc6f649ff9d9a8e2dda94379dd15e2d76ba0ee
 D:fcgi++=2.4.2-r0 fcgi=2.4.2-r0 pkgconfig
 p:pc:fcgi++=2.4.2 pc:fcgi=2.4.2
+
+C:Q1i7cuMdWXcdCIAlVQm/mzwA6X/qE=
+P:kamailio-ldap
+V:5.3.6-r0
+A:armhf
+S:109287
+I:253952
+T:Kamailio LDAP search functions
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libldap-2.4.so.2 so:libsrdb2.so.1
 
 C:Q1nNTbTG08XeXcPZrCAGsecxIgqeo=
 P:libxpm-doc
@@ -39590,6 +39515,21 @@ c:1245056475ad59a71c91494d1e1820f323e22911
 D:flac-dev libvorbis-dev libogg-dev libsndfile=1.0.28-r8 pkgconfig
 p:pc:sndfile=1.0.28
 
+C:Q1lcngz6Og5z122JicmKSDe9L5Wy4=
+P:kamailio-redis
+V:5.3.6-r0
+A:armhf
+S:261748
+I:602112
+T:Kamailio Redis NoSQL support
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libhiredis.so.0.14 so:libsrdb1.so.1
+
 C:Q1VpcUeKrkmtEvhpa1XkrEckFP55M=
 P:gnutls-doc
 V:3.6.15-r0
@@ -40130,6 +40070,21 @@ t:1589111292
 c:688185b826de2598daff359b224f44529ab7a8ba
 D:so:libc.musl-armhf.so.1
 p:so:libpcre2-16.so.0=0.10.0
+
+C:Q1g1zN57A3vgIvdziN+hHDeY6vX7M=
+P:kamailio-sctp
+V:5.3.6-r0
+A:armhf
+S:55420
+I:139264
+T:Kamailio SCTP transport for Kamailio
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libsctp.so.1
 
 C:Q1ZQsrUe8PJA7GdcrxU6K5/pMCc1M=
 P:gd-dev
@@ -41114,6 +41069,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1538845804
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:fontconfig encodings mkfontdir mkfontscale
+
+C:Q1K7RvWGhfc/C9dsQdWRSQPJPWgm4=
+P:kamailio-xmpp
+V:5.3.6-r0
+A:armhf
+S:53933
+I:131072
+T:Kamailio XMPP (Jabber) gateway
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libexpat.so.1
 
 C:Q1vLsJuIVUJ2MC/ozkj71sQRUw9Yk=
 P:libgcc
@@ -42832,21 +42802,6 @@ c:79b55a4a4fc9d6fbb260b9b6be5c6ff06ae61f28
 D:freeradius=3.0.21-r3 so:libc.musl-armhf.so.1
 p:so:libfreeradius-dhcp.so=0 so:proto_dhcp.so=0 so:rlm_dhcp.so=0
 
-C:Q10p+6NKRE2AN2Of825o0MGmZ8WNk=
-P:kamailio-lua
-V:5.3.4-r1
-A:armhf
-S:187782
-I:512000
-T:Kamailio Lua script support
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:liblua.so.5
-
 C:Q1lKffTKcOD1s+hDeyP4djbGHYZy0=
 P:pmacct
 V:1.7.4-r0
@@ -43061,21 +43016,6 @@ t:1588855746
 c:102a411743515ac4fb7ed06c7092acd8dd95214f
 D:so:libc.musl-armhf.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
 
-C:Q1G/z+leH6+dXZRECYNIicZqmZu1k=
-P:kamailio-debugger
-V:5.3.4-r1
-A:armhf
-S:80889
-I:208896
-T:Kamailio debugging modules
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libprint.so.1 so:libsrutils.so.1
-
 C:Q1LGId7RMFpHMJpqwplLBWwXXZyz8=
 P:linux-firmware-dabusb
 V:20200519-r1
@@ -43242,6 +43182,21 @@ t:1588472740
 c:aee34713f9771c0ca5a5b20dc1031d2600003dfd
 D:python3 py3-meld3 py3-setuptools
 p:cmd:echo_supervisord_conf cmd:pidproxy cmd:supervisorctl cmd:supervisord
+
+C:Q1fmnMSDZIcdEhicjTawU0+QAKufI=
+P:kamailio-authephemeral
+V:5.3.6-r0
+A:armhf
+S:34748
+I:106496
+T:Kamailio auth ephemeral (webrtc)
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
 
 C:Q1TycmwJxfm37NynAluCI27G1ONXw=
 P:rabbitmq-c
@@ -44079,21 +44034,6 @@ c:5c8ccab152b37384c218aa775c6195ddf22a1fdd
 D:ghostscript=9.52-r0 pkgconfig
 p:pc:ijs=0.35
 
-C:Q1tPxx6/rypIPahdY3jSNbuA90wrQ=
-P:kamailio-http_async
-V:5.3.4-r1
-A:armhf
-S:75299
-I:188416
-T:Kamailio Asynchronous HTTP queries support
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libcurl.so.4 so:libevent-2.1.so.7
-
 C:Q1lhPTnfgiyZGgKx0bn/I9X85NQU8=
 P:strongswan-logfile
 V:5.8.4-r2
@@ -44763,6 +44703,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1587139622
 c:1ed20c2c04f77f28a29f650dc6dde74e3b5e3a8b
 D:uwsgi uwsgi-corerouter so:libc.musl-armhf.so.1
+
+C:Q1eBZBBz/z0TNzn3+Kma/r+yiEK2A=
+P:kamailio-carrierroute
+V:5.3.6-r0
+A:armhf
+S:135943
+I:311296
+T:Kamailio carrier grade routing functions
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libsrdb1.so.1 so:libtrie.so.1
 
 C:Q1GTClelPQ1k0HEOjVueyNneWPlSI=
 P:perl-importer
@@ -47030,21 +46985,6 @@ c:238b6bccbab3b844079fa109d5cee096b81756d3
 D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
 p:so:bpipe-fd.so=0 so:libbac-9.4.4.so=0 so:libbaccfg-9.4.4.so=0 so:libbacfind-9.4.4.so=0 so:libbacsd-9.4.4.so=0 so:libbacsql-9.4.4.so=0
 
-C:Q1bNPv3zN15QVYMpUTF2Tf/uK/UIE=
-P:kamailio-rabbitmq
-V:5.3.4-r1
-A:armhf
-S:25348
-I:73728
-T:Kamailio RabbitMQ related modules for Kamailio
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:librabbitmq.so.4 so:libuuid.so.1
-
 C:Q1H6Dd3jGMBaGe/NvGgmxTEhBnKgg=
 P:nagios-plugins-ntp
 V:2.3.2-r0
@@ -47122,21 +47062,6 @@ t:1569923239
 c:28f45698a58920de9f35af40ae0a964c37ce9fe9
 D:so:libblkid.so.1 so:libc.musl-armhf.so.1 so:libuuid.so.1
 p:so:libf2fs.so.7=7.0.0 so:libf2fs_format.so.6=6.0.0
-
-C:Q1IV2/le9uUDOMpvQH069+1PJDy8A=
-P:kamailio-uuid
-V:5.3.4-r1
-A:armhf
-S:4406
-I:32768
-T:Kamailio UUID generator using libuuid
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libuuid.so.1
 
 C:Q10sYko09p/MDrqqKlU0hKvtdUgl4=
 P:libsecret-dev
@@ -48640,21 +48565,6 @@ c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:so:libc.musl-armhf.so.1
 p:so:libstfl.so.0=0.24
 
-C:Q1KaZYN5ldjN5DX+WgwkcM+dE6OAs=
-P:kamailio-cpl
-V:5.3.4-r1
-A:armhf
-S:216128
-I:466944
-T:Kamailio CPL (Call Processing Language) interpreter
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libsrdb1.so.1 so:libxml2.so.2
-
 C:Q1q5sM27Z897+oXWXSQQsR6WAG6bw=
 P:pcre2-dev
 V:10.35-r0
@@ -49204,6 +49114,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1575153955
 c:f000be42d1e4c75eee75293b0101b8b404736d10
 i:docs perl-clone=0.43-r0
+
+C:Q1eqFIqu2l5EPAoEQADHnum+St3+E=
+P:kamailio-sipdump
+V:5.3.6-r0
+A:armhf
+S:16850
+I:57344
+T:Kamailio This module writes SIP traffic and some associated details into local files
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1
 
 C:Q1jbJyczD3D9u9kBWxwU/jRpQjHAc=
 P:linux-firmware-keyspan_pda
@@ -50701,6 +50626,21 @@ t:1584211375
 c:81633f00dd52212d62c630bbf6f6c8a9bc1f29cd
 i:etckeeper=1.18.14-r0 zsh
 
+C:Q1uOsL/Yjy5/d5ci24obguDeDkxSU=
+P:kamailio-doc
+V:5.3.6-r0
+A:armhf
+S:793816
+I:3796992
+T:Open Source SIP Server (documentation)
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+i:docs kamailio=5.3.6-r0
+
 C:Q1KrAtEZPAS13JAMfDP5flK9Ikad8=
 P:lua-penlight
 V:1.7.0-r1
@@ -51219,21 +51159,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1587292580
 c:a97ac8ebf3676582391eddb4b62ba7cb0dd83a9d
 D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libpam.so.0
-
-C:Q15028QhOziDY37iKYyUgH0WDdfAs=
-P:kamailio-dbtext
-V:5.3.4-r1
-A:armhf
-S:103399
-I:552960
-T:Database drivers for DBText
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio kamailio-db so:libc.musl-armhf.so.1 so:libsrdb1.so.1
 
 C:Q1PKt/T3c1M2k2oMFYgCvN7Ro7e80=
 P:confuse
@@ -52857,6 +52782,21 @@ t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 i:docs perl-cache-simple-timedexpiry=0.27-r2
 
+C:Q1mu0Y8w0Q70SZD+CFsPn1L7TpLPY=
+P:kamailio-memcached
+V:5.3.6-r0
+A:armhf
+S:21061
+I:65536
+T:Kamailio memcached support
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libmemcached.so.11
+
 C:Q1C1g7M6plL2P3aJhuEcSytmE2Uss=
 P:clang-dev
 V:10.0.0-r2
@@ -52994,6 +52934,21 @@ c:f82c56514faa5dc3b730e218e4294e45237d2e96
 D:lua5.1 so:libc.musl-armhf.so.1
 p:lua5.1-bitlib=5.3.0-r3
 i:lua-bit32=5.3.0-r3 lua5.1
+
+C:Q13em6yhfNOfhNTWY6+/5EBYvXUOQ=
+P:kamailio-python3
+V:5.3.6-r0
+A:armhf
+S:100383
+I:282624
+T:Kamailio Execute embedded Python3 scripts
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libpython3.8.so.1.0
 
 C:Q1Mq/ZvlSAl3i3VOEBMj/aWAKKACY=
 P:vde2-libs
@@ -53862,21 +53817,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1587139622
 c:1ed20c2c04f77f28a29f650dc6dde74e3b5e3a8b
 D:uwsgi so:libc.musl-armhf.so.1
-
-C:Q1Klswv/9YA+ii8geT+xjPmpFic9k=
-P:kamailio-sipdump
-V:5.3.4-r1
-A:armhf
-S:16845
-I:57344
-T:Kamailio This module writes SIP traffic and some associated details into local files
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1
 
 C:Q1HnqFJJro0muLoGrMzAmSSEUPS8w=
 P:linux-firmware-rockchip
@@ -56353,20 +56293,20 @@ c:cb20c716f04b180bccc76059e3f5285dafe562ee
 D:perl
 p:cmd:config_data
 
-C:Q17ly0PoBGUKxR2Ms8I6FbdNdBuwY=
-P:kamailio-presence
-V:5.3.4-r1
+C:Q1Ds76IKRNZPqv86SmdqkfZcxldcA=
+P:kamailio-dbg
+V:5.3.6-r0
 A:armhf
-S:966419
-I:2142208
-T:Kamailio SIP Notify (Presence) support
+S:26014243
+I:60502016
+T:Open Source SIP Server (debug symbols)
 U:https://www.kamailio.org/
 L:GPL-2.0-or-later
 o:kamailio
 m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libcurl.so.4 so:libsrdb1.so.1 so:libsrutils.so.1 so:libxml2.so.2
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:gawk
 
 C:Q1X1VYKIUEZXb+hRpOUJhk3xyunEs=
 P:py3-ply
@@ -56507,6 +56447,21 @@ t:1588342289
 c:c7f555f5f1ce8fbc359d15c584afd1c397a7292d
 D:lua5.3 so:libc.musl-armhf.so.1
 i:lua-stringy=0.5.1-r1 lua5.3
+
+C:Q1uLAgg+s4jrO+deluj0Xh+7Llric=
+P:kamailio-json
+V:5.3.6-r0
+A:armhf
+S:150542
+I:352256
+T:Kamailio Operations on json strings
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libevent-2.1.so.7 so:libjson-c.so.5 so:libsrutils.so.1
 
 C:Q1+sBlL0hIghcVA8+CTRBiSxRMyfI=
 P:raspberrypi-libs
@@ -57078,6 +57033,21 @@ t:1538845804
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libX11.so.6 so:libXext.so.6 so:libXv.so.1 so:libc.musl-armhf.so.1 so:libdv.so.4 so:libgdk-x11-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-x11-2.0.so.0
 p:cmd:dubdv cmd:dvconnect cmd:encodedv cmd:playdv
+
+C:Q1MT5d1cNlGxJxUr81q8W9AI+Tkns=
+P:kamailio-sqlang
+V:5.3.6-r0
+A:armhf
+S:190485
+I:462848
+T:Kamailio Squirrel Language (SQLang) for Kamailio
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libstdc++.so.6
 
 C:Q1Y+EaVJGCoDI0NUkbMjmULuomRok=
 P:alpine-keys
@@ -57741,6 +57711,21 @@ t:1567697808
 c:c68a7de1df533938d1f2d2add48c73aa4758ed3f
 D:irssi so:libc.musl-armhf.so.1 so:libgcrypt.so.20 so:libotr.so.5
 
+C:Q1peikyfZpI0lltsfSa88qpIMFKFQ=
+P:kamailio-ev
+V:5.3.6-r0
+A:armhf
+S:47315
+I:131072
+T:Kamailio Network event broadcast API
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libev.so.4
+
 C:Q1d1MYgCcjWHaKYi4KrQw5jkRwwyk=
 P:libxxf86vm-dev
 V:1.1.4-r2
@@ -58332,21 +58317,6 @@ t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 i:docs perl-test-eol=2.00-r1
 
-C:Q11NiolqlhqLMudkxxBsbRI7s0BF0=
-P:kamailio-db
-V:5.3.4-r1
-A:armhf
-S:2262668
-I:4907008
-T:Kamailio modules using a database backend
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libdb-5.3.so so:libsrdb1.so.1 so:libsrdb2.so.1 so:libsrutils.so.1 so:libtrie.so.1
-
 C:Q1qME0BwOb3ftXfsgZ3XSktH1x8Eg=
 P:perl-net-dns-resolver-programmable-doc
 V:0.009-r1
@@ -58722,21 +58692,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1600991000
 c:c8b5ea21f034e2a2ce267121ec4cfb7c2be8d2ef
 p:linux-firmware-any
-
-C:Q183Gg2imCmqS3RguISK8PAU1fbgQ=
-P:kamailio-jsdt
-V:5.3.4-r1
-A:armhf
-S:202761
-I:413696
-T:Kamailio Support for executing JavaScript
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1
 
 C:Q1VLloG4SfEy1wKC8N+10QRfI/Ayc=
 P:consolekit2-doc
@@ -59169,6 +59124,21 @@ t:1585493538
 c:4f4123805c0934af087f92ae85217b6c1d33d9f2
 D:so:libc.musl-armhf.so.1 so:libncursesw.so.6
 p:cmd:dialog
+
+C:Q12AFjSA9XNyMLiZWMatrtyu74PHs=
+P:kamailio-utils
+V:5.3.6-r0
+A:armhf
+S:113542
+I:278528
+T:Kamailio miscelaneous utility functions
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libcurl.so.4 so:libsrdb1.so.1 so:libxml2.so.2
 
 C:Q16VcjQIv5BatOl5qygg9ySYCib80=
 P:nagios-plugins-swap
@@ -61238,6 +61208,21 @@ c:8bacbe702f827d786e02099a1bcb3b6edfca309f
 D:py3-bind=9.16.6-r0 so:libc.musl-armhf.so.1 so:libdns.so.1605 so:libisc.so.1606 so:libisccfg.so.1600
 p:cmd:dnssec-cds cmd:dnssec-checkds cmd:dnssec-coverage cmd:dnssec-dsfromkey cmd:dnssec-importkey cmd:dnssec-keyfromlabel cmd:dnssec-keygen cmd:dnssec-keymgr cmd:dnssec-revoke cmd:dnssec-settime cmd:dnssec-signzone cmd:dnssec-verify cmd:nsec3hash
 
+C:Q1D3DqFKRhVwK8inWb2QeY4WRlIEM=
+P:kamailio-db
+V:5.3.6-r0
+A:armhf
+S:2273433
+I:4931584
+T:Kamailio modules using a database backend
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libdb-5.3.so so:libsrdb1.so.1 so:libsrdb2.so.1 so:libsrutils.so.1 so:libtrie.so.1
+
 C:Q14u9I/AaOhpSSJ21AkgX1pYSBwOY=
 P:daq-static
 V:2.0.7-r0
@@ -61267,21 +61252,6 @@ t:1602021539
 c:eeaffa453f2c3f950ef79845278efe7a13d9b960
 D:so:libc.musl-armhf.so.1 so:libgnutls.so.30 so:libtalloc.so.2 so:libtevent.so.0
 p:so:libcom_err-samba4.so.0=0.25 so:libgenrand-samba4.so=0 so:libiov-buf-samba4.so=0 so:libreplace-samba4.so=0 so:libsamba-debug-samba4.so=0 so:libsamba-util.so.0=0.0.1 so:libsocket-blocking-samba4.so=0 so:libsys-rw-samba4.so=0 so:libtime-basic-samba4.so=0
-
-C:Q1lk7cGUQBZHxPMvS3kNAuW7Vbn1k=
-P:kamailio-tls
-V:5.3.4-r1
-A:armhf
-S:250693
-I:585728
-T:Kamailio TLS support
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libssl.so.1.1
 
 C:Q1R072bQcip/WouMtrh+8AoFOfg7w=
 P:goaccess-lang
@@ -62719,6 +62689,21 @@ t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 i:docs perl-test-refcount=0.10-r1
 
+C:Q1k8JO1QeaCOAlaI0MVaRV0179glM=
+P:kamailio-rabbitmq
+V:5.3.6-r0
+A:armhf
+S:25350
+I:73728
+T:Kamailio RabbitMQ related modules for Kamailio
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:librabbitmq.so.4 so:libuuid.so.1
+
 C:Q1ZO6FOUl8RchJkDUxwyBdkJOiOvg=
 P:aconf-mod-network
 V:0.8.1-r0
@@ -63277,6 +63262,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1532867204
 c:fa6f3b9635f4bccdfb49c4ad6b8446c3577a3eaf
 i:docs xf86-input-evdev=2.10.6-r0
+
+C:Q1tcuCN7IYlWPsUGQ8sTZ1FQSdizA=
+P:kamailio-jsdt
+V:5.3.6-r0
+A:armhf
+S:202767
+I:413696
+T:Kamailio Support for executing JavaScript
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1
 
 C:Q16c3zk2PgD05LZjZRlZ+Zh7683XA=
 P:perl-exporter-doc
@@ -65419,21 +65419,6 @@ c:5f7faee855574435a5924b1cc148f17922369ee0
 D:popt-dev pc:openssl pkgconfig rabbitmq-c=0.10.0-r1
 p:pc:librabbitmq=0.10.0
 
-C:Q1SE7fY42Ah78G+vHgQBwJyQoaJ/4=
-P:kamailio-snmpstats
-V:5.3.4-r1
-A:armhf
-S:86366
-I:323584
-T:Kamailio SNMP statistics support
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libnetsnmp.so.35 so:libnetsnmpagent.so.35
-
 C:Q1i6uZ4+eyQQwOHFqaxM0hoQKlIiI=
 P:mtdev
 V:1.1.6-r0
@@ -67007,6 +66992,21 @@ t:1584211375
 c:81633f00dd52212d62c630bbf6f6c8a9bc1f29cd
 i:docs augeas=1.12.0-r0
 
+C:Q1e+C7ziCy45xSIjLelknIzx7cMs4=
+P:kamailio-xml
+V:5.3.6-r0
+A:armhf
+S:194013
+I:983040
+T:Kamailio XML related modules: xhttp_pi xmlrpc xmlops
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libsrdb1.so.1 so:libxml2.so.2
+
 C:Q1HygVESqNH6bPJm9WiYyQc9YzKB4=
 P:mosquitto-libs
 V:1.6.9-r0
@@ -67099,21 +67099,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1574839756
 c:2c843fd6dacfbad67368e3332b6024fae41b897c
 i:docs autoconf=2.69-r2
-
-C:Q11igZejBWxOfu2lEuCDgqyQCb6Kw=
-P:kamailio-perl
-V:5.3.4-r1
-A:armhf
-S:60897
-I:159744
-T:Kamailio Perl extensions and database driver for Kamailio
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libperl.so
 
 C:Q1vfRh+F9HlKhgC/bqYs9yxxELkF8=
 P:asterisk-mobile
@@ -67280,21 +67265,6 @@ t:1586760143
 c:c3997536026a15e8f571477b13c24caebccf3ab4
 D:mkinitfs /bin/sh so:libc.musl-armhf.so.1 so:libdevmapper.so.1.02 so:libfreetype.so.6 so:liblzma.so.5
 p:cmd:grub-bios-setup cmd:grub-editenv cmd:grub-file cmd:grub-fstest cmd:grub-glue-efi cmd:grub-install cmd:grub-kbdcomp cmd:grub-macbless cmd:grub-menulst2cfg cmd:grub-mkconfig cmd:grub-mkfont cmd:grub-mkimage cmd:grub-mklayout cmd:grub-mknetdir cmd:grub-mkpasswd-pbkdf2 cmd:grub-mkrelpath cmd:grub-mkrescue cmd:grub-mkstandalone cmd:grub-ofpathname cmd:grub-probe cmd:grub-reboot cmd:grub-render-label cmd:grub-script-check cmd:grub-set-default cmd:grub-sparc64-setup cmd:grub-syslinux2cfg
-
-C:Q1kSlqocHyV2ZFAK7GtCAZQHsCvU4=
-P:kamailio-doc
-V:5.3.4-r1
-A:armhf
-S:792667
-I:3788800
-T:Open Source SIP Server (documentation)
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-i:docs kamailio=5.3.4-r1
 
 C:Q1pDzAMonaQYFF2M3jheJTFz33dMk=
 P:xorg-server-xwayland
@@ -67996,6 +67966,21 @@ o:dahdi-linux
 m:Timo Teras <timo.teras@iki.fi>
 t:1580420971
 c:b6563952f462ebd9d414f7cc95fd0fd642e20277
+
+C:Q1lVce4sx3Qr4e49/Ev6NkMomcaKQ=
+P:kamailio-websocket
+V:5.3.6-r0
+A:armhf
+S:66652
+I:163840
+T:Kamailio websocket support
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libunistring.so.2
 
 C:Q11rlpaEsin501s89dMpka86iUF4U=
 P:logrotate
@@ -69587,6 +69572,21 @@ t:1588774471
 c:ceb7a0ac14788a8a506f4acd6f4c4b461241d599
 D:so:libc.musl-armhf.so.1
 p:so:libimagequant.so.0=0
+
+C:Q1vxxuGK0ZSA5aVn5GB0G7ZuX2dlU=
+P:kamailio-perl
+V:5.3.6-r0
+A:armhf
+S:60905
+I:159744
+T:Kamailio Perl extensions and database driver for Kamailio
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libperl.so
 
 C:Q1lPd3n+yNN2xxsZUDchIzVG3HDvU=
 P:musl-nscd-doc
@@ -72439,6 +72439,21 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 i:opensp=1.5.2-r0 lang
 
+C:Q1FVvTm4sk3t1DrWPWGaFEXP/a3DQ=
+P:kamailio-kazoo
+V:5.3.6-r0
+A:armhf
+S:173703
+I:393216
+T:Kamailio Kazoo VoIP platform support
+U:https://www.kamailio.org/
+L:GPL-2.0-or-later
+o:kamailio
+m:Nathan Angelacos <nangel@alpinelinux.org>
+t:1604318431
+c:cb84081c235c0cf3c4a2c61070f1ff661c40f3c1
+D:kamailio so:libc.musl-armhf.so.1 so:libevent-2.1.so.7 so:libjson-c.so.5 so:librabbitmq.so.4 so:libsrdb1.so.1 so:libuuid.so.1
+
 C:Q1Jpa8RMyMA5PAQhUhIc/YFYA5PE0=
 P:perl-compress-raw-bzip2
 V:2.093-r1
@@ -73286,21 +73301,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1564154221
 c:84cca1cfc38fd5eae4f950a4d9f964ad9c78817b
 i:docs xf86-video-s3=0.7.0-r0
-
-C:Q1YjjoS/6ESx0spXhhoDjVyK1vXsU=
-P:kamailio-carrierroute
-V:5.3.4-r1
-A:armhf
-S:135849
-I:311296
-T:Kamailio carrier grade routing functions
-U:https://www.kamailio.org/
-L:GPL-2.0-or-later
-o:kamailio
-m:Nathan Angelacos <nangel@alpinelinux.org>
-t:1598628155
-c:f3a59f84a591384e72ebc99c72dd3a04c1cc0ec1
-D:kamailio so:libc.musl-armhf.so.1 so:libsrdb1.so.1 so:libtrie.so.1
 
 C:Q1c3hexoWcmpKG5Fp8NXQucb3dOEc=
 P:gnutls-dbg
