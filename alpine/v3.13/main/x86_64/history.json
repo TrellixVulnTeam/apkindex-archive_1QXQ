@@ -5477,7 +5477,8 @@
     "xfsprogs-libs": {
       "origin": "xfsprogs",
       "versions": {
-        "5.9.0-r0": 1603264849
+        "5.9.0-r0": 1603264849,
+        "5.10.0-r0": 1607751404
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1"
@@ -20829,7 +20830,8 @@
     "xfsprogs-doc": {
       "origin": "xfsprogs",
       "versions": {
-        "5.9.0-r0": 1603264849
+        "5.9.0-r0": 1603264849,
+        "5.10.0-r0": 1607751404
       }
     },
     "nfs-utils-openrc": {
@@ -35441,11 +35443,13 @@
     "xfsprogs": {
       "origin": "xfsprogs",
       "versions": {
-        "5.9.0-r0": 1603264849
+        "5.9.0-r0": 1603264849,
+        "5.10.0-r0": 1607751404
       },
       "dependencies": [
         "so:libblkid.so.1",
         "so:libc.musl-x86_64.so.1",
+        "so:libinih.so.0",
         "so:libuuid.so.1"
       ],
       "provides": [
@@ -35626,10 +35630,11 @@
     "xfsprogs-dev": {
       "origin": "xfsprogs",
       "versions": {
-        "5.9.0-r0": 1603264849
+        "5.9.0-r0": 1603264849,
+        "5.10.0-r0": 1607751404
       },
       "dependencies": [
-        "xfsprogs-libs=5.9.0-r0"
+        "xfsprogs-libs=5.10.0-r0"
       ]
     },
     "cramfs": {
@@ -40955,7 +40960,8 @@
     "xfsprogs-extra": {
       "origin": "xfsprogs",
       "versions": {
-        "5.9.0-r0": 1603264849
+        "5.9.0-r0": 1603264849,
+        "5.10.0-r0": 1607751404
       },
       "dependencies": [
         "xfsprogs",
@@ -55637,6 +55643,59 @@
       "versions": {
         "1.25.3-r1": 1607521487
       }
+    },
+    "inih-inireader-dev": {
+      "origin": "inih",
+      "versions": {
+        "52-r0": 1607750503
+      },
+      "dependencies": [
+        "inih-inireader=52-r0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:INIReader=0"
+      ]
+    },
+    "inih": {
+      "origin": "inih",
+      "versions": {
+        "52-r0": 1607750503
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1"
+      ],
+      "provides": [
+        "so:libinih.so.0=0"
+      ]
+    },
+    "inih-dev": {
+      "origin": "inih",
+      "versions": {
+        "52-r0": 1607750503
+      },
+      "dependencies": [
+        "inih=52-r0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:inih=0"
+      ]
+    },
+    "inih-inireader": {
+      "origin": "inih",
+      "versions": {
+        "52-r0": 1607750503
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libinih.so.0",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:libINIReader.so.0=0"
+      ]
     }
   },
   "provide": {
@@ -62034,6 +62093,14 @@
       "libstfl.so.0": {
         "package": "stfl",
         "version": "0.24"
+      },
+      "libinih.so.0": {
+        "package": "inih",
+        "version": "0"
+      },
+      "libINIReader.so.0": {
+        "package": "inih-inireader",
+        "version": "0"
       }
     }
   }
