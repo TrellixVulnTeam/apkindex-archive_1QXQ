@@ -5477,7 +5477,8 @@
     "hunspell-pt-doc": {
       "origin": "hunspell-pt",
       "versions": {
-        "20190329-r0": 1558435309
+        "20190329-r0": 1558435309,
+        "20201103-r0": 1607868402
       }
     },
     "xfsprogs-libs": {
@@ -8808,7 +8809,8 @@
     "opensmtpd-dbg": {
       "origin": "opensmtpd",
       "versions": {
-        "6.7.1p1-r0": 1592484456
+        "6.7.1p1-r0": 1592484456,
+        "6.7.1p1-r1": 1607868536
       },
       "dependencies": [
         "!postfix",
@@ -9532,13 +9534,14 @@
     "py3-py": {
       "origin": "py3-py",
       "versions": {
-        "1.9.0-r0": 1593372036
+        "1.9.0-r0": 1593372036,
+        "1.10.0-r0": 1607868318
       },
       "dependencies": [
         "python3"
       ],
       "provides": [
-        "py-py=1.9.0-r0"
+        "py-py=1.10.0-r0"
       ]
     },
     "lua5.2-dev": {
@@ -36300,7 +36303,8 @@
     "opensmtpd-doc": {
       "origin": "opensmtpd",
       "versions": {
-        "6.7.1p1-r0": 1592484456
+        "6.7.1p1-r0": 1592484456,
+        "6.7.1p1-r1": 1607868536
       }
     },
     "perl-list-allutils-doc": {
@@ -37078,7 +37082,8 @@
     "hunspell-pt": {
       "origin": "hunspell-pt",
       "versions": {
-        "20190329-r0": 1558435309
+        "20190329-r0": 1558435309,
+        "20201103-r0": 1607868402
       }
     },
     "daq-dev": {
@@ -48069,7 +48074,8 @@
     "opensmtpd": {
       "origin": "opensmtpd",
       "versions": {
-        "6.7.1p1-r0": 1592484456
+        "6.7.1p1-r0": 1592484456,
+        "6.7.1p1-r1": 1607868536
       },
       "dependencies": [
         "!postfix",
@@ -55741,6 +55747,33 @@
       "provides": [
         "so:libINIReader.so.0=0"
       ]
+    },
+    "opensmtpd-openrc": {
+      "origin": "opensmtpd",
+      "versions": {
+        "6.7.1p1-r1": 1607868536
+      }
+    },
+    "opensmtpd-pam": {
+      "origin": "opensmtpd",
+      "versions": {
+        "6.7.1p1-r1": 1607868536
+      },
+      "dependencies": [
+        "opensmtpd=6.7.1p1-r1",
+        "so:libasr.so.0",
+        "so:libc.musl-x86_64.so.1",
+        "so:libcrypto.so.1.1",
+        "so:libdb-5.3.so",
+        "so:libevent-2.1.so.7",
+        "so:libfts.so.0",
+        "so:libpam.so.0",
+        "so:libssl.so.1.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:smtpd-pam"
+      ]
     }
   },
   "provide": {
@@ -55867,7 +55900,7 @@
       },
       "py-py": {
         "package": "py3-py",
-        "version": "1.9.0-r0"
+        "version": "1.10.0-r0"
       },
       "lua-feedparser-common": {
         "package": "lua-feedparser",
