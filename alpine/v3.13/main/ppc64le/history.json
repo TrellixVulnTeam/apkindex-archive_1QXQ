@@ -54243,6 +54243,37 @@
       "provides": [
         "linux-firmware-any"
       ]
+    },
+    "liburing-doc": {
+      "origin": "liburing",
+      "versions": {
+        "0.7-r0": 1608142426
+      }
+    },
+    "liburing": {
+      "origin": "liburing",
+      "versions": {
+        "0.7-r0": 1608142426
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1"
+      ],
+      "provides": [
+        "so:liburing.so.1=1.0.7"
+      ]
+    },
+    "liburing-dev": {
+      "origin": "liburing",
+      "versions": {
+        "0.7-r0": 1608142426
+      },
+      "dependencies": [
+        "liburing=0.7-r0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:liburing=0.7"
+      ]
     }
   },
   "provide": {
@@ -60216,6 +60247,10 @@
       "librrd.so.8": {
         "package": "librrd",
         "version": "8.2.1"
+      },
+      "liburing.so.1": {
+        "package": "liburing",
+        "version": "1.0.7"
       }
     }
   }

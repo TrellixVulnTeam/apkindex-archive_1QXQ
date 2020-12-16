@@ -55888,6 +55888,37 @@
       "provides": [
         "cmd:smtpd-pam"
       ]
+    },
+    "liburing": {
+      "origin": "liburing",
+      "versions": {
+        "0.7-r0": 1608142426
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1"
+      ],
+      "provides": [
+        "so:liburing.so.1=1.0.7"
+      ]
+    },
+    "liburing-doc": {
+      "origin": "liburing",
+      "versions": {
+        "0.7-r0": 1608142426
+      }
+    },
+    "liburing-dev": {
+      "origin": "liburing",
+      "versions": {
+        "0.7-r0": 1608142426
+      },
+      "dependencies": [
+        "liburing=0.7-r0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:liburing=0.7"
+      ]
     }
   },
   "provide": {
@@ -62293,6 +62324,10 @@
       "libINIReader.so.0": {
         "package": "inih-inireader",
         "version": "0"
+      },
+      "liburing.so.1": {
+        "package": "liburing",
+        "version": "1.0.7"
       }
     }
   }

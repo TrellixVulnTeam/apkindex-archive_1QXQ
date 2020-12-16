@@ -55242,6 +55242,37 @@
       "provides": [
         "cmd:smtpd-pam"
       ]
+    },
+    "liburing-doc": {
+      "origin": "liburing",
+      "versions": {
+        "0.7-r0": 1608142426
+      }
+    },
+    "liburing": {
+      "origin": "liburing",
+      "versions": {
+        "0.7-r0": 1608142426
+      },
+      "dependencies": [
+        "so:libc.musl-armhf.so.1"
+      ],
+      "provides": [
+        "so:liburing.so.1=1.0.7"
+      ]
+    },
+    "liburing-dev": {
+      "origin": "liburing",
+      "versions": {
+        "0.7-r0": 1608142426
+      },
+      "dependencies": [
+        "liburing=0.7-r0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:liburing=0.7"
+      ]
     }
   },
   "provide": {
@@ -61443,6 +61474,10 @@
       "libinih.so.0": {
         "package": "inih",
         "version": "0"
+      },
+      "liburing.so.1": {
+        "package": "liburing",
+        "version": "1.0.7"
       }
     }
   }

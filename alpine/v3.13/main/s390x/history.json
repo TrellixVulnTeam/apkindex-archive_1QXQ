@@ -53650,6 +53650,37 @@
       "versions": {
         "0.10-r3": 1600709960
       }
+    },
+    "liburing-doc": {
+      "origin": "liburing",
+      "versions": {
+        "0.7-r0": 1608142426
+      }
+    },
+    "liburing-dev": {
+      "origin": "liburing",
+      "versions": {
+        "0.7-r0": 1608142426
+      },
+      "dependencies": [
+        "liburing=0.7-r0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:liburing=0.7"
+      ]
+    },
+    "liburing": {
+      "origin": "liburing",
+      "versions": {
+        "0.7-r0": 1608142426
+      },
+      "dependencies": [
+        "so:libc.musl-s390x.so.1"
+      ],
+      "provides": [
+        "so:liburing.so.1=1.0.7"
+      ]
     }
   },
   "provide": {
@@ -59543,6 +59574,10 @@
       "libsfbpf.so.0": {
         "package": "daq-sfbpf",
         "version": "0.0.1"
+      },
+      "liburing.so.1": {
+        "package": "liburing",
+        "version": "1.0.7"
       }
     }
   }
