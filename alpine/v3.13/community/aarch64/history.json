@@ -120675,6 +120675,32 @@
       "dependencies": [
         "xorg-server"
       ]
+    },
+    "faudio": {
+      "origin": "faudio",
+      "versions": {
+        "21.01-r0": 1609636712
+      },
+      "dependencies": [
+        "so:libSDL2-2.0.so.0",
+        "so:libc.musl-aarch64.so.1"
+      ],
+      "provides": [
+        "so:libFAudio.so.0=0.21.01"
+      ]
+    },
+    "faudio-dev": {
+      "origin": "faudio",
+      "versions": {
+        "21.01-r0": 1609636712
+      },
+      "dependencies": [
+        "faudio=21.01-r0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:FAudio=0.21.01"
+      ]
     }
   },
   "provide": {
@@ -131314,6 +131340,10 @@
       "libgstzbar.so": {
         "package": "gst-plugins-bad",
         "version": "0"
+      },
+      "libFAudio.so.0": {
+        "package": "faudio",
+        "version": "0.21.01"
       }
     },
     "package": {

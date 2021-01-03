@@ -123411,6 +123411,32 @@
         "so:libblack_hole_solver.so.1=1.0.1",
         "cmd:black-hole-solve"
       ]
+    },
+    "faudio": {
+      "origin": "faudio",
+      "versions": {
+        "21.01-r0": 1609636712
+      },
+      "dependencies": [
+        "so:libSDL2-2.0.so.0",
+        "so:libc.musl-x86_64.so.1"
+      ],
+      "provides": [
+        "so:libFAudio.so.0=0.21.01"
+      ]
+    },
+    "faudio-dev": {
+      "origin": "faudio",
+      "versions": {
+        "21.01-r0": 1609636712
+      },
+      "dependencies": [
+        "faudio=21.01-r0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:FAudio=0.21.01"
+      ]
     }
   },
   "provide": {
@@ -134318,6 +134344,10 @@
       "libblack_hole_solver.so.1": {
         "package": "black-hole-solver",
         "version": "1.0.1"
+      },
+      "libFAudio.so.0": {
+        "package": "faudio",
+        "version": "0.21.01"
       }
     },
     "package": {
