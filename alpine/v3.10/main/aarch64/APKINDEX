@@ -6652,22 +6652,6 @@ m:Kiyoshi Aman <kiyoshi.aman@gmail.com>
 t:1557214668
 c:bbf8eeea84969a531fe38d03574977d317ea1049
 
-C:Q10RldH6QJ/pVe2b1zFpUG9KCnpTU=
-P:bind
-V:9.14.12-r0
-A:aarch64
-S:212939
-I:614400
-T:The ISC DNS server
-U:https://www.isc.org
-L:MPL-2.0
-o:bind
-m:tcely <bind+aports@tcely.33mail.com>
-t:1590058153
-c:54d9d7620b3c43d194b0db4a84b55f3def94cd75
-D:dns-root-hints /bin/sh bind-dnssec-root=9.14.12-r0 so:libbind9.so.1302 so:libc.musl-aarch64.so.1 so:libcap.so.2 so:libcrypto.so.1.1 so:libdns.so.1312 so:libfstrm.so.0 so:libisc.so.1311 so:libisccc.so.1302 so:libisccfg.so.1302 so:libjson-c.so.4 so:libldap-2.4.so.2 so:libns.so.1307 so:libprotobuf-c.so.1 so:libxml2.so.2 so:libz.so.1
-p:cmd:named cmd:named-checkconf cmd:rndc
-
 C:Q1knoXdm2WzkKuOe0V9T2hNl/cloA=
 P:findmnt
 V:2.33.2-r0
@@ -15537,6 +15521,22 @@ t:1557161312
 c:b617a9e0d3113bf85adc517991d0e7d16b9f7cba
 i:docs pcmciautils=018-r1
 
+C:Q1/aOrXdznqixsgNcMO3r2fqnyilo=
+P:bind-libs
+V:9.14.12-r1
+A:aarch64
+S:1154223
+I:2772992
+T:The ISC DNS server (libraries)
+U:https://www.isc.org
+L:MPL-2.0
+o:bind
+m:tcely <bind+aports@tcely.33mail.com>
+t:1609680331
+c:3d010a76e36ba44f4b3c7e9c2b40cc52fdc4ccc6
+D:so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libfstrm.so.0 so:libgssapi_krb5.so.2 so:libjson-c.so.4 so:libkrb5.so.3 so:libprotobuf-c.so.1 so:libxml2.so.2 so:libz.so.1
+p:so:libbind9.so.1302=1302.0.5 so:libdns.so.1312=1312.0.2 so:libirs.so.1301=1301.0.3 so:libisc.so.1311=1311.0.0 so:libisccc.so.1302=1302.0.0 so:libisccfg.so.1302=1302.0.4 so:libns.so.1307=1307.1.2
+
 C:Q1/v2meCstZsaSeiFFvfFL7e6a4Kw=
 P:py-tz
 V:2019.1-r0
@@ -15934,21 +15934,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1557140525
 c:f6caad866439aa8306e0ab8b25ba7788adc97897
 D:open-isns-lib=0.97-r4
-
-C:Q1GhtfJ6OppuaKBMIZz5f6aDhytcQ=
-P:bind-dnssec-root
-V:9.14.12-r0
-A:aarch64
-S:2589
-I:20480
-T:ISC BIND DNSSEC Root Keys
-U:https://www.isc.org
-L:MPL-2.0
-o:bind
-m:tcely <bind+aports@tcely.33mail.com>
-t:1590058152
-c:54d9d7620b3c43d194b0db4a84b55f3def94cd75
-D:dnssec-root
 
 C:Q1fOqrSBwwUyVgzpEus6NN6lZYVQk=
 P:py-idna
@@ -17742,6 +17727,21 @@ o:iso-codes
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557139266
 c:067448dfb7cb887e4d2efb9f31d16ed6cbc9e878
+
+C:Q17l0TRYRP9wd6D/13JsjraYxG6SY=
+P:bind-plugins
+V:9.14.12-r1
+A:aarch64
+S:7835
+I:36864
+T:The ISC DNS server plugins
+U:https://www.isc.org
+L:MPL-2.0
+o:bind
+m:tcely <bind+aports@tcely.33mail.com>
+t:1609680331
+c:3d010a76e36ba44f4b3c7e9c2b40cc52fdc4ccc6
+D:bind so:libc.musl-aarch64.so.1
 
 C:Q171SEHWQiydOsnN/9+p0JpPdoIHk=
 P:nrpe
@@ -24708,22 +24708,6 @@ c:9882c693c4691ac42e54fa7629fce2a6be605adc
 D:so:libc.musl-aarch64.so.1
 p:cmd:cmp cmd:diff cmd:diff3 cmd:sdiff
 
-C:Q1Wj3FefxRfP9AHJ4gEB1ocb9dzTg=
-P:bind-dnssec-tools
-V:9.14.12-r0
-A:aarch64
-S:115667
-I:368640
-T:Utilities for DNSSEC keys and DNS zone files management
-U:https://www.isc.org
-L:MPL-2.0
-o:bind
-m:tcely <bind+aports@tcely.33mail.com>
-t:1590058153
-c:54d9d7620b3c43d194b0db4a84b55f3def94cd75
-D:py3-bind=9.14.12-r0 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libdns.so.1312 so:libisc.so.1311
-p:cmd:dnssec-cds cmd:dnssec-checkds cmd:dnssec-coverage cmd:dnssec-dsfromkey cmd:dnssec-importkey cmd:dnssec-keyfromlabel cmd:dnssec-keygen cmd:dnssec-keymgr cmd:dnssec-revoke cmd:dnssec-settime cmd:dnssec-signzone cmd:dnssec-verify cmd:nsec3hash
-
 C:Q16gRXyiC1oUGeAPHZowERkmlmprs=
 P:tcpdump
 V:4.9.3-r1
@@ -25537,6 +25521,22 @@ t:1557154262
 c:460ac4dcc5eae75587a65e9acea9488aa9b37783
 D:lua5.1 so:libc.musl-aarch64.so.1 so:libsqlite3.so.0
 i:lua-sqlite=0.9.5-r2 lua5.1
+
+C:Q1BH80wre0EKbrCroHXeQJnRilzqs=
+P:bind-dnssec-tools
+V:9.14.12-r1
+A:aarch64
+S:115624
+I:368640
+T:Utilities for DNSSEC keys and DNS zone files management
+U:https://www.isc.org
+L:MPL-2.0
+o:bind
+m:tcely <bind+aports@tcely.33mail.com>
+t:1609680331
+c:3d010a76e36ba44f4b3c7e9c2b40cc52fdc4ccc6
+D:py3-bind=9.14.12-r1 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libdns.so.1312 so:libisc.so.1311
+p:cmd:dnssec-cds cmd:dnssec-checkds cmd:dnssec-coverage cmd:dnssec-dsfromkey cmd:dnssec-importkey cmd:dnssec-keyfromlabel cmd:dnssec-keygen cmd:dnssec-keymgr cmd:dnssec-revoke cmd:dnssec-settime cmd:dnssec-signzone cmd:dnssec-verify cmd:nsec3hash
 
 C:Q1eHaoN2/h2SBRscUbsarrx5+6U+k=
 P:swish-e-doc
@@ -27509,21 +27509,6 @@ m:ScrumpyJack <scrumpyjack@st.ilet.to>
 t:1557148998
 c:6e3af9edc71b5d04b7ca53588c7bf2590a015799
 i:docs fltk=1.3.4-r2
-
-C:Q19SGFDr0c8t6XdVQw9OZprLzwLiE=
-P:bind-openrc
-V:9.14.12-r0
-A:aarch64
-S:2366
-I:24576
-T:The ISC DNS server (OpenRC init scripts)
-U:https://www.isc.org
-L:MPL-2.0
-o:bind
-m:tcely <bind+aports@tcely.33mail.com>
-t:1590058151
-c:54d9d7620b3c43d194b0db4a84b55f3def94cd75
-i:openrc bind=9.14.12-r0
 
 C:Q11nb/kg+treSRuiSdc2WM8/9QLYI=
 P:py3-redis
@@ -35761,6 +35746,21 @@ c:730cdcef6901750f4029d4c3b8639ce02ee3ead1
 D:so:libc.musl-aarch64.so.1
 p:cmd:in.tftpd cmd:tftp
 
+C:Q1/YWY+qhIr/pxZRA2mJmfcpxKoMQ=
+P:py3-bind
+V:9.14.12-r1
+A:aarch64
+S:60081
+I:282624
+T:A module allowing rndc commands to be sent from Python programs
+U:https://www.isc.org
+L:MPL-2.0
+o:bind
+m:tcely <bind+aports@tcely.33mail.com>
+t:1609680331
+c:3d010a76e36ba44f4b3c7e9c2b40cc52fdc4ccc6
+D:py3-ply python3
+
 C:Q1EBD5/gqWi3q2KL2P6PghyLxQZek=
 P:perl-inline
 V:0.83-r2
@@ -36321,6 +36321,21 @@ t:1573634280
 c:ffbbc6be3c43f012643ee3b11591823aba729a1d
 p:linux-firmware-any
 
+C:Q13W0fwng4i9S8ZmImjBZ7xFRMvSs=
+P:bind-openrc
+V:9.14.12-r1
+A:aarch64
+S:2321
+I:24576
+T:The ISC DNS server (OpenRC init scripts)
+U:https://www.isc.org
+L:MPL-2.0
+o:bind
+m:tcely <bind+aports@tcely.33mail.com>
+t:1609680331
+c:3d010a76e36ba44f4b3c7e9c2b40cc52fdc4ccc6
+i:openrc bind=9.14.12-r1
+
 C:Q1gsmK4MV0CGL54CQoJ5ABn4mkaQc=
 P:libvirt-dev
 V:5.5.0-r2
@@ -36629,6 +36644,22 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1556723668
 c:a5f2e81e9591c721959d00a592aa2892ddf81ce7
 i:py-olefile=0.46-r1 python2
+
+C:Q1UTv77jhnU3pgyIxwIykLMKIyLj4=
+P:bind
+V:9.14.12-r1
+A:aarch64
+S:213002
+I:614400
+T:The ISC DNS server
+U:https://www.isc.org
+L:MPL-2.0
+o:bind
+m:tcely <bind+aports@tcely.33mail.com>
+t:1609680332
+c:3d010a76e36ba44f4b3c7e9c2b40cc52fdc4ccc6
+D:dns-root-hints /bin/sh bind-dnssec-root=9.14.12-r1 so:libbind9.so.1302 so:libc.musl-aarch64.so.1 so:libcap.so.2 so:libcrypto.so.1.1 so:libdns.so.1312 so:libfstrm.so.0 so:libisc.so.1311 so:libisccc.so.1302 so:libisccfg.so.1302 so:libjson-c.so.4 so:libldap-2.4.so.2 so:libns.so.1307 so:libprotobuf-c.so.1 so:libxml2.so.2 so:libz.so.1
+p:cmd:named cmd:named-checkconf cmd:rndc
 
 C:Q10nLn4VquxaNnc75h4AuekDlbH5Q=
 P:perl-file-which
@@ -38131,6 +38162,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1573682748
 c:855d7eeff4f62e630213bfe1110271dfed73e20b
 D:uwsgi so:libc.musl-aarch64.so.1
+
+C:Q1KjLsQhfxpvgpGzscmk7oKMPfpJg=
+P:bind-doc
+V:9.14.12-r1
+A:aarch64
+S:111601
+I:208896
+T:The ISC DNS server (documentation)
+U:https://www.isc.org
+L:MPL-2.0
+o:bind
+m:tcely <bind+aports@tcely.33mail.com>
+t:1609680331
+c:3d010a76e36ba44f4b3c7e9c2b40cc52fdc4ccc6
+i:docs bind=9.14.12-r1
 
 C:Q1XTBGstzDIOBmYJ6CT9X/pQRyy24=
 P:perl-business-hours-doc
@@ -43043,6 +43089,22 @@ t:1557061467
 c:ecce10225bfb48726286cbfbeb1b6acb34b9264e
 D:so:libc.musl-aarch64.so.1
 i:lua5.3 lua-iconv=7-r1
+
+C:Q1WsqGjqHtfcjz2Wxe6FtYCcocfbE=
+P:bind-tools
+V:9.14.12-r1
+A:aarch64
+S:216204
+I:581632
+T:The ISC DNS tools
+U:https://www.isc.org
+L:MPL-2.0
+o:bind
+m:tcely <bind+aports@tcely.33mail.com>
+t:1609680332
+c:3d010a76e36ba44f4b3c7e9c2b40cc52fdc4ccc6
+D:so:libbind9.so.1302 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libdns.so.1312 so:libirs.so.1301 so:libisc.so.1311 so:libisccfg.so.1302 so:libkrb5.so.3 so:libns.so.1307 so:libprotobuf-c.so.1
+p:cmd:arpaname cmd:ddns-confgen cmd:delv cmd:dig cmd:dnstap-read cmd:host cmd:mdig cmd:named-checkzone cmd:named-compilezone cmd:named-journalprint cmd:named-rrchecker cmd:nslookup cmd:nsupdate cmd:rndc-confgen cmd:tsig-keygen
 
 C:Q1S0v60jcRdgfKkdG0k/JCUzWyHBA=
 P:automake
@@ -52184,21 +52246,6 @@ t:1557185924
 c:b68b01d2080317ad96ad29c0ce31b88177600b5b
 D:perl perl-error perl-net-dns perl-uri perl-netaddr-ip perl-net-dns-resolver-programmable
 
-C:Q18HnWKbLU6BGs0pP+bDub2rijHM4=
-P:bind-plugins
-V:9.14.12-r0
-A:aarch64
-S:7860
-I:36864
-T:The ISC DNS server plugins
-U:https://www.isc.org
-L:MPL-2.0
-o:bind
-m:tcely <bind+aports@tcely.33mail.com>
-t:1590058153
-c:54d9d7620b3c43d194b0db4a84b55f3def94cd75
-D:bind so:libc.musl-aarch64.so.1
-
 C:Q10Q2wXtPHBukZSWcJrTzvZKACT7Q=
 P:acf-freeradius3
 V:0.3.1-r0
@@ -52705,21 +52752,6 @@ m:Francesco Colista <francesco.colista@gmail.com>
 t:1557146825
 c:33353a0d201a09b95671651d10bd27fd79e54f97
 D:perl perl-libwww
-
-C:Q1ZnPZuQ7054gFUsQECWxg0o5sD4c=
-P:bind-doc
-V:9.14.12-r0
-A:aarch64
-S:111852
-I:208896
-T:The ISC DNS server (documentation)
-U:https://www.isc.org
-L:MPL-2.0
-o:bind
-m:tcely <bind+aports@tcely.33mail.com>
-t:1590058147
-c:54d9d7620b3c43d194b0db4a84b55f3def94cd75
-i:docs bind=9.14.12-r0
 
 C:Q1bPPveUd13MT8qdKTl64aYQbNNqc=
 P:qemu-mipsn32el
@@ -53814,21 +53846,6 @@ o:perl-extutils-cchecker
 t:1559027923
 c:33f2f4f9467c4bc583e78f87e647415ce153395c
 D:perl-test-exception
-
-C:Q1KryRQn7QkQsYW4MPZ3PeTRGpn4Q=
-P:py3-bind
-V:9.14.12-r0
-A:aarch64
-S:60112
-I:282624
-T:A module allowing rndc commands to be sent from Python programs
-U:https://www.isc.org
-L:MPL-2.0
-o:bind
-m:tcely <bind+aports@tcely.33mail.com>
-t:1590058152
-c:54d9d7620b3c43d194b0db4a84b55f3def94cd75
-D:py3-ply python3
 
 C:Q1+7v14sof8mdS2ciYMf5se2PpNiU=
 P:perl-convert-color
@@ -63500,6 +63517,21 @@ c:a5ed25b5fb8b785cdfb72c294466b39347fc7a8f
 D:mesa so:libLLVM-8.so so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libglapi.so.0 so:libstdc++.so.6 so:libz.so.1
 p:so:libOSMesa.so.8=8.0.0
 
+C:Q1xsX0ZGvHO0VVm2heabkDyGpcb4Y=
+P:bind-dnssec-root
+V:9.14.12-r1
+A:aarch64
+S:2587
+I:20480
+T:ISC BIND DNSSEC Root Keys
+U:https://www.isc.org
+L:MPL-2.0
+o:bind
+m:tcely <bind+aports@tcely.33mail.com>
+t:1609680331
+c:3d010a76e36ba44f4b3c7e9c2b40cc52fdc4ccc6
+D:dnssec-root
+
 C:Q1Cm5WkxhDVvw18bHdmTPwdgNug24=
 P:git-fast-import
 V:2.22.4-r0
@@ -66232,22 +66264,6 @@ o:spice
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1559150163
 c:da40c61cddb4cc20ad75a8fc778f2e9336915f2f
-
-C:Q1NyVv7QZe6NJGhZnmxsq1Ts2w3eQ=
-P:bind-dev
-V:9.14.12-r0
-A:aarch64
-S:1965770
-I:7647232
-T:The ISC DNS server (development files)
-U:https://www.isc.org
-L:MPL-2.0
-o:bind
-m:tcely <bind+aports@tcely.33mail.com>
-t:1590058148
-c:54d9d7620b3c43d194b0db4a84b55f3def94cd75
-D:bind bind-plugins bind-tools bind-libs=9.14.12-r0
-p:cmd:bind9-config cmd:isc-config.sh
 
 C:Q1yJuLnexvqzsqLqcWwSP1599j6uo=
 P:font-misc-ethiopic
@@ -71155,6 +71171,22 @@ t:1559025635
 c:b518fdf1579ce9edef6a82c7a50e7ae3eb6db768
 i:docs execline=2.5.1.0-r1
 
+C:Q1qHPFmdItsskRz73Gp8YhdRRMybs=
+P:bind-dev
+V:9.14.12-r1
+A:aarch64
+S:1964497
+I:7647232
+T:The ISC DNS server (development files)
+U:https://www.isc.org
+L:MPL-2.0
+o:bind
+m:tcely <bind+aports@tcely.33mail.com>
+t:1609680331
+c:3d010a76e36ba44f4b3c7e9c2b40cc52fdc4ccc6
+D:bind bind-plugins bind-tools bind-libs=9.14.12-r1
+p:cmd:bind9-config cmd:isc-config.sh
+
 C:Q16XoPKjfo/hQCXHzW4Vcq7YVX2sI=
 P:perl-text-password-pronounceable-doc
 V:0.30-r1
@@ -71677,22 +71709,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557596059
 c:fe4c19e7c5c074364570c87081754dad299364b4
 D:so:libc.musl-aarch64.so.1
-
-C:Q1krhE9kLaIQ5Jau4K9dG/y4NbZas=
-P:bind-libs
-V:9.14.12-r0
-A:aarch64
-S:1154335
-I:2772992
-T:The ISC DNS server (libraries)
-U:https://www.isc.org
-L:MPL-2.0
-o:bind
-m:tcely <bind+aports@tcely.33mail.com>
-t:1590058150
-c:54d9d7620b3c43d194b0db4a84b55f3def94cd75
-D:so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libfstrm.so.0 so:libgssapi_krb5.so.2 so:libjson-c.so.4 so:libkrb5.so.3 so:libprotobuf-c.so.1 so:libxml2.so.2 so:libz.so.1
-p:so:libbind9.so.1302=1302.0.5 so:libdns.so.1312=1312.0.2 so:libirs.so.1301=1301.0.3 so:libisc.so.1311=1311.0.0 so:libisccc.so.1302=1302.0.0 so:libisccfg.so.1302=1302.0.4 so:libns.so.1307=1307.1.2
 
 C:Q1w3+Ml1F7lLUEq4PO8xY1H2SwIUw=
 P:py2-asn1crypto
@@ -73285,22 +73301,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557224305
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs ipvsadm=1.29-r0
-
-C:Q1dngrn/0x/10464Zqv3sfGzg440E=
-P:bind-tools
-V:9.14.12-r0
-A:aarch64
-S:216242
-I:581632
-T:The ISC DNS tools
-U:https://www.isc.org
-L:MPL-2.0
-o:bind
-m:tcely <bind+aports@tcely.33mail.com>
-t:1590058153
-c:54d9d7620b3c43d194b0db4a84b55f3def94cd75
-D:so:libbind9.so.1302 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libdns.so.1312 so:libirs.so.1301 so:libisc.so.1311 so:libisccfg.so.1302 so:libkrb5.so.3 so:libns.so.1307 so:libprotobuf-c.so.1
-p:cmd:arpaname cmd:ddns-confgen cmd:delv cmd:dig cmd:dnstap-read cmd:host cmd:mdig cmd:named-checkzone cmd:named-compilezone cmd:named-journalprint cmd:named-rrchecker cmd:nslookup cmd:nsupdate cmd:rndc-confgen cmd:tsig-keygen
 
 C:Q1txPgPx6o0v7u3ZsUKga2GncAdKg=
 P:py-crypto
