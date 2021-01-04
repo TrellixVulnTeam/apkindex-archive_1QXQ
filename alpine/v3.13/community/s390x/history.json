@@ -85612,6 +85612,117 @@
         "so:libaspell.so.15",
         "so:libc.musl-s390x.so.1"
       ]
+    },
+    "py3-zabbix": {
+      "origin": "py3-zabbix",
+      "versions": {
+        "0.5.4-r1": 1609756542
+      }
+    },
+    "yascreen-doc": {
+      "origin": "yascreen",
+      "versions": {
+        "1.85-r0": 1609757634
+      }
+    },
+    "svxlink-static": {
+      "origin": "svxlink",
+      "versions": {
+        "19.09.1-r1": 1609754382
+      }
+    },
+    "svxlink": {
+      "origin": "svxlink",
+      "versions": {
+        "19.09.1-r1": 1609754382
+      },
+      "dependencies": [
+        "/bin/sh",
+        "so:libasound.so.2",
+        "so:libc.musl-s390x.so.1",
+        "so:libcurl.so.4",
+        "so:libgcc_s.so.1",
+        "so:libgcrypt.so.20",
+        "so:libgsm.so.1",
+        "so:libpopt.so.0",
+        "so:libsigc-2.0.so.0",
+        "so:libspeex.so.1",
+        "so:libstdc++.so.6",
+        "so:libtcl8.6.so"
+      ],
+      "provides": [
+        "so:libasyncaudio.so.1.6=1.6.0",
+        "so:libasynccore.so.1.6=1.6.0",
+        "so:libasynccpp.so.1.6=1.6.0",
+        "so:libecholib.so.1.3=1.3.3",
+        "cmd:devcal",
+        "cmd:remotetrx",
+        "cmd:siglevdetcal",
+        "cmd:svxlink",
+        "cmd:svxlink_gpio_down",
+        "cmd:svxlink_gpio_up",
+        "cmd:svxreflector"
+      ]
+    },
+    "bpfmon-doc": {
+      "origin": "bpfmon",
+      "versions": {
+        "2.49-r0": 1609757635
+      }
+    },
+    "svxlink-dev": {
+      "origin": "svxlink",
+      "versions": {
+        "19.09.1-r1": 1609754382
+      },
+      "dependencies": [
+        "svxlink=19.09.1-r1"
+      ]
+    },
+    "yascreen-dev": {
+      "origin": "yascreen",
+      "versions": {
+        "1.85-r0": 1609757634
+      },
+      "dependencies": [
+        "pkgconfig",
+        "yascreen=1.85-r0"
+      ],
+      "provides": [
+        "pc:yascreen=1.85"
+      ]
+    },
+    "svxlink-doc": {
+      "origin": "svxlink",
+      "versions": {
+        "19.09.1-r1": 1609754382
+      }
+    },
+    "bpfmon": {
+      "origin": "bpfmon",
+      "versions": {
+        "2.49-r0": 1609757635
+      },
+      "dependencies": [
+        "so:libc.musl-s390x.so.1",
+        "so:libpcap.so.1",
+        "so:libyascreen.so.0"
+      ],
+      "provides": [
+        "cmd:bpfmon"
+      ]
+    },
+    "yascreen": {
+      "origin": "yascreen",
+      "versions": {
+        "1.85-r0": 1609757634
+      },
+      "dependencies": [
+        "so:libc.musl-s390x.so.1"
+      ],
+      "provides": [
+        "so:libyascreen.so.0=0.0.0"
+      ]
     }
   },
   "provide": {
@@ -94513,6 +94624,26 @@
       "libFAudio.so.0": {
         "package": "faudio",
         "version": "0.21.01"
+      },
+      "libasyncaudio.so.1.6": {
+        "package": "svxlink",
+        "version": "1.6.0"
+      },
+      "libasynccore.so.1.6": {
+        "package": "svxlink",
+        "version": "1.6.0"
+      },
+      "libasynccpp.so.1.6": {
+        "package": "svxlink",
+        "version": "1.6.0"
+      },
+      "libecholib.so.1.3": {
+        "package": "svxlink",
+        "version": "1.3.3"
+      },
+      "libyascreen.so.0": {
+        "package": "yascreen",
+        "version": "0.0.0"
       }
     }
   }
