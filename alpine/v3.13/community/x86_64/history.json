@@ -10867,10 +10867,11 @@
     "pipewire-dev": {
       "origin": "pipewire",
       "versions": {
-        "0.3.18-r0": 1609082507
+        "0.3.18-r0": 1609082507,
+        "0.3.18-r1": 1609874596
       },
       "dependencies": [
-        "pipewire=0.3.18-r0",
+        "pipewire=0.3.18-r1",
         "pkgconfig"
       ],
       "provides": [
@@ -11940,7 +11941,8 @@
     "appstream-lang": {
       "origin": "appstream",
       "versions": {
-        "0.12.11-r2": 1600081575
+        "0.12.11-r2": 1600081575,
+        "0.13.1-r0": 1609874876
       }
     },
     "py3-hpack": {
@@ -20057,7 +20059,8 @@
     "appstream-doc": {
       "origin": "appstream",
       "versions": {
-        "0.12.11-r2": 1600081575
+        "0.12.11-r2": 1600081575,
+        "0.13.1-r0": 1609874876
       }
     },
     "openblas-static": {
@@ -34124,7 +34127,8 @@
     "pipewire-doc": {
       "origin": "pipewire",
       "versions": {
-        "0.3.18-r0": 1609082507
+        "0.3.18-r0": 1609082507,
+        "0.3.18-r1": 1609874596
       }
     },
     "kaccounts-providers": {
@@ -49071,18 +49075,19 @@
     "appstream-dev": {
       "origin": "appstream",
       "versions": {
-        "0.12.11-r2": 1600081575
+        "0.12.11-r2": 1600081575,
+        "0.13.1-r0": 1609874876
       },
       "dependencies": [
-        "appstream-qt=0.12.11-r2",
-        "appstream=0.12.11-r2",
+        "appstream-qt=0.13.1-r0",
+        "appstream=0.13.1-r0",
         "pc:gio-2.0",
         "pc:glib-2.0>=2.58",
         "pc:gobject-2.0>=2.58",
         "pkgconfig"
       ],
       "provides": [
-        "pc:appstream=0.12.11"
+        "pc:appstream=0.13.1"
       ]
     },
     "linuxconsoletools-doc": {
@@ -66633,7 +66638,8 @@
     "pipewire": {
       "origin": "pipewire",
       "versions": {
-        "0.3.18-r0": 1609082507
+        "0.3.18-r0": 1609082507,
+        "0.3.18-r1": 1609874596
       },
       "dependencies": [
         "so:libasound.so.2",
@@ -66664,7 +66670,6 @@
         "so:libpipewire-module-portal.so=0",
         "so:libpipewire-module-profiler.so=0",
         "so:libpipewire-module-protocol-native.so=0",
-        "so:libpipewire-module-protocol-pulse.so=0",
         "so:libpipewire-module-rtkit.so=0",
         "so:libpipewire-module-session-manager.so=0",
         "so:libpipewire-module-spa-device-factory.so=0",
@@ -80908,13 +80913,16 @@
     "pipewire-pulse": {
       "origin": "pipewire",
       "versions": {
-        "0.3.18-r0": 1609082507
+        "0.3.18-r0": 1609082507,
+        "0.3.18-r1": 1609874596
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
+        "so:libdbus-1.so.3",
         "so:libpipewire-0.3.so.0"
       ],
       "provides": [
+        "so:libpipewire-module-protocol-pulse.so=0",
         "cmd:pipewire-pulse"
       ]
     },
@@ -91984,7 +91992,8 @@
     "appstream": {
       "origin": "appstream",
       "versions": {
-        "0.12.11-r2": 1600081575
+        "0.12.11-r2": 1600081575,
+        "0.13.1-r0": 1609874876
       },
       "dependencies": [
         "/bin/sh",
@@ -91999,7 +92008,7 @@
         "so:libyaml-0.so.2"
       ],
       "provides": [
-        "so:libappstream.so.4=0.12.11",
+        "so:libappstream.so.4=0.13.1",
         "cmd:appstreamcli"
       ]
     },
@@ -98571,7 +98580,8 @@
     "appstream-dbg": {
       "origin": "appstream",
       "versions": {
-        "0.12.11-r2": 1600081575
+        "0.12.11-r2": 1600081575,
+        "0.13.1-r0": 1609874876
       }
     },
     "just-zsh-completion": {
@@ -102851,7 +102861,8 @@
     "pipewire-jack": {
       "origin": "pipewire",
       "versions": {
-        "0.3.18-r0": 1609082507
+        "0.3.18-r0": 1609082507,
+        "0.3.18-r1": 1609874596
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
@@ -118797,7 +118808,8 @@
     "appstream-qt": {
       "origin": "appstream",
       "versions": {
-        "0.12.11-r2": 1600081575
+        "0.12.11-r2": 1600081575,
+        "0.13.1-r0": 1609874876
       },
       "dependencies": [
         "so:libQt5Core.so.5",
@@ -118810,7 +118822,7 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "so:libAppStreamQt.so.2=0.12.11"
+        "so:libAppStreamQt.so.2=0.13.1"
       ]
     },
     "salt-cloud": {
@@ -129934,7 +129946,7 @@
         "version": "0"
       },
       "libpipewire-module-protocol-pulse.so": {
-        "package": "pipewire",
+        "package": "pipewire-pulse",
         "version": "0"
       },
       "libpipewire-module-rtkit.so": {
@@ -132375,7 +132387,7 @@
       },
       "libappstream.so.4": {
         "package": "appstream",
-        "version": "0.12.11"
+        "version": "0.13.1"
       },
       "libhgfs.so.0": {
         "package": "open-vm-tools-hgfs",
@@ -134563,7 +134575,7 @@
       },
       "libAppStreamQt.so.2": {
         "package": "appstream-qt",
-        "version": "0.12.11"
+        "version": "0.13.1"
       },
       "libjson-glib-1.0.so.0": {
         "package": "json-glib",
