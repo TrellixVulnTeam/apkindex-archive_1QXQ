@@ -113457,6 +113457,26 @@
       "dependencies": [
         "/bin/sh"
       ]
+    },
+    "emscripten-fastcomp": {
+      "origin": "emscripten-fastcomp",
+      "versions": {
+        "1.39.0-r1": 1609815553
+      },
+      "dependencies": [
+        "python3",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "so:emscripten-fastcomp:BugpointPasses.so=0",
+        "so:emscripten-fastcomp:LLVMHello.so=0",
+        "so:emscripten-fastcomp:libLLVM-6.0.so=0",
+        "so:emscripten-fastcomp:libLTO.so.6=6.0.1",
+        "so:emscripten-fastcomp:libclang.so.6=6.0"
+      ]
     }
   },
   "provide": {
@@ -123444,6 +123464,26 @@
       "libyascreen.so.0": {
         "package": "yascreen",
         "version": "0.0.0"
+      },
+      "emscripten-fastcomp:BugpointPasses.so": {
+        "package": "emscripten-fastcomp",
+        "version": "0"
+      },
+      "emscripten-fastcomp:LLVMHello.so": {
+        "package": "emscripten-fastcomp",
+        "version": "0"
+      },
+      "emscripten-fastcomp:libLLVM-6.0.so": {
+        "package": "emscripten-fastcomp",
+        "version": "0"
+      },
+      "emscripten-fastcomp:libLTO.so.6": {
+        "package": "emscripten-fastcomp",
+        "version": "6.0.1"
+      },
+      "emscripten-fastcomp:libclang.so.6": {
+        "package": "emscripten-fastcomp",
+        "version": "6.0"
       }
     },
     "package": {
