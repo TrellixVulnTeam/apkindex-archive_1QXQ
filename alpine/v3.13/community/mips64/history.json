@@ -9720,7 +9720,8 @@
     "fluidsynth-dev": {
       "origin": "fluidsynth",
       "versions": {
-        "2.1.5-r0": 1600713066
+        "2.1.5-r0": 1600713066,
+        "2.1.6-r0": 1609866184
       },
       "dependencies": [
         "alsa-lib-dev",
@@ -9729,11 +9730,11 @@
         "libsndfile-dev",
         "pulseaudio-dev",
         "readline-dev",
-        "fluidsynth=2.1.5-r0",
+        "fluidsynth=2.1.6-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:fluidsynth=2.1.5"
+        "pc:fluidsynth=2.1.6"
       ]
     },
     "nethogs": {
@@ -11185,13 +11186,18 @@
     "catch2": {
       "origin": "catch2",
       "versions": {
-        "2.13.3-r0": 1604557440
+        "2.13.3-r0": 1604557440,
+        "2.13.4-r0": 1609866159
       },
       "dependencies": [
-        "pkgconfig"
+        "pkgconfig",
+        "so:libc.musl-mips64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
       ],
       "provides": [
-        "pc:catch2=2.13.3"
+        "so:libCatch2WithMain.so=0",
+        "pc:catch2=2.13.4"
       ]
     },
     "vifm-colors": {
@@ -20311,7 +20317,8 @@
     "fluidsynth": {
       "origin": "fluidsynth",
       "versions": {
-        "2.1.5-r0": 1600713066
+        "2.1.5-r0": 1600713066,
+        "2.1.6-r0": 1609866184
       },
       "dependencies": [
         "so:libasound.so.2",
@@ -20323,7 +20330,7 @@
         "so:libsndfile.so.1"
       ],
       "provides": [
-        "so:libfluidsynth.so.2=2.3.5",
+        "so:libfluidsynth.so.2=2.3.6",
         "cmd:fluidsynth"
       ]
     },
@@ -25967,7 +25974,8 @@
     "libphonenumber-static": {
       "origin": "libphonenumber",
       "versions": {
-        "8.12.14-r2": 1608257886
+        "8.12.14-r2": 1608257886,
+        "8.12.15-r0": 1609867237
       }
     },
     "php7-session": {
@@ -39712,7 +39720,8 @@
     "libphonenumber": {
       "origin": "libphonenumber",
       "versions": {
-        "8.12.14-r2": 1608257886
+        "8.12.14-r2": 1608257886,
+        "8.12.15-r0": 1609867237
       },
       "dependencies": [
         "so:libboost_thread.so.1.72.0",
@@ -59936,7 +59945,8 @@
     "fluidsynth-doc": {
       "origin": "fluidsynth",
       "versions": {
-        "2.1.5-r0": 1600713066
+        "2.1.5-r0": 1600713066,
+        "2.1.6-r0": 1609866184
       }
     },
     "x265-libs": {
@@ -74094,7 +74104,8 @@
     "catch2-doc": {
       "origin": "catch2",
       "versions": {
-        "2.13.3-r0": 1604557440
+        "2.13.3-r0": 1604557440,
+        "2.13.4-r0": 1609866159
       }
     },
     "you-get": {
@@ -74176,13 +74187,14 @@
     "libphonenumber-dev": {
       "origin": "libphonenumber",
       "versions": {
-        "8.12.14-r2": 1608257886
+        "8.12.14-r2": 1608257886,
+        "8.12.15-r0": 1609867237
       },
       "dependencies": [
         "boost-dev",
         "icu-dev",
         "protobuf-dev",
-        "libphonenumber=8.12.14-r2"
+        "libphonenumber=8.12.15-r0"
       ]
     },
     "sway-fish-completion": {
@@ -83211,7 +83223,7 @@
       },
       "libfluidsynth.so.2": {
         "package": "fluidsynth",
-        "version": "2.3.5"
+        "version": "2.3.6"
       },
       "libdroplet.so.0": {
         "package": "libdroplet",
@@ -86880,6 +86892,10 @@
       "libusbip.so.0": {
         "package": "usbip-utils",
         "version": "0.0.1"
+      },
+      "libCatch2WithMain.so": {
+        "package": "catch2",
+        "version": "0"
       }
     }
   }

@@ -4229,17 +4229,18 @@
     "libpinyin-dev": {
       "origin": "libpinyin",
       "versions": {
-        "2.4.92-r0": 1605202341
+        "2.4.92-r0": 1605202341,
+        "2.6.0-r0": 1609867246
       },
       "dependencies": [
         "db-dev",
-        "libpinyin=2.4.92-r0",
+        "libpinyin=2.6.0-r0",
         "pc:glib-2.0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libpinyin=2.4.92",
-        "pc:libzhuyin=2.4.92"
+        "pc:libpinyin=2.6.0",
+        "pc:libzhuyin=2.6.0"
       ]
     },
     "rtorrent-doc": {
@@ -5013,7 +5014,8 @@
     "catch2-doc": {
       "origin": "catch2",
       "versions": {
-        "2.13.3-r0": 1604557440
+        "2.13.3-r0": 1604557440,
+        "2.13.4-r0": 1609866159
       }
     },
     "perl-cryptx": {
@@ -7772,11 +7774,12 @@
     "kdsoap-dev": {
       "origin": "kdsoap",
       "versions": {
-        "1.9.1-r0": 1602177552
+        "1.9.1-r0": 1602177552,
+        "1.10.0-r0": 1609867418
       },
       "dependencies": [
         "qt5-qtbase-dev",
-        "kdsoap=1.9.1-r0"
+        "kdsoap=1.10.0-r0"
       ]
     },
     "imagemagick-dev": {
@@ -8390,7 +8393,8 @@
     "kdsoap-doc": {
       "origin": "kdsoap",
       "versions": {
-        "1.9.1-r0": 1602177552
+        "1.9.1-r0": 1602177552,
+        "1.10.0-r0": 1609867418
       }
     },
     "libdvdnav": {
@@ -14426,7 +14430,8 @@
     "fluidsynth-doc": {
       "origin": "fluidsynth",
       "versions": {
-        "2.1.5-r0": 1600713066
+        "2.1.5-r0": 1600713066,
+        "2.1.6-r0": 1609866184
       }
     },
     "php7-pecl-couchbase": {
@@ -18941,13 +18946,14 @@
     "libphonenumber-dev": {
       "origin": "libphonenumber",
       "versions": {
-        "8.12.14-r2": 1608257886
+        "8.12.14-r2": 1608257886,
+        "8.12.15-r0": 1609867237
       },
       "dependencies": [
         "boost-dev",
         "icu-dev",
         "protobuf-dev",
-        "libphonenumber=8.12.14-r2"
+        "libphonenumber=8.12.15-r0"
       ]
     },
     "libwps-doc": {
@@ -22466,7 +22472,8 @@
     "libpinyin-doc": {
       "origin": "libpinyin",
       "versions": {
-        "2.4.92-r0": 1605202341
+        "2.4.92-r0": 1605202341,
+        "2.6.0-r0": 1609867246
       }
     },
     "proftpd-mod_wrap2_redis": {
@@ -27106,7 +27113,8 @@
     "fluidsynth-dev": {
       "origin": "fluidsynth",
       "versions": {
-        "2.1.5-r0": 1600713066
+        "2.1.5-r0": 1600713066,
+        "2.1.6-r0": 1609866184
       },
       "dependencies": [
         "alsa-lib-dev",
@@ -27115,11 +27123,11 @@
         "libsndfile-dev",
         "pulseaudio-dev",
         "readline-dev",
-        "fluidsynth=2.1.5-r0",
+        "fluidsynth=2.1.6-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:fluidsynth=2.1.5"
+        "pc:fluidsynth=2.1.6"
       ]
     },
     "py3-unicodecsv-doc": {
@@ -31645,7 +31653,8 @@
     "libphonenumber": {
       "origin": "libphonenumber",
       "versions": {
-        "8.12.14-r2": 1608257886
+        "8.12.14-r2": 1608257886,
+        "8.12.15-r0": 1609867237
       },
       "dependencies": [
         "so:libboost_thread.so.1.72.0",
@@ -37507,7 +37516,8 @@
     "fluidsynth": {
       "origin": "fluidsynth",
       "versions": {
-        "2.1.5-r0": 1600713066
+        "2.1.5-r0": 1600713066,
+        "2.1.6-r0": 1609866184
       },
       "dependencies": [
         "so:libasound.so.2",
@@ -37519,7 +37529,7 @@
         "so:libsndfile.so.1"
       ],
       "provides": [
-        "so:libfluidsynth.so.2=2.3.5",
+        "so:libfluidsynth.so.2=2.3.6",
         "cmd:fluidsynth"
       ]
     },
@@ -37716,13 +37726,18 @@
     "catch2": {
       "origin": "catch2",
       "versions": {
-        "2.13.3-r0": 1604557440
+        "2.13.3-r0": 1604557440,
+        "2.13.4-r0": 1609866159
       },
       "dependencies": [
-        "pkgconfig"
+        "pkgconfig",
+        "so:libc.musl-s390x.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
       ],
       "provides": [
-        "pc:catch2=2.13.3"
+        "so:libCatch2WithMain.so=0",
+        "pc:catch2=2.13.4"
       ]
     },
     "pulseaudio-zsh-completion": {
@@ -40940,7 +40955,8 @@
     "libphonenumber-static": {
       "origin": "libphonenumber",
       "versions": {
-        "8.12.14-r2": 1608257886
+        "8.12.14-r2": 1608257886,
+        "8.12.15-r0": 1609867237
       }
     },
     "perl-crypt-openssl-verify-doc": {
@@ -62302,7 +62318,8 @@
     "libpinyin-static": {
       "origin": "libpinyin",
       "versions": {
-        "2.4.92-r0": 1605202341
+        "2.4.92-r0": 1605202341,
+        "2.6.0-r0": 1609867246
       }
     },
     "lua5.3-lunix": {
@@ -75841,7 +75858,8 @@
     "libpinyin": {
       "origin": "libpinyin",
       "versions": {
-        "2.4.92-r0": 1605202341
+        "2.4.92-r0": 1605202341,
+        "2.6.0-r0": 1609867246
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1",
@@ -76249,7 +76267,8 @@
     "kdsoap": {
       "origin": "kdsoap",
       "versions": {
-        "1.9.1-r0": 1602177552
+        "1.9.1-r0": 1602177552,
+        "1.10.0-r0": 1609867418
       },
       "dependencies": [
         "so:libQt5Core.so.5",
@@ -76260,8 +76279,8 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "so:libkdsoap-server.so.1=1.9.1",
-        "so:libkdsoap.so.1=1.9.1",
+        "so:libkdsoap-server.so.1=1.10.0",
+        "so:libkdsoap.so.1=1.10.0",
         "cmd:kdwsdl2cpp"
       ]
     },
@@ -91436,7 +91455,7 @@
       },
       "libfluidsynth.so.2": {
         "package": "fluidsynth",
-        "version": "2.3.5"
+        "version": "2.3.6"
       },
       "libfcft.so.3": {
         "package": "fcft",
@@ -94368,11 +94387,11 @@
       },
       "libkdsoap-server.so.1": {
         "package": "kdsoap",
-        "version": "1.9.1"
+        "version": "1.10.0"
       },
       "libkdsoap.so.1": {
         "package": "kdsoap",
-        "version": "1.9.1"
+        "version": "1.10.0"
       },
       "libexiv2.so.27": {
         "package": "exiv2",
@@ -94817,6 +94836,10 @@
       "libyascreen.so.0": {
         "package": "yascreen",
         "version": "0.0.0"
+      },
+      "libCatch2WithMain.so": {
+        "package": "catch2",
+        "version": "0"
       }
     }
   }

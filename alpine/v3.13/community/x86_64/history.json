@@ -31144,13 +31144,18 @@
     "catch2": {
       "origin": "catch2",
       "versions": {
-        "2.13.3-r0": 1604557440
+        "2.13.3-r0": 1604557440,
+        "2.13.4-r0": 1609866159
       },
       "dependencies": [
-        "pkgconfig"
+        "pkgconfig",
+        "so:libc.musl-x86_64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
       ],
       "provides": [
-        "pc:catch2=2.13.3"
+        "so:libCatch2WithMain.so=0",
+        "pc:catch2=2.13.4"
       ]
     },
     "nvme-cli-bash-completion": {
@@ -94398,7 +94403,8 @@
     "catch2-doc": {
       "origin": "catch2",
       "versions": {
-        "2.13.3-r0": 1604557440
+        "2.13.3-r0": 1604557440,
+        "2.13.4-r0": 1609866159
       }
     },
     "arpack-ilp64": {
@@ -134800,6 +134806,10 @@
       "libphobos2.so.0.95": {
         "package": "dmd",
         "version": "0.95.0"
+      },
+      "libCatch2WithMain.so": {
+        "package": "catch2",
+        "version": "0"
       }
     },
     "package": {
