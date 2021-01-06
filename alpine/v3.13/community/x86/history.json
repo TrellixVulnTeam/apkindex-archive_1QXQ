@@ -31189,7 +31189,8 @@
       "versions": {
         "0.3.18-r0": 1609082507,
         "0.3.18-r1": 1609874596,
-        "0.3.19-r0": 1609942727
+        "0.3.19-r0": 1609942727,
+        "0.3.19-r1": 1609970789
       },
       "dependencies": [
         "so:libasound.so.2",
@@ -31204,6 +31205,7 @@
         "so:libgstreamer-1.0.so.0",
         "so:libgstvideo-1.0.so.0",
         "so:libjack.so.0",
+        "so:libopenaptx.so.0",
         "so:libsbc.so.1",
         "so:libsndfile.so.1",
         "so:libudev.so.1",
@@ -31584,7 +31586,8 @@
     "prometheus-openrc": {
       "origin": "prometheus",
       "versions": {
-        "2.23.0-r0": 1606553159
+        "2.23.0-r0": 1606553159,
+        "2.24.0-r0": 1609971232
       }
     },
     "py3-padatious": {
@@ -48476,7 +48479,8 @@
     "prometheus": {
       "origin": "prometheus",
       "versions": {
-        "2.23.0-r0": 1606553159
+        "2.23.0-r0": 1606553159,
+        "2.24.0-r0": 1609971232
       },
       "dependencies": [
         "/bin/sh",
@@ -53373,7 +53377,8 @@
       "versions": {
         "0.3.18-r0": 1609082507,
         "0.3.18-r1": 1609874596,
-        "0.3.19-r0": 1609942727
+        "0.3.19-r0": 1609942727,
+        "0.3.19-r1": 1609970789
       },
       "dependencies": [
         "so:libc.musl-x86.so.1",
@@ -57397,7 +57402,8 @@
       "versions": {
         "0.3.18-r0": 1609082507,
         "0.3.18-r1": 1609874596,
-        "0.3.19-r0": 1609942727
+        "0.3.19-r0": 1609942727,
+        "0.3.19-r1": 1609970789
       },
       "dependencies": [
         "so:libc.musl-x86.so.1",
@@ -88074,10 +88080,11 @@
       "versions": {
         "0.3.18-r0": 1609082507,
         "0.3.18-r1": 1609874596,
-        "0.3.19-r0": 1609942727
+        "0.3.19-r0": 1609942727,
+        "0.3.19-r1": 1609970789
       },
       "dependencies": [
-        "pipewire=0.3.19-r0",
+        "pipewire=0.3.19-r1",
         "pkgconfig"
       ],
       "provides": [
@@ -102307,7 +102314,8 @@
       "versions": {
         "0.3.18-r0": 1609082507,
         "0.3.18-r1": 1609874596,
-        "0.3.19-r0": 1609942727
+        "0.3.19-r0": 1609942727,
+        "0.3.19-r1": 1609970789
       }
     },
     "lua5.1-luasrcdiet": {
@@ -119878,6 +119886,33 @@
       "versions": {
         "1.0.2-r1": 1609944886
       }
+    },
+    "libopenaptx-dev": {
+      "origin": "libopenaptx",
+      "versions": {
+        "0.2.0-r0": 1609970789
+      },
+      "dependencies": [
+        "libopenaptx=0.2.0-r0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:libopenaptx=0.2.0"
+      ]
+    },
+    "libopenaptx": {
+      "origin": "libopenaptx",
+      "versions": {
+        "0.2.0-r0": 1609970789
+      },
+      "dependencies": [
+        "so:libc.musl-x86.so.1"
+      ],
+      "provides": [
+        "so:libopenaptx.so.0=0.2.0",
+        "cmd:openaptxdec",
+        "cmd:openaptxenc"
+      ]
     }
   },
   "provide": {
@@ -130241,6 +130276,10 @@
       "libCatch2WithMain.so": {
         "package": "catch2",
         "version": "0"
+      },
+      "libopenaptx.so.0": {
+        "package": "libopenaptx",
+        "version": "0.2.0"
       }
     },
     "package": {

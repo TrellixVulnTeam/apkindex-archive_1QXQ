@@ -18210,7 +18210,8 @@
     "prometheus": {
       "origin": "prometheus",
       "versions": {
-        "2.23.0-r0": 1606553159
+        "2.23.0-r0": 1606553159,
+        "2.24.0-r0": 1609971232
       },
       "dependencies": [
         "/bin/sh",
@@ -66860,7 +66861,8 @@
     "prometheus-openrc": {
       "origin": "prometheus",
       "versions": {
-        "2.23.0-r0": 1606553159
+        "2.23.0-r0": 1606553159,
+        "2.24.0-r0": 1609971232
       }
     },
     "perl-module-runtime-conflicts-doc": {
@@ -86097,6 +86099,33 @@
       "provides": [
         "cmd:prosody-filer"
       ]
+    },
+    "libopenaptx-dev": {
+      "origin": "libopenaptx",
+      "versions": {
+        "0.2.0-r0": 1609970789
+      },
+      "dependencies": [
+        "libopenaptx=0.2.0-r0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:libopenaptx=0.2.0"
+      ]
+    },
+    "libopenaptx": {
+      "origin": "libopenaptx",
+      "versions": {
+        "0.2.0-r0": 1609970789
+      },
+      "dependencies": [
+        "so:libc.musl-s390x.so.1"
+      ],
+      "provides": [
+        "so:libopenaptx.so.0=0.2.0",
+        "cmd:openaptxdec",
+        "cmd:openaptxenc"
+      ]
     }
   },
   "provide": {
@@ -95026,6 +95055,10 @@
       "libCatch2WithMain.so": {
         "package": "catch2",
         "version": "0"
+      },
+      "libopenaptx.so.0": {
+        "package": "libopenaptx",
+        "version": "0.2.0"
       }
     }
   }
