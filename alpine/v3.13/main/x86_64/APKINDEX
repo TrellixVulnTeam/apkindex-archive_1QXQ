@@ -7559,6 +7559,22 @@ c:f4033db02a96fe22c13be652f3ac890ecf537687
 D:so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libldap_r-2.4.so.2 so:libssl.so.1.1
 p:so:libpq.so.5=5.13
 
+C:Q1Osu2184IH6VsEI/0H5DjB5uL/t0=
+P:harfbuzz-icu
+V:2.7.4-r1
+A:x86_64
+S:4662
+I:28672
+T:Harfbuzz ICU support library
+U:https://freedesktop.org/wiki/Software/HarfBuzz
+L:MIT
+o:harfbuzz
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1610161592
+c:0a50c7c0b8659667be0cd0dfc0fdb4e63d920826
+D:so:libc.musl-x86_64.so.1 so:libharfbuzz.so.0 so:libicuuc.so.67
+p:so:libharfbuzz-icu.so.0=0.20704.0
+
 C:Q1S1mglrB0xEmuJ9WXBGvVDXnsfCw=
 P:compiler-rt-static
 V:10.0.1-r0
@@ -8449,6 +8465,22 @@ m:Francesco Colista <francesco.colista@gmail.com>
 t:1600709955
 c:f66fe3a46fa8b8da55617e1002edcbf0f263f9ba
 
+C:Q1jJwiTh1NlIguIyqjUbTLEQh5uP0=
+P:harfbuzz
+V:2.7.4-r1
+A:x86_64
+S:550183
+I:1327104
+T:Text shaping library
+U:https://freedesktop.org/wiki/Software/HarfBuzz
+L:MIT
+o:harfbuzz
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1610161592
+c:0a50c7c0b8659667be0cd0dfc0fdb4e63d920826
+D:so:libc.musl-x86_64.so.1 so:libfreetype.so.6 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgraphite2.so.3
+p:so:libharfbuzz-gobject.so.0=0.20704.0 so:libharfbuzz-subset.so.0=0.20704.0 so:libharfbuzz.so.0=0.20704.0
+
 C:Q1D3GhIFoUfco5nfUNYB63b/2ir/I=
 P:procps-doc
 V:3.3.16-r0
@@ -8828,21 +8860,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1600709979
 c:a116f864cd839b9a818fdeceb3826189f3e9fec1
 i:docs perl-text-reform=1.20-r2
-
-C:Q1+oH8/qq6PT5YXsEfUQoPfBQJkeM=
-P:harfbuzz-doc
-V:2.7.4-r0
-A:x86_64
-S:237493
-I:2523136
-T:Text shaping library (documentation)
-U:https://freedesktop.org/wiki/Software/HarfBuzz
-L:MIT
-o:harfbuzz
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1609082166
-c:6a00fae94419b50569e854c050f6c6cd0eb9c580
-i:docs harfbuzz=2.7.4-r0
 
 C:Q1bKUpjx13gEEP+hVYqt+coeXBv7w=
 P:paxmark
@@ -9659,20 +9676,6 @@ c:69ac0711d35c69e5dc385d337b83c51c9978f62c
 k:900
 D:wireguard-tools
 i:ifupdown-ng wireguard-tools
-
-C:Q17MT5Nd4uWNC98jSU+LX5DteJFOQ=
-P:harfbuzz-static
-V:2.7.4-r0
-A:x86_64
-S:946841
-I:3940352
-T:Text shaping library (static libraries)
-U:https://freedesktop.org/wiki/Software/HarfBuzz
-L:MIT
-o:harfbuzz
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1609082166
-c:6a00fae94419b50569e854c050f6c6cd0eb9c580
 
 C:Q1/hOGY3326GOO+FXCp6FUQdlxjN0=
 P:zstd-static
@@ -22339,6 +22342,22 @@ t:1605818601
 c:5fe4763bd2a736d3d7eab29f1b8ad91e842990f8
 D:kamailio so:libc.musl-x86_64.so.1 so:liblua.so.5
 
+C:Q1wYIJJAnf+qtWJbAAxwubBGsveb0=
+P:harfbuzz-dev
+V:2.7.4-r1
+A:x86_64
+S:131593
+I:1298432
+T:Text shaping library (development files)
+U:https://freedesktop.org/wiki/Software/HarfBuzz
+L:MIT
+o:harfbuzz
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1610161592
+c:0a50c7c0b8659667be0cd0dfc0fdb4e63d920826
+D:harfbuzz-icu=2.7.4-r1 harfbuzz=2.7.4-r1 pc:freetype2 pc:glib-2.0 pc:gobject-2.0 pc:graphite2 pc:icu-uc pkgconfig
+p:pc:harfbuzz-gobject=2.7.4 pc:harfbuzz-icu=2.7.4 pc:harfbuzz-subset=2.7.4 pc:harfbuzz=2.7.4
+
 C:Q142a+aoLctSLQgi0VOid1/wOQqEo=
 P:perl-html-quoted-doc
 V:0.04-r2
@@ -22369,22 +22388,6 @@ t:1603630651
 c:6e308be9954daacfe6df507ec19fb99eeef71b30
 D:so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:libclamunrar.so.9=9.0.5 so:libclamunrar_iface.so.9=9.0.5
-
-C:Q1RFQFvbiXBeKoIH95FJ7phbFwYU8=
-P:harfbuzz-icu
-V:2.7.4-r0
-A:x86_64
-S:4665
-I:28672
-T:Harfbuzz ICU support library
-U:https://freedesktop.org/wiki/Software/HarfBuzz
-L:MIT
-o:harfbuzz
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1609082166
-c:6a00fae94419b50569e854c050f6c6cd0eb9c580
-D:so:libc.musl-x86_64.so.1 so:libharfbuzz.so.0 so:libicuuc.so.67
-p:so:libharfbuzz-icu.so.0=0.20704.0
 
 C:Q1hiSJg+a3qlpbVOB8/YzZrxctHn0=
 P:chrony
@@ -34537,6 +34540,22 @@ c:943de8c0a9e6a3457265f3150d86a8f6e16f28cb
 D:so:libc.musl-x86_64.so.1
 p:so:libconfig.so.11=11.0.2
 
+C:Q1E4SWt5UWC2ZO+GlZ/qMlli6NVTk=
+P:harfbuzz-utils
+V:2.7.4-r1
+A:x86_64
+S:71064
+I:212992
+T:Text shaping library (utilities)
+U:https://freedesktop.org/wiki/Software/HarfBuzz
+L:MIT
+o:harfbuzz
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1610161592
+c:0a50c7c0b8659667be0cd0dfc0fdb4e63d920826
+D:so:libc.musl-x86_64.so.1 so:libcairo.so.2 so:libfreetype.so.6 so:libglib-2.0.so.0 so:libharfbuzz-subset.so.0 so:libharfbuzz.so.0 so:libstdc++.so.6
+p:cmd:hb-ot-shape-closure cmd:hb-shape cmd:hb-subset cmd:hb-view
+
 C:Q1vD3OOkWUUSyW0dN5w0/LROemJKU=
 P:libxkbcommon
 V:1.0.3-r0
@@ -38187,6 +38206,20 @@ c:dba5821d653d6b762e22ac858ca07a88cfce087a
 k:100
 D:lua5.1 lua5.1-libs=5.1.5-r7 pkgconfig
 p:lua-dev pc:lua5.1=5.1.5 pc:lua=5.1.5
+
+C:Q1VeiTfU8wcGwt7ZR2CTEEPG+8xxI=
+P:harfbuzz-static
+V:2.7.4-r1
+A:x86_64
+S:946822
+I:3940352
+T:Text shaping library (static libraries)
+U:https://freedesktop.org/wiki/Software/HarfBuzz
+L:MIT
+o:harfbuzz
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1610161592
+c:0a50c7c0b8659667be0cd0dfc0fdb4e63d920826
 
 C:Q152jEVXe0w2YH/FZhe4ovfXEnj6Q=
 P:flac-dev
@@ -44300,22 +44333,6 @@ t:1604162421
 c:2602d94c342c77385a528acc726dfd9b837977b6
 D:libssh2=1.9.0-r1 pc:libcrypto pc:libssl pc:zlib pkgconfig
 p:pc:libssh2=1.9.0
-
-C:Q1+SOgS3CY7Zp0EFCBubtJjfsniXI=
-P:harfbuzz
-V:2.7.4-r0
-A:x86_64
-S:550190
-I:1327104
-T:Text shaping library
-U:https://freedesktop.org/wiki/Software/HarfBuzz
-L:MIT
-o:harfbuzz
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1609082166
-c:6a00fae94419b50569e854c050f6c6cd0eb9c580
-D:so:libc.musl-x86_64.so.1 so:libfreetype.so.6 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgraphite2.so.3
-p:so:libharfbuzz-gobject.so.0=0.20704.0 so:libharfbuzz-subset.so.0=0.20704.0 so:libharfbuzz.so.0=0.20704.0
 
 C:Q1CptFUZ0jYcbsSdYeWr5zdfASG9M=
 P:perl-fcgi
@@ -52432,22 +52449,6 @@ c:b80c50b21349ae925eb7fdfc084f419b199a8ddb
 D:json-c=0.15-r1 pkgconfig
 p:pc:json-c=0.15
 
-C:Q1YC8OymDnjLF4Tf8dNRplNWIXNNw=
-P:harfbuzz-dev
-V:2.7.4-r0
-A:x86_64
-S:201735
-I:1503232
-T:Text shaping library (development files)
-U:https://freedesktop.org/wiki/Software/HarfBuzz
-L:MIT
-o:harfbuzz
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1609082166
-c:6a00fae94419b50569e854c050f6c6cd0eb9c580
-D:harfbuzz-icu=2.7.4-r0 harfbuzz=2.7.4-r0 pc:freetype2 pc:glib-2.0 pc:gobject-2.0 pc:graphite2 pc:icu-uc pkgconfig so:libc.musl-x86_64.so.1 so:libcairo.so.2 so:libfreetype.so.6 so:libglib-2.0.so.0 so:libharfbuzz-subset.so.0 so:libharfbuzz.so.0 so:libstdc++.so.6
-p:pc:harfbuzz-gobject=2.7.4 pc:harfbuzz-icu=2.7.4 pc:harfbuzz-subset=2.7.4 pc:harfbuzz=2.7.4 cmd:hb-ot-shape-closure cmd:hb-shape cmd:hb-subset cmd:hb-view
-
 C:Q1cxv5oSln0WUGBdqNAj+hKX1cMvg=
 P:dev86
 V:0.16.21-r1
@@ -56595,6 +56596,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1567526663
 c:792fb875f317d992027428297ea0103d82b98373
 i:docs libnl3=3.5.0-r0
+
+C:Q1PAl+lI18htxyQcmstRNSIFiVVwY=
+P:harfbuzz-doc
+V:2.7.4-r1
+A:x86_64
+S:237468
+I:2523136
+T:Text shaping library (documentation)
+U:https://freedesktop.org/wiki/Software/HarfBuzz
+L:MIT
+o:harfbuzz
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1610161592
+c:0a50c7c0b8659667be0cd0dfc0fdb4e63d920826
+i:docs harfbuzz=2.7.4-r1
 
 C:Q1/fJSUoNQUbWkvr1EoKQ9Pqw8HGY=
 P:argon2-libs
