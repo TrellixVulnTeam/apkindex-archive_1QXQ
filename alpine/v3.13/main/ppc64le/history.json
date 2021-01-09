@@ -55608,6 +55608,109 @@
       "provides": [
         "cmd:alpine-make-rootfs"
       ]
+    },
+    "knot-libs-static": {
+      "origin": "knot",
+      "versions": {
+        "3.0.3-r0": 1610201838
+      }
+    },
+    "knot-libs": {
+      "origin": "knot",
+      "versions": {
+        "3.0.3-r0": 1610201838
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1",
+        "so:libgnutls.so.30",
+        "so:liblmdb.so.0"
+      ],
+      "provides": [
+        "so:libdnssec.so.8=8.0.0",
+        "so:libknot.so.11=11.0.0",
+        "so:libzscanner.so.3=3.0.0"
+      ]
+    },
+    "knot": {
+      "origin": "knot",
+      "versions": {
+        "3.0.3-r0": 1610201838
+      },
+      "dependencies": [
+        "/bin/sh",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcap-ng.so.0",
+        "so:libdnssec.so.8",
+        "so:libedit.so.0",
+        "so:libknot.so.11",
+        "so:liblmdb.so.0",
+        "so:liburcu.so.6",
+        "so:libzscanner.so.3"
+      ],
+      "provides": [
+        "cmd:knotc",
+        "cmd:knotd"
+      ]
+    },
+    "knot-dev": {
+      "origin": "knot",
+      "versions": {
+        "3.0.3-r0": 1610201838
+      },
+      "dependencies": [
+        "knot",
+        "knot-libs-static",
+        "knot-utils",
+        "knot-libs=3.0.3-r0",
+        "pc:gnutls>=3.3",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:knotd=3.0.3",
+        "pc:libdnssec=3.0.3",
+        "pc:libknot=3.0.3",
+        "pc:libzscanner=3.0.3"
+      ]
+    },
+    "knot-openrc": {
+      "origin": "knot",
+      "versions": {
+        "3.0.3-r0": 1610201838
+      }
+    },
+    "knot-doc": {
+      "origin": "knot",
+      "versions": {
+        "3.0.3-r0": 1610201838
+      }
+    },
+    "knot-utils": {
+      "origin": "knot",
+      "versions": {
+        "3.0.3-r0": 1610201838
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1",
+        "so:libdnssec.so.8",
+        "so:libgnutls.so.30",
+        "so:libidn.so.12",
+        "so:libknot.so.11",
+        "so:liblmdb.so.0",
+        "so:libnghttp2.so.14",
+        "so:liburcu.so.6",
+        "so:libzscanner.so.3"
+      ],
+      "provides": [
+        "cmd:kcatalogprint",
+        "cmd:kdig",
+        "cmd:keymgr",
+        "cmd:khost",
+        "cmd:kjournalprint",
+        "cmd:knsec3hash",
+        "cmd:knsupdate",
+        "cmd:kzonecheck",
+        "cmd:kzonesign"
+      ]
     }
   },
   "provide": {
@@ -61641,6 +61744,18 @@
       "libns.so.1606": {
         "package": "bind-libs",
         "version": "1606.0.1"
+      },
+      "libdnssec.so.8": {
+        "package": "knot-libs",
+        "version": "8.0.0"
+      },
+      "libknot.so.11": {
+        "package": "knot-libs",
+        "version": "11.0.0"
+      },
+      "libzscanner.so.3": {
+        "package": "knot-libs",
+        "version": "3.0.0"
       }
     }
   }

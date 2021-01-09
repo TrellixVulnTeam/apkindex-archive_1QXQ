@@ -89326,7 +89326,8 @@
     "perl-xml-sig-doc": {
       "origin": "perl-xml-sig",
       "versions": {
-        "0.33-r0": 1607370768
+        "0.33-r0": 1607370768,
+        "0.36-r0": 1610204315
       }
     },
     "libwpebackend-fdo": {
@@ -91493,7 +91494,8 @@
     "perl-xml-sig": {
       "origin": "perl-xml-sig",
       "versions": {
-        "0.33-r0": 1607370768
+        "0.33-r0": 1607370768,
+        "0.36-r0": 1610204315
       },
       "dependencies": [
         "perl",
@@ -114477,6 +114479,163 @@
       "provides": [
         "cmd:fisher"
       ]
+    },
+    "knot-resolver-mod-http": {
+      "origin": "knot-resolver",
+      "versions": {
+        "5.2.1-r0": 1610201956
+      },
+      "dependencies": [
+        "knot-resolver=5.2.1-r0",
+        "lua5.1-mmdb"
+      ]
+    },
+    "knot-resolver": {
+      "origin": "knot-resolver",
+      "versions": {
+        "5.2.1-r0": 1610201956
+      },
+      "dependencies": [
+        "dns-root-hints",
+        "dnssec-root",
+        "lua5.1-cqueues",
+        "lua5.1-http",
+        "/bin/sh",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcap-ng.so.0",
+        "so:libdnssec.so.8",
+        "so:libedit.so.0",
+        "so:libgcc_s.so.1",
+        "so:libgnutls.so.30",
+        "so:libknot.so.11",
+        "so:liblmdb.so.0",
+        "so:libluajit-5.1.so.2",
+        "so:libstdc++.so.6",
+        "so:libuv.so.1",
+        "so:libzscanner.so.3"
+      ],
+      "provides": [
+        "so:libkres.so.9=9",
+        "cmd:kres-cache-gc",
+        "cmd:kresc",
+        "cmd:kresd"
+      ]
+    },
+    "ruby-i18n": {
+      "origin": "ruby-i18n",
+      "versions": {
+        "1.8.7-r0": 1610206573
+      },
+      "dependencies": [
+        "ruby",
+        "ruby-concurrent-ruby",
+        "ruby-json"
+      ]
+    },
+    "knot-resolver-libs-static": {
+      "origin": "knot-resolver",
+      "versions": {
+        "5.2.1-r0": 1610201956
+      },
+      "dependencies": [
+        "knot-resolver-dev=5.2.1-r0"
+      ]
+    },
+    "knot-resolver-dbg": {
+      "origin": "knot-resolver",
+      "versions": {
+        "5.2.1-r0": 1610201956
+      },
+      "dependencies": [
+        "dns-root-hints",
+        "dnssec-root",
+        "lua5.1-cqueues",
+        "lua5.1-http"
+      ]
+    },
+    "ruby-concurrent-ruby-ext": {
+      "origin": "ruby-concurrent-ruby",
+      "versions": {
+        "1.1.6-r1": 1610206238
+      },
+      "dependencies": [
+        "ruby-concurrent-ruby=1.1.6-r1",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libruby.so.2.7"
+      ]
+    },
+    "knot-resolver-mod-dnstap": {
+      "origin": "knot-resolver",
+      "versions": {
+        "5.2.1-r0": 1610201956
+      },
+      "dependencies": [
+        "knot-resolver=5.2.1-r0",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libfstrm.so.0",
+        "so:libprotobuf-c.so.1"
+      ]
+    },
+    "knot-resolver-openrc": {
+      "origin": "knot-resolver",
+      "versions": {
+        "5.2.1-r0": 1610201956
+      },
+      "dependencies": [
+        "/bin/sh"
+      ]
+    },
+    "knot-resolver-dev": {
+      "origin": "knot-resolver",
+      "versions": {
+        "5.2.1-r0": 1610201956
+      },
+      "dependencies": [
+        "knot-dev>=2.8.0",
+        "libedit-dev",
+        "libuv-dev>=1.7",
+        "luajit-dev>=2.0",
+        "fstrm-dev",
+        "protobuf-dev",
+        "protobuf-c-dev",
+        "knot-resolver=5.2.1-r0",
+        "pc:gnutls",
+        "pc:libdnssec>=2.8",
+        "pc:libknot>=2.8",
+        "pc:libuv>=1.7",
+        "pc:lmdb",
+        "pc:luajit",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:libkres=5.2.1"
+      ]
+    },
+    "ruby-enum": {
+      "origin": "ruby-enum",
+      "versions": {
+        "0.8.0-r1": 1610206581
+      },
+      "dependencies": [
+        "ruby",
+        "ruby-i18n"
+      ]
+    },
+    "ruby-concurrent-ruby": {
+      "origin": "ruby-concurrent-ruby",
+      "versions": {
+        "1.1.6-r1": 1610206238
+      },
+      "dependencies": [
+        "ruby",
+        "ruby-etc"
+      ]
+    },
+    "knot-resolver-doc": {
+      "origin": "knot-resolver",
+      "versions": {
+        "5.2.1-r0": 1610201956
+      }
     }
   },
   "provide": {
@@ -124520,6 +124679,10 @@
       "libre2.so.9": {
         "package": "re2",
         "version": "9.0.0"
+      },
+      "libkres.so.9": {
+        "package": "knot-resolver",
+        "version": "9"
       }
     },
     "package": {
