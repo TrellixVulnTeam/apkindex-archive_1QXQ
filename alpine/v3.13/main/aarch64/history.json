@@ -713,14 +713,15 @@
     "coreutils": {
       "origin": "coreutils",
       "versions": {
-        "8.32-r1": 1603660004
+        "8.32-r1": 1603660004,
+        "8.32-r2": 1610310490
       },
       "dependencies": [
         "/bin/sh",
         "so:libacl.so.1",
         "so:libattr.so.1",
         "so:libc.musl-aarch64.so.1",
-        "so:libutmps.so.0.0"
+        "so:libutmps.so.0.1"
       ],
       "provides": [
         "cmd:[",
@@ -2183,7 +2184,8 @@
       "origin": "unbound",
       "versions": {
         "1.13.0-r0": 1607008283,
-        "1.13.0-r1": 1610106232
+        "1.13.0-r1": 1610106232,
+        "1.13.0-r2": 1610315120
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
@@ -3264,13 +3266,14 @@
     "skalibs": {
       "origin": "skalibs",
       "versions": {
-        "2.9.3.0-r1": 1602858476
+        "2.9.3.0-r1": 1602858476,
+        "2.10.0.0-r0": 1610310435
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1"
       ],
       "provides": [
-        "so:libskarnet.so.2.9=2.9.3.0"
+        "so:libskarnet.so.2.10=2.10.0.0"
       ]
     },
     "musl-nscd-doc": {
@@ -3882,7 +3885,8 @@
     "s6-rc-doc": {
       "origin": "s6-rc",
       "versions": {
-        "0.5.2.0-r0": 1601982926
+        "0.5.2.0-r0": 1601982926,
+        "0.5.2.1-r0": 1610310484
       }
     },
     "eggdrop-logs2html": {
@@ -5019,17 +5023,18 @@
     "s6": {
       "origin": "s6",
       "versions": {
-        "2.9.2.0-r1": 1602858476
+        "2.9.2.0-r1": 1602858476,
+        "2.10.0.0-r0": 1610310475
       },
       "dependencies": [
         "s6-ipcserver",
         "/bin/sh",
         "so:libc.musl-aarch64.so.1",
-        "so:libexecline.so.2.6",
-        "so:libskarnet.so.2.9"
+        "so:libexecline.so.2.7",
+        "so:libskarnet.so.2.10"
       ],
       "provides": [
-        "so:libs6.so.2.9=2.9.2.0",
+        "so:libs6.so.2.10=2.10.0.0",
         "cmd:s6-accessrules-cdb-from-fs",
         "cmd:s6-accessrules-fs-from-cdb",
         "cmd:s6-cleanfifodir",
@@ -5072,12 +5077,14 @@
         "cmd:s6-svlisten",
         "cmd:s6-svlisten1",
         "cmd:s6-svok",
+        "cmd:s6-svperms",
         "cmd:s6-svscan",
         "cmd:s6-svscanctl",
         "cmd:s6-svstat",
         "cmd:s6-svwait",
         "cmd:s6-tai64n",
         "cmd:s6-tai64nlocal",
+        "cmd:s6-usertree-maker",
         "cmd:s6lockd",
         "cmd:ucspilogd"
       ]
@@ -6730,7 +6737,8 @@
       "origin": "unbound",
       "versions": {
         "1.13.0-r0": 1607008283,
-        "1.13.0-r1": 1610106232
+        "1.13.0-r1": 1610106232,
+        "1.13.0-r2": 1610315120
       },
       "dependencies": [
         "expat-dev",
@@ -6739,7 +6747,7 @@
         "pc:libssl",
         "pc:python3",
         "pkgconfig",
-        "unbound-libs=1.13.0-r1"
+        "unbound-libs=1.13.0-r2"
       ],
       "provides": [
         "pc:libunbound=1.13.0"
@@ -6842,10 +6850,11 @@
     "libutempter-dev": {
       "origin": "libutempter",
       "versions": {
-        "1.2.1-r1": 1603660004
+        "1.2.1-r1": 1603660004,
+        "1.2.1-r2": 1610314625
       },
       "dependencies": [
-        "libutempter=1.2.1-r1"
+        "libutempter=1.2.1-r2"
       ]
     },
     "uwsgi-ugreen": {
@@ -7783,10 +7792,11 @@
     "s6-networking-dev": {
       "origin": "s6-networking",
       "versions": {
-        "2.3.2.0-r0": 1601982927
+        "2.3.2.0-r0": 1601982927,
+        "2.4.0.0-r0": 1610310481
       },
       "dependencies": [
-        "s6-networking=2.3.2.0-r0"
+        "s6-networking=2.4.0.0-r0"
       ]
     },
     "lua5.1-sqlite": {
@@ -13380,7 +13390,8 @@
     "execline-static": {
       "origin": "execline",
       "versions": {
-        "2.6.1.1-r0": 1601982926
+        "2.6.1.1-r0": 1601982926,
+        "2.7.0.0-r0": 1610310472
       }
     },
     "sc": {
@@ -13866,18 +13877,19 @@
     "s6-networking": {
       "origin": "s6-networking",
       "versions": {
-        "2.3.2.0-r0": 1601982927
+        "2.3.2.0-r0": 1601982927,
+        "2.4.0.0-r0": 1610310481
       },
       "dependencies": [
         "so:libbearssl.so.0",
         "so:libc.musl-aarch64.so.1",
-        "so:libs6.so.2.9",
+        "so:libs6.so.2.10",
         "so:libs6dns.so.2.3",
-        "so:libskarnet.so.2.9"
+        "so:libskarnet.so.2.10"
       ],
       "provides": [
-        "so:libs6net.so.2.3=2.3.2.0",
-        "so:libsbearssl.so.2.3=2.3.2.0",
+        "so:libs6net.so.2.4=2.4.0.0",
+        "so:libsbearssl.so.2.4=2.4.0.0",
         "cmd:minidentd",
         "cmd:s6-clockadd",
         "cmd:s6-clockview",
@@ -13896,9 +13908,13 @@
         "cmd:s6-tcpserver6-socketbinder",
         "cmd:s6-tcpserver6d",
         "cmd:s6-tlsc",
+        "cmd:s6-tlsc-io",
         "cmd:s6-tlsclient",
         "cmd:s6-tlsd",
-        "cmd:s6-tlsserver"
+        "cmd:s6-tlsd-io",
+        "cmd:s6-tlsserver",
+        "cmd:s6-ucspitlsc",
+        "cmd:s6-ucspitlsd"
       ]
     },
     "lua5.2-dbi-sqlite3": {
@@ -14119,10 +14135,11 @@
     "s6-dev": {
       "origin": "s6",
       "versions": {
-        "2.9.2.0-r1": 1602858476
+        "2.9.2.0-r1": 1602858476,
+        "2.10.0.0-r0": 1610310475
       },
       "dependencies": [
-        "s6=2.9.2.0-r1"
+        "s6=2.10.0.0-r0"
       ]
     },
     "ldb-doc": {
@@ -15002,7 +15019,8 @@
       "origin": "unbound",
       "versions": {
         "1.13.0-r0": 1607008283,
-        "1.13.0-r1": 1610106232
+        "1.13.0-r1": 1610106232,
+        "1.13.0-r2": 1610315120
       },
       "dependencies": [
         "dns-root-hints",
@@ -15701,7 +15719,8 @@
       "origin": "unbound",
       "versions": {
         "1.13.0-r0": 1607008283,
-        "1.13.0-r1": 1610106232
+        "1.13.0-r1": 1610106232,
+        "1.13.0-r2": 1610315120
       },
       "dependencies": [
         "/bin/sh",
@@ -15906,7 +15925,8 @@
     "s6-dns-doc": {
       "origin": "s6-dns",
       "versions": {
-        "2.3.3.0-r0": 1601982927
+        "2.3.3.0-r0": 1601982927,
+        "2.3.4.0-r0": 1610310480
       }
     },
     "tinyproxy-openrc": {
@@ -16645,16 +16665,17 @@
     "utmps": {
       "origin": "utmps",
       "versions": {
-        "0.0.3.2-r1": 1603660004
+        "0.0.3.2-r1": 1603660004,
+        "0.1.0.0-r0": 1610310469
       },
       "dependencies": [
         "s6-ipcserver",
         "/bin/sh",
         "so:libc.musl-aarch64.so.1",
-        "so:libskarnet.so.2.9"
+        "so:libskarnet.so.2.10"
       ],
       "provides": [
-        "so:libutmps.so.0.0=0.0.3.2",
+        "so:libutmps.so.0.1=0.1.0.0",
         "cmd:utmps-utmpd",
         "cmd:utmps-wtmpd"
       ]
@@ -17338,7 +17359,8 @@
     "skalibs-doc": {
       "origin": "skalibs",
       "versions": {
-        "2.9.3.0-r1": 1602858476
+        "2.9.3.0-r1": 1602858476,
+        "2.10.0.0-r0": 1610310435
       }
     },
     "git-cvs": {
@@ -17667,7 +17689,8 @@
     "skalibs-static": {
       "origin": "skalibs",
       "versions": {
-        "2.9.3.0-r1": 1602858476
+        "2.9.3.0-r1": 1602858476,
+        "2.10.0.0-r0": 1610310435
       }
     },
     "fts": {
@@ -18743,7 +18766,8 @@
     "s6-networking-doc": {
       "origin": "s6-networking",
       "versions": {
-        "2.3.2.0-r0": 1601982927
+        "2.3.2.0-r0": 1601982927,
+        "2.4.0.0-r0": 1610310481
       }
     },
     "perl-convert-binhex-doc": {
@@ -19038,10 +19062,11 @@
     "s6-linux-init-dev": {
       "origin": "s6-linux-init",
       "versions": {
-        "1.0.5.0-r0": 1604738051
+        "1.0.5.0-r0": 1604738051,
+        "1.0.6.0-r0": 1610310477
       },
       "dependencies": [
-        "s6-linux-init=1.0.5.0-r0"
+        "s6-linux-init=1.0.6.0-r0"
       ]
     },
     "perl-test-output": {
@@ -19128,7 +19153,8 @@
     "s6-linux-init-doc": {
       "origin": "s6-linux-init",
       "versions": {
-        "1.0.5.0-r0": 1604738051
+        "1.0.5.0-r0": 1604738051,
+        "1.0.6.0-r0": 1610310477
       }
     },
     "mercurial-bash-completion": {
@@ -19827,7 +19853,8 @@
     "libutempter-doc": {
       "origin": "libutempter",
       "versions": {
-        "1.2.1-r1": 1603660004
+        "1.2.1-r1": 1603660004,
+        "1.2.1-r2": 1610314625
       }
     },
     "dovecot-fts-solr": {
@@ -20362,10 +20389,11 @@
     "s6-rc-dev": {
       "origin": "s6-rc",
       "versions": {
-        "0.5.2.0-r0": 1601982926
+        "0.5.2.0-r0": 1601982926,
+        "0.5.2.1-r0": 1610310484
       },
       "dependencies": [
-        "s6-rc=0.5.2.0-r0"
+        "s6-rc=0.5.2.1-r0"
       ]
     },
     "perl-lwp-mediatypes-doc": {
@@ -23470,7 +23498,8 @@
     "utmps-openrc": {
       "origin": "utmps",
       "versions": {
-        "0.0.3.2-r1": 1603660004
+        "0.0.3.2-r1": 1603660004,
+        "0.1.0.0-r0": 1610310469
       }
     },
     "uwsgi-nagios": {
@@ -24874,7 +24903,8 @@
       "origin": "unbound",
       "versions": {
         "1.13.0-r0": 1607008283,
-        "1.13.0-r1": 1610106232
+        "1.13.0-r1": 1610106232,
+        "1.13.0-r2": 1610315120
       },
       "dependencies": [
         "dns-root-hints",
@@ -25608,14 +25638,15 @@
     "skalibs-dev": {
       "origin": "skalibs",
       "versions": {
-        "2.9.3.0-r1": 1602858476
+        "2.9.3.0-r1": 1602858476,
+        "2.10.0.0-r0": 1610310435
       },
       "dependencies": [
         "pkgconfig",
-        "skalibs=2.9.3.0-r1"
+        "skalibs=2.10.0.0-r0"
       ],
       "provides": [
-        "pc:skalibs=2.9.3.0"
+        "pc:skalibs=2.10.0.0"
       ]
     },
     "ppp-doc": {
@@ -27758,7 +27789,8 @@
     "s6-rc-static": {
       "origin": "s6-rc",
       "versions": {
-        "0.5.2.0-r0": 1601982926
+        "0.5.2.0-r0": 1601982926,
+        "0.5.2.1-r0": 1610310484
       }
     },
     "fping-doc": {
@@ -29476,7 +29508,8 @@
     "coreutils-doc": {
       "origin": "coreutils",
       "versions": {
-        "8.32-r1": 1603660004
+        "8.32-r1": 1603660004,
+        "8.32-r2": 1610310490
       }
     },
     "lua5.2-openrc": {
@@ -30546,7 +30579,8 @@
       "origin": "unbound",
       "versions": {
         "1.13.0-r0": 1607008283,
-        "1.13.0-r1": 1610106232
+        "1.13.0-r1": 1610106232,
+        "1.13.0-r2": 1610315120
       }
     },
     "apache2-mod-wsgi-doc": {
@@ -30592,11 +30626,12 @@
     "s6-portable-utils": {
       "origin": "s6-portable-utils",
       "versions": {
-        "2.2.3.0-r0": 1601982927
+        "2.2.3.0-r0": 1601982927,
+        "2.2.3.1-r0": 1610310486
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
-        "so:libskarnet.so.2.9"
+        "so:libskarnet.so.2.10"
       ],
       "provides": [
         "cmd:s6-basename",
@@ -31082,12 +31117,13 @@
     "libutempter": {
       "origin": "libutempter",
       "versions": {
-        "1.2.1-r1": 1603660004
+        "1.2.1-r1": 1603660004,
+        "1.2.1-r2": 1610314625
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
-        "so:libskarnet.so.2.9",
-        "so:libutmps.so.0.0"
+        "so:libskarnet.so.2.10",
+        "so:libutmps.so.0.1"
       ],
       "provides": [
         "so:libutempter.so.0=1.2.1"
@@ -33658,7 +33694,8 @@
     "s6-static": {
       "origin": "s6",
       "versions": {
-        "2.9.2.0-r1": 1602858476
+        "2.9.2.0-r1": 1602858476,
+        "2.10.0.0-r0": 1610310475
       }
     },
     "macifrename-openrc": {
@@ -34483,10 +34520,11 @@
     "s6-dns-dev": {
       "origin": "s6-dns",
       "versions": {
-        "2.3.3.0-r0": 1601982927
+        "2.3.3.0-r0": 1601982927,
+        "2.3.4.0-r0": 1610310480
       },
       "dependencies": [
-        "s6-dns=2.3.3.0-r0"
+        "s6-dns=2.3.4.0-r0"
       ]
     },
     "ncurses-libs": {
@@ -36302,7 +36340,8 @@
     "bwm-ng": {
       "origin": "bwm-ng",
       "versions": {
-        "0.6.2-r0": 1566207564
+        "0.6.2-r0": 1566207564,
+        "0.6.3-r0": 1610312686
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
@@ -37480,7 +37519,8 @@
     "s6-openrc": {
       "origin": "s6",
       "versions": {
-        "2.9.2.0-r1": 1602858476
+        "2.9.2.0-r1": 1602858476,
+        "2.10.0.0-r0": 1610310475
       }
     },
     "perl-uri": {
@@ -38339,10 +38379,11 @@
     "execline-dev": {
       "origin": "execline",
       "versions": {
-        "2.6.1.1-r0": 1601982926
+        "2.6.1.1-r0": 1601982926,
+        "2.7.0.0-r0": 1610310472
       },
       "dependencies": [
-        "execline=2.6.1.1-r0"
+        "execline=2.7.0.0-r0"
       ]
     },
     "dhcp-doc": {
@@ -38440,7 +38481,8 @@
     "s6-doc": {
       "origin": "s6",
       "versions": {
-        "2.9.2.0-r1": 1602858476
+        "2.9.2.0-r1": 1602858476,
+        "2.10.0.0-r0": 1610310475
       }
     },
     "varnish-dbg": {
@@ -38828,15 +38870,16 @@
     "utmps-dev": {
       "origin": "utmps",
       "versions": {
-        "0.0.3.2-r1": 1603660004
+        "0.0.3.2-r1": 1603660004,
+        "0.1.0.0-r0": 1610310469
       },
       "dependencies": [
         "pc:skalibs",
         "pkgconfig",
-        "utmps=0.0.3.2-r1"
+        "utmps=0.1.0.0-r0"
       ],
       "provides": [
-        "pc:utmps=0.0.3.2"
+        "pc:utmps=0.1.0.0"
       ]
     },
     "lua5.3-filesize": {
@@ -38889,7 +38932,8 @@
     "s6-networking-static": {
       "origin": "s6-networking",
       "versions": {
-        "2.3.2.0-r0": 1601982927
+        "2.3.2.0-r0": 1601982927,
+        "2.4.0.0-r0": 1610310481
       }
     },
     "nghttp2-doc": {
@@ -40081,7 +40125,8 @@
     "utmps-static": {
       "origin": "utmps",
       "versions": {
-        "0.0.3.2-r1": 1603660004
+        "0.0.3.2-r1": 1603660004,
+        "0.1.0.0-r0": 1610310469
       }
     },
     "unzip-doc": {
@@ -41287,7 +41332,8 @@
       "origin": "unbound",
       "versions": {
         "1.13.0-r0": 1607008283,
-        "1.13.0-r1": 1610106232
+        "1.13.0-r1": 1610106232,
+        "1.13.0-r2": 1610315120
       }
     },
     "avfs": {
@@ -41436,11 +41482,12 @@
     "s6-ipcserver": {
       "origin": "s6",
       "versions": {
-        "2.9.2.0-r1": 1602858476
+        "2.9.2.0-r1": 1602858476,
+        "2.10.0.0-r0": 1610310475
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
-        "so:libskarnet.so.2.9"
+        "so:libskarnet.so.2.10"
       ],
       "provides": [
         "cmd:s6-applyuidgid",
@@ -43679,16 +43726,17 @@
     "s6-rc": {
       "origin": "s6-rc",
       "versions": {
-        "0.5.2.0-r0": 1601982926
+        "0.5.2.0-r0": 1601982926,
+        "0.5.2.1-r0": 1610310484
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
-        "so:libexecline.so.2.6",
-        "so:libs6.so.2.9",
-        "so:libskarnet.so.2.9"
+        "so:libexecline.so.2.7",
+        "so:libs6.so.2.10",
+        "so:libskarnet.so.2.10"
       ],
       "provides": [
-        "so:libs6rc.so.0.5=0.5.2.0",
+        "so:libs6rc.so.0.5=0.5.2.1",
         "cmd:s6-rc",
         "cmd:s6-rc-bundle",
         "cmd:s6-rc-compile",
@@ -46359,17 +46407,18 @@
     "s6-dns": {
       "origin": "s6-dns",
       "versions": {
-        "2.3.3.0-r0": 1601982927
+        "2.3.3.0-r0": 1601982927,
+        "2.3.4.0-r0": 1610310480
       },
       "dependencies": [
         "skalibs",
         "so:libc.musl-aarch64.so.1",
-        "so:libskarnet.so.2.9"
+        "so:libskarnet.so.2.10"
       ],
       "provides": [
-        "so:libdcache.so.2.3=2.3.3.0",
-        "so:libs6dns.so.2.3=2.3.3.0",
-        "so:libskadns.so.2.3=2.3.3.0",
+        "so:libdcache.so.2.3=2.3.4.0",
+        "so:libs6dns.so.2.3=2.3.4.0",
+        "so:libskadns.so.2.3=2.3.4.0",
         "cmd:s6-dnsip",
         "cmd:s6-dnsip4",
         "cmd:s6-dnsip4-filter",
@@ -46940,11 +46989,12 @@
     "s6-linux-utils": {
       "origin": "s6-linux-utils",
       "versions": {
-        "2.5.1.3-r0": 1601982927
+        "2.5.1.3-r0": 1601982927,
+        "2.5.1.4-r0": 1610310488
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
-        "so:libskarnet.so.2.9"
+        "so:libskarnet.so.2.10"
       ],
       "provides": [
         "cmd:s6-chroot",
@@ -47111,14 +47161,15 @@
     "execline": {
       "origin": "execline",
       "versions": {
-        "2.6.1.1-r0": 1601982926
+        "2.6.1.1-r0": 1601982926,
+        "2.7.0.0-r0": 1610310472
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
-        "so:libskarnet.so.2.9"
+        "so:libskarnet.so.2.10"
       ],
       "provides": [
-        "so:libexecline.so.2.6=2.6.1.1",
+        "so:libexecline.so.2.7=2.7.0.0",
         "cmd:background",
         "cmd:backtick",
         "cmd:cd",
@@ -48866,7 +48917,8 @@
     "s6-linux-init-static": {
       "origin": "s6-linux-init",
       "versions": {
-        "1.0.5.0-r0": 1604738051
+        "1.0.5.0-r0": 1604738051,
+        "1.0.6.0-r0": 1610310477
       }
     },
     "font-cursor-misc": {
@@ -49712,20 +49764,22 @@
     "s6-linux-init": {
       "origin": "s6-linux-init",
       "versions": {
-        "1.0.5.0-r0": 1604738051
+        "1.0.5.0-r0": 1604738051,
+        "1.0.6.0-r0": 1610310477
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
-        "so:libs6.so.2.9",
-        "so:libskarnet.so.2.9"
+        "so:libs6.so.2.10",
+        "so:libskarnet.so.2.10"
       ],
       "provides": [
-        "so:libs6_linux_init.so.1.0=1.0.5.0",
+        "so:libs6_linux_init.so.1.0=1.0.6.0",
         "cmd:s6-linux-init",
         "cmd:s6-linux-init-echo",
         "cmd:s6-linux-init-hpr",
         "cmd:s6-linux-init-logouthookd",
         "cmd:s6-linux-init-maker",
+        "cmd:s6-linux-init-nuke",
         "cmd:s6-linux-init-shutdown",
         "cmd:s6-linux-init-shutdownd",
         "cmd:s6-linux-init-telinit",
@@ -50622,7 +50676,8 @@
       "origin": "unbound",
       "versions": {
         "1.13.0-r0": 1607008283,
-        "1.13.0-r1": 1610106232
+        "1.13.0-r1": 1610106232,
+        "1.13.0-r2": 1610315120
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
@@ -51976,7 +52031,8 @@
     "utmps-doc": {
       "origin": "utmps",
       "versions": {
-        "0.0.3.2-r1": 1603660004
+        "0.0.3.2-r1": 1603660004,
+        "0.1.0.0-r0": 1610310469
       }
     },
     "mesa-vulkan-ati": {
@@ -52654,7 +52710,8 @@
     "bwm-ng-doc": {
       "origin": "bwm-ng",
       "versions": {
-        "0.6.2-r0": 1566207564
+        "0.6.2-r0": 1566207564,
+        "0.6.3-r0": 1610312686
       }
     },
     "hiredis": {
@@ -52776,7 +52833,8 @@
     "s6-dns-static": {
       "origin": "s6-dns",
       "versions": {
-        "2.3.3.0-r0": 1601982927
+        "2.3.3.0-r0": 1601982927,
+        "2.3.4.0-r0": 1610310480
       }
     },
     "iproute2": {
@@ -54876,7 +54934,8 @@
     "execline-doc": {
       "origin": "execline",
       "versions": {
-        "2.6.1.1-r0": 1601982926
+        "2.6.1.1-r0": 1601982926,
+        "2.7.0.0-r0": 1610310472
       }
     },
     "ncdu-doc": {
@@ -55205,7 +55264,8 @@
     "s6-linux-utils-doc": {
       "origin": "s6-linux-utils",
       "versions": {
-        "2.5.1.3-r0": 1601982927
+        "2.5.1.3-r0": 1601982927,
+        "2.5.1.4-r0": 1610310488
       }
     },
     "openssh-keysign": {
@@ -55409,7 +55469,8 @@
     "s6-portable-utils-doc": {
       "origin": "s6-portable-utils",
       "versions": {
-        "2.2.3.0-r0": 1601982927
+        "2.2.3.0-r0": 1601982927,
+        "2.2.3.1-r0": 1610310486
       }
     },
     "boost-libs": {
@@ -61236,7 +61297,7 @@
       },
       "libs6rc.so.0.5": {
         "package": "s6-rc",
-        "version": "0.5.2.0"
+        "version": "0.5.2.1"
       },
       "libmpfr.so.6": {
         "package": "mpfr4",
@@ -61448,15 +61509,15 @@
       },
       "libdcache.so.2.3": {
         "package": "s6-dns",
-        "version": "2.3.3.0"
+        "version": "2.3.4.0"
       },
       "libs6dns.so.2.3": {
         "package": "s6-dns",
-        "version": "2.3.3.0"
+        "version": "2.3.4.0"
       },
       "libskadns.so.2.3": {
         "package": "s6-dns",
-        "version": "2.3.3.0"
+        "version": "2.3.4.0"
       },
       "libusb-0.1.so.4": {
         "package": "libusb-compat",
@@ -61716,7 +61777,7 @@
       },
       "libs6_linux_init.so.1.0": {
         "package": "s6-linux-init",
-        "version": "1.0.5.0"
+        "version": "1.0.6.0"
       },
       "libpcre32.so.0": {
         "package": "libpcre32",
@@ -62485,6 +62546,30 @@
       "libns.so.1606": {
         "package": "bind-libs",
         "version": "1606.0.1"
+      },
+      "libskarnet.so.2.10": {
+        "package": "skalibs",
+        "version": "2.10.0.0"
+      },
+      "libs6net.so.2.4": {
+        "package": "s6-networking",
+        "version": "2.4.0.0"
+      },
+      "libsbearssl.so.2.4": {
+        "package": "s6-networking",
+        "version": "2.4.0.0"
+      },
+      "libs6.so.2.10": {
+        "package": "s6",
+        "version": "2.10.0.0"
+      },
+      "libutmps.so.0.1": {
+        "package": "utmps",
+        "version": "0.1.0.0"
+      },
+      "libexecline.so.2.7": {
+        "package": "execline",
+        "version": "2.7.0.0"
       }
     },
     "package": {
