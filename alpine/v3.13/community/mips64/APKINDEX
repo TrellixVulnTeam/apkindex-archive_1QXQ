@@ -6420,22 +6420,6 @@ c:211a7af7fb70c76c84868401fe3c915f3a8c024d
 D:qt5-qtbase-sqlite qt5-qtbase-odbc qt5-qtbase-postgresql qt5-qtbase-mysql qt5-qtbase-tds qt5-qtbase-x11 qt5-qtbase-dbg dbus-dev fontconfig-dev freetype-dev glib-dev libice-dev libpng-dev libsm-dev libx11-dev libxext-dev mesa-dev openssl-dev perl sqlite-dev zlib-dev pkgconfig qt5-qtbase-x11=5.15.2-r0 qt5-qtbase=5.15.2-r0 so:libQt5Core.so.5 so:libQt5DBus.so.5 so:libc.musl-mips64.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libz.so.1
 p:pc:Qt5Concurrent=5.15.2 pc:Qt5Core=5.15.2 pc:Qt5DBus=5.15.2 pc:Qt5Gui=5.15.2 pc:Qt5Network=5.15.2 pc:Qt5OpenGL=5.15.2 pc:Qt5OpenGLExtensions=5.15.2 pc:Qt5PrintSupport=5.15.2 pc:Qt5Sql=5.15.2 pc:Qt5Test=5.15.2 pc:Qt5Widgets=5.15.2 pc:Qt5Xml=5.15.2 cmd:fixqt4headers-qt5.pl cmd:moc-qt5 cmd:qdbuscpp2xml-qt5 cmd:qdbusxml2cpp-qt5 cmd:qlalr-qt5 cmd:qmake-qt5 cmd:qvkgen-qt5 cmd:rcc-qt5 cmd:syncqt-qt5.pl cmd:tracegen-qt5 cmd:uic-qt5
 
-C:Q1DkwHllPEpKVVWKOtDaa+/rgKz2k=
-P:ndctl
-V:71.1-r0
-A:mips64
-S:97062
-I:327680
-T:Utility library for managing the libnvdimm (non-volatile memory device) sub-system in the Linux kernel
-U:https://github.com/pmem/ndctl
-L:GPL-2.0-only LGPL-2.1-only
-o:ndctl
-m:Breno Leitao <breno.leitao@gmail.com>
-t:1609138451
-c:4c2866215bd5d3b4e500e184174054c1b53dfcea
-D:libuuid json-c kmod so:libc.musl-mips64.so.1 so:libdaxctl.so.1 so:libjson-c.so.5 so:libkeyutils.so.1 so:libndctl.so.6 so:libuuid.so.1
-p:cmd:daxctl cmd:ndctl
-
 C:Q1DiBPp7FyAnrxY4v/7TmfV3dcFMQ=
 P:nextcloud19-files_trashbin
 V:19.0.6-r0
@@ -6959,6 +6943,20 @@ t:1610296600
 c:6857a92e1c2ec97ec3bc84d135c0fd513118a380
 D:so:libKF5Archive.so.5 so:libQt5Core.so.5 so:libQt5Gui.so.5 so:libc.musl-mips64.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:libKPimPkPass.so.5=5.16.1
+
+C:Q1mwkV3u30QnAf24kzlKAzbGdey38=
+P:ndctl-bash-completion
+V:71.1-r1
+A:mips64
+S:5061
+I:36864
+T:Bash completion for ndctl
+U:https://github.com/pmem/ndctl
+L:GPL-2.0-only LGPL-2.1-only
+o:ndctl
+t:1610480010
+c:b8cffab83f467adb57523991a16c5774d5f7a1d0
+i:ndctl=71.1-r1 bash-completion
 
 C:Q1/S929puNkZJLO92Q1Wi43XRMIT4=
 P:pass-doc
@@ -9803,6 +9801,21 @@ t:1610125902
 c:2d45bc2839a0009f77016e5f96a83e215544729b
 D:so:libc.musl-mips64.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:libre2 so:libre2.so.8=8.0.0
+
+C:Q1ZS3HaXIBUk7s3deyFaGHWsN7fWY=
+P:ndctl-dev
+V:71.1-r1
+A:mips64
+S:11648
+I:102400
+T:Utility library for managing the libnvdimm (non-volatile memory device) sub-system in the Linux kernel (development files)
+U:https://github.com/pmem/ndctl
+L:GPL-2.0-only LGPL-2.1-only
+o:ndctl
+t:1610480010
+c:b8cffab83f467adb57523991a16c5774d5f7a1d0
+D:ndctl-libs=71.1-r1 pkgconfig
+p:pc:libdaxctl=71.1 pc:libndctl=71.1
 
 C:Q1Z6EpEdQ7GbnoB3fdG4BW4cChqwU=
 P:numix-themes-openbox
@@ -15758,22 +15771,6 @@ t:1606745952
 c:a2541ab94409ff9ea62dc914a6b7b4bb723b03e1
 i:spdx-licenses
 
-C:Q12UwyRhW5tGrjce+n6xo8/Kt3E8I=
-P:ndctl-dev
-V:71.1-r0
-A:mips64
-S:11687
-I:102400
-T:Utility library for managing the libnvdimm (non-volatile memory device) sub-system in the Linux kernel (development files)
-U:https://github.com/pmem/ndctl
-L:GPL-2.0-only LGPL-2.1-only
-o:ndctl
-m:Breno Leitao <breno.leitao@gmail.com>
-t:1609138451
-c:4c2866215bd5d3b4e500e184174054c1b53dfcea
-D:ndctl-libs=71.1-r0 pkgconfig
-p:pc:libdaxctl=71.1 pc:libndctl=71.1
-
 C:Q1qcgSVsQKaLhRPlKipcQx1T8Tpms=
 P:tlp-rdw
 V:1.3.1-r3
@@ -21246,6 +21243,20 @@ t:1606797966
 c:75a5db019781fb981b7b7d11cfb64b3652107a75
 i:docs libewf=20201129-r0
 
+C:Q1oX5m9tbxtCVIOSoVTxc2On+0NS4=
+P:ndctl-doc
+V:71.1-r1
+A:mips64
+S:101013
+I:204800
+T:Utility library for managing the libnvdimm (non-volatile memory device) sub-system in the Linux kernel (documentation)
+U:https://github.com/pmem/ndctl
+L:GPL-2.0-only LGPL-2.1-only
+o:ndctl
+t:1610480010
+c:b8cffab83f467adb57523991a16c5774d5f7a1d0
+i:docs ndctl=71.1-r1
+
 C:Q1UtGBUcVXyz7boZqN5crSr9EDGuc=
 P:py3-netaddr
 V:0.8.0-r0
@@ -24602,21 +24613,6 @@ t:1600592306
 c:0013840468ef3eb9f49c7ce893a3a89a9c400feb
 D:so:libc.musl-mips64.so.1 so:libepoxy.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libstdc++.so.6 so:libwayland-client.so.0 so:libwayland-egl.so.1 so:libwayland-server.so.0 so:libwpe-1.0.so.1
 p:so:libWPEBackend-fdo-1.0.so.1=1.6.3
-
-C:Q1et3uXpqmdqzRLQWC7cs3X6ahMyk=
-P:ndctl-bash-completion
-V:71.1-r0
-A:mips64
-S:5091
-I:36864
-T:Bash completion for ndctl
-U:https://github.com/pmem/ndctl
-L:GPL-2.0-only LGPL-2.1-only
-o:ndctl
-m:Breno Leitao <breno.leitao@gmail.com>
-t:1609138451
-c:4c2866215bd5d3b4e500e184174054c1b53dfcea
-i:ndctl=71.1-r0 bash-completion
 
 C:Q1isajC0W5xZ2owsTvBwvjlcHe4AM=
 P:py3-pytest-mock
@@ -31063,6 +31059,21 @@ t:1587728802
 c:f72adbbfcc154cbeae25f6496b0857d2e414b4ec
 D:kookbook-common so:libQt5Core.so.5 so:libQt5Gui.so.5 so:libQt5PrintSupport.so.5 so:libQt5Widgets.so.5 so:libc.musl-mips64.so.1 so:libgcc_s.so.1 so:libmarkdown.so.2 so:libstdc++.so.6
 p:cmd:kookbook
+
+C:Q1gDi0qC7MfKIRuFL9B+oyHiELIZM=
+P:ndctl-libs
+V:71.1-r1
+A:mips64
+S:59521
+I:196608
+T:Utility library for managing the libnvdimm (non-volatile memory device) sub-system in the Linux kernel (libraries)
+U:https://github.com/pmem/ndctl
+L:GPL-2.0-only LGPL-2.1-only
+o:ndctl
+t:1610480010
+c:b8cffab83f467adb57523991a16c5774d5f7a1d0
+D:so:libc.musl-mips64.so.1 so:libkmod.so.2 so:libudev.so.1 so:libuuid.so.1
+p:so:libdaxctl.so.1=1.5.0 so:libndctl.so.6=6.19.1
 
 C:Q1IQM93WooftClRbceIq7YSByhfyQ=
 P:arping-doc
@@ -42855,21 +42866,6 @@ t:1594457485
 c:2db15f833e34e21e2c4558eff1c07603024ec8fb
 i:openrc ufw=0.36-r3
 
-C:Q1xKLkVjCRT0upHoZJQGEDWh1/Gqo=
-P:ndctl-doc
-V:71.1-r0
-A:mips64
-S:100707
-I:204800
-T:Utility library for managing the libnvdimm (non-volatile memory device) sub-system in the Linux kernel (documentation)
-U:https://github.com/pmem/ndctl
-L:GPL-2.0-only LGPL-2.1-only
-o:ndctl
-m:Breno Leitao <breno.leitao@gmail.com>
-t:1609138451
-c:4c2866215bd5d3b4e500e184174054c1b53dfcea
-i:docs ndctl=71.1-r0
-
 C:Q1xBczZjLbXMX0lBUeXM5u4MHoF6c=
 P:libdc1394
 V:2.2.6-r0
@@ -43350,22 +43346,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1574095969
 c:d6a4bfc706ea00416c5b7e03bfa9555559d5c7a0
 i:docs gsl=2.6-r0
-
-C:Q12D7duXW5czONystg+h6TFtqfcDQ=
-P:ndctl-libs
-V:71.1-r0
-A:mips64
-S:59558
-I:196608
-T:Utility library for managing the libnvdimm (non-volatile memory device) sub-system in the Linux kernel (libraries)
-U:https://github.com/pmem/ndctl
-L:GPL-2.0-only LGPL-2.1-only
-o:ndctl
-m:Breno Leitao <breno.leitao@gmail.com>
-t:1609138451
-c:4c2866215bd5d3b4e500e184174054c1b53dfcea
-D:so:libc.musl-mips64.so.1 so:libkmod.so.2 so:libudev.so.1 so:libuuid.so.1
-p:so:libdaxctl.so.1=1.5.0 so:libndctl.so.6=6.19.1
 
 C:Q1KbVxIxf2091+87HIsJ8MRftTUiQ=
 P:lua5.2-optparse
@@ -88530,6 +88510,21 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1608546497
 c:dd0aaf6750718b0ff739b662eb33e2d7cf59935a
 D:tesseract-ocr
+
+C:Q19fta8qfat4Iah0J5GgjY0hiUYsg=
+P:ndctl
+V:71.1-r1
+A:mips64
+S:97005
+I:327680
+T:Utility library for managing the libnvdimm (non-volatile memory device) sub-system in the Linux kernel
+U:https://github.com/pmem/ndctl
+L:GPL-2.0-only LGPL-2.1-only
+o:ndctl
+t:1610480010
+c:b8cffab83f467adb57523991a16c5774d5f7a1d0
+D:libuuid json-c kmod so:libc.musl-mips64.so.1 so:libdaxctl.so.1 so:libjson-c.so.5 so:libkeyutils.so.1 so:libndctl.so.6 so:libuuid.so.1
+p:cmd:daxctl cmd:ndctl
 
 C:Q1JvCL4xO3dpknL/dIZABZn9W3AtM=
 P:mpc
