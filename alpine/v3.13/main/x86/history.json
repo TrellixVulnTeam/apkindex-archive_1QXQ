@@ -55932,6 +55932,33 @@
       "provides": [
         "so:libucontext.so.0=0"
       ]
+    },
+    "jitterentropy-library": {
+      "origin": "jitterentropy-library",
+      "versions": {
+        "3.0.0-r0": 1610423114
+      },
+      "dependencies": [
+        "so:libc.musl-x86.so.1"
+      ],
+      "provides": [
+        "so:libjitterentropy.so.3=3.0.0"
+      ]
+    },
+    "jitterentropy-library-doc": {
+      "origin": "jitterentropy-library",
+      "versions": {
+        "3.0.0-r0": 1610423114
+      }
+    },
+    "jitterentropy-library-dev": {
+      "origin": "jitterentropy-library",
+      "versions": {
+        "3.0.0-r0": 1610423114
+      },
+      "dependencies": [
+        "jitterentropy-library=3.0.0-r0"
+      ]
     }
   },
   "provide": {
@@ -62253,6 +62280,10 @@
       "libexecline.so.2.7": {
         "package": "execline",
         "version": "2.7.0.0"
+      },
+      "libjitterentropy.so.3": {
+        "package": "jitterentropy-library",
+        "version": "3.0.0"
       }
     }
   }

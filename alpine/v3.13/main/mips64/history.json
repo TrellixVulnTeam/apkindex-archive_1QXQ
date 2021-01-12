@@ -55030,6 +55030,33 @@
       "versions": {
         "2.3.4-r1": 1610192673
       }
+    },
+    "jitterentropy-library": {
+      "origin": "jitterentropy-library",
+      "versions": {
+        "3.0.0-r0": 1610423114
+      },
+      "dependencies": [
+        "so:libc.musl-mips64.so.1"
+      ],
+      "provides": [
+        "so:libjitterentropy.so.3=3.0.0"
+      ]
+    },
+    "jitterentropy-library-dev": {
+      "origin": "jitterentropy-library",
+      "versions": {
+        "3.0.0-r0": 1610423114
+      },
+      "dependencies": [
+        "jitterentropy-library=3.0.0-r0"
+      ]
+    },
+    "jitterentropy-library-doc": {
+      "origin": "jitterentropy-library",
+      "versions": {
+        "3.0.0-r0": 1610423114
+      }
     }
   },
   "provide": {
@@ -60221,6 +60248,10 @@
       "libns.so.1606": {
         "package": "bind-libs",
         "version": "1606.0.1"
+      },
+      "libjitterentropy.so.3": {
+        "package": "jitterentropy-library",
+        "version": "3.0.0"
       }
     },
     "package": {
