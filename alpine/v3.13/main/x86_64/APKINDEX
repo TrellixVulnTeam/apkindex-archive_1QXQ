@@ -214,21 +214,6 @@ c:68d321c752a19a3dbc7c68a84908c310693adc16
 D:logrotate
 i:squid=5.0.4-r0 lang-bg
 
-C:Q10drs3I2O0RM3IwV+2m2XZ4C3VT8=
-P:bind
-V:9.16.10-r0
-A:x86_64
-S:222923
-I:655360
-T:The ISC DNS server
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1610197662
-c:6a6f23c2c76f49c227a5586b759a106f2e907452
-D:dns-root-hints bind-tools /bin/sh bind-dnssec-root=9.16.10-r0 so:libbind9.so.1600 so:libc.musl-x86_64.so.1 so:libcap.so.2 so:libcrypto.so.1.1 so:libdns.so.1610 so:libfstrm.so.0 so:libisc.so.1608 so:libisccc.so.1600 so:libisccfg.so.1602 so:libjson-c.so.5 so:libldap-2.4.so.2 so:libns.so.1606 so:libprotobuf-c.so.1 so:libuv.so.1 so:libxml2.so.2 so:libz.so.1
-p:cmd:named cmd:named-checkconf cmd:rndc
-
 C:Q143JC5KhT/1H79Awb9outfmOAcjQ=
 P:font-daewoo-misc
 V:1.0.3-r0
@@ -1713,20 +1698,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1601576436
 c:3be50c485baac289a2fcd87d58f3427aba2218a9
 i:docs varnish=6.5.1-r0
-
-C:Q1N7Shr5Lqv6snnYee6QnNUIL5Hbg=
-P:bind-plugins
-V:9.16.10-r0
-A:x86_64
-S:8004
-I:40960
-T:The ISC DNS server plugins
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1610197662
-c:6a6f23c2c76f49c227a5586b759a106f2e907452
-D:bind so:libc.musl-x86_64.so.1
 
 C:Q1WFw3a08B/3xWYsXRM05F7Bgk0aE=
 P:mosh
@@ -6677,6 +6648,19 @@ t:1608368164
 c:913ac67d7f0617fca406bb797e4cf6beed3f0ab8
 p:linux-firmware-any
 
+C:Q1MPqIq6ROHiHQv01nwlx1HflAfAI=
+P:bind-dnssec-root
+V:9.16.11-r0
+A:x86_64
+S:2519
+I:20480
+T:ISC BIND DNSSEC Root Keys
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1611212061
+c:a7b5f79547852e0dba681b6f56a31ebfe4eabdaa
+
 C:Q10qc86/htBgzH66LRUMkSRDvtDoM=
 P:f2fs-tools-static
 V:1.14.0-r0
@@ -6705,20 +6689,6 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1600709964
 c:e8985237716847f9591030e9f2f541db7183af77
 i:docs perl-inline-c=0.81-r2
-
-C:Q1YqCe9n4RY4vMmgZH9hI5lo/D16w=
-P:py3-bind
-V:9.16.10-r0
-A:x86_64
-S:59053
-I:286720
-T:A module allowing rndc commands to be sent from Python programs
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1610197662
-c:6a6f23c2c76f49c227a5586b759a106f2e907452
-D:py3-ply python3
 
 C:Q1AxQRAyMkfBTjzI0D0lReTesrZJQ=
 P:pixman-dbg
@@ -7537,6 +7507,21 @@ t:1605461724
 c:13afb3090bd04a6bb90a3a9b26050238103af582
 D:so:libc.musl-x86_64.so.1 so:libpcap.so.1
 p:cmd:ucarp
+
+C:Q1C+Z3tlZnzfgEiHEU65MZBGJfV0w=
+P:bind-libs
+V:9.16.11-r0
+A:x86_64
+S:1222137
+I:2985984
+T:The ISC DNS server (libraries)
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1611212061
+c:a7b5f79547852e0dba681b6f56a31ebfe4eabdaa
+D:so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libfstrm.so.0 so:libgssapi_krb5.so.2 so:libjson-c.so.5 so:libkrb5.so.3 so:libprotobuf-c.so.1 so:libssl.so.1.1 so:libuv.so.1 so:libxml2.so.2 so:libz.so.1
+p:so:libbind9.so.1600=1600.0.7 so:libdns.so.1611=1611.0.0 so:libirs.so.1601=1601.0.0 so:libisc.so.1609=1609.0.0 so:libisccc.so.1600=1600.0.2 so:libisccfg.so.1603=1603.0.0 so:libns.so.1607=1607.0.0
 
 C:Q1TgZOe1dXcuBgzVQcecADClxrFgo=
 P:libnetfilter_cttimeout
@@ -11147,21 +11132,6 @@ c:09e0a58429f6c5c17c5b3b402c8709b394cbf5bd
 D:python3
 p:cmd:scons cmd:scons-3.1.2 cmd:scons-3.1.2.bat cmd:scons-configure-cache cmd:scons-configure-cache-3.1.2 cmd:scons-time cmd:scons-time-3.1.2 cmd:scons.bat cmd:sconsign cmd:sconsign-3.1.2
 
-C:Q13KPyEsMSC/tns0eYtx+3joStTc8=
-P:bind-dnssec-tools
-V:9.16.10-r0
-A:x86_64
-S:131724
-I:413696
-T:Utilities for DNSSEC keys and DNS zone files management
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1610197662
-c:6a6f23c2c76f49c227a5586b759a106f2e907452
-D:py3-bind=9.16.10-r0 so:libc.musl-x86_64.so.1 so:libdns.so.1610 so:libisc.so.1608 so:libisccfg.so.1602
-p:cmd:dnssec-cds cmd:dnssec-checkds cmd:dnssec-coverage cmd:dnssec-dsfromkey cmd:dnssec-importkey cmd:dnssec-keyfromlabel cmd:dnssec-keygen cmd:dnssec-keymgr cmd:dnssec-revoke cmd:dnssec-settime cmd:dnssec-signzone cmd:dnssec-verify cmd:nsec3hash
-
 C:Q1XXks56k7DFAn1fzq+FxrrQoBFhY=
 P:mosquitto-libs++
 V:1.6.12-r2
@@ -12111,20 +12081,6 @@ c:1c7ba057cebc74c8b4db0a2c40c1b2c508e8c484
 D:zsh
 i:zsh=5.8-r1 bzr
 
-C:Q1Py6OH1u8sVjuJtTzbb15X9rpk5g=
-P:bind-openrc
-V:9.16.10-r0
-A:x86_64
-S:2317
-I:24576
-T:The ISC DNS server (OpenRC init scripts)
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1610197662
-c:6a6f23c2c76f49c227a5586b759a106f2e907452
-i:openrc bind=9.16.10-r0
-
 C:Q1YyTUd0J3iKtEo99/cEe/FmFxuoE=
 P:freeswitch-perlesl
 V:1.10.5-r1
@@ -12169,6 +12125,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1608999677
 c:85503f152eaf54c0acb5c825fc8cd4b026634bd4
 i:docs parallel=20201222-r0
+
+C:Q1TOohosjUUofbv6c90Nsz5MirbfE=
+P:bind-dnssec-tools
+V:9.16.11-r0
+A:x86_64
+S:131799
+I:413696
+T:Utilities for DNSSEC keys and DNS zone files management
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1611212061
+c:a7b5f79547852e0dba681b6f56a31ebfe4eabdaa
+D:py3-bind=9.16.11-r0 so:libc.musl-x86_64.so.1 so:libdns.so.1611 so:libisc.so.1609 so:libisccfg.so.1603
+p:cmd:dnssec-cds cmd:dnssec-checkds cmd:dnssec-coverage cmd:dnssec-dsfromkey cmd:dnssec-importkey cmd:dnssec-keyfromlabel cmd:dnssec-keygen cmd:dnssec-keymgr cmd:dnssec-revoke cmd:dnssec-settime cmd:dnssec-signzone cmd:dnssec-verify cmd:nsec3hash
 
 C:Q1H3ddkd2eg84b4fTJyBnWK1xPhBk=
 P:subversion-dev
@@ -13850,21 +13821,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 i:docs dosfstools=4.1-r1
-
-C:Q1T/IQOcnshrCYqPv3SktfloctS6Q=
-P:bind-tools
-V:9.16.10-r0
-A:x86_64
-S:223423
-I:643072
-T:The ISC DNS tools
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1610197662
-c:6a6f23c2c76f49c227a5586b759a106f2e907452
-D:so:libbind9.so.1600 so:libc.musl-x86_64.so.1 so:libdns.so.1610 so:libirs.so.1601 so:libisc.so.1608 so:libisccfg.so.1602 so:libkrb5.so.3 so:libns.so.1606 so:libprotobuf-c.so.1
-p:cmd:arpaname cmd:ddns-confgen cmd:delv cmd:dig cmd:dnstap-read cmd:host cmd:mdig cmd:named-checkzone cmd:named-compilezone cmd:named-journalprint cmd:named-rrchecker cmd:nslookup cmd:nsupdate cmd:rndc-confgen cmd:tsig-keygen
 
 C:Q1wprsihi03RlP/TR9Um1TqznqabM=
 P:dmidecode-doc
@@ -22950,20 +22906,6 @@ t:1606832312
 c:fadf868d929d38297eee94b3645ef16a6e31a0a3
 D:nagios-plugins so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1
 
-C:Q1htnmh9czkGZxxd10OhvgLmLeg84=
-P:bind-doc
-V:9.16.10-r0
-A:x86_64
-S:101722
-I:204800
-T:The ISC DNS server (documentation)
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1610197662
-c:6a6f23c2c76f49c227a5586b759a106f2e907452
-i:docs bind=9.16.10-r0
-
 C:Q1OPSgy/USYAWllwLaOku5qRHqY0U=
 P:bluez-btmon
 V:5.55-r1
@@ -23520,6 +23462,20 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1592189991
 c:6d0647826fc3117cf8f92a745c5f6c1d6f99bb4c
 i:docs file=5.39-r0
+
+C:Q1hVrevouS+ynpv740TXpdTouinBk=
+P:py3-bind
+V:9.16.11-r0
+A:x86_64
+S:59037
+I:286720
+T:A module allowing rndc commands to be sent from Python programs
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1611212061
+c:a7b5f79547852e0dba681b6f56a31ebfe4eabdaa
+D:py3-ply python3
 
 C:Q16vEDjgOVtANpDRGtu+mlaFXloqs=
 P:lua5.2-optarg
@@ -26773,20 +26729,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:encodings font-alias mkfontscale mkfontdir fontconfig
-
-C:Q1EERKDJRo06y5jRSb/qfq0Jbxseg=
-P:bind-dev
-V:9.16.10-r0
-A:x86_64
-S:1886758
-I:7524352
-T:The ISC DNS server (development files)
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1610197662
-c:6a6f23c2c76f49c227a5586b759a106f2e907452
-D:bind bind-plugins bind-tools bind-libs=9.16.10-r0
 
 C:Q1o8mpHiQ5rmya4SkclCoJOYmxIiA=
 P:powertop-doc
@@ -33701,6 +33643,20 @@ t:1585791765
 c:3c13111f9c98ac47132ea31527bfbe9873e03f09
 i:openrc conntrack-tools=1.4.6-r0
 
+C:Q1mLm5/rtfTb44mJ+yvNDMDWGKA+M=
+P:bind-openrc
+V:9.16.11-r0
+A:x86_64
+S:2312
+I:24576
+T:The ISC DNS server (OpenRC init scripts)
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1611212061
+c:a7b5f79547852e0dba681b6f56a31ebfe4eabdaa
+i:openrc bind=9.16.11-r0
+
 C:Q1aTbFsBz6iOcpt/gaJbHP8VEKLeY=
 P:rsyslog-zmq
 V:8.2012.0-r0
@@ -39310,6 +39266,21 @@ t:1561734758
 c:08824c6305acc2bac05566a86a554060495b5c5d
 i:docs giflib=5.2.1-r0
 
+C:Q1TdXk6ujE0l3tPOqCIVhiZIqW3lY=
+P:bind-tools
+V:9.16.11-r0
+A:x86_64
+S:223406
+I:643072
+T:The ISC DNS tools
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1611212061
+c:a7b5f79547852e0dba681b6f56a31ebfe4eabdaa
+D:so:libbind9.so.1600 so:libc.musl-x86_64.so.1 so:libdns.so.1611 so:libirs.so.1601 so:libisc.so.1609 so:libisccfg.so.1603 so:libkrb5.so.3 so:libns.so.1607 so:libprotobuf-c.so.1
+p:cmd:arpaname cmd:ddns-confgen cmd:delv cmd:dig cmd:dnstap-read cmd:host cmd:mdig cmd:named-checkzone cmd:named-compilezone cmd:named-journalprint cmd:named-rrchecker cmd:nslookup cmd:nsupdate cmd:rndc-confgen cmd:tsig-keygen
+
 C:Q1zvCrdCsZ1MKFIpeHpX9t5spXUqk=
 P:linux-firmware
 V:20201218-r0
@@ -41461,21 +41432,6 @@ t:1597698307
 c:3e4030e3ffde62db7eb3570a955099439b99651f
 D:so:libc.musl-x86_64.so.1 so:libpcre.so.1 so:libpcre16.so.0 so:libpcre32.so.0 so:libpcreposix.so.0
 p:cmd:pcregrep cmd:pcretest
-
-C:Q1Y04yZctQDGR1YIEKioR4nGt9VAE=
-P:bind-libs
-V:9.16.10-r0
-A:x86_64
-S:1196574
-I:2904064
-T:The ISC DNS server (libraries)
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1610197662
-c:6a6f23c2c76f49c227a5586b759a106f2e907452
-D:so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libfstrm.so.0 so:libgssapi_krb5.so.2 so:libjson-c.so.5 so:libkrb5.so.3 so:libprotobuf-c.so.1 so:libuv.so.1 so:libxml2.so.2 so:libz.so.1
-p:so:libbind9.so.1600=1600.0.6 so:libdns.so.1610=1610.0.0 so:libirs.so.1601=1601.0.0 so:libisc.so.1608=1608.0.1 so:libisccc.so.1600=1600.0.2 so:libisccfg.so.1602=1602.0.0 so:libns.so.1606=1606.0.1
 
 C:Q1sc3AnlGDPQ9Vt7ikuZITLQ+JwSo=
 P:perl-socket
@@ -45672,6 +45628,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1588187738
 c:59e37c7f6d3da19f5a14aa07e02f06e23f29f40e
 D:lua5.3-filesystem lua-penlight=1.7.0-r1
+
+C:Q1Ovvusl92SZTsQxli81IGxSH3Fxc=
+P:bind
+V:9.16.11-r0
+A:x86_64
+S:222855
+I:659456
+T:The ISC DNS server
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1611212061
+c:a7b5f79547852e0dba681b6f56a31ebfe4eabdaa
+D:dns-root-hints bind-tools /bin/sh bind-dnssec-root=9.16.11-r0 so:libbind9.so.1600 so:libc.musl-x86_64.so.1 so:libcap.so.2 so:libcrypto.so.1.1 so:libdns.so.1611 so:libfstrm.so.0 so:libisc.so.1609 so:libisccc.so.1600 so:libisccfg.so.1603 so:libjson-c.so.5 so:libldap-2.4.so.2 so:libns.so.1607 so:libprotobuf-c.so.1 so:libuv.so.1 so:libxml2.so.2 so:libz.so.1
+p:cmd:named cmd:named-checkconf cmd:rndc
 
 C:Q1jhPXXcea28+dMXbmiOMuzlZiK/w=
 P:freetds
@@ -50898,6 +50869,20 @@ t:1606237138
 c:f75210b4f485fed4d210fb7d2744448561b83bdd
 D:/bin/sh so:libc.musl-x86_64.so.1 so:libpopt.so.0
 p:cmd:distcc cmd:distccd cmd:distccmon-text cmd:lsdistcc cmd:update-distcc-symlinks
+
+C:Q19/rcG4mKq+3dY2cwaHUYkJbFZdE=
+P:bind-plugins
+V:9.16.11-r0
+A:x86_64
+S:7996
+I:40960
+T:The ISC DNS server plugins
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1611212061
+c:a7b5f79547852e0dba681b6f56a31ebfe4eabdaa
+D:bind so:libc.musl-x86_64.so.1
 
 C:Q1uUAvjNP4Jtg/89nIsELAnX+4Nok=
 P:linux-firmware-ti
@@ -59803,6 +59788,20 @@ t:1607084144
 c:586b7d7e26bdeab6e26edd088930ac57e3389662
 D:librsync=2.3.1-r1
 
+C:Q1hOxRzdWJ9YHXn45JubGuXvJ2ECA=
+P:bind-doc
+V:9.16.11-r0
+A:x86_64
+S:101696
+I:204800
+T:The ISC DNS server (documentation)
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1611212061
+c:a7b5f79547852e0dba681b6f56a31ebfe4eabdaa
+i:docs bind=9.16.11-r0
+
 C:Q1akGUumnRH0uXg5gYkVeR0oM8Rrk=
 P:icecast
 V:2.4.4-r4
@@ -60047,6 +60046,20 @@ t:1610351620
 c:a16e0205718f413e75ea414d4725bd1c25899e09
 D:py3-six py3-cffi so:libc.musl-x86_64.so.1
 p:py-bcrypt=3.2.0-r2
+
+C:Q1ArpAMOou4oJnU62uE5Ph1lfWf8o=
+P:bind-dev
+V:9.16.11-r0
+A:x86_64
+S:1926554
+I:7684096
+T:The ISC DNS server (development files)
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1611212061
+c:a7b5f79547852e0dba681b6f56a31ebfe4eabdaa
+D:bind bind-plugins bind-tools bind-libs=9.16.11-r0
 
 C:Q1NMvi9r19I4DQ9gPTl63LMDoS6f4=
 P:fftw-single-libs
@@ -61686,19 +61699,6 @@ o:perl-test-refcount
 m:Kiyoshi Aman <kiyoshi.aman@gmail.com>
 t:1600709978
 c:60f28bb1cce0d55e177fb0e1eb4c1e28dfeefa4c
-
-C:Q1fYSJoymkVSt8Qbm3Nawu9WP9ZwQ=
-P:bind-dnssec-root
-V:9.16.10-r0
-A:x86_64
-S:2528
-I:20480
-T:ISC BIND DNSSEC Root Keys
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1610197662
-c:6a6f23c2c76f49c227a5586b759a106f2e907452
 
 C:Q17m04GRBFVcwMHQhCzRrE7jXcNDM=
 P:perl-module-install-doc
