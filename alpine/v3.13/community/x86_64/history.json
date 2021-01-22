@@ -26627,7 +26627,8 @@
     "gns3-server": {
       "origin": "gns3-server",
       "versions": {
-        "2.2.17-r0": 1607326360
+        "2.2.17-r0": 1607326360,
+        "2.2.17-r1": 1611312120
       },
       "dependencies": [
         "busybox",
@@ -44641,7 +44642,8 @@
     "gns3-server-doc": {
       "origin": "gns3-server",
       "versions": {
-        "2.2.17-r0": 1607326360
+        "2.2.17-r0": 1607326360,
+        "2.2.17-r1": 1611312120
       }
     },
     "gsl": {
@@ -126724,6 +126726,48 @@
         "py3-commonmark",
         "py3-pygments",
         "py3-typing-extensions"
+      ]
+    },
+    "py3-multidict-gns3-dev": {
+      "origin": "py3-multidict-gns3",
+      "versions": {
+        "4.7.6-r0": 1611311875
+      }
+    },
+    "py3-chardet-gns3": {
+      "origin": "py3-chardet-gns3",
+      "versions": {
+        "3.0.4-r0": 1611311927
+      },
+      "dependencies": [
+        "python3",
+        "py3-setuptools",
+        "!py3-chardet"
+      ],
+      "provides": [
+        "cmd:chardetect"
+      ]
+    },
+    "py3-multidict-gns3": {
+      "origin": "py3-multidict-gns3",
+      "versions": {
+        "4.7.6-r0": 1611311875
+      },
+      "dependencies": [
+        "python3",
+        "so:libc.musl-x86_64.so.1"
+      ]
+    },
+    "py3-yarl-gns3": {
+      "origin": "py3-yarl-gns3",
+      "versions": {
+        "1.6.3-r0": 1611311899
+      },
+      "dependencies": [
+        "py3-multidict-gns3",
+        "py3-idna",
+        "!py3-yarl",
+        "so:libc.musl-x86_64.so.1"
       ]
     }
   },
