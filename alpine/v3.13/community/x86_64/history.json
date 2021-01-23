@@ -126781,6 +126781,31 @@
         "!py3-yarl",
         "so:libc.musl-x86_64.so.1"
       ]
+    },
+    "libudev-zero": {
+      "origin": "libudev-zero",
+      "versions": {
+        "0.4.5-r1": 1611417870
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1"
+      ],
+      "provides": [
+        "udev",
+        "so:libudev.so.1=0"
+      ]
+    },
+    "libudev-zero-dev": {
+      "origin": "libudev-zero",
+      "versions": {
+        "0.4.5-r1": 1611417870
+      },
+      "dependencies": [
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:libudev=243"
+      ]
     }
   },
   "provide": {
@@ -137772,6 +137797,10 @@
       "libpulsecore-14.1.so": {
         "package": "libpulse",
         "version": "0"
+      },
+      "libudev.so.1": {
+        "package": "libudev-zero",
+        "version": "0"
       }
     },
     "package": {
@@ -139529,6 +139558,10 @@
       },
       "py3-pass-git-helper": {
         "package": "pass-git-helper",
+        "version": 0
+      },
+      "udev": {
+        "package": "libudev-zero",
         "version": 0
       }
     }
