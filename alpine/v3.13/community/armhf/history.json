@@ -9330,7 +9330,8 @@
       "origin": "appstream",
       "versions": {
         "0.12.11-r2": 1600081575,
-        "0.13.1-r0": 1609874876
+        "0.13.1-r0": 1609874876,
+        "0.13.1-r1": 1611575484
       }
     },
     "py3-hpack": {
@@ -11306,7 +11307,8 @@
       "origin": "appstream",
       "versions": {
         "0.12.11-r2": 1600081575,
-        "0.13.1-r0": 1609874876
+        "0.13.1-r0": 1609874876,
+        "0.13.1-r1": 1611575484
       },
       "dependencies": [
         "/bin/sh",
@@ -15241,7 +15243,8 @@
       "origin": "appstream",
       "versions": {
         "0.12.11-r2": 1600081575,
-        "0.13.1-r0": 1609874876
+        "0.13.1-r0": 1609874876,
+        "0.13.1-r1": 1611575484
       }
     },
     "perl-crypt-rc4": {
@@ -28355,17 +28358,21 @@
       "origin": "appstream",
       "versions": {
         "0.12.11-r2": 1600081575,
-        "0.13.1-r0": 1609874876
+        "0.13.1-r0": 1609874876,
+        "0.13.1-r1": 1611575484
       },
       "dependencies": [
-        "appstream-qt=0.13.1-r0",
-        "appstream=0.13.1-r0",
+        "appstream-compose=0.13.1-r1",
+        "appstream-qt=0.13.1-r1",
+        "appstream=0.13.1-r1",
         "pc:gio-2.0",
+        "pc:gio-2.0>=2.58",
         "pc:glib-2.0>=2.58",
         "pc:gobject-2.0>=2.58",
         "pkgconfig"
       ],
       "provides": [
+        "pc:appstream-compose=0.13.1",
         "pc:appstream=0.13.1"
       ]
     },
@@ -30250,7 +30257,8 @@
       "origin": "appstream",
       "versions": {
         "0.12.11-r2": 1600081575,
-        "0.13.1-r0": 1609874876
+        "0.13.1-r0": 1609874876,
+        "0.13.1-r1": 1611575484
       }
     },
     "abiword-plugin-garble": {
@@ -79892,7 +79900,8 @@
       "origin": "appstream",
       "versions": {
         "0.12.11-r2": 1600081575,
-        "0.13.1-r0": 1609874876
+        "0.13.1-r0": 1609874876,
+        "0.13.1-r1": 1611575484
       },
       "dependencies": [
         "so:libQt5Core.so.5",
@@ -99241,6 +99250,28 @@
       "versions": {
         "0.3.20-r0": 1611517326
       }
+    },
+    "appstream-compose": {
+      "origin": "appstream",
+      "versions": {
+        "0.13.1-r1": 1611575484
+      },
+      "dependencies": [
+        "so:libappstream.so.4",
+        "so:libc.musl-armhf.so.1",
+        "so:libcairo.so.2",
+        "so:libfontconfig.so.1",
+        "so:libfreetype.so.6",
+        "so:libgdk_pixbuf-2.0.so.0",
+        "so:libgio-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libpango-1.0.so.0",
+        "so:librsvg-2.so.2"
+      ],
+      "provides": [
+        "so:libappstream-compose.so.0=0.13.1"
+      ]
     }
   },
   "provide": {
@@ -107416,6 +107447,10 @@
       "libgnote-3.38.so.1": {
         "package": "gnote",
         "version": "1.0.0"
+      },
+      "libappstream-compose.so.0": {
+        "package": "appstream-compose",
+        "version": "0.13.1"
       }
     },
     "package": {
