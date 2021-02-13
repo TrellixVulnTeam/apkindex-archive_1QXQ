@@ -7126,20 +7126,6 @@ c:ce2c8c257fd929fe9768e27a8526d0439cd42dd8
 D:perl perl-mail-spf perl-netaddr-ip perl-sys-hostname-long
 p:cmd:postfix-policyd-spf-perl
 
-C:Q1ft+6mfbDHz42D9koEPuv0vIKl2I=
-P:audit-static
-V:2.8.5-r2
-A:x86_64
-S:278674
-I:778240
-T:Static libaudit libraries
-U:https://people.redhat.com/sgrubb/audit/
-L:GPL-2.0-or-later
-o:audit
-m:Tycho Andersen <tycho@docker.com>
-t:1601581342
-c:a0e9ca04f2a2c3d33e3cf10c64c5d8634c5ea398
-
 C:Q1wYTMykXScWM2BdLYxncGKqM7mow=
 P:lua5.1-sql-odbc
 V:2.6.0-r0
@@ -10932,6 +10918,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1600709980
 c:afe9e831b18058a210fc69919b5a785e040e1654
 D:perl
+
+C:Q1nB7pvXNbv8CV7oiiEs9AX191AQc=
+P:audit
+V:2.8.5-r3
+A:x86_64
+S:205880
+I:638976
+T:User space tools for 2.6 kernel auditing
+U:https://people.redhat.com/sgrubb/audit/
+L:GPL-2.0-or-later
+o:audit
+m:Tycho Andersen <tycho@docker.com>
+t:1613198176
+c:f65775dfbce64115b44a1c62c88075bfc9b88d20
+D:/bin/sh so:libaudit.so.1 so:libauparse.so.0 so:libc.musl-x86_64.so.1 so:libcap-ng.so.0
+p:cmd:audisp-remote cmd:audispd cmd:auditctl cmd:auditd cmd:augenrules cmd:aulast cmd:aulastlog cmd:aureport cmd:ausearch cmd:ausyscall cmd:autrace cmd:auvirt
 
 C:Q1XXks56k7DFAn1fzq+FxrrQoBFhY=
 P:mosquitto-libs++
@@ -23957,6 +23959,22 @@ c:8367e83c2d51bd014ffa30bc1e9105515c6185cb
 D:so:libacl.so.1 so:libbz2.so.1 so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libexpat.so.1 so:liblz4.so.1 so:liblzma.so.5 so:libz.so.1 so:libzstd.so.1
 p:so:libarchive.so.13=13.5.1
 
+C:Q1tBl8jLRXfJ59rJA6cdkCvSD8Mjs=
+P:audit-libs
+V:2.8.5-r3
+A:x86_64
+S:95296
+I:253952
+T:User space tools for 2.6 kernel auditing (libraries)
+U:https://people.redhat.com/sgrubb/audit/
+L:GPL-2.0-or-later
+o:audit
+m:Tycho Andersen <tycho@docker.com>
+t:1613198176
+c:f65775dfbce64115b44a1c62c88075bfc9b88d20
+D:so:libc.musl-x86_64.so.1 so:libcap-ng.so.0
+p:so:libaudit.so.1=1.0.0 so:libauparse.so.0=0.0.0
+
 C:Q1Rc3K5WCoRX/cH6/yAcmggyyGIrA=
 P:perl-data-page-pageset
 V:1.02-r3
@@ -26210,22 +26228,6 @@ t:1572015635
 c:ea01bb226907d1841c222a4d45832c3c36378115
 D:so:libaspell.so.15 so:libc.musl-x86_64.so.1 so:libintl.so.8 so:libncursesw.so.6 so:libstdc++.so.6
 p:cmd:aspell
-
-C:Q1jCfL5miE9znmnFzVeKCYTS06O/Y=
-P:audit-libs
-V:2.8.5-r2
-A:x86_64
-S:91219
-I:241664
-T:User space tools for 2.6 kernel auditing (libraries)
-U:https://people.redhat.com/sgrubb/audit/
-L:GPL-2.0-or-later
-o:audit
-m:Tycho Andersen <tycho@docker.com>
-t:1601581342
-c:a0e9ca04f2a2c3d33e3cf10c64c5d8634c5ea398
-D:so:libc.musl-x86_64.so.1 so:libcap-ng.so.0
-p:so:libaudit.so.1=1.0.0 so:libauparse.so.0=0.0.0
 
 C:Q1PemMBJaikqlyuPuyzKmfcWkxzaE=
 P:nfs-utils-dev
@@ -35161,6 +35163,21 @@ t:1605520943
 c:6fbafd8e456e353497bc801c69bddac162dd9df6
 i:openrc multipath-tools=0.8.5-r0
 
+C:Q16pAw3t3f8mBflAP1OifJiFAPrYk=
+P:audit-openrc
+V:2.8.5-r3
+A:x86_64
+S:2611
+I:24576
+T:User space tools for 2.6 kernel auditing (OpenRC init scripts)
+U:https://people.redhat.com/sgrubb/audit/
+L:GPL-2.0-or-later
+o:audit
+m:Tycho Andersen <tycho@docker.com>
+t:1613198176
+c:f65775dfbce64115b44a1c62c88075bfc9b88d20
+i:openrc audit=2.8.5-r3
+
 C:Q1+5JJi3LnlJ5paZfMQ0ksWmSEWNc=
 P:squid-lang-pt
 V:5.0.4-r0
@@ -35348,22 +35365,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1597366505
 c:9bdd934a875d74e4edd7a7bc01e2577c9cbb0535
 i:docs sshguard=2.4.1-r0
-
-C:Q1R3XQBtAXFf1Wv43119TGyMHPL58=
-P:audit
-V:2.8.5-r2
-A:x86_64
-S:205821
-I:638976
-T:User space tools for 2.6 kernel auditing
-U:https://people.redhat.com/sgrubb/audit/
-L:GPL-2.0-or-later
-o:audit
-m:Tycho Andersen <tycho@docker.com>
-t:1601581342
-c:a0e9ca04f2a2c3d33e3cf10c64c5d8634c5ea398
-D:/bin/sh so:libaudit.so.1 so:libauparse.so.0 so:libc.musl-x86_64.so.1 so:libcap-ng.so.0
-p:cmd:audisp-remote cmd:audispd cmd:auditctl cmd:auditd cmd:augenrules cmd:aulast cmd:aulastlog cmd:aureport cmd:ausearch cmd:ausyscall cmd:autrace cmd:auvirt
 
 C:Q12Qp+UfwB9moeKqJrtyoB6gy2Kd0=
 P:acf-openssh
@@ -45152,6 +45153,20 @@ t:1609754128
 c:9f0bcad831d8fa5bb6e229a8343a45e79cf4ccef
 D:acf-core clamav
 
+C:Q14qNwddj3qR1F322bAcbHKE0ViEU=
+P:audit-static
+V:2.8.5-r3
+A:x86_64
+S:281891
+I:790528
+T:Static libaudit libraries
+U:https://people.redhat.com/sgrubb/audit/
+L:GPL-2.0-or-later
+o:audit
+m:Tycho Andersen <tycho@docker.com>
+t:1613198176
+c:f65775dfbce64115b44a1c62c88075bfc9b88d20
+
 C:Q1BcKobdWReDhguQfAE/e1q1tZElk=
 P:freetds-static
 V:1.2.18-r0
@@ -47281,6 +47296,21 @@ c:f40b381639c404fc93ec1a8fa011e4c35a26ddfb
 D:python3 py3-setuptools
 p:py-future=0.18.2-r1 cmd:futurize cmd:pasteurize
 
+C:Q1obMCqYeWSlm4zh38x/30q1zxhgY=
+P:audit-doc
+V:2.8.5-r3
+A:x86_64
+S:100661
+I:450560
+T:User space tools for 2.6 kernel auditing (documentation)
+U:https://people.redhat.com/sgrubb/audit/
+L:GPL-2.0-or-later
+o:audit
+m:Tycho Andersen <tycho@docker.com>
+t:1613198176
+c:f65775dfbce64115b44a1c62c88075bfc9b88d20
+i:docs audit=2.8.5-r3
+
 C:Q1Q3mvqum1kv99aXRgAdJWfYqz1xk=
 P:perl-test-deep
 V:1.130-r1
@@ -47463,21 +47493,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1600709956
 c:f4a43263c3628a443bf7ac0c6ee3a6b30109eec1
 D:perl so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1
-
-C:Q16LF/lMqG//57NcXIF7SQwCGiVYQ=
-P:audit-openrc
-V:2.8.5-r2
-A:x86_64
-S:2613
-I:24576
-T:User space tools for 2.6 kernel auditing (OpenRC init scripts)
-U:https://people.redhat.com/sgrubb/audit/
-L:GPL-2.0-or-later
-o:audit
-m:Tycho Andersen <tycho@docker.com>
-t:1601581342
-c:a0e9ca04f2a2c3d33e3cf10c64c5d8634c5ea398
-i:openrc audit=2.8.5-r2
 
 C:Q1WUdyAfQZaAPue6bkWUwJURJiPoc=
 P:py3-clang
@@ -50083,6 +50098,22 @@ t:1610489340
 c:5a7b755050736b28b503dfa74d6e519e8234273c
 D:python3 py3-setuptools
 p:py-pygments=2.7.4-r0 cmd:pygmentize cmd:pygmentize-3
+
+C:Q1pufTqUGHxyxktxUXYfza/bPbq14=
+P:audit-dev
+V:2.8.5-r3
+A:x86_64
+S:12514
+I:81920
+T:User space tools for 2.6 kernel auditing (development files)
+U:https://people.redhat.com/sgrubb/audit/
+L:GPL-2.0-or-later
+o:audit
+m:Tycho Andersen <tycho@docker.com>
+t:1613198176
+c:f65775dfbce64115b44a1c62c88075bfc9b88d20
+D:linux-headers audit-libs=2.8.5-r3 pkgconfig
+p:pc:audit=2.8.5 pc:auparse=2.8.5
 
 C:Q12Fm8efOkEIl9Wjkodq97xx5h6ek=
 P:linux-firmware-vicam
@@ -54238,21 +54269,6 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1600709973
 c:3bcb0194151666131eec7ee89bd715f841f64f0f
 i:docs perl-protocol-websocket=0.26-r1
-
-C:Q1ONPOi3slm/U5kC7JnDnzDvQ/04s=
-P:audit-doc
-V:2.8.5-r2
-A:x86_64
-S:100659
-I:450560
-T:User space tools for 2.6 kernel auditing (documentation)
-U:https://people.redhat.com/sgrubb/audit/
-L:GPL-2.0-or-later
-o:audit
-m:Tycho Andersen <tycho@docker.com>
-t:1601581342
-c:a0e9ca04f2a2c3d33e3cf10c64c5d8634c5ea398
-i:docs audit=2.8.5-r2
 
 C:Q1yRKXSRbfHSbN2ZYcAiX22pVB/sc=
 P:freeswitch-sounds-ru-RU-elena-8000
@@ -61148,22 +61164,6 @@ t:1596091716
 c:6a3d7a69058aed25de9a49d0203b0bf02b1256ef
 D:clang=10.0.1-r0 perl python3
 p:cmd:scan-build cmd:scan-view
-
-C:Q1COanpwR+iTviVkoOVtbz2qRFLHY=
-P:audit-dev
-V:2.8.5-r2
-A:x86_64
-S:12523
-I:81920
-T:User space tools for 2.6 kernel auditing (development files)
-U:https://people.redhat.com/sgrubb/audit/
-L:GPL-2.0-or-later
-o:audit
-m:Tycho Andersen <tycho@docker.com>
-t:1601581342
-c:a0e9ca04f2a2c3d33e3cf10c64c5d8634c5ea398
-D:linux-headers audit-libs=2.8.5-r2 pkgconfig
-p:pc:audit=2.8.5 pc:auparse=2.8.5
 
 C:Q1iOOs40srLbnsHhI1qggHymzYlv0=
 P:open-lldp-doc
