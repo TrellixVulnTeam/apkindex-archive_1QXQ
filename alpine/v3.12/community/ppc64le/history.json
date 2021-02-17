@@ -9220,7 +9220,8 @@
     "runc-doc": {
       "origin": "runc",
       "versions": {
-        "1.0.0_rc10-r1": 1588346526
+        "1.0.0_rc10-r1": 1588346526,
+        "1.0.0_rc93-r0": 1613583963
       }
     },
     "frr-dbg": {
@@ -15103,7 +15104,8 @@
       "origin": "docker",
       "versions": {
         "19.03.11-r0": 1591189785,
-        "19.03.12-r0": 1595590719
+        "19.03.12-r0": 1595590719,
+        "20.10.3-r0": 1613583993
       }
     },
     "ndctl": {
@@ -31033,7 +31035,8 @@
       "origin": "docker",
       "versions": {
         "19.03.11-r0": 1591189785,
-        "19.03.12-r0": 1595590719
+        "19.03.12-r0": 1595590719,
+        "20.10.3-r0": 1613583993
       }
     },
     "hyphen": {
@@ -33644,7 +33647,8 @@
       "origin": "docker",
       "versions": {
         "19.03.11-r0": 1591189785,
-        "19.03.12-r0": 1595590719
+        "19.03.12-r0": 1595590719,
+        "20.10.3-r0": 1613583993
       },
       "dependencies": [
         "docker-engine",
@@ -39748,7 +39752,8 @@
     "runc": {
       "origin": "runc",
       "versions": {
-        "1.0.0_rc10-r1": 1588346526
+        "1.0.0_rc10-r1": 1588346526,
+        "1.0.0_rc93-r0": 1613583963
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -48271,7 +48276,8 @@
       "origin": "containerd",
       "versions": {
         "1.3.4-r1": 1588346526,
-        "1.3.9-r0": 1606787509
+        "1.3.9-r0": 1606787509,
+        "1.4.3-r0": 1613583978
       }
     },
     "coreimage": {
@@ -55528,7 +55534,8 @@
       "origin": "docker",
       "versions": {
         "19.03.11-r0": 1591189785,
-        "19.03.12-r0": 1595590719
+        "19.03.12-r0": 1595590719,
+        "20.10.3-r0": 1613583993
       },
       "dependencies": [
         "ca-certificates",
@@ -55536,8 +55543,7 @@
         "iptables",
         "tini-static",
         "so:libc.musl-ppc64le.so.1",
-        "so:libdevmapper.so.1.02",
-        "so:libseccomp.so.2"
+        "so:libdevmapper.so.1.02"
       ],
       "provides": [
         "cmd:docker-proxy",
@@ -57361,19 +57367,18 @@
       "origin": "containerd",
       "versions": {
         "1.3.4-r1": 1588346526,
-        "1.3.9-r0": 1606787509
+        "1.3.9-r0": 1606787509,
+        "1.4.3-r0": 1613583978
       },
       "dependencies": [
         "runc",
-        "so:libc.musl-ppc64le.so.1",
-        "so:libseccomp.so.2"
+        "so:libc.musl-ppc64le.so.1"
       ],
       "provides": [
         "cmd:containerd",
         "cmd:containerd-shim",
         "cmd:containerd-shim-runc-v1",
         "cmd:containerd-shim-runc-v2",
-        "cmd:containerd-stress",
         "cmd:ctr"
       ]
     },
@@ -60027,7 +60032,8 @@
       "origin": "docker",
       "versions": {
         "19.03.11-r0": 1591189785,
-        "19.03.12-r0": 1595590719
+        "19.03.12-r0": 1595590719,
+        "20.10.3-r0": 1613583993
       },
       "dependencies": [
         "ca-certificates",
@@ -66969,7 +66975,8 @@
       "origin": "docker",
       "versions": {
         "19.03.11-r0": 1591189785,
-        "19.03.12-r0": 1595590719
+        "19.03.12-r0": 1595590719,
+        "20.10.3-r0": 1613583993
       }
     },
     "php7-dba": {
@@ -73500,7 +73507,8 @@
       "origin": "docker",
       "versions": {
         "19.03.11-r0": 1591189785,
-        "19.03.12-r0": 1595590719
+        "19.03.12-r0": 1595590719,
+        "20.10.3-r0": 1613583993
       }
     },
     "wireguard-tools-wg-quick": {
@@ -75705,7 +75713,8 @@
       "origin": "docker",
       "versions": {
         "19.03.11-r0": 1591189785,
-        "19.03.12-r0": 1595590719
+        "19.03.12-r0": 1595590719,
+        "20.10.3-r0": 1613583993
       }
     },
     "gtk4.0-demo": {
@@ -101328,6 +101337,28 @@
       "versions": {
         "1.0.8-r0": 1610610800
       }
+    },
+    "containerd-openrc": {
+      "origin": "containerd",
+      "versions": {
+        "1.4.3-r0": 1613583978
+      },
+      "dependencies": [
+        "containerd"
+      ]
+    },
+    "containerd-stress": {
+      "origin": "containerd",
+      "versions": {
+        "1.4.3-r0": 1613583978
+      },
+      "dependencies": [
+        "runc",
+        "so:libc.musl-ppc64le.so.1"
+      ],
+      "provides": [
+        "cmd:containerd-stress"
+      ]
     }
   },
   "provide": {
