@@ -5361,22 +5361,6 @@ m:Carlo Landmeter <clandmeter@alpinelinux.org>
 t:1610489771
 c:1118fff73bb8f3a967c12d42de2d8c4a0a7ed162
 
-C:Q1XdDeTG+/MthbdS8pawaGIXkFmks=
-P:libseccomp
-V:2.5.1-r0
-A:ppc64le
-S:49929
-I:159744
-T:An interface to the Linux Kernel's syscall filtering mechanism
-U:https://github.com/seccomp/libseccomp
-L:LGPL-2.1-or-later
-o:libseccomp
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1605975295
-c:6fa79e94d5322e109dd60ff45ab62bf057f061c8
-D:so:libc.musl-ppc64le.so.1
-p:so:libseccomp.so.2=2.5.1 cmd:scmp_sys_resolver
-
 C:Q1fZB/RBv31MA7vQ78decKE3sUc8E=
 P:wpa_supplicant-doc
 V:2.9-r10
@@ -5652,6 +5636,21 @@ t:1607660652
 c:ebf029ce11ec86bca948b2e757d62492c06ee1d2
 D:python3 py3-setuptools
 p:py-chardet=4.0.0-r0 cmd:chardetect
+
+C:Q1cnnxXyf9UHofaWFw4BDGzAIgLkU=
+P:py3-libseccomp
+V:2.5.1-r1
+A:ppc64le
+S:90050
+I:282624
+T:Python 3 bindings for libseccomp
+U:https://github.com/seccomp/libseccomp
+L:LGPL-2.1-or-later
+o:libseccomp
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1616306192
+c:6d9426901458616b5d4088ac229c26e843752a3f
+D:libseccomp python3 so:libc.musl-ppc64le.so.1
 
 C:Q1BFlr/caIH/uxF37RdaFt9Xu2i90=
 P:nfs-utils-openrc
@@ -14994,20 +14993,6 @@ t:1603539463
 c:965aec2a00f49db8fa8e8b9373a8d2d02979d3a1
 i:docs libassuan=2.5.4-r0
 
-C:Q1e9CMz5hzXJkTq6kregAElSbSEI0=
-P:libseccomp-static
-V:2.5.1-r0
-A:ppc64le
-S:57309
-I:241664
-T:An interface to the Linux Kernel's syscall filtering mechanism (static library)
-U:https://github.com/seccomp/libseccomp
-L:LGPL-2.1-or-later
-o:libseccomp
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1605975295
-c:6fa79e94d5322e109dd60ff45ab62bf057f061c8
-
 C:Q1HPCwkT1Gf5O4LMxYIGc+BEbJ7II=
 P:perl-xml-sax-base
 V:1.09-r2
@@ -19174,6 +19159,21 @@ c:c611bfce57dd34ff45363fd4e29fba7f6aea8f6b
 D:bc /bin/sh so:libc.musl-ppc64le.so.1 so:libncursesw.so.6 so:libpcre2-32.so.0 so:libstdc++.so.6
 p:cmd:fish cmd:fish_indent cmd:fish_key_reader
 
+C:Q1HYOT0rFt47BPhEZdz9dpSPLtic4=
+P:libseccomp-doc
+V:2.5.1-r1
+A:ppc64le
+S:25855
+I:159744
+T:An interface to the Linux Kernel's syscall filtering mechanism (documentation)
+U:https://github.com/seccomp/libseccomp
+L:LGPL-2.1-or-later
+o:libseccomp
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1616306192
+c:6d9426901458616b5d4088ac229c26e843752a3f
+i:docs libseccomp=2.5.1-r1
+
 C:Q1Q8prieK5RA9a5yfxyAzuvbiEDxA=
 P:perl-module-metadata-doc
 V:1.000037-r1
@@ -21246,22 +21246,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1604605419
 c:e3fd3d6441b8e4e18fd93c3a2ca50b7fe992152d
 D:so:libc.musl-ppc64le.so.1 so:librrd.so.8
-
-C:Q1+Mc0qwY1EEHJrbsue9EWsh8C7gc=
-P:libseccomp-dev
-V:2.5.1-r0
-A:ppc64le
-S:16911
-I:106496
-T:An interface to the Linux Kernel's syscall filtering mechanism (development files)
-U:https://github.com/seccomp/libseccomp
-L:LGPL-2.1-or-later
-o:libseccomp
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1605975295
-c:6fa79e94d5322e109dd60ff45ab62bf057f061c8
-D:linux-headers libseccomp=2.5.1-r0 pkgconfig
-p:pc:libseccomp=2.5.1
 
 C:Q1Sqc57wqOfTPfVdFJrAp4n0pmM+E=
 P:eventlog
@@ -37806,21 +37790,6 @@ c:3a547fffd7984025cd2f57fa0664c210c252d97d
 D:uwsgi so:libc.musl-ppc64le.so.1 so:libpython3.8.so.1.0
 p:uwsgi-python=2.0.19.1-r1
 
-C:Q1wT9k0umjmR1jKmoMj4pwQ36rJyA=
-P:libseccomp-doc
-V:2.5.1-r0
-A:ppc64le
-S:25869
-I:159744
-T:An interface to the Linux Kernel's syscall filtering mechanism (documentation)
-U:https://github.com/seccomp/libseccomp
-L:LGPL-2.1-or-later
-o:libseccomp
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1605975295
-c:6fa79e94d5322e109dd60ff45ab62bf057f061c8
-i:docs libseccomp=2.5.1-r0
-
 C:Q107VgUAI8/owzBTGQZDa4hVLEKEw=
 P:igmpproxy-doc
 V:0.2.1-r0
@@ -40732,6 +40701,22 @@ t:1605818601
 c:5fe4763bd2a736d3d7eab29f1b8ad91e842990f8
 D:kamailio so:libc.musl-ppc64le.so.1 so:libcurl.so.4 so:libsrdb1.so.1 so:libxml2.so.2
 
+C:Q1dtuLsNBVMc8jIU30B3FH1KV7rTE=
+P:libseccomp-dev
+V:2.5.1-r1
+A:ppc64le
+S:16902
+I:106496
+T:An interface to the Linux Kernel's syscall filtering mechanism (development files)
+U:https://github.com/seccomp/libseccomp
+L:LGPL-2.1-or-later
+o:libseccomp
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1616306192
+c:6d9426901458616b5d4088ac229c26e843752a3f
+D:linux-headers libseccomp=2.5.1-r1 pkgconfig
+p:pc:libseccomp=2.5.1
+
 C:Q1OF5sH29AGTrKvmL82zjr5OuS2SM=
 P:perl-encode-locale
 V:1.05-r3
@@ -41158,6 +41143,20 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1576262046
 c:5c402cd9e01e22eb89a27270df0f69bd6219b72f
 i:docs libxpm=3.5.13-r0
+
+C:Q1YaILtmHghkv3JEtORMA/i4026To=
+P:libseccomp-static
+V:2.5.1-r1
+A:ppc64le
+S:57354
+I:241664
+T:An interface to the Linux Kernel's syscall filtering mechanism (static library)
+U:https://github.com/seccomp/libseccomp
+L:LGPL-2.1-or-later
+o:libseccomp
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1616306192
+c:6d9426901458616b5d4088ac229c26e843752a3f
 
 C:Q1JtOrp0CVqQBMl1ak7ApFOJPKNJ0=
 P:xz-libs
@@ -63377,6 +63376,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1610602213
 c:cdd8e43e84732f5ed2eb8eed091dd1e8b35e60fd
 i:docs logrotate=3.18.0-r0
+
+C:Q1rWT3TbakWcJkD7njKBnC9zDl5Rs=
+P:libseccomp
+V:2.5.1-r1
+A:ppc64le
+S:49945
+I:159744
+T:An interface to the Linux Kernel's syscall filtering mechanism
+U:https://github.com/seccomp/libseccomp
+L:LGPL-2.1-or-later
+o:libseccomp
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1616306192
+c:6d9426901458616b5d4088ac229c26e843752a3f
+D:so:libc.musl-ppc64le.so.1
+p:so:libseccomp.so.2=2.5.1 cmd:scmp_sys_resolver
 
 C:Q1QGOZ4LBq+WBV0I+c1tVr9SKDpzo=
 P:lua5.2-socket
