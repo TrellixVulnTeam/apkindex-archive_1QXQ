@@ -5468,22 +5468,6 @@ t:1582342733
 c:b43daa57de03dbd7f61a45102b23f0ba116bb85f
 i:lua5.2 lua-filesize=0.1.1-r1
 
-C:Q1nCbDOQeSEMDgyyif+gLPd9X9zNM=
-P:busybox-ifupdown
-V:1.32.1-r4
-A:x86
-S:1250
-I:4096
-T:placeholder package for busybox ifupdown
-U:https://busybox.net/
-L:GPL-2.0-only
-o:busybox
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1617138468
-c:7acc3190c16c19db5767c094d5ea6de75bbc2ae8
-k:200
-p:ifupdown-any
-
 C:Q14FucMWIvOy2jrMKE5PQBHNWeZEU=
 P:zfs-virt
 V:5.10.27-r0
@@ -7790,6 +7774,22 @@ t:1582128390
 c:85b174327d5235e98f37cf23308e0e82032b9035
 D:python3 tmux
 p:cmd:byobu cmd:byobu-config cmd:byobu-ctrl-a cmd:byobu-disable cmd:byobu-disable-prompt cmd:byobu-enable cmd:byobu-enable-prompt cmd:byobu-export cmd:byobu-janitor cmd:byobu-keybindings cmd:byobu-launch cmd:byobu-launcher cmd:byobu-launcher-install cmd:byobu-launcher-uninstall cmd:byobu-layout cmd:byobu-prompt cmd:byobu-quiet cmd:byobu-reconnect-sockets cmd:byobu-screen cmd:byobu-select-backend cmd:byobu-select-profile cmd:byobu-select-session cmd:byobu-shell cmd:byobu-silent cmd:byobu-status cmd:byobu-status-detail cmd:byobu-tmux cmd:byobu-ugraph cmd:byobu-ulevel cmd:col1 cmd:ctail cmd:manifest cmd:purge-old-kernels cmd:vigpg cmd:wifi-status
+
+C:Q15BrcoxLwaMjQVjpamOsBSXcuizs=
+P:busybox-suid
+V:1.32.1-r5
+A:x86
+S:3973
+I:24576
+T:suid binaries of Busybox
+U:https://busybox.net/
+L:GPL-2.0-only
+o:busybox
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1617187161
+c:c98a4cdb1780451a40fcc752c71bd3c12501a88b
+D:busybox so:libc.musl-x86.so.1
+p:cmd:bbsuid
 
 C:Q1WQRfSsgLcNBxCpKj/iLtwfX87OU=
 P:lua5.3-discount
@@ -19719,21 +19719,6 @@ c:8ff923bf0b35048678e0c02847e04adbcf075726
 D:freeradius=3.0.21-r7 so:libc.musl-x86.so.1 so:libldap-2.4.so.2
 p:freeradius3-ldap=3.0.21-r7 so:rlm_ldap.so=0
 
-C:Q1zKK6iOQ1QedkOIb3/Ghw/lykgE8=
-P:busybox-doc
-V:1.32.1-r4
-A:x86
-S:43211
-I:65536
-T:Size optimized toolbox of many common UNIX utilities (documentation)
-U:https://busybox.net/
-L:GPL-2.0-only
-o:busybox
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1617138468
-c:7acc3190c16c19db5767c094d5ea6de75bbc2ae8
-i:docs busybox=1.32.1-r4
-
 C:Q1LkqkKW3QJXGzWxU90uZaDNYitHI=
 P:perl-namespace-clean
 V:0.27-r2
@@ -20256,22 +20241,6 @@ t:1572973506
 c:6cc7e22ba86ad319e1226404d676def447c7eef9
 D:so:libc.musl-x86.so.1
 p:so:libverto.so.1=1.0.0
-
-C:Q1EIdr2VjtfTvwOijkUMIZmT8DWwM=
-P:busybox
-V:1.32.1-r4
-A:x86
-S:491038
-I:913408
-T:Size optimized toolbox of many common UNIX utilities
-U:https://busybox.net/
-L:GPL-2.0-only
-o:busybox
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1617138468
-c:7acc3190c16c19db5767c094d5ea6de75bbc2ae8
-D:so:libc.musl-x86.so.1
-p:/bin/sh cmd:busybox cmd:sh
 
 C:Q1EfSgoGlkMtw42nIUEnHpI3APEwY=
 P:postgresql-bdr-dev
@@ -24020,6 +23989,21 @@ t:1606303375
 c:92c88001e8839640611484a46a4d40fa5782c189
 i:docs pmacct=1.7.5-r0
 
+C:Q1kYMhJWwMlGW6x0UkzexY7HKtnTY=
+P:busybox-static
+V:1.32.1-r5
+A:x86
+S:599277
+I:987136
+T:Statically linked Busybox
+U:https://busybox.net/
+L:GPL-2.0-only
+o:busybox
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1617187161
+c:c98a4cdb1780451a40fcc752c71bd3c12501a88b
+p:cmd:busybox.static
+
 C:Q1QshVFQHhpr5DIowxyfo0tkdtJU4=
 P:eggdrop-doc
 V:1.8.4-r1
@@ -24752,23 +24736,6 @@ t:1602697233
 c:833d488175347f2bb6a5da2ff976e821dfe0d46b
 D:so:libImlib2.so.1 so:libX11.so.6 so:libXdamage.so.1 so:libXext.so.6 so:libXfixes.so.3 so:libXft.so.2 so:libXinerama.so.1 so:libc.musl-x86.so.1 so:libcairo.so.2 so:libcurl.so.4 so:libgcc_s.so.1 so:liblua-5.3.so.0 so:libncursesw.so.6 so:libstdc++.so.6 so:libxml2.so.2
 p:cmd:conky
-
-C:Q1Vp48k1qBF2be3OSMS8BGMXNlu6g=
-P:ssl_client
-V:1.32.1-r4
-A:x86
-S:4477
-I:28672
-T:EXternal ssl_client for busybox wget
-U:https://busybox.net/
-L:GPL-2.0-only
-o:busybox
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1617138468
-c:7acc3190c16c19db5767c094d5ea6de75bbc2ae8
-D:so:libc.musl-x86.so.1 so:libtls-standalone.so.1
-p:cmd:ssl_client
-i:busybox=1.32.1-r4 libssl1.1
 
 C:Q1ByAss0+MVYg7rEHGqRQygk73r5g=
 P:freeswitch-sounds-pt-br-karina-8000
@@ -38185,6 +38152,22 @@ c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:ppp-daemon so:libc.musl-x86.so.1
 p:cmd:bcrelay cmd:pptpctrl cmd:pptpd
 
+C:Q1OAO0MxnoPVVvnwjnX48pI5uCZKE=
+P:busybox-ifupdown
+V:1.32.1-r5
+A:x86
+S:1251
+I:4096
+T:placeholder package for busybox ifupdown
+U:https://busybox.net/
+L:GPL-2.0-only
+o:busybox
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1617187161
+c:c98a4cdb1780451a40fcc752c71bd3c12501a88b
+k:200
+p:ifupdown-any
+
 C:Q1ygqq15ndEoQgmitenmw8ME3UwuY=
 P:linux-pam-dev
 V:1.5.1-r0
@@ -46683,6 +46666,22 @@ o:libvorbis
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1603204172
 c:573e07da91784d4d27c4bc8b9e9122495c7356d3
+
+C:Q1WTozHbJbFSTOf/pJrI0IDBmn5iY=
+P:busybox
+V:1.32.1-r5
+A:x86
+S:491045
+I:913408
+T:Size optimized toolbox of many common UNIX utilities
+U:https://busybox.net/
+L:GPL-2.0-only
+o:busybox
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1617187161
+c:c98a4cdb1780451a40fcc752c71bd3c12501a88b
+D:so:libc.musl-x86.so.1
+p:/bin/sh cmd:busybox cmd:sh
 
 C:Q1irGvqApzMJQQnm9rDamjnm/XVpo=
 P:libisoburn-doc
@@ -57538,6 +57537,23 @@ c:df11f5ff849f9ba7a569eed8b2f53151561cc202
 D:so:libc.musl-x86.so.1
 p:cmd:iucode_tool
 
+C:Q1c3snaGRq5MIFTssGVlTSx7Pyvws=
+P:ssl_client
+V:1.32.1-r5
+A:x86
+S:4485
+I:28672
+T:EXternal ssl_client for busybox wget
+U:https://busybox.net/
+L:GPL-2.0-only
+o:busybox
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1617187161
+c:c98a4cdb1780451a40fcc752c71bd3c12501a88b
+D:so:libc.musl-x86.so.1 so:libtls-standalone.so.1
+p:cmd:ssl_client
+i:busybox=1.32.1-r5 libssl1.1
+
 C:Q1RMpJzNE7NDhZzT9NU/ppCXNLNbs=
 P:vde2-doc
 V:2.3.2-r12
@@ -59752,22 +59768,6 @@ c:20b13d17d07ee2958a377d95f3ad14826ff9ddf9
 D:cmocka=1.1.5-r1 pkgconfig
 p:pc:cmocka=1.1.5
 
-C:Q1lWJ1IpbzZAZRFIbVh230r1KnU0o=
-P:busybox-suid
-V:1.32.1-r4
-A:x86
-S:3965
-I:24576
-T:suid binaries of Busybox
-U:https://busybox.net/
-L:GPL-2.0-only
-o:busybox
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1617138468
-c:7acc3190c16c19db5767c094d5ea6de75bbc2ae8
-D:busybox so:libc.musl-x86.so.1
-p:cmd:bbsuid
-
 C:Q19mStLYvuBAsRw8eDiL53DP7CV5k=
 P:ifupdown-ng
 V:0.10.2-r2
@@ -60764,6 +60764,21 @@ t:1611244023
 c:ba8a99a1375f5a68f7a5ad00015811a045b66efa
 D:perl perl-digest-sha1 perl-getopt-long perl-uri so:libc.musl-x86.so.1
 p:cmd:razor-admin cmd:razor-check cmd:razor-client cmd:razor-report cmd:razor-revoke
+
+C:Q1W6WEcdYZxhrcYxr1myaSVKggwJg=
+P:busybox-doc
+V:1.32.1-r5
+A:x86
+S:43214
+I:65536
+T:Size optimized toolbox of many common UNIX utilities (documentation)
+U:https://busybox.net/
+L:GPL-2.0-only
+o:busybox
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1617187161
+c:c98a4cdb1780451a40fcc752c71bd3c12501a88b
+i:docs busybox=1.32.1-r5
 
 C:Q1rYY2p4GehbYbIsVQtIetN9cNoP4=
 P:itstool-doc
@@ -63922,22 +63937,6 @@ t:1600709955
 c:882c497e9a764f45a020c28de32641a082ae69dd
 D:perl
 
-C:Q1rmDg6JNTxCumE19fGsfB67ucB54=
-P:busybox-extras
-V:1.32.1-r4
-A:x86
-S:53102
-I:102400
-T:Additional binaries of Busybox
-U:https://busybox.net/
-L:GPL-2.0-only
-o:busybox
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1617138468
-c:7acc3190c16c19db5767c094d5ea6de75bbc2ae8
-D:busybox so:libc.musl-x86.so.1
-p:cmd:busybox-extras
-
 C:Q1gRi1pQ9Ob5Gz+hJOzQ0jFDIxmAo=
 P:gengetopt-doc
 V:2.23-r0
@@ -65580,6 +65579,22 @@ c:aa8e680db9c581f23e0c246ef08941aaaa43f49c
 D:python3
 p:py-sphinx_rtd_theme=0.4.3-r3
 
+C:Q14QHX/MXBvCt8xzUeZKvn1RaTtnw=
+P:busybox-extras
+V:1.32.1-r5
+A:x86
+S:53108
+I:102400
+T:Additional binaries of Busybox
+U:https://busybox.net/
+L:GPL-2.0-only
+o:busybox
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1617187161
+c:c98a4cdb1780451a40fcc752c71bd3c12501a88b
+D:busybox so:libc.musl-x86.so.1
+p:cmd:busybox-extras
+
 C:Q18nW+wzC495dbvSPL3t2k42slATA=
 P:libuv-dbg
 V:1.40.0-r0
@@ -66649,21 +66664,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1600709960
 c:fae4a509c71006cdb6cf33a7cd90d3c0f91a992b
 i:docs perl-extutils-pkgconfig=1.16-r3
-
-C:Q1vZxwLw+BykrYdl985vs/ugsTD5I=
-P:busybox-static
-V:1.32.1-r4
-A:x86
-S:599282
-I:987136
-T:Statically linked Busybox
-U:https://busybox.net/
-L:GPL-2.0-only
-o:busybox
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1617138468
-c:7acc3190c16c19db5767c094d5ea6de75bbc2ae8
-p:cmd:busybox.static
 
 C:Q1DtjAXaUkICJEPr7EVuTDSvZX0WI=
 P:lua5.2-ldbus
