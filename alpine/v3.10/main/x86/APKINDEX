@@ -7198,6 +7198,22 @@ c:91c5476e11263890b9499836f236e16837981c1a
 D:pkgconfig
 p:pc:xcb-proto=1.13
 
+C:Q1xdJfb4h1Nm2AyOzc7j9yDYPI090=
+P:busybox-extras
+V:1.30.1-r5
+A:x86
+S:52025
+I:102400
+T:Additional binaries of Busybox
+U:https://busybox.net/
+L:GPL-2.0
+o:busybox
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1617166817
+c:26527b0535f65a4ac0ae7f3c9afb2294885b21cc
+D:busybox so:libc.musl-x86.so.1
+p:cmd:busybox-extras
+
 C:Q16zrRFnoWg5AOOtGuVnUoRVKzleM=
 P:perl-sub-identify
 V:0.14-r2
@@ -14445,22 +14461,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1592544150
 c:5e60bc7b315d1c806baa72e3ca1bd46b273ab664
 D:dropbear-dbclient !openssh-client dropbear-dbclient=2019.78-r1
-
-C:Q1mgsS8aa12RibciJwmiqN8v1GngM=
-P:busybox
-V:1.30.1-r4
-A:x86
-S:490649
-I:901120
-T:Size optimized toolbox of many common UNIX utilities
-U:https://busybox.net/
-L:GPL-2.0
-o:busybox
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590831942
-c:07059acb32285e13fad5e8688655f759b8c5c4d6
-D:so:libc.musl-x86.so.1
-p:/bin/sh cmd:busybox cmd:sh
 
 C:Q1eoEXS4PDApG+O56y/sQMhPOh9hY=
 P:wpa_supplicant
@@ -23137,6 +23137,23 @@ t:1556995972
 c:0ffe23c7d5359027eae0d072a4e0b48ba41ba27e
 i:docs lua-inspect=3.1.1-r1
 
+C:Q1MuQ8HMVWB26lEYURv1L60xUCV48=
+P:ssl_client
+V:1.30.1-r5
+A:x86
+S:4394
+I:28672
+T:EXternal ssl_client for busybox wget
+U:https://busybox.net/
+L:GPL-2.0
+o:busybox
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1617166817
+c:26527b0535f65a4ac0ae7f3c9afb2294885b21cc
+D:so:libc.musl-x86.so.1 so:libtls-standalone.so.1
+p:cmd:ssl_client
+i:busybox=1.30.1-r5 libssl1.1
+
 C:Q1VeNuwH5abJs//Bml+8dbPZVSy7M=
 P:ncurses-terminfo
 V:6.1_p20190518-r2
@@ -29361,6 +29378,22 @@ c:b8e0913221a8801e03e073be93e3b20c0bcb5781
 D:freeradius-sql=3.0.20-r2 so:libc.musl-x86.so.1 so:libsqlite3.so.0
 p:freeradius3-sqlite=3.0.20-r2 so:rlm_sql_sqlite.so=0
 
+C:Q1WurtOQdEq4M0oBFVjFQVUH99gLY=
+P:busybox-suid
+V:1.30.1-r5
+A:x86
+S:3842
+I:24576
+T:suid binaries of Busybox
+U:https://busybox.net/
+L:GPL-2.0
+o:busybox
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1617166817
+c:26527b0535f65a4ac0ae7f3c9afb2294885b21cc
+D:busybox so:libc.musl-x86.so.1
+p:cmd:bbsuid
+
 C:Q1bJ/39ifvWod7bvmKx1zk3jBhN+M=
 P:glew-dev
 V:2.1.0-r0
@@ -33979,22 +34012,6 @@ t:1558986899
 c:d6df2aed8600f865c2cc0e1296c444636fd82f45
 D:libassuan=2.5.3-r0 pc:gpg-error pkgconfig
 p:pc:libassuan=2.5.3 cmd:libassuan-config
-
-C:Q1yF8U2JGPDenGahwocvYvAcSt5sE=
-P:busybox-extras
-V:1.30.1-r4
-A:x86
-S:52034
-I:102400
-T:Additional binaries of Busybox
-U:https://busybox.net/
-L:GPL-2.0
-o:busybox
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590831941
-c:07059acb32285e13fad5e8688655f759b8c5c4d6
-D:busybox so:libc.musl-x86.so.1
-p:cmd:busybox-extras
 
 C:Q1eQ6LRJnTQic1HfJhI0c1rcdwovQ=
 P:py2-singledispatch
@@ -43458,6 +43475,21 @@ t:1557066310
 c:165ba7eebbe3ff10a4fa7fd599f06de7802043f9
 D:fuse-common so:libc.musl-x86.so.1
 p:so:libfuse.so.2=2.9.8 so:libulockmgr.so.1=1.0.1 cmd:fusermount cmd:mount.fuse cmd:ulockmgr_server
+
+C:Q1g+2JOx1FTgNvIoz5ChpyQXuZNNA=
+P:busybox-static
+V:1.30.1-r5
+A:x86
+S:594066
+I:974848
+T:Statically linked Busybox
+U:https://busybox.net/
+L:GPL-2.0
+o:busybox
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1617166817
+c:26527b0535f65a4ac0ae7f3c9afb2294885b21cc
+p:cmd:busybox.static
 
 C:Q1dmzmqy7pYmOa8/M3wbASpkzWnLw=
 P:git-gitk
@@ -52947,21 +52979,6 @@ t:1557069577
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:perl perl-html-parser
 
-C:Q1lb8dzpBS3p24/CAuCvIBz0/sSro=
-P:busybox-static
-V:1.30.1-r4
-A:x86
-S:594048
-I:974848
-T:Statically linked Busybox
-U:https://busybox.net/
-L:GPL-2.0
-o:busybox
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590831941
-c:07059acb32285e13fad5e8688655f759b8c5c4d6
-p:cmd:busybox.static
-
 C:Q19mHhcVpeMAXdyspts2d2Gey5H9U=
 P:tftp-hpa
 V:5.2-r2
@@ -54171,6 +54188,22 @@ o:libshout
 m:Francesco Colista <fcolista@alpinelinux.org>
 t:1560345171
 c:f2c041ba3a38367b28c8ebfc0a25395ab1cb0dcb
+
+C:Q1kaqkjhpDOMglkNUNe0woVbnI0+g=
+P:busybox
+V:1.30.1-r5
+A:x86
+S:490668
+I:901120
+T:Size optimized toolbox of many common UNIX utilities
+U:https://busybox.net/
+L:GPL-2.0
+o:busybox
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1617166817
+c:26527b0535f65a4ac0ae7f3c9afb2294885b21cc
+D:so:libc.musl-x86.so.1
+p:/bin/sh cmd:busybox cmd:sh
 
 C:Q1YgYwtEdrEZTC7Ircb7KqPkV2xxw=
 P:liblksctp
@@ -75733,23 +75766,6 @@ c:6047506c809283c5f840f4b0c462d1d77a84052e
 D:lua5.2 so:libc.musl-x86.so.1 so:libmariadb.so.3
 i:lua-sql-mysql=2.3.5-r2 lua5.2
 
-C:Q1E0eIaYMHo4nJxcR7+ZgKmao2/ho=
-P:ssl_client
-V:1.30.1-r4
-A:x86
-S:4400
-I:28672
-T:EXternal ssl_client for busybox wget
-U:https://busybox.net/
-L:GPL-2.0
-o:busybox
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590831942
-c:07059acb32285e13fad5e8688655f759b8c5c4d6
-D:so:libc.musl-x86.so.1 so:libtls-standalone.so.1
-p:cmd:ssl_client
-i:busybox=1.30.1-r4 libssl1.1
-
 C:Q1c9xHzZTGu3IbfQd2aR25HueAN4g=
 P:libass
 V:0.14.0-r0
@@ -76282,22 +76298,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557589951
 c:fe4c19e7c5c074364570c87081754dad299364b4
 i:docs perl-text-soundex=3.05-r1
-
-C:Q13C89tA511FJGPktA+U4d8Xsw2AA=
-P:busybox-suid
-V:1.30.1-r4
-A:x86
-S:3845
-I:24576
-T:suid binaries of Busybox
-U:https://busybox.net/
-L:GPL-2.0
-o:busybox
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1590831941
-c:07059acb32285e13fad5e8688655f759b8c5c4d6
-D:busybox so:libc.musl-x86.so.1
-p:cmd:bbsuid
 
 C:Q1rC1Gl4cTKd6j7FP7ZIKsDsvGPNE=
 P:lmdb
