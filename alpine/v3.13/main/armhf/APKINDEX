@@ -2084,21 +2084,6 @@ t:1605818601
 c:5fe4763bd2a736d3d7eab29f1b8ad91e842990f8
 D:kamailio so:libc.musl-armhf.so.1 so:libcurl.so.4 so:libsrdb1.so.1 so:libxml2.so.2
 
-C:Q1vo3jn+SCFNz4mXtX7g0lz9bOK2g=
-P:lxc-templates
-V:4.0.6-r1
-A:armhf
-S:6704
-I:40960
-T:Templates for LXC (except alpine and download)
-U:https://linuxcontainers.org/lxc/
-L:GPL-2.0-only
-o:lxc
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1610543655
-c:96b8ef2b51191e249227fd64b428fc93a7998ee4
-D:tar
-
 C:Q13wMdxjCcdAO3JFI7g+ZK5v8Aq4Y=
 P:libidn
 V:1.35-r0
@@ -2252,6 +2237,21 @@ t:1606817701
 c:b9933f8d7767152b8aba1f7faf630500b520deee
 D:drill ip6tables ipset iptables lua5.3 lua5.3-alt-getopt lua5.3-cjson lua5.3-pc lua5.3-posix lua5.3-stringy lua5.3-lyaml xtables-addons /bin/sh
 p:cmd:awall
+
+C:Q11KH8vSvXVlNYI6YFegTQg/BHrUc=
+P:lxc-templates-oci
+V:4.0.6-r2
+A:armhf
+S:4977
+I:32768
+T:OCI Template for LXC
+U:https://linuxcontainers.org/lxc/
+L:GPL-2.0-only
+o:lxc
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1617782289
+c:c098d412e61794e5519d15bbbdf902fdeb38596c
+D:bash jq
 
 C:Q1V8P85C7pHCGIkMgjCMxnStOgNHE=
 P:xmlindent-doc
@@ -4577,6 +4577,22 @@ t:1608485168
 c:5a7334346856fd4c8050f4942c23c99ca5fe9dbd
 D:pkgconfig zstd-libs=1.4.5-r3
 p:pc:libzstd=1.4.5
+
+C:Q1Mnr/aWahm0ZxwTO1RTNYdQ3yLqg=
+P:lxc-lvm
+V:4.0.6-r2
+A:armhf
+S:1247
+I:4096
+T:LVM support for LXC
+U:https://linuxcontainers.org/lxc/
+L:GPL-2.0-only
+o:lxc
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1617782289
+c:c098d412e61794e5519d15bbbdf902fdeb38596c
+D:lxc=4.0.6-r2 lvm2 util-linux
+i:lxc=4.0.6-r2 lvm2
 
 C:Q1o0Mau3lcjveP+Z6uSOv3d7/qoZY=
 P:perl-http-body
@@ -7300,6 +7316,21 @@ t:1591912877
 c:3ba570621a4ba4862f8defd3a78225d61032f570
 D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libncursesw.so.6 so:libnl.so.1 so:libpci.so.3 so:libstdc++.so.6
 p:cmd:powertop
+
+C:Q1zVKaUF/CWGqZHyeeAiykIqMn4/M=
+P:lxc-pam
+V:4.0.6-r2
+A:armhf
+S:18828
+I:53248
+T:PAM module for LXC
+U:https://linuxcontainers.org/lxc/
+L:GPL-2.0-only
+o:lxc
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1617782289
+c:c098d412e61794e5519d15bbbdf902fdeb38596c
+D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libpam.so.0
 
 C:Q1wdh0VVVmhB9hqKYTlPDhSkLWtmM=
 P:cmph-dev
@@ -13772,6 +13803,22 @@ t:1617358155
 c:e6bf51db68db37ced0a99a7bb46f2cd8d292073a
 D:so:libc.musl-armhf.so.1 so:libogg.so.0 so:libspeex.so.1 so:libspeexdsp.so.1
 
+C:Q1WRh1M5+mA3+mg1zRfs6ZCRbpdU0=
+P:lxc
+V:4.0.6-r2
+A:armhf
+S:6502749
+I:16273408
+T:Userspace interface for the Linux kernel containment features
+U:https://linuxcontainers.org/lxc/
+L:GPL-2.0-only
+o:lxc
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1617782289
+c:c098d412e61794e5519d15bbbdf902fdeb38596c
+D:so:libc.musl-armhf.so.1 so:libcap.so.2 so:libgcc_s.so.1 so:liblxc.so.1 so:libseccomp.so.2
+p:cmd:init.lxc cmd:init.lxc.static cmd:lxc-attach cmd:lxc-autostart cmd:lxc-cgroup cmd:lxc-checkconfig cmd:lxc-checkpoint cmd:lxc-config cmd:lxc-console cmd:lxc-copy cmd:lxc-create cmd:lxc-destroy cmd:lxc-device cmd:lxc-execute cmd:lxc-freeze cmd:lxc-info cmd:lxc-ls cmd:lxc-monitor cmd:lxc-snapshot cmd:lxc-start cmd:lxc-stop cmd:lxc-top cmd:lxc-unfreeze cmd:lxc-unshare cmd:lxc-update-config cmd:lxc-usernsexec cmd:lxc-wait
+
 C:Q1SjkRGFbJVs8349AGCF4PDfd0JWg=
 P:py3-iso8601
 V:0.1.14-r0
@@ -15501,6 +15548,21 @@ t:1574164131
 c:8dc70211da8b6afb23319a48f9c8e83a1a7e4ff3
 D:python3 so:libc.musl-armhf.so.1
 p:py-markupsafe=1.1.1-r3
+
+C:Q1OyarO4Ig8bHCDuEL58F7gp4P6w8=
+P:lxc-openrc
+V:4.0.6-r2
+A:armhf
+S:3309
+I:24576
+T:Userspace interface for the Linux kernel containment features (OpenRC init scripts)
+U:https://linuxcontainers.org/lxc/
+L:GPL-2.0-only
+o:lxc
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1617782289
+c:c098d412e61794e5519d15bbbdf902fdeb38596c
+i:openrc lxc=4.0.6-r2
 
 C:Q1vMmwo7HIr0e5ypjpu8+yfY9yNQo=
 P:postgresql-pllua-dev
@@ -17646,22 +17708,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1605115355
 c:c8beec7e93e0122807553031ee03ec27c75e48a7
 i:openrc quagga=1.2.4-r5
-
-C:Q1lOpr/wXEiKQ/BDsJpBRA3WuC5wA=
-P:lxc-dev
-V:4.0.6-r1
-A:armhf
-S:1815687
-I:4616192
-T:Userspace interface for the Linux kernel containment features (development files)
-U:https://linuxcontainers.org/lxc/
-L:GPL-2.0-only
-o:lxc
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1610543655
-c:96b8ef2b51191e249227fd64b428fc93a7998ee4
-D:lxc-libs=4.0.6-r1 pkgconfig
-p:pc:lxc=4.0.6
 
 C:Q1SNxWAGf3ThCH1zgZySfeeFqRRZs=
 P:openssl
@@ -22062,6 +22108,21 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1600709955
 c:cc00437dcec05a184061757adfed82930c9596d1
 D:perl perl-common-sense so:libc.musl-armhf.so.1
+
+C:Q105OP4dIv0oiksBTDVMGLO7/kcGI=
+P:lxc-templates
+V:4.0.6-r2
+A:armhf
+S:6705
+I:40960
+T:Templates for LXC (except alpine and download)
+U:https://linuxcontainers.org/lxc/
+L:GPL-2.0-only
+o:lxc
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1617782289
+c:c098d412e61794e5519d15bbbdf902fdeb38596c
+D:tar
 
 C:Q1FPTKR+aLF+yrdE0lJ2RBMOJnzuM=
 P:libdaemon-doc
@@ -27391,21 +27452,6 @@ c:682805fd8f7d081cefbef98cbc10d3cc5d3c46eb
 D:so:libc.musl-armhf.so.1 so:libcares.so.2 so:libcrypto.so.1.1
 p:cmd:sipsak
 
-C:Q1AijEOvVNSL7J9ECW8mFapU8zR2U=
-P:lxc-bash-completion
-V:4.0.6-r1
-A:armhf
-S:1881
-I:24576
-T:Bash completions for lxc
-U:https://linuxcontainers.org/lxc/
-L:GPL-2.0-only
-o:lxc
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1610543655
-c:96b8ef2b51191e249227fd64b428fc93a7998ee4
-i:lxc=4.0.6-r1 bash-completion
-
 C:Q1VR86LVEyRDY0vP65onw8J1pU4PQ=
 P:libpciaccess-doc
 V:0.16-r0
@@ -27800,21 +27846,6 @@ m:Nathan Angelacos <nangel@alpinelinux.org>
 t:1605818601
 c:5fe4763bd2a736d3d7eab29f1b8ad91e842990f8
 D:kamailio so:libc.musl-armhf.so.1 so:libhiredis.so.1.0.0 so:libsrdb1.so.1
-
-C:Q17ZBh1M2GwmiTtARhs3SFj/3tT1o=
-P:lxc-download
-V:4.0.6-r1
-A:armhf
-S:6886
-I:40960
-T:LXC container image downloader template
-U:https://linuxcontainers.org/lxc/
-L:GPL-2.0-only
-o:lxc
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1610543655
-c:96b8ef2b51191e249227fd64b428fc93a7998ee4
-D:lxc gnupg tar wget
 
 C:Q1H4rbVJEjyB1vpYRktoRDdXdZIyM=
 P:perl-font-afm-doc
@@ -28830,22 +28861,6 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:/bin/sh so:libc.musl-armhf.so.1
 p:cmd:pdnsd cmd:pdnsd-ctl
-
-C:Q1d4L9AAe3qXLmi4GQ05b5RdPyhpo=
-P:lxc-libs
-V:4.0.6-r1
-A:armhf
-S:305199
-I:761856
-T:Userspace interface for the Linux kernel containment features (libraries)
-U:https://linuxcontainers.org/lxc/
-L:GPL-2.0-only
-o:lxc
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1610543655
-c:96b8ef2b51191e249227fd64b428fc93a7998ee4
-D:so:libc.musl-armhf.so.1 so:libcap.so.2 so:libgcc_s.so.1 so:libseccomp.so.2
-p:so:liblxc.so.1=1.7.0
 
 C:Q1jfWR/FX79JYY3nEF0EVnjrbPA+Q=
 P:py3-mimeparse
@@ -31919,21 +31934,6 @@ c:87fca34559c596929866468259fd394350c3c059
 D:libvdpau=1.4-r0 pkgconfig
 p:pc:vdpau=1.4
 
-C:Q1g+uw1JXbDZlKy5lM7Vgxd3D47JY=
-P:lxc-templates-oci
-V:4.0.6-r1
-A:armhf
-S:4982
-I:32768
-T:OCI Template for LXC
-U:https://linuxcontainers.org/lxc/
-L:GPL-2.0-only
-o:lxc
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1610543655
-c:96b8ef2b51191e249227fd64b428fc93a7998ee4
-D:bash jq
-
 C:Q1RGiRWLcptZypUWCmR+Xra2/LrIE=
 P:bluez-deprecated
 V:5.55-r1
@@ -34660,21 +34660,6 @@ k:100
 p:lua-doc
 i:docs lua5.1=5.1.5-r7
 
-C:Q1P7JsOYvYoyWY3wccdBmd1NupE6Q=
-P:lxc-openrc
-V:4.0.6-r1
-A:armhf
-S:3305
-I:24576
-T:Userspace interface for the Linux kernel containment features (OpenRC init scripts)
-U:https://linuxcontainers.org/lxc/
-L:GPL-2.0-only
-o:lxc
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1610543655
-c:96b8ef2b51191e249227fd64b428fc93a7998ee4
-i:openrc lxc=4.0.6-r1
-
 C:Q1wO4eyuLlG6Pm2mAgwj2lDDtIAJs=
 P:dhcp-libs-static
 V:4.4.2-r3
@@ -35737,22 +35722,6 @@ m:Rasmus Thomsen <oss@cogitri.dev>
 t:1610618580
 c:89511be716e9e7d098ab3d899852e18eecf8249e
 D:glib-dev
-
-C:Q1lZ0WTnjmY3fPJlZn3SptyZv6ygk=
-P:lxc
-V:4.0.6-r1
-A:armhf
-S:6489752
-I:16236544
-T:Userspace interface for the Linux kernel containment features
-U:https://linuxcontainers.org/lxc/
-L:GPL-2.0-only
-o:lxc
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1610543655
-c:96b8ef2b51191e249227fd64b428fc93a7998ee4
-D:so:libc.musl-armhf.so.1 so:libcap.so.2 so:libgcc_s.so.1 so:liblxc.so.1 so:libseccomp.so.2
-p:cmd:init.lxc cmd:init.lxc.static cmd:lxc-attach cmd:lxc-autostart cmd:lxc-cgroup cmd:lxc-checkconfig cmd:lxc-checkpoint cmd:lxc-config cmd:lxc-console cmd:lxc-copy cmd:lxc-create cmd:lxc-destroy cmd:lxc-device cmd:lxc-execute cmd:lxc-freeze cmd:lxc-info cmd:lxc-ls cmd:lxc-monitor cmd:lxc-snapshot cmd:lxc-start cmd:lxc-stop cmd:lxc-top cmd:lxc-unfreeze cmd:lxc-unshare cmd:lxc-update-config cmd:lxc-usernsexec cmd:lxc-wait
 
 C:Q1p2VCMWkrz+f+FhxJYzBx3CmBLzI=
 P:linux-firmware-dsp56k
@@ -42720,6 +42689,22 @@ c:792056e07e4a0e50c61bd38e9db4be8e2e0e8ad9
 D:libxfont=1.5.4-r1 pc:fontenc pc:fontsproto pc:freetype2 pc:xproto pkgconfig
 p:pc:xfont=1.5.4
 
+C:Q1kIDtvneJH6iCiUuGtM6azcSIdGA=
+P:lxc-libs
+V:4.0.6-r2
+A:armhf
+S:305542
+I:761856
+T:Userspace interface for the Linux kernel containment features (libraries)
+U:https://linuxcontainers.org/lxc/
+L:GPL-2.0-only
+o:lxc
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1617782289
+c:c098d412e61794e5519d15bbbdf902fdeb38596c
+D:so:libc.musl-armhf.so.1 so:libcap.so.2 so:libgcc_s.so.1 so:libseccomp.so.2
+p:so:liblxc.so.1=1.7.0
+
 C:Q1Aro+9tz9wn6VbnttM4OvoZgZJzY=
 P:perl-io-stringy
 V:2.113-r1
@@ -42996,22 +42981,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1587747212
 c:a8a1b91446db94e5eafa5ebe8b532fa0025c26c4
 D:boost-atomic boost-chrono boost-container boost-context boost-contract boost-coroutine boost-date_time boost-fiber boost-filesystem boost-graph boost-iostreams boost-locale boost-log_setup boost-log boost-math boost-prg_exec_monitor boost-program_options boost-python3 boost-random boost-regex boost-serialization boost-stacktrace_basic boost-stacktrace_noop boost-system boost-thread boost-timer boost-type_erasure boost-unit_test_framework boost-wave boost-wserialization
-
-C:Q1ZnVHnfs8tp+HiPtsCFnVRLyUpBw=
-P:lxc-lvm
-V:4.0.6-r1
-A:armhf
-S:1245
-I:4096
-T:LVM support for LXC
-U:https://linuxcontainers.org/lxc/
-L:GPL-2.0-only
-o:lxc
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1610543655
-c:96b8ef2b51191e249227fd64b428fc93a7998ee4
-D:lxc=4.0.6-r1 lvm2 util-linux
-i:lxc=4.0.6-r1 lvm2
 
 C:Q1R7Jyzc09O1gfElPFooLHjXhfmzQ=
 P:libunwind-dev
@@ -45070,6 +45039,22 @@ c:f583571b44f9ecfcef97a77153bc97997f728e46
 D:amavis libmilter so:libc.musl-armhf.so.1 so:libmilter.so.1.0.2
 p:cmd:amavisd-milter
 
+C:Q1/ejOQvtwJEvWulx7/gYM99v44N8=
+P:lxc-dev
+V:4.0.6-r2
+A:armhf
+S:1818000
+I:4620288
+T:Userspace interface for the Linux kernel containment features (development files)
+U:https://linuxcontainers.org/lxc/
+L:GPL-2.0-only
+o:lxc
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1617782289
+c:c098d412e61794e5519d15bbbdf902fdeb38596c
+D:lxc-libs=4.0.6-r2 pkgconfig
+p:pc:lxc=4.0.6
+
 C:Q1nqVqE1xz01FdOotsgSntaLAwRAE=
 P:openntpd-doc
 V:6.8_p1-r0
@@ -46327,6 +46312,21 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1600709974
 c:266ef0a9a8a8354aff0d31533009b5e006c829d6
 p:cmd:start_server
+
+C:Q16x436E570lAsVID+5AdbU5KCYQ8=
+P:lxc-download
+V:4.0.6-r2
+A:armhf
+S:6887
+I:40960
+T:LXC container image downloader template
+U:https://linuxcontainers.org/lxc/
+L:GPL-2.0-only
+o:lxc
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1617782289
+c:c098d412e61794e5519d15bbbdf902fdeb38596c
+D:lxc gnupg tar wget
 
 C:Q1Xd4taALEovHr7VJKTEiiQ8rdlMI=
 P:py3-olefile
@@ -49756,21 +49756,6 @@ m:Rasmus Thomsen <oss@cogitri.dev>
 t:1615407598
 c:05c74c5ce33ef7783a0f990fcc6de5380ba86cf1
 i:docs glib=2.66.7-r1
-
-C:Q1aJ93PqIAfkg4BRjrpMm7RCo9TaM=
-P:lxc-doc
-V:4.0.6-r1
-A:armhf
-S:229994
-I:581632
-T:Userspace interface for the Linux kernel containment features (documentation)
-U:https://linuxcontainers.org/lxc/
-L:GPL-2.0-only
-o:lxc
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1610543655
-c:96b8ef2b51191e249227fd64b428fc93a7998ee4
-i:docs lxc=4.0.6-r1
 
 C:Q1LIbjFxrClUw99atVyEzMVXkv9Jw=
 P:dropbear-convert
@@ -55005,6 +54990,21 @@ c:4c48bd096fed1bc4c8d60ee3d7c547102f6dfaf8
 D:lua5.2 so:libc.musl-armhf.so.1 so:libmagic.so.1
 i:lua-file-magic=0.2-r2 lua5.2
 
+C:Q1MK8oJ6p/OEZ+Q2Z//7o+vUA6dIA=
+P:lxc-doc
+V:4.0.6-r2
+A:armhf
+S:230146
+I:581632
+T:Userspace interface for the Linux kernel containment features (documentation)
+U:https://linuxcontainers.org/lxc/
+L:GPL-2.0-only
+o:lxc
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1617782289
+c:c098d412e61794e5519d15bbbdf902fdeb38596c
+i:docs lxc=4.0.6-r2
+
 C:Q1gzkh2wkKfONVuXzqMDFNuLs7318=
 P:fcgi-dev
 V:2.4.2-r1
@@ -55902,21 +55902,6 @@ t:1588342289
 c:c7f555f5f1ce8fbc359d15c584afd1c397a7292d
 D:lua5.3 so:libc.musl-armhf.so.1
 i:lua-stringy=0.5.1-r1 lua5.3
-
-C:Q1sGTSqbaEWFTAGREcimkNqztZD3M=
-P:lxc-pam
-V:4.0.6-r1
-A:armhf
-S:18824
-I:53248
-T:PAM module for LXC
-U:https://linuxcontainers.org/lxc/
-L:GPL-2.0-only
-o:lxc
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1610543655
-c:96b8ef2b51191e249227fd64b428fc93a7998ee4
-D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libpam.so.0
 
 C:Q1AcFa7QOMDMI9/LuMgl2810CADUU=
 P:perl-lwp-mediatypes-doc
@@ -59495,6 +59480,21 @@ t:1610489771
 c:1118fff73bb8f3a967c12d42de2d8c4a0a7ed162
 i:docs htop=3.0.5-r1
 
+C:Q14GknIjBHLAi9ELfojT4Asb5FpdE=
+P:lxc-bridge
+V:4.0.6-r2
+A:armhf
+S:1744
+I:28672
+T:Bridge interface for LXC with dhcp
+U:https://linuxcontainers.org/lxc/
+L:GPL-2.0-only
+o:lxc
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1617782289
+c:c098d412e61794e5519d15bbbdf902fdeb38596c
+D:dnsmasq
+
 C:Q1Q+W7Am4O0Ye2EiTH2dJRtUaduE0=
 P:libtirpc-nokrb
 V:1.3.1-r0
@@ -60465,21 +60465,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1610336367
 c:bb49b67a434c88f2fd8bbdc58648f5e3ceb44a18
 D:diffutils vim
-
-C:Q1jZEi7B6JSqb6DrnKcXp71v6TffE=
-P:lxc-bridge
-V:4.0.6-r1
-A:armhf
-S:1740
-I:28672
-T:Bridge interface for LXC with dhcp
-U:https://linuxcontainers.org/lxc/
-L:GPL-2.0-only
-o:lxc
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1610543655
-c:96b8ef2b51191e249227fd64b428fc93a7998ee4
-D:dnsmasq
 
 C:Q18zzw1tqCKQ/bnfYmCyzY7jECrbw=
 P:cmocka
@@ -67528,6 +67513,21 @@ t:1611046777
 c:02d386b0ecd78ee484705fbf72290bd94b80e78a
 D:so:libblkid.so.1 so:libc.musl-armhf.so.1 so:libmount.so.1 so:libuuid.so.1
 p:so:libbtrfs.so.0=0.1 so:libbtrfsutil.so.1=1.2.0
+
+C:Q1XBRcCS4SkPQb5G35WtesHqy8nA0=
+P:lxc-bash-completion
+V:4.0.6-r2
+A:armhf
+S:1883
+I:24576
+T:Bash completions for lxc
+U:https://linuxcontainers.org/lxc/
+L:GPL-2.0-only
+o:lxc
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1617782289
+c:c098d412e61794e5519d15bbbdf902fdeb38596c
+i:lxc=4.0.6-r2 bash-completion
 
 C:Q18NlEsX6uhNxdlL5+KLSoi3OhxJI=
 P:perl-io-html
