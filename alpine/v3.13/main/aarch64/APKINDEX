@@ -1517,6 +1517,22 @@ c:c3375b64c6b500aed7eb8668babadcd5ca39ec62
 D:so:libbz2.so.1 so:libc.musl-aarch64.so.1 so:liblzma.so.5 so:libz.so.1
 p:so:libtty.so.1=1.0.0 cmd:termcat cmd:termplay cmd:termrec cmd:termtime
 
+C:Q1wNMxfMs0qwN29fL6Ffie1aEwHgg=
+P:clamav
+V:0.103.2-r0
+A:aarch64
+S:61731
+I:212992
+T:An anti-virus toolkit for UNIX eis-ng backport
+U:https://www.clamav.net/
+L:GPL-2.0-only WITH OpenSSL-Exception
+o:clamav
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1618055928
+c:dfedf2e4dc1a591ae6b0801827c0ea03e8386983
+D:clamav-scanner clamav-daemon so:libc.musl-aarch64.so.1 so:libclamav.so.9 so:libcurl.so.4 so:libfts.so.0
+p:cmd:clamonacc
+
 C:Q10t49X6zT7xqfzWq6q0rejjYwmOs=
 P:sipsak-doc
 V:0.9.7-r0
@@ -4493,6 +4509,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1585748564
 c:1132dcb4092a4f536e7d98498614a5645105a4f7
 
+C:Q1LT3uje9X3pxO4HfJOLWn8SBPRhY=
+P:clamav-db
+V:0.103.2-r0
+A:aarch64
+S:1378
+I:40960
+T:ClamAV dummy package for compatibility
+U:https://www.clamav.net/
+L:GPL-2.0-only WITH OpenSSL-Exception
+o:clamav
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1618055928
+c:dfedf2e4dc1a591ae6b0801827c0ea03e8386983
+D:freshclam
+
 C:Q10NadbTAqzq1mUaWoJUn86YbaM4A=
 P:db-doc
 V:5.3.28-r1
@@ -5654,6 +5685,22 @@ m:Rasmus Thomsen <oss@cogitri.dev>
 t:1602951785
 c:3b18e9f85576cfec0fdca33003a9a639e650b3ab
 i:dconf-0.38.0-r0 bash-completion
+
+C:Q1mQMW0fAp+JnlSTfFGb1QDMOHxPI=
+P:clamav-daemon-openrc
+V:0.103.2-r0
+A:aarch64
+S:2514
+I:24576
+T:ClamAV anti-virus scanner daemon (OpenRC init scripts)
+U:https://www.clamav.net/
+L:GPL-2.0-only WITH OpenSSL-Exception
+o:clamav
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1618055928
+c:dfedf2e4dc1a591ae6b0801827c0ea03e8386983
+D:freshclam-openrc
+i:clamav-daemon=0.103.2-r0 openrc
 
 C:Q1mmo0nNBGvGn2qnJD+eDUIGQALQY=
 P:iptables-dev
@@ -9695,6 +9742,22 @@ t:1600709953
 c:851d71a578f43f72479e5c796e292344ccdbec4e
 i:docs perl-carp-clan=6.08-r1
 
+C:Q1o4YrU04EO9hXXlFQ3FCV78aBtVI=
+P:clamav-libs
+V:0.103.2-r0
+A:aarch64
+S:851006
+I:2088960
+T:An anti-virus toolkit for UNIX eis-ng backport (libraries)
+U:https://www.clamav.net/
+L:GPL-2.0-only WITH OpenSSL-Exception
+o:clamav
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1618055928
+c:dfedf2e4dc1a591ae6b0801827c0ea03e8386983
+D:so:libbz2.so.1 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libltdl.so.7 so:libpcre.so.1 so:libssl.so.1.1 so:libz.so.1
+p:so:libclamav.so.9=9.0.5 so:libclammspack.so.0=0.1.0 so:libfreshclam.so.2=2.0.1
+
 C:Q1BNhDNLLsnvim7wxEat/Lms850Xw=
 P:umurmur-openrc
 V:0.2.18-r0
@@ -11800,21 +11863,6 @@ t:1566478559
 c:fc59a9586afda7bbe15038391310a2afbf5c9780
 D:ivykis=0.42.4-r0 pkgconfig
 p:pc:ivykis=0.42.4
-
-C:Q17bEZV6Ky68+KX5LW04IPeB4oJ3g=
-P:freshclam-openrc
-V:0.103.1-r0
-A:aarch64
-S:2176
-I:24576
-T:Auto-updater for the Clam Antivirus scanner data-files (OpenRC init scripts)
-U:https://www.clamav.net/
-L:GPL-2.0-only WITH OpenSSL-Exception
-o:clamav
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1612726487
-c:7c5c2fbb54c101c1e3d46f8b10f699ee3cad521a
-i:freshclam=0.103.1-r0 openrc
 
 C:Q1s4c4JS9K2o5S3J5in6hJ/sPlLMk=
 P:squid-lang-pl
@@ -15266,21 +15314,6 @@ c:f85c8c6e958602ed65fe6048ea60ce6e8989517b
 D:so:libc.musl-aarch64.so.1
 p:so:libnet.so.9=9.0.0
 
-C:Q1SYJjMt4kPpWyUmrw/PKSBdwXN0I=
-P:lxc-templates-legacy
-V:3.0.3-r1
-A:aarch64
-S:123412
-I:643072
-T:Legacy LXC container templates
-U:https://linuxcontainers.org
-L:LGPL-2.1
-o:lxc-templates-legacy
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1604311358
-c:c694f448a5d423a5d26d96350731bb594d107dbe
-D:bash tar
-
 C:Q1gEEQNxsVjBf98SAPvtg3MJgvNb0=
 P:perl-net-rblclient
 V:0.5-r5
@@ -15435,22 +15468,6 @@ t:1604295245
 c:d897f16f94f19b1e50cd19d4af1e660b39bc888d
 D:python3 py3-setuptools
 p:cmd:readelf.py
-
-C:Q1J4MIY64mPw/EI2nRchkZTx/BGDs=
-P:clamav-clamdscan
-V:0.103.1-r0
-A:aarch64
-S:48159
-I:163840
-T:ClamAV daemon client
-U:https://www.clamav.net/
-L:GPL-2.0-only WITH OpenSSL-Exception
-o:clamav
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1612726487
-c:7c5c2fbb54c101c1e3d46f8b10f699ee3cad521a
-D:openssl so:libc.musl-aarch64.so.1 so:libclamav.so.9
-p:cmd:clamdscan
 
 C:Q1Slan/TuGcnx2yW0bFKCCzlkxSdw=
 P:perl-test-identity
@@ -15775,6 +15792,22 @@ t:1575612677
 c:a4f53edf8416ae3b31b5748eacc08c00ea07544a
 D:perl-html-parser perl-html-tagset perl-libwww so:libc.musl-aarch64.so.1
 p:so:libswish-e.so.2=2.0.0 cmd:swish-e cmd:swish-filter-test
+
+C:Q1kJ0VnIk/i2eqphUDeHlInMT8RFY=
+P:clamav-daemon
+V:0.103.2-r0
+A:aarch64
+S:165598
+I:557056
+T:ClamAV daemon scanner
+U:https://www.clamav.net/
+L:GPL-2.0-only WITH OpenSSL-Exception
+o:clamav
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1618055928
+c:dfedf2e4dc1a591ae6b0801827c0ea03e8386983
+D:freshclam clamav-clamdscan /bin/sh so:libc.musl-aarch64.so.1 so:libclamav.so.9 so:libncursesw.so.6 so:libz.so.1
+p:cmd:clamconf cmd:clamd cmd:clamdtop
 
 C:Q18xUxcd6AbGSA88ICrfAoOtK3LH4=
 P:re2c-doc
@@ -18138,22 +18171,6 @@ c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:so:libc.musl-aarch64.so.1
 p:cmd:logtail
 
-C:Q1tD7ee0oLG8M+0xR9DkUu/404Q2s=
-P:clamav-daemon-openrc
-V:0.103.1-r0
-A:aarch64
-S:2519
-I:24576
-T:ClamAV anti-virus scanner daemon (OpenRC init scripts)
-U:https://www.clamav.net/
-L:GPL-2.0-only WITH OpenSSL-Exception
-o:clamav
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1612726487
-c:7c5c2fbb54c101c1e3d46f8b10f699ee3cad521a
-D:freshclam-openrc
-i:clamav-daemon=0.103.1-r0 openrc
-
 C:Q1xrqG7PTQvxGaue7kbdi7RPsl6JM=
 P:libverto-libev
 V:0.3.1-r1
@@ -18760,6 +18777,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1610224187
 c:b38ab6fe3e456f852304f99eeb4764a7d6f9899f
 i:docs kmod=28-r0
+
+C:Q1P1sTh2Iln2XRL6iM1h1j4lIn8Tw=
+P:clamav-libunrar
+V:0.103.2-r0
+A:aarch64
+S:117447
+I:249856
+T:ClamAV unrar libraries
+U:https://www.clamav.net/
+L:GPL-2.0-only WITH OpenSSL-Exception
+o:clamav
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1618055928
+c:dfedf2e4dc1a591ae6b0801827c0ea03e8386983
+D:so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
+p:so:libclamunrar.so.9=9.0.5 so:libclamunrar_iface.so.9=9.0.5
 
 C:Q1Yd9oJLGQf6u/nhQk62teRpSooB0=
 P:fts-dev
@@ -20561,22 +20594,6 @@ t:1610333325
 c:c1b0d0024c96b2fb1679eb337dde97657eb7742b
 D:gcc=10.2.1_pre1-r3 libgfortran=10.2.1_pre1-r3 libgfortran=10.2.1_pre1-r3 so:libc.musl-aarch64.so.1 so:libgmp.so.10 so:libisl.so.22 so:libmpc.so.3 so:libmpfr.so.6 so:libz.so.1
 p:cmd:aarch64-alpine-linux-musl-gfortran cmd:gfortran
-
-C:Q1yG/JZAJ4vVLmIbJXA+loW1P/WdY=
-P:freshclam
-V:0.103.1-r0
-A:aarch64
-S:19909
-I:94208
-T:Auto-updater for the Clam Antivirus scanner data-files
-U:https://www.clamav.net/
-L:GPL-2.0-only WITH OpenSSL-Exception
-o:clamav
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1612726487
-c:7c5c2fbb54c101c1e3d46f8b10f699ee3cad521a
-D:/bin/sh so:libc.musl-aarch64.so.1 so:libclamav.so.9 so:libfreshclam.so.2
-p:cmd:freshclam
 
 C:Q1+m2QGoe5rm8XJxW8E2UjPEbd+7E=
 P:ncurses-terminfo
@@ -22982,6 +22999,20 @@ t:1616791325
 c:d558397475cabd9682639c2e314fb323e1a0656a
 i:docs knot=3.0.5-r0
 
+C:Q1JjMpZ7uZeBrLusQJs0R3sN9ZazM=
+P:lxc-templates-legacy-alpine
+V:3.0.3-r2
+A:aarch64
+S:7739
+I:49152
+T:Legacy LXC container templates (for Alpine)
+U:https://linuxcontainers.org
+L:LGPL-2.1
+o:lxc-templates-legacy
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1618057443
+c:bc220ed7a8797fd940cc3869be3c8f682296f73a
+
 C:Q1yT/tuTNZUCjqxvDkcrbUeL2LOho=
 P:kamailio-radius
 V:5.4.2-r2
@@ -23691,6 +23722,21 @@ t:1608329434
 c:a5a54561ddfcfeb87408307d8ea48b3f91f9629c
 D:so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:libprotobuf-lite.so.24=24.0.0
+
+C:Q1DCPeEB1wAEQQV8RhFbUMqIQOdAg=
+P:lxc-templates-legacy
+V:3.0.3-r2
+A:aarch64
+S:123396
+I:643072
+T:Legacy LXC container templates
+U:https://linuxcontainers.org
+L:LGPL-2.1
+o:lxc-templates-legacy
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1618057443
+c:bc220ed7a8797fd940cc3869be3c8f682296f73a
+D:bash tar
 
 C:Q1T+QDrY6VxhvB4VFVdmv5uejU+Go=
 P:openldap-back-hdb
@@ -25880,22 +25926,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1600709964
 c:a97344cc1f35ee3b9afe3937b160ba07f029ca7e
 i:docs perl-io-captureoutput=1.1105-r1
-
-C:Q1/KrwmkAW71qV000FtTFXUlQodEg=
-P:clamav
-V:0.103.1-r0
-A:aarch64
-S:61766
-I:212992
-T:An anti-virus toolkit for UNIX eis-ng backport
-U:https://www.clamav.net/
-L:GPL-2.0-only WITH OpenSSL-Exception
-o:clamav
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1612726487
-c:7c5c2fbb54c101c1e3d46f8b10f699ee3cad521a
-D:clamav-scanner clamav-daemon so:libc.musl-aarch64.so.1 so:libclamav.so.9 so:libcurl.so.4 so:libfts.so.0
-p:cmd:clamonacc
 
 C:Q1Ycgd8Abxhp3mQSglMbVxJDV6zAg=
 P:popt-dev
@@ -30613,6 +30643,22 @@ t:1610179599
 c:3a547fffd7984025cd2f57fa0664c210c252d97d
 D:uwsgi so:libc.musl-aarch64.so.1
 
+C:Q1lRFNkrPv1zzpMMlSMbl+YFmKwXk=
+P:clamav-dev
+V:0.103.2-r0
+A:aarch64
+S:18563
+I:114688
+T:An anti-virus toolkit for UNIX eis-ng backport (development files)
+U:https://www.clamav.net/
+L:GPL-2.0-only WITH OpenSSL-Exception
+o:clamav
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1618055928
+c:dfedf2e4dc1a591ae6b0801827c0ea03e8386983
+D:openssl-dev clamav-libs=0.103.2-r0 clamav-libunrar=0.103.2-r0 pkgconfig
+p:pc:libclamav=0.103.2 cmd:clamav-config
+
 C:Q1J/GEQNSK8CNWSjGIucyopWphDG4=
 P:ell
 V:0.36-r0
@@ -35061,22 +35107,6 @@ t:1610703982
 c:c6c2cd54a0db8503a7e0238f388e1daff35d5d4d
 p:so:libc.musl-aarch64.so.1=1
 
-C:Q1gxwcI/t+D1/cZD6dh6PB+YapZr8=
-P:clamav-scanner
-V:0.103.1-r0
-A:aarch64
-S:156609
-I:507904
-T:ClamAV command-line scanner and utils
-U:https://www.clamav.net/
-L:GPL-2.0-only WITH OpenSSL-Exception
-o:clamav
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1612726487
-c:7c5c2fbb54c101c1e3d46f8b10f699ee3cad521a
-D:freshclam so:libc.musl-aarch64.so.1 so:libclamav.so.9 so:libcrypto.so.1.1 so:libz.so.1
-p:cmd:clambc cmd:clamscan cmd:sigtool
-
 C:Q1NLYfvPyu2uNw+132MQd9mP10aS8=
 P:heimdal-openrc
 V:7.7.0-r4
@@ -36321,22 +36351,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1584211375
 c:81633f00dd52212d62c630bbf6f6c8a9bc1f29cd
 
-C:Q1f4UjwwPxGy1EUhtnse/ymsBuIwM=
-P:clamav-libunrar
-V:0.103.1-r0
-A:aarch64
-S:117454
-I:249856
-T:ClamAV unrar libraries
-U:https://www.clamav.net/
-L:GPL-2.0-only WITH OpenSSL-Exception
-o:clamav
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1612726487
-c:7c5c2fbb54c101c1e3d46f8b10f699ee3cad521a
-D:so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
-p:so:libclamunrar.so.9=9.0.5 so:libclamunrar_iface.so.9=9.0.5
-
 C:Q1EDSpVN2Iw7G4dl9AgdjINa9D6GM=
 P:utmps-static
 V:0.1.0.0-r0
@@ -37170,6 +37184,21 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1610112630
 c:e6b956a47c968c56aca85169c623b3a2e5eca108
 i:docs haveged=1.9.14-r1
+
+C:Q1EYfJRUFNjXMQOr+phsmZX4DP+iY=
+P:freshclam-openrc
+V:0.103.2-r0
+A:aarch64
+S:2174
+I:24576
+T:Auto-updater for the Clam Antivirus scanner data-files (OpenRC init scripts)
+U:https://www.clamav.net/
+L:GPL-2.0-only WITH OpenSSL-Exception
+o:clamav
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1618055928
+c:dfedf2e4dc1a591ae6b0801827c0ea03e8386983
+i:freshclam=0.103.2-r0 openrc
 
 C:Q1Qm04sbNB/Y2Q66lwaNiIoBj/e2E=
 P:py3-sortedcontainers
@@ -44593,20 +44622,6 @@ t:1574863812
 c:5e759cd19ed4c4894cd5a7947005cb5ddbbd970e
 i:docs libtool=2.4.6-r7
 
-C:Q1jRRXC0wsElqHDpUJBZKtzq+EOUI=
-P:lxc-templates-legacy-alpine
-V:3.0.3-r1
-A:aarch64
-S:7614
-I:49152
-T:Legacy LXC container templates (for Alpine)
-U:https://linuxcontainers.org
-L:LGPL-2.1
-o:lxc-templates-legacy
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1604311358
-c:c694f448a5d423a5d26d96350731bb594d107dbe
-
 C:Q1/6xsOCE4GA6/l/wgfPf5tjvhXS4=
 P:gnutls-utils
 V:3.7.1-r0
@@ -46079,22 +46094,6 @@ m:Carlo Landmeter <clandmeter@alpinelinux.org>
 t:1610546721
 c:5d7ed46541d1459aac84454edbca6f0eb4cc9414
 D:gettext-asprintf=0.20.2-r2 gettext-libs=0.20.2-r2 gettext=0.20.2-r2 libintl=0.20.2-r2
-
-C:Q1JSo0V2fw1gZOHTEwkYKPaQeECqs=
-P:clamav-dev
-V:0.103.1-r0
-A:aarch64
-S:18540
-I:114688
-T:An anti-virus toolkit for UNIX eis-ng backport (development files)
-U:https://www.clamav.net/
-L:GPL-2.0-only WITH OpenSSL-Exception
-o:clamav
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1612726487
-c:7c5c2fbb54c101c1e3d46f8b10f699ee3cad521a
-D:openssl-dev clamav-libs=0.103.1-r0 clamav-libunrar=0.103.1-r0 pkgconfig
-p:pc:libclamav=0.103.1 cmd:clamav-config
 
 C:Q1WnhIdEMO8skpYqQv2/6784C9hAk=
 P:gptfdisk
@@ -49222,21 +49221,6 @@ c:1118fff73bb8f3a967c12d42de2d8c4a0a7ed162
 D:so:libc.musl-aarch64.so.1 so:libfreetype.so.6 so:libjpeg.so.8 so:libpng16.so.16 so:libwebp.so.7 so:libz.so.1
 p:so:libgd.so.3=3.0.8
 
-C:Q1iF2r8rDyQLtz8RGcnDoZJn6zWfQ=
-P:clamav-doc
-V:0.103.1-r0
-A:aarch64
-S:35755
-I:90112
-T:An anti-virus toolkit for UNIX eis-ng backport (documentation)
-U:https://www.clamav.net/
-L:GPL-2.0-only WITH OpenSSL-Exception
-o:clamav
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1612726487
-c:7c5c2fbb54c101c1e3d46f8b10f699ee3cad521a
-i:docs clamav=0.103.1-r0
-
 C:Q1uoyFoKcapEvC1MHMvEQgpNICULs=
 P:xtables-addons-lts
 V:5.10.27-r0
@@ -51240,22 +51224,6 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:libdbi=0.9.0-r0 pkgconfig
 p:pc:dbi=0.9.0
-
-C:Q1CSRFF7mXMKjaV+D1AweFrHdU0ag=
-P:clamav-milter
-V:0.103.1-r0
-A:aarch64
-S:56056
-I:188416
-T:ClamAV milter
-U:https://www.clamav.net/
-L:GPL-2.0-only WITH OpenSSL-Exception
-o:clamav
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1612726487
-c:7c5c2fbb54c101c1e3d46f8b10f699ee3cad521a
-D:so:libc.musl-aarch64.so.1 so:libclamav.so.9 so:libmilter.so.1.0.2
-p:cmd:clamav-milter
 
 C:Q1SrU/fRZ4CEjhesioCjqwubOPA2M=
 P:libice
@@ -53367,6 +53335,22 @@ t:1610179599
 c:3a547fffd7984025cd2f57fa0664c210c252d97d
 D:uwsgi so:libc.musl-aarch64.so.1
 
+C:Q1mWThtaTCry2nZGlBLb1f5Qivokw=
+P:clamav-scanner
+V:0.103.2-r0
+A:aarch64
+S:156218
+I:503808
+T:ClamAV command-line scanner and utils
+U:https://www.clamav.net/
+L:GPL-2.0-only WITH OpenSSL-Exception
+o:clamav
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1618055928
+c:dfedf2e4dc1a591ae6b0801827c0ea03e8386983
+D:freshclam so:libc.musl-aarch64.so.1 so:libclamav.so.9 so:libcrypto.so.1.1 so:libz.so.1
+p:cmd:clambc cmd:clamscan cmd:sigtool
+
 C:Q1KnXSaq8xoAs92c0mkWv7B5U4Y3g=
 P:open-iscsi-doc
 V:2.1.3-r0
@@ -53411,22 +53395,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1590912946
 c:ff66ccfb7ddafc20ebc138d5e04f6793c2cae2a0
 i:docs pciutils=3.7.0-r0
-
-C:Q1m006zmjj57lfCxcrGbL6eDRhWa0=
-P:clamav-libs
-V:0.103.1-r0
-A:aarch64
-S:847652
-I:2080768
-T:An anti-virus toolkit for UNIX eis-ng backport (libraries)
-U:https://www.clamav.net/
-L:GPL-2.0-only WITH OpenSSL-Exception
-o:clamav
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1612726487
-c:7c5c2fbb54c101c1e3d46f8b10f699ee3cad521a
-D:so:libbz2.so.1 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libltdl.so.7 so:libpcre.so.1 so:libssl.so.1.1 so:libz.so.1
-p:so:libclamav.so.9=9.0.5 so:libclammspack.so.0=0.1.0 so:libfreshclam.so.2=2.0.1
 
 C:Q1LodTVYLIz5jOLNBSsPwFjcz936s=
 P:open-iscsi
@@ -54624,22 +54592,6 @@ t:1607501113
 c:ef84b307b7bcc7e28aa0f19e27c3e1024dc0658c
 D:m4 perl
 p:cmd:autoconf cmd:autoheader cmd:autom4te cmd:autoreconf cmd:autoscan cmd:autoupdate cmd:ifnames
-
-C:Q1o0Y0s/wH+oumW6CsfgXfPzBkTQY=
-P:clamav-daemon
-V:0.103.1-r0
-A:aarch64
-S:165906
-I:561152
-T:ClamAV daemon scanner
-U:https://www.clamav.net/
-L:GPL-2.0-only WITH OpenSSL-Exception
-o:clamav
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1612726487
-c:7c5c2fbb54c101c1e3d46f8b10f699ee3cad521a
-D:freshclam clamav-clamdscan /bin/sh so:libc.musl-aarch64.so.1 so:libclamav.so.9 so:libncursesw.so.6 so:libz.so.1
-p:cmd:clamconf cmd:clamd cmd:clamdtop
 
 C:Q1tD5yaAHQgvaZ+VrVUlZ0sAmVXAI=
 P:postgresql-dev
@@ -56159,6 +56111,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1605848534
 c:b3b4bf3b9993613e1bdbb6e142d3af1989ac68e1
 i:docs libksba=1.5.0-r0
+
+C:Q12I9G87XqVhkFZgzOlTdoXtUEDBQ=
+P:clamav-doc
+V:0.103.2-r0
+A:aarch64
+S:35499
+I:90112
+T:An anti-virus toolkit for UNIX eis-ng backport (documentation)
+U:https://www.clamav.net/
+L:GPL-2.0-only WITH OpenSSL-Exception
+o:clamav
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1618055928
+c:dfedf2e4dc1a591ae6b0801827c0ea03e8386983
+i:docs clamav=0.103.2-r0
 
 C:Q1PF8iNG8AEPg8cZ28kF7TI7Uma0o=
 P:rsyslog-clickhouse
@@ -59737,6 +59704,22 @@ t:1609607010
 c:edcb62fed132a29686cb95cc6daf34eaf6885957
 D:shared-mime-info gtk-update-icon-cache so:libatk-1.0.so.0 so:libc.musl-aarch64.so.1 so:libcairo.so.2 so:libepoxy.so.0 so:libgdk-3.so.0 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-3.so.0 so:libharfbuzz.so.0 so:libintl.so.8 so:libpango-1.0.so.0 so:libpangocairo-1.0.so.0 so:libpangoft2-1.0.so.0
 p:cmd:gtk3-demo cmd:gtk3-demo-application cmd:gtk3-widget-factory
+
+C:Q1dBDCnhGPjns4PRC99erQ07fZJao=
+P:clamav-milter
+V:0.103.2-r0
+A:aarch64
+S:55932
+I:188416
+T:ClamAV milter
+U:https://www.clamav.net/
+L:GPL-2.0-only WITH OpenSSL-Exception
+o:clamav
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1618055928
+c:dfedf2e4dc1a591ae6b0801827c0ea03e8386983
+D:so:libc.musl-aarch64.so.1 so:libclamav.so.9 so:libmilter.so.1.0.2
+p:cmd:clamav-milter
 
 C:Q1lZeSmqOvhwTePlNu4BqZakcu9Xc=
 P:perl-devel-overloadinfo-doc
@@ -65378,21 +65361,6 @@ c:1673880e1107e3e6d269359b38fa961c2755ce48
 D:so:libc.musl-aarch64.so.1 so:libcurl.so.4 so:libxmlrpc.so.3 so:libxmlrpc_util.so.4
 p:so:libxmlrpc_client.so.3=3.51
 
-C:Q1I/WWx9rc4VJR6njwsEJ1w6iTjyQ=
-P:clamav-db
-V:0.103.1-r0
-A:aarch64
-S:1381
-I:40960
-T:ClamAV dummy package for compatibility
-U:https://www.clamav.net/
-L:GPL-2.0-only WITH OpenSSL-Exception
-o:clamav
-m:Carlo Landmeter <clandmeter@alpinelinux.org>
-t:1612726487
-c:7c5c2fbb54c101c1e3d46f8b10f699ee3cad521a
-D:freshclam
-
 C:Q1ZKKD9zMwwy1RPExzLkznlflptUI=
 P:mariadb-mytop
 V:10.5.8-r0
@@ -66355,6 +66323,22 @@ m:Jeff Bilyk <jbilyk@gmail.com>
 t:1606832312
 c:fadf868d929d38297eee94b3645ef16a6e31a0a3
 D:nagios-plugins so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1
+
+C:Q1+GZajonzKFlC5nZ8fQlOODscEIM=
+P:freshclam
+V:0.103.2-r0
+A:aarch64
+S:19683
+I:94208
+T:Auto-updater for the Clam Antivirus scanner data-files
+U:https://www.clamav.net/
+L:GPL-2.0-only WITH OpenSSL-Exception
+o:clamav
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1618055928
+c:dfedf2e4dc1a591ae6b0801827c0ea03e8386983
+D:/bin/sh so:libc.musl-aarch64.so.1 so:libclamav.so.9 so:libfreshclam.so.2
+p:cmd:freshclam
 
 C:Q1uXH4sanmwhc9Mbotb8CsJgAQxtI=
 P:uwsgi-graylog2
@@ -67907,6 +67891,22 @@ t:1604135544
 c:6da6ac183e8286ca6e0115ebbd4adf593ecbe43c
 D:python3 libxml2-utils docbook-xsl
 p:cmd:a2x cmd:a2x.py cmd:asciidoc cmd:asciidoc.py
+
+C:Q144RasaS1H2kGsrNw4gO5K1ny7Gk=
+P:clamav-clamdscan
+V:0.103.2-r0
+A:aarch64
+S:48029
+I:163840
+T:ClamAV daemon client
+U:https://www.clamav.net/
+L:GPL-2.0-only WITH OpenSSL-Exception
+o:clamav
+m:Carlo Landmeter <clandmeter@alpinelinux.org>
+t:1618055928
+c:dfedf2e4dc1a591ae6b0801827c0ea03e8386983
+D:openssl so:libc.musl-aarch64.so.1 so:libclamav.so.9
+p:cmd:clamdscan
 
 C:Q19Gs0SgjodqJ0YFd53+nsTLclcy0=
 P:btrfs-progs
