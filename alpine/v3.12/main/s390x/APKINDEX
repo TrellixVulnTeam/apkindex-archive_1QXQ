@@ -1526,6 +1526,22 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1588164907
 c:451b887f506132301b2dfceee2873dcbcd002eba
 
+C:Q1XQb3S9UVjBzXGTzjUy8AY/a9n8g=
+P:postfix-pgsql
+V:3.5.10-r0
+A:s390x
+S:7611
+I:53248
+T:pgsql map support for postfix
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618333359
+c:6aab9528845855c42987c23eca318884be7e21d9
+D:so:libc.musl-s390x.so.1 so:libpq.so.5
+p:so:postfix-pgsql.so=0
+
 C:Q1HfInR9WSWMVAdim4wmaNclqUhqY=
 P:perl-plack-doc
 V:1.0047-r0
@@ -3484,22 +3500,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 i:docs perl-sub-exporter-progressive=0.001013-r1
-
-C:Q1Htpw72BzJNKakbac9rgAk4u2fC8=
-P:xorg-server-dev
-V:1.20.10-r0
-A:s390x
-S:267933
-I:1523712
-T:X.Org X servers (development files)
-U:https://www.x.org/wiki
-L:MIT
-o:xorg-server
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1606870934
-c:6565110d8e9da4626909f76958840acb4c5c08b5
-D:libepoxy-dev libxfont2-dev mesa-dev libpciaccess-dev pc:pixman-1>=0.27.2 pkgconfig
-p:pc:xorg-server=1.20.10
 
 C:Q174y1ltBFPK69GiLCJ8V5ASbDMTs=
 P:postgresql-contrib
@@ -5900,6 +5900,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1588107800
 c:ddf4a0d5c86bc5b449346e75be3753127c408f6d
 i:cmake=3.17.2-r0 bash-completion
+
+C:Q1UX4aPxrG0LURkc5PJYJG4E0SENU=
+P:postfix-stone
+V:3.5.10-r0
+A:s390x
+S:30645
+I:122880
+T:Postfix simulation and testing tools
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618333359
+c:6aab9528845855c42987c23eca318884be7e21d9
+D:musl>=1.1.24-r7 so:libc.musl-s390x.so.1 so:libpostfix-global.so so:libpostfix-util.so
+p:cmd:fsstone cmd:qmqp-sink cmd:qmqp-source cmd:smtp-sink cmd:smtp-source
 
 C:Q1MWvshpv4Ey9I4T0caz6zVqqwa9U=
 P:libice
@@ -8578,22 +8594,6 @@ c:847f69d918bc30fa090135efc6c4923ac9b6ff65
 D:so:libc.musl-s390x.so.1 so:libnetsnmp.so.35 so:libnetsnmpagent.so.35 so:libnetsnmpmibs.so.35 so:libnetsnmptrapd.so.35
 p:cmd:snmpd cmd:snmptrapd
 
-C:Q1lt82p5tiuBHm96UvkYHoLaAyk9I=
-P:postfix-sqlite
-V:3.5.9-r0
-A:s390x
-S:5430
-I:49152
-T:sqlite map support for postfix
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1611004208
-c:746e0b7bc7fe8c7c525f7d1696cac59c04b1dfc2
-D:so:libc.musl-s390x.so.1 so:libsqlite3.so.0
-p:so:postfix-sqlite.so=0
-
 C:Q158FD9PDZf3aYB3sxl72ezNQYEaA=
 P:ltrace-doc
 V:0.7.3-r4
@@ -8624,6 +8624,22 @@ t:1614108424
 c:e04ed3a2193bc362cadea9bb8b1911ea83e77b6a
 D:so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libldap_r-2.4.so.2 so:libssl.so.1.1
 p:so:libpq.so.5=5.12
+
+C:Q1JyRYG+hMhXiLlwxBDqs0rnao6Co=
+P:nss-dev
+V:3.60-r1
+A:s390x
+S:283920
+I:1527808
+T:Development files for nss
+U:https://developer.mozilla.org/docs/Mozilla/Projects/NSS
+L:MPL-2.0
+o:nss
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618332400
+c:9535d32d0508e31aac4dfd7ef36b4e69b23ec3fb
+D:nss nspr-dev pc:nspr>=3.60 pkgconfig
+p:pc:mozilla-nss=3.60 pc:nss-softokn=3.60 pc:nss-util=3.60 pc:nss=3.60 cmd:nss-config
 
 C:Q1GC+oL5clahfXj5IcZTuHpfgUki8=
 P:curl-dev
@@ -9070,22 +9086,6 @@ t:1577475852
 c:39affe011f6364608a4527601183b038a2bd4f12
 D:perl so:libc.musl-s390x.so.1
 
-C:Q1/VnPR06N4dCKAjYfiOm8kDf7Z5M=
-P:xvfb
-V:1.20.10-r0
-A:s390x
-S:808029
-I:1974272
-T:Virtual Framebuffer 'fake' X server
-U:https://www.x.org/wiki
-L:MIT
-o:xorg-server
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1606870934
-c:6565110d8e9da4626909f76958840acb4c5c08b5
-D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libGL.so.1 so:libXau.so.6 so:libXdmcp.so.6 so:libXfont2.so.2 so:libc.musl-s390x.so.1 so:libnettle.so.7 so:libpixman-1.so.0
-p:cmd:Xvfb
-
 C:Q135u2XM5EfLv/k6My2W9YI2NG+oE=
 P:perl-class-data-inheritable-doc
 V:0.08-r1
@@ -9163,22 +9163,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 i:docs perl-parse-recdescent=1.967015-r2
-
-C:Q1Md6kbYBNWq8lPSwQ8Af8QlXi9z0=
-P:nss
-V:3.60-r0
-A:s390x
-S:1468208
-I:3743744
-T:Mozilla Network Security Services
-U:https://developer.mozilla.org/docs/Mozilla/Projects/NSS
-L:MPL-2.0
-o:nss
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1609967704
-c:b98f3f79fe6d744e0a3165b67cd44ec9664ab752
-D:so:libc.musl-s390x.so.1 so:libnspr4.so so:libplc4.so so:libplds4.so so:libsqlite3.so.0
-p:so:libfreebl3.so=60 so:libnss3.so=60 so:libnssckbi-testlib.so=60 so:libnssckbi.so=60 so:libnssdbm3.so=60 so:libnsssysinit.so=60 so:libnssutil3.so=60 so:libpkcs11testmodule.so=60 so:libsmime3.so=60 so:libsoftokn3.so=60 so:libssl3.so=60
 
 C:Q1dqTcObxM5KAMNQexhy+UMFntGcA=
 P:libgcc
@@ -11118,6 +11102,22 @@ t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 i:docs perl-lwp-useragent-determined=1.07-r1
 
+C:Q13bR0ebTBA9oMJsh/vaJtvcmbj08=
+P:xorg-server-xnest
+V:1.20.10-r1
+A:s390x
+S:654341
+I:1552384
+T:A nested Xorg server
+U:https://www.x.org/wiki
+L:MIT
+o:xorg-server
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618331953
+c:0b5c0d534873b6f46ce788c9072f448d69797513
+D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libX11.so.6 so:libXau.so.6 so:libXdmcp.so.6 so:libXext.so.6 so:libXfont2.so.2 so:libc.musl-s390x.so.1 so:libnettle.so.7 so:libpixman-1.so.0
+p:cmd:Xnest
+
 C:Q14JqQfMfJxjd5MmcMZd5oQt3RZow=
 P:font-adobe-100dpi
 V:1.0.3-r0
@@ -11899,6 +11899,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1614738291
 c:97a2ead7a341c966bef6432b18df0ccac663b1c5
 i:docs wpa_supplicant=2.9-r7
+
+C:Q1WIeOb9KAQgwVpN/FRs1hc2wCmlk=
+P:xorg-server-dbg
+V:1.20.10-r1
+A:s390x
+S:40240489
+I:99848192
+T:X.Org X servers (debug symbols)
+U:https://www.x.org/wiki
+L:MIT
+o:xorg-server
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618331953
+c:0b5c0d534873b6f46ce788c9072f448d69797513
+D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit
 
 C:Q1uTugRBmOTTPmYOvne60CQxAkga0=
 P:libpng-utils
@@ -12746,6 +12761,22 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1577475852
 c:39affe011f6364608a4527601183b038a2bd4f12
 i:docs perl-test-taint=1.08-r2
+
+C:Q1WvA05QxanLIiXJDfd/4jrkE+kpg=
+P:postfix-lmdb
+V:3.5.10-r0
+A:s390x
+S:9000
+I:57344
+T:lmdb map support for postfix
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618333359
+c:6aab9528845855c42987c23eca318884be7e21d9
+D:so:libc.musl-s390x.so.1 so:liblmdb.so.0
+p:so:postfix-lmdb.so=0
 
 C:Q1mkrROweqcIiT2tlNHPHfl3o1ufo=
 P:sysfsutils-dev
@@ -13729,22 +13760,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1566207564
 c:27fb75f3baf59a8bdcfd4f247f7ae1c62fa5e83b
 i:docs bwm-ng=0.6.2-r0
-
-C:Q1RRxcEEDqohT58NSEd1v0oq20v+o=
-P:xorg-server-xwayland
-V:1.20.10-r0
-A:s390x
-S:915898
-I:2240512
-T:run X clients under wayland
-U:https://www.x.org/wiki
-L:MIT
-o:xorg-server
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1606870934
-c:6565110d8e9da4626909f76958840acb4c5c08b5
-D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libGL.so.1 so:libXau.so.6 so:libXdmcp.so.6 so:libXfont2.so.2 so:libc.musl-s390x.so.1 so:libdrm.so.2 so:libepoxy.so.0 so:libgbm.so.1 so:libnettle.so.7 so:libpixman-1.so.0 so:libwayland-client.so.0 so:libxshmfence.so.1
-p:cmd:Xwayland
 
 C:Q1qNvFlVwX8K3eQAAW0Jxvmk19HUE=
 P:bitlbee-openrc
@@ -14894,6 +14909,22 @@ t:1587312138
 c:bcb3ce476101cf115f8e9309e838a788a9ee5c91
 D:gettext-asprintf=0.20.2-r0 gettext-libs=0.20.2-r0 gettext=0.20.2-r0 libintl=0.20.2-r0
 
+C:Q1VooI5bjCI+hXE2WDzheen2yWQpo=
+P:postfix-ldap
+V:3.5.10-r0
+A:s390x
+S:13759
+I:69632
+T:ldap map support for postfix
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618333359
+c:6aab9528845855c42987c23eca318884be7e21d9
+D:so:libc.musl-s390x.so.1 so:liblber-2.4.so.2 so:libldap-2.4.so.2
+p:so:postfix-ldap.so=0
+
 C:Q1x46xO+T4SWCFzs8uxR1d94d7YQk=
 P:perl-test-pod
 V:1.52-r1
@@ -15704,6 +15735,21 @@ t:1612707222
 c:7b5da20b9f28062a0e7edd08723b277e7c00ef61
 D:openssl-dev zlib-dev mariadb-connector-c-dev mariadb-embedded=10.4.17-r1 pkgconfig
 p:mysql-dev=10.4.17-r1 pc:mariadb=10.4.17
+
+C:Q1B+K+09HyFgU1Re859l3bLGuERS4=
+P:postfix-openrc
+V:3.5.10-r0
+A:s390x
+S:2256
+I:16384
+T:Secure and fast drop-in replacement for Sendmail (MTA) (OpenRC init scripts)
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618333359
+c:6aab9528845855c42987c23eca318884be7e21d9
+i:openrc postfix=3.5.10-r0
 
 C:Q1h1T+UTvvV0YnezzK+0lgqeMBdlw=
 P:cyrus-sasl-scram
@@ -20844,6 +20890,22 @@ c:0eb18dbb4c40f5a53a87065aa959a35b08fb8c9b
 D:so:libc.musl-s390x.so.1
 p:so:libudns.so.0=0 cmd:dnsget cmd:ex-rdns cmd:rblcheck
 
+C:Q11CzLyjnvXRpF0Hh3kzAwHc7rFzw=
+P:postfix
+V:3.5.10-r0
+A:s390x
+S:927276
+I:3002368
+T:Secure and fast drop-in replacement for Sendmail (MTA)
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618333359
+c:6aab9528845855c42987c23eca318884be7e21d9
+D:musl>=1.1.24-r7 /bin/sh so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libdb-5.3.so so:libicuuc.so.67 so:libsasl2.so.3 so:libssl.so.1.1
+p:so:libpostfix-dns.so=0 so:libpostfix-global.so=0 so:libpostfix-master.so=0 so:libpostfix-tls.so=0 so:libpostfix-util.so=0 cmd:mailq cmd:newaliases cmd:postalias cmd:postcat cmd:postconf cmd:postdrop cmd:postfix cmd:postkick cmd:postlock cmd:postlog cmd:postmap cmd:postmulti cmd:postqueue cmd:postsuper cmd:sendmail
+
 C:Q19J9gB3UJ0GZWFwG+dOpw+zh70Us=
 P:boost-thread
 V:1.72.0-r6
@@ -21138,6 +21200,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 D:perl perl-test-simple
+
+C:Q13nsQEQl3MRSXCxfjvjlGM+VonL4=
+P:xorg-server-xephyr
+V:1.20.10-r1
+A:s390x
+S:959606
+I:2334720
+T:kdrive based X Server which targets a window on a host X Server as its framebuffer
+U:https://www.x.org/wiki
+L:MIT
+o:xorg-server
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618331953
+c:0b5c0d534873b6f46ce788c9072f448d69797513
+D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libGL.so.1 so:libX11-xcb.so.1 so:libX11.so.6 so:libXau.so.6 so:libXdmcp.so.6 so:libXfont2.so.2 so:libc.musl-s390x.so.1 so:libepoxy.so.0 so:libnettle.so.7 so:libpixman-1.so.0 so:libudev.so.1 so:libxcb-icccm.so.4 so:libxcb-image.so.0 so:libxcb-keysyms.so.1 so:libxcb-randr.so.0 so:libxcb-render-util.so.0 so:libxcb-render.so.0 so:libxcb-shape.so.0 so:libxcb-shm.so.0 so:libxcb-util.so.1 so:libxcb-xkb.so.1 so:libxcb-xv.so.0 so:libxcb.so.1 so:libxshmfence.so.1
+p:cmd:Xephyr
 
 C:Q1oPt9bcA7svOzzhBtIy7GB7sU+Kk=
 P:vanessa_adt
@@ -25909,21 +25987,6 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1590155362
 c:c6a753463b4a9028cd944f6e2fc841c2090a0a49
 
-C:Q1yoxYyTqubGmHMO27SQwI85kk5eA=
-P:postfix-openrc
-V:3.5.9-r0
-A:s390x
-S:2254
-I:16384
-T:Secure and fast drop-in replacement for Sendmail (MTA) (OpenRC init scripts)
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1611004208
-c:746e0b7bc7fe8c7c525f7d1696cac59c04b1dfc2
-i:openrc postfix=3.5.9-r0
-
 C:Q1rcXnJmTS9UK7kn4wv376ks3kYCM=
 P:apache2-mod-wsgi-doc
 V:4.7.1-r0
@@ -26273,6 +26336,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1568192306
 c:4e219dc6cd58b7d108d2aafdd574c4b3c6e0460e
 D:mpc1=1.1.0-r1
+
+C:Q1NVGlWtQweVjhZEm7idchmTod/WE=
+P:xvfb
+V:1.20.10-r1
+A:s390x
+S:808086
+I:1974272
+T:Virtual Framebuffer 'fake' X server
+U:https://www.x.org/wiki
+L:MIT
+o:xorg-server
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618331953
+c:0b5c0d534873b6f46ce788c9072f448d69797513
+D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libGL.so.1 so:libXau.so.6 so:libXdmcp.so.6 so:libXfont2.so.2 so:libc.musl-s390x.so.1 so:libnettle.so.7 so:libpixman-1.so.0
+p:cmd:Xvfb
 
 C:Q198akG8j95yhYoWt1LZU1+3/Y1Ho=
 P:tinyxml2-dev
@@ -30089,6 +30168,21 @@ c:a6ff02d674ff3a33a632ca6d3901f851e0727707
 D:so:libc.musl-s390x.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:libgtest.so=0 so:libgtest_main.so=0
 
+C:Q1wIgLvxsiOQhVVWInJs5HMG/4VLQ=
+P:xorg-server-doc
+V:1.20.10-r1
+A:s390x
+S:54888
+I:122880
+T:X.Org X servers (documentation)
+U:https://www.x.org/wiki
+L:MIT
+o:xorg-server
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618331953
+c:0b5c0d534873b6f46ce788c9072f448d69797513
+i:docs xorg-server=1.20.10-r1
+
 C:Q1Qj9ahQW/r0YaI6DlLwz2cJfAC7g=
 P:flex-libs
 V:2.6.4-r2
@@ -30499,22 +30593,6 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1575966084
 c:4d1be5ba9b0250ff80ce70f2d2bf7f86ea8d3d94
 i:docs perl-server-starter=0.35-r0
-
-C:Q1TYrLWCgyOElBFalUC/AtbHt3xJ4=
-P:xorg-server-xnest
-V:1.20.10-r0
-A:s390x
-S:654336
-I:1552384
-T:A nested Xorg server
-U:https://www.x.org/wiki
-L:MIT
-o:xorg-server
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1606870934
-c:6565110d8e9da4626909f76958840acb4c5c08b5
-D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libX11.so.6 so:libXau.so.6 so:libXdmcp.so.6 so:libXext.so.6 so:libXfont2.so.2 so:libc.musl-s390x.so.1 so:libnettle.so.7 so:libpixman-1.so.0
-p:cmd:Xnest
 
 C:Q1TSOYz4QXAuJ+z4aId18oZVhystM=
 P:gsm
@@ -36221,22 +36299,6 @@ t:1585035423
 c:b064700c572a24960940de0e584a8bbbae22db22
 i:docs ulogd=2.0.7-r6
 
-C:Q1NYdSHr+mcTV3JSJyp3Q29HiQRWQ=
-P:xorg-server-xephyr
-V:1.20.10-r0
-A:s390x
-S:959624
-I:2334720
-T:kdrive based X Server which targets a window on a host X Server as its framebuffer
-U:https://www.x.org/wiki
-L:MIT
-o:xorg-server
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1606870934
-c:6565110d8e9da4626909f76958840acb4c5c08b5
-D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libGL.so.1 so:libX11-xcb.so.1 so:libX11.so.6 so:libXau.so.6 so:libXdmcp.so.6 so:libXfont2.so.2 so:libc.musl-s390x.so.1 so:libepoxy.so.0 so:libnettle.so.7 so:libpixman-1.so.0 so:libudev.so.1 so:libxcb-icccm.so.4 so:libxcb-image.so.0 so:libxcb-keysyms.so.1 so:libxcb-randr.so.0 so:libxcb-render-util.so.0 so:libxcb-render.so.0 so:libxcb-shape.so.0 so:libxcb-shm.so.0 so:libxcb-util.so.1 so:libxcb-xkb.so.1 so:libxcb-xv.so.0 so:libxcb.so.1 so:libxshmfence.so.1
-p:cmd:Xephyr
-
 C:Q1N6Qbkpv+YUOGCv9OXpQBDIXNUiE=
 P:dialog
 V:1.3.20200327-r0
@@ -37683,6 +37745,22 @@ t:1606882594
 c:e0f25e8e687f162b3459005c0271f60e3d2f1025
 D:/bin/sh so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libevent-2.1.so.7 so:libssl.so.1.1
 p:cmd:nsd cmd:nsd-checkconf cmd:nsd-checkzone cmd:nsd-control cmd:nsd-control-setup
+
+C:Q1up0jXe7/Z0M66q5btKGjZvr+Efk=
+P:xorg-server-xwayland
+V:1.20.10-r1
+A:s390x
+S:915874
+I:2240512
+T:run X clients under wayland
+U:https://www.x.org/wiki
+L:MIT
+o:xorg-server
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618331953
+c:0b5c0d534873b6f46ce788c9072f448d69797513
+D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libGL.so.1 so:libXau.so.6 so:libXdmcp.so.6 so:libXfont2.so.2 so:libc.musl-s390x.so.1 so:libdrm.so.2 so:libepoxy.so.0 so:libgbm.so.1 so:libnettle.so.7 so:libpixman-1.so.0 so:libwayland-client.so.0 so:libxshmfence.so.1
+p:cmd:Xwayland
 
 C:Q17E1p+hwJsN+WeqIpmhaNnQ/pC8U=
 P:libnl3
@@ -39646,6 +39724,22 @@ c:0e1cfdcae4ef86baf530de61d2540c7b6d2da001
 D:so:libc.musl-s390x.so.1
 p:so:libbluetooth.so.3=3.19.2
 
+C:Q1GZcwXTh+cmL3qUrxn1JUOSqMo1Q=
+P:nss
+V:3.60-r1
+A:s390x
+S:1630884
+I:4300800
+T:Mozilla Network Security Services
+U:https://developer.mozilla.org/docs/Mozilla/Projects/NSS
+L:MPL-2.0
+o:nss
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618332400
+c:9535d32d0508e31aac4dfd7ef36b4e69b23ec3fb
+D:so:libc.musl-s390x.so.1 so:libnspr4.so so:libplc4.so so:libplds4.so so:libsqlite3.so.0
+p:so:libfreebl3.so=60 so:libnss3.so=60 so:libnssckbi-testlib.so=60 so:libnssckbi.so=60 so:libnssdbm3.so=60 so:libnsssysinit.so=60 so:libnssutil3.so=60 so:libpkcs11testmodule.so=60 so:libsmime3.so=60 so:libsoftokn3.so=60 so:libssl3.so=60
+
 C:Q1ikd7Qmfpi9VHmZccvlueUz4vqU4=
 P:ethtool
 V:5.6-r0
@@ -39738,22 +39832,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 i:docs perl-regexp-common=2017060201-r1
-
-C:Q1GkglWdnK0Yucueuc3xZE5sY26o8=
-P:postfix
-V:3.5.9-r0
-A:s390x
-S:927270
-I:3002368
-T:Secure and fast drop-in replacement for Sendmail (MTA)
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1611004208
-c:746e0b7bc7fe8c7c525f7d1696cac59c04b1dfc2
-D:musl>=1.1.24-r7 /bin/sh so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libdb-5.3.so so:libicuuc.so.67 so:libsasl2.so.3 so:libssl.so.1.1
-p:so:libpostfix-dns.so=0 so:libpostfix-global.so=0 so:libpostfix-master.so=0 so:libpostfix-tls.so=0 so:libpostfix-util.so=0 cmd:mailq cmd:newaliases cmd:postalias cmd:postcat cmd:postconf cmd:postdrop cmd:postfix cmd:postkick cmd:postlock cmd:postlog cmd:postmap cmd:postmulti cmd:postqueue cmd:postsuper cmd:sendmail
 
 C:Q1jL1lpmHKCsyMFqUgmK+bsOM6WJE=
 P:help2man-doc
@@ -43592,22 +43670,6 @@ c:13776313a2989b0088bfbc70fb4301179865ca0c
 D:lua5.2 so:libc.musl-s390x.so.1
 i:lua-luaxml=130610-r5 lua5.2
 
-C:Q18JxJUvS2VjtxXjQYRWeOaOJ6VOQ=
-P:nss-tools
-V:3.60-r0
-A:s390x
-S:453850
-I:1167360
-T:Tools for the Network Security Services
-U:https://developer.mozilla.org/docs/Mozilla/Projects/NSS
-L:MPL-2.0
-o:nss
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1609967704
-c:b98f3f79fe6d744e0a3165b67cd44ec9664ab752
-D:so:libc.musl-s390x.so.1 so:libnspr4.so so:libnss3.so so:libnssutil3.so so:libplc4.so so:libplds4.so so:libsmime3.so so:libssl3.so so:libz.so.1
-p:cmd:certutil cmd:cmsutil cmd:crlutil cmd:modutil cmd:pk12util cmd:shlibsign cmd:signtool cmd:signver cmd:ssltap
-
 C:Q1sB9lxpowWfJld1kq/T+ghmb9QK0=
 P:libcap-static
 V:2.27-r0
@@ -43679,6 +43741,22 @@ o:libasr
 m:Francesco Colista <fcolista@alpinelinux.org>
 t:1588164907
 c:451b887f506132301b2dfceee2873dcbcd002eba
+
+C:Q1RoUYQapCB2/kaW6sHLFert1ieO0=
+P:postfix-pcre
+V:3.5.10-r0
+A:s390x
+S:7741
+I:53248
+T:pcre map support for postfix
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618333359
+c:6aab9528845855c42987c23eca318884be7e21d9
+D:so:libc.musl-s390x.so.1 so:libpcre.so.1
+p:so:postfix-pcre.so=0
 
 C:Q1N4gC/1ymqQ4fvMj0YINe7/0o674=
 P:haserl-lua5.2
@@ -45561,6 +45639,22 @@ t:1586814340
 c:03a1c4a5f1d68055801d45c2b4830cec96a727e4
 D:encodings font-alias mkfontscale mkfontdir fontconfig
 
+C:Q1LgDIQd457IPgORmHmt2C7cgaliA=
+P:xorg-server-dev
+V:1.20.10-r1
+A:s390x
+S:267953
+I:1523712
+T:X.Org X servers (development files)
+U:https://www.x.org/wiki
+L:MIT
+o:xorg-server
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618331953
+c:0b5c0d534873b6f46ce788c9072f448d69797513
+D:libepoxy-dev libxfont2-dev mesa-dev libpciaccess-dev pc:pixman-1>=0.27.2 pkgconfig
+p:pc:xorg-server=1.20.10
+
 C:Q1Qj0h9b5Jp3o887x3D0hMj1oTxPA=
 P:openldap-backend-all
 V:2.4.50-r2
@@ -45913,22 +46007,6 @@ t:1588935175
 c:e3c2a60effef3fdd19a9c57adc29428c40beeb4d
 D:pc:gobject-2.0 pc:libffi pkgconfig
 p:py-gobject3-dev=3.36.1-r0 pc:pygobject-3.0=3.36.1
-
-C:Q1fCg+YNLoq9v7ZNU8zkclF4t2heA=
-P:postfix-pgsql
-V:3.5.9-r0
-A:s390x
-S:7608
-I:53248
-T:pgsql map support for postfix
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1611004208
-c:746e0b7bc7fe8c7c525f7d1696cac59c04b1dfc2
-D:so:libc.musl-s390x.so.1 so:libpq.so.5
-p:so:postfix-pgsql.so=0
 
 C:Q1IxzBRKz6HqNe2pDNEaB9F15sVGo=
 P:py3-docutils-doc
@@ -47579,21 +47657,6 @@ t:1560345115
 c:f2c041ba3a38367b28c8ebfc0a25395ab1cb0dcb
 D:so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libogg.so.0 so:libspeex.so.1 so:libssl.so.1.1 so:libtheora.so.0 so:libvorbis.so.0
 p:so:libshout.so.3=3.2.0
-
-C:Q1vM728MO3QPcfatmMA/+4yXlZ5yo=
-P:postfix-doc
-V:3.5.9-r0
-A:s390x
-S:725713
-I:1925120
-T:Secure and fast drop-in replacement for Sendmail (MTA) (documentation)
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1611004208
-c:746e0b7bc7fe8c7c525f7d1696cac59c04b1dfc2
-i:docs postfix=3.5.9-r0
 
 C:Q1ncRrqxShLMIFlhPWBSAClDCFP4s=
 P:samba-winbind-krb5-locator
@@ -49675,6 +49738,22 @@ c:0fcff74d4e6e5dbe2e714e28ad55b55c136d9680
 D:so:libc.musl-s390x.so.1 so:libmnl.so.0 so:libnfnetlink.so.0
 p:so:libnetfilter_queue.so.1=1.4.0
 
+C:Q1QIhiqcKHls+GueDARcRkMm/aGJM=
+P:nss-tools
+V:3.60-r1
+A:s390x
+S:520832
+I:1396736
+T:Tools for the Network Security Services
+U:https://developer.mozilla.org/docs/Mozilla/Projects/NSS
+L:MPL-2.0
+o:nss
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618332400
+c:9535d32d0508e31aac4dfd7ef36b4e69b23ec3fb
+D:so:libc.musl-s390x.so.1 so:libnspr4.so so:libnss3.so so:libnssutil3.so so:libplc4.so so:libplds4.so so:libsmime3.so so:libssl3.so so:libz.so.1
+p:cmd:certutil cmd:cmsutil cmd:crlutil cmd:modutil cmd:pk12util cmd:shlibsign cmd:signtool cmd:signver cmd:ssltap
+
 C:Q1ApnLq4TjK4cEThlWmvcGQ3ZbQeo=
 P:cryptsetup-openrc
 V:2.3.2-r1
@@ -51021,22 +51100,6 @@ t:1568094226
 c:5085869327238d121a826c9aa66384cd52698c9d
 D:gdl=3.34.0-r0 pc:gtk+-3.0 pc:libxml-2.0 pkgconfig
 p:pc:gdl-3.0=3.34.0
-
-C:Q1/TNtejcBhkaYjw1duielf//vXUk=
-P:postfix-mysql
-V:3.5.9-r0
-A:s390x
-S:8165
-I:53248
-T:mysql map support for postfix
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1611004208
-c:746e0b7bc7fe8c7c525f7d1696cac59c04b1dfc2
-D:so:libc.musl-s390x.so.1 so:libmariadb.so.3
-p:so:postfix-mysql.so=0
 
 C:Q13vLcJZ6ia/+KIE2hcg792zdQxmo=
 P:sharutils
@@ -53921,22 +53984,6 @@ t:1614147388
 c:ce26f40be4045873aaf524c46edf771351e4af15
 D:so:libc.musl-s390x.so.1 so:liblber-2.4.so.2
 
-C:Q15Obwhf3aDgkCM9pttWroy4uXlxw=
-P:postfix-stone
-V:3.5.9-r0
-A:s390x
-S:30636
-I:122880
-T:Postfix simulation and testing tools
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1611004208
-c:746e0b7bc7fe8c7c525f7d1696cac59c04b1dfc2
-D:musl>=1.1.24-r7 so:libc.musl-s390x.so.1 so:libpostfix-global.so so:libpostfix-util.so
-p:cmd:fsstone cmd:qmqp-sink cmd:qmqp-source cmd:smtp-sink cmd:smtp-source
-
 C:Q1Ou3Kmz1n0v1wzejeNUQHS+xIutE=
 P:cfdisk
 V:2.35.2-r0
@@ -54435,22 +54482,6 @@ t:1567509274
 c:159c19b64ed54d83268a98ab413a91addfce64e8
 D:apr util-linux-dev bash pkgconfig
 p:pc:apr-1=1.7.0 cmd:apr-1-config
-
-C:Q177PYnFHKHjFrWtCnh3bn7Z7ey0U=
-P:postfix-pcre
-V:3.5.9-r0
-A:s390x
-S:7738
-I:53248
-T:pcre map support for postfix
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1611004208
-c:746e0b7bc7fe8c7c525f7d1696cac59c04b1dfc2
-D:so:libc.musl-s390x.so.1 so:libpcre.so.1
-p:so:postfix-pcre.so=0
 
 C:Q10hZwszK/2SvWSLGqDGv/8GTkzo0=
 P:daq-sfbpf
@@ -55121,22 +55152,6 @@ t:1558987567
 c:2f0a92c51597a3266221bd4230500751e9f69940
 D:so:libc.musl-s390x.so.1
 p:so:libattr.so.1=1.1.2448
-
-C:Q1YUwzOy5Q4+KFsU8/wtvtHIITvzY=
-P:nss-dev
-V:3.60-r0
-A:s390x
-S:283912
-I:1527808
-T:Development files for nss
-U:https://developer.mozilla.org/docs/Mozilla/Projects/NSS
-L:MPL-2.0
-o:nss
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1609967704
-c:b98f3f79fe6d744e0a3165b67cd44ec9664ab752
-D:nss nspr-dev pc:nspr>=3.60 pkgconfig
-p:pc:mozilla-nss=3.60 pc:nss-softokn=3.60 pc:nss-util=3.60 pc:nss=3.60 cmd:nss-config
 
 C:Q1Ba18N4jWXXfZ+XgTH1oqgpaISfo=
 P:perl-crypt-rijndael
@@ -56361,6 +56376,22 @@ c:3844aa04647ff7fe7442c0b1575c01a394878975
 D:so:libc.musl-s390x.so.1
 p:so:libjbig2dec.so.0=0.0.0 cmd:jbig2dec
 
+C:Q1XimSU99Ld3g+jnRQtatJzh5/4jM=
+P:xorg-server
+V:1.20.10-r1
+A:s390x
+S:2419907
+I:5988352
+T:X.Org X servers
+U:https://www.x.org/wiki
+L:MIT
+o:xorg-server
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618331953
+c:0b5c0d534873b6f46ce788c9072f448d69797513
+D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libGL.so.1 so:libXau.so.6 so:libXdmcp.so.6 so:libXfont2.so.2 so:libc.musl-s390x.so.1 so:libdrm.so.2 so:libepoxy.so.0 so:libgbm.so.1 so:libnettle.so.7 so:libpciaccess.so.0 so:libpixman-1.so.0 so:libudev.so.1 so:libxshmfence.so.1
+p:cmd:Xorg cmd:cvt cmd:gtf
+
 C:Q1PyPIxaMwK+8Ox4a+l4fwKpHPjOI=
 P:krb5-libs
 V:1.18.3-r0
@@ -56543,21 +56574,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1575339846
 c:44c76ba2879f3e12b53f62e1a781c595eb684e9d
 i:docs perl-http-cookies=6.08-r0
-
-C:Q1yJB33llSlgp+tvGqwd3pE5hCIY8=
-P:xorg-server-dbg
-V:1.20.10-r0
-A:s390x
-S:40240147
-I:99848192
-T:X.Org X servers (debug symbols)
-U:https://www.x.org/wiki
-L:MIT
-o:xorg-server
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1606870934
-c:6565110d8e9da4626909f76958840acb4c5c08b5
-D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit
 
 C:Q1SgP3+J4pskN/dGf62lFU6yikxs0=
 P:rhash-libs
@@ -57187,21 +57203,6 @@ t:1585245035
 c:4313c8e525d3ec5a67b25c584f40e76dc47e47cc
 D:perl
 
-C:Q1cl6Oe8ucko0X2KOBT6WKv/AsbOw=
-P:xorg-server-doc
-V:1.20.10-r0
-A:s390x
-S:54890
-I:122880
-T:X.Org X servers (documentation)
-U:https://www.x.org/wiki
-L:MIT
-o:xorg-server
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1606870934
-c:6565110d8e9da4626909f76958840acb4c5c08b5
-i:docs xorg-server=1.20.10-r0
-
 C:Q18lg6+mEUBWyex1cz/gux8ONJbuI=
 P:libacl
 V:2.2.53-r0
@@ -57552,6 +57553,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1532867203
 c:ce0955c6013278526fe178f2c70f0f39a2801a16
 D:so:libc.musl-s390x.so.1
+
+C:Q1FHv4Q412I+PC1mjGrJbNyikH/1w=
+P:postfix-doc
+V:3.5.10-r0
+A:s390x
+S:725743
+I:1925120
+T:Secure and fast drop-in replacement for Sendmail (MTA) (documentation)
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618333359
+c:6aab9528845855c42987c23eca318884be7e21d9
+i:docs postfix=3.5.10-r0
 
 C:Q1pGOBvzpD1Cz1u7JsLfojVcK33Ig=
 P:smartmontools
@@ -58591,22 +58607,6 @@ c:41ab224df12b8487004a1522b4f671680c082954
 D:libgcrypt-dev libotr=4.1.1-r1 pkgconfig
 p:pc:libotr=4.1.1
 
-C:Q1fop8VOshfTknRiiToP5ieWeetv0=
-P:postfix-lmdb
-V:3.5.9-r0
-A:s390x
-S:8992
-I:57344
-T:lmdb map support for postfix
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1611004208
-c:746e0b7bc7fe8c7c525f7d1696cac59c04b1dfc2
-D:so:libc.musl-s390x.so.1 so:liblmdb.so.0
-p:so:postfix-lmdb.so=0
-
 C:Q1H0D9vmzEBR/r+zuDLPXdB7h3jlM=
 P:gdbm-doc
 V:1.13-r1
@@ -58775,6 +58775,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1590584128
 c:7445adce501f8473efdb93b17b5eaf2f1445ed4c
 i:docs clang=10.0.0-r2
+
+C:Q1QNPi/qoQmxsUZAg2+5NTTO/4NwQ=
+P:postfix-mysql
+V:3.5.10-r0
+A:s390x
+S:8167
+I:53248
+T:mysql map support for postfix
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618333359
+c:6aab9528845855c42987c23eca318884be7e21d9
+D:so:libc.musl-s390x.so.1 so:libmariadb.so.3
+p:so:postfix-mysql.so=0
 
 C:Q1h8qOnkB8F+6YnTX4f45hE5Lxdps=
 P:font-bh-lucidatypewriter-75dpi
@@ -61012,22 +61028,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1551125442
 c:f897f1ae96d9a1a398443338afb504d24e8106e3
 
-C:Q1zjusIC39JWvT4ZBYXGKIVTDyB4w=
-P:postfix-ldap
-V:3.5.9-r0
-A:s390x
-S:13752
-I:69632
-T:ldap map support for postfix
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1611004208
-c:746e0b7bc7fe8c7c525f7d1696cac59c04b1dfc2
-D:so:libc.musl-s390x.so.1 so:liblber-2.4.so.2 so:libldap-2.4.so.2
-p:so:postfix-ldap.so=0
-
 C:Q1zxgViqq2f4LQqyVddyAedvO9nbY=
 P:tiff-dev
 V:4.1.0-r0
@@ -61672,6 +61672,20 @@ o:glslang
 m:Leo <thinkabit.ukim@gmail.com>
 t:1587996397
 c:45ca5f5fd221d8167294746765515d3f61ccf67b
+
+C:Q1ocRufjRX3fbg93gjwFE+sNTbICI=
+P:nss-static
+V:3.60-r1
+A:s390x
+S:1622201
+I:7303168
+T:Mozilla Network Security Services (static library)
+U:https://developer.mozilla.org/docs/Mozilla/Projects/NSS
+L:MPL-2.0
+o:nss
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618332400
+c:9535d32d0508e31aac4dfd7ef36b4e69b23ec3fb
 
 C:Q1ZMwEmeRigodKUlgyXlPwNxQrv6I=
 P:libxkbcommon-dev
@@ -63538,20 +63552,6 @@ t:1552497333
 c:efb87569ab3eb1f3b34258f10fd8a061900765a0
 D:netcf-libs=0.2.8-r6 pkgconfig
 p:pc:netcf=0.2.8
-
-C:Q10jRPRdX9QOEXb+Osq0R/JD0F3xg=
-P:nss-static
-V:3.60-r0
-A:s390x
-S:1622214
-I:7303168
-T:Mozilla Network Security Services (static library)
-U:https://developer.mozilla.org/docs/Mozilla/Projects/NSS
-L:MPL-2.0
-o:nss
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1609967704
-c:b98f3f79fe6d744e0a3165b67cd44ec9664ab752
 
 C:Q11q9O3j60yU1NtgjC5hWP/ZAGJT4=
 P:slang
@@ -66928,6 +66928,22 @@ t:1577475516
 c:a67c8aa673dc17b5beab81605740830f33e9ccc7
 i:docs perl-test-without-module=0.20-r1
 
+C:Q1EUSv7ASt/pnS0s6zGRxf1zDai7o=
+P:postfix-sqlite
+V:3.5.10-r0
+A:s390x
+S:5439
+I:49152
+T:sqlite map support for postfix
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618333359
+c:6aab9528845855c42987c23eca318884be7e21d9
+D:so:libc.musl-s390x.so.1 so:libsqlite3.so.0
+p:so:postfix-sqlite.so=0
+
 C:Q1AcheGpxRJ1a3necEfMW5xwK0Bv4=
 P:libksba-dev
 V:1.4.0-r0
@@ -69406,22 +69422,6 @@ t:1585628447
 c:604b0ba9f78e8fcbe540e78cbe1f63dc586d828a
 D:numactl=2.0.13-r0 pkgconfig
 p:pc:numa=2.0.13
-
-C:Q1aZ7OiTZhv9b/u9V6xDEPZ+uNZCo=
-P:xorg-server
-V:1.20.10-r0
-A:s390x
-S:2419826
-I:5988352
-T:X.Org X servers
-U:https://www.x.org/wiki
-L:MIT
-o:xorg-server
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1606870934
-c:6565110d8e9da4626909f76958840acb4c5c08b5
-D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libGL.so.1 so:libXau.so.6 so:libXdmcp.so.6 so:libXfont2.so.2 so:libc.musl-s390x.so.1 so:libdrm.so.2 so:libepoxy.so.0 so:libgbm.so.1 so:libnettle.so.7 so:libpciaccess.so.0 so:libpixman-1.so.0 so:libudev.so.1 so:libxshmfence.so.1
-p:cmd:Xorg cmd:cvt cmd:gtf
 
 C:Q1uzxnDTJ3pT+s7ewOfPwWtWoheyA=
 P:chrony-openrc
