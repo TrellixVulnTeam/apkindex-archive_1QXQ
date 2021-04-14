@@ -1433,22 +1433,6 @@ c:104de42e838e77bb5e0cec959f07ddc476880897
 D:libsm=1.2.3-r0 pc:ice pc:xproto pkgconfig
 p:pc:sm=1.2.3
 
-C:Q1tVXhEdIcpHkp49jufVQFRzYTn+Q=
-P:clamav
-V:0.102.4-r1
-A:armhf
-S:81047
-I:225280
-T:An anti-virus toolkit for UNIX eis-ng backport
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1597702715
-c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
-D:clamav-scanner clamav-daemon so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libfts.so.0
-p:cmd:clamonacc
-
 C:Q1RRLCxRABmYkqm23GhPA/l74wVV4=
 P:linux-firmware-yamaha
 V:20200519-r1
@@ -4404,22 +4388,6 @@ t:1553585802
 c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 i:docs vblade=24-r0
 
-C:Q1l6cYG0yG9IdRgC7Ob5oWAoRs6XI=
-P:clamav-daemon-openrc
-V:0.102.4-r1
-A:armhf
-S:2497
-I:24576
-T:ClamAV anti-virus scanner daemon (OpenRC init scripts)
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1597702715
-c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
-D:freshclam-openrc
-i:clamav-daemon=0.102.4-r1 openrc
-
 C:Q1aBVlx5Cv6jg2hFMwb4HDEsDETlM=
 P:perl-encode-hanextra
 V:0.23-r5
@@ -4925,6 +4893,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1566815128
 c:f82c56514faa5dc3b730e218e4294e45237d2e96
 
+C:Q1AcQUJFlGj8QLm8kpkfld7+K1pes=
+P:clamav
+V:0.103.2-r0
+A:armhf
+S:58575
+I:180224
+T:An anti-virus toolkit for UNIX eis-ng backport
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1618390144
+c:42623a667ed40896d702380a72feac669108c740
+D:clamav-scanner clamav-daemon so:libc.musl-armhf.so.1 so:libclamav.so.9 so:libcurl.so.4 so:libfts.so.0
+p:cmd:clamonacc
+
 C:Q1UvMTyClec1KVVbOOz6BSrEySqXI=
 P:libjpeg-turbo-dev
 V:2.0.5-r0
@@ -5167,22 +5151,6 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:libnetfilter_cthelper=1.0.0-r0 pkgconfig
 p:pc:libnetfilter_cthelper=1.0.0
 
-C:Q1mckzSUzbx33Srwpx/p+sQGszEAA=
-P:xorg-server-xwayland
-V:1.20.10-r1
-A:armhf
-S:800730
-I:1679360
-T:run X clients under wayland
-U:https://www.x.org/wiki
-L:MIT
-o:xorg-server
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1618331953
-c:0b5c0d534873b6f46ce788c9072f448d69797513
-D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libGL.so.1 so:libXau.so.6 so:libXdmcp.so.6 so:libXfont2.so.2 so:libc.musl-armhf.so.1 so:libdrm.so.2 so:libepoxy.so.0 so:libgbm.so.1 so:libnettle.so.7 so:libpixman-1.so.0 so:libwayland-client.so.0 so:libxshmfence.so.1
-p:cmd:Xwayland
-
 C:Q124hOXHZMcGyV6Mfn50Ka47LSGXc=
 P:freeradius-lib
 V:3.0.21-r3
@@ -5227,6 +5195,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1587139622
 c:1ed20c2c04f77f28a29f650dc6dde74e3b5e3a8b
 D:uwsgi
+
+C:Q1Xtt63+orD3ZgajYNN6igINTMeLQ=
+P:clamav-libunrar
+V:0.103.2-r0
+A:armhf
+S:110900
+I:225280
+T:ClamAV unrar libraries
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1618390144
+c:42623a667ed40896d702380a72feac669108c740
+D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
+p:so:libclamunrar.so.9=9.0.5 so:libclamunrar_iface.so.9=9.0.5
 
 C:Q14mTLXfJuBAz0YKOlfd13tZWcAQE=
 P:alsa-utils
@@ -5576,6 +5560,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1583179265
 c:a37a0cbcb0cd448e30b4f1b775daa856ee06b1bb
 D:openvpn /bin/sh so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:liblber-2.4.so.2 so:libldap-2.4.so.2 so:libobjc.so.4
+
+C:Q1lS5ElvK5oDr1mAe27kB+qdurDuM=
+P:xorg-server-dbg
+V:1.20.11-r0
+A:armhf
+S:39094778
+I:91168768
+T:X.Org X servers (debug symbols)
+U:https://www.x.org/wiki
+L:MIT
+o:xorg-server
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618391217
+c:f47b4dfb0d91b4069504b354560134b224627834
+D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit
 
 C:Q1puohM2d3hhZPOsxMdHmLFwXneUc=
 P:xkeyboard-config
@@ -13064,21 +13063,6 @@ t:1563793536
 c:52511fb2c748701c420350cbfcbd4fcabadbbf0d
 D:perl
 
-C:Q1mb7qGrClC6YypXi/tLvig2Ww/3s=
-P:clamav-db
-V:0.102.4-r1
-A:armhf
-S:1359
-I:40960
-T:ClamAV dummy package for compatibility
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1597702715
-c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
-D:freshclam
-
 C:Q1ez/uMxGFw8XeDmWZSvMZcm+IoYc=
 P:haproxy
 V:2.1.12-r0
@@ -13246,22 +13230,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1588847537
 c:827eaef4a6c59f50540344ff2ad5aaac13953975
 i:docs multipath-tools=0.8.4-r1
-
-C:Q1+W811GQ8SxWIOHV7VxB3rDTDM10=
-P:xorg-server
-V:1.20.10-r1
-A:armhf
-S:2158819
-I:4653056
-T:X.Org X servers
-U:https://www.x.org/wiki
-L:MIT
-o:xorg-server
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1618331953
-c:0b5c0d534873b6f46ce788c9072f448d69797513
-D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libGL.so.1 so:libXau.so.6 so:libXdmcp.so.6 so:libXfont2.so.2 so:libc.musl-armhf.so.1 so:libdrm.so.2 so:libepoxy.so.0 so:libgbm.so.1 so:libnettle.so.7 so:libpciaccess.so.0 so:libpixman-1.so.0 so:libudev.so.1 so:libxshmfence.so.1
-p:cmd:Xorg cmd:cvt cmd:gtf
 
 C:Q1yjD7c6fd7EtAWCwYLAJoI9vsZq0=
 P:libshout
@@ -15574,6 +15542,22 @@ t:1600991000
 c:c8b5ea21f034e2a2ce267121ec4cfb7c2be8d2ef
 p:linux-firmware-any
 
+C:Q1+slfoBZZjn/KeAui29D6f5+bWQQ=
+P:xorg-server-xnest
+V:1.20.11-r0
+A:armhf
+S:584600
+I:1196032
+T:A nested Xorg server
+U:https://www.x.org/wiki
+L:MIT
+o:xorg-server
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618391217
+c:f47b4dfb0d91b4069504b354560134b224627834
+D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libX11.so.6 so:libXau.so.6 so:libXdmcp.so.6 so:libXext.so.6 so:libXfont2.so.2 so:libc.musl-armhf.so.1 so:libnettle.so.7 so:libpixman-1.so.0
+p:cmd:Xnest
+
 C:Q1uyVv49bTdxg7fn34vZNfFO50pgU=
 P:libaio
 V:0.3.112-r1
@@ -17050,6 +17034,22 @@ c:3d34b8b4d14bd80e96b2c4f9aa4b8543f781b421
 D:so:libc.musl-armhf.so.1
 p:so:libnl.so.1=1.1.4
 
+C:Q1C+bHQCuObSjnAtjm6frh6Ol2YL8=
+P:xorg-server-xwayland
+V:1.20.11-r0
+A:armhf
+S:800751
+I:1679360
+T:run X clients under wayland
+U:https://www.x.org/wiki
+L:MIT
+o:xorg-server
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618391217
+c:f47b4dfb0d91b4069504b354560134b224627834
+D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libGL.so.1 so:libXau.so.6 so:libXdmcp.so.6 so:libXfont2.so.2 so:libc.musl-armhf.so.1 so:libdrm.so.2 so:libepoxy.so.0 so:libgbm.so.1 so:libnettle.so.7 so:libpixman-1.so.0 so:libwayland-client.so.0 so:libxshmfence.so.1
+p:cmd:Xwayland
+
 C:Q1IeqWHNNluyTgD+x91GUyeSpDAuI=
 P:gdl
 V:3.34.0-r0
@@ -17447,6 +17447,21 @@ m:Ted Trask <ttrask01@yahoo.com>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:acf-core acf-db-lib acf-db-lib=0.2.1-r2
+
+C:Q1aXeabN1Tv254Ch9R2uNeAIDYZKQ=
+P:clamav-doc
+V:0.103.2-r0
+A:armhf
+S:35475
+I:90112
+T:An anti-virus toolkit for UNIX eis-ng backport (documentation)
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1618390144
+c:42623a667ed40896d702380a72feac669108c740
+i:docs clamav=0.103.2-r0
 
 C:Q1+y+8u0FD39Nm5Xa4nNcCBMAkfc4=
 P:perl-convert-color
@@ -17877,21 +17892,6 @@ c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:so:libc.musl-armhf.so.1
 p:cmd:sntpc
 
-C:Q12/xtxImWLPsxU2rOD6veWjk5iMM=
-P:xorg-server-doc
-V:1.20.10-r1
-A:armhf
-S:54888
-I:122880
-T:X.Org X servers (documentation)
-U:https://www.x.org/wiki
-L:MIT
-o:xorg-server
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1618331953
-c:0b5c0d534873b6f46ce788c9072f448d69797513
-i:docs xorg-server=1.20.10-r1
-
 C:Q1fb/iR74UpNrKPG/TTYfQoK4jal4=
 P:perl-apache-logformat-compiler-doc
 V:0.36-r0
@@ -18320,6 +18320,22 @@ t:1585668637
 c:985f8b8ee0b3abe01c7a9890714613758c250aea
 i:docs perl-mail-authenticationresults=1.20200331.1-r0
 
+C:Q1bNMWvK7BzWOkgOh87z4f8fFaVxY=
+P:xorg-server-xephyr
+V:1.20.11-r0
+A:armhf
+S:841476
+I:1761280
+T:kdrive based X Server which targets a window on a host X Server as its framebuffer
+U:https://www.x.org/wiki
+L:MIT
+o:xorg-server
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618391217
+c:f47b4dfb0d91b4069504b354560134b224627834
+D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libGL.so.1 so:libX11-xcb.so.1 so:libX11.so.6 so:libXau.so.6 so:libXdmcp.so.6 so:libXfont2.so.2 so:libc.musl-armhf.so.1 so:libepoxy.so.0 so:libnettle.so.7 so:libpixman-1.so.0 so:libudev.so.1 so:libxcb-icccm.so.4 so:libxcb-image.so.0 so:libxcb-keysyms.so.1 so:libxcb-randr.so.0 so:libxcb-render-util.so.0 so:libxcb-render.so.0 so:libxcb-shape.so.0 so:libxcb-shm.so.0 so:libxcb-util.so.1 so:libxcb-xkb.so.1 so:libxcb-xv.so.0 so:libxcb.so.1 so:libxshmfence.so.1
+p:cmd:Xephyr
+
 C:Q1TV/Y90/XL13HUQckyqy9xQmo0DA=
 P:devicemaster-linux-doc
 V:7.34-r0
@@ -18474,6 +18490,22 @@ t:1581964787
 c:6081d72ed6310a9551a5831e510a538ebd68ebe8
 D:python3
 p:py-idna=2.9-r0
+
+C:Q15X6419ISQox9pMw9RA1LfuF9zmQ=
+P:clamav-libs
+V:0.103.2-r0
+A:armhf
+S:821628
+I:1970176
+T:An anti-virus toolkit for UNIX eis-ng backport (libraries)
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1618390144
+c:42623a667ed40896d702380a72feac669108c740
+D:so:libbz2.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libgcc_s.so.1 so:libltdl.so.7 so:libpcre.so.1 so:libssl.so.1.1 so:libz.so.1
+p:so:libclamav.so.9=9.0.5 so:libclammspack.so.0=0.1.0 so:libfreshclam.so.2=2.0.1
 
 C:Q1VpLetaftkwc/hyula+aFEbZmpS0=
 P:font-bh-lucidatypewriter-100dpi
@@ -20249,22 +20281,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1580250445
 c:238b6bccbab3b844079fa109d5cee096b81756d3
 i:docs nmap=7.80-r2
-
-C:Q1p8XZIADO5tSK9wL9R5/RBZwab2A=
-P:clamav-libs
-V:0.102.4-r1
-A:armhf
-S:781581
-I:1859584
-T:An anti-virus toolkit for UNIX eis-ng backport (libraries)
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1597702715
-c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
-D:so:libbz2.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libgcc_s.so.1 so:libltdl.so.7 so:libpcre.so.1 so:libssl.so.1.1 so:libz.so.1
-p:so:libclamav.so.9=9.0.4 so:libclammspack.so.0=0.1.0 so:libfreshclam.so.2=2.0.0
 
 C:Q1N71cp/61LZcO1QpFzkntrN8IhJ4=
 P:avahi-compat-howl
@@ -25101,22 +25117,6 @@ c:c9497c9ea6fbcd311d8967265baa0824f256b0a0
 D:rsyslog=8.2004.0-r0 so:libc.musl-armhf.so.1 so:libnet.so.1
 p:rsyslog-omudpspoof=8.2004.0-r0
 
-C:Q1N3GzMR2X4P00ZH/cAKkl23GOoIE=
-P:clamav-milter
-V:0.102.4-r1
-A:armhf
-S:75641
-I:208896
-T:ClamAV milter
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1597702715
-c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
-D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libmilter.so.1.0.2
-p:cmd:clamav-milter
-
 C:Q1N/BkTG9ZfTy67RdqawmDjS1WtGE=
 P:perl-text-csv
 V:2.00-r0
@@ -29834,22 +29834,6 @@ t:1582391838
 c:c642cb7ab45ed41d9d80e6b6d177858c39c7075f
 D:nagios-plugins so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
 
-C:Q14PLVr+jx6D2cyabt1F+PT6IINhA=
-P:xorg-server-dev
-V:1.20.10-r1
-A:armhf
-S:267959
-I:1523712
-T:X.Org X servers (development files)
-U:https://www.x.org/wiki
-L:MIT
-o:xorg-server
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1618331953
-c:0b5c0d534873b6f46ce788c9072f448d69797513
-D:libepoxy-dev libxfont2-dev mesa-dev libpciaccess-dev pc:pixman-1>=0.27.2 pkgconfig
-p:pc:xorg-server=1.20.10
-
 C:Q1Y22PURjQRSwnUTFrrm1RRPI3Ok0=
 P:libldapcpp
 V:2.4.50-r2
@@ -30409,21 +30393,6 @@ t:1602027851
 c:35e7793b77c5e2c8eaa5ae0e5250f5e0f5703972
 D:so:libbrotlidec.so.1 so:libbrotlienc.so.1 so:libc.musl-armhf.so.1
 p:cmd:brotli
-
-C:Q137jkjodkFqZog2Ccygn7WQp1s2s=
-P:xorg-server-dbg
-V:1.20.10-r1
-A:armhf
-S:39094333
-I:91168768
-T:X.Org X servers (debug symbols)
-U:https://www.x.org/wiki
-L:MIT
-o:xorg-server
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1618331953
-c:0b5c0d534873b6f46ce788c9072f448d69797513
-D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit
 
 C:Q1oPgwG/hM3BmEX6r+p6vG1J2pemI=
 P:acf-opennhrp
@@ -31716,6 +31685,22 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1570085185
 c:672f8a60b28dfd804316f82f26c42c98a12ba34b
 
+C:Q1bG6SpsPvmfAPpb5qT5Ep/RlYWps=
+P:clamav-scanner
+V:0.103.2-r0
+A:armhf
+S:143769
+I:405504
+T:ClamAV command-line scanner and utils
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1618390144
+c:42623a667ed40896d702380a72feac669108c740
+D:freshclam so:libc.musl-armhf.so.1 so:libclamav.so.9 so:libcrypto.so.1.1 so:libz.so.1
+p:cmd:clambc cmd:clamscan cmd:sigtool
+
 C:Q1TSP284FU5WIXr+AKJ8frVdqO2Xw=
 P:xxd
 V:8.2.0735-r0
@@ -32391,6 +32376,22 @@ t:1617824016
 c:002d1ebc270df24edbd6c8093f1093645fb3aeb8
 i:docs nodejs=12.22.1-r0
 
+C:Q128zQB3np02D7ItBN98Sjnt4Jyos=
+P:clamav-daemon-openrc
+V:0.103.2-r0
+A:armhf
+S:2494
+I:24576
+T:ClamAV anti-virus scanner daemon (OpenRC init scripts)
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1618390144
+c:42623a667ed40896d702380a72feac669108c740
+D:freshclam-openrc
+i:clamav-daemon=0.103.2-r0 openrc
+
 C:Q1jJ/XVcxoNteJFY19hipXzzZaaeo=
 P:lmdb-tools
 V:0.9.25-r1
@@ -32500,6 +32501,22 @@ t:1573571075
 c:a42217d3c29c40cd979f3d6f0e5a6aa7fba8860c
 D:font-sony-misc so:libc.musl-armhf.so.1 so:librrd.so.8
 p:cmd:rrdtool
+
+C:Q1tPbRdXwbLxlXlncBqNDF+DmJ0Ss=
+P:xvfb
+V:1.20.11-r0
+A:armhf
+S:703954
+I:1474560
+T:Virtual Framebuffer 'fake' X server
+U:https://www.x.org/wiki
+L:MIT
+o:xorg-server
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618391217
+c:f47b4dfb0d91b4069504b354560134b224627834
+D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libGL.so.1 so:libXau.so.6 so:libXdmcp.so.6 so:libXfont2.so.2 so:libc.musl-armhf.so.1 so:libnettle.so.7 so:libpixman-1.so.0
+p:cmd:Xvfb
 
 C:Q1NvqBQiknGAzLxNJxfC5Yu87uqJk=
 P:asterisk-mobile
@@ -34982,21 +34999,21 @@ t:1583212618
 c:0ac87b7fb4b8e4e3717e3611107fc463c8dd261b
 i:docs s6-networking=2.3.1.2-r0
 
-C:Q1fQ9+tj1haHqjlSSSQYV0+o+cRH4=
-P:clamav-dev
-V:0.102.4-r1
+C:Q1zMugN6ar+GsgOkGyIG+vEuyEaZ4=
+P:clamav-daemon
+V:0.103.2-r0
 A:armhf
-S:18275
-I:110592
-T:An anti-virus toolkit for UNIX eis-ng backport (development files)
+S:194906
+I:585728
+T:ClamAV daemon scanner
 U:https://www.clamav.net/
 L:GPL-2.0
 o:clamav
 m:Carlo Landmeter <clandmeter@gmail.com>
-t:1597702715
-c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
-D:openssl-dev clamav-libs=0.102.4-r1 clamav-libunrar=0.102.4-r1 pkgconfig
-p:pc:libclamav=0.102.4 cmd:clamav-config
+t:1618390144
+c:42623a667ed40896d702380a72feac669108c740
+D:freshclam /bin/sh so:libc.musl-armhf.so.1 so:libclamav.so.9 so:libncursesw.so.6 so:libz.so.1
+p:cmd:clamconf cmd:clamd cmd:clamdscan cmd:clamdtop
 
 C:Q1HwOp/FzYruGLGfCM6RmvW0ZqDR8=
 P:perl-scope-upper
@@ -35276,22 +35293,6 @@ t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 D:perl
 
-C:Q1fWChBB3WWYR8rvYCfhjfv76ODqk=
-P:xorg-server-xephyr
-V:1.20.10-r1
-A:armhf
-S:841266
-I:1757184
-T:kdrive based X Server which targets a window on a host X Server as its framebuffer
-U:https://www.x.org/wiki
-L:MIT
-o:xorg-server
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1618331953
-c:0b5c0d534873b6f46ce788c9072f448d69797513
-D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libGL.so.1 so:libX11-xcb.so.1 so:libX11.so.6 so:libXau.so.6 so:libXdmcp.so.6 so:libXfont2.so.2 so:libc.musl-armhf.so.1 so:libepoxy.so.0 so:libnettle.so.7 so:libpixman-1.so.0 so:libudev.so.1 so:libxcb-icccm.so.4 so:libxcb-image.so.0 so:libxcb-keysyms.so.1 so:libxcb-randr.so.0 so:libxcb-render-util.so.0 so:libxcb-render.so.0 so:libxcb-shape.so.0 so:libxcb-shm.so.0 so:libxcb-util.so.1 so:libxcb-xkb.so.1 so:libxcb-xv.so.0 so:libxcb.so.1 so:libxshmfence.so.1
-p:cmd:Xephyr
-
 C:Q1bo5LyDy6Jz/J74E5KxHGPj72Gio=
 P:unionfs-fuse
 V:2.0-r0
@@ -35460,21 +35461,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 i:docs perl-module-versions-report=1.06-r1
-
-C:Q1FH9YldInY/zrSB0vTxzFgKMJqVE=
-P:clamav-doc
-V:0.102.4-r1
-A:armhf
-S:33549
-I:86016
-T:An anti-virus toolkit for UNIX eis-ng backport (documentation)
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1597702715
-c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
-i:docs clamav=0.102.4-r1
 
 C:Q1dR33YaK8ZQZfjyZXmHgK+ZcGam8=
 P:perl-xml-namespacesupport-doc
@@ -36459,6 +36445,22 @@ t:1586114024
 c:6f8194876e62f69016a55f327bebc773747eb8cc
 D:so:libc.musl-armhf.so.1
 p:so:libidn.so.12=12.6.0 cmd:idn
+
+C:Q1JeyfxPAHcivmTA+mFzGo43PG0bk=
+P:xorg-server
+V:1.20.11-r0
+A:armhf
+S:2158829
+I:4653056
+T:X.Org X servers
+U:https://www.x.org/wiki
+L:MIT
+o:xorg-server
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618391217
+c:f47b4dfb0d91b4069504b354560134b224627834
+D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libGL.so.1 so:libXau.so.6 so:libXdmcp.so.6 so:libXfont2.so.2 so:libc.musl-armhf.so.1 so:libdrm.so.2 so:libepoxy.so.0 so:libgbm.so.1 so:libnettle.so.7 so:libpciaccess.so.0 so:libpixman-1.so.0 so:libudev.so.1 so:libxshmfence.so.1
+p:cmd:Xorg cmd:cvt cmd:gtf
 
 C:Q15iqhYD2mGB43OFnIiLZsB+AQSwM=
 P:a52dec-doc
@@ -38213,6 +38215,22 @@ o:cairo
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1617971623
 c:695dc71caaea33c41d49cd570e1114a4b9c06f52
+
+C:Q1frodhlVbRABk++0no9uHuUBw9+M=
+P:xorg-server-dev
+V:1.20.11-r0
+A:armhf
+S:267947
+I:1523712
+T:X.Org X servers (development files)
+U:https://www.x.org/wiki
+L:MIT
+o:xorg-server
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618391217
+c:f47b4dfb0d91b4069504b354560134b224627834
+D:libepoxy-dev libxfont2-dev mesa-dev libpciaccess-dev pc:pixman-1>=0.27.2 pkgconfig
+p:pc:xorg-server=1.20.11
 
 C:Q1r9G7kU9PtHaEzDTh6Ie0IOuA7nQ=
 P:memcached
@@ -40675,22 +40693,6 @@ t:1585861804
 c:5c2ad881ed4726e97ec2da6c05e0324a57117f92
 D:udev-init-scripts /bin/sh eudev-libs=3.2.9-r3 so:libblkid.so.1 so:libc.musl-armhf.so.1 so:libkmod.so.2
 p:udev=176 cmd:setup-udev cmd:udevadm cmd:udevd
-
-C:Q1Yr0xKcPBck/eLq6iYmatPNX5t/s=
-P:clamav-daemon
-V:0.102.4-r1
-A:armhf
-S:233515
-I:659456
-T:ClamAV daemon scanner
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1597702715
-c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
-D:freshclam /bin/sh so:libc.musl-armhf.so.1 so:libclamav.so.9 so:libcrypto.so.1.1 so:libncursesw.so.6 so:libz.so.1
-p:cmd:clamconf cmd:clamd cmd:clamdscan cmd:clamdtop
 
 C:Q1446/A3Wc9ci8Jd3VPA59DneIMx8=
 P:perl-http-message
@@ -49925,22 +49927,6 @@ c:c51ed48a9612712783cd711937a9030b74695b65
 D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgstapp-1.0.so.0 so:libgstreamer-1.0.so.0 so:libjpeg.so.8 so:liblz4.so.1 so:libopus.so.0 so:liborc-0.4.so.0 so:libpixman-1.so.0 so:libsasl2.so.3 so:libssl.so.1.1 so:libz.so.1
 p:so:libspice-server.so.1=1.14.0
 
-C:Q1uo9b8lvlMWP/ICr7oDjoEtg135E=
-P:clamav-scanner
-V:0.102.4-r1
-A:armhf
-S:137860
-I:393216
-T:ClamAV command-line scanner and utils
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1597702715
-c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
-D:freshclam so:libc.musl-armhf.so.1 so:libclamav.so.9 so:libcrypto.so.1.1 so:libz.so.1
-p:cmd:clambc cmd:clamscan cmd:sigtool
-
 C:Q1imbui6qPDIpXvUENXS0xT00+hiQ=
 P:lua5.1-sql-sqlite3
 V:2.5.0-r1
@@ -51046,6 +51032,22 @@ t:1611325253
 c:1e6b21459f8e485edb2b303646ab3726e05d6b63
 D:py3-olefile so:libc.musl-armhf.so.1 so:libfreetype.so.6 so:libimagequant.so.0 so:libjpeg.so.8 so:liblcms2.so.2 so:libopenjp2.so.7 so:libtiff.so.5 so:libwebp.so.7 so:libwebpdemux.so.2 so:libwebpmux.so.3 so:libxcb.so.1 so:libz.so.1
 p:py-pillow=7.1.2-r1
+
+C:Q11L7JcdyUfvd8ShYIpYty+3myfEU=
+P:freshclam
+V:0.103.2-r0
+A:armhf
+S:19303
+I:94208
+T:Auto-updater for the Clam Antivirus scanner data-files
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1618390144
+c:42623a667ed40896d702380a72feac669108c740
+D:/bin/sh so:libc.musl-armhf.so.1 so:libclamav.so.9 so:libfreshclam.so.2
+p:cmd:freshclam
 
 C:Q11nf+PTWxgWQYKlr9GR6ASKotcQc=
 P:gnutls-utils
@@ -54692,6 +54694,21 @@ c:405bbad926a985d6abba5fabd1f2266e050a2d18
 D:so:libc.musl-armhf.so.1
 p:cmd:acpi
 
+C:Q1Qruy6MEIe/xSnGsy6s72P2pmeSA=
+P:xorg-server-doc
+V:1.20.11-r0
+A:armhf
+S:54891
+I:122880
+T:X.Org X servers (documentation)
+U:https://www.x.org/wiki
+L:MIT
+o:xorg-server
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1618391217
+c:f47b4dfb0d91b4069504b354560134b224627834
+i:docs xorg-server=1.20.11-r0
+
 C:Q1BKGQ8cka7XmS7Fg29Gb6T0f7j0A=
 P:cyrus-sasl-ntlm
 V:2.1.27-r6
@@ -55337,6 +55354,22 @@ t:1578261515
 c:d0a62fa9ebd3260e9d69dd1cc4d512681cfc6a7b
 D:ncurses-dev libedit=20191231.3.1-r0 pkgconfig
 p:pc:libedit=3.1
+
+C:Q12IammT+Hz1CNN2/3WJUnRqIhiiM=
+P:clamav-dev
+V:0.103.2-r0
+A:armhf
+S:18574
+I:114688
+T:An anti-virus toolkit for UNIX eis-ng backport (development files)
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1618390144
+c:42623a667ed40896d702380a72feac669108c740
+D:openssl-dev clamav-libs=0.103.2-r0 clamav-libunrar=0.103.2-r0 pkgconfig
+p:pc:libclamav=0.103.2 cmd:clamav-config
 
 C:Q12VdzTLpP/EqFZLkBYeeE4xdFMlA=
 P:perl-control-x10-doc
@@ -57693,21 +57726,6 @@ t:1566811413
 c:e2a71091dfb2055379fdc34b70351dfb67f026b0
 D:perl
 
-C:Q1/TPtI/d0gEqUPAEfe5hv0vAe4VI=
-P:freshclam-openrc
-V:0.102.4-r1
-A:armhf
-S:2154
-I:24576
-T:Auto-updater for the Clam Antivirus scanner data-files (OpenRC init scripts)
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1597702715
-c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
-i:freshclam=0.102.4-r1 openrc
-
 C:Q1/s3YuzmnuuIHbUpXSPlKspnmGz8=
 P:libnfsidmap
 V:2.4.3-r1
@@ -58987,22 +59005,6 @@ m:Nathan Angelacos <nangel@alpinelinux.org>
 t:1605818643
 c:b8bf3e2fefc867e3679a1a02577c23179f42118d
 D:kamailio so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
-
-C:Q1nQ4cbBhIww/Th1GOfzQbtSfBrbU=
-P:xvfb
-V:1.20.10-r1
-A:armhf
-S:703917
-I:1474560
-T:Virtual Framebuffer 'fake' X server
-U:https://www.x.org/wiki
-L:MIT
-o:xorg-server
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1618331953
-c:0b5c0d534873b6f46ce788c9072f448d69797513
-D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libGL.so.1 so:libXau.so.6 so:libXdmcp.so.6 so:libXfont2.so.2 so:libc.musl-armhf.so.1 so:libnettle.so.7 so:libpixman-1.so.0
-p:cmd:Xvfb
 
 C:Q1MR7d53WldXy6dHebHiv3iBRPal4=
 P:py3-imagesize
@@ -60997,6 +60999,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:encodings font-alias mkfontscale mkfontdir fontconfig
+
+C:Q1bvgBzQXik6npWNSr3IsyzXPhBnk=
+P:clamav-milter
+V:0.103.2-r0
+A:armhf
+S:51092
+I:155648
+T:ClamAV milter
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1618390144
+c:42623a667ed40896d702380a72feac669108c740
+D:so:libc.musl-armhf.so.1 so:libclamav.so.9 so:libmilter.so.1.0.2
+p:cmd:clamav-milter
 
 C:Q1L941IXpO5YG1jNlMHVki+TbUMZ4=
 P:nmap
@@ -64270,22 +64288,6 @@ c:32b2da4be44cc5c1a8e0872247225838c3badc5a
 D:curl
 p:cmd:sprunge
 
-C:Q1/nlSgP9Mo2XTlIqjMx6Jl62o/CE=
-P:freshclam
-V:0.102.4-r1
-A:armhf
-S:44238
-I:167936
-T:Auto-updater for the Clam Antivirus scanner data-files
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1597702715
-c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
-D:/bin/sh so:libc.musl-armhf.so.1 so:libclamav.so.9 so:libfreshclam.so.2
-p:cmd:freshclam
-
 C:Q1kBzYO98svDPbzmAzwEb6fp+8JXU=
 P:fuse-common
 V:3.9.1-r0
@@ -65227,6 +65229,21 @@ t:1614032804
 c:a980b7f2ce15449f497420cbcad7d65c2f16b5f8
 i:openrc redis=5.0.11-r0
 
+C:Q1LoBlJZKZcqerYrGY7ZvquJE/3gk=
+P:clamav-db
+V:0.103.2-r0
+A:armhf
+S:1356
+I:40960
+T:ClamAV dummy package for compatibility
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1618390144
+c:42623a667ed40896d702380a72feac669108c740
+D:freshclam
+
 C:Q1r//E/MdPDNC+4rEwKPKxSPz2tI8=
 P:perl-mime-base64
 V:3.15-r7
@@ -65503,22 +65520,6 @@ t:1616946843
 c:bfe207738c28516b8800e12cd905b413fbb44a72
 D:logrotate
 i:squid=4.14-r0 lang-he
-
-C:Q1TRg2vRzTkXETtVPY+jOtvS+bOCM=
-P:clamav-libunrar
-V:0.102.4-r1
-A:armhf
-S:110897
-I:225280
-T:ClamAV unrar libraries
-U:https://www.clamav.net/
-L:GPL-2.0
-o:clamav
-m:Carlo Landmeter <clandmeter@gmail.com>
-t:1597702715
-c:fd9eaa25f3ac75cf991c065d93545bcbb513f442
-D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
-p:so:libclamunrar.so.9=9.0.4 so:libclamunrar_iface.so.9=9.0.4
 
 C:Q1/h6nbYOMWngcKna6n5LjIZzb6+I=
 P:tar-doc
@@ -67864,22 +67865,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1543566033
 c:abcd2ed86354154480c872b879ed1599a4aa8115
 i:docs gnats=4.2.0-r5
-
-C:Q1qHavnu8xOn8ORrGepUqvCxLCc1A=
-P:xorg-server-xnest
-V:1.20.10-r1
-A:armhf
-S:584535
-I:1196032
-T:A nested Xorg server
-U:https://www.x.org/wiki
-L:MIT
-o:xorg-server
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1618331953
-c:0b5c0d534873b6f46ce788c9072f448d69797513
-D:font-misc-misc font-cursor-misc xkeyboard-config xkbcomp xinit so:libX11.so.6 so:libXau.so.6 so:libXdmcp.so.6 so:libXext.so.6 so:libXfont2.so.2 so:libc.musl-armhf.so.1 so:libnettle.so.7 so:libpixman-1.so.0
-p:cmd:Xnest
 
 C:Q17ByABl24gGFcrK8kdsiEv9MW+VA=
 P:mosh-doc
@@ -71025,6 +71010,21 @@ m:ScrumpyJack <scrumpyjack@st.ilet.to>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 i:docs libdbi=0.9.0-r0
+
+C:Q1DGTxwkGeUiX/5Myl73kgWUrNULQ=
+P:freshclam-openrc
+V:0.103.2-r0
+A:armhf
+S:2154
+I:24576
+T:Auto-updater for the Clam Antivirus scanner data-files (OpenRC init scripts)
+U:https://www.clamav.net/
+L:GPL-2.0
+o:clamav
+m:Carlo Landmeter <clandmeter@gmail.com>
+t:1618390144
+c:42623a667ed40896d702380a72feac669108c740
+i:freshclam=0.103.2-r0 openrc
 
 C:Q13nDB984R7DsGktuqh2Gi/7JWhaI=
 P:pam-pgsql-doc
