@@ -7336,7 +7336,8 @@
         "1.8.29-r1": 1580428161,
         "1.8.29-r2": 1580895435,
         "1.8.31-r0": 1580902339,
-        "1.8.31-r1": 1611939215
+        "1.8.31-r1": 1611939215,
+        "1.9.5p2-r1": 1619695236
       }
     },
     "expect-dev": {
@@ -19501,7 +19502,8 @@
         "1.8.29-r1": 1580428161,
         "1.8.29-r2": 1580895435,
         "1.8.31-r0": 1580902339,
-        "1.8.31-r1": 1611939215
+        "1.8.31-r1": 1611939215,
+        "1.9.5p2-r1": 1619695236
       }
     },
     "dbus": {
@@ -51695,20 +51697,25 @@
         "1.8.29-r1": 1580428161,
         "1.8.29-r2": 1580895435,
         "1.8.31-r0": 1580902339,
-        "1.8.31-r1": 1611939215
+        "1.8.31-r1": 1611939215,
+        "1.9.5p2-r1": 1619695236
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1",
         "so:libz.so.1"
       ],
       "provides": [
+        "so:audit_json.so=0",
         "so:group_file.so=0",
         "so:libsudo_noexec.so=0",
         "so:libsudo_util.so.0=0.0.0",
+        "so:sample_approval.so=0",
         "so:sudoers.so=0",
         "so:system_group.so=0",
         "cmd:cvtsudoers",
         "cmd:sudo",
+        "cmd:sudo_logsrvd",
+        "cmd:sudo_sendlog",
         "cmd:sudoedit",
         "cmd:sudoreplay",
         "cmd:visudo"
@@ -73769,6 +73776,14 @@
       },
       "libns-9.16.15.so": {
         "package": "bind-libs",
+        "version": "0"
+      },
+      "audit_json.so": {
+        "package": "sudo",
+        "version": "0"
+      },
+      "sample_approval.so": {
+        "package": "sudo",
         "version": "0"
       }
     },
