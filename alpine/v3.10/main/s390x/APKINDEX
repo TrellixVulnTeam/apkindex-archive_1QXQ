@@ -573,22 +573,6 @@ c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 D:gtk+-dev libogg-dev libvorbis-dev alsa-lib-dev libtool gtk+3.0-dev libcanberra-gtk2=0.30-r2 libcanberra-gtk3=0.30-r2 libcanberra=0.30-r2 pc:gdk-2.0 pc:gdk-3.0 pc:gtk+-2.0 pc:gtk+-3.0 pkgconfig
 p:pc:libcanberra-gtk3=0.30 pc:libcanberra-gtk=0.30 pc:libcanberra=0.30
 
-C:Q1o3yzAecxu9IwjH+LxWdgL/Ccd3U=
-P:sudo
-V:1.8.27-r2
-A:s390x
-S:439996
-I:1155072
-T:Give certain users the ability to run some commands as root
-U:https://www.sudo.ws/sudo/
-L:custom ISC
-o:sudo
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1580897617
-c:335b433870315222476ab36d3844ac5782cfddbe
-D:so:libc.musl-s390x.so.1 so:libz.so.1
-p:so:group_file.so=0 so:libsudo_noexec.so=0 so:libsudo_util.so.0=0.0.0 so:sudoers.so=0 so:system_group.so=0 cmd:cvtsudoers cmd:sudo cmd:sudoedit cmd:sudoreplay cmd:visudo
-
 C:Q1o1jF+XV4+Qlh5oDq4KgkgzTQrFg=
 P:mailcap-doc
 V:2.1.48-r0
@@ -943,21 +927,6 @@ t:1614676131
 c:ff6a3d6ca05810dd091c545beb899031ade55833
 D:so:libbz2.so.1 so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libexpat.so.1 so:libffi.so.6 so:libgdbm.so.4 so:libgdbm_compat.so.4 so:liblzma.so.5 so:libncursesw.so.6 so:libpanelw.so.6 so:libreadline.so.8 so:libsqlite3.so.0 so:libssl.so.1.1 so:libz.so.1
 p:py3-pip so:libpython3.7m.so.1.0=1.0 so:libpython3.so=0 cmd:2to3 cmd:2to3-3.7 cmd:easy_install-3.7 cmd:pip3 cmd:pip3.7 cmd:pydoc3 cmd:pydoc3.7 cmd:python3 cmd:python3.7 cmd:python3.7m cmd:pyvenv cmd:pyvenv-3.7
-
-C:Q15+F387/OEJpdalcW3L28G1Qmv4s=
-P:bind-plugins
-V:9.14.12-r1
-A:s390x
-S:7932
-I:36864
-T:The ISC DNS server plugins
-U:https://www.isc.org
-L:MPL-2.0
-o:bind
-m:tcely <bind+aports@tcely.33mail.com>
-t:1609680161
-c:3d010a76e36ba44f4b3c7e9c2b40cc52fdc4ccc6
-D:bind so:libc.musl-s390x.so.1
 
 C:Q1y+w3WFWcnL8LfypDdxOJfptXoMY=
 P:nettle
@@ -3465,21 +3434,6 @@ t:1556949541
 c:d04fc20dcfbee6b3254723670f98894d5c3e5210
 D:perl perl-test-tester perl-test-nowarnings
 
-C:Q1Ctmr0YIG732UsokQKEHB2ywPW5o=
-P:py3-bind
-V:9.14.12-r1
-A:s390x
-S:59209
-I:282624
-T:A module allowing rndc commands to be sent from Python programs
-U:https://www.isc.org
-L:MPL-2.0
-o:bind
-m:tcely <bind+aports@tcely.33mail.com>
-t:1609680159
-c:3d010a76e36ba44f4b3c7e9c2b40cc52fdc4ccc6
-D:py3-ply python3
-
 C:Q1u8m3TTPFoLehodVYZQfqrE/DDzE=
 P:uwsgi-router_radius
 V:2.0.18-r1
@@ -3494,6 +3448,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1573682716
 c:855d7eeff4f62e630213bfe1110271dfed73e20b
 D:uwsgi so:libc.musl-s390x.so.1
+
+C:Q13HN2jXMYD7E7T1GI8ahylvKBLak=
+P:bind-dnssec-tools
+V:9.16.15-r2
+A:s390x
+S:131233
+I:409600
+T:Utilities for DNSSEC keys and DNS zone files management
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+m:tcely <bind+aports@tcely.33mail.com>
+t:1619693716
+c:e8d9a0254f185114acd7583f2b8342d941b0ccb5
+D:py3-bind=9.16.15-r2 so:libc.musl-s390x.so.1 so:libdns-9.16.15.so so:libisc-9.16.15.so so:libisccfg-9.16.15.so
+p:cmd:dnssec-cds cmd:dnssec-checkds cmd:dnssec-coverage cmd:dnssec-dsfromkey cmd:dnssec-importkey cmd:dnssec-keyfromlabel cmd:dnssec-keygen cmd:dnssec-keymgr cmd:dnssec-revoke cmd:dnssec-settime cmd:dnssec-signzone cmd:dnssec-verify cmd:nsec3hash
 
 C:Q1HS2mcyAkb8JYqmI5IFcyyuETy5c=
 P:syslog-ng-amqp
@@ -4708,6 +4678,21 @@ c:a9b51029e63388f0d4c8b5cbb285f21e19c20cd0
 D:lua5.3 so:libc.musl-s390x.so.1 so:liblber-2.4.so.2 so:libldap-2.4.so.2
 i:lua-ldap=1.2.3-r5 lua5.3
 
+C:Q1LW0wmECIbma6I01JRlUb3Lu3drI=
+P:bind-plugins
+V:9.16.15-r2
+A:s390x
+S:7929
+I:36864
+T:The ISC DNS server plugins
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+m:tcely <bind+aports@tcely.33mail.com>
+t:1619693716
+c:e8d9a0254f185114acd7583f2b8342d941b0ccb5
+D:bind so:libc.musl-s390x.so.1
+
 C:Q1roJ/SlGILVVfTnr7StQIUygG1Pw=
 P:py3-pynacl
 V:1.3.0-r2
@@ -5169,21 +5154,6 @@ t:1558968191
 c:f5b5ee18e3b822c869b85644267d5db3849503c9
 D:so:libc.musl-s390x.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8
 p:so:libgstbase-1.0.so.0=0.1600.0 so:libgstcheck-1.0.so.0=0.1600.0 so:libgstcontroller-1.0.so.0=0.1600.0 so:libgstnet-1.0.so.0=0.1600.0 so:libgstreamer-1.0.so.0=0.1600.0
-
-C:Q1gsfo9o65O/Hradjlxti0u9h8qiI=
-P:bind-dnssec-root
-V:9.14.12-r1
-A:s390x
-S:2559
-I:20480
-T:ISC BIND DNSSEC Root Keys
-U:https://www.isc.org
-L:MPL-2.0
-o:bind
-m:tcely <bind+aports@tcely.33mail.com>
-t:1609680159
-c:3d010a76e36ba44f4b3c7e9c2b40cc52fdc4ccc6
-D:dnssec-root
 
 C:Q1lDzo9EflCtjh6oFCrPPrx+bCY3s=
 P:perl-config-grammar-doc
@@ -8739,6 +8709,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1558939057
 c:a238f1d472712703ec2cdbc12a67da246c423257
 i:docs parallel=20190522-r0
+
+C:Q12dmbE2e1ZwYSMMeRM29gadpH4n4=
+P:sudo-doc
+V:1.9.5p2-r0
+A:s390x
+S:197725
+I:442368
+T:Give certain users the ability to run some commands as root (documentation)
+U:https://www.sudo.ws/sudo/
+L:custom ISC
+o:sudo
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1619694465
+c:7889ff1c3d02d43fe46904cd7d59278cdaf5f052
+i:docs sudo=1.9.5p2-r0
 
 C:Q1WnpIvqCHdbsf8DlUeU+g+m1fV60=
 P:openldap-overlay-auditlog
@@ -12708,6 +12693,20 @@ t:1556969567
 c:72ccba0e9bd2e371b6356a045431674d471ed5a2
 D:so:libc.musl-s390x.so.1
 i:lua5.1 lua-socket=3.0_rc1_git20160306-r2
+
+C:Q1TpkKmIe2NbrXvmFudX4KJlu9sBg=
+P:sudo-dev
+V:1.9.5p2-r0
+A:s390x
+S:4609
+I:24576
+T:Give certain users the ability to run some commands as root (development files)
+U:https://www.sudo.ws/sudo/
+L:custom ISC
+o:sudo
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1619694465
+c:7889ff1c3d02d43fe46904cd7d59278cdaf5f052
 
 C:Q18T7fMq+R9PELvIgbrWcN8ullnBI=
 P:dpkg
@@ -17546,6 +17545,22 @@ c:4307ea6f79a360536438ab97bab081742b1866a0
 D:bash so:libc.musl-s390x.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:librarian.so.0=0.0.0 cmd:rarian-example cmd:rarian-sk-extract cmd:rarian-sk-gen-uuid cmd:rarian-sk-get-cl cmd:rarian-sk-get-content-list cmd:rarian-sk-get-extended-content-list cmd:rarian-sk-get-scripts cmd:rarian-sk-install cmd:rarian-sk-migrate cmd:rarian-sk-preinstall cmd:rarian-sk-rebuild cmd:rarian-sk-update cmd:scrollkeeper-extract cmd:scrollkeeper-gen-seriesid cmd:scrollkeeper-get-cl cmd:scrollkeeper-get-content-list cmd:scrollkeeper-get-extended-content-list cmd:scrollkeeper-get-index-from-docpath cmd:scrollkeeper-get-toc-from-docpath cmd:scrollkeeper-get-toc-from-id cmd:scrollkeeper-install cmd:scrollkeeper-preinstall cmd:scrollkeeper-rebuilddb cmd:scrollkeeper-uninstall cmd:scrollkeeper-update
 
+C:Q1kDU+p5vxBlB2Jot3AaFkGdNl+Jk=
+P:bind-tools
+V:9.16.15-r2
+A:s390x
+S:223972
+I:630784
+T:The ISC DNS tools
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+m:tcely <bind+aports@tcely.33mail.com>
+t:1619693716
+c:e8d9a0254f185114acd7583f2b8342d941b0ccb5
+D:so:libbind9-9.16.15.so so:libc.musl-s390x.so.1 so:libdns-9.16.15.so so:libirs-9.16.15.so so:libisc-9.16.15.so so:libisccfg-9.16.15.so so:libkrb5.so.3 so:libns-9.16.15.so so:libprotobuf-c.so.1
+p:cmd:arpaname cmd:ddns-confgen cmd:delv cmd:dig cmd:dnstap-read cmd:host cmd:mdig cmd:named-checkzone cmd:named-compilezone cmd:named-journalprint cmd:named-rrchecker cmd:nslookup cmd:nsupdate cmd:rndc-confgen cmd:tsig-keygen
+
 C:Q181DRdZuyceld1a3KWA1EYgPbQ5c=
 P:kamailio-radius
 V:5.2.5-r0
@@ -18619,6 +18634,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1573634282
 c:ffbbc6be3c43f012643ee3b11591823aba729a1d
 p:linux-firmware-any
+
+C:Q1vkEJwNJlbqCyttFd1r8/CZjFz0g=
+P:bind-libs
+V:9.16.15-r2
+A:s390x
+S:1241121
+I:3248128
+T:The ISC DNS server (libraries)
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+m:tcely <bind+aports@tcely.33mail.com>
+t:1619693715
+c:e8d9a0254f185114acd7583f2b8342d941b0ccb5
+D:so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libfstrm.so.0 so:libgssapi_krb5.so.2 so:libjson-c.so.4 so:libkrb5.so.3 so:libprotobuf-c.so.1 so:libssl.so.1.1 so:libuv.so.1 so:libxml2.so.2 so:libz.so.1
+p:so:libbind9-9.16.15.so=0 so:libdns-9.16.15.so=0 so:libirs-9.16.15.so=0 so:libisc-9.16.15.so=0 so:libisccc-9.16.15.so=0 so:libisccfg-9.16.15.so=0 so:libns-9.16.15.so=0
 
 C:Q1sJA/kQo2LZFu8kBvtOCcQ5D19cw=
 P:libxvmc
@@ -23520,21 +23551,6 @@ c:42c8148e3e00961bd649f851c2b4308ae437cd0d
 D:so:libc.musl-s390x.so.1
 p:cmd:pstree
 
-C:Q10bbsu3Rml1rhxx4lgARmdRLhORg=
-P:bind-doc
-V:9.14.12-r1
-A:s390x
-S:111379
-I:208896
-T:The ISC DNS server (documentation)
-U:https://www.isc.org
-L:MPL-2.0
-o:bind
-m:tcely <bind+aports@tcely.33mail.com>
-t:1609680157
-c:3d010a76e36ba44f4b3c7e9c2b40cc52fdc4ccc6
-i:docs bind=9.14.12-r1
-
 C:Q1gUEVNg2Z0/aeRh0GJMYuc4rb0fc=
 P:cryptsetup1
 V:1.7.5-r4
@@ -24399,22 +24415,6 @@ t:1557160307
 c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 D:so:libc.musl-s390x.so.1
 p:cmd:vblade cmd:vbladed
-
-C:Q1/j91d58svAzYuq1Pees82mLRuu4=
-P:bind
-V:9.14.12-r1
-A:s390x
-S:221828
-I:671744
-T:The ISC DNS server
-U:https://www.isc.org
-L:MPL-2.0
-o:bind
-m:tcely <bind+aports@tcely.33mail.com>
-t:1609680162
-c:3d010a76e36ba44f4b3c7e9c2b40cc52fdc4ccc6
-D:dns-root-hints /bin/sh bind-dnssec-root=9.14.12-r1 so:libbind9.so.1302 so:libc.musl-s390x.so.1 so:libcap.so.2 so:libcrypto.so.1.1 so:libdns.so.1312 so:libfstrm.so.0 so:libisc.so.1311 so:libisccc.so.1302 so:libisccfg.so.1302 so:libjson-c.so.4 so:libldap-2.4.so.2 so:libns.so.1307 so:libprotobuf-c.so.1 so:libxml2.so.2 so:libz.so.1
-p:cmd:named cmd:named-checkconf cmd:rndc
 
 C:Q1HgRwUhsHgwby5WcumPCud1m5bgY=
 P:perl-class-mix
@@ -25481,22 +25481,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1573682715
 c:855d7eeff4f62e630213bfe1110271dfed73e20b
 D:uwsgi so:libc.musl-s390x.so.1
-
-C:Q143vlQ0cvkNtbgWdiKl1LNb4a/IQ=
-P:bind-dev
-V:9.14.12-r1
-A:s390x
-S:1844218
-I:7405568
-T:The ISC DNS server (development files)
-U:https://www.isc.org
-L:MPL-2.0
-o:bind
-m:tcely <bind+aports@tcely.33mail.com>
-t:1609680158
-c:3d010a76e36ba44f4b3c7e9c2b40cc52fdc4ccc6
-D:bind bind-plugins bind-tools bind-libs=9.14.12-r1
-p:cmd:bind9-config cmd:isc-config.sh
 
 C:Q1tDG3w2UVVkyjDQJXlbHulIeg7Ys=
 P:libmicrohttpd
@@ -36492,21 +36476,6 @@ c:9677580919b73ca6eff94d3d31b9a846b4e40612
 D:/bin/sh so:libc.musl-s390x.so.1 so:libcrypto.so.1.1
 p:cmd:c_rehash cmd:update-ca-certificates
 
-C:Q19Up4k4hUQ1C6iDYOlZ2qH+I28qY=
-P:sudo-doc
-V:1.8.27-r2
-A:s390x
-S:151891
-I:360448
-T:Give certain users the ability to run some commands as root (documentation)
-U:https://www.sudo.ws/sudo/
-L:custom ISC
-o:sudo
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1580897617
-c:335b433870315222476ab36d3844ac5782cfddbe
-i:docs sudo=1.8.27-r2
-
 C:Q1VR9+d7Zx9fAxIkmhTvME2QA5Q9w=
 P:py3-constantly
 V:15.1.0-r1
@@ -44469,22 +44438,6 @@ t:1558946425
 c:961a24b5c593b8e1ec018e6b0b4b195c0e1e4e66
 i:openrc memcached=1.5.16-r0
 
-C:Q1IGK6eqLBchlWbsx+3d0bjSncoSI=
-P:bind-libs
-V:9.14.12-r1
-A:s390x
-S:1160435
-I:3010560
-T:The ISC DNS server (libraries)
-U:https://www.isc.org
-L:MPL-2.0
-o:bind
-m:tcely <bind+aports@tcely.33mail.com>
-t:1609680158
-c:3d010a76e36ba44f4b3c7e9c2b40cc52fdc4ccc6
-D:so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libfstrm.so.0 so:libgssapi_krb5.so.2 so:libjson-c.so.4 so:libkrb5.so.3 so:libprotobuf-c.so.1 so:libxml2.so.2 so:libz.so.1
-p:so:libbind9.so.1302=1302.0.5 so:libdns.so.1312=1312.0.2 so:libirs.so.1301=1301.0.3 so:libisc.so.1311=1311.0.0 so:libisccc.so.1302=1302.0.0 so:libisccfg.so.1302=1302.0.4 so:libns.so.1307=1307.1.2
-
 C:Q1UOm1pMU/kll4gGxqDgg7yS/HOQU=
 P:perl-http-body
 V:1.22-r0
@@ -46213,6 +46166,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1573682717
 c:855d7eeff4f62e630213bfe1110271dfed73e20b
 D:uwsgi so:libc.musl-s390x.so.1
+
+C:Q1Fxow7KzEfXtyTMqg/RdbaMqOesQ=
+P:bind-openrc
+V:9.16.15-r2
+A:s390x
+S:2300
+I:24576
+T:The ISC DNS server (OpenRC init scripts)
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+m:tcely <bind+aports@tcely.33mail.com>
+t:1619693715
+c:e8d9a0254f185114acd7583f2b8342d941b0ccb5
+i:openrc bind=9.16.15-r2
 
 C:Q1SUk/pgCeXOx20n0qOgB9mbopOGg=
 P:cksfv
@@ -49242,6 +49210,22 @@ t:1556990546
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 D:so:libc.musl-s390x.so.1
 p:so:libnl.so.1=1.1.4
+
+C:Q1i2On63zT31VyPvyB7BDrHwh48ns=
+P:bind
+V:9.16.15-r2
+A:s390x
+S:226397
+I:684032
+T:The ISC DNS server
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+m:tcely <bind+aports@tcely.33mail.com>
+t:1619693716
+c:e8d9a0254f185114acd7583f2b8342d941b0ccb5
+D:dns-root-hints /bin/sh bind-dnssec-root=9.16.15-r2 so:libbind9-9.16.15.so so:libc.musl-s390x.so.1 so:libcap.so.2 so:libcrypto.so.1.1 so:libdns-9.16.15.so so:libfstrm.so.0 so:libisc-9.16.15.so so:libisccc-9.16.15.so so:libisccfg-9.16.15.so so:libjson-c.so.4 so:libldap-2.4.so.2 so:libns-9.16.15.so so:libprotobuf-c.so.1 so:libuv.so.1 so:libxml2.so.2 so:libz.so.1
+p:cmd:named cmd:named-checkconf cmd:rndc
 
 C:Q1fV6XTR0ubJk0nDlRbKc9ijDTo/Y=
 P:mercurial-bash-completion
@@ -56210,6 +56194,21 @@ t:1557119532
 c:6801be67680adca04f2d4bcb4da71c98f796fd59
 D:so:libc.musl-s390x.so.1 so:liblua-5.3.so.0 so:libz.so.1
 
+C:Q1bvNyKvUuRW27q1L+Yl6oQmwPOvo=
+P:bind-dev
+V:9.16.15-r2
+A:s390x
+S:1964771
+I:7880704
+T:The ISC DNS server (development files)
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+m:tcely <bind+aports@tcely.33mail.com>
+t:1619693715
+c:e8d9a0254f185114acd7583f2b8342d941b0ccb5
+D:bind bind-plugins bind-tools bind-libs=9.16.15-r2
+
 C:Q1//FXnUIXaZeNa64XR0rCtK+tyzo=
 P:ntfs-3g-progs
 V:2017.3.23-r2
@@ -61791,22 +61790,6 @@ c:2628584d61371976d14af2abc36cbd48f9bb94a1
 D:so:libc.musl-s390x.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:libhunspell-1.7.so.0=0.0.1
 
-C:Q1LXtnEEMRQn9xIetg1lRVc6LIoxY=
-P:bind-tools
-V:9.14.12-r1
-A:s390x
-S:219925
-I:626688
-T:The ISC DNS tools
-U:https://www.isc.org
-L:MPL-2.0
-o:bind
-m:tcely <bind+aports@tcely.33mail.com>
-t:1609680162
-c:3d010a76e36ba44f4b3c7e9c2b40cc52fdc4ccc6
-D:so:libbind9.so.1302 so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libdns.so.1312 so:libirs.so.1301 so:libisc.so.1311 so:libisccfg.so.1302 so:libkrb5.so.3 so:libns.so.1307 so:libprotobuf-c.so.1
-p:cmd:arpaname cmd:ddns-confgen cmd:delv cmd:dig cmd:dnstap-read cmd:host cmd:mdig cmd:named-checkzone cmd:named-compilezone cmd:named-journalprint cmd:named-rrchecker cmd:nslookup cmd:nsupdate cmd:rndc-confgen cmd:tsig-keygen
-
 C:Q1HuM1/Voy9jkUdcNkONd1H2BrYv0=
 P:perl-data-hexdump-doc
 V:0.02-r1
@@ -66670,22 +66653,6 @@ o:perl-module-refresh
 m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1557077314
 c:535882eaed2f8429aa6fb7c01d20cac299c2f5c6
-
-C:Q13aTiAt+kipgLhgMivsCn5fNnjbI=
-P:bind-dnssec-tools
-V:9.14.12-r1
-A:s390x
-S:121543
-I:393216
-T:Utilities for DNSSEC keys and DNS zone files management
-U:https://www.isc.org
-L:MPL-2.0
-o:bind
-m:tcely <bind+aports@tcely.33mail.com>
-t:1609680160
-c:3d010a76e36ba44f4b3c7e9c2b40cc52fdc4ccc6
-D:py3-bind=9.14.12-r1 so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libdns.so.1312 so:libisc.so.1311
-p:cmd:dnssec-cds cmd:dnssec-checkds cmd:dnssec-coverage cmd:dnssec-dsfromkey cmd:dnssec-importkey cmd:dnssec-keyfromlabel cmd:dnssec-keygen cmd:dnssec-keymgr cmd:dnssec-revoke cmd:dnssec-settime cmd:dnssec-signzone cmd:dnssec-verify cmd:nsec3hash
 
 C:Q1butMSdMlJSYbdY6dV49fJmUOVnQ=
 P:drbd-vanilla
@@ -73779,20 +73746,6 @@ t:1557119539
 c:09cdda08976bfb848803f5f56d986bf9d849379d
 i:docs perl-ipc-system-simple=1.25-r0
 
-C:Q1UhfOWaia7AdheQw4nUP1Xj+dSp0=
-P:sudo-dev
-V:1.8.27-r2
-A:s390x
-S:3941
-I:20480
-T:Give certain users the ability to run some commands as root (development files)
-U:https://www.sudo.ws/sudo/
-L:custom ISC
-o:sudo
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1580897617
-c:335b433870315222476ab36d3844ac5782cfddbe
-
 C:Q1pLAK48L93ApEzKe7yj9375HuU+s=
 P:ccache-doc
 V:3.7.1-r0
@@ -75520,6 +75473,21 @@ c:01eff515fd61d0e5ca50334d1e74c6d23dadddd1
 D:ca-certificates /bin/sh so:libc.musl-s390x.so.1 so:libruby.so.2.5
 p:cmd:erb cmd:gem cmd:ruby
 
+C:Q1XqVI9QDdWvj4aVprzROhTyHVBjY=
+P:py3-bind
+V:9.16.15-r2
+A:s390x
+S:58897
+I:282624
+T:A module allowing rndc commands to be sent from Python programs
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+m:tcely <bind+aports@tcely.33mail.com>
+t:1619693716
+c:e8d9a0254f185114acd7583f2b8342d941b0ccb5
+D:py3-ply python3
+
 C:Q14zDApIVQBDgfPQRymzCDr+KFHZM=
 P:check-dev
 V:0.12.0-r1
@@ -76678,6 +76646,20 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1557076422
 c:63f5e7d295659a855709901ce22a3e5f40fce455
 i:docs beep=1.3-r2
+
+C:Q1KVorpl+C1oU5ZuoVBMhV+ScVyhE=
+P:bind-dnssec-root
+V:9.16.15-r2
+A:s390x
+S:2557
+I:20480
+T:ISC BIND DNSSEC Root Keys
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+m:tcely <bind+aports@tcely.33mail.com>
+t:1619693716
+c:e8d9a0254f185114acd7583f2b8342d941b0ccb5
 
 C:Q1WpGGYQSfy39McKwB9osHgXS2FJ0=
 P:perl-want
@@ -79239,6 +79221,22 @@ t:1569941334
 c:9ac7fe6ecd7a632dfc19dedfcc865c1d24cf5136
 i:docs postfix=3.4.7-r0
 
+C:Q1jcsfrpi8YJMYE9pKRfrKUKP9fqo=
+P:sudo
+V:1.9.5p2-r0
+A:s390x
+S:681153
+I:1777664
+T:Give certain users the ability to run some commands as root
+U:https://www.sudo.ws/sudo/
+L:custom ISC
+o:sudo
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1619694465
+c:7889ff1c3d02d43fe46904cd7d59278cdaf5f052
+D:so:libc.musl-s390x.so.1 so:libz.so.1
+p:so:audit_json.so=0 so:group_file.so=0 so:libsudo_noexec.so=0 so:libsudo_util.so.0=0.0.0 so:sample_approval.so=0 so:sudoers.so=0 so:system_group.so=0 cmd:cvtsudoers cmd:sudo cmd:sudo_logsrvd cmd:sudo_sendlog cmd:sudoedit cmd:sudoreplay cmd:visudo
+
 C:Q1P/JvrxvMnX+QZZXpqWaWIb0b/Pg=
 P:nagios-plugins-smtp
 V:2.2.1-r6
@@ -80605,6 +80603,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1557245198
 c:ab744645dd6495c41364ede3712737ddc11a01cd
 
+C:Q1RgQG9k2lBX6mzr/rywHjGhuZQYI=
+P:bind-doc
+V:9.16.15-r2
+A:s390x
+S:103187
+I:204800
+T:The ISC DNS server (documentation)
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+m:tcely <bind+aports@tcely.33mail.com>
+t:1619693714
+c:e8d9a0254f185114acd7583f2b8342d941b0ccb5
+i:docs bind=9.16.15-r2
+
 C:Q1ie/I0AjO/sIC0YAs7O0CWCeylZw=
 P:rabbitmq-c-dev
 V:0.8.0-r5
@@ -80900,21 +80913,6 @@ t:1557045422
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libImlib2.so.1 so:libX11.so.6 so:libXext.so.6 so:libXft.so.2 so:libXinerama.so.1 so:libXpm.so.4 so:libXrandr.so.2 so:libXrender.so.1 so:libc.musl-s390x.so.1 so:libfontconfig.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:cmd:fbrun cmd:fbsetbg cmd:fbsetroot cmd:fluxbox cmd:fluxbox-generate_menu cmd:fluxbox-remote cmd:fluxbox-update_configs cmd:startfluxbox
-
-C:Q1BpHzw16XnIKwPtUwdtdQ7S566z8=
-P:bind-openrc
-V:9.14.12-r1
-A:s390x
-S:2303
-I:24576
-T:The ISC DNS server (OpenRC init scripts)
-U:https://www.isc.org
-L:MPL-2.0
-o:bind
-m:tcely <bind+aports@tcely.33mail.com>
-t:1609680159
-c:3d010a76e36ba44f4b3c7e9c2b40cc52fdc4ccc6
-i:openrc bind=9.14.12-r1
 
 C:Q1Ci0Z+GgLw3CXXR41OCsdnCV8ucw=
 P:linux-firmware-keyspan_pda
