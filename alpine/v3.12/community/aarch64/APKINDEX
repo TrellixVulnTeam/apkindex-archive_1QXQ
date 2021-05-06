@@ -342,22 +342,6 @@ c:1edfece632fc0d76629c810d415803dc51a5190b
 D:so:libc.musl-aarch64.so.1 so:libfftw3.so.3 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:libkeyfinder.so.2=2.2.1
 
-C:Q1+LEIPYWiKs2iFWeo3GAqeuuZd/Q=
-P:zabbix-sqlite
-V:5.0.10-r0
-A:aarch64
-S:790299
-I:2433024
-T:Zabbix server with sqlite3 database support
-U:http://www.zabbix.com
-L:GPL-2.0-or-later
-o:zabbix
-m:Kevin Daudt <kdaudt@alpinelinux.org>
-t:1617809789
-c:0dd9667e7c645e3ab41017a87c49fdcebc7a84e0
-D:zabbix !zabbix-pgsql !zabbix-mysql so:libOpenIPMI.so.0 so:libOpenIPMIposix.so.0 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libevent-2.1.so.7 so:libnetsnmp.so.35 so:libodbc.so.2 so:libpcre.so.1 so:libsqlite3.so.0 so:libssh2.so.1 so:libssl.so.1.1 so:libxml2.so.2 so:libz.so.1
-p:cmd:zabbix_proxy
-
 C:Q1Of4+UkZA/kEAkNKaaAPQjKkDie8=
 P:stoken
 V:0.92-r2
@@ -7663,6 +7647,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1588202511
 c:260ab822e5989cb7fa45827a0455107f31051698
 
+C:Q1pGxFMuEuuHLB+3jrFzepfrmQbOk=
+P:zabbix-pgsql
+V:5.0.11-r0
+A:aarch64
+S:1925380
+I:5705728
+T:Zabbix server with postgresql database support
+U:http://www.zabbix.com
+L:GPL-2.0-or-later
+o:zabbix
+m:Kevin Daudt <kdaudt@alpinelinux.org>
+t:1620281788
+c:95858872ee9f5acdf7753e2663c52fa095f84cf5
+D:zabbix !zabbix-mysql !zabbix-sqlite so:libOpenIPMI.so.0 so:libOpenIPMIposix.so.0 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libevent-2.1.so.7 so:libnetsnmp.so.35 so:libodbc.so.2 so:libpcre.so.1 so:libpq.so.5 so:libssh2.so.1 so:libssl.so.1.1 so:libxml2.so.2 so:libz.so.1
+p:cmd:zabbix_proxy cmd:zabbix_server
+
 C:Q1VbnC35c/QMkqEGL6QOZwYITQgEU=
 P:jattach
 V:1.5-r0
@@ -13478,21 +13478,6 @@ t:1587747212
 c:cbc6b9fcd706f2a84d4c36c5bdd68a09bbc3516f
 D:tesseract-ocr
 
-C:Q1dE/DSwAhfVG3dkyG4rWmdKlDcFQ=
-P:zabbix
-V:5.0.10-r0
-A:aarch64
-S:8833
-I:81920
-T:Enterprise-class open source distributed monitoring
-U:http://www.zabbix.com
-L:GPL-2.0-or-later
-o:zabbix
-m:Kevin Daudt <kdaudt@alpinelinux.org>
-t:1617809789
-c:0dd9667e7c645e3ab41017a87c49fdcebc7a84e0
-D:fping /bin/sh
-
 C:Q19ewwjvDiSmKjw0WuZq9HpSLW5zI=
 P:powerdevil-doc
 V:5.18.5-r0
@@ -17360,22 +17345,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1599620602
 c:52e19c8d43c3288d582e6b9cf7a0d8244cfd5190
 D:so:libbz2.so.1 so:libc.musl-aarch64.so.1
-
-C:Q1SfOQLhYrRyHCsSiYw/D/FhuOpRc=
-P:zabbix-pgsql
-V:5.0.10-r0
-A:aarch64
-S:1920293
-I:5689344
-T:Zabbix server with postgresql database support
-U:http://www.zabbix.com
-L:GPL-2.0-or-later
-o:zabbix
-m:Kevin Daudt <kdaudt@alpinelinux.org>
-t:1617809789
-c:0dd9667e7c645e3ab41017a87c49fdcebc7a84e0
-D:zabbix !zabbix-mysql !zabbix-sqlite so:libOpenIPMI.so.0 so:libOpenIPMIposix.so.0 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libevent-2.1.so.7 so:libnetsnmp.so.35 so:libodbc.so.2 so:libpcre.so.1 so:libpq.so.5 so:libssh2.so.1 so:libssl.so.1.1 so:libxml2.so.2 so:libz.so.1
-p:cmd:zabbix_proxy cmd:zabbix_server
 
 C:Q1S7/6/PHt3WINdlvX/PN5TpffRGY=
 P:qemu-system-unicore32
@@ -22258,6 +22227,21 @@ c:e7832c3a6ca189e793bb2b2a385366c0b542a89f
 D:python3
 p:py-netaddr=0.7.19-r4 cmd:netaddr
 
+C:Q1gcp+NW1SHSpFlXCvCTx5gIknQqg=
+P:zabbix-openrc
+V:5.0.11-r0
+A:aarch64
+S:2021
+I:28672
+T:Enterprise-class open source distributed monitoring (OpenRC init scripts)
+U:http://www.zabbix.com
+L:GPL-2.0-or-later
+o:zabbix
+m:Kevin Daudt <kdaudt@alpinelinux.org>
+t:1620281788
+c:95858872ee9f5acdf7753e2663c52fa095f84cf5
+i:openrc zabbix=5.0.11-r0
+
 C:Q11gKZOGnUXA7T0dcZsABEk6I854Q=
 P:a2ps-doc
 V:4.14-r8
@@ -24999,6 +24983,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1583087207
 c:7f5df530b22d37e9b71f4ee0601f1347617ea63c
 i:docs gtkspell=2.0.16-r8
+
+C:Q1vH/Dc252EOr6CdpizkaVXL9TpXw=
+P:zabbix-webif
+V:5.0.11-r0
+A:aarch64
+S:7285369
+I:46354432
+T:Zabbix web-interface
+U:http://www.zabbix.com
+L:GPL-2.0-or-later
+o:zabbix
+m:Kevin Daudt <kdaudt@alpinelinux.org>
+t:1620281788
+c:95858872ee9f5acdf7753e2663c52fa095f84cf5
+D:php7 php7-gd php7-curl php7-bcmath php7-sockets php7-iconv php7-xmlreader php7-xmlwriter php7-ctype php7-gettext php7-session php7-simplexml php7-json php7-fileinfo
 
 C:Q1/tB5d+g/4ZOTLsh16Kf1sTJRKNg=
 P:kbackup
@@ -51370,21 +51369,6 @@ c:ff0397431a530a0fa251bdf40ca9e640d2596da9
 D:so:libX11.so.6 so:libXext.so.6 so:libXv.so.1 so:libc.musl-aarch64.so.1 so:libmpeg2.so.0 so:libmpeg2convert.so.0
 p:cmd:mpeg2dec
 
-C:Q18HLEJB7TWCaVYJJfANiAXUQyNAQ=
-P:zabbix-webif
-V:5.0.10-r0
-A:aarch64
-S:7277413
-I:46309376
-T:Zabbix web-interface
-U:http://www.zabbix.com
-L:GPL-2.0-or-later
-o:zabbix
-m:Kevin Daudt <kdaudt@alpinelinux.org>
-t:1617809789
-c:0dd9667e7c645e3ab41017a87c49fdcebc7a84e0
-D:php7 php7-gd php7-curl php7-bcmath php7-sockets php7-iconv php7-xmlreader php7-xmlwriter php7-ctype php7-gettext php7-session php7-simplexml php7-json php7-fileinfo
-
 C:Q1sQs3+auz8xxrkVR5NmQ60UhXKGc=
 P:kdenetwork-filesharing-lang
 V:20.04.2-r0
@@ -58661,6 +58645,22 @@ t:1590215985
 c:813147587abe87f322cbf4cd6f014a18608394ba
 i:docs tpm2-tss=2.4.1-r0
 
+C:Q1FhFD+Jolhgm8RzPKRqahmxEbH6o=
+P:zabbix-agent
+V:5.0.11-r0
+A:aarch64
+S:216564
+I:516096
+T:Zabbix Network Monitoring Agent
+U:http://www.zabbix.com
+L:GPL-2.0-or-later
+o:zabbix
+m:Kevin Daudt <kdaudt@alpinelinux.org>
+t:1620281788
+c:95858872ee9f5acdf7753e2663c52fa095f84cf5
+D:/bin/sh so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libpcre.so.1 so:libssl.so.1.1 so:libz.so.1
+p:cmd:zabbix_agentd
+
 C:Q1Z43giVWuLfpmDMkiDgKrugaZlO4=
 P:libcoap
 V:4.2.1-r1
@@ -58987,6 +58987,20 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1585388762
 c:802c4ae72bb32a38061101706e21a25cd1f192da
 i:docs libfreehand=0.1.2-r4
+
+C:Q1HAJtIBeAPjmgu41bd/IP2vpB6Jw=
+P:zabbix-setup
+V:5.0.11-r0
+A:aarch64
+S:6114613
+I:52543488
+T:Zabbix images and sql files
+U:http://www.zabbix.com
+L:GPL-2.0-or-later
+o:zabbix
+m:Kevin Daudt <kdaudt@alpinelinux.org>
+t:1620281788
+c:95858872ee9f5acdf7753e2663c52fa095f84cf5
 
 C:Q17WlSDe9do+gqsbDfQYwKv0wESp8=
 P:jsoncpp-dev
@@ -61500,21 +61514,6 @@ o:llvm8
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1586446683
 c:d95e2bc8267a24b585856b23e7819fc365dda981
-
-C:Q1hDZpc5dgWVxrVNdXHikugj5tEec=
-P:zabbix-openrc
-V:5.0.10-r0
-A:aarch64
-S:2024
-I:28672
-T:Enterprise-class open source distributed monitoring (OpenRC init scripts)
-U:http://www.zabbix.com
-L:GPL-2.0-or-later
-o:zabbix
-m:Kevin Daudt <kdaudt@alpinelinux.org>
-t:1617809789
-c:0dd9667e7c645e3ab41017a87c49fdcebc7a84e0
-i:openrc zabbix=5.0.10-r0
 
 C:Q1BWbKRC0FD5aq7g2k14J17G3KkS8=
 P:kio-extras-doc
@@ -65925,6 +65924,22 @@ c:32d113c3a41f05bc181da570401fad75102810b6
 D:so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:libnumbertext-1.0.so.0=0.0.0 cmd:spellout
 
+C:Q1KeLhLiS1B3xmDT4m6JW8nZhIKAo=
+P:zabbix-agent2-openrc
+V:5.0.11-r0
+A:aarch64
+S:1474
+I:16384
+T:Zabbix Network Monitoring Agent 2 (OpenRC init scripts)
+U:http://www.zabbix.com
+L:GPL-2.0-or-later
+o:zabbix
+m:Kevin Daudt <kdaudt@alpinelinux.org>
+t:1620281788
+c:95858872ee9f5acdf7753e2663c52fa095f84cf5
+D:openrc
+i:openrc zabbix-agent2=5.0.11-r0
+
 C:Q1u2Q7i28ry92Ct0vRJjVyqnQ5Fnw=
 P:elogind-doc
 V:243.4-r4
@@ -67494,6 +67509,22 @@ c:d4d3b143285dfac19774537974354ceb13eb1b11
 D:mate-desktop=1.24.0-r0 pc:dconf pc:gtk+-3.0 pkgconfig
 p:pc:mate-desktop-2.0=1.24.0
 
+C:Q1/nPCjwimjuEBZOGlRFLMxv1fFKs=
+P:zabbix-sqlite
+V:5.0.11-r0
+A:aarch64
+S:793366
+I:2441216
+T:Zabbix server with sqlite3 database support
+U:http://www.zabbix.com
+L:GPL-2.0-or-later
+o:zabbix
+m:Kevin Daudt <kdaudt@alpinelinux.org>
+t:1620281788
+c:95858872ee9f5acdf7753e2663c52fa095f84cf5
+D:zabbix !zabbix-pgsql !zabbix-mysql so:libOpenIPMI.so.0 so:libOpenIPMIposix.so.0 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libevent-2.1.so.7 so:libnetsnmp.so.35 so:libodbc.so.2 so:libpcre.so.1 so:libsqlite3.so.0 so:libssh2.so.1 so:libssl.so.1.1 so:libxml2.so.2 so:libz.so.1
+p:cmd:zabbix_proxy
+
 C:Q13yq6aoPF+zWzsyd2nRCmsl0+icg=
 P:libkomparediff2-lang
 V:20.04.2-r0
@@ -67893,21 +67924,6 @@ t:1590676744
 c:79ab7ed96029129d9b1273485ccf3b8202fd174e
 i:docs fluidsynth=2.1.3-r0
 
-C:Q1vGLhLSqtzhFR/IdT417R5brkoxw=
-P:zabbix-doc
-V:5.0.10-r0
-A:aarch64
-S:13686
-I:49152
-T:Enterprise-class open source distributed monitoring (documentation)
-U:http://www.zabbix.com
-L:GPL-2.0-or-later
-o:zabbix
-m:Kevin Daudt <kdaudt@alpinelinux.org>
-t:1617809789
-c:0dd9667e7c645e3ab41017a87c49fdcebc7a84e0
-i:docs zabbix=5.0.10-r0
-
 C:Q1XH3VxIUq0OB6YqnA9Obdp2ZZKdk=
 P:py3-statmake
 V:0.2.2-r0
@@ -68063,22 +68079,6 @@ t:1593347821
 c:9c888cb89f01b50f391cbe1baa402bf5fcb6ad46
 D:so:libGrantlee_Templates.so.5 so:libKF5AkonadiCalendar.so.5 so:libKF5AkonadiContact.so.5 so:libKF5AkonadiCore.so.5 so:libKF5AkonadiMime.so.5 so:libKF5AkonadiNotes.so.5 so:libKF5AkonadiWidgets.so.5 so:libKF5CalendarCore.so.5 so:libKF5CalendarEvents.so.5 so:libKF5CalendarSupport.so.5 so:libKF5CalendarUtils.so.5 so:libKF5Codecs.so.5 so:libKF5Completion.so.5 so:libKF5ConfigCore.so.5 so:libKF5ConfigGui.so.5 so:libKF5ConfigWidgets.so.5 so:libKF5Contacts.so.5 so:libKF5CoreAddons.so.5 so:libKF5EventViews.so.5 so:libKF5GrantleeTheme.so.5 so:libKF5Gravatar.so.5 so:libKF5I18n.so.5 so:libKF5IMAP.so.5 so:libKF5IconThemes.so.5 so:libKF5IdentityManagement.so.5 so:libKF5IncidenceEditor.so.5 so:libKF5ItemModels.so.5 so:libKF5ItemViews.so.5 so:libKF5JobWidgets.so.5 so:libKF5KIOCore.so.5 so:libKF5KIOWidgets.so.5 so:libKF5KSieveUi.so.5 so:libKF5KaddressbookGrantlee.so.5 so:libKF5KaddressbookImportExport.so.5 so:libKF5KontactInterface.so.5 so:libKF5Libkdepim.so.5 so:libKF5LibkdepimAkonadi.so.5 so:libKF5Libkleo.so.5 so:libKF5MailCommon.so.5 so:libKF5MailImporter.so.5 so:libKF5MailTransport.so.5 so:libKF5MailTransportAkonadi.so.5 so:libKF5MessageComposer.so.5 so:libKF5MessageCore.so.5 so:libKF5MessageViewer.so.5 so:libKF5Mime.so.5 so:libKF5MimeTreeParser.so.5 so:libKF5PimCommon.so.5 so:libKF5PimCommonAkonadi.so.5 so:libKF5PimTextEdit.so.5 so:libKF5Prison.so.5 so:libKF5Service.so.5 so:libKF5SyntaxHighlighting.so.5 so:libKF5TemplateParser.so.5 so:libKF5TextWidgets.so.5 so:libKF5Tnef.so.5 so:libKF5WebEngineViewer.so.5 so:libKF5WidgetsAddons.so.5 so:libKF5XmlGui.so.5 so:libKPimImportWizard.so.5 so:libKPimItinerary.so.5 so:libKPimPkPass.so.5 so:libQt5Core.so.5 so:libQt5DBus.so.5 so:libQt5Gui.so.5 so:libQt5Network.so.5 so:libQt5Qml.so.5 so:libQt5WebEngineCore.so.5 so:libQt5WebEngineWidgets.so.5 so:libQt5Widgets.so.5 so:libQt5Xml.so.5 so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libgpgmepp.so.6 so:libmarkdown.so.2 so:libqgpgme.so.7 so:libstdc++.so.6
 p:so:libadblocklibprivate.so.5=5.14.2 so:libdkimverifyconfigure.so.5=5.14.2 so:libgrammarcommon.so.5=5.14.2 so:libkaddressbookimportexportlibprivate.so.5=5.14.2 so:libkaddressbookmergelibprivate.so.5=5.14.2 so:libkmailgrammalecte.so.5=5.14.2 so:libkmaillanguagetool.so.5=5.14.2 so:libkmailmarkdown.so.5=5.14.2 so:libkmailquicktextpluginprivate.so.5=5.14.2 so:libshorturlpluginprivate.so.5=5.14.2 cmd:kmail_antivir.sh cmd:kmail_clamav.sh cmd:kmail_fprot.sh cmd:kmail_sav.sh
-
-C:Q1Khnb+ePgMocdYl/zAyycF+g60t4=
-P:zabbix-mysql
-V:5.0.10-r0
-A:aarch64
-S:1917776
-I:5685248
-T:Zabbix server with mysql database support
-U:http://www.zabbix.com
-L:GPL-2.0-or-later
-o:zabbix
-m:Kevin Daudt <kdaudt@alpinelinux.org>
-t:1617809789
-c:0dd9667e7c645e3ab41017a87c49fdcebc7a84e0
-D:zabbix !zabbix-pgsql !zabbix-sqlite so:libOpenIPMI.so.0 so:libOpenIPMIposix.so.0 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libevent-2.1.so.7 so:libmariadb.so.3 so:libnetsnmp.so.35 so:libodbc.so.2 so:libpcre.so.1 so:libssh2.so.1 so:libssl.so.1.1 so:libxml2.so.2 so:libz.so.1
-p:cmd:zabbix_proxy cmd:zabbix_server
 
 C:Q1SiUyHcRywMLjZymhGiGdRqW6Ghg=
 P:php7-pecl-memcache
@@ -69478,6 +69478,21 @@ o:libreoffice
 m:Timo Teräs <timo.teras@iki.fi>
 t:1590148057
 c:f61893f2eed52b159190839800050de4790e458d
+
+C:Q1WsL4i9oK4LmZwWrluLFwtW3Ca4w=
+P:zabbix-doc
+V:5.0.11-r0
+A:aarch64
+S:13681
+I:49152
+T:Enterprise-class open source distributed monitoring (documentation)
+U:http://www.zabbix.com
+L:GPL-2.0-or-later
+o:zabbix
+m:Kevin Daudt <kdaudt@alpinelinux.org>
+t:1620281788
+c:95858872ee9f5acdf7753e2663c52fa095f84cf5
+i:docs zabbix=5.0.11-r0
 
 C:Q1zET8izzb6omH5AbvDYvfVkpkOaA=
 P:keybinder3-dev
@@ -72277,20 +72292,6 @@ m:Hiroshi Kajisha <kajisha@gmail.com>
 t:1587535968
 c:5df31388c8f7853b2061773e0a0e80caddbc5ee9
 p:cmd:lsrc cmd:mkrc cmd:rcdn cmd:rcup
-
-C:Q1ds0tJoGKiXWAdL+DmsyRVfjSRXk=
-P:zabbix-setup
-V:5.0.10-r0
-A:aarch64
-S:5879910
-I:48910336
-T:Zabbix images and sql files
-U:http://www.zabbix.com
-L:GPL-2.0-or-later
-o:zabbix
-m:Kevin Daudt <kdaudt@alpinelinux.org>
-t:1617809789
-c:0dd9667e7c645e3ab41017a87c49fdcebc7a84e0
 
 C:Q1uIm6b8u+36GJSo7N7iO5IqJ45DU=
 P:fann-float
@@ -80570,6 +80571,22 @@ c:9c888cb89f01b50f391cbe1baa402bf5fcb6ad46
 D:so:libKF5AkonadiCalendar.so.5 so:libKF5AkonadiContact.so.5 so:libKF5AkonadiCore.so.5 so:libKF5AkonadiMime.so.5 so:libKF5AkonadiWidgets.so.5 so:libKF5CalendarCore.so.5 so:libKF5CalendarSupport.so.5 so:libKF5CalendarUtils.so.5 so:libKF5Codecs.so.5 so:libKF5Completion.so.5 so:libKF5ConfigCore.so.5 so:libKF5ConfigGui.so.5 so:libKF5ConfigWidgets.so.5 so:libKF5Contacts.so.5 so:libKF5CoreAddons.so.5 so:libKF5EventViews.so.5 so:libKF5I18n.so.5 so:libKF5IconThemes.so.5 so:libKF5IdentityManagement.so.5 so:libKF5ItemModels.so.5 so:libKF5JobWidgets.so.5 so:libKF5KIOCore.so.5 so:libKF5KIOWidgets.so.5 so:libKF5KdepimDBusInterfaces.so.5 so:libKF5Ldap.so.5 so:libKF5Libkdepim.so.5 so:libKF5LibkdepimAkonadi.so.5 so:libKF5MailTransportAkonadi.so.5 so:libKF5Mime.so.5 so:libKF5PimTextEdit.so.5 so:libKF5TextWidgets.so.5 so:libKF5WidgetsAddons.so.5 so:libKF5XmlGui.so.5 so:libKGantt.so.2 so:libQt5Core.so.5 so:libQt5DBus.so.5 so:libQt5Gui.so.5 so:libQt5Widgets.so.5 so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:libKF5IncidenceEditor.so.5=5.14.2 cmd:kincidenceeditor
 
+C:Q19UFIrFy09lY7GdMc+t6Nd3/J23k=
+P:zabbix-agent2
+V:5.0.11-r0
+A:aarch64
+S:6751900
+I:21663744
+T:Zabbix Network Monitoring Agent (version 2)
+U:http://www.zabbix.com
+L:GPL-2.0-or-later
+o:zabbix
+m:Kevin Daudt <kdaudt@alpinelinux.org>
+t:1620281788
+c:95858872ee9f5acdf7753e2663c52fa095f84cf5
+D:/bin/sh so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libpcre.so.1 so:libssl.so.1.1 so:libz.so.1
+p:cmd:zabbix_agent2
+
 C:Q1N844vd+LF9WY0dgHWClUfM/eyW8=
 P:lua5.2-busted
 V:2.0.0-r0
@@ -86274,6 +86291,22 @@ c:2be3b15b706a6114c8033b7998706c3b0360f382
 D:lua5.2
 i:lua-dromozoa-utf8=1.15-r1 lua5.2
 
+C:Q1Z40TO74poYrtoQTrb/XYQTl3n3M=
+P:zabbix-agent-openrc
+V:5.0.11-r0
+A:aarch64
+S:1479
+I:16384
+T:Zabbix Network Monitoring Agent (OpenRC init scripts)
+U:http://www.zabbix.com
+L:GPL-2.0-or-later
+o:zabbix
+m:Kevin Daudt <kdaudt@alpinelinux.org>
+t:1620281788
+c:95858872ee9f5acdf7753e2663c52fa095f84cf5
+D:openrc
+i:openrc zabbix-agent=5.0.11-r0
+
 C:Q1id5521M87dT4q082+l4oca7maqI=
 P:bmon
 V:4.0-r1
@@ -88540,6 +88573,21 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1586310571
 c:e063597be320507c070db7c65ec0c2f6a29704bc
 i:docs kiwiirc=0.9.4-r2
+
+C:Q11ScXJNZW3wKM5BPXfaBYlSCHeTs=
+P:zabbix
+V:5.0.11-r0
+A:aarch64
+S:8831
+I:81920
+T:Enterprise-class open source distributed monitoring
+U:http://www.zabbix.com
+L:GPL-2.0-or-later
+o:zabbix
+m:Kevin Daudt <kdaudt@alpinelinux.org>
+t:1620281788
+c:95858872ee9f5acdf7753e2663c52fa095f84cf5
+D:fping /bin/sh
 
 C:Q16L0d0aj6oDF6Rv7O3NKxpUtpKkU=
 P:geocode-glib-doc
@@ -92392,22 +92440,6 @@ c:a7eee4e52616a9db4324ebfa50d22d59201d7174
 D:gsettings-desktop-schemas so:libc.musl-aarch64.so.1 so:libgdk-3.so.0 so:libgeoclue-2.so.0 so:libgeocode-glib.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgnome-desktop-3.so.19 so:libgobject-2.0.so.0 so:libgsound.so.0 so:libgtk-3.so.0 so:libgweather-3.so.16 so:libhandy-0.0.so.0 so:libintl.so.8
 p:cmd:gnome-clocks
 
-C:Q14aaCNLpMto8Z9LYdxWE7CBUPyzc=
-P:zabbix-agent-openrc
-V:5.0.10-r0
-A:aarch64
-S:1481
-I:16384
-T:Zabbix Network Monitoring Agent (OpenRC init scripts)
-U:http://www.zabbix.com
-L:GPL-2.0-or-later
-o:zabbix
-m:Kevin Daudt <kdaudt@alpinelinux.org>
-t:1617809789
-c:0dd9667e7c645e3ab41017a87c49fdcebc7a84e0
-D:openrc
-i:openrc zabbix-agent=5.0.10-r0
-
 C:Q1oRohISqAeYTXbsF073sgfGMaDuA=
 P:dolphin-plugins-lang
 V:20.04.2-r0
@@ -93609,22 +93641,6 @@ t:1583027675
 c:f77cf815be9045a7c82728821b64512fdf1cdaca
 D:so:libasound.so.2 so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libglib-2.0.so.0 so:libstdc++.so.6
 p:so:liblo10k1.so.0=0.0.0 cmd:as10k1 cmd:cspctl cmd:dl10k1 cmd:hda-verb cmd:hdajacksensetest cmd:hdsploader cmd:hwmixvolume cmd:init_audigy cmd:init_audigy_eq10 cmd:init_live cmd:ld10k1 cmd:ld10k1d cmd:lo10k1 cmd:mixartloader cmd:pcxhrloader cmd:sbiload cmd:sscape_ctl cmd:us428control cmd:usx2yloader cmd:vxloader
-
-C:Q17AZQ2rW83RgzTgpveqssGJal5s0=
-P:zabbix-utils
-V:5.0.10-r0
-A:aarch64
-S:195288
-I:450560
-T:Zabbix client utilities
-U:http://www.zabbix.com
-L:GPL-2.0-or-later
-o:zabbix
-m:Kevin Daudt <kdaudt@alpinelinux.org>
-t:1617809789
-c:0dd9667e7c645e3ab41017a87c49fdcebc7a84e0
-D:so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libpcre.so.1 so:libssl.so.1.1 so:libz.so.1
-p:cmd:zabbix_get cmd:zabbix_sender
 
 C:Q1nTPRLATJwySF0UWmCjAUyYCtzyQ=
 P:jruby-irb
@@ -112130,6 +112146,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1585344453
 c:e0d69f194820956a67e4e9e2a8953242766cca85
 
+C:Q1JcOQCn1ZH6C/6d35ltu8nm02IfI=
+P:zabbix-utils
+V:5.0.11-r0
+A:aarch64
+S:195500
+I:450560
+T:Zabbix client utilities
+U:http://www.zabbix.com
+L:GPL-2.0-or-later
+o:zabbix
+m:Kevin Daudt <kdaudt@alpinelinux.org>
+t:1620281788
+c:95858872ee9f5acdf7753e2663c52fa095f84cf5
+D:so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libpcre.so.1 so:libssl.so.1.1 so:libz.so.1
+p:cmd:zabbix_get cmd:zabbix_sender
+
 C:Q1CUabBuD0gLexsmB8OtKOrTc2xWU=
 P:pidgin-sipe-lang
 V:1.24.0-r0
@@ -112176,22 +112208,6 @@ t:1588855836
 c:a4877367e6f3d36d15ac5dd640f48b8add31f3ed
 D:so:libICE.so.6 so:libSM.so.6 so:libX11.so.6 so:libatk-1.0.so.0 so:libc.musl-aarch64.so.1 so:libgdk-3.so.0 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-3.so.0 so:libpango-1.0.so.0 so:libstartup-notification-1.so.0 so:libxfce4util.so.7 so:libxfconf-0.so.3
 p:so:libxfce4kbd-private-3.so.0=0.0.0 so:libxfce4ui-2.so.0=0.0.0
-
-C:Q1G0ks1ZVNXjgiTLyP2HdoXLB+h2E=
-P:zabbix-agent
-V:5.0.10-r0
-A:aarch64
-S:216390
-I:516096
-T:Zabbix Network Monitoring Agent
-U:http://www.zabbix.com
-L:GPL-2.0-or-later
-o:zabbix
-m:Kevin Daudt <kdaudt@alpinelinux.org>
-t:1617809789
-c:0dd9667e7c645e3ab41017a87c49fdcebc7a84e0
-D:/bin/sh so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libpcre.so.1 so:libssl.so.1.1 so:libz.so.1
-p:cmd:zabbix_agentd
 
 C:Q1DGWnUzWZxY7drUGX7fBd8s9Jb4w=
 P:libgee-dev
@@ -113198,22 +113214,6 @@ c:c7a1f20490e2882233bfdfa682040d3cb0ffd967
 D:pc:gio-2.0 pc:gio-unix-2.0 pc:gobject-2.0>=2.38 pkgconfig playerctl=2.1.1-r1
 p:pc:playerctl=2.1.1
 
-C:Q1fUre6RbLWKa8ZUETV059gw8pJkA=
-P:zabbix-agent2
-V:5.0.10-r0
-A:aarch64
-S:6751472
-I:21663744
-T:Zabbix Network Monitoring Agent (version 2)
-U:http://www.zabbix.com
-L:GPL-2.0-or-later
-o:zabbix
-m:Kevin Daudt <kdaudt@alpinelinux.org>
-t:1617809789
-c:0dd9667e7c645e3ab41017a87c49fdcebc7a84e0
-D:/bin/sh so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libpcre.so.1 so:libssl.so.1.1 so:libz.so.1
-p:cmd:zabbix_agent2
-
 C:Q1Et7PDPnXVGM1BQMugBVssuzdce0=
 P:perl-test-differences-doc
 V:0.67-r1
@@ -113902,6 +113902,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1602845686
 c:c0473f766fd58c2ac4cf7d94b5b76f89f4b51f7b
 D:claws-mail=3.17.7-r0 so:libc.musl-aarch64.so.1 so:libcurl.so.4 so:libgdk_pixbuf-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-x11-2.0.so.0 so:libintl.so.8
+
+C:Q1vN0jU0DBZlWRnAvBwyoOsyGQomo=
+P:zabbix-mysql
+V:5.0.11-r0
+A:aarch64
+S:1924158
+I:5697536
+T:Zabbix server with mysql database support
+U:http://www.zabbix.com
+L:GPL-2.0-or-later
+o:zabbix
+m:Kevin Daudt <kdaudt@alpinelinux.org>
+t:1620281788
+c:95858872ee9f5acdf7753e2663c52fa095f84cf5
+D:zabbix !zabbix-pgsql !zabbix-sqlite so:libOpenIPMI.so.0 so:libOpenIPMIposix.so.0 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libevent-2.1.so.7 so:libmariadb.so.3 so:libnetsnmp.so.35 so:libodbc.so.2 so:libpcre.so.1 so:libssh2.so.1 so:libssl.so.1.1 so:libxml2.so.2 so:libz.so.1
+p:cmd:zabbix_proxy cmd:zabbix_server
 
 C:Q17Yn7Pzamg7o7dShkpClY2S5XNWs=
 P:ocamlbuild
@@ -118084,22 +118100,6 @@ t:1586304288
 c:a86b41e749778fefd32199ba791e5de99c429209
 D:pkgconfig
 p:pc:mate-screensaver=1.24.0
-
-C:Q1txOo3Y2B/uoIl6bjYF27DDD0Z0o=
-P:zabbix-agent2-openrc
-V:5.0.10-r0
-A:aarch64
-S:1477
-I:16384
-T:Zabbix Network Monitoring Agent 2 (OpenRC init scripts)
-U:http://www.zabbix.com
-L:GPL-2.0-or-later
-o:zabbix
-m:Kevin Daudt <kdaudt@alpinelinux.org>
-t:1617809789
-c:0dd9667e7c645e3ab41017a87c49fdcebc7a84e0
-D:openrc
-i:openrc zabbix-agent2=5.0.10-r0
 
 C:Q1p+/SeNYbcX7OtHXcowQc+STrlMc=
 P:geany-plugins-geanyctags
