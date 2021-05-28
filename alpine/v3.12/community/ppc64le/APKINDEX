@@ -13,21 +13,6 @@ t:1583213150
 c:1643cb7078f412daec4bc4ac8a9f2652fe52c203
 i:pdfgrep=2.1.2-r3 bash-completion
 
-C:Q1MhyjyWNu964hQuN5WNEgxVfc5T8=
-P:nextcloud-pgsql
-V:18.0.13-r0
-A:ppc64le
-S:1229
-I:4096
-T:Nextcloud PostgreSQL support
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud php7-pgsql php7-pdo_pgsql
-
 C:Q1g++O0wuYdQtvH0lN8B1o5FNC5j8=
 P:greybird-themes
 V:3.22.10-r1
@@ -3444,6 +3429,21 @@ c:b5a69b97f9d03109eb8fbf12140905c96ceecbbd
 D:postgresql-client so:libc.musl-ppc64le.so.1 so:libpq.so.5
 p:cmd:repmgr
 
+C:Q19SSjm8GOF7V7cxbWU8YUvECwmM0=
+P:nextcloud-sqlite
+V:18.0.14-r0
+A:ppc64le
+S:1216
+I:4096
+T:Nextcloud SQLite support
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud php7-sqlite3 php7-pdo_sqlite
+
 C:Q1Sq41qKHvCrOdKf4OIg7hB4eFAl4=
 P:libreoffice-lang-de
 V:6.4.4.2-r0
@@ -6734,6 +6734,22 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1590148057
 c:f61893f2eed52b159190839800050de4790e458d
 
+C:Q13hh4wg4n3Z03B5N4rCl6LQTv1Bo=
+P:nextcloud
+V:18.0.14-r0
+A:ppc64le
+S:38546235
+I:147582976
+T:A safe home for all your data
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:ca-certificates php7 php7-ctype php7-curl php7-dom php7-gd php7-fileinfo php7-iconv php7-intl php7-json php7-mbstring php7-openssl php7-pcntl php7-posix php7-session php7-simplexml php7-xml php7-xmlreader php7-xmlwriter php7-zip /bin/sh
+p:nextcloud-dav=18.0.14-r0 nextcloud-files=18.0.14-r0 nextcloud-provisioning_api=18.0.14-r0 nextcloud-federatedfilesharing=18.0.14-r0 nextcloud-oauth2=18.0.14-r0 nextcloud-lookup_server_connector=18.0.14-r0 nextcloud-settings=18.0.14-r0 nextcloud-twofactor_backupcodes=18.0.14-r0 nextcloud-workflowengine=18.0.14-r0 cmd:occ
+
 C:Q1n0afqJMa4FasuheS11i1JskDByo=
 P:kcharselect-lang
 V:20.04.2-r0
@@ -7235,6 +7251,21 @@ m:Bart Ribbers <bribbers@disroot.org>
 t:1589031609
 c:022f8251cdb0d371a112ad13e1c0d6b0163ab44b
 D:qt5-qtbase-dev syntax-highlighting=5.70.0-r0
+
+C:Q1qnC8DiTo2q+5e4V+MfDD2A8pVmw=
+P:nextcloud-systemtags
+V:18.0.14-r0
+A:ppc64le
+S:119890
+I:1384448
+T:Nextcloud Collaborative tags app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud
 
 C:Q17icQ8J7D5gfxkm4FQl+u9mVVKrg=
 P:libzbar
@@ -7813,6 +7844,21 @@ m:Thomas Liske <thomas@fiasko-nw.net>
 t:1586356803
 c:c48f8f4b770287d7516ca27baa68ae87fdd3dc68
 i:openrc dpns=0.4-r0
+
+C:Q1N40+OWiwLyKaH2Fc85lWGZzji9g=
+P:nextcloud-nextcloud_announcements
+V:18.0.14-r0
+A:ppc64le
+S:55336
+I:733184
+T:Nextcloud Nextcloud announcements app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud
 
 C:Q16ORL5wb4ARkPmLUSeLVxkSkbNRU=
 P:perl-data-ical
@@ -9842,21 +9888,6 @@ c:9c888cb89f01b50f391cbe1baa402bf5fcb6ad46
 D:so:libKF5ConfigCore.so.5 so:libKF5ConfigGui.so.5 so:libKF5ConfigWidgets.so.5 so:libKF5CoreAddons.so.5 so:libKF5Crash.so.5 so:libKF5DBusAddons.so.5 so:libKF5I18n.so.5 so:libKF5Parts.so.5 so:libKF5TextEditor.so.5 so:libKF5WidgetsAddons.so.5 so:libKF5XmlGui.so.5 so:libQt5Core.so.5 so:libQt5Gui.so.5 so:libQt5Widgets.so.5 so:libc.musl-ppc64le.so.1 so:libstdc++.so.6
 p:cmd:kwrite
 
-C:Q1W91ITWa5tNgpnf08EBa9Uu4yl2E=
-P:nextcloud-text
-V:18.0.13-r0
-A:ppc64le
-S:4109505
-I:12464128
-T:Nextcloud Text app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud
-
 C:Q1TiCrFw22hKgD5/1zitgiV9Vs5/w=
 P:numix-themes-xfwm4
 V:2.6.7-r0
@@ -10528,21 +10559,6 @@ t:1588014068
 c:7743651eb99fb78b593e7d9cb15b8c96aaecbbdd
 D:python3
 p:py-ruffus=2.8.4-r0
-
-C:Q1tZF9A+arp7HR4OE4rFrxpELFu8Q=
-P:nextcloud-admin_audit
-V:18.0.13-r0
-A:ppc64le
-S:19314
-I:188416
-T:Nextcloud Auditing / Logging app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud
 
 C:Q19v1rMYrB8Rc0ld3S3Onr7O1ms7k=
 P:telepathy-qt-dev
@@ -13008,21 +13024,6 @@ t:1580665166
 c:6888d7e9b478bbb01ebee29aa05795ac0ef6e006
 i:docs nyancat=1.5.2-r0
 
-C:Q1+D7eZiZy4yDW3dhKsO9i6UrPgN4=
-P:nextcloud-cloud_federation_api
-V:18.0.13-r0
-A:ppc64le
-S:27292
-I:180224
-T:Nextcloud Cloud Federation API app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud
-
 C:Q1ONgJFz4rtug/VBZQ1ZdsRoLOyyo=
 P:rust-src
 V:1.44.0-r0
@@ -13668,21 +13669,6 @@ t:1590150304
 c:d2335b4e04dccdf04c50a64f5d284ca624f43782
 i:docs exim=4.93-r1
 
-C:Q1jKcZwqo5xzsIMbtj7OPyq/iet2c=
-P:nextcloud-encryption
-V:18.0.13-r0
-A:ppc64le
-S:169679
-I:2240512
-T:Nextcloud Default encryption module app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud php7-openssl php7-mcrypt
-
 C:Q1Lfgdw5e3DdQGVE6fcJXIs1bZ9IE=
 P:smenu-doc
 V:0.9.15-r0
@@ -13819,22 +13805,6 @@ o:pacman
 t:1586760987
 c:64b3e721a1472a65cfb64e986513dc564e8ab5ba
 i:pacman=5.2.1-r2 zsh
-
-C:Q1mP5Mg8l0+AyqG/oDFjJKHjoInfU=
-P:nextcloud-photos
-V:18.0.13-r0
-A:ppc64le
-S:3447864
-I:10510336
-T:Nextcloud Photos app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud nextcloud-viewer
-p:nextcloud-gallery=18.0.13-r0
 
 C:Q1qmHG/wBzAgfgCOY/2P8ijFl1jTs=
 P:py3-configshell
@@ -14988,21 +14958,6 @@ c:49d2b30ec520c32c272247f2a5a34c9d45a38f55
 D:dbus:org.freedesktop.Secrets
 i:gnome-online-accounts=3.36.0-r0 lang
 
-C:Q1lpj3ywX2jzHjqzOiMxBqK2i1YO8=
-P:nextcloud-sqlite
-V:18.0.13-r0
-A:ppc64le
-S:1228
-I:4096
-T:Nextcloud SQLite support
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud php7-sqlite3 php7-pdo_sqlite
-
 C:Q1R7KcHMciskhKQNevejOMlxxwJvw=
 P:gradle
 V:5.6.4-r0
@@ -15094,6 +15049,21 @@ t:1568731709
 c:9de348c9ef16b0105ad4dcb71328c9cf3ced8bb8
 D:gtk-engines-clearlooks faenza-icon-theme
 i:bsm-simple-themes=1.3-r4 metacity
+
+C:Q13oMkv4pFjYSJAAqKiYwnLyuEuYU=
+P:nextcloud-comments
+V:18.0.14-r0
+A:ppc64le
+S:162378
+I:1372160
+T:Nextcloud Comments app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud
 
 C:Q134u18+GJHRFG9KijBMKZAHvpI7E=
 P:arch-install-scripts-zsh-completion
@@ -16496,21 +16466,6 @@ t:1583086942
 c:edf8341487e43bca57a3a810b7c5afff21967762
 D:so:libc.musl-ppc64le.so.1 so:libgdk-3.so.0 so:libgeany.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-3.so.0
 
-C:Q1mj8kKdAD+caGK5TEzfeR/yUUoqo=
-P:nextcloud-sharebymail
-V:18.0.13-r0
-A:ppc64le
-S:84040
-I:978944
-T:Nextcloud Share by mail app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud
-
 C:Q1GxwYiMawIHIImaN/SmziwWYBd6I=
 P:liblcms
 V:1.19-r8
@@ -17128,21 +17083,6 @@ c:88b346857ae83c829a22621b9bb17c3723089e20
 D:openjdk8-jre-base
 p:cmd:jetty-runner
 
-C:Q14KnBSKBL4BWTmkipGg1NVrfEaTs=
-P:nextcloud-files_sharing
-V:18.0.13-r0
-A:ppc64le
-S:2206319
-I:10526720
-T:Nextcloud File sharing app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud nextcloud-federatedfilesharing
-
 C:Q10W1Kz1d0BaGX/xRUsJrPAO3lLCw=
 P:geany-plugins-pohelper
 V:1.36-r2
@@ -17172,6 +17112,21 @@ m:Rasmus Thomsen <oss@cogitri.dev>
 t:1583123085
 c:c2f9bbeaa0076931d6f83f2b6d5df3f6f513fd96
 i:docs yubico-pam=2.26-r1
+
+C:Q1Y5K+uvyqz/VBmbdb8WNwl5r2HX0=
+P:nextcloud-files_external
+V:18.0.14-r0
+A:ppc64le
+S:336403
+I:3198976
+T:Nextcloud External storage support app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud
 
 C:Q1Ba2OXS7ADk16NZDJcACTLMG48bk=
 P:playerctl-doc
@@ -18142,6 +18097,21 @@ t:1583493889
 c:5a86880dc127bc49f3f4e19d7f9d98e047610c23
 i:phodav=2.4-r0 lang
 
+C:Q1VvAUbKpUP+aPZJhSLJYglK8tTP0=
+P:nextcloud-text
+V:18.0.14-r0
+A:ppc64le
+S:4111154
+I:12554240
+T:Nextcloud Text app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud
+
 C:Q1KE8pxCYSyScqX5gCdsWEaRdKuXI=
 P:dnscrypt-proxy-setup
 V:2.0.42-r1
@@ -18678,6 +18648,21 @@ c:0c91465f3fcfc4b54677219e7f521f7ebc3162a2
 D:so:libc.musl-ppc64le.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libmariadb.so.3 so:libodbc.so.2 so:libpq.so.5 so:libstdc++.so.6 so:libz.so.1
 p:cmd:indexer cmd:indextool cmd:searchd cmd:spelldump cmd:wordbreaker
 
+C:Q1ibC2BJsx3E9Jb+Ml0pc3nThbqTE=
+P:nextcloud-federation
+V:18.0.14-r0
+A:ppc64le
+S:74120
+I:909312
+T:Nextcloud Federation app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud
+
 C:Q1XYyDaIsCxrNkUHc/06Rq5PzxoJo=
 P:qemu-audio-sdl
 V:5.0.0-r2
@@ -18813,6 +18798,21 @@ m:Henrik Riomar <henrik.riomar@gmail.com>
 t:1522510823
 c:ae72fb1bb7becb1a2f2fce03b6b4eaf28ff692f5
 i:docs apt-dater-host=1.0.1-r1
+
+C:Q16FLNX6XpWhcC7s3wPUl0pEeoxmY=
+P:nextcloud-firstrunwizard
+V:18.0.14-r0
+A:ppc64le
+S:1624749
+I:4423680
+T:Nextcloud First run wizard app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud
 
 C:Q1OXqoK9l4RyjwA+S0RUx4qduEcX8=
 P:ospd-netstat
@@ -20745,21 +20745,6 @@ t:1580598585
 c:d2d8c7385b0582928d8ffa96eea86888c8511c25
 D:perl-mime-charset so:libc.musl-ppc64le.so.1
 
-C:Q1pRoT1IU/NM/S7JWx+baNBDcAIaQ=
-P:nextcloud-nextcloud_announcements
-V:18.0.13-r0
-A:ppc64le
-S:55350
-I:733184
-T:Nextcloud Nextcloud announcements app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud
-
 C:Q1RV4P77fZ01QpzWmoW3WsgcM2eEc=
 P:py3-txacme
 V:0.9.3-r0
@@ -20975,21 +20960,6 @@ m:Valery Kartel <valery.kartel@gmail.com>
 t:1607554826
 c:7dd0dde524f669d691cd1e73e1e21dc0f9f01a7b
 D:sane so:libc.musl-ppc64le.so.1 so:libusb-1.0.so.0 so:libxml2.so.2
-
-C:Q1z8tb2ameQty9i1RyPY7EgYA1HUg=
-P:nextcloud-viewer
-V:18.0.13-r0
-A:ppc64le
-S:1254330
-I:5365760
-T:Nextcloud Viewer app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud
 
 C:Q14KTJN82aqwJABMowkxVNf+AhVkM=
 P:libmbim-dev
@@ -21566,6 +21536,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1585664451
 c:d21261dbdffa39dc0450d4d51d61a3fd2f5ef56a
 D:openssl
+
+C:Q1/ubiZIyoU0pOOtYCWt4C7DOmMok=
+P:nextcloud-support
+V:18.0.14-r0
+A:ppc64le
+S:156919
+I:1060864
+T:Nextcloud Support app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud
 
 C:Q1H3MqEoSX6KU+AuDPBeJqLOTZZ2E=
 P:cloudi-openrc
@@ -22505,6 +22490,21 @@ c:ddf60c8f37c94f3e04a4768c223eeac61be05d49
 D:py3-gdal so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libgdal.so.27 so:libstdc++.so.6
 p:cmd:epsg_tr.py cmd:esri2wkt.py cmd:gcps2vec.py cmd:gcps2wld.py cmd:gdal2tiles.py cmd:gdal2xyz.py cmd:gdal_auth.py cmd:gdal_calc.py cmd:gdal_contour cmd:gdal_edit.py cmd:gdal_fillnodata.py cmd:gdal_grid cmd:gdal_merge.py cmd:gdal_pansharpen.py cmd:gdal_polygonize.py cmd:gdal_proximity.py cmd:gdal_rasterize cmd:gdal_retile.py cmd:gdal_sieve.py cmd:gdal_translate cmd:gdal_viewshed cmd:gdaladdo cmd:gdalbuildvrt cmd:gdalchksum.py cmd:gdalcompare.py cmd:gdaldem cmd:gdalenhance cmd:gdalident.py cmd:gdalimport.py cmd:gdalinfo cmd:gdallocationinfo cmd:gdalmanage cmd:gdalmdiminfo cmd:gdalmdimtranslate cmd:gdalmove.py cmd:gdalserver cmd:gdalsrsinfo cmd:gdaltindex cmd:gdaltransform cmd:gdalwarp cmd:gnmanalyse cmd:gnmmanage cmd:mkgraticule.py cmd:nearblack cmd:ogr2ogr cmd:ogrinfo cmd:ogrlineref cmd:ogrmerge.py cmd:ogrtindex cmd:pct2rgb.py cmd:rgb2pct.py cmd:testepsg
 
+C:Q1p+q0cRrOwBQcPL7x/ffrHsGWtds=
+P:nextcloud-files_versions
+V:18.0.14-r0
+A:ppc64le
+S:167992
+I:1376256
+T:Nextcloud Versions app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud
+
 C:Q1e8eAqFgehv1EDHISpxTiFh8/XuY=
 P:ldap-passwd-webui
 V:2.1.0-r1
@@ -22785,21 +22785,6 @@ t:1607746632
 c:38a84a10dead7b66cef856d57f0f40542c0fabb4
 D:so:libMagickCore-6.Q16.so.6 so:libMagickWand-6.Q16.so.6 so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:libMagick++-6.Q16.so.8=8.0.0
-
-C:Q1zraK+0qsJ3qpbEjBy8MmX+idVn8=
-P:nextcloud-theming
-V:18.0.13-r0
-A:ppc64le
-S:126326
-I:966656
-T:Nextcloud Theming app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud
 
 C:Q1LhcKRFzFNI+ndauJE/pvu2KHAiw=
 P:font-noto-khmer
@@ -23993,6 +23978,21 @@ c:cb273b44dda5e16df1a7efdb33edff1543d60230
 D:gsettings-desktop-schemas so:libX11.so.6 so:libc.musl-ppc64le.so.1 so:libcairo.so.2 so:libexempi.so.8 so:libexif.so.12 so:libgdk-3.so.0 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libgirepository-1.0.so.1 so:libglib-2.0.so.0 so:libgnome-desktop-3.so.19 so:libgobject-2.0.so.0 so:libgtk-3.so.0 so:libintl.so.8 so:libjpeg.so.8 so:liblcms2.so.2 so:libpeas-1.0.so.0 so:libpeas-gtk-1.0.so.0 so:librsvg-2.so.2 so:libz.so.1
 p:so:libeog.so=0 cmd:eog
 
+C:Q12TmGwMS6tgqp+SnwIOGfwhu1OE8=
+P:nextcloud-encryption
+V:18.0.14-r0
+A:ppc64le
+S:169660
+I:2240512
+T:Nextcloud Default encryption module app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud php7-openssl php7-mcrypt
+
 C:Q1qnEnE5dEEZIqFRxvckrGdIew3UQ=
 P:rainloop-webmail
 V:1.14.0-r0
@@ -24592,6 +24592,21 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1586301893
 c:88b346857ae83c829a22621b9bb17c3723089e20
 D:jruby jruby-irb
+
+C:Q1a4CbSzLiuRVmB+puAGQqEKyfzfg=
+P:nextcloud-logreader
+V:18.0.14-r0
+A:ppc64le
+S:564680
+I:2441216
+T:Nextcloud Log Reader app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud
 
 C:Q1PCUAck03D3pWCZ4GZH2LpgxfbkU=
 P:libdvbpsi-dev
@@ -27393,6 +27408,21 @@ t:1586879117
 c:359cf8f07883ee0001ad3fb52759ac71409edb6e
 D:qt5-qtbase-dev qt5-qtdeclarative-dev qt5-qtsvg-dev qt5-qttools-dev kuserfeedback=1.0.0-r1
 
+C:Q1Cnciz9IPVgKhOl07Q0X0ALAjBE4=
+P:nextcloud-files_trashbin
+V:18.0.14-r0
+A:ppc64le
+S:138968
+I:1384448
+T:Nextcloud Deleted files app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud
+
 C:Q1/IPDkGgItR+wcA0zauAR053m/YA=
 P:yaml-cpp
 V:0.6.3-r1
@@ -29542,6 +29572,21 @@ c:3623a29083836bf0dd2632bdfa64db21a0138fe0
 D:so:libc.musl-ppc64le.so.1 so:libcairo.so.2 so:libcurl.so.4 so:libfreetype.so.6 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8 so:libjpeg.so.8 so:libpng16.so.16 so:libpoppler-glib.so.8
 p:so:libtumbler-1.so.0=0.0.0
 
+C:Q1m3srnTA6CB4v6MDkd2h0MlXtz7c=
+P:nextcloud-sharebymail
+V:18.0.14-r0
+A:ppc64le
+S:84044
+I:978944
+T:Nextcloud Share by mail app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud
+
 C:Q1PBI9jO54yIzbZyaBNlyrHBbGlOo=
 P:libdazzle
 V:3.36.0-r0
@@ -29666,6 +29711,21 @@ o:libreoffice
 m:Timo Teräs <timo.teras@iki.fi>
 t:1590148057
 c:f61893f2eed52b159190839800050de4790e458d
+
+C:Q1RajDsKMqtOGMQzRVlvoSWsgDzrM=
+P:nextcloud-cloud_federation_api
+V:18.0.14-r0
+A:ppc64le
+S:27273
+I:180224
+T:Nextcloud Cloud Federation API app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud
 
 C:Q16siu9bCW+TiDi+PEs04Mr33dlak=
 P:incron
@@ -33300,6 +33360,21 @@ c:edff5d6eccad24e0c35cd97a0ea31a30ac898471
 D:so:libc.musl-ppc64le.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgnome-desktop-3.so.19 so:libgobject-2.0.so.0 so:libinput.so.10 so:libpixman-1.so.0 so:libwayland-server.so.0 so:libwlroots.so.5 so:libxkbcommon.so.0
 p:cmd:phoc
 
+C:Q1kS5Ux1e99L/RGl1fHzRUoESmjyQ=
+P:nextcloud-activity
+V:18.0.14-r0
+A:ppc64le
+S:190524
+I:1921024
+T:Nextcloud Activity app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud
+
 C:Q1siR60f2x2EJJ3iqD8l5Sd5LaS38=
 P:soundtouch-dev
 V:2.1.2-r0
@@ -36910,21 +36985,6 @@ c:9b99bcb9e354529f69f91583fb247f68dd3372d6
 D:so:libc.musl-ppc64le.so.1
 p:cmd:lha
 
-C:Q1U7PZZtqY4D8OQ6/j2tZzyT4u6rE=
-P:nextcloud-support
-V:18.0.13-r0
-A:ppc64le
-S:156922
-I:1060864
-T:Nextcloud Support app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud
-
 C:Q1iKQUyUUUCMQHcKJmKmR7H7EnTps=
 P:perl-xml-simpleobject-libxml-doc
 V:0.60-r0
@@ -39001,21 +39061,6 @@ c:809f2c5f1efce3e32e9bd7913ff5c8a8cd6b6659
 D:so:libc.musl-ppc64le.so.1
 p:cmd:xdelta3
 
-C:Q1qEHVjc1hYC12Dp/xk8hmrinsmhg=
-P:nextcloud-survey_client
-V:18.0.13-r0
-A:ppc64le
-S:86835
-I:786432
-T:Nextcloud Usage survey app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud
-
 C:Q12LXLKkCrA0fRg2jTOlwwlFKkz3w=
 P:py3-tqdm
 V:4.46.0-r0
@@ -39337,6 +39382,21 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1545648517
 c:0722927b11cd68409d75a6cf425743843150ce32
 i:openrc sniproxy=0.6.0-r0
+
+C:Q1sD46kU3mgbF4Q1Bwht6MjBfnKSU=
+P:nextcloud-theming
+V:18.0.14-r0
+A:ppc64le
+S:126311
+I:966656
+T:Nextcloud Theming app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud
 
 C:Q1gm3+zatfL0hdgU6Ejfqj/p9R0Ig=
 P:libvirt-glib-lang
@@ -39831,6 +39891,21 @@ m:Miguel Terron <miguel.a.terron@gmail.com>
 t:1580877655
 c:ca8ac32151b8a0d4353d7558ea0e5559fe536064
 i:docs mawk=1.3.4-r2
+
+C:Q1vIvUOJJbdd1gJQXPi4ir4eU6q1s=
+P:nextcloud-doc
+V:18.0.14-r0
+A:ppc64le
+S:21128430
+I:28647424
+T:A safe home for all your data (documentation)
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+i:docs nextcloud=18.0.14-r0
 
 C:Q1zf3tzkNA2Ug1HDqD3yC1p9Tfb54=
 P:xapian-bindings-php7
@@ -41837,6 +41912,21 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1580598585
 c:d2d8c7385b0582928d8ffa96eea86888c8511c25
 i:docs perl-xml-twig=3.52-r2
+
+C:Q1+IiyyEeT6Nh/CUauwPg7cG7j2SQ=
+P:nextcloud-survey_client
+V:18.0.14-r0
+A:ppc64le
+S:86828
+I:786432
+T:Nextcloud Usage survey app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud
 
 C:Q1yW+s/hT5sMbAENhHkzH/fsI0LRs=
 P:xfce4-cpufreq-plugin-lang
@@ -44277,6 +44367,22 @@ t:1593856677
 c:4d6b2bcdd6811ad3689e63c1cab836ed065c2dd4
 D:gsettings-desktop-schemas dbus:org.freedesktop.Secrets
 
+C:Q11W6X+IbqOLLdmJmt66zlmkJYLQk=
+P:nextcloud-user_ldap
+V:18.0.14-r0
+A:ppc64le
+S:591600
+I:5177344
+T:Nextcloud LDAP user and group backend app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud php7-ldap
+p:nextcloud-ldap
+
 C:Q1Z4JZV31szmClOy8D30pUmLlgyo8=
 P:xfce4
 V:4.14_pre1-r0
@@ -44992,6 +45098,21 @@ t:1590336338
 c:1f28f2a7020a7700d2db56b6bcaf92330a2f3a16
 D:hdrhistogram-c=0.9.13-r1
 
+C:Q1j692O50Epv6l8XNOauPr146/30U=
+P:nextcloud-recommendations
+V:18.0.14-r0
+A:ppc64le
+S:225199
+I:1110016
+T:Nextcloud Recommendations app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud
+
 C:Q1UJ4uFp+iMj3hYtqSzD044tvNzwM=
 P:psutils-doc
 V:1.17-r2
@@ -45555,21 +45676,6 @@ m:Jesse Young <jlyo@jlyo.org>
 t:1590150304
 c:d2335b4e04dccdf04c50a64f5d284ca624f43782
 D:exim so:libc.musl-ppc64le.so.1
-
-C:Q1Nv6qVwPp0cRzAcLNLS0RkPM6FxA=
-P:nextcloud-comments
-V:18.0.13-r0
-A:ppc64le
-S:162376
-I:1372160
-T:Nextcloud Comments app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud
 
 C:Q1d9ETlTHM8jiC0UXc01ik074YQHY=
 P:py3-sip-dev
@@ -46571,6 +46677,21 @@ t:1588757614
 c:a5c595923e1d76895b3113dae60b62c2cbfa9adb
 i:plasma-browser-integration=5.18.5-r0 lang
 
+C:Q1v48WwC5F+AnHUnOJWB39J00jsHQ=
+P:nextcloud-pgsql
+V:18.0.14-r0
+A:ppc64le
+S:1218
+I:4096
+T:Nextcloud PostgreSQL support
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud php7-pgsql php7-pdo_pgsql
+
 C:Q1gIA0Bpc49jHpho2GbI7N4YBNxtY=
 P:kpackage-lang
 V:5.70.0-r0
@@ -46942,6 +47063,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1584293193
 c:66de408d2baf82a0296c1ed704b0d07cd77f6e5a
 i:docs gigolo=0.5.1-r0
+
+C:Q1n/vASbsKU+xdS+d14DJ43uIlIfo=
+P:nextcloud-files_sharing
+V:18.0.14-r0
+A:ppc64le
+S:2207883
+I:10555392
+T:Nextcloud File sharing app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud nextcloud-federatedfilesharing
 
 C:Q1UE6rPpbZmBabII9N5IEFGrxqMhc=
 P:virt-viewer-lang
@@ -47434,22 +47570,6 @@ t:1599620602
 c:52e19c8d43c3288d582e6b9cf7a0d8244cfd5190
 p:cmd:qemu-m68k
 
-C:Q1U7Yg2xBI/hh+UHonSUEijH/iWi0=
-P:nextcloud-user_ldap
-V:18.0.13-r0
-A:ppc64le
-S:591473
-I:5169152
-T:Nextcloud LDAP user and group backend app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud php7-ldap
-p:nextcloud-ldap
-
 C:Q1hP/w/05ofHfDLI8s0nzMLrYVQhc=
 P:lua5.1-mpack
 V:1.0.8-r0
@@ -47714,21 +47834,6 @@ m:Bart Ribbers <bribbers@disroot.org>
 t:1593347821
 c:9c888cb89f01b50f391cbe1baa402bf5fcb6ad46
 i:docs keditbookmarks=20.04.2-r0
-
-C:Q1Frj/ImU+e0R6ZvUKEdCA1CP1HRw=
-P:nextcloud-default-apps
-V:18.0.13-r0
-A:ppc64le
-S:1456
-I:4096
-T:Nextcloud default apps
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud nextcloud-accessibility nextcloud-activity nextcloud-comments nextcloud-dav nextcloud-federation nextcloud-files nextcloud-files_pdfviewer nextcloud-files_rightclick nextcloud-files_sharing nextcloud-files_trashbin nextcloud-files_versions nextcloud-files_videoplayer nextcloud-firstrunwizard nextcloud-logreader nextcloud-lookup_server_connector nextcloud-nextcloud_announcements nextcloud-notifications nextcloud-oauth2 nextcloud-password_policy nextcloud-photos nextcloud-privacy nextcloud-provisioning_api nextcloud-recommendations nextcloud-serverinfo nextcloud-settings nextcloud-sharebymail nextcloud-support nextcloud-survey_client nextcloud-systemtags nextcloud-text nextcloud-theming nextcloud-viewer
 
 C:Q1VkCfjaq2rObG6FusSIXL4hX9j2g=
 P:llvm8
@@ -50412,21 +50517,6 @@ t:1588362958
 c:092531fdc13d3512ad5fd6c3f4b5da3bc1145e69
 D:sleuthkit-libs=4.9.0-r0
 
-C:Q1udReSLQonMXoB14XhKpWG9RQjRE=
-P:nextcloud-files_versions
-V:18.0.13-r0
-A:ppc64le
-S:166899
-I:1368064
-T:Nextcloud Versions app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud
-
 C:Q16bcBoWjXJjd0TCedMoEx9OHyYQ0=
 P:udisks-lang
 V:1.0.5-r5
@@ -52084,6 +52174,21 @@ t:1572968039
 c:928f46b865bb8e63608031cbcf4261bf2293cd9c
 D:python3
 p:py-feedparser=5.2.1-r5
+
+C:Q1RrcqRhGX3ly0HWj/TZu6U6AgcLE=
+P:nextcloud-mysql
+V:18.0.14-r0
+A:ppc64le
+S:1208
+I:4096
+T:Nextcloud MySQL support
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud php7-pdo_mysql
 
 C:Q1uYjEUWn+uc6PkSfPeyHY6A5dgCA=
 P:eigen
@@ -54999,21 +55104,6 @@ c:3a13266987c7908a67ac11f001794ea8d5ab77fb
 D:so:libc.musl-ppc64le.so.1 so:libcairo.so.2 so:libcolord.so.2 so:libgdk-3.so.0 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-3.so.0 so:libgusb.so.2 so:libintl.so.8 so:libsane.so.1 so:libwebp.so.7 so:libwebpmux.so.3 so:libz.so.1
 p:cmd:simple-scan
 
-C:Q1PqDxl/L8gzlENIFsOhLKtioYOYI=
-P:nextcloud-activity
-V:18.0.13-r0
-A:ppc64le
-S:189928
-I:1912832
-T:Nextcloud Activity app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud
-
 C:Q1YAQAHyKv/WJhJ0sVAIZGZqGEXFA=
 P:libmikmod
 V:3.3.11.1-r1
@@ -57497,6 +57587,22 @@ c:85eff397313ef6d95c8cb9a6a996da546bbf11dc
 D:evolution so:libc.musl-ppc64le.so.1 so:libcamel-1.2.so.62 so:libebackend-1.2.so.10 so:libebook-1.2.so.20 so:libebook-contacts-1.2.so.3 so:libecal-2.0.so.1 so:libedata-book-1.2.so.26 so:libedata-cal-2.0.so.1 so:libedataserver-1.2.so.24 so:libedataserverui-1.2.so.2 so:libemail-engine.so so:libevolution-calendar.so so:libevolution-mail.so so:libevolution-shell.so so:libevolution-util.so so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-3.so.0 so:libical-glib.so.3 so:libintl.so.8 so:libmspack.so.0 so:libpango-1.0.so.0 so:libsoup-2.4.so.1 so:libxml2.so.2
 p:so:libcamelews-priv.so=0 so:libevolution-ews.so=0
 
+C:Q1hNDIsoOGaaoinywoBtiVIVdIcWk=
+P:nextcloud-files_pdfviewer
+V:18.0.14-r0
+A:ppc64le
+S:3049705
+I:12279808
+T:Nextcloud PDF viewer app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud
+p:nextcloud-pdfviewer
+
 C:Q1RaNE+edFjoQFudVskTz1iDqsJqo=
 P:bitchx-doc
 V:1.2.1-r9
@@ -58186,6 +58292,21 @@ t:1593347821
 c:9c888cb89f01b50f391cbe1baa402bf5fcb6ad46
 i:filelight=20.04.2-r0 lang
 
+C:Q1rdXTqK2kGCG7yEIlElPHTZp7ark=
+P:nextcloud-files_rightclick
+V:18.0.14-r0
+A:ppc64le
+S:151874
+I:1036288
+T:Nextcloud Right click app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud
+
 C:Q1fm8sPMSiVS6UiqQ6y+0FnHhnai0=
 P:kirigami2
 V:5.70.0-r0
@@ -58311,6 +58432,21 @@ t:1584976050
 c:41ab224df12b8487004a1522b4f671680c082954
 D:so:libc.musl-ppc64le.so.1 so:libncursesw.so.6 so:libnjb.so.5 so:libz.so.1
 p:cmd:njb-cursesplay cmd:njb-delfile cmd:njb-deltr cmd:njb-dumpeax cmd:njb-dumptime cmd:njb-files cmd:njb-fwupgrade cmd:njb-getfile cmd:njb-getowner cmd:njb-gettr cmd:njb-getusage cmd:njb-handshake cmd:njb-pl cmd:njb-play cmd:njb-playlists cmd:njb-sendfile cmd:njb-sendtr cmd:njb-setowner cmd:njb-setpbm cmd:njb-settime cmd:njb-tagtr cmd:njb-tracks
+
+C:Q1ydRldjkFRyPDTHfqNGXMkhVXtMY=
+P:nextcloud-initscript
+V:18.0.14-r0
+A:ppc64le
+S:5693
+I:65536
+T:Init script that runs Nextcloud with php-fpm
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud php7-fpm /bin/sh
 
 C:Q1ejz+Q8ruByQrqCw6wVyzZhOSyio=
 P:spectral
@@ -59560,21 +59696,6 @@ t:1593347821
 c:9c888cb89f01b50f391cbe1baa402bf5fcb6ad46
 D:so:libKF5ConfigCore.so.5 so:libKF5ConfigGui.so.5 so:libKF5ConfigWidgets.so.5 so:libKF5CoreAddons.so.5 so:libKF5I18n.so.5 so:libKF5Notifications.so.5 so:libKF5WidgetsAddons.so.5 so:libKF5WindowSystem.so.5 so:libKF5XmlGui.so.5 so:libQt5Core.so.5 so:libQt5Gui.so.5 so:libQt5Widgets.so.5 so:libQt5X11Extras.so.5 so:libc.musl-ppc64le.so.1 so:libstdc++.so.6 so:libxcb.so.1
 p:cmd:kruler
-
-C:Q1L6ok958uCl+dX7MGj1Y/fXtRKxE=
-P:nextcloud-privacy
-V:18.0.13-r0
-A:ppc64le
-S:1426830
-I:5804032
-T:Nextcloud Privacy app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud
 
 C:Q1D7V8lnsGOZbsU7obeESTWPM4rq8=
 P:yubico-c-dev
@@ -62127,6 +62248,21 @@ t:1584921938
 c:4f54e2984ca8a43c867d32ab6e9382ff2a1db651
 i:docs perl-http-headers-fast=0.22-r0
 
+C:Q14q9tJaHJuqj3WG8uEGhju3kHNSQ=
+P:nextcloud-password_policy
+V:18.0.14-r0
+A:ppc64le
+S:4402147
+I:21479424
+T:Nextcloud Password policy app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud
+
 C:Q1Nf5WdUhQ5hmTVNHooYoPbTl3phg=
 P:gnome-autoar-dev
 V:0.2.3-r0
@@ -62758,21 +62894,6 @@ o:jsoncpp
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1583232748
 c:b5f8ece2e2ec2b90bd37ce1972932a2592cef85d
-
-C:Q1HNigAmLvXnVwq05ym69HfOpHgxY=
-P:nextcloud-notifications
-V:18.0.13-r0
-A:ppc64le
-S:468429
-I:2277376
-T:Nextcloud Notifications app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud
 
 C:Q1LhEv0Ba7Ffj/ha0VUx+HXiZYf1g=
 P:libproxy-bin
@@ -66979,6 +67100,21 @@ m:Stuart Cardall <developer@it-offshore.co.uk>
 t:1576597660
 c:9800a38da9cfd2867d45799e793adc75c0fe8922
 D:gnome-colors-common
+
+C:Q1+oIpcahi+GydsvjfTcad0NUl4Y4=
+P:nextcloud-serverinfo
+V:18.0.14-r0
+A:ppc64le
+S:155201
+I:1216512
+T:Nextcloud Monitoring app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud
 
 C:Q1nNSGNsQjrePM4moSJ+AQvkpvpng=
 P:gitg-lang
@@ -73766,22 +73902,6 @@ t:1593347821
 c:9c888cb89f01b50f391cbe1baa402bf5fcb6ad46
 i:kcolorchooser=20.04.2-r0 lang
 
-C:Q1m/7wEUtg0py4yofZXlKhSXHw+pU=
-P:nextcloud-files_pdfviewer
-V:18.0.13-r0
-A:ppc64le
-S:3049665
-I:12279808
-T:Nextcloud PDF viewer app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud
-p:nextcloud-pdfviewer
-
 C:Q1HJcH8ZiCtiUv2nj7uAsmZd5ooJQ=
 P:openssh-client-yash-completion
 V:2.49-r1
@@ -73829,6 +73949,21 @@ t:1559229150
 c:97f122a0b8cb8c4c60838efd651e3be1723b2a2e
 D:/bin/sh so:libc.musl-ppc64le.so.1
 p:cmd:setup-inetutils-syslogd cmd:syslogd
+
+C:Q1n+ibBM1/PRiMOQAfIszXJMLWhPA=
+P:nextcloud-admin_audit
+V:18.0.14-r0
+A:ppc64le
+S:19302
+I:188416
+T:Nextcloud Auditing / Logging app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud
 
 C:Q1kg5ijOy8eFJwn0PkcH6H3yxjFMU=
 P:mpc-doc
@@ -74340,21 +74475,6 @@ t:1580157907
 c:b29cb6f4a234fc57f9101b048ffe0f101f7f39a2
 i:docs amtk=5.0.2-r0
 
-C:Q1RAPxFfkhuFaWR1+46vzEu9463wc=
-P:nextcloud-mysql
-V:18.0.13-r0
-A:ppc64le
-S:1222
-I:4096
-T:Nextcloud MySQL support
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud php7-pdo_mysql
-
 C:Q1VY64diJWWogZ5OXD9NGI3jyQGkg=
 P:flickcurl-doc
 V:1.26-r1
@@ -74660,21 +74780,6 @@ m:Valery Kartel <valery.kartel@gmail.com>
 t:1607554826
 c:7dd0dde524f669d691cd1e73e1e21dc0f9f01a7b
 D:sane so:libc.musl-ppc64le.so.1
-
-C:Q11lG14QdWr+pW84H0n2aAc6LqeSI=
-P:nextcloud-serverinfo
-V:18.0.13-r0
-A:ppc64le
-S:155193
-I:1216512
-T:Nextcloud Monitoring app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud
 
 C:Q1p9SQCVASOHbW7qzHWU3qOBjdt3w=
 P:kwin
@@ -75616,6 +75721,21 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1590559816
 c:f838539f7aa505cb7e3c3a9062311642d5dd622b
 i:nnn=3.2-r0 bash-completion
+
+C:Q1uwC1sitnVT82G8BLUfdCWv66xuw=
+P:nextcloud-accessibility
+V:18.0.14-r0
+A:ppc64le
+S:771977
+I:2387968
+T:Nextcloud Accessibility app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud
 
 C:Q1bRXaFKjh3zj4HNKSM8yufHJWlw0=
 P:perl-text-unidecode
@@ -77667,37 +77787,6 @@ t:1585641512
 c:db7cca3da4a9b5b8bca3a4a6a80ccff8c01100a0
 D:so:libc.musl-ppc64le.so.1
 p:cmd:rem cmd:rem2ps cmd:remind
-
-C:Q1InjYKx3RJmcTpMFx76L9vRFjGCw=
-P:nextcloud
-V:18.0.13-r0
-A:ppc64le
-S:38520801
-I:147476480
-T:A safe home for all your data
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:ca-certificates php7 php7-ctype php7-curl php7-dom php7-gd php7-fileinfo php7-iconv php7-intl php7-json php7-mbstring php7-openssl php7-pcntl php7-posix php7-session php7-simplexml php7-xml php7-xmlreader php7-xmlwriter php7-zip /bin/sh
-p:nextcloud-dav=18.0.13-r0 nextcloud-files=18.0.13-r0 nextcloud-provisioning_api=18.0.13-r0 nextcloud-federatedfilesharing=18.0.13-r0 nextcloud-oauth2=18.0.13-r0 nextcloud-lookup_server_connector=18.0.13-r0 nextcloud-settings=18.0.13-r0 nextcloud-twofactor_backupcodes=18.0.13-r0 nextcloud-workflowengine=18.0.13-r0 cmd:occ
-
-C:Q1OKZ2DhZT8dCQ75EXSxs5ye68t9o=
-P:nextcloud-files_external
-V:18.0.13-r0
-A:ppc64le
-S:336375
-I:3198976
-T:Nextcloud External storage support app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud
 
 C:Q1qVvW2KCYmxVLmziWPm/U0yZ3wCg=
 P:libraw1394-dev
@@ -80415,21 +80504,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1586106047
 c:980ada6decf8bf5808c87f68f9cb5193952600c6
 D:perl perl-business-isbn-data
-
-C:Q1G79tLdBmlzPmyAtVex1mrfia/+A=
-P:nextcloud-initscript
-V:18.0.13-r0
-A:ppc64le
-S:5710
-I:65536
-T:Init script that runs Nextcloud with php-fpm
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud php7-fpm /bin/sh
 
 C:Q1/GYvB7e6de/QweU1nVJKNh9lJSc=
 P:lua5.2-lpeg
@@ -89316,6 +89390,21 @@ t:1580251429
 c:47d62840a0a17ab1d9abf62acd4542370fe5b7ad
 D:so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 
+C:Q1g1tbpdHrpKIXwroUNLqQF2PEo40=
+P:nextcloud-viewer
+V:18.0.14-r0
+A:ppc64le
+S:1254378
+I:5365760
+T:Nextcloud Viewer app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud
+
 C:Q1WelirjzsomwYQdaCkeOP8ZGk8ig=
 P:w3m-doc
 V:0.5.3.20180125-r4
@@ -91794,22 +91883,6 @@ c:ff7a81e27355c764ce517a46d5742ec11911c196
 D:so:libc.musl-ppc64le.so.1 so:libwayland-client.so.0
 p:cmd:wl-copy cmd:wl-paste
 
-C:Q11qD+k1WS1W63qjTmreb/L0iDr9E=
-P:nextcloud-files_videoplayer
-V:18.0.13-r0
-A:ppc64le
-S:893547
-I:3293184
-T:Nextcloud Video player app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud
-p:nextcloud-videoplayer
-
 C:Q1h7NTckJLBEd/PAbVPNh1dF3l7/c=
 P:libquvi-scripts
 V:0.9.20131130-r0
@@ -92961,36 +93034,6 @@ t:1583841092
 c:8c06f443ca3aca521bebfa7bdf032677c6db12a0
 D:json-glib-dev atk-dev mesa-dev libxcomposite-dev libxi-dev cairo-dev clutter=1.26.4-r0 pc:atk pc:atk>=2.5.3 pc:cairo-gobject>=1.14.0 pc:cogl-1.0>=1.21.2 pc:cogl-pango-1.0 pc:cogl-path-1.0 pc:gdk-3.0 pc:gdk-pixbuf-2.0 pc:gio-2.0>=2.53.4 pc:json-glib-1.0>=0.12.0 pc:pangocairo>=1.30 pc:pangoft2 pc:wayland-client pc:wayland-cursor pc:x11 pc:xcomposite>=0.4 pc:xdamage pc:xext pc:xi pc:xkbcommon pkgconfig
 p:pc:cally-1.0=1.26.4 pc:clutter-1.0=1.26.4 pc:clutter-cogl-1.0=1.26.4 pc:clutter-egl-1.0=1.26.4 pc:clutter-gdk-1.0=1.26.4 pc:clutter-glx-1.0=1.26.4 pc:clutter-wayland-1.0=1.26.4 pc:clutter-x11-1.0=1.26.4
-
-C:Q1oi+5QJwQ0JRbB1O6NAzBNsaQd7A=
-P:nextcloud-recommendations
-V:18.0.13-r0
-A:ppc64le
-S:224634
-I:1101824
-T:Nextcloud Recommendations app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud
-
-C:Q1stj/DsL3nt0I83AhKQlOxz+KObc=
-P:nextcloud-firstrunwizard
-V:18.0.13-r0
-A:ppc64le
-S:1624453
-I:4423680
-T:Nextcloud First run wizard app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud
 
 C:Q1YhPqVw2d+ocih3iqe1MGcI3OVH8=
 P:gnome-builder-lang
@@ -94340,6 +94383,21 @@ t:1590387889
 c:cf191c9b5b350effa46c027bc7cd2a348c772fd6
 i:docs fio=3.20-r0
 
+C:Q17eym2F3S6V8a5p5ySQDd6n+n3NU=
+P:nextcloud-privacy
+V:18.0.14-r0
+A:ppc64le
+S:1426840
+I:5804032
+T:Nextcloud Privacy app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud
+
 C:Q1L3i3ArFdqAbxUnZDcCHYFALKiLk=
 P:perl-xml-treepp-doc
 V:0.43-r2
@@ -95413,6 +95471,21 @@ m:Rasmus Thomsen <oss@cogitri.dev>
 t:1586320422
 c:c833937e8debeda21a62f0be38a3b95cc45422b1
 D:python3 cython so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
+
+C:Q1d9FrlmNW8nLocSNlfRWdxWtVQjA=
+P:nextcloud-default-apps
+V:18.0.14-r0
+A:ppc64le
+S:1446
+I:4096
+T:Nextcloud default apps
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud nextcloud-accessibility nextcloud-activity nextcloud-comments nextcloud-dav nextcloud-federation nextcloud-files nextcloud-files_pdfviewer nextcloud-files_rightclick nextcloud-files_sharing nextcloud-files_trashbin nextcloud-files_versions nextcloud-files_videoplayer nextcloud-firstrunwizard nextcloud-logreader nextcloud-lookup_server_connector nextcloud-nextcloud_announcements nextcloud-notifications nextcloud-oauth2 nextcloud-password_policy nextcloud-photos nextcloud-privacy nextcloud-provisioning_api nextcloud-recommendations nextcloud-serverinfo nextcloud-settings nextcloud-sharebymail nextcloud-support nextcloud-survey_client nextcloud-systemtags nextcloud-text nextcloud-theming nextcloud-viewer
 
 C:Q1K8gdDINn9HUHUQ/AihGsAF3PFdE=
 P:scapy
@@ -96676,6 +96749,22 @@ t:1582761806
 c:6354738b7740f72dbb29b36da280d4bb43833b04
 i:docs perl-moosex=0.002-r1
 
+C:Q12OIhCDbBE1b9N3h1GJ3np6DlcSA=
+P:nextcloud-files_videoplayer
+V:18.0.14-r0
+A:ppc64le
+S:893536
+I:3293184
+T:Nextcloud Video player app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud
+p:nextcloud-videoplayer
+
 C:Q1SUOWgWjvPTx6aRht1/qh4qEe6W0=
 P:libreoffice-lang-hi
 V:6.4.4.2-r0
@@ -96907,6 +96996,21 @@ m:Bart Ribbers <bribbers@disroot.org>
 t:1589031609
 c:022f8251cdb0d371a112ad13e1c0d6b0163ab44b
 D:qt5-qtbase-dev libcap-dev kservice-dev kio-dev ki18n-dev kwindowsystem-dev kcrash-dev kconfig-dev
+
+C:Q1SVRVMNWdRrrSED7mpS4zQfhVByA=
+P:nextcloud-notifications
+V:18.0.14-r0
+A:ppc64le
+S:468419
+I:2277376
+T:Nextcloud Notifications app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud
 
 C:Q1KhSe2AhYevuiQQg5UFzru5glmag=
 P:libevhtp
@@ -97154,21 +97258,6 @@ c:41ab224df12b8487004a1522b4f671680c082954
 D:so:libX11.so.6 so:libc.musl-ppc64le.so.1 so:libdbus-glib-1.so.2 so:libgdk-x11-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-x11-2.0.so.0
 p:so:libunique-1.0.so.0=0.100.6
 
-C:Q1g6RL+0vRMTQtZLDmdFekRqD32K8=
-P:nextcloud-files_rightclick
-V:18.0.13-r0
-A:ppc64le
-S:151203
-I:1028096
-T:Nextcloud Right click app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud
-
 C:Q1hFLE9xOd30wPBtjMXrxPm3XiP08=
 P:charls
 V:2.1.0-r1
@@ -97200,21 +97289,6 @@ t:1586574974
 c:e6da900e8e55f7b14df4c994ffe86280f875e47e
 D:so:libQt5Core.so.5 so:libQt5Network.so.5 so:libQt5Xml.so.5 so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:libqxmpp.so.3=1.3.0
-
-C:Q1JWHsYmfMhyiHsNxSSOpXjL+uyqk=
-P:nextcloud-logreader
-V:18.0.13-r0
-A:ppc64le
-S:564694
-I:2441216
-T:Nextcloud Log Reader app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud
 
 C:Q1tQyYDe4zpf+TTOBI2sWqtx1XY1Y=
 P:qt5-qtremoteobjects-dev
@@ -99461,6 +99535,22 @@ t:1589031609
 c:022f8251cdb0d371a112ad13e1c0d6b0163ab44b
 D:so:libKF5ConfigCore.so.5 so:libKF5I18n.so.5 so:libKF5KIOWidgets.so.5 so:libQt5Core.so.5 so:libQt5DBus.so.5 so:libQt5Gui.so.5 so:libQt5Widgets.so.5 so:libc.musl-ppc64le.so.1 so:libcanberra.so.0 so:libstdc++.so.6
 p:so:libKF5NotifyConfig.so.5=5.70.0
+
+C:Q1U9gH72wSQcw1/caa6Pv3tlATfPQ=
+P:nextcloud-photos
+V:18.0.14-r0
+A:ppc64le
+S:3447946
+I:10510336
+T:Nextcloud Photos app
+U:http://nextcloud.com
+L:AGPL-3.0-only
+o:nextcloud
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1622182840
+c:ea624ba3b72d332e2faf3616134f2b8fe94420bc
+D:nextcloud nextcloud-viewer
+p:nextcloud-gallery=18.0.14-r0
 
 C:Q1tIKvzrmaDo+gmuMxwcJLdx2PTos=
 P:polkit-kde-agent-1-lang
@@ -105796,21 +105886,6 @@ t:1580598585
 c:d2d8c7385b0582928d8ffa96eea86888c8511c25
 D:perl-exception-class perl-module-build
 
-C:Q110oc9qPXzHCdMZV+RcIcx/StY3g=
-P:nextcloud-systemtags
-V:18.0.13-r0
-A:ppc64le
-S:119898
-I:1384448
-T:Nextcloud Collaborative tags app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud
-
 C:Q13VIYNAOr+4dArf6aQvsmrqn2WHw=
 P:py3-botocore
 V:1.16.16-r0
@@ -108277,21 +108352,6 @@ c:5013382dd6bc02ba3a3e2069cb1ddd7c7ba7726a
 D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:liblzma.so.5 so:libz.so.1
 p:so:libzip.so.5=5.1
 
-C:Q1+mI73NxKHbZDMaPhHWhFbTJoZ7c=
-P:nextcloud-password_policy
-V:18.0.13-r0
-A:ppc64le
-S:4401673
-I:21471232
-T:Nextcloud Password policy app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud
-
 C:Q1vL1jTreFXwWdq636x/NeRxIjY2o=
 P:libharu-dev
 V:2.3.0-r1
@@ -108736,21 +108796,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1583086942
 c:edf8341487e43bca57a3a810b7c5afff21967762
 D:so:libc.musl-ppc64le.so.1 so:libgeany.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-3.so.0
-
-C:Q1PtvMmbC1xd1YImd1zBsLvH49vKM=
-P:nextcloud-files_trashbin
-V:18.0.13-r0
-A:ppc64le
-S:138627
-I:1384448
-T:Nextcloud Deleted files app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud
 
 C:Q1ArdArRJVrAschcaxA5ng7wseim0=
 P:libwmf
@@ -109304,21 +109349,6 @@ m:Bart Ribbers <bribbers@disroot.org>
 t:1588757614
 c:a5c595923e1d76895b3113dae60b62c2cbfa9adb
 i:user-manager=5.18.5-r0 lang
-
-C:Q1vp4Cptpp8ty7okz+rQoqnPrcQVA=
-P:nextcloud-doc
-V:18.0.13-r0
-A:ppc64le
-S:21127594
-I:28647424
-T:A safe home for all your data (documentation)
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-i:docs nextcloud=18.0.13-r0
 
 C:Q1jlCkvpOcMLS3zVfY/9knS30CmBQ=
 P:perl-business-isbn-data-doc
@@ -111271,21 +111301,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1580598585
 c:d2d8c7385b0582928d8ffa96eea86888c8511c25
 D:perl-dbi
-
-C:Q15yepq5TKGn1kX7roWlCWajLxVKY=
-P:nextcloud-federation
-V:18.0.13-r0
-A:ppc64le
-S:74100
-I:909312
-T:Nextcloud Federation app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud
 
 C:Q1KOmhFs4Z4xzv2U1RnUR8uVVB9j8=
 P:libreofficekit
@@ -114489,21 +114504,6 @@ m:Marvin Steadfast <marvin@xsteadfastx.org>
 t:1585935700
 c:d4d3b143285dfac19774537974354ceb13eb1b11
 i:docs rofi=1.5.4-r2
-
-C:Q1qvXtp9MH0x4qd0dtxaTiE9HukbY=
-P:nextcloud-accessibility
-V:18.0.13-r0
-A:ppc64le
-S:771903
-I:2387968
-T:Nextcloud Accessibility app
-U:http://nextcloud.com
-L:AGPL-3.0-only
-o:nextcloud
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1610635524
-c:ebf75fec7d67c98747239822d282d7bd1e6978b9
-D:nextcloud
 
 C:Q1vNQ6slBJ/f+etpSJiki66kMG9X0=
 P:kdenetwork-filesharing-lang
