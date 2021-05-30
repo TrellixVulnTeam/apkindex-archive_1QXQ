@@ -562,7 +562,8 @@
     "ssh-ldap-pubkey": {
       "origin": "ssh-ldap-pubkey",
       "versions": {
-        "1.3.2-r2": 1617646737
+        "1.3.2-r2": 1617646737,
+        "1.3.3-r0": 1622394446
       },
       "dependencies": [
         "python3",
@@ -573,8 +574,8 @@
       "provides": [
         "cmd:ssh-ldap-pubkey",
         "cmd:ssh-ldap-pubkey-wrapper",
-        "py3.9:ssh_ldap_pubkey-1.3.2-py3.9.egg-info=1.3.2-r2",
-        "py3.9:ssh_ldap_pubkey=1.3.2-r2"
+        "py3.9:ssh_ldap_pubkey-1.3.3-py3.9.egg-info=1.3.3-r0",
+        "py3.9:ssh_ldap_pubkey=1.3.3-r0"
       ]
     },
     "claws-mail-plugins-dillo": {
@@ -21637,7 +21638,8 @@
     "ssh-ldap-pubkey-doc": {
       "origin": "ssh-ldap-pubkey",
       "versions": {
-        "1.3.2-r2": 1617646737
+        "1.3.2-r2": 1617646737,
+        "1.3.3-r0": 1622394446
       }
     },
     "lshw-lang": {
@@ -90366,6 +90368,61 @@
         "cmd:autocutsel",
         "cmd:cutsel"
       ]
+    },
+    "opendmarc": {
+      "origin": "opendmarc",
+      "versions": {
+        "1.4.1.1-r2": 1622393763
+      },
+      "dependencies": [
+        "/bin/sh",
+        "so:libc.musl-mips64.so.1",
+        "so:libmilter.so.1.0.2",
+        "so:libopendmarc.so.2"
+      ],
+      "provides": [
+        "cmd:opendmarc",
+        "cmd:opendmarc-check",
+        "cmd:opendmarc-expire",
+        "cmd:opendmarc-import",
+        "cmd:opendmarc-importstats",
+        "cmd:opendmarc-params",
+        "cmd:opendmarc-reports"
+      ]
+    },
+    "opendmarc-doc": {
+      "origin": "opendmarc",
+      "versions": {
+        "1.4.1.1-r2": 1622393763
+      }
+    },
+    "opendmarc-dev": {
+      "origin": "opendmarc",
+      "versions": {
+        "1.4.1.1-r2": 1622393763
+      },
+      "dependencies": [
+        "opendmarc-libs=1.4.1.1-r2"
+      ]
+    },
+    "opendmarc-libs": {
+      "origin": "opendmarc",
+      "versions": {
+        "1.4.1.1-r2": 1622393763
+      },
+      "dependencies": [
+        "so:libc.musl-mips64.so.1",
+        "so:libspf2.so.2"
+      ],
+      "provides": [
+        "so:libopendmarc.so.2=2.0.3"
+      ]
+    },
+    "opendmarc-openrc": {
+      "origin": "opendmarc",
+      "versions": {
+        "1.4.1.1-r2": 1622393763
+      }
     }
   },
   "provide": {
@@ -96477,6 +96534,10 @@
       "libmediainfo.so.0": {
         "package": "libmediainfo",
         "version": "0.2103.0"
+      },
+      "libopendmarc.so.2": {
+        "package": "opendmarc-libs",
+        "version": "2.0.3"
       }
     },
     "package": {
