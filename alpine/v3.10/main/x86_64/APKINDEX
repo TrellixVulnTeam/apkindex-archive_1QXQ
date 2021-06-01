@@ -2060,6 +2060,22 @@ t:1567773763
 c:2fa274fe2c593821cb7d12715f6cd77210ee6348
 i:docs varnish=6.2.1-r0
 
+C:Q1lzpLsDHkrLH069Esbek2+XopMqs=
+P:cifs-utils
+V:6.13-r0
+A:x86_64
+S:35393
+I:131072
+T:CIFS filesystem user-space tools
+U:https://wiki.samba.org/index.php/LinuxCIFS_utils
+L:GPL-2.0-or-later
+o:cifs-utils
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1622511762
+c:d50f18f4ea837a5c96e76370ee9aab6972346f14
+D:so:libc.musl-x86_64.so.1 so:libcap.so.2 so:libkeyutils.so.1 so:libkrb5.so.3 so:libtalloc.so.2 so:libwbclient.so.0
+p:cmd:cifs.idmap cmd:cifs.upcall cmd:mount.cifs cmd:mount.smb3
+
 C:Q1itwFBSKuolDz25px99PJEcoZ9UI=
 P:taskd-doc
 V:1.1.0-r4
@@ -6720,6 +6736,20 @@ t:1557132630
 c:c7cca638e36fb13bd8066203b617f6b531a411a6
 D:so:libc.musl-x86_64.so.1
 p:cmd:sic
+
+C:Q1KHdkW63jhNDKI2xDC+1ES49NCv8=
+P:cifs-utils-dev
+V:6.13-r0
+A:x86_64
+S:3456
+I:20480
+T:CIFS filesystem user-space tools (development files)
+U:https://wiki.samba.org/index.php/LinuxCIFS_utils
+L:GPL-2.0-or-later
+o:cifs-utils
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1622511760
+c:d50f18f4ea837a5c96e76370ee9aab6972346f14
 
 C:Q1TpYljQviSSeCF3IRufwwMM0YpZc=
 P:gvim
@@ -14747,22 +14777,6 @@ c:7768569c07c52f01b11e62e523cd6ddcb4690889
 D:so:libc.musl-x86_64.so.1
 p:cmd:scanelf
 
-C:Q1AMpJKVyBBVifDeAdo+QiaadEiH4=
-P:cifs-utils
-V:6.9-r0
-A:x86_64
-S:33607
-I:126976
-T:CIFS filesystem user-space tools
-U:https://wiki.samba.org/index.php/LinuxCIFS_utils
-L:GPL-2.0-or-later
-o:cifs-utils
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557081465
-c:9392d6e920277f8db1e3da3f12fd6fd4fd1e051a
-D:so:libc.musl-x86_64.so.1 so:libcap.so.2 so:libkeyutils.so.1 so:libkrb5.so.3 so:libtalloc.so.2 so:libwbclient.so.0
-p:cmd:cifs.idmap cmd:cifs.upcall cmd:mount.cifs
-
 C:Q1gVJVsLMb5T/bYQcRSN7YzVWZDX0=
 P:fping
 V:4.2-r0
@@ -20610,20 +20624,6 @@ o:pigz
 t:1556886597
 c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 i:docs pigz=2.4-r0
-
-C:Q1wYXTsNrZ5VkMcqo81rgTO69q2jo=
-P:cifs-utils-dev
-V:6.9-r0
-A:x86_64
-S:3448
-I:20480
-T:CIFS filesystem user-space tools (development files)
-U:https://wiki.samba.org/index.php/LinuxCIFS_utils
-L:GPL-2.0-or-later
-o:cifs-utils
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557081465
-c:9392d6e920277f8db1e3da3f12fd6fd4fd1e051a
 
 C:Q1MnaRCyZKPb64Tp3V+n/CKWwNluA=
 P:nasm-doc
@@ -61471,21 +61471,6 @@ c:803c562e66fffe39278c4685fab318169da0fb62
 D:bash iproute2 logrotate syslinux so:libaio.so.1 so:libbz2.so.1 so:libc.musl-x86_64.so.1 so:libcurl.so.4 so:libgcc_s.so.1 so:libglib-2.0.so.0 so:libgnutls.so.30 so:liblzo2.so.2 so:libncursesw.so.6 so:libnettle.so.6 so:libpci.so.3 so:libpixman-1.so.0 so:libpython2.7.so.1.0 so:libspice-server.so.1 so:libxencall.so.1 so:libxenctrl.so.4.12 so:libxendevicemodel.so.1 so:libxenevtchn.so.1 so:libxenforeignmemory.so.1 so:libxenfsimage.so.4.12 so:libxengnttab.so.1 so:libxenguest.so.4.12 so:libxenlight.so.4.12 so:libxenstat.so.4.12 so:libxenstore.so.3.0 so:libxentoolcore.so.1 so:libxentoollog.so.1 so:libxlutil.so.4.12 so:libyajl.so.2 so:libz.so.1
 p:cmd:flask-get-bool cmd:flask-getenforce cmd:flask-label-pci cmd:flask-loadpolicy cmd:flask-set-bool cmd:flask-setenforce cmd:gdbsx cmd:qemu-img-xen cmd:qemu-nbd-xen cmd:xen-cpuid cmd:xen-detect cmd:xen-diag cmd:xen-hptool cmd:xen-hvmcrash cmd:xen-hvmctx cmd:xen-kdd cmd:xen-livepatch cmd:xen-lowmemd cmd:xen-mfndump cmd:xen-tmem-list-parse cmd:xenalyze cmd:xenbaked cmd:xencons cmd:xenconsoled cmd:xencov cmd:xencov_split cmd:xenlockprof cmd:xenmon cmd:xenperf cmd:xenpm cmd:xenpmd cmd:xenstore cmd:xenstore-chmod cmd:xenstore-control cmd:xenstore-exists cmd:xenstore-list cmd:xenstore-ls cmd:xenstore-read cmd:xenstore-rm cmd:xenstore-watch cmd:xenstore-write cmd:xenstored cmd:xentop cmd:xentrace cmd:xentrace_format cmd:xentrace_setmask cmd:xentrace_setsize cmd:xenwatchdogd cmd:xl
 
-C:Q1N7Dik3cqJDpoR8xMKwqE9P5KHsI=
-P:cifs-utils-doc
-V:6.9-r0
-A:x86_64
-S:27367
-I:69632
-T:CIFS filesystem user-space tools (documentation)
-U:https://wiki.samba.org/index.php/LinuxCIFS_utils
-L:GPL-2.0-or-later
-o:cifs-utils
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1557081464
-c:9392d6e920277f8db1e3da3f12fd6fd4fd1e051a
-i:docs cifs-utils=6.9-r0
-
 C:Q16DExPC2c1HpLsSuKD29CY6g6QW0=
 P:libxfixes-doc
 V:5.0.3-r2
@@ -69454,6 +69439,21 @@ t:1579877282
 c:28c5b6b96c641067fcdaf29f9e1f526eb28cd10f
 D:openrc>=0.24.1-r6 busybox>=1.26.1-r3 so:libc.musl-x86_64.so.1
 p:cmd:lbu cmd:lbu_commit cmd:lbu_exclude cmd:lbu_include cmd:lbu_status cmd:lbu_update cmd:setup-acf cmd:setup-alpine cmd:setup-apkcache cmd:setup-apkrepos cmd:setup-bootable cmd:setup-disk cmd:setup-dns cmd:setup-gparted-desktop cmd:setup-hostname cmd:setup-interfaces cmd:setup-keymap cmd:setup-lbu cmd:setup-mta cmd:setup-ntp cmd:setup-proxy cmd:setup-sshd cmd:setup-timezone cmd:setup-xen-dom0 cmd:setup-xorg-base cmd:uniso cmd:update-conf cmd:update-kernel
+
+C:Q1d5vkxyk5GWFmCcdrp/he68q2UiY=
+P:cifs-utils-doc
+V:6.13-r0
+A:x86_64
+S:29454
+I:73728
+T:CIFS filesystem user-space tools (documentation)
+U:https://wiki.samba.org/index.php/LinuxCIFS_utils
+L:GPL-2.0-or-later
+o:cifs-utils
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1622511759
+c:d50f18f4ea837a5c96e76370ee9aab6972346f14
+i:docs cifs-utils=6.13-r0
 
 C:Q1SKWFuyqcpn6nHYexdGIM+HO1bLM=
 P:boost-atomic
