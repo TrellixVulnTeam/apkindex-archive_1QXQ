@@ -708,21 +708,6 @@ c:1bdc89618fa13cd5d301d6374962cd4444a1fb5f
 D:graphicsmagick=1.3.36-r0 pkgconfig
 p:pc:GraphicsMagick++=1.3.36 pc:GraphicsMagick=1.3.36 pc:GraphicsMagickWand=1.3.36 cmd:GraphicsMagick++-config cmd:GraphicsMagick-config cmd:GraphicsMagickWand-config
 
-C:Q1idCkxtXL8/CPvl9RjpYjQP1QVq4=
-P:networkmanager-openrc
-V:1.26.6-r0
-A:ppc64le
-S:1624
-I:16384
-T:Network Management daemon (OpenRC init scripts)
-U:https://wiki.gnome.org/Projects/NetworkManager
-L:GPL-2.0-or-later
-o:networkmanager
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1617121751
-c:275203aab163376cd46968582c6e69ab45b20f7c
-i:openrc networkmanager=1.26.6-r0
-
 C:Q1DivkmEYQ8pmp5j4850ZGZ1NQGSo=
 P:faenza-icon-theme-zim
 V:1.3.1-r6
@@ -2563,6 +2548,22 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1600709937
 c:f73e5879ba0577713eee85e89cc4569e620fe537
 
+C:Q18oNAa09sWIkfHYMb8OzMZ6DMy54=
+P:networkmanager-elogind-openrc
+V:1.26.6-r1
+A:ppc64le
+S:1639
+I:16384
+T:Network Management daemon (with elogind hibernation support) (OpenRC init scripts)
+U:https://wiki.gnome.org/Projects/NetworkManager
+L:GPL-2.0-or-later
+o:networkmanager-elogind
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1622751295
+c:74c31d2fab361c7d1583054653f296aed19ada0c
+p:networkmanager-openrc
+i:openrc networkmanager-elogind=1.26.6-r1
+
 C:Q1Uu7qbjisOu1OKcQJgwtXf2wjfUI=
 P:nq-doc
 V:0.3.1-r0
@@ -3301,6 +3302,21 @@ t:1500746534
 c:5e00acaac2f6aefc7932a4588ae0a5f4fb46b409
 D:lua5.1 so:libc.musl-ppc64le.so.1
 i:lua-term=0.07-r1 lua5.1
+
+C:Q1kkHokJV/DHCMyVW8LgVZ4dBIWuQ=
+P:networkmanager-bash-completion
+V:1.26.6-r1
+A:ppc64le
+S:2950
+I:24576
+T:Bash completions for networkmanager
+U:https://wiki.gnome.org/Projects/NetworkManager
+L:GPL-2.0-or-later
+o:networkmanager
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1622751154
+c:7f631fbda76500d5658af0d6b60ecfe39aba9438
+i:networkmanager=1.26.6-r1 bash-completion
 
 C:Q1w/uvJXjVPrgYvsqdS56jdC+DFIo=
 P:jenkins-openrc
@@ -11609,21 +11625,6 @@ c:c3c0a589e2574ed83a996f1942745376b1e2e441
 D:lua5.3
 i:lua-say=1.3-r1 lua5.3
 
-C:Q1fFuk+MaqKt7XgFoCXaxsf47DxUE=
-P:networkmanager-bash-completion
-V:1.26.6-r0
-A:ppc64le
-S:2970
-I:24576
-T:Bash completions for networkmanager
-U:https://wiki.gnome.org/Projects/NetworkManager
-L:GPL-2.0-or-later
-o:networkmanager
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1617121751
-c:275203aab163376cd46968582c6e69ab45b20f7c
-i:networkmanager=1.26.6-r0 bash-completion
-
 C:Q1jRHhMhsEsc51NZI7GRaSb5kE3zs=
 P:netcdf-doc
 V:4.7.4-r1
@@ -11779,6 +11780,23 @@ t:1610010068
 c:a3a08ceaa89929a5e78d177b959c6475f8bda78c
 D:python3 py3-gobject3 gtk+3.0 gst-plugins-good at-spi2-core py3-atspi atk py3-xdg
 i:orca=3.38.2-r0 lang
+
+C:Q1mm/UdzRUp7EiO5n8rFKpKgwIshQ=
+P:networkmanager-elogind-lang
+V:1.26.6-r1
+A:ppc64le
+S:2255982
+I:8273920
+T:Languages for package networkmanager-elogind
+U:https://wiki.gnome.org/Projects/NetworkManager
+L:GPL-2.0-or-later
+o:networkmanager-elogind
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1622751295
+c:74c31d2fab361c7d1583054653f296aed19ada0c
+D:iptables dbus mobile-broadband-provider-info openresolv
+p:networkmanager-lang
+i:networkmanager-elogind=1.26.6-r1 lang
 
 C:Q1qj3m8EJvys1gnGIiKoaLxoFcHNk=
 P:loksh
@@ -14003,6 +14021,22 @@ c:a5ffa436dca3f92bd69afc43b778b07d007a6c26
 D:so:libKF5AuthCore.so.5 so:libKF5Codecs.so.5 so:libKF5ConfigCore.so.5 so:libKF5ConfigGui.so.5 so:libKF5CoreAddons.so.5 so:libKF5GuiAddons.so.5 so:libKF5I18n.so.5 so:libKF5WidgetsAddons.so.5 so:libQt5Core.so.5 so:libQt5DBus.so.5 so:libQt5Gui.so.5 so:libQt5Widgets.so.5 so:libc.musl-ppc64le.so.1 so:libstdc++.so.6
 p:so:libKF5ConfigWidgets.so.5=5.78.0 cmd:preparetips5
 
+C:Q1Dx3hM2YlYHJgznhY3C6Yy1bcjb0=
+P:nss-tools
+V:3.66-r0
+A:ppc64le
+S:646644
+I:2146304
+T:Tools for the Network Security Services
+U:https://developer.mozilla.org/docs/Mozilla/Projects/NSS
+L:MPL-2.0
+o:nss
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1622748431
+c:2dd0b8f3deecd0f6c3878b77c7fd45af66d389bc
+D:so:libc.musl-ppc64le.so.1 so:libnspr4.so so:libnss3.so so:libnssutil3.so so:libplc4.so so:libplds4.so so:libsmime3.so so:libssl3.so so:libz.so.1
+p:cmd:certutil cmd:cmsutil cmd:crlutil cmd:modutil cmd:pk12util cmd:shlibsign cmd:signtool cmd:signver cmd:ssltap
+
 C:Q1cJo7at6VXghuqQCGapD6hpMEkUY=
 P:ii
 V:1.8-r2
@@ -15258,6 +15292,22 @@ o:fstrcmp
 m:Bart Ribbers <bribbers@disroot.org>
 t:1574436266
 c:58233c1293524fe21c314c99ef17a1f5ced444b6
+
+C:Q1hz+oy0/TDH7WpM6tY89R4ZKUKw4=
+P:networkmanager-lang
+V:1.26.6-r1
+A:ppc64le
+S:2255967
+I:8273920
+T:Languages for package networkmanager
+U:https://wiki.gnome.org/Projects/NetworkManager
+L:GPL-2.0-or-later
+o:networkmanager
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1622751154
+c:7f631fbda76500d5658af0d6b60ecfe39aba9438
+D:iptables dbus mobile-broadband-provider-info
+i:networkmanager=1.26.6-r1 lang
 
 C:Q1+A4CQicVrYt7MqllKEo2nJ4ncGI=
 P:sane-backend-mustek_usb
@@ -20692,22 +20742,6 @@ m:wener <wenermail@gmail.com>
 t:1609231066
 c:a399a0f8a4c1e3f7e2cf33f95855e308f28c7ced
 i:docs usbip-utils=5.4.55-r0
-
-C:Q1WqHI2v7ZQyIYcTjZ58Z1piMgp5o=
-P:nss-tools
-V:3.63-r1
-A:ppc64le
-S:616403
-I:2043904
-T:Tools for the Network Security Services
-U:https://developer.mozilla.org/docs/Mozilla/Projects/NSS
-L:MPL-2.0
-o:nss
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1618331106
-c:4220f446977e947f007725e43832560e3819731a
-D:so:libc.musl-ppc64le.so.1 so:libnspr4.so so:libnss3.so so:libnssutil3.so so:libplc4.so so:libplds4.so so:libsmime3.so so:libssl3.so so:libz.so.1
-p:cmd:certutil cmd:cmsutil cmd:crlutil cmd:modutil cmd:pk12util cmd:shlibsign cmd:signtool cmd:signver cmd:ssltap
 
 C:Q12sbwHBotzqsal+sou81PEhJJKJA=
 P:pacman-bash-completion
@@ -27040,6 +27074,22 @@ o:py3-core-api
 t:1572968038
 c:eb8529f814e3649190e47eebc1ca9e75f82ed9ba
 D:py3-coreschema py3-itypes py3-requests py3-uritemplate
+
+C:Q1nZdtc9EyI0yHx4ZQwaO9c99ZvB4=
+P:networkmanager-elogind-doc
+V:1.26.6-r1
+A:ppc64le
+S:2115
+I:32768
+T:Network Management daemon (with elogind hibernation support) (documentation)
+U:https://wiki.gnome.org/Projects/NetworkManager
+L:GPL-2.0-or-later
+o:networkmanager-elogind
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1622751295
+c:74c31d2fab361c7d1583054653f296aed19ada0c
+p:networkmanager-doc
+i:docs networkmanager-elogind=1.26.6-r1
 
 C:Q1rRVp5MNeeWWSLhdTJ0EDNKSemtA=
 P:faenza-icon-theme-shotwell
@@ -39582,20 +39632,6 @@ t:1619417572
 c:ce466a0fd7f89fe2c9c24d0e7d46af8c5ecae678
 D:so:libc.musl-ppc64le.so.1 so:libepoxy.so.0
 
-C:Q1zaqqIYGB4iBA7Eb12VWW0d7aNEs=
-P:nss-static
-V:3.63-r1
-A:ppc64le
-S:1470257
-I:6889472
-T:Mozilla Network Security Services (static library)
-U:https://developer.mozilla.org/docs/Mozilla/Projects/NSS
-L:MPL-2.0
-o:nss
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1618331106
-c:4220f446977e947f007725e43832560e3819731a
-
 C:Q1fgQ8NlIuKtORRuF5WnR5TX8Bby4=
 P:unicode-character-database
 V:13.0.0-r1
@@ -40182,21 +40218,6 @@ t:1607102264
 c:6f54e85b2847e896452cfcce0fd0fed7d1d7e923
 D:py3-aiohttp py3-attrs py3-commonmark py3-lxml py3-ruamel.yaml py3-sqlalchemy python3
 
-C:Q1GJ4R/J/SV3k0geC3KR8R3mJqFhw=
-P:networkmanager-doc
-V:1.26.6-r0
-A:ppc64le
-S:2097
-I:32768
-T:Network Management daemon (documentation)
-U:https://wiki.gnome.org/Projects/NetworkManager
-L:GPL-2.0-or-later
-o:networkmanager
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1617121751
-c:275203aab163376cd46968582c6e69ab45b20f7c
-i:docs networkmanager=1.26.6-r0
-
 C:Q1OYYHwmBqH2N2dIqhPB/za7dcavo=
 P:udevil
 V:0.4.4-r3
@@ -40577,6 +40598,20 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1603630733
 c:6fdaf402837719cb279b0df05be00e924f65405e
 i:docs libxscrnsaver=1.2.3-r0
+
+C:Q1HaIU4pwQE00DMU4RLzk0FipF6lk=
+P:nss-static
+V:3.66-r0
+A:ppc64le
+S:1486703
+I:6938624
+T:Mozilla Network Security Services (static library)
+U:https://developer.mozilla.org/docs/Mozilla/Projects/NSS
+L:MPL-2.0
+o:nss
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1622748431
+c:2dd0b8f3deecd0f6c3878b77c7fd45af66d389bc
 
 C:Q13T39DFoVaoIdPH6Viyv+5ej0Dcs=
 P:dwarf-tools
@@ -41048,22 +41083,6 @@ c:a26d70ac45cacbc9099848d926e45185e4ad1e22
 D:gcc libc-dev chicken-dev chicken-libs so:libc.musl-ppc64le.so.1 so:libchicken.so.11
 p:cmd:chicken cmd:chicken-do cmd:chicken-install cmd:chicken-profile cmd:chicken-status cmd:chicken-uninstall cmd:csc cmd:csi
 
-C:Q17oDrkLhAbc8GXU75s1xGcwp8efQ=
-P:nss
-V:3.63-r1
-A:ppc64le
-S:1683119
-I:4943872
-T:Mozilla Network Security Services
-U:https://developer.mozilla.org/docs/Mozilla/Projects/NSS
-L:MPL-2.0
-o:nss
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1618331106
-c:4220f446977e947f007725e43832560e3819731a
-D:so:libc.musl-ppc64le.so.1 so:libnspr4.so so:libplc4.so so:libplds4.so so:libsqlite3.so.0
-p:so:libfreebl3.so=63 so:libnss3.so=63 so:libnssckbi-testlib.so=63 so:libnssckbi.so=63 so:libnssdbm3.so=63 so:libnsssysinit.so=63 so:libnssutil3.so=63 so:libsmime3.so=63 so:libsoftokn3.so=63 so:libssl3.so=63
-
 C:Q1MGOkJFpYlWk5eGeEsLLua4PDfys=
 P:xf86-video-sunleo-doc
 V:1.2.2-r3
@@ -41309,23 +41328,6 @@ t:1599471450
 c:5cdd0f02ab66b316850be9d21c4451b4bd301c7a
 D:so:libc.musl-ppc64le.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8 so:libsoup-2.4.so.1 so:libtotem-plparser.so.18
 p:so:libgrilo-0.3.so.0=0.313.1 so:libgrlnet-0.3.so.0=0.313.0 so:libgrlpls-0.3.so.0=0.313.0
-
-C:Q1XG43ehtC9wT2rJv1AXvsUu2Y2GM=
-P:networkmanager-elogind
-V:1.26.6-r0
-A:ppc64le
-S:3643524
-I:11706368
-T:Network Management daemon (with elogind hibernation support)
-U:https://wiki.gnome.org/Projects/NetworkManager
-L:GPL-2.0-or-later
-o:networkmanager-elogind
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1617121751
-c:2f0cab651f06ab11a63d06a010dc5e29a11bd84c
-D:iptables dbus mobile-broadband-provider-info openresolv /bin/sh so:libc.musl-ppc64le.so.1 so:libcurl.so.4 so:libelogind.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8 so:libjansson.so.4 so:libmm-glib.so.0 so:libndp.so.0 so:libnewt.so.0.52 so:libnspr4.so so:libnss3.so so:libpsl.so.5 so:libreadline.so.8 so:libsmime3.so so:libudev.so.1 so:libuuid.so.1
-p:networkmanager so:libnm-device-plugin-adsl.so=0 so:libnm-device-plugin-bluetooth.so=0 so:libnm-device-plugin-ovs.so=0 so:libnm-device-plugin-wifi.so=0 so:libnm-device-plugin-wwan.so=0 so:libnm-ppp-plugin.so=0 so:libnm-settings-plugin-ifupdown.so=0 so:libnm-wwan.so=0 so:libnm.so.0=0.1.0 cmd:NetworkManager cmd:nm-online cmd:nmcli cmd:nmtui cmd:nmtui-connect cmd:nmtui-edit cmd:nmtui-hostname
-i:networkmanager elogind
 
 C:Q1vfEngxNBicwfQv05GcBEicMXPig=
 P:kidletime-doc
@@ -41768,22 +41770,6 @@ t:1538845815
 c:0ed5524b742b317bdcc9b7b26dd4033369e6c2f8
 D:so:libX11.so.6 so:libc.musl-ppc64le.so.1
 p:so:libXpresent.so.1=1.0.0
-
-C:Q1641vqIcSJVNll0YHOdyuFDMAZoQ=
-P:networkmanager
-V:1.26.6-r0
-A:ppc64le
-S:3641769
-I:11702272
-T:Network Management daemon
-U:https://wiki.gnome.org/Projects/NetworkManager
-L:GPL-2.0-or-later
-o:networkmanager
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1617121751
-c:275203aab163376cd46968582c6e69ab45b20f7c
-D:iptables dbus mobile-broadband-provider-info /bin/sh so:libc.musl-ppc64le.so.1 so:libcurl.so.4 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8 so:libjansson.so.4 so:libmm-glib.so.0 so:libndp.so.0 so:libnewt.so.0.52 so:libnspr4.so so:libnss3.so so:libpsl.so.5 so:libreadline.so.8 so:libsmime3.so so:libudev.so.1 so:libuuid.so.1
-p:so:libnm-device-plugin-adsl.so=0 so:libnm-device-plugin-bluetooth.so=0 so:libnm-device-plugin-ovs.so=0 so:libnm-device-plugin-wifi.so=0 so:libnm-device-plugin-wwan.so=0 so:libnm-ppp-plugin.so=0 so:libnm-settings-plugin-ifupdown.so=0 so:libnm-wwan.so=0 so:libnm.so.0=0.1.0 cmd:NetworkManager cmd:nm-online cmd:nmcli cmd:nmtui cmd:nmtui-connect cmd:nmtui-edit cmd:nmtui-hostname
 
 C:Q1fCmRJPjxhr96TzaGSkeNYh3gPVI=
 P:gtkmm3-dev
@@ -48300,22 +48286,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1601182512
 c:f0a5b8e864df10d818ccb4aa47e85972782dada4
 D:perl so:libc.musl-ppc64le.so.1
-
-C:Q1ov54OD+nW5/PX8tTA0M7uZGBipM=
-P:networkmanager-elogind-doc
-V:1.26.6-r0
-A:ppc64le
-S:2135
-I:32768
-T:Network Management daemon (with elogind hibernation support) (documentation)
-U:https://wiki.gnome.org/Projects/NetworkManager
-L:GPL-2.0-or-later
-o:networkmanager-elogind
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1617121751
-c:2f0cab651f06ab11a63d06a010dc5e29a11bd84c
-p:networkmanager-doc
-i:docs networkmanager-elogind=1.26.6-r0
 
 C:Q1M549cXH1o6u70WTwa/lHPHXqW2Y=
 P:py3-pyzabbix
@@ -78396,6 +78366,22 @@ t:1615370188
 c:a505eafe23b52b5026f4b950cbc3fc2e184bc770
 i:analitza=20.12.3-r0 lang
 
+C:Q1gGgWnw84NwmsQy70/bCxM60+dAo=
+P:networkmanager
+V:1.26.6-r1
+A:ppc64le
+S:3640599
+I:11694080
+T:Network Management daemon
+U:https://wiki.gnome.org/Projects/NetworkManager
+L:GPL-2.0-or-later
+o:networkmanager
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1622751154
+c:7f631fbda76500d5658af0d6b60ecfe39aba9438
+D:iptables dbus mobile-broadband-provider-info /bin/sh so:libc.musl-ppc64le.so.1 so:libcurl.so.4 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8 so:libjansson.so.4 so:libmm-glib.so.0 so:libndp.so.0 so:libnewt.so.0.52 so:libnspr4.so so:libnss3.so so:libpsl.so.5 so:libreadline.so.8 so:libsmime3.so so:libudev.so.1 so:libuuid.so.1
+p:so:libnm-device-plugin-adsl.so=0 so:libnm-device-plugin-bluetooth.so=0 so:libnm-device-plugin-ovs.so=0 so:libnm-device-plugin-wifi.so=0 so:libnm-device-plugin-wwan.so=0 so:libnm-ppp-plugin.so=0 so:libnm-settings-plugin-ifupdown.so=0 so:libnm-wwan.so=0 so:libnm.so.0=0.1.0 cmd:NetworkManager cmd:nm-online cmd:nmcli cmd:nmtui cmd:nmtui-connect cmd:nmtui-edit cmd:nmtui-hostname
+
 C:Q18evDF2iTRQReW28s6qRppCiMLYg=
 P:polkit-elogind-lang
 V:0.118-r0
@@ -78410,22 +78396,6 @@ m:Rasmus Thomsen <oss@cogitri.dev>
 t:1599984264
 c:b08e374b9b97e27f7567ce104e1d21ba93ae4222
 i:polkit-elogind=0.118-r0 lang
-
-C:Q1gpEgdqCu16LlpGX7atimx4xbvN8=
-P:networkmanager-elogind-openrc
-V:1.26.6-r0
-A:ppc64le
-S:1661
-I:16384
-T:Network Management daemon (with elogind hibernation support) (OpenRC init scripts)
-U:https://wiki.gnome.org/Projects/NetworkManager
-L:GPL-2.0-or-later
-o:networkmanager-elogind
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1617121751
-c:2f0cab651f06ab11a63d06a010dc5e29a11bd84c
-p:networkmanager-openrc
-i:openrc networkmanager-elogind=1.26.6-r0
 
 C:Q1cw+YaDd/YxfxChKtfL4x+IP/4sI=
 P:telepathy-logger
@@ -79312,22 +79282,6 @@ m:Alan Lacerda <alacerda@alpinelinux.org>
 t:1597431494
 c:11b92014df1a8a496085b9ad6f15b6acbfc61547
 i:docs mate-settings-daemon=1.24.1-r0
-
-C:Q1vVnp2gA2nVqf3TybLIlC5aHdL8I=
-P:networkmanager-elogind-dev
-V:1.26.6-r0
-A:ppc64le
-S:418200
-I:4259840
-T:Network Management daemon (with elogind hibernation support) (development files)
-U:https://wiki.gnome.org/Projects/NetworkManager
-L:GPL-2.0-or-later
-o:networkmanager-elogind
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1617121751
-c:2f0cab651f06ab11a63d06a010dc5e29a11bd84c
-D:networkmanager-elogind=1.26.6-r0 pc:gio-2.0 pkgconfig
-p:networkmanager-dev pc:libnm=1.26.6
 
 C:Q1rcbn8oEbf0QFMYRtYT8IXtwqrq0=
 P:kcoreaddons-dev
@@ -85276,6 +85230,21 @@ t:1615370188
 c:a505eafe23b52b5026f4b950cbc3fc2e184bc770
 i:libkdepim=20.12.3-r0 lang
 
+C:Q14TIjl3aMgTSNSnEeQGKakIIyBdU=
+P:networkmanager-doc
+V:1.26.6-r1
+A:ppc64le
+S:2073
+I:32768
+T:Network Management daemon (documentation)
+U:https://wiki.gnome.org/Projects/NetworkManager
+L:GPL-2.0-or-later
+o:networkmanager
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1622751154
+c:7f631fbda76500d5658af0d6b60ecfe39aba9438
+i:docs networkmanager=1.26.6-r1
+
 C:Q1ZBoGf7VSw3rLKsy5Ew19kVEEUL8=
 P:okular-common
 V:20.12.3-r0
@@ -88786,6 +88755,22 @@ t:1607566693
 c:59520261de461245485843ebca5c40e188fcaa8d
 D:so:libc.musl-ppc64le.so.1
 
+C:Q100u+cWPrrnpV/xHj5arQaaPnY7E=
+P:networkmanager-elogind-bash-completion
+V:1.26.6-r1
+A:ppc64le
+S:2965
+I:24576
+T:Bash completions for networkmanager-elogind
+U:https://wiki.gnome.org/Projects/NetworkManager
+L:GPL-2.0-or-later
+o:networkmanager-elogind
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1622751295
+c:74c31d2fab361c7d1583054653f296aed19ada0c
+p:networkmanager-bash-completion
+i:networkmanager-elogind=1.26.6-r1 bash-completion
+
 C:Q1dUbc9L6dy68n5K+z2sAwwXT1JAQ=
 P:exfatprogs-doc
 V:1.1.0-r0
@@ -91151,6 +91136,22 @@ m:Stuart Cardall <developer@it-offshore.co.uk>
 t:1594393867
 c:59c24d6f89b6ee0aa2e6a1ddf3a8371f686de8fc
 i:docs virt-viewer=9.0-r0
+
+C:Q1SIg54KIijIeoVoDbI1eXAqhY9qo=
+P:networkmanager-dev
+V:1.26.6-r1
+A:ppc64le
+S:418137
+I:4259840
+T:Network Management daemon (development files)
+U:https://wiki.gnome.org/Projects/NetworkManager
+L:GPL-2.0-or-later
+o:networkmanager
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1622751154
+c:7f631fbda76500d5658af0d6b60ecfe39aba9438
+D:networkmanager=1.26.6-r1 pc:gio-2.0 pkgconfig
+p:pc:libnm=1.26.6
 
 C:Q1eegD9EiWGLCBRMtVouI6uXM/mYg=
 P:calcurse
@@ -100425,22 +100426,6 @@ t:1583243254
 c:6f937482cc2bda1cf1957d9c3c64ead7a95aaeb3
 D:sg3_utils=1.45-r0
 
-C:Q1Ce9TmAEhl3hMxgFDtctG9qbIPik=
-P:networkmanager-elogind-bash-completion
-V:1.26.6-r0
-A:ppc64le
-S:2988
-I:24576
-T:Bash completions for networkmanager-elogind
-U:https://wiki.gnome.org/Projects/NetworkManager
-L:GPL-2.0-or-later
-o:networkmanager-elogind
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1617121751
-c:2f0cab651f06ab11a63d06a010dc5e29a11bd84c
-p:networkmanager-bash-completion
-i:networkmanager-elogind=1.26.6-r0 bash-completion
-
 C:Q12e7bSqvv3BKO3KFMXHYt4mtvKrs=
 P:prosody-filer
 V:1.0.2-r1
@@ -103741,6 +103726,22 @@ t:1583168378
 c:ea340e8f46265076e808a25547688fe4c24ddd52
 D:qt5-qtbase-dev libdbusmenu-qt=0.9.3_pre20160218-r3 pkgconfig
 p:pc:dbusmenu-qt5=0.9.2
+
+C:Q102T3oGpMXwpYUBugPmCi8XH32Hg=
+P:nss-dev
+V:3.66-r0
+A:ppc64le
+S:285417
+I:1540096
+T:Development files for nss
+U:https://developer.mozilla.org/docs/Mozilla/Projects/NSS
+L:MPL-2.0
+o:nss
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1622748431
+c:2dd0b8f3deecd0f6c3878b77c7fd45af66d389bc
+D:nss nspr-dev pc:nspr>=3.66 pkgconfig
+p:pc:mozilla-nss=3.66 pc:nss-softokn=3.66 pc:nss-util=3.66 pc:nss=3.66 cmd:nss-config
 
 C:Q1xApA9GzXSpvhLHUNHphj/J6kIQA=
 P:autossh-doc
@@ -108412,6 +108413,21 @@ c:f8c8b4aa7aacf943b3fd151784bc80411be81c1a
 D:gsettings-desktop-schemas so:libarchive.so.13 so:libc.musl-ppc64le.so.1 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8 so:libsoup-2.4.so.1 so:libuuid.so.1 so:libyaml-0.so.2
 p:so:libappstream-glib.so.8=8.0.10 cmd:appstream-compose cmd:appstream-util
 
+C:Q1YwG8Jdd4jkjhIcYxtSvvS2bIs4Y=
+P:networkmanager-openrc
+V:1.26.6-r1
+A:ppc64le
+S:1598
+I:16384
+T:Network Management daemon (OpenRC init scripts)
+U:https://wiki.gnome.org/Projects/NetworkManager
+L:GPL-2.0-or-later
+o:networkmanager
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1622751154
+c:7f631fbda76500d5658af0d6b60ecfe39aba9438
+i:openrc networkmanager=1.26.6-r1
+
 C:Q1xDHoDsaeAt1o9uOjWFoHrtWyi+U=
 P:katomic-lang
 V:20.12.3-r0
@@ -112706,22 +112722,6 @@ c:91bcdadc3f8742feb444c2221144b0d24d7b2c20
 D:openrc
 i:openrc salt-minion=3003-r0
 
-C:Q1J3sjefGzibg/8NDUZCMmhNz3eIo=
-P:networkmanager-lang
-V:1.26.6-r0
-A:ppc64le
-S:2256020
-I:8273920
-T:Languages for package networkmanager
-U:https://wiki.gnome.org/Projects/NetworkManager
-L:GPL-2.0-or-later
-o:networkmanager
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1617121751
-c:275203aab163376cd46968582c6e69ab45b20f7c
-D:iptables dbus mobile-broadband-provider-info
-i:networkmanager=1.26.6-r0 lang
-
 C:Q1e34l+3xGvpYLLxACaiWeMFuaTl4=
 P:xauth
 V:1.1-r0
@@ -113298,6 +113298,22 @@ t:1620227767
 c:11efd457db87f61d294a76b0d29651eac3457eb8
 D:exim so:libc.musl-ppc64le.so.1 so:libmariadb.so.3
 
+C:Q1giRrSdp0urR0m2l/eZq7hto7wzE=
+P:nss
+V:3.66-r0
+A:ppc64le
+S:1700490
+I:5046272
+T:Mozilla Network Security Services
+U:https://developer.mozilla.org/docs/Mozilla/Projects/NSS
+L:MPL-2.0
+o:nss
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1622748431
+c:2dd0b8f3deecd0f6c3878b77c7fd45af66d389bc
+D:so:libc.musl-ppc64le.so.1 so:libnspr4.so so:libplc4.so so:libplds4.so so:libsqlite3.so.0
+p:so:libfreebl3.so=66 so:libnss3.so=66 so:libnssckbi-testlib.so=66 so:libnssckbi.so=66 so:libnssdbm3.so=66 so:libnsssysinit.so=66 so:libnssutil3.so=66 so:libsmime3.so=66 so:libsoftokn3.so=66 so:libssl3.so=66
+
 C:Q14jIfvWqpbl6tyNI8WFDCz9Vw7sc=
 P:perl-xml-libxml-doc
 V:2.0206-r1
@@ -113850,23 +113866,6 @@ c:211a7af7fb70c76c84868401fe3c915f3a8c024d
 D:so:libQt5Core.so.5 so:libQt5Gui.so.5 so:libQt5Help.so.5 so:libQt5Network.so.5 so:libQt5PrintSupport.so.5 so:libQt5Sql.so.5 so:libQt5Widgets.so.5 so:libc.musl-ppc64le.so.1 so:libstdc++.so.6
 p:cmd:assistant-qt5
 
-C:Q1RQ2ls2pc/HahYiMcTJ+uh4DrIb8=
-P:networkmanager-elogind-lang
-V:1.26.6-r0
-A:ppc64le
-S:2256040
-I:8273920
-T:Languages for package networkmanager-elogind
-U:https://wiki.gnome.org/Projects/NetworkManager
-L:GPL-2.0-or-later
-o:networkmanager-elogind
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1617121751
-c:2f0cab651f06ab11a63d06a010dc5e29a11bd84c
-D:iptables dbus mobile-broadband-provider-info openresolv
-p:networkmanager-lang
-i:networkmanager-elogind=1.26.6-r0 lang
-
 C:Q1VS1402c1pTadyh0rVAqHRAvLxLs=
 P:djvulibre
 V:3.5.28-r0
@@ -114049,22 +114048,6 @@ t:1615370188
 c:a505eafe23b52b5026f4b950cbc3fc2e184bc770
 D:so:libKF5Archive.so.5 so:libKF5Completion.so.5 so:libKF5ConfigCore.so.5 so:libKF5ConfigGui.so.5 so:libKF5ConfigWidgets.so.5 so:libKF5CoreAddons.so.5 so:libKF5I18n.so.5 so:libKF5KIOCore.so.5 so:libKF5KIOWidgets.so.5 so:libKF5Kipi.so.32.0.0 so:libKF5WindowSystem.so.5 so:libKF5XmlGui.so.5 so:libQt5Core.so.5 so:libQt5Gui.so.5 so:libQt5Network.so.5 so:libQt5PrintSupport.so.5 so:libQt5Widgets.so.5 so:libQt5Xml.so.5 so:libQt5XmlPatterns.so.5 so:libc.musl-ppc64le.so.1 so:libstdc++.so.6
 p:so:libKF5kipiplugins.so.5.9.1=5.9.1
-
-C:Q11Z3fMWrZsMf97/HqDvXgX+hK0/0=
-P:cbindgen
-V:0.18.0-r0
-A:ppc64le
-S:2102455
-I:5873664
-T:Tool to generate C bindings from Rust code
-U:https://github.com/eqrion/cbindgen
-L:MPL-2.0
-o:cbindgen
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1617881720
-c:dc6f1317354094deee756ccc241303841b5399b0
-D:so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1
-p:cmd:cbindgen
 
 C:Q1ViNLdQMS9DUdwWnX3tJeQC5rayE=
 P:libhandy1-lang
@@ -119174,22 +119157,6 @@ c:a5ffa436dca3f92bd69afc43b778b07d007a6c26
 D:so:libQt5Core.so.5 so:libQt5Network.so.5 so:libc.musl-ppc64le.so.1 so:libstdc++.so.6
 p:so:libKF5Attica.so.5=5.78.0
 
-C:Q10S2bkK+I/kaRmbRNqzuSelFuKHo=
-P:networkmanager-dev
-V:1.26.6-r0
-A:ppc64le
-S:418166
-I:4259840
-T:Network Management daemon (development files)
-U:https://wiki.gnome.org/Projects/NetworkManager
-L:GPL-2.0-or-later
-o:networkmanager
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1617121751
-c:275203aab163376cd46968582c6e69ab45b20f7c
-D:networkmanager=1.26.6-r0 pc:gio-2.0 pkgconfig
-p:pc:libnm=1.26.6
-
 C:Q1k/DrMIhKGXdAuiga91+10aU045Q=
 P:dunst-doc
 V:1.5.0-r1
@@ -120778,22 +120745,6 @@ m:Timothy Legge <timlegge@gmail.com>
 t:1600709942
 c:b7adcbcfbf3492aee6b7884a3c3e185f598c3345
 i:docs perl-module-install-authorrequires=0.02-r1
-
-C:Q13PjKdHs3ghZBzGCHhilPVK1LwfI=
-P:nss-dev
-V:3.63-r1
-A:ppc64le
-S:284557
-I:1531904
-T:Development files for nss
-U:https://developer.mozilla.org/docs/Mozilla/Projects/NSS
-L:MPL-2.0
-o:nss
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1618331106
-c:4220f446977e947f007725e43832560e3819731a
-D:nss nspr-dev pc:nspr>=3.63 pkgconfig
-p:pc:mozilla-nss=3.63 pc:nss-softokn=3.63 pc:nss-util=3.63 pc:nss=3.63 cmd:nss-config
 
 C:Q17MoY1syRLO5mJEzOsVd4nsf+adU=
 P:libimobiledevice-doc
@@ -122692,6 +122643,23 @@ t:1608813739
 c:b3985a82f4167d9ccb37a9ea1a240bd835ae4384
 D:libxfce4util=4.16.0-r0 pc:glib-2.0 pkgconfig
 p:pc:libxfce4util-1.0=4.16.0
+
+C:Q104a0cDfY0Bxb4CgbMYfAoa/Dt1Q=
+P:networkmanager-elogind
+V:1.26.6-r1
+A:ppc64le
+S:3642188
+I:11698176
+T:Network Management daemon (with elogind hibernation support)
+U:https://wiki.gnome.org/Projects/NetworkManager
+L:GPL-2.0-or-later
+o:networkmanager-elogind
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1622751295
+c:74c31d2fab361c7d1583054653f296aed19ada0c
+D:iptables dbus mobile-broadband-provider-info openresolv /bin/sh so:libc.musl-ppc64le.so.1 so:libcurl.so.4 so:libelogind.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8 so:libjansson.so.4 so:libmm-glib.so.0 so:libndp.so.0 so:libnewt.so.0.52 so:libnspr4.so so:libnss3.so so:libpsl.so.5 so:libreadline.so.8 so:libsmime3.so so:libudev.so.1 so:libuuid.so.1
+p:networkmanager so:libnm-device-plugin-adsl.so=0 so:libnm-device-plugin-bluetooth.so=0 so:libnm-device-plugin-ovs.so=0 so:libnm-device-plugin-wifi.so=0 so:libnm-device-plugin-wwan.so=0 so:libnm-ppp-plugin.so=0 so:libnm-settings-plugin-ifupdown.so=0 so:libnm-wwan.so=0 so:libnm.so.0=0.1.0 cmd:NetworkManager cmd:nm-online cmd:nmcli cmd:nmtui cmd:nmtui-connect cmd:nmtui-edit cmd:nmtui-hostname
+i:networkmanager elogind
 
 C:Q1k/n5mNPyubxmLwOzV/he7Bfsxrk=
 P:libimobiledevice-dev
@@ -127682,6 +127650,22 @@ m:Kevin Daudt <kdaudt@alpinelinux.org>
 t:1600529934
 c:97009644a0c07e29619dcbf6bdab01b76b84435d
 D:python3 so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libmlt++.so.3 so:libmlt.so.6 so:libstdc++.so.6
+
+C:Q1gENUUPpTUprp2Io8SjiNbnQtIgI=
+P:networkmanager-elogind-dev
+V:1.26.6-r1
+A:ppc64le
+S:418176
+I:4259840
+T:Network Management daemon (with elogind hibernation support) (development files)
+U:https://wiki.gnome.org/Projects/NetworkManager
+L:GPL-2.0-or-later
+o:networkmanager-elogind
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1622751295
+c:74c31d2fab361c7d1583054653f296aed19ada0c
+D:networkmanager-elogind=1.26.6-r1 pc:gio-2.0 pkgconfig
+p:networkmanager-dev pc:libnm=1.26.6
 
 C:Q1IHhGOQrKcAokdOqj7wq9gdv8v3k=
 P:goffice-dbg
@@ -132932,6 +132916,22 @@ o:libreoffice
 m:Timo Teräs <timo.teras@iki.fi>
 t:1606949382
 c:bdc6188ddff7573f110130725f50e3960b17ba16
+
+C:Q1k+N58Asq3BH7SeKiN9DoMJ6IgFc=
+P:cbindgen
+V:0.19.0-r0
+A:ppc64le
+S:2101176
+I:5861376
+T:Tool to generate C bindings from Rust code
+U:https://github.com/eqrion/cbindgen
+L:MPL-2.0
+o:cbindgen
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1622748431
+c:e01de06ac6d251e8c6ea7ff50ed6ae929fc17bc4
+D:so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1
+p:cmd:cbindgen
 
 C:Q1tjCFSxbe4QS20IK/JWpaLUUq4NA=
 P:plasma-nm
