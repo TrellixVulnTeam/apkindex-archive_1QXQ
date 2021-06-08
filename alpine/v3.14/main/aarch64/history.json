@@ -34946,10 +34946,11 @@
     "libde265-dev": {
       "origin": "libde265",
       "versions": {
-        "1.0.8-r0": 1616018132
+        "1.0.8-r0": 1616018132,
+        "1.0.8-r1": 1623152388
       },
       "dependencies": [
-        "libde265=1.0.8-r0",
+        "libde265=1.0.8-r1",
         "pkgconfig"
       ],
       "provides": [
@@ -53682,7 +53683,8 @@
     "libde265": {
       "origin": "libde265",
       "versions": {
-        "1.0.8-r0": 1616018132
+        "1.0.8-r0": 1616018132,
+        "1.0.8-r1": 1623152388
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
@@ -53690,17 +53692,7 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "so:libde265.so.0=0.1.1",
-        "cmd:acceleration_speed",
-        "cmd:bjoentegaard",
-        "cmd:block-rate-estim",
-        "cmd:dec265",
-        "cmd:enc265",
-        "cmd:gen-enc-table",
-        "cmd:hdrcopy",
-        "cmd:rd-curves",
-        "cmd:tests",
-        "cmd:yuv-distortion"
+        "so:libde265.so.0=0.1.1"
       ]
     },
     "py3-sphinxcontrib-serializinghtml": {
@@ -56746,6 +56738,21 @@
       "versions": {
         "4.0.29-r1": 1623077227
       }
+    },
+    "libde265-examples": {
+      "origin": "libde265",
+      "versions": {
+        "1.0.8-r1": 1623152388
+      },
+      "dependencies": [
+        "libde265=1.0.8-r1",
+        "so:libc.musl-aarch64.so.1",
+        "so:libde265.so.0",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "cmd:libde265-dec265"
+      ]
     }
   },
   "provide": {
