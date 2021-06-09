@@ -8253,11 +8253,12 @@
     "openssh-server": {
       "origin": "openssh",
       "versions": {
-        "8.6_p1-r0": 1618943058
+        "8.6_p1-r0": 1618943058,
+        "8.6_p1-r1": 1623250839
       },
       "dependencies": [
-        "openssh-keygen",
-        "openssh-server-common",
+        "openssh-keygen=8.6_p1-r1",
+        "openssh-server-common=8.6_p1-r1",
         "so:libc.musl-ppc64le.so.1",
         "so:libcrypto.so.1.1",
         "so:libz.so.1"
@@ -10054,7 +10055,8 @@
     "openssh-sftp-server": {
       "origin": "openssh",
       "versions": {
-        "8.6_p1-r0": 1618943058
+        "8.6_p1-r0": 1618943058,
+        "8.6_p1-r1": 1623250839
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -11441,7 +11443,8 @@
     "openssh": {
       "origin": "openssh",
       "versions": {
-        "8.6_p1-r0": 1618943058
+        "8.6_p1-r0": 1618943058,
+        "8.6_p1-r1": 1623250839
       },
       "dependencies": [
         "openssh-client",
@@ -13840,7 +13843,8 @@
     "openssh-doc": {
       "origin": "openssh",
       "versions": {
-        "8.6_p1-r0": 1618943058
+        "8.6_p1-r0": 1618943058,
+        "8.6_p1-r1": 1623250839
       }
     },
     "ruby-sdbm": {
@@ -24753,7 +24757,8 @@
     "openssh-dbg": {
       "origin": "openssh",
       "versions": {
-        "8.6_p1-r0": 1618943058
+        "8.6_p1-r0": 1618943058,
+        "8.6_p1-r1": 1623250839
       },
       "dependencies": [
         "openssh-client",
@@ -25375,7 +25380,8 @@
     "openssh-keygen": {
       "origin": "openssh",
       "versions": {
-        "8.6_p1-r0": 1618943058
+        "8.6_p1-r0": 1618943058,
+        "8.6_p1-r1": 1623250839
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -26843,7 +26849,8 @@
       "origin": "alpine-base",
       "versions": {
         "3.14.0_alpha20210212-r0": 1613111967,
-        "3.14.0_rc1-r0": 1623089241
+        "3.14.0_rc1-r0": 1623089241,
+        "3.14.0_rc2-r0": 1623252817
       },
       "dependencies": [
         "alpine-baselayout",
@@ -30846,10 +30853,11 @@
     "openssh-keysign": {
       "origin": "openssh",
       "versions": {
-        "8.6_p1-r0": 1618943058
+        "8.6_p1-r0": 1618943058,
+        "8.6_p1-r1": 1623250839
       },
       "dependencies": [
-        "openssh-client",
+        "openssh-client=8.6_p1-r1",
         "so:libc.musl-ppc64le.so.1",
         "so:libcrypto.so.1.1",
         "so:libz.so.1"
@@ -31139,18 +31147,19 @@
     "openssh-server-pam": {
       "origin": "openssh",
       "versions": {
-        "8.6_p1-r0": 1618943058
+        "8.6_p1-r0": 1618943058,
+        "8.6_p1-r1": 1623250839
       },
       "dependencies": [
-        "openssh-keygen",
-        "openssh-server-common",
+        "openssh-keygen=8.6_p1-r1",
+        "openssh-server-common=8.6_p1-r1",
         "so:libc.musl-ppc64le.so.1",
         "so:libcrypto.so.1.1",
         "so:libpam.so.0",
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:sshd"
+        "cmd:sshd.pam"
       ]
     },
     "perl-html-scrubber-doc": {
@@ -31195,7 +31204,8 @@
     "sshfs": {
       "origin": "sshfs",
       "versions": {
-        "3.7.1-r0": 1604962009
+        "3.7.1-r0": 1604962009,
+        "3.7.2-r0": 1623252151
       },
       "dependencies": [
         "openssh-client",
@@ -36561,7 +36571,8 @@
     "openssh-server-common": {
       "origin": "openssh",
       "versions": {
-        "8.6_p1-r0": 1618943058
+        "8.6_p1-r0": 1618943058,
+        "8.6_p1-r1": 1623250839
       }
     },
     "squid-lang-az": {
@@ -55352,7 +55363,8 @@
     "sshfs-doc": {
       "origin": "sshfs",
       "versions": {
-        "3.7.1-r0": 1604962009
+        "3.7.1-r0": 1604962009,
+        "3.7.2-r0": 1623252151
       }
     },
     "nagios-plugins": {
@@ -56139,6 +56151,87 @@
       ],
       "provides": [
         "cmd:libde265-dec265"
+      ]
+    },
+    "openssh-client-common": {
+      "origin": "openssh",
+      "versions": {
+        "8.6_p1-r1": 1623250839
+      },
+      "dependencies": [
+        "openssh-client",
+        "openssh-sftp-server",
+        "openssh-server",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcrypto.so.1.1",
+        "so:libedit.so.0",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:findssl.sh",
+        "cmd:scp",
+        "cmd:sftp",
+        "cmd:ssh-add",
+        "cmd:ssh-agent",
+        "cmd:ssh-copy-id",
+        "cmd:ssh-keyscan",
+        "cmd:ssh-pkcs11-helper"
+      ]
+    },
+    "openssh-client-krb5": {
+      "origin": "openssh",
+      "versions": {
+        "8.6_p1-r1": 1623250839
+      },
+      "dependencies": [
+        "openssh-keygen=8.6_p1-r1",
+        "openssh-client-common=8.6_p1-r1",
+        "!openssh-client-default",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcrypto.so.1.1",
+        "so:libgssapi_krb5.so.2",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "openssh-client=8.6_p1-r1",
+        "cmd:ssh"
+      ]
+    },
+    "openssh-client-default": {
+      "origin": "openssh",
+      "versions": {
+        "8.6_p1-r1": 1623250839
+      },
+      "dependencies": [
+        "openssh-keygen=8.6_p1-r1",
+        "openssh-client-common=8.6_p1-r1",
+        "!openssh-client-krb5",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcrypto.so.1.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "openssh-client=8.6_p1-r1",
+        "cmd:ssh"
+      ]
+    },
+    "openssh-server-krb5": {
+      "origin": "openssh",
+      "versions": {
+        "8.6_p1-r1": 1623250839
+      },
+      "dependencies": [
+        "openssh-keygen=8.6_p1-r1",
+        "openssh-server-common=8.6_p1-r1",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcrypto.so.1.1",
+        "so:libgssapi_krb5.so.2",
+        "so:libkrb5.so.3",
+        "so:libpam.so.0",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:sshd.krb5"
       ]
     }
   },
@@ -62449,6 +62542,10 @@
       "mesa-vulkan-layer": {
         "package": "mesa-vulkan-layers",
         "version": "21.1.2-r0"
+      },
+      "openssh-client": {
+        "package": "openssh-client-default",
+        "version": "8.6_p1-r1"
       }
     }
   }
