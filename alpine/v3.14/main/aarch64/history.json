@@ -11601,14 +11601,15 @@
     "luajit-dev": {
       "origin": "luajit",
       "versions": {
-        "2.2.0-r3": 1607586811
+        "2.2.0-r3": 1607586811,
+        "2.1_p20210510-r0": 1623546813
       },
       "dependencies": [
-        "luajit=2.2.0-r3",
+        "luajit=2.1_p20210510-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:luajit=2.2.0"
+        "pc:luajit=2.1.0_beta3"
       ]
     },
     "dejagnu": {
@@ -11926,7 +11927,8 @@
     "luajit": {
       "origin": "luajit",
       "versions": {
-        "2.2.0-r3": 1607586811
+        "2.2.0-r3": 1607586811,
+        "2.1_p20210510-r0": 1623546813
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
@@ -11934,9 +11936,9 @@
       ],
       "provides": [
         "lua",
-        "so:libluajit-5.1.so.2=2.2.0",
+        "so:libluajit-5.1.so.2=2.1.0",
         "cmd:luajit",
-        "cmd:moonjit-2.2.0"
+        "cmd:luajit-2.1.0-beta3"
       ]
     },
     "perl-utils": {
@@ -47988,7 +47990,8 @@
     "luajit-doc": {
       "origin": "luajit",
       "versions": {
-        "2.2.0-r3": 1607586811
+        "2.2.0-r3": 1607586811,
+        "2.1_p20210510-r0": 1623546813
       }
     },
     "libxcb-static": {
@@ -57019,6 +57022,39 @@
       "provides": [
         "cmd:sshd.krb5"
       ]
+    },
+    "perl-parallel-forkmanager": {
+      "origin": "perl-parallel-forkmanager",
+      "versions": {
+        "2.02-r3": 1623545214
+      },
+      "dependencies": [
+        "perl-moo"
+      ]
+    },
+    "perl-parallel-forkmanager-doc": {
+      "origin": "perl-parallel-forkmanager",
+      "versions": {
+        "2.02-r3": 1623545214
+      }
+    },
+    "perl-moo": {
+      "origin": "perl-moo",
+      "versions": {
+        "2.005004-r1": 1623545214
+      },
+      "dependencies": [
+        "perl",
+        "perl-class-method-modifiers",
+        "perl-sub-quote",
+        "perl-role-tiny"
+      ]
+    },
+    "perl-moo-doc": {
+      "origin": "perl-moo",
+      "versions": {
+        "2.005004-r1": 1623545214
+      }
     }
   },
   "provide": {
@@ -58185,7 +58221,7 @@
       },
       "libluajit-5.1.so.2": {
         "package": "luajit",
-        "version": "2.2.0"
+        "version": "2.1.0"
       },
       "libdnet.so.1": {
         "package": "libdnet",
@@ -62614,7 +62650,7 @@
         "version": "4.0.3-r1"
       },
       "lua": {
-        "package": "lua5.4",
+        "package": "luajit",
         "version": 0
       },
       "llvm-dev": {

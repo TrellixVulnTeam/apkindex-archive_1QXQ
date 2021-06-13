@@ -2327,14 +2327,15 @@
     "luajit-dev": {
       "origin": "luajit",
       "versions": {
-        "2.2.0-r3": 1607586811
+        "2.2.0-r3": 1607586811,
+        "2.1_p20210510-r0": 1623546813
       },
       "dependencies": [
-        "luajit=2.2.0-r3",
+        "luajit=2.1_p20210510-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:luajit=2.2.0"
+        "pc:luajit=2.1.0_beta3"
       ]
     },
     "lua5.1-optarg": {
@@ -13506,7 +13507,8 @@
     "luajit": {
       "origin": "luajit",
       "versions": {
-        "2.2.0-r3": 1607586811
+        "2.2.0-r3": 1607586811,
+        "2.1_p20210510-r0": 1623546813
       },
       "dependencies": [
         "so:libc.musl-armv7.so.1",
@@ -13514,9 +13516,9 @@
       ],
       "provides": [
         "lua",
-        "so:libluajit-5.1.so.2=2.2.0",
+        "so:libluajit-5.1.so.2=2.1.0",
         "cmd:luajit",
-        "cmd:moonjit-2.2.0"
+        "cmd:luajit-2.1.0-beta3"
       ]
     },
     "samba-winbind": {
@@ -44581,7 +44583,8 @@
     "luajit-doc": {
       "origin": "luajit",
       "versions": {
-        "2.2.0-r3": 1607586811
+        "2.2.0-r3": 1607586811,
+        "2.1_p20210510-r0": 1623546813
       }
     },
     "asciidoc": {
@@ -56440,6 +56443,39 @@
       "provides": [
         "cmd:sshd.krb5"
       ]
+    },
+    "perl-moo": {
+      "origin": "perl-moo",
+      "versions": {
+        "2.005004-r1": 1623545214
+      },
+      "dependencies": [
+        "perl",
+        "perl-class-method-modifiers",
+        "perl-sub-quote",
+        "perl-role-tiny"
+      ]
+    },
+    "perl-parallel-forkmanager": {
+      "origin": "perl-parallel-forkmanager",
+      "versions": {
+        "2.02-r3": 1623545214
+      },
+      "dependencies": [
+        "perl-moo"
+      ]
+    },
+    "perl-parallel-forkmanager-doc": {
+      "origin": "perl-parallel-forkmanager",
+      "versions": {
+        "2.02-r3": 1623545214
+      }
+    },
+    "perl-moo-doc": {
+      "origin": "perl-moo",
+      "versions": {
+        "2.005004-r1": 1623545214
+      }
     }
   },
   "provide": {
@@ -58620,7 +58656,7 @@
       },
       "libluajit-5.1.so.2": {
         "package": "luajit",
-        "version": "2.2.0"
+        "version": "2.1.0"
       },
       "libs6_linux_init.so.1.0": {
         "package": "s6-linux-init",
