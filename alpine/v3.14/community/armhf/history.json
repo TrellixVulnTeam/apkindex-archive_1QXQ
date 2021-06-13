@@ -110925,6 +110925,29 @@
       "versions": {
         "2.0.10-r0": 1623585501
       }
+    },
+    "java-jffi": {
+      "origin": "java-jffi",
+      "versions": {
+        "1.3.4-r1": 1623619158
+      },
+      "dependencies": [
+        "java-jffi-native=1.3.4-r1",
+        "java-jre-headless"
+      ]
+    },
+    "java-jffi-native": {
+      "origin": "java-jffi",
+      "versions": {
+        "1.3.4-r1": 1623619158
+      },
+      "dependencies": [
+        "so:libc.musl-armhf.so.1",
+        "so:libgcc_s.so.1"
+      ],
+      "provides": [
+        "so:libjffi-1.2.so=0"
+      ]
     }
   },
   "provide": {
@@ -121954,6 +121977,10 @@
       "libstemmer.so.2": {
         "package": "libstemmer",
         "version": "2.1.0"
+      },
+      "libjffi-1.2.so": {
+        "package": "java-jffi-native",
+        "version": "0"
       }
     }
   }
