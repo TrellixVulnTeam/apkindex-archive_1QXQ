@@ -18282,10 +18282,12 @@
     "java-jffi": {
       "origin": "java-jffi",
       "versions": {
-        "1.3.1-r0": 1607104735
+        "1.3.1-r0": 1607104735,
+        "1.3.4-r0": 1623588670
       },
       "dependencies": [
-        "java-jffi-native"
+        "java-jffi-native=1.3.4-r0",
+        "java-jre-headless"
       ]
     },
     "flatpak-dev": {
@@ -27525,10 +27527,10 @@
     "java-jffi-native": {
       "origin": "java-jffi",
       "versions": {
-        "1.3.1-r0": 1607104735
+        "1.3.1-r0": 1607104735,
+        "1.3.4-r0": 1623588670
       },
       "dependencies": [
-        "openjdk8-jre-base",
         "so:libc.musl-x86_64.so.1"
       ],
       "provides": [
@@ -35103,12 +35105,13 @@
     "jruby-irb": {
       "origin": "jruby",
       "versions": {
-        "9.2.16.0-r0": 1616791566
+        "9.2.16.0-r0": 1616791566,
+        "9.2.18.0-r0": 1623588992
       },
       "dependencies": [
         "jruby",
         "jruby-readline",
-        "jruby=9.2.16.0-r0"
+        "jruby=9.2.18.0-r0"
       ]
     },
     "qemu-mipsn32el": {
@@ -41058,7 +41061,8 @@
     "jruby-readline": {
       "origin": "jruby",
       "versions": {
-        "9.2.16.0-r0": 1616791566
+        "9.2.16.0-r0": 1616791566,
+        "9.2.18.0-r0": 1623588992
       },
       "dependencies": [
         "jruby",
@@ -63167,7 +63171,8 @@
     "zoxide": {
       "origin": "zoxide",
       "versions": {
-        "0.7.0-r0": 1619995787
+        "0.7.0-r0": 1619995787,
+        "0.7.2-r0": 1623586950
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
@@ -80955,7 +80960,8 @@
     "jruby-rake": {
       "origin": "jruby",
       "versions": {
-        "9.2.16.0-r0": 1616791566
+        "9.2.16.0-r0": 1616791566,
+        "9.2.18.0-r0": 1623588992
       },
       "dependencies": [
         "jruby"
@@ -120574,7 +120580,8 @@
     "jruby-webrick": {
       "origin": "jruby",
       "versions": {
-        "9.2.16.0-r0": 1616791566
+        "9.2.16.0-r0": 1616791566,
+        "9.2.18.0-r0": 1623588992
       },
       "dependencies": [
         "jruby"
@@ -129434,7 +129441,8 @@
     "jruby-libs": {
       "origin": "jruby",
       "versions": {
-        "9.2.16.0-r0": 1616791566
+        "9.2.16.0-r0": 1616791566,
+        "9.2.18.0-r0": 1623588992
       }
     },
     "nyancat": {
@@ -129499,13 +129507,14 @@
     "jruby": {
       "origin": "jruby",
       "versions": {
-        "9.2.16.0-r0": 1616791566
+        "9.2.16.0-r0": 1616791566,
+        "9.2.18.0-r0": 1623588992
       },
       "dependencies": [
-        "jruby-libs=9.2.16.0-r0",
-        "java-jffi-native>=1.2",
+        "jruby-libs=9.2.18.0-r0",
         "libc6-compat>=1.1.12-r5",
-        "openjdk8-jre-base"
+        "java-jffi-native>=1.2",
+        "java-jre-headless"
       ]
     },
     "giblib": {
@@ -133604,7 +133613,8 @@
     "jruby-rdoc": {
       "origin": "jruby",
       "versions": {
-        "9.2.16.0-r0": 1616791566
+        "9.2.16.0-r0": 1616791566,
+        "9.2.18.0-r0": 1623588992
       },
       "dependencies": [
         "jruby",
@@ -141689,6 +141699,26 @@
       "origin": "snowball",
       "versions": {
         "2.1.0-r1": 1623492345
+      }
+    },
+    "postgresql-pllua": {
+      "origin": "postgresql-pllua",
+      "versions": {
+        "2.0.10-r0": 1623585501
+      },
+      "dependencies": [
+        "postgresql",
+        "so:libc.musl-x86_64.so.1",
+        "so:libluajit-5.1.so.2"
+      ],
+      "provides": [
+        "pllua=2.0.10-r0"
+      ]
+    },
+    "postgresql-pllua-dev": {
+      "origin": "postgresql-pllua",
+      "versions": {
+        "2.0.10-r0": 1623585501
       }
     }
   },
@@ -156491,6 +156521,10 @@
       "poppler-qt4-21.06.1-0": {
         "package": "poppler-qt5",
         "version": 0
+      },
+      "pllua": {
+        "package": "postgresql-pllua",
+        "version": "2.0.10-r0"
       }
     }
   }

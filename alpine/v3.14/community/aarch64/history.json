@@ -120355,7 +120355,8 @@
     "zoxide": {
       "origin": "zoxide",
       "versions": {
-        "0.7.0-r0": 1619995787
+        "0.7.0-r0": 1619995787,
+        "0.7.2-r0": 1623586950
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
@@ -140065,6 +140066,26 @@
       "versions": {
         "2.1.0-r1": 1623492345
       }
+    },
+    "postgresql-pllua-dev": {
+      "origin": "postgresql-pllua",
+      "versions": {
+        "2.0.10-r0": 1623585501
+      }
+    },
+    "postgresql-pllua": {
+      "origin": "postgresql-pllua",
+      "versions": {
+        "2.0.10-r0": 1623585501
+      },
+      "dependencies": [
+        "postgresql",
+        "so:libc.musl-aarch64.so.1",
+        "so:libluajit-5.1.so.2"
+      ],
+      "provides": [
+        "pllua=2.0.10-r0"
+      ]
     }
   },
   "provide": {
@@ -141928,6 +141949,10 @@
       "poppler-qt4-21.06.1-0": {
         "package": "poppler-qt5",
         "version": 0
+      },
+      "pllua": {
+        "package": "postgresql-pllua",
+        "version": "2.0.10-r0"
       }
     },
     "so": {
