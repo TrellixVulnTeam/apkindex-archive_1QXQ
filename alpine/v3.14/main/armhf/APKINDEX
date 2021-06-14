@@ -522,21 +522,6 @@ c:81633f00dd52212d62c630bbf6f6c8a9bc1f29cd
 D:so:libaugeas.so.0 so:libc.musl-armhf.so.1 so:libfa.so.1 so:libgcc_s.so.1 so:libreadline.so.8
 p:cmd:augmatch cmd:augparse cmd:augtool cmd:fadot
 
-C:Q1B5aptWYps1mwq2/z3iZqjrT4rFU=
-P:wpa_supplicant-openrc
-V:2.9-r13
-A:armhf
-S:3027
-I:32768
-T:utility providing key negotiation for WPA wireless networks (OpenRC init scripts)
-U:https://w1.fi/wpa_supplicant/
-L:BSD-3-Clause
-o:wpa_supplicant
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1619356777
-c:a79191c3d4f47ca2a1626a0e63803a118c4a41c8
-i:openrc wpa_supplicant=2.9-r13
-
 C:Q1x7wgPz6MY9s5DjmUIZLYHw56BS8=
 P:acf-quagga
 V:0.10.1-r3
@@ -8879,22 +8864,6 @@ t:1619322721
 c:07b9e0b9807ccfa5fcac86af352476c329a7bd68
 D:kamailio so:libc.musl-armhf.so.1 so:librabbitmq.so.4 so:libuuid.so.1
 
-C:Q1zHzG2kOGFUNpj9RvEGkhbfrQLUU=
-P:hwids-udev
-V:20201207-r0
-A:armhf
-S:2810421
-I:16556032
-T:Hardware identification databases (udev integration)
-U:https://github.com/gentoo/hwids/
-L:BSD-3-Clause OR GPL-2.0-or-later
-o:hwids
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1607424016
-c:62314c7852880d031be469b3bb08cff2bef28e7f
-D:hwids-net hwids-pci hwids-usb
-i:hwids-usb=20201207-r0 eudev
-
 C:Q1PXfgVsF55qT/X0jqDHmh2f400ek=
 P:boost-dev
 V:1.76.0-r0
@@ -13638,6 +13607,21 @@ c:1118fff73bb8f3a967c12d42de2d8c4a0a7ed162
 D:/bin/sh so:libc.musl-armhf.so.1 so:libnetfilter_conntrack.so.3
 p:cmd:oidentd
 
+C:Q1mP/3QT8mku9hBNjZHnLoWW0HIZM=
+P:hwids-pci
+V:20210613-r0
+A:armhf
+S:295091
+I:1290240
+T:Hardware identification databases (PCI IDs)
+U:https://github.com/gentoo/hwids/
+L:BSD-3-Clause OR GPL-2.0-or-later
+o:hwids
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1623654962
+c:7411ae882f314e90710e6a45f5100f77f873979b
+p:hwdata-pci=20210613-r0
+
 C:Q1aQeJFSJXFIQZgSu6N+4Yjp8txsI=
 P:fuse-static
 V:2.9.9-r1
@@ -14951,6 +14935,21 @@ t:1621451371
 c:71192d999ad5cc8c91cbfec24de4e6fd41799562
 i:docs checkbashisms=2.21.2-r0
 
+C:Q11qYFAzlSJoV4xZXpsAVn9U+PgSY=
+P:hwids-doc
+V:20210613-r0
+A:armhf
+S:3561
+I:28672
+T:Hardware identification databases (documentation)
+U:https://github.com/gentoo/hwids/
+L:BSD-3-Clause OR GPL-2.0-or-later
+o:hwids
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1623654962
+c:7411ae882f314e90710e6a45f5100f77f873979b
+i:docs hwids=20210613-r0
+
 C:Q150wzsBDKyrdsp4hc1Anf80VrKfQ=
 P:sshfs-doc
 V:3.7.2-r0
@@ -15745,6 +15744,21 @@ t:1616579718
 c:a6a29b59574fe2eb241231ab5604780f0b4ee240
 D:so:libc.musl-armhf.so.1 so:libgmp.so.10 so:libhogweed.so.6 so:libnettle.so.8 so:libp11-kit.so.0 so:libtasn1.so.6 so:libunistring.so.2
 p:so:libgnutls.so.30=30.29.1
+
+C:Q1dZYuovBeVmNq+zoUKszs90gQDgo=
+P:hwids-net
+V:20210613-r0
+A:armhf
+S:1573994
+I:7282688
+T:Hardware identification databases (Networking OUIs)
+U:https://github.com/gentoo/hwids/
+L:Public-Domain
+o:hwids
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1623654962
+c:7411ae882f314e90710e6a45f5100f77f873979b
+p:hwdata-oui=20210613-r0
 
 C:Q1Bl5Pk/OHjv7uH0G6zZcoOv3AxAM=
 P:perl-datetime-format-mail-doc
@@ -17378,6 +17392,22 @@ c:0943d507137db5485ded9554e2a449a76b61de33
 D:logrotate
 i:squid=5.0.6-r0 lang-pl
 
+C:Q1010uH7SM/Kdh5Kcxjqu17qtwCYY=
+P:postfix-stone
+V:3.6.1-r0
+A:armhf
+S:28632
+I:102400
+T:Postfix simulation and testing tools
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1623649897
+c:edad4dfd661a04583e9bdbbc1661538cda3142e7
+D:musl>=1.1.24-r7 so:libc.musl-armhf.so.1 so:libpostfix-global.so so:libpostfix-util.so
+p:cmd:fsstone cmd:qmqp-sink cmd:qmqp-source cmd:smtp-sink cmd:smtp-source
+
 C:Q1hC7SReUoFPBrReB3RzX/jULpqx8=
 P:execline-static
 V:2.8.0.1-r0
@@ -17608,6 +17638,22 @@ t:1609082561
 c:276e0920ad8541e7ea88639a6871bb8ae3cce210
 D:shared-mime-info gtk-update-icon-cache /bin/sh so:libX11.so.6 so:libXcomposite.so.1 so:libXcursor.so.1 so:libXdamage.so.1 so:libXext.so.6 so:libXfixes.so.3 so:libXi.so.6 so:libXrandr.so.2 so:libXrender.so.1 so:libatk-1.0.so.0 so:libc.musl-armhf.so.1 so:libcairo.so.2 so:libcups.so.2 so:libfontconfig.so.1 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8 so:libpango-1.0.so.0 so:libpangocairo-1.0.so.0 so:libpangoft2-1.0.so.0
 p:so:libgailutil.so.18=18.0.1 so:libgdk-x11-2.0.so.0=0.2400.33 so:libgtk-x11-2.0.so.0=0.2400.33 cmd:gtk-query-immodules-2.0
+
+C:Q1JKmUJOdCKtmSYqjlndZjpp306O0=
+P:postfix-ldap
+V:3.6.1-r0
+A:armhf
+S:13182
+I:61440
+T:ldap map support for postfix
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1623649897
+c:edad4dfd661a04583e9bdbbc1661538cda3142e7
+D:so:libc.musl-armhf.so.1 so:liblber-2.4.so.2 so:libldap-2.4.so.2
+p:so:postfix-ldap.so=0
 
 C:Q1VcHQJ6uFYTp4WaXWAgD3ZHhIHqw=
 P:newt
@@ -18868,6 +18914,21 @@ o:grub
 m:Timo Teräs <timo.teras@iki.fi>
 t:1623223123
 c:8b4057786e0a01512f0466aaf8616820b8f2d302
+
+C:Q1O4Gxl3hVDEHhffoiZgg/uqUDVVk=
+P:wpa_supplicant-doc
+V:2.9-r14
+A:armhf
+S:45053
+I:151552
+T:utility providing key negotiation for WPA wireless networks (documentation)
+U:https://w1.fi/wpa_supplicant/
+L:BSD-3-Clause
+o:wpa_supplicant
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1623656302
+c:c9a79720ab7d0d99a7f54f4c9ba8906cba9c92c5
+i:docs wpa_supplicant=2.9-r14
 
 C:Q1TPrxFIa459os3AqdS/oZ+CPeRic=
 P:tevent
@@ -20179,6 +20240,21 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:so:libc.musl-armhf.so.1
 i:lua5.3 lua-iconv=7-r2
 
+C:Q1cIoElZYkQMbBhYqai/HEpFavZLk=
+P:wpa_supplicant-openrc
+V:2.9-r14
+A:armhf
+S:3023
+I:32768
+T:utility providing key negotiation for WPA wireless networks (OpenRC init scripts)
+U:https://w1.fi/wpa_supplicant/
+L:BSD-3-Clause
+o:wpa_supplicant
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1623656302
+c:c9a79720ab7d0d99a7f54f4c9ba8906cba9c92c5
+i:openrc wpa_supplicant=2.9-r14
+
 C:Q18dp/gE1GJ9qFty64vSc2FKbOUwY=
 P:py3-iniconfig
 V:1.1.1-r1
@@ -20285,6 +20361,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1601650369
 c:28190295aeed8d16298cfc941b2737843fb8e94a
 p:cmd:shorewall
+
+C:Q1bswLSBcuDf6oVauFyN0A82DmxUc=
+P:postfix-pcre
+V:3.6.1-r0
+A:armhf
+S:7061
+I:49152
+T:pcre map support for postfix
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1623649897
+c:edad4dfd661a04583e9bdbbc1661538cda3142e7
+D:so:libc.musl-armhf.so.1 so:libpcre.so.1
+p:so:postfix-pcre.so=0
 
 C:Q172H4fOLW5upeaIHM3M9lccC0bFI=
 P:openldap-back-dnssrv
@@ -26446,21 +26538,6 @@ c:7b2f86e5ef7b2447ed91ae973473dc6b42a4e93b
 D:dmidecode /bin/sh so:libc.musl-armhf.so.1 so:libpci.so.3 so:libusb-1.0.so.0
 p:cmd:flashrom
 
-C:Q1T4npiRkzoCis0az22g9THwAS9Cw=
-P:wpa_supplicant-doc
-V:2.9-r13
-A:armhf
-S:45058
-I:151552
-T:utility providing key negotiation for WPA wireless networks (documentation)
-U:https://w1.fi/wpa_supplicant/
-L:BSD-3-Clause
-o:wpa_supplicant
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1619356777
-c:a79191c3d4f47ca2a1626a0e63803a118c4a41c8
-i:docs wpa_supplicant=2.9-r13
-
 C:Q1QRKedbfxDgtsfDqhJQ1iPq8g0po=
 P:hunspell-pt
 V:20201212-r1
@@ -29264,21 +29341,6 @@ c:2cde4a1ff329aaa02528a5d3e2a940e5a9088203
 D:/bin/sh so:libc.musl-armhf.so.1 so:libpopt.so.0
 p:cmd:distcc cmd:distccd cmd:distccmon-text cmd:lsdistcc cmd:update-distcc-symlinks
 
-C:Q1NG0fsvUL0dIMmxrb40cKAPJmFm4=
-P:hwids-pci
-V:20201207-r0
-A:armhf
-S:288428
-I:1261568
-T:Hardware identification databases (PCI IDs)
-U:https://github.com/gentoo/hwids/
-L:BSD-3-Clause OR GPL-2.0-or-later
-o:hwids
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1607424016
-c:62314c7852880d031be469b3bb08cff2bef28e7f
-p:hwdata-pci=20201207-r0
-
 C:Q1VKmzhV/pVwBshdHAjIAM4ILkOaw=
 P:musl-obstack
 V:1.2.2-r0
@@ -29522,22 +29584,6 @@ o:s6-linux-init
 m:Laurent Bercot <ska-devel@skarnet.org>
 t:1622162897
 c:2edf2cf352e699f9f4f6e8975d4d3095d6b0acbc
-
-C:Q1r1LR2aB6Bqq6yjFtxGcKcg/D2Fw=
-P:postfix-pgsql
-V:3.6.0-r0
-A:armhf
-S:7044
-I:49152
-T:pgsql map support for postfix
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1619772101
-c:ae152beb4c37d9088899e001dc6fc236ef076e3e
-D:so:libc.musl-armhf.so.1 so:libpq.so.5
-p:so:postfix-pgsql.so=0
 
 C:Q1QL1Jdk1wDuTidCo70xQQjFYbL7M=
 P:neon-dev
@@ -35886,6 +35932,22 @@ t:1620804814
 c:d9ae5dcf5daba0aafb62723846e15b35745b4487
 p:linux-firmware-any
 
+C:Q1WqewuEDBFyxieM8EirzvVEqnqog=
+P:postfix-mysql
+V:3.6.1-r0
+A:armhf
+S:7530
+I:49152
+T:mysql map support for postfix
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1623649897
+c:edad4dfd661a04583e9bdbbc1661538cda3142e7
+D:so:libc.musl-armhf.so.1 so:libmariadb.so.3
+p:so:postfix-mysql.so=0
+
 C:Q1DcNClw7VEt5M6j+0zEl7cTXzgBc=
 P:u-boot-tools
 V:2021.04-r0
@@ -35915,6 +35977,21 @@ o:libunwind
 m:Ben Pye <ben@curlybracket.co.uk>
 t:1610179462
 c:81900c2b6081f108718d5683fa377c74dabc2b68
+
+C:Q1hQqCIzLn7OLq+z5LZv1eWrM+DkI=
+P:postfix-openrc
+V:3.6.1-r0
+A:armhf
+S:2262
+I:16384
+T:Secure and fast drop-in replacement for Sendmail (MTA) (OpenRC init scripts)
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1623649897
+c:edad4dfd661a04583e9bdbbc1661538cda3142e7
+i:openrc postfix=3.6.1-r0
 
 C:Q1R61vBedVtH8CX+b8yZQwAzNM+w8=
 P:py3-ordered-set
@@ -36572,21 +36649,6 @@ c:047ca4850200bcf44a49ed81eeaec4ccde342438
 D:so:libc.musl-armhf.so.1
 p:so:libtasn1.so.6=6.6.1
 
-C:Q1aTJmjR/OJOkaOsvYtAmpr0PWtU4=
-P:hwids-usb
-V:20201207-r0
-A:armhf
-S:248806
-I:729088
-T:Hardware identification databases (USB IDs)
-U:https://github.com/gentoo/hwids/
-L:BSD-3-Clause OR GPL-2.0-or-later
-o:hwids
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1607424016
-c:62314c7852880d031be469b3bb08cff2bef28e7f
-p:hwdata-usb=20201207-r0
-
 C:Q1WdgbPTXK/LdvrBIsNXoqx4Y1Lac=
 P:lua5.4-cjson
 V:2.1.0-r10
@@ -37050,22 +37112,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 i:docs iftop=0.17-r7
-
-C:Q1meo7TDcOcoEid0bD/Tp5HBemUNs=
-P:postfix-stone
-V:3.6.0-r0
-A:armhf
-S:28639
-I:102400
-T:Postfix simulation and testing tools
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1619772101
-c:ae152beb4c37d9088899e001dc6fc236ef076e3e
-D:musl>=1.1.24-r7 so:libc.musl-armhf.so.1 so:libpostfix-global.so so:libpostfix-util.so
-p:cmd:fsstone cmd:qmqp-sink cmd:qmqp-source cmd:smtp-sink cmd:smtp-source
 
 C:Q161bP50nny0iv960Mwts/qR3Fifs=
 P:mesa-dbg
@@ -37586,21 +37632,6 @@ t:1617571619
 c:60cd84cebef81a5506d96f06514f304a6f709c56
 D:so:libSPIRV-Tools-opt.so so:libSPIRV-Tools.so so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:libHLSL.so=0 so:libSPIRV.so=0 so:libSPVRemapper.so=0 so:libglslang.so=0 cmd:glslangValidator cmd:spirv-remap
-
-C:Q18MTa9YOcBgR31eYfnqqEd3fBQgY=
-P:postfix-openrc
-V:3.6.0-r0
-A:armhf
-S:2262
-I:16384
-T:Secure and fast drop-in replacement for Sendmail (MTA) (OpenRC init scripts)
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1619772101
-c:ae152beb4c37d9088899e001dc6fc236ef076e3e
-i:openrc postfix=3.6.0-r0
 
 C:Q1suUsrxHXYRPS+37XD6g9QyFwalw=
 P:ifupdown
@@ -38269,6 +38300,22 @@ t:1623534102
 c:9a63416183087f223b7c63eb6319e9d3481816c0
 D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libucontext.so.1
 p:so:libgo.so.16=16.0.0
+
+C:Q1LqALVd7sUPeoodcdAAvqFHOqXpg=
+P:postfix-sqlite
+V:3.6.1-r0
+A:armhf
+S:5135
+I:45056
+T:sqlite map support for postfix
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1623649897
+c:edad4dfd661a04583e9bdbbc1661538cda3142e7
+D:so:libc.musl-armhf.so.1 so:libsqlite3.so.0
+p:so:postfix-sqlite.so=0
 
 C:Q105uzAjx8e0DMFljQS0t95Jqmilg=
 P:dbus-glib
@@ -39648,6 +39695,21 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1603771633
 c:343dce5fb85eb353c5209aeeefca16bbfde4b4ed
 i:docs perl-yaml-syck=1.34-r0
+
+C:Q1gA6os+w00TlszsASWWXnCbM8qfU=
+P:hwids-usb
+V:20210613-r0
+A:armhf
+S:249983
+I:729088
+T:Hardware identification databases (USB IDs)
+U:https://github.com/gentoo/hwids/
+L:BSD-3-Clause OR GPL-2.0-or-later
+o:hwids
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1623654962
+c:7411ae882f314e90710e6a45f5100f77f873979b
+p:hwdata-usb=20210613-r0
 
 C:Q1A4Vs88CJOmuzxmp80zDVMWojAB8=
 P:portaudio
@@ -43460,6 +43522,22 @@ t:1613930684
 c:be08be886bc0a50698a6e8286dad5291b18068b3
 i:openrc nfs-utils=2.5.3-r0
 
+C:Q1gw7XfQojPmFR4MjuG3x4dF8T5CE=
+P:postfix
+V:3.6.1-r0
+A:armhf
+S:851488
+I:2478080
+T:Secure and fast drop-in replacement for Sendmail (MTA)
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1623649897
+c:edad4dfd661a04583e9bdbbc1661538cda3142e7
+D:musl>=1.1.24-r7 /bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libicuuc.so.67 so:liblmdb.so.0 so:libsasl2.so.3 so:libssl.so.1.1
+p:so:libpostfix-dns.so=0 so:libpostfix-global.so=0 so:libpostfix-master.so=0 so:libpostfix-tls.so=0 so:libpostfix-util.so=0 so:postfix-lmdb.so=0 cmd:mailq cmd:newaliases cmd:postalias cmd:postcat cmd:postconf cmd:postdrop cmd:postfix cmd:postkick cmd:postlock cmd:postlog cmd:postmap cmd:postmulti cmd:postqueue cmd:postsuper cmd:qshape.pl cmd:sendmail
+
 C:Q1JFbTiq9RCEEtL+EwstyitI3AXtY=
 P:linux-firmware-vicam
 V:20210511-r0
@@ -44829,6 +44907,22 @@ c:eab597df643c4e27355781a222e6e416a7a8e297
 D:openssl so:libc.musl-armhf.so.1
 p:so:libvdehist.so.0=0.0.1 so:libvdemgmt.so.0=0.0.1 so:libvdeplug.so.3=3.0.1 so:libvdesnmp.so.0=0.0.1
 
+C:Q1Bt35XewiwoFe8uXQyaP4IsrgKgo=
+P:postfix-pgsql
+V:3.6.1-r0
+A:armhf
+S:7042
+I:49152
+T:pgsql map support for postfix
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1623649897
+c:edad4dfd661a04583e9bdbbc1661538cda3142e7
+D:so:libc.musl-armhf.so.1 so:libpq.so.5
+p:so:postfix-pgsql.so=0
+
 C:Q1bgEkHjRtgtulXF+ngeDvIx1b1CQ=
 P:diffutils
 V:3.7-r0
@@ -46092,22 +46186,6 @@ t:1620804814
 c:d9ae5dcf5daba0aafb62723846e15b35745b4487
 p:linux-firmware-any
 
-C:Q16SUyczYEjSP2R16EAcG6Jzw+oX8=
-P:postfix
-V:3.6.0-r0
-A:armhf
-S:851456
-I:2478080
-T:Secure and fast drop-in replacement for Sendmail (MTA)
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1619772101
-c:ae152beb4c37d9088899e001dc6fc236ef076e3e
-D:musl>=1.1.24-r7 /bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libicuuc.so.67 so:liblmdb.so.0 so:libsasl2.so.3 so:libssl.so.1.1
-p:so:libpostfix-dns.so=0 so:libpostfix-global.so=0 so:libpostfix-master.so=0 so:libpostfix-tls.so=0 so:libpostfix-util.so=0 so:postfix-lmdb.so=0 cmd:mailq cmd:newaliases cmd:postalias cmd:postcat cmd:postconf cmd:postdrop cmd:postfix cmd:postkick cmd:postlock cmd:postlog cmd:postmap cmd:postmulti cmd:postqueue cmd:postsuper cmd:qshape.pl cmd:sendmail
-
 C:Q1KxVWG5a2i6R+9NXteheWTtr9loM=
 P:libuv-dbg
 V:1.41.0-r0
@@ -46751,6 +46829,22 @@ t:1600709976
 c:a27678e331feafb61764403f74cf5ecc059699bb
 i:docs perl-test-harness=3.42-r2
 
+C:Q1QxeAj4SGIe/1kNhYVjzfp3O78Oo=
+P:hwids-udev
+V:20210613-r0
+A:armhf
+S:2895450
+I:17092608
+T:Hardware identification databases (udev integration)
+U:https://github.com/gentoo/hwids/
+L:BSD-3-Clause OR GPL-2.0-or-later
+o:hwids
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1623654962
+c:7411ae882f314e90710e6a45f5100f77f873979b
+D:hwids-net hwids-pci hwids-usb
+i:hwids-usb=20210613-r0 eudev
+
 C:Q11J1Pd+YZ5Fg9X00WZ1WDxz1HLs0=
 P:squid-doc
 V:5.0.6-r0
@@ -46919,21 +47013,6 @@ t:1600920521
 c:6c8f869da8f25b0eb482285f638a92dabb795edd
 D:lua so:libc.musl-armhf.so.1 so:libgdbm.so.6 so:libpcre.so.1
 p:cmd:hypermail cmd:mdir2mbox.lua cmd:msgarchive cmd:rdmsg
-
-C:Q1QDaLKhzgWjV/QUQKDniMFK2buqA=
-P:postfix-doc
-V:3.6.0-r0
-A:armhf
-S:736947
-I:1945600
-T:Secure and fast drop-in replacement for Sendmail (MTA) (documentation)
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1619772101
-c:ae152beb4c37d9088899e001dc6fc236ef076e3e
-i:docs postfix=3.6.0-r0
 
 C:Q1IYzlTpyznbLDdH7tS7xhTu+n4RI=
 P:libacl
@@ -50282,21 +50361,6 @@ t:1621001694
 c:0943d507137db5485ded9554e2a449a76b61de33
 D:logrotate
 i:squid=5.0.6-r0 lang-ro
-
-C:Q1fFqSX7aTRhDrfphbzRPJgV5TfS0=
-P:hwids-net
-V:20201207-r0
-A:armhf
-S:1534278
-I:7102464
-T:Hardware identification databases (Networking OUIs)
-U:https://github.com/gentoo/hwids/
-L:Public-Domain
-o:hwids
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1607424016
-c:62314c7852880d031be469b3bb08cff2bef28e7f
-p:hwdata-oui=20201207-r0
 
 C:Q1Po9Lp0vH7jCaJlT+HbYpgFIfTkM=
 P:jq-dev
@@ -54946,21 +55010,6 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 i:docs sc=7.16-r5
 
-C:Q1tMFP9JeTC5R8eE1dc2lAicCtwSc=
-P:hwids-doc
-V:20201207-r0
-A:armhf
-S:3558
-I:28672
-T:Hardware identification databases (documentation)
-U:https://github.com/gentoo/hwids/
-L:BSD-3-Clause OR GPL-2.0-or-later
-o:hwids
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1607424016
-c:62314c7852880d031be469b3bb08cff2bef28e7f
-i:docs hwids=20201207-r0
-
 C:Q1hSVkAvz1Jgx8BX985mgBHZ3OgLI=
 P:libburn-doc
 V:1.5.4-r0
@@ -55238,6 +55287,21 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1617646686
 c:8809f363c3e89d9f7f91ce78139ee06a8a3bb20d
 i:openrc postgresql-bdr=9.4.14_p1-r9
+
+C:Q1tf2hJ92OaIS0hP/Wfkbs+B/tilM=
+P:postfix-doc
+V:3.6.1-r0
+A:armhf
+S:736942
+I:1945600
+T:Secure and fast drop-in replacement for Sendmail (MTA) (documentation)
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1623649897
+c:edad4dfd661a04583e9bdbbc1661538cda3142e7
+i:docs postfix=3.6.1-r0
 
 C:Q1CqEahJYm0v8YCnl2EBLMmdM0c98=
 P:u-boot-beagleboard
@@ -55548,22 +55612,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1606837030
 c:5c5c7caa186678936af436412f4b59ded884c52e
 i:open-lldp=0.9.46-r5 bash-completion
-
-C:Q1HngqsnAWzTNGlu+1brsmCp3BB5Y=
-P:postfix-pcre
-V:3.6.0-r0
-A:armhf
-S:7062
-I:49152
-T:pcre map support for postfix
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1619772101
-c:ae152beb4c37d9088899e001dc6fc236ef076e3e
-D:so:libc.musl-armhf.so.1 so:libpcre.so.1
-p:so:postfix-pcre.so=0
 
 C:Q1ckz3k1rUngoxD/UWIQ4nyWb8TIk=
 P:perl-crypt-openssl-guess-doc
@@ -56788,22 +56836,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1610489771
 c:1118fff73bb8f3a967c12d42de2d8c4a0a7ed162
 D:libjpeg-turbo-dev
-
-C:Q1QYr/MpcxP6rsfKxdM45JGqc4UOg=
-P:wpa_supplicant
-V:2.9-r13
-A:armhf
-S:1487541
-I:3321856
-T:utility providing key negotiation for WPA wireless networks
-U:https://w1.fi/wpa_supplicant/
-L:BSD-3-Clause
-o:wpa_supplicant
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1619356777
-c:a79191c3d4f47ca2a1626a0e63803a118c4a41c8
-D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libdbus-1.so.3 so:libnl-3.so.200 so:libnl-genl-3.so.200 so:libpcsclite.so.1 so:libssl.so.1.1
-p:cmd:eapol_test cmd:wpa_cli cmd:wpa_passphrase cmd:wpa_supplicant
 
 C:Q1hDWgTOd+ih1I6CFvnmi3Qfavu+c=
 P:texinfo
@@ -60934,6 +60966,22 @@ c:6f3dee6f6b563fcdc1c19ac3d6b9234b15a889d4
 D:tar xz so:libbz2.so.1 so:libc.musl-armhf.so.1 so:libz.so.1
 p:cmd:dpkg cmd:dpkg-buildflags cmd:dpkg-deb cmd:dpkg-divert cmd:dpkg-fsys-usrunmess cmd:dpkg-genbuildinfo cmd:dpkg-maintscript-helper cmd:dpkg-query cmd:dpkg-realpath cmd:dpkg-split cmd:dpkg-statoverride cmd:dpkg-trigger cmd:update-alternatives
 
+C:Q1FOzyD83LY0PI5NfQtRM7QP2lTtU=
+P:wpa_supplicant
+V:2.9-r14
+A:armhf
+S:1498531
+I:3346432
+T:utility providing key negotiation for WPA wireless networks
+U:https://w1.fi/wpa_supplicant/
+L:BSD-3-Clause
+o:wpa_supplicant
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1623656302
+c:c9a79720ab7d0d99a7f54f4c9ba8906cba9c92c5
+D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libdbus-1.so.3 so:libnl-3.so.200 so:libnl-genl-3.so.200 so:libpcsclite.so.1 so:libssl.so.1.1
+p:cmd:eapol_test cmd:wpa_cli cmd:wpa_passphrase cmd:wpa_supplicant
+
 C:Q1aFgsusPkE33Y7yZt+AwiAS5Ixfo=
 P:samba-winbind-krb5-locator
 V:4.14.5-r0
@@ -62247,22 +62295,6 @@ c:0943d507137db5485ded9554e2a449a76b61de33
 D:logrotate
 i:squid=5.0.6-r0 lang-ja
 
-C:Q1LDomtnj3iv+zTbno/DBs3/3fwDM=
-P:postfix-mysql
-V:3.6.0-r0
-A:armhf
-S:7527
-I:49152
-T:mysql map support for postfix
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1619772101
-c:ae152beb4c37d9088899e001dc6fc236ef076e3e
-D:so:libc.musl-armhf.so.1 so:libmariadb.so.3
-p:so:postfix-mysql.so=0
-
 C:Q1LimUd257UQ0A0PsWT8ZMVrUadiw=
 P:libpri-dev
 V:1.6.0-r1
@@ -63557,6 +63589,21 @@ c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
 D:rsyslog=8.2012.0-r0 so:libc.musl-armhf.so.1 so:libdbi.so.1
 p:rsyslog-omlibdbi=8.2012.0-r0
 
+C:Q1d1KbSLuv2sKIOsJGNCZhEM+xyUA=
+P:hwids
+V:20210613-r0
+A:armhf
+S:548187
+I:565248
+T:Hardware identification databases
+U:https://github.com/gentoo/hwids/
+L:BSD-3-Clause OR GPL-2.0-or-later
+o:hwids
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1623654962
+c:7411ae882f314e90710e6a45f5100f77f873979b
+D:hwids-net hwids-pci hwids-udev hwids-usb
+
 C:Q1aN+Nb+LfkRLzq9fjegpBRbRxX3g=
 P:mysql
 V:10.5.9-r0
@@ -64618,22 +64665,6 @@ m:Rasmus Thomsen <oss@cogitri.dev>
 t:1622893290
 c:29ff78fff1a74df439a8cbe4e78c2e8a495837a4
 i:docs vala=0.52.4-r0
-
-C:Q1MW8OnZS/k3M0x/DljXu3JMMJMO4=
-P:postfix-ldap
-V:3.6.0-r0
-A:armhf
-S:13178
-I:61440
-T:ldap map support for postfix
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1619772101
-c:ae152beb4c37d9088899e001dc6fc236ef076e3e
-D:so:libc.musl-armhf.so.1 so:liblber-2.4.so.2 so:libldap-2.4.so.2
-p:so:postfix-ldap.so=0
 
 C:Q18kZ71GgJzr6fJ9zqp1oMd+SJdCQ=
 P:libksba-dev
@@ -68722,21 +68753,6 @@ t:1600709970
 c:cda4f11174ca4dd20e18c2c433f5e89aba8d9f01
 i:docs perl-net-dns-resolver-mock=1.20200215-r1
 
-C:Q1VhGXkIEyN7AHDkVkR10BginTz4U=
-P:hwids
-V:20201207-r0
-A:armhf
-S:540125
-I:557056
-T:Hardware identification databases
-U:https://github.com/gentoo/hwids/
-L:BSD-3-Clause OR GPL-2.0-or-later
-o:hwids
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1607424016
-c:62314c7852880d031be469b3bb08cff2bef28e7f
-D:hwids-net hwids-pci hwids-udev hwids-usb
-
 C:Q1qMUlmS05tN7kYAfh3cEA11TY1EU=
 P:ldns
 V:1.7.1-r1
@@ -72307,22 +72323,6 @@ t:1616383081
 c:987ac991eaedebff19b86118251ec21fb936a0c8
 D:lua5.1 so:libc.musl-armhf.so.1 so:liblber-2.4.so.2 so:libldap-2.4.so.2
 i:lua-ldap=1.2.6-r0 lua5.1
-
-C:Q1tzgNQx4Cf97HH3/lWkNOqrKjUYs=
-P:postfix-sqlite
-V:3.6.0-r0
-A:armhf
-S:5137
-I:45056
-T:sqlite map support for postfix
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1619772101
-c:ae152beb4c37d9088899e001dc6fc236ef076e3e
-D:so:libc.musl-armhf.so.1 so:libsqlite3.so.0
-p:so:postfix-sqlite.so=0
 
 C:Q1OpqW/wFPYVisdDOJcTa8hN7WKyA=
 P:bluez-obexd
