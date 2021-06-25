@@ -56711,6 +56711,49 @@
       "versions": {
         "2.005004-r1": 1623545214
       }
+    },
+    "fail2ban-doc": {
+      "origin": "fail2ban",
+      "versions": {
+        "0.11.2-r0": 1624644870
+      }
+    },
+    "fail2ban-tests": {
+      "origin": "fail2ban",
+      "versions": {
+        "0.11.2-r0": 1624644870
+      },
+      "dependencies": [
+        "fail2ban=0.11.2-r0"
+      ],
+      "provides": [
+        "cmd:fail2ban-testcases"
+      ]
+    },
+    "fail2ban": {
+      "origin": "fail2ban",
+      "versions": {
+        "0.11.2-r0": 1624644870
+      },
+      "dependencies": [
+        "python3",
+        "iptables",
+        "ip6tables",
+        "logrotate"
+      ],
+      "provides": [
+        "cmd:fail2ban-client",
+        "cmd:fail2ban-python",
+        "cmd:fail2ban-regex",
+        "cmd:fail2ban-server",
+        "py3.9:fail2ban=0.11.2-r0"
+      ]
+    },
+    "fail2ban-openrc": {
+      "origin": "fail2ban",
+      "versions": {
+        "0.11.2-r0": 1624644870
+      }
     }
   },
   "provide": {
