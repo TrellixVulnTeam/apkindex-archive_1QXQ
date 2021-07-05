@@ -1161,6 +1161,22 @@ c:985e9b35e7a22d0966f6dc4ad59059daae608bc4
 D:so:libbareos.so.19 so:libbareossql.so.19 so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libintl.so.8 so:libpq.so.5 so:libstdc++.so.6
 p:so:libbareoscats-postgresql.so=0
 
+C:Q1ay1d4Q5cEaLPppnkwHihLhhSwQ0=
+P:rbd-nbd
+V:15.2.13-r1
+A:x86_64
+S:144563
+I:401408
+T:NBD based client to map Ceph rbd images to local device.
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+D:so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libgcc_s.so.1 so:libnl-3.so.200 so:libnl-genl-3.so.200 so:librados.so.2 so:librbd.so.1 so:libstdc++.so.6
+p:cmd:rbd-nbd
+
 C:Q1fX6CM6ukBRXXiE/V/pXkldbgt5I=
 P:libaccounts-glib-doc
 V:1.25-r0
@@ -6671,22 +6687,6 @@ t:1608030501
 c:df621331b27ede05379cf6fbd724feae40574bc9
 D:pdns geoip so:libGeoIP.so.1 so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libmaxminddb.so.0 so:libstdc++.so.6 so:libyaml-cpp.so.0.6
 
-C:Q1d9ikYmj31yKCwtbbIQzq4rFXoTQ=
-P:ceph
-V:15.2.13-r0
-A:x86_64
-S:9365724
-I:25575424
-T:Ceph is a distributed object store and file system
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-D:ceph-osd ceph-mds ceph-mon so:libboost_context.so.1.72.0 so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libcrypto.so.1.1 so:libcurl.so.4 so:libexpat.so.1 so:libgcc_s.so.1 so:libldap-2.4.so.2 so:librados.so.2 so:librdkafka.so.1 so:libssl.so.1.1 so:libstdc++.so.6
-p:so:libradosgw.so.2=2.0.0 so:librgw.so.2=2.0.0 cmd:ceph-immutable-object-cache cmd:rgw-gap-list cmd:rgw-gap-list-comparator cmd:rgw-orphan-list
-
 C:Q1SFQdrSnRJPcpkvei2iHsLNhAn1c=
 P:perl-config-any-doc
 V:0.32-r2
@@ -10429,6 +10429,21 @@ t:1601653871
 c:3b70b74620ca14e068f1afbf6369aa4cf8e5e267
 D:perl perl-net-dns so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1
 
+C:Q1dGR0TqZA3gtIyXRe5Zll+T5vX4w=
+P:py3-cephfs
+V:15.2.13-r1
+A:x86_64
+S:170805
+I:495616
+T:Python libraries for Ceph distributed file system
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+D:py3-rados so:libc.musl-x86_64.so.1 so:libcephfs.so.2
+
 C:Q1JddrtgHOxw+wQj76sLFLQj3VXcs=
 P:imapsync
 V:1.945-r1
@@ -10890,22 +10905,6 @@ t:1613208080
 c:7ff37db1031d537e0aeec3fb564144948c1ca53d
 D:php7-bcmath so:libc.musl-x86_64.so.1 so:libmaxminddb.so.0
 p:php7-maxminddb=1.10.0-r0
-
-C:Q1Wa31/5nz81g4CEGUApAZBKdRh3U=
-P:rbd-mirror
-V:15.2.13-r0
-A:x86_64
-S:3279082
-I:9428992
-T:Daemon for mirroring RBD images between Ceph clusters.
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-D:ceph-common=15.2.13-r0 so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libgcc_s.so.1 so:librados.so.2 so:libstdc++.so.6
-p:cmd:rbd-mirror
 
 C:Q12pzmn5uEwk2/RhMYt+1JO1gjrKg=
 P:lua5.3-luasrcdiet
@@ -17195,22 +17194,6 @@ c:f887b39e14388177cf0e8caa2c57cbd108ecad8d
 D:ttf-dejavu so:libBasicUsageEnvironment.so.1 so:libEGL.so.1 so:libFLAC.so.8 so:libGL.so.1 so:libUsageEnvironment.so.3 so:libX11.so.6 so:libXext.so.6 so:libXinerama.so.1 so:libXpm.so.4 so:liba52.so.0 so:libasound.so.2 so:libavahi-client.so.3 so:libavahi-common.so.3 so:libavc1394.so.0 so:libavcodec.so.58 so:libavformat.so.58 so:libavutil.so.56 so:libbluray.so.2 so:libc.musl-x86_64.so.1 so:libcairo.so.2 so:libcddb.so.2 so:libdav1d.so.5 so:libdbus-1.so.3 so:libdc1394.so.25 so:libdvbpsi.so.10 so:libdvdnav.so.4 so:libdvdread.so.8 so:libebml.so.5 so:libfaad.so.2 so:libfontconfig.so.1 so:libfreetype.so.6 so:libfribidi.so.0 so:libgcc_s.so.1 so:libgcrypt.so.20 so:libgdk_pixbuf-2.0.so.0 so:libglib-2.0.so.0 so:libgnutls.so.30 so:libgobject-2.0.so.0 so:libgpg-error.so.0 so:libgroupsock.so.8 so:libgtk-3.so.0 so:libharfbuzz.so.0 so:libliveMedia.so.79 so:liblua-5.2.so.0 so:libmad.so.0 so:libmatroska.so.7 so:libmpeg2.so.0 so:libncursesw.so.6 so:libnotify.so.4 so:libogg.so.0 so:libopus.so.0 so:libpng16.so.16 so:libpostproc.so.55 so:libpulse.so.0 so:libraw1394.so.11 so:librom1394.so.0 so:librsvg-2.so.2 so:libshout.so.3 so:libsmbclient.so.0 so:libspeex.so.1 so:libspeexdsp.so.1 so:libstdc++.so.6 so:libswscale.so.5 so:libtag.so.1 so:libtheoradec.so.1 so:libtheoraenc.so.1 so:libudev.so.1 so:libva-drm.so.2 so:libva-x11.so.2 so:libva.so.2 so:libvlc.so.5 so:libvlccore.so.9 so:libvorbis.so.0 so:libvorbisenc.so.2 so:libvpx.so.6 so:libx264.so.157 so:libx265.so.192 so:libxcb-composite.so.0 so:libxcb-keysyms.so.1 so:libxcb-randr.so.0 so:libxcb-shm.so.0 so:libxcb-xv.so.0 so:libxcb.so.1 so:libxml2.so.2 so:libz.so.1
 p:so:libvlc_pulse.so.0=0.0.0 so:libvlc_vdpau.so.0=0.0.0 so:libvlc_xcb_events.so.0=0.0.0 cmd:cvlc cmd:nvlc cmd:rvlc cmd:svlc cmd:vlc cmd:vlc-wrapper
 
-C:Q15ACQDVzFNKEAuuggpKQbJ/9ycUk=
-P:librbd
-V:15.2.13-r0
-A:x86_64
-S:2097138
-I:5505024
-T:RADOS block device client library
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-D:so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libgcc_s.so.1 so:librados.so.2 so:libstdc++.so.6
-p:so:librbd.so.1=1.12.0
-
 C:Q1mDLX44Gv/b0nBXCT/VJ5/g7P/1E=
 P:qemu-system-sh4eb
 V:5.2.0-r3
@@ -20631,21 +20614,6 @@ c:a3026151ce8c795f306d4c8aa6e7bef3c0d6a297
 D:lua5.2 lua5.2-socket
 i:lua5.2 lua-copas=2.0.2-r3
 
-C:Q1Dh2HW8QCOprrc+lp/Di4MnmLM8o=
-P:ceph-user
-V:15.2.13-r0
-A:x86_64
-S:1469
-I:4096
-T:Minimal package to create a user for other ceph packages.
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-D:/bin/sh
-
 C:Q1geWODHk8dnewN5dzRa1dzAoAjZo=
 P:nextcloud-survey_client
 V:20.0.11-r0
@@ -21204,22 +21172,6 @@ t:1606756473
 c:e161415b5cc6f8e504f5fa93e440df5a240ce699
 i:docs xf86-video-r128=6.12.0-r0
 
-C:Q1+riVzdAwtVVW7rJ6j6xZy2yZbsQ=
-P:ceph-common
-V:15.2.13-r0
-A:x86_64
-S:21607970
-I:54829056
-T:Common utilities to mount and interact with a ceph storage cluster.
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-D:py3-rados py3-rbd py3-cephfs py3-prettytable so:libaio.so.1 so:libblkid.so.1 so:libboost_context.so.1.72.0 so:libboost_program_options.so.1.72.0 so:libboost_thread.so.1.72.0 so:libc.musl-x86_64.so.1 so:libcap-ng.so.0 so:libceph-common.so.2 so:libcephfs.so.2 so:libcrypto.so.1.1 so:libcurl.so.4 so:libexpat.so.1 so:libgcc_s.so.1 so:libkeyutils.so.1 so:libldap-2.4.so.2 so:libleveldb.so.1 so:liblz4.so.1 so:libncursesw.so.6 so:librados.so.2 so:libradosstriper.so.1 so:librbd.so.1 so:librdkafka.so.1 so:libsnappy.so.1 so:libstdc++.so.6 so:libudev.so.1 so:libz.so.1
-p:cmd:ceph cmd:ceph-authtool cmd:ceph-conf cmd:ceph-dencoder cmd:ceph-post-file cmd:ceph-rbdnamer cmd:ceph-syn cmd:cephfs-data-scan cmd:cephfs-journal-tool cmd:cephfs-table-tool cmd:mount.ceph cmd:rados cmd:rbd cmd:rbd-replay cmd:rbd-replay-many cmd:rbdmap
-
 C:Q1rKZD9Z1R6c4gkRbUUVGXzcueJJg=
 P:py3-ldap3
 V:2.8-r0
@@ -21421,21 +21373,6 @@ t:1609846782
 c:deec3b5c717e0ada168ab58dc4c975da7e4eecda
 D:bcc so:libc.musl-x86_64.so.1 so:libgcc_s.so.1
 p:cmd:bcc-lua
-
-C:Q1xfHgSK0KfBYZ1gSCjwiD4rg5MLg=
-P:py3-rbd
-V:15.2.13-r0
-A:x86_64
-S:406941
-I:1228800
-T:Python libraries for the RADOS block device
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-D:py3-rados so:libc.musl-x86_64.so.1 so:librbd.so.1
 
 C:Q1dzo6EBkQ66FRtcg/sMDKCCxR5Vw=
 P:grantleetheme-lang
@@ -23591,6 +23528,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1589190854
 c:73491742f51e47a7b589ddcca33f7882e44f2df3
 i:faenza-icon-theme=1.3.1-r6 gnome_sound_recorder
+
+C:Q1NQplwrPd4Nq6Vyo76+Ggsb896CA=
+P:ceph-mgr-node
+V:15.2.13-r1
+A:x86_64
+S:180018
+I:786432
+T:Ceph Manager NodeJS modules
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+D:ceph-mgr=15.2.13-r1 nodejs npm /bin/sh
 
 C:Q19sp03FVfF0FN/WiEvdsh4PYqUAI=
 P:irrlicht-dev
@@ -29643,22 +29595,6 @@ c:46821a40a7c409d66ad0097584a2c03969740c59
 D:so:libc.musl-x86_64.so.1
 p:cmd:jo
 
-C:Q1sjMl+hTfGUyUKmtxjO/snO+4vWA=
-P:libcephfs
-V:15.2.13-r0
-A:x86_64
-S:540170
-I:1310720
-T:Ceph distributed file system client library
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-D:so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libgcc_s.so.1 so:libstdc++.so.6
-p:so:libcephfs.so.2=2.0.0
-
 C:Q1Y4GUlwSRrXbyFxZIzNSwTbLj+S4=
 P:libnsl-dev
 V:1.3.0-r0
@@ -30055,6 +29991,22 @@ t:1619417572
 c:ce466a0fd7f89fe2c9c24d0e7d46af8c5ecae678
 D:qemu so:libaio.so.1 so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgnutls.so.30 so:libgobject-2.0.so.0 so:libjpeg.so.8 so:liblzo2.so.2 so:libnettle.so.8 so:libpixman-1.so.0 so:libpng16.so.16 so:libseccomp.so.2 so:libsnappy.so.1 so:libvdeplug.so.3 so:libz.so.1
 p:cmd:qemu-system-m68k
+
+C:Q1qrvLjOBWJxuJ7zCTaHxNPtPhwVo=
+P:ceph
+V:15.2.13-r1
+A:x86_64
+S:9365700
+I:25575424
+T:Ceph is a distributed object store and file system
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+D:ceph-osd ceph-mds ceph-mon so:libboost_context.so.1.72.0 so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libcrypto.so.1.1 so:libcurl.so.4 so:libexpat.so.1 so:libgcc_s.so.1 so:libldap-2.4.so.2 so:librados.so.2 so:librdkafka.so.1 so:libssl.so.1.1 so:libstdc++.so.6
+p:so:libradosgw.so.2=2.0.0 so:librgw.so.2=2.0.0 cmd:ceph-immutable-object-cache cmd:rgw-gap-list cmd:rgw-gap-list-comparator cmd:rgw-orphan-list
 
 C:Q1zH9jOWwuAFQ0oGcwPDyKYvGAqYw=
 P:lua5.3-toml
@@ -31004,6 +30956,21 @@ m:Frédéric Guillot <fred@miniflux.net>
 t:1610316265
 c:110c301050c7bf923b23f8abded2d4e7779b0014
 i:docs miniflux=2.0.27-r0
+
+C:Q1cRgP/tTBFmDJHwo7SqLoFOU+al8=
+P:ceph-osd
+V:15.2.13-r1
+A:x86_64
+S:1351
+I:4096
+T:Object storage daemon virtual package for the Ceph distributed file system.
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+D:ceph-osd-daemon=15.2.13-r1 ceph-osd-tools=15.2.13-r1 ceph-volume=15.2.13-r1
 
 C:Q1x4tGBGwODOzOG0F+V+Z5C/p4h1k=
 P:targetcli
@@ -34538,22 +34505,6 @@ t:1604529214
 c:e92e21588478facbdb7045a6712ceb3c490d2342
 D:so:libc.musl-x86_64.so.1 so:libgeany.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-3.so.0
 
-C:Q1g60+fD3SatLYZ3xM4RYgM7DbN1U=
-P:ceph-mgr
-V:15.2.13-r0
-A:x86_64
-S:20457838
-I:98111488
-T:Ceph Manager Daemon
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-D:ceph-base=15.2.13-r0 so:libboost_python38.so.1.72.0 so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libfmt.so.7 so:libgcc_s.so.1 so:libpython3.8.so.1.0 so:libstdc++.so.6
-p:cmd:ceph-mgr
-
 C:Q1RRhrXFC/wRHlnQDm3gUNQUcvq2Q=
 P:pdns-backend-odbc
 V:4.3.1-r2
@@ -36122,22 +36073,6 @@ t:1608546497
 c:dd0aaf6750718b0ff739b662eb33e2d7cf59935a
 D:tesseract-ocr
 
-C:Q1dvBvzrDi+k/Nfn4KLAZHYMC0uDI=
-P:ceph-volume
-V:15.2.13-r0
-A:x86_64
-S:269493
-I:1339392
-T:ceph-volume tool for the Ceph distributed file system.
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-D:lvm2
-p:cmd:ceph-volume
-
 C:Q1B5zIcRJ+8w6dKnH5JmNqrYLtTf4=
 P:qpdf-libs
 V:10.1.0-r0
@@ -36843,22 +36778,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1619417572
 c:ce466a0fd7f89fe2c9c24d0e7d46af8c5ecae678
 p:cmd:qemu-mipsn32el
-
-C:Q1hhlpfNouEujGgmfClDJUYLaliKI=
-P:ceph-base
-V:15.2.13-r0
-A:x86_64
-S:7210187
-I:20832256
-T:Base is the package that includes all the files shared amongst ceph servers
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-D:cryptsetup e2fsprogs logrotate parted util-linux xfsprogs ceph-user=15.2.13-r0 ceph-common=15.2.13-r0 librbd=15.2.13-r0 librados=15.2.13-r0 libcephfs=15.2.13-r0 so:libaio.so.1 so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libleveldb.so.1 so:liblz4.so.1 so:liboath.so.0 so:libsnappy.so.1 so:libstdc++.so.6 so:libz.so.1
-p:cmd:ceph-crash cmd:ceph-create-keys cmd:ceph-kvstore-tool cmd:ceph-run cmd:crushtool cmd:monmaptool cmd:osdmaptool
 
 C:Q1dzHdHgOZN27WhLNRtjWj5tyTrGM=
 P:php7-session
@@ -41706,22 +41625,6 @@ c:d037c9a42ccb14eb1939ece89f6a4f01b91ac52a
 D:python3 py3-boto gnupg ncftp py3-fasteners py3-future
 i:duplicity=0.8.13-r0 lang
 
-C:Q1kCmFx4dVpFhiW8917kJoletu8zI=
-P:ceph-mon-daemon
-V:15.2.13-r0
-A:x86_64
-S:3427581
-I:8626176
-T:Cluster monitor daemon for the Ceph distributed file system.
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-D:ceph-user=15.2.13-r0 so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libgcc_s.so.1 so:libleveldb.so.1 so:liblz4.so.1 so:libsnappy.so.1 so:libstdc++.so.6 so:libz.so.1
-p:cmd:ceph-mon
-
 C:Q18b8cxvJ9H+oq+O6LLkzKHjLd1+4=
 P:libmpdclient-dev
 V:2.19-r0
@@ -45349,21 +45252,6 @@ m:Bart Ribbers <bribbers@disroot.org>
 t:1615370188
 c:a505eafe23b52b5026f4b950cbc3fc2e184bc770
 i:messagelib=20.12.3-r0 lang
-
-C:Q1snkhbGRS66oL7iI3CVBg2E4ezT8=
-P:ceph-doc
-V:15.2.13-r0
-A:x86_64
-S:114036
-I:237568
-T:Ceph is a distributed object store and file system (documentation)
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-i:docs ceph=15.2.13-r0
 
 C:Q14293O5RTrBxkjVHWKxhBcxFHbdk=
 P:zabbix-utils
@@ -52808,6 +52696,21 @@ t:1591825870
 c:b1723729eedce2c82875014e033ffcfc74945f30
 D:so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libgeos_c.so.1 so:libstdc++.so.6
 
+C:Q1gRwYkl6+RjO5ojMeV3QAKxKwBp0=
+P:py3-rados
+V:15.2.13-r1
+A:x86_64
+S:413358
+I:1175552
+T:Python libraries for the RADOS object store
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+D:so:libc.musl-x86_64.so.1 so:librados.so.2
+
 C:Q18hdYGQ719FjYB+SnHjuy2b7yaG8=
 P:gst-editing-services-doc
 V:1.18.3-r0
@@ -54827,6 +54730,21 @@ c:766064b3cf10e668c5e5176d969067b12a186156
 D:python3 py3-cryptography py3-defusedxml py3-openssl py3-dateutil py3-tz py3-requests py3-six xmlsec
 p:cmd:make_metadata.py cmd:mdexport.py cmd:merge_metadata.py cmd:parse_xsd2.py
 
+C:Q1dz/z9xxXLfNpRdkwJe5IrEVfbwI=
+P:ceph-user
+V:15.2.13-r1
+A:x86_64
+S:1459
+I:4096
+T:Minimal package to create a user for other ceph packages.
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+D:/bin/sh
+
 C:Q1iJc3VvPJ0+MyUmrTA+8Jj1+pKGk=
 P:perl-sub-exporter-formethods-doc
 V:0.100052-r3
@@ -55733,22 +55651,6 @@ t:1609754382
 c:2361c03cf7de0e1849c50a8f61b916d3ccb752e8
 D:/bin/sh so:libasound.so.2 so:libc.musl-x86_64.so.1 so:libcurl.so.4 so:libgcc_s.so.1 so:libgcrypt.so.20 so:libgsm.so.1 so:libpopt.so.0 so:libsigc-2.0.so.0 so:libspeex.so.1 so:libstdc++.so.6 so:libtcl8.6.so
 p:so:libasyncaudio.so.1.6=1.6.0 so:libasynccore.so.1.6=1.6.0 so:libasynccpp.so.1.6=1.6.0 so:libecholib.so.1.3=1.3.3 cmd:devcal cmd:remotetrx cmd:siglevdetcal cmd:svxlink cmd:svxlink_gpio_down cmd:svxlink_gpio_up cmd:svxreflector
-
-C:Q1niT9q1UprnE/D4cDjMXdycCkFLo=
-P:ceph-osd-tools
-V:15.2.13-r0
-A:x86_64
-S:11216526
-I:27930624
-T:Object storage daemon tools for the Ceph distributed file system.
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-D:ceph-base=15.2.13-r0 lz4-libs so:libaio.so.1 so:libboost_program_options.so.1.72.0 so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libcrypto.so.1.1 so:libfuse.so.2 so:libgcc_s.so.1 so:libleveldb.so.1 so:liblz4.so.1 so:libsnappy.so.1 so:libstdc++.so.6 so:libz.so.1
-p:cmd:ceph-bluestore-tool cmd:ceph-clsinfo cmd:ceph-objectstore-tool cmd:ceph-osdomap-tool
 
 C:Q1YuA1Kh8xK5fTMbsoXHt1uZGTTKU=
 P:dino-lang
@@ -57972,6 +57874,22 @@ m:Rasmus Thomsen <oss@cogitri.dev>
 t:1584801123
 c:92ebb6a91720aa0ef98ee34e50ba996144db7743
 
+C:Q15UzbfeXZCmz1f+OYBQ6ZHy5M6pc=
+P:libcephfs
+V:15.2.13-r1
+A:x86_64
+S:540167
+I:1310720
+T:Ceph distributed file system client library
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+D:so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libgcc_s.so.1 so:libstdc++.so.6
+p:so:libcephfs.so.2=2.0.0
+
 C:Q1dnedxGttvcFvCipuKRO4tjmC5cI=
 P:faenza-icon-theme-meld
 V:1.3.1-r6
@@ -58629,6 +58547,21 @@ t:1602245147
 c:7eb13e56a8744e1895f9b13518a49c6ea9703e4e
 D:python3
 p:py-sqlparse=0.4.1-r0 cmd:sqlformat cmd:sqlformat-3
+
+C:Q1MTxMlNzYf6iChidoMXcoXq76UO4=
+P:ceph-mon
+V:15.2.13-r1
+A:x86_64
+S:1351
+I:4096
+T:Cluster monitor daemon virtual package for the Ceph distributed file system.
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+D:ceph-base ceph-mon-daemon=15.2.13-r1 ceph-mon-tools=15.2.13-r1
 
 C:Q1suNkWUUPjLa30sUP/BVrq4SU5a4=
 P:php7-calendar
@@ -61876,21 +61809,6 @@ t:1608033356
 c:e92b1bde60105f4f6bdbc5027b17b051a504f675
 D:jruby java-jansi-native
 
-C:Q1OGX/SXQwyMT8EcBXiKoxSvsQUz0=
-P:ceph-mgr-node
-V:15.2.13-r0
-A:x86_64
-S:180023
-I:786432
-T:Ceph Manager NodeJS modules
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-D:ceph-mgr=15.2.13-r0 nodejs npm /bin/sh
-
 C:Q12VAKXsmfsyJauhbAJFKpAZBpxjs=
 P:libdbusmenu-glib-dev
 V:16.04.0-r3
@@ -64030,22 +63948,6 @@ c:c7a1f20490e2882233bfdfa682040d3cb0ffd967
 D:so:libbrotlienc.so.1 so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libwoff2common.so.1.0.2
 p:so:libwoff2enc.so.1.0.2=1.0.2
 
-C:Q1giMV37Ak3408cfDuQ6hDeVJtJlA=
-P:rbd-fuse
-V:15.2.13-r0
-A:x86_64
-S:68065
-I:188416
-T:FUSE based client to map Ceph rbd images to files.
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-D:so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libfuse.so.2 so:libgcc_s.so.1 so:librados.so.2 so:librbd.so.1 so:libstdc++.so.6
-p:cmd:rbd-fuse
-
 C:Q1c5VHyAcMgyhqqod94YPjQCnPotM=
 P:jbig2enc
 V:0.29-r1
@@ -64061,6 +63963,22 @@ t:1564607075
 c:0fd223733b459b8b5068b1bf62c75f6cbf48e0bb
 D:so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:liblept.so.5 so:libstdc++.so.6
 p:so:libjbig2enc.so.0=0.0.28 cmd:jbig2 cmd:pdf.py
+
+C:Q1NAiJSp718CGD3iEkBjrGTsqqq5k=
+P:ceph-common
+V:15.2.13-r1
+A:x86_64
+S:21607971
+I:54829056
+T:Common utilities to mount and interact with a ceph storage cluster.
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+D:py3-rados py3-rbd py3-cephfs py3-prettytable so:libaio.so.1 so:libblkid.so.1 so:libboost_context.so.1.72.0 so:libboost_program_options.so.1.72.0 so:libboost_thread.so.1.72.0 so:libc.musl-x86_64.so.1 so:libcap-ng.so.0 so:libceph-common.so.2 so:libcephfs.so.2 so:libcrypto.so.1.1 so:libcurl.so.4 so:libexpat.so.1 so:libgcc_s.so.1 so:libkeyutils.so.1 so:libldap-2.4.so.2 so:libleveldb.so.1 so:liblz4.so.1 so:libncursesw.so.6 so:librados.so.2 so:libradosstriper.so.1 so:librbd.so.1 so:librdkafka.so.1 so:libsnappy.so.1 so:libstdc++.so.6 so:libudev.so.1 so:libz.so.1
+p:cmd:ceph cmd:ceph-authtool cmd:ceph-conf cmd:ceph-dencoder cmd:ceph-post-file cmd:ceph-rbdnamer cmd:ceph-syn cmd:cephfs-data-scan cmd:cephfs-journal-tool cmd:cephfs-table-tool cmd:mount.ceph cmd:rados cmd:rbd cmd:rbd-replay cmd:rbd-replay-many cmd:rbdmap
 
 C:Q1pnGk3FDxCk22Hh5zn8QyKX9EVlA=
 P:sshign-doc
@@ -65908,22 +65826,6 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1608906573
 c:60f918453b30ed83d36223e60183d4b66936589c
 i:borgbackup=1.1.15-r0 zsh
-
-C:Q1lUuLikwI7V5S+jC+tOfS7RRqmgA=
-P:ceph-mds
-V:15.2.13-r0
-A:x86_64
-S:2470346
-I:6107136
-T:Metadata server daemon for the Ceph distributed file system.
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-D:ceph-base so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libgcc_s.so.1 so:libstdc++.so.6
-p:cmd:ceph-mds
 
 C:Q1tsKscl52MlYQhqFfEgwXgfyEhoE=
 P:phpldapadmin
@@ -67837,6 +67739,22 @@ c:cbc6b9fcd706f2a84d4c36c5bdd68a09bbc3516f
 D:so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libicui18n.so.67 so:libicuuc.so.67 so:liblangtag.so.1 so:librevenge-0.0.so.0 so:libstdc++.so.6 so:libxml2.so.2 so:libz.so.1
 p:so:libe-book-0.1.so.1=1.0.3
 
+C:Q1t/cnwMhCJ4tLYput3+8IM68W1uQ=
+P:ceph-radosgw
+V:15.2.13-r1
+A:x86_64
+S:12248364
+I:30994432
+T:Rados REST gateway which implements Amazon's S3 and OpenStack's Swift APIs.
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+D:ceph-common oath-toolkit-liboath so:libboost_context.so.1.72.0 so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libcrypto.so.1.1 so:libcurl.so.4 so:libexpat.so.1 so:libgcc_s.so.1 so:libldap-2.4.so.2 so:liboath.so.0 so:librados.so.2 so:libradosgw.so.2 so:librdkafka.so.1 so:libstdc++.so.6
+p:cmd:radosgw cmd:radosgw-admin cmd:radosgw-es cmd:radosgw-object-expirer cmd:radosgw-token
+
 C:Q1OEjrIp6QplFma2zzu8zHz8uyeZc=
 P:nextcloud-sharebymail
 V:20.0.11-r0
@@ -67977,6 +67895,22 @@ t:1617832892
 c:b2b95d052deef6a8953e405c54f414ca18a59e8d
 D:php7-json so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libicuuc.so.67 so:libsasl2.so.3 so:libsnappy.so.1 so:libssl.so.1.1 so:libz.so.1
 p:php7-mongodb=1.9.1-r0
+
+C:Q1fhivhQ7iamUUHF1acyYVczF/VlI=
+P:rbd-mirror
+V:15.2.13-r1
+A:x86_64
+S:3279081
+I:9428992
+T:Daemon for mirroring RBD images between Ceph clusters.
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+D:ceph-common=15.2.13-r1 so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libgcc_s.so.1 so:librados.so.2 so:libstdc++.so.6
+p:cmd:rbd-mirror
 
 C:Q1r96NASuh+V90fFKVbRqRxa2INhk=
 P:libu2f-server
@@ -69044,6 +68978,22 @@ c:a5ffa436dca3f92bd69afc43b778b07d007a6c26
 D:so:libKF5Activities.so.5 so:libKF5ConfigCore.so.5 so:libKF5CoreAddons.so.5 so:libKF5I18n.so.5 so:libKF5KIOCore.so.5 so:libKF5Plasma.so.5 so:libKF5Service.so.5 so:libKF5ThreadWeaver.so.5 so:libQt5Core.so.5 so:libQt5DBus.so.5 so:libQt5Gui.so.5 so:libQt5Qml.so.5 so:libQt5Widgets.so.5 so:libc.musl-x86_64.so.1 so:libstdc++.so.6
 p:so:libKF5Runner.so.5=5.78.0
 
+C:Q1lDVYSoHZD6siYbQnWFBDuOXfMNk=
+P:libradosstriper
+V:15.2.13-r1
+A:x86_64
+S:430003
+I:1155072
+T:RADOS striping library
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+D:so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libgcc_s.so.1 so:librados.so.2 so:libstdc++.so.6
+p:so:libradosstriper.so.1=1.0.0
+
 C:Q1RXHpx1NgKJNCTPn9rXDWCtuBLMM=
 P:claws-mail
 V:3.17.8-r0
@@ -69343,22 +69293,6 @@ t:1588681075
 c:d2f849fcd6c925667b7dbde820ebc3298e31bffa
 D:so:libc.musl-x86_64.so.1
 p:so:libaom.so.0=0
-
-C:Q1OT4fn32GEdIRdBqOoGm37N72OMo=
-P:libradosstriper
-V:15.2.13-r0
-A:x86_64
-S:430014
-I:1155072
-T:RADOS striping library
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-D:so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libgcc_s.so.1 so:librados.so.2 so:libstdc++.so.6
-p:so:libradosstriper.so.1=1.0.0
 
 C:Q1inmyrW6NoNylYnlmN6Djdy0dd+8=
 P:tvheadend-openrc
@@ -70364,22 +70298,6 @@ c:a505eafe23b52b5026f4b950cbc3fc2e184bc770
 D:so:libKF5ConfigCore.so.5 so:libKF5ConfigGui.so.5 so:libKF5CoreAddons.so.5 so:libKF5Crash.so.5 so:libKF5DBusAddons.so.5 so:libKF5I18n.so.5 so:libKF5KDEGames.so.7 so:libKF5WidgetsAddons.so.5 so:libKF5XmlGui.so.5 so:libQt5Core.so.5 so:libQt5Gui.so.5 so:libQt5Svg.so.5 so:libQt5Widgets.so.5 so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:cmd:bovo
 
-C:Q1CMA+I21eoFY5RRgnpo0nmycji8c=
-P:ceph-fuse
-V:15.2.13-r0
-A:x86_64
-S:629671
-I:1572864
-T:FUSE based client for Ceph distributed network file system.
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-D:so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libfuse.so.2 so:libgcc_s.so.1 so:libstdc++.so.6
-p:cmd:ceph-fuse cmd:mount.fuse.ceph
-
 C:Q1OUvyx8ZBPAQMYIfLryYkw7PGhgE=
 P:libwnck3-dev
 V:3.36.0-r0
@@ -71052,22 +70970,6 @@ t:1616388187
 c:b55e978d0ece249aeb6f473c952520d1da05f0c8
 D:perl btrfs-progs
 p:cmd:btrbk cmd:lsbtr
-
-C:Q1YYUZ5YmHqmymbRBGQ0LjVD3d8lQ=
-P:ceph-utils
-V:15.2.13-r0
-A:x86_64
-S:7383
-I:36864
-T:Ceph utils
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-D:ceph-common=15.2.13-r0 so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
-p:cmd:ceph-diff-sorted
 
 C:Q1MgIOhnpzBoN9jjsmMGwi4dxuaN8=
 P:maliit-framework
@@ -71819,6 +71721,22 @@ t:1606825321
 c:a3c48eaf3fc12475cda633a2fd22ea432e7cfb6b
 i:docs ausweisapp2=1.22.0-r0
 
+C:Q1sa0FnTLs64KUPhA8dtk80kRJpac=
+P:ceph-base
+V:15.2.13-r1
+A:x86_64
+S:7210135
+I:20832256
+T:Base is the package that includes all the files shared amongst ceph servers
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+D:cryptsetup e2fsprogs logrotate parted util-linux xfsprogs ceph-user=15.2.13-r1 ceph-common=15.2.13-r1 librbd=15.2.13-r1 librados=15.2.13-r1 libcephfs=15.2.13-r1 so:libaio.so.1 so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libleveldb.so.1 so:liblz4.so.1 so:liboath.so.0 so:libsnappy.so.1 so:libstdc++.so.6 so:libz.so.1
+p:cmd:ceph-crash cmd:ceph-create-keys cmd:ceph-kvstore-tool cmd:ceph-run cmd:crushtool cmd:monmaptool cmd:osdmaptool
+
 C:Q18zez1F10oEdkhdeou8KME2kWxlc=
 P:libewf-dev
 V:20201129-r0
@@ -72203,22 +72121,6 @@ o:libgit2
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1604162605
 c:b0c754fc8212091368fa354ee27a5729ef21fd36
-
-C:Q1Pjm1TJK7+3wjjybjnl0aETM1Iss=
-P:ceph-dev
-V:15.2.13-r0
-A:x86_64
-S:104867
-I:593920
-T:Ceph is a distributed object store and file system (development files)
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-D:ceph=15.2.13-r0 libcephfs=15.2.13-r0 librados=15.2.13-r0 libradosstriper=15.2.13-r0 librbd=15.2.13-r0 so:libboost_program_options.so.1.72.0 so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:librados.so.2 so:libstdc++.so.6
-p:cmd:librados-config
 
 C:Q1X18LJCNPCyYkYpr+xhxoUCZagIw=
 P:gammaray
@@ -72744,6 +72646,22 @@ c:ce5a05150ba156716d0de87d3258c03ffdc19720
 D:python3 py3-requests
 p:py-update-checker=0.18.0-r0
 
+C:Q10iRc4GwYZsiEJB02MrU5xQj5+zc=
+P:ceph-mon-tools
+V:15.2.13-r1
+A:x86_64
+S:1875092
+I:4755456
+T:Cluster monitor tools for the Ceph distributed file system.
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+D:so:libboost_program_options.so.1.72.0 so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libgcc_s.so.1 so:libleveldb.so.1 so:liblz4.so.1 so:libsnappy.so.1 so:libstdc++.so.6 so:libz.so.1
+p:cmd:ceph-monstore-tool
+
 C:Q1cwm3l89KM1c2FJw056Wn45mBDgw=
 P:kpty-lang
 V:5.78.0-r0
@@ -72942,6 +72860,21 @@ m:Michał Adamski <michal@ert.pl>
 t:1609087603
 c:4013303522d2a69b1a44dbdc01fb7120d7349e41
 D:python3 py3-async-timeout
+
+C:Q1PF1vSaOAI/Uh3A0H8Cw3hawJ0Gk=
+P:py3-rbd
+V:15.2.13-r1
+A:x86_64
+S:406934
+I:1228800
+T:Python libraries for the RADOS block device
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+D:py3-rados so:libc.musl-x86_64.so.1 so:librbd.so.1
 
 C:Q1rYTn98LfYblc25SlbfzHzEit4bA=
 P:openvswitch-test
@@ -77650,6 +77583,21 @@ t:1598451888
 c:345887e2a0a63d6502ef60085418c9a85e1b92a4
 D:python3 so:libasound.so.2 so:libc.musl-x86_64.so.1 so:libpulse-simple.so.0 so:libpulse.so.0
 
+C:Q152u227KXEI+r2xq302Tto7XiPKw=
+P:ceph-doc
+V:15.2.13-r1
+A:x86_64
+S:114036
+I:237568
+T:Ceph is a distributed object store and file system (documentation)
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+i:docs ceph=15.2.13-r1
+
 C:Q1+IWA05EPebbcw5PnahqyqMWA8sU=
 P:libheif
 V:1.9.1-r0
@@ -79421,21 +79369,6 @@ t:1608813705
 c:fd2352112bc3fe232c124337f33a69c150dbb4a2
 D:pulseaudio so:libX11.so.6 so:libXext.so.6 so:libXi.so.6 so:libasound.so.2 so:libc.musl-x86_64.so.1 so:libcairo.so.2 so:libcanberra-gtk3.so.0 so:libcanberra.so.0 so:libcolord.so.2 so:libcups.so.2 so:libfontconfig.so.1 so:libgcr-base-3.so.1 so:libgdk-3.so.0 so:libgdk_pixbuf-2.0.so.0 so:libgeoclue-2.so.0 so:libgeocode-glib.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgnome-desktop-3.so.19 so:libgobject-2.0.so.0 so:libgtk-3.so.0 so:libgudev-1.0.so.0 so:libgweather-3.so.16 so:libintl.so.8 so:liblcms2.so.2 so:libmm-glib.so.0 so:libnm.so.0 so:libnotify.so.4 so:libnspr4.so so:libnss3.so so:libpango-1.0.so.0 so:libpangocairo-1.0.so.0 so:libpolkit-gobject-1.so.0 so:libpulse-mainloop-glib.so.0 so:libpulse.so.0 so:libupower-glib.so.3 so:libwacom.so.2 so:libwayland-client.so.0
 p:so:libgsd.so=0
-
-C:Q1IJYgsKz2q/Ahv4LeOovepYTTLg0=
-P:py3-rados
-V:15.2.13-r0
-A:x86_64
-S:413362
-I:1175552
-T:Python libraries for the RADOS object store
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-D:so:libc.musl-x86_64.so.1 so:librados.so.2
 
 C:Q1c43ivyCUScO1SLMyUtmxreFCqUQ=
 P:termite-terminfo
@@ -83080,21 +83013,6 @@ t:1586304809
 c:8d3ee33b51014fdb14ab716da3d39c7bccfb5a16
 i:docs atril=1.24.0-r1
 
-C:Q1aMuMxgrVZ9bVoTGLo52pjUyxDvw=
-P:ceph-bash-completion
-V:15.2.13-r0
-A:x86_64
-S:3729
-I:28672
-T:Bash completions for Ceph
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-i:ceph=15.2.13-r0 bash-completion
-
 C:Q1udqc8rqXnlJgnMnJsVQE7ZNvlCQ=
 P:ruby-rake-compiler
 V:1.1.1-r0
@@ -83110,21 +83028,6 @@ t:1595169570
 c:a924372efe966b579d0f82ad608adefb0f4fcd60
 D:ruby ruby-rake
 p:cmd:rake-compiler
-
-C:Q1SkqcZz/oo2KpaJocwcZX/nhrhqY=
-P:ceph-openrc
-V:15.2.13-r0
-A:x86_64
-S:3225
-I:24576
-T:Ceph is a distributed object store and file system (OpenRC init scripts)
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-i:openrc ceph=15.2.13-r0
 
 C:Q1eyDnFstwJH7W5duOiDq9ygT6OhI=
 P:okteta-lang
@@ -84090,6 +83993,22 @@ t:1592739637
 c:26d0b617a9548906517503f73485cf35537f3c37
 i:docs crystal=0.35.1-r0
 
+C:Q1Mc8FNKLP4CRxpPqdsKOrpunA1GE=
+P:rbd-fuse
+V:15.2.13-r1
+A:x86_64
+S:68054
+I:188416
+T:FUSE based client to map Ceph rbd images to files.
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+D:so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libfuse.so.2 so:libgcc_s.so.1 so:librados.so.2 so:librbd.so.1 so:libstdc++.so.6
+p:cmd:rbd-fuse
+
 C:Q1hFmAAtMV/uW4RrndMktRxyRdEdk=
 P:grim
 V:1.3.1-r0
@@ -84914,6 +84833,22 @@ t:1608030501
 c:df621331b27ede05379cf6fbd724feae40574bc9
 D:/bin/sh so:libboost_program_options.so.1.72.0 so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libgcc_s.so.1 so:libluajit-5.1.so.2 so:libsodium.so.23 so:libsqlite3.so.0 so:libstdc++.so.6
 p:cmd:dnspcap2calidns cmd:pdns_control cmd:pdns_server cmd:pdnsutil
+
+C:Q1OYPg9y3UrplUDGbVogGIziC46zk=
+P:ceph-mon-daemon
+V:15.2.13-r1
+A:x86_64
+S:3427581
+I:8626176
+T:Cluster monitor daemon for the Ceph distributed file system.
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+D:ceph-user=15.2.13-r1 so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libgcc_s.so.1 so:libleveldb.so.1 so:liblz4.so.1 so:libsnappy.so.1 so:libstdc++.so.6 so:libz.so.1
+p:cmd:ceph-mon
 
 C:Q16lsfgdWZ5VzWroHjhqMerqntvxM=
 P:perl-http-tiny-mech
@@ -87346,6 +87281,21 @@ t:1622507929
 c:3ea13f15b72d18d593a4f42aa1e807a34d9b439e
 i:docs libyang=1.0.184-r1
 
+C:Q15WWFvet1SYuNRtOthRjSOnpFRPY=
+P:ceph-openrc
+V:15.2.13-r1
+A:x86_64
+S:3219
+I:24576
+T:Ceph is a distributed object store and file system (OpenRC init scripts)
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+i:openrc ceph=15.2.13-r1
+
 C:Q1+y71pk7Oz3l8esDoicPk4REGr1Q=
 P:ghc-dev
 V:8.8.4-r0
@@ -88009,6 +87959,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1606797174
 c:4733e6ff2bc88826009c3cf4b7bcecd60f4c1c67
 i:docs perl-date-manip=6.83-r0
+
+C:Q15kjBLx7ppIXkRrrHMR8jgyLCyHc=
+P:ceph-mds
+V:15.2.13-r1
+A:x86_64
+S:2470343
+I:6107136
+T:Metadata server daemon for the Ceph distributed file system.
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+D:ceph-base so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libgcc_s.so.1 so:libstdc++.so.6
+p:cmd:ceph-mds
 
 C:Q1NxbSM+PtO7dibNKgvpEZUbjt4cg=
 P:suitesparse-doc
@@ -90814,22 +90780,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1609842800
 c:ac98ced6ab6e5a82204449f6567387845bfdd990
 i:docs mkvtoolnix=52.0.0-r0
-
-C:Q1W0/yf6SVMweN3bLEU/9lk7D+CQk=
-P:librados
-V:15.2.13-r0
-A:x86_64
-S:4008117
-I:11165696
-T:RADOS distributed object store client library
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-D:so:libblkid.so.1 so:libboost_iostreams.so.1.72.0 so:libboost_thread.so.1.72.0 so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libfmt.so.7 so:libgcc_s.so.1 so:libstdc++.so.6 so:libudev.so.1
-p:so:libceph-common.so.2=2 so:librados.so.2=2.0.0
 
 C:Q1fNdgc6zDKCcoik2FapGcbegQFOM=
 P:xfconf-lang
@@ -96285,6 +96235,22 @@ t:1594393867
 c:59c24d6f89b6ee0aa2e6a1ddf3a8371f686de8fc
 i:docs virt-viewer=9.0-r0
 
+C:Q1iGSkGKuN8Db4XLGqsDXakq+OdFc=
+P:librbd
+V:15.2.13-r1
+A:x86_64
+S:2097138
+I:5505024
+T:RADOS block device client library
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+D:so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libgcc_s.so.1 so:librados.so.2 so:libstdc++.so.6
+p:so:librbd.so.1=1.12.0
+
 C:Q1m55WntP/YGMCvz41vwFPZSOZRbs=
 P:murmur-doc
 V:1.3.3-r6
@@ -97767,21 +97733,6 @@ t:1500746533
 c:52a7b7a137394830dca4dc5672b348f49254f50c
 D:lua5.1
 i:lua-mediator=1.1.2-r1 lua5.1
-
-C:Q19HYuQNgHCQaD5oQGLbUyTNAGxlY=
-P:py3-cephfs
-V:15.2.13-r0
-A:x86_64
-S:170807
-I:495616
-T:Python libraries for Ceph distributed file system
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-D:py3-rados so:libc.musl-x86_64.so.1 so:libcephfs.so.2
 
 C:Q1mFvp4d59ebZ04vHWccQ0Y1/fp6g=
 P:i3wm
@@ -101431,21 +101382,6 @@ t:1567697811
 c:9e57b1f1197ee99b9f998472371042c42bffdc49
 i:docs ecryptfs-utils=111-r9
 
-C:Q1BElUQ7lUmM5xNJUxzIzlCaCP/no=
-P:ceph-osd
-V:15.2.13-r0
-A:x86_64
-S:1359
-I:4096
-T:Object storage daemon virtual package for the Ceph distributed file system.
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-D:ceph-osd-daemon=15.2.13-r0 ceph-osd-tools=15.2.13-r0 ceph-volume=15.2.13-r0
-
 C:Q1l5jPujA0blbE/3cKDLHuBK+zNjk=
 P:sane-backend-epson2
 V:1.0.31-r1
@@ -102475,6 +102411,22 @@ c:211a7af7fb70c76c84868401fe3c915f3a8c024d
 D:hicolor-icon-theme so:libEGL.so.1 so:libGL.so.1 so:libICE.so.6 so:libQt5Core.so.5 so:libQt5DBus.so.5 so:libQt5Network.so.5 so:libSM.so.6 so:libX11-xcb.so.1 so:libX11.so.6 so:libc.musl-x86_64.so.1 so:libcups.so.2 so:libdrm.so.2 so:libfontconfig.so.1 so:libfreetype.so.6 so:libgbm.so.1 so:libgcc_s.so.1 so:libglib-2.0.so.0 so:libharfbuzz.so.0 so:libinput.so.10 so:libjpeg.so.8 so:libmtdev.so.1 so:libpng16.so.16 so:libstdc++.so.6 so:libudev.so.1 so:libxcb-glx.so.0 so:libxcb-icccm.so.4 so:libxcb-image.so.0 so:libxcb-keysyms.so.1 so:libxcb-randr.so.0 so:libxcb-render-util.so.0 so:libxcb-render.so.0 so:libxcb-shape.so.0 so:libxcb-shm.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb-xinerama.so.0 so:libxcb-xinput.so.0 so:libxcb-xkb.so.1 so:libxcb.so.1 so:libxkbcommon-x11.so.0 so:libxkbcommon.so.0 so:libz.so.1
 p:so:libQt5EglFSDeviceIntegration.so.5=5.15.2 so:libQt5EglFsKmsSupport.so.5=5.15.2 so:libQt5Gui.so.5=5.15.2 so:libQt5OpenGL.so.5=5.15.2 so:libQt5PrintSupport.so.5=5.15.2 so:libQt5Widgets.so.5=5.15.2 so:libQt5XcbQpa.so.5=5.15.2
 
+C:Q1irg++bwkDzxLGTmRw8Cq7H+ufNg=
+P:ceph-fuse
+V:15.2.13-r1
+A:x86_64
+S:629671
+I:1572864
+T:FUSE based client for Ceph distributed network file system.
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+D:so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libfuse.so.2 so:libgcc_s.so.1 so:libstdc++.so.6
+p:cmd:ceph-fuse cmd:mount.fuse.ceph
+
 C:Q1C9zpvmxkZDiAWdKdjlV3ppEULLk=
 P:pgbadger-doc
 V:11.4-r0
@@ -102840,22 +102792,6 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1606949382
 c:bdc6188ddff7573f110130725f50e3960b17ba16
 D:libreoffice-common
-
-C:Q1YgXBjdoWrHkz9UtT6lKqsQDCsGg=
-P:ceph-radosgw
-V:15.2.13-r0
-A:x86_64
-S:12248375
-I:30994432
-T:Rados REST gateway which implements Amazon's S3 and OpenStack's Swift APIs.
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-D:ceph-common oath-toolkit-liboath so:libboost_context.so.1.72.0 so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libcrypto.so.1.1 so:libcurl.so.4 so:libexpat.so.1 so:libgcc_s.so.1 so:libldap-2.4.so.2 so:liboath.so.0 so:librados.so.2 so:libradosgw.so.2 so:librdkafka.so.1 so:libstdc++.so.6
-p:cmd:radosgw cmd:radosgw-admin cmd:radosgw-es cmd:radosgw-object-expirer cmd:radosgw-token
 
 C:Q1g1LHUQjXzqQluJ2lK7S+peehuN8=
 P:json-glib-doc
@@ -103531,6 +103467,22 @@ c:c67eb1e3f814570445ca1c50ddcb2c6f509340ed
 D:so:libc.musl-x86_64.so.1
 p:cmd:atinout
 
+C:Q10jb9wd3Yr+x1lnHBK7nsmn7I/k4=
+P:ceph-utils
+V:15.2.13-r1
+A:x86_64
+S:7379
+I:36864
+T:Ceph utils
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+D:ceph-common=15.2.13-r1 so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
+p:cmd:ceph-diff-sorted
+
 C:Q1A37bwfEBtXxFDCkrwdnrX4pxg7k=
 P:libcprime-dev
 V:4.0.0-r0
@@ -103624,22 +103576,6 @@ t:1597740324
 c:39eb818370f8bbefe59b96d7d681a402bf8a088b
 D:bash
 p:cmd:todo.sh
-
-C:Q1WFCq/W00SajzhAKA1pZmM6M9sl8=
-P:ceph-osd-daemon
-V:15.2.13-r0
-A:x86_64
-S:8709300
-I:22167552
-T:Object storage daemon for the Ceph distributed file system.
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-D:fuse snappy lz4-libs ceph-user=15.2.13-r0 so:libaio.so.1 so:libblkid.so.1 so:libboost_iostreams.so.1.72.0 so:libboost_thread.so.1.72.0 so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libfmt.so.7 so:libfuse.so.2 so:libgcc_s.so.1 so:libleveldb.so.1 so:liblz4.so.1 so:libsnappy.so.1 so:libstdc++.so.6 so:libudev.so.1 so:libz.so.1
-p:cmd:ceph-osd
 
 C:Q1iYyFp/9K9d9myqVU4oci+Xy+VLQ=
 P:kalgebra-doc
@@ -103823,6 +103759,22 @@ m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
 t:1513261437
 c:7e331b087fbd132905a91efa6180ce03b40a7156
 D:homer-api php7-ldap
+
+C:Q1le4swZqpmAzVCNxb/zSsSn5+PJk=
+P:ceph-osd-tools
+V:15.2.13-r1
+A:x86_64
+S:11216519
+I:27930624
+T:Object storage daemon tools for the Ceph distributed file system.
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+D:ceph-base=15.2.13-r1 lz4-libs so:libaio.so.1 so:libboost_program_options.so.1.72.0 so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libcrypto.so.1.1 so:libfuse.so.2 so:libgcc_s.so.1 so:libleveldb.so.1 so:liblz4.so.1 so:libsnappy.so.1 so:libstdc++.so.6 so:libz.so.1
+p:cmd:ceph-bluestore-tool cmd:ceph-clsinfo cmd:ceph-objectstore-tool cmd:ceph-osdomap-tool
 
 C:Q1dn4WGMBScO/M8K6dE5iPHcs1CJY=
 P:libcaca-doc
@@ -105488,6 +105440,22 @@ c:f2fb662484f0a96fe9cf3585b23d94e3e3ad1b54
 D:so:libc.musl-x86_64.so.1 so:libcairo.so.2 so:libfontconfig.so.1 so:libfreetype.so.6 so:libgdk-3.so.0 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgnome-desktop-3.so.19 so:libgobject-2.0.so.0 so:libgtk-3.so.0 so:libharfbuzz.so.0 so:libintl.so.8 so:libpango-1.0.so.0 so:libpangocairo-1.0.so.0
 p:cmd:gnome-font-viewer cmd:gnome-thumbnail-font
 
+C:Q1WcMZ8dkvw0nKrdiPoIBkZQzC1ao=
+P:ceph-dev
+V:15.2.13-r1
+A:x86_64
+S:104859
+I:593920
+T:Ceph is a distributed object store and file system (development files)
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+D:ceph=15.2.13-r1 libcephfs=15.2.13-r1 librados=15.2.13-r1 libradosstriper=15.2.13-r1 librbd=15.2.13-r1 so:libboost_program_options.so.1.72.0 so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:librados.so.2 so:libstdc++.so.6
+p:cmd:librados-config
+
 C:Q1CzqzsylfYhztbjBz528O0X6Op1w=
 P:phonon-dev
 V:4.11.1-r2
@@ -106378,21 +106346,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1601381769
 c:4a5b99571f9791ce87413cd4b503e7ea6a0b07f4
 i:docs perl-unicode-normalize=1.26-r5
-
-C:Q1+Nu3ISfkkxwLI7akSceXQlZNOqs=
-P:ceph-mon
-V:15.2.13-r0
-A:x86_64
-S:1356
-I:4096
-T:Cluster monitor daemon virtual package for the Ceph distributed file system.
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-D:ceph-base ceph-mon-daemon=15.2.13-r0 ceph-mon-tools=15.2.13-r0
 
 C:Q1SarN8fZ5tkTdjjmD9Zs62Dk5pgA=
 P:icoutils-doc
@@ -108192,22 +108145,6 @@ L:LGPL-2.0-or-later-WITH-linking-exception
 o:ocamlbuild
 t:1610460319
 c:df805d234e2b5db9b4d6c1e6d9f0745ff958e6e0
-
-C:Q1q7/dRh+dvjt9pe85HiWY55Tyds4=
-P:rbd-nbd
-V:15.2.13-r0
-A:x86_64
-S:144567
-I:401408
-T:NBD based client to map Ceph rbd images to local device.
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-D:so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libgcc_s.so.1 so:libnl-3.so.200 so:libnl-genl-3.so.200 so:librados.so.2 so:librbd.so.1 so:libstdc++.so.6
-p:cmd:rbd-nbd
 
 C:Q13JhuSDMdvQyimYISQoGY87AjqmQ=
 P:py3-betamax
@@ -110035,6 +109972,22 @@ t:1590234061
 c:4f0ab3eaccbebec1bb0836afb994e2ec98e6efa2
 D:perl so:libc.musl-x86_64.so.1
 p:cmd:epsffit cmd:extractres cmd:fixdlsrps cmd:fixfmps cmd:fixmacps cmd:fixpsditps cmd:fixpspps cmd:fixscribeps cmd:fixtpps cmd:fixwfwps cmd:fixwpps cmd:fixwwps cmd:getafm cmd:includeres cmd:psbook cmd:psmerge cmd:psnup cmd:psresize cmd:psselect cmd:pstops cmd:showchar
+
+C:Q1F+TMsB/unhtEN30WYdAkehXVo38=
+P:ceph-mgr
+V:15.2.13-r1
+A:x86_64
+S:20457857
+I:98111488
+T:Ceph Manager Daemon
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+D:ceph-base=15.2.13-r1 so:libboost_python38.so.1.72.0 so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libfmt.so.7 so:libgcc_s.so.1 so:libpython3.8.so.1.0 so:libstdc++.so.6
+p:cmd:ceph-mgr
 
 C:Q12AG42OnXYF5Ib9Lw8wCdYvNjHlM=
 P:kxmlgui
@@ -115907,22 +115860,6 @@ c:3123ccb003f6b3a968b66e2498394f0575e5746c
 D:so:libc.musl-x86_64.so.1 so:libgcc_s.so.1 so:libqpdf.so.28 so:libstdc++.so.6
 p:cmd:qpdf cmd:zlib-flate
 
-C:Q1Uu0lI/T+YJFspTCLg6Glj6dL3b0=
-P:ceph-mon-tools
-V:15.2.13-r0
-A:x86_64
-S:1875098
-I:4755456
-T:Cluster monitor tools for the Ceph distributed file system.
-U:https://ceph.com/
-L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
-o:ceph
-m:Duncan Bellamy <dunk@denkimushi.com>
-t:1622158225
-c:cba2ee11835af035f6066f7f6bdac8a857f5e739
-D:so:libboost_program_options.so.1.72.0 so:libc.musl-x86_64.so.1 so:libceph-common.so.2 so:libgcc_s.so.1 so:libleveldb.so.1 so:liblz4.so.1 so:libsnappy.so.1 so:libstdc++.so.6 so:libz.so.1
-p:cmd:ceph-monstore-tool
-
 C:Q1Y+4Ol7Z04fq+5ddG+6TWyXGu7eU=
 P:mate-settings-daemon-dev
 V:1.24.1-r0
@@ -117316,6 +117253,21 @@ m:Timothy Legge <timlegge@gmail.com>
 t:1600709951
 c:fb9e539734466a37477ab2f209c9c68eabe68dc9
 i:docs perl-www-mechanize-cached=1.54-r1
+
+C:Q1sk9TrU+fHhWg8y7glf8NStJCCxk=
+P:ceph-bash-completion
+V:15.2.13-r1
+A:x86_64
+S:3726
+I:28672
+T:Bash completions for Ceph
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+i:ceph=15.2.13-r1 bash-completion
 
 C:Q1U6cadtdRikyfRqe7QCjNKCvXAcc=
 P:mate-calc-doc
@@ -128170,6 +128122,22 @@ t:1608310977
 c:eedcd70af78fabe4c8cd6b79eeae6b057d7e5ec6
 i:github-cli=1.3.1-r0 fish
 
+C:Q1yg2uWaDxnNEqeEyfRyGQlx17FqI=
+P:librados
+V:15.2.13-r1
+A:x86_64
+S:4008121
+I:11165696
+T:RADOS distributed object store client library
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+D:so:libblkid.so.1 so:libboost_iostreams.so.1.72.0 so:libboost_thread.so.1.72.0 so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libfmt.so.7 so:libgcc_s.so.1 so:libstdc++.so.6 so:libudev.so.1
+p:so:libceph-common.so.2=2 so:librados.so.2=2.0.0
+
 C:Q1LdyJ1lB+qzLY6+eQGAmDUjawmQg=
 P:libxfce4ui
 V:4.16.0-r1
@@ -133872,6 +133840,22 @@ t:1612571501
 c:d8de85d6d5f2352de26b20ee9ed1273d2e379aba
 D:collectd so:libc.musl-x86_64.so.1 so:libmariadb.so.3
 
+C:Q1hE+uissW/Ga8YDQTgrNbFW9DTPU=
+P:ceph-volume
+V:15.2.13-r1
+A:x86_64
+S:269462
+I:1339392
+T:ceph-volume tool for the Ceph distributed file system.
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+D:lvm2
+p:cmd:ceph-volume
+
 C:Q1hTEB++r3VEfVKvVJ0tBahgsALDo=
 P:gnome-characters-lang
 V:3.34.0-r0
@@ -137007,6 +136991,22 @@ t:1608813740
 c:8cff1aed683a1a97f495db6ee08fa468710a7025
 D:hicolor-icon-theme so:libX11.so.6 so:libc.musl-x86_64.so.1 so:libcairo.so.2 so:libexo-2.so.0 so:libgarcon-1.so.0 so:libgarcon-gtk3-1.so.0 so:libgdk-3.so.0 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-3.so.0 so:libnotify.so.4 so:libpango-1.0.so.0 so:libthunarx-3.so.0 so:libwnck-3.so.0 so:libxfce4ui-2.so.0 so:libxfce4util.so.7 so:libxfconf-0.so.3
 p:cmd:xfdesktop cmd:xfdesktop-settings
+
+C:Q1GUovBxjjrroianzg2bOiVUrwcWs=
+P:ceph-osd-daemon
+V:15.2.13-r1
+A:x86_64
+S:8709287
+I:22167552
+T:Object storage daemon for the Ceph distributed file system.
+U:https://ceph.com/
+L:LGPL-2.1-only AND LGPL-2.0-or-later AND GPL-2.0-only AND GPL-3.0-only AND CC-BY-SA-1.0 AND BSL-1.0 AND GPL-2.0-or-later WITH Autoconf-exception-2.0 AND BSD-3-Clause AND MIT AND custom
+o:ceph
+m:Duncan Bellamy <dunk@denkimushi.com>
+t:1625477088
+c:d779c834d38a82ae15e2af2c0ea14cf019206b18
+D:fuse snappy lz4-libs ceph-user=15.2.13-r1 so:libaio.so.1 so:libblkid.so.1 so:libboost_iostreams.so.1.72.0 so:libboost_thread.so.1.72.0 so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libfmt.so.7 so:libfuse.so.2 so:libgcc_s.so.1 so:libleveldb.so.1 so:liblz4.so.1 so:libsnappy.so.1 so:libstdc++.so.6 so:libudev.so.1 so:libz.so.1
+p:cmd:ceph-osd
 
 C:Q1GsT9BJIt408JbHF6m2MQTNBBUBs=
 P:php7-enchant
