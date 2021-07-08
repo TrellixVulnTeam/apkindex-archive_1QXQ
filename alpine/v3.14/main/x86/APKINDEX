@@ -437,22 +437,6 @@ c:792fb875f317d992027428297ea0103d82b98373
 D:so:libc.musl-x86.so.1
 p:so:libnl-3.so.200=200.26.0 so:libnl-genl-3.so.200=200.26.0 so:libnl-idiag-3.so.200=200.26.0 so:libnl-nf-3.so.200=200.26.0 so:libnl-route-3.so.200=200.26.0 so:libnl-xfrm-3.so.200=200.26.0
 
-C:Q1FZrU1ezr9vnfl6xnQSUEY49fhsQ=
-P:rsyslog-clickhouse
-V:8.2012.0-r0
-A:x86
-S:11874
-I:49152
-T:clickhouse support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1 so:libcurl.so.4
-p:rsyslog-omclickhouse=8.2012.0-r0
-
 C:Q1Vtv8BEwPN21AcDuMMLi1wB1ekNw=
 P:poppler-dev
 V:21.06.1-r0
@@ -1530,6 +1514,22 @@ t:1619322721
 c:07b9e0b9807ccfa5fcac86af352476c329a7bd68
 D:kamailio so:libc.musl-x86.so.1 so:libsrdb1.so.1 so:libtrie.so.1
 
+C:Q15peQhysVKu7AC7ZLfsetI7VfX2U=
+P:rsyslog-zmq
+V:8.2012.0-r1
+A:x86
+S:14694
+I:65536
+T:zmq support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1 so:libczmq.so.4
+p:rsyslog-imczmq=8.2012.0-r1 rsyslog-omczmq=8.2012.0-r1
+
 C:Q1Z1hbvYsGFH/+Smk6s7MPLybVZXk=
 P:lua-lzlib
 V:0.4.3-r1
@@ -2020,21 +2020,21 @@ t:1621500237
 c:79f91a34f3ee0f9e2b868cf5f1d999ac10d32233
 i:docs apk-tools=2.12.5-r1
 
-C:Q1EYpux62zBm8+5SMfZ1+wBsEuSHg=
-P:rsyslog-crypto
-V:8.2012.0-r0
+C:Q1n/kzmVtarsyZN9SMwwNaqXe8sKg=
+P:rsyslog-relp
+V:8.2012.0-r1
 A:x86
-S:12859
-I:45056
-T:crypto support for rsyslog
+S:18297
+I:69632
+T:relp support for rsyslog
 U:https://www.rsyslog.com/
 L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
 o:rsyslog
 m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1 so:libgcrypt.so.20
-p:rsyslog-lmcry_gcry=8.2012.0-r0
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1 so:librelp.so.0
+p:rsyslog-imrelp=8.2012.0-r1 rsyslog-omrelp=8.2012.0-r1
 
 C:Q1kmQd+rD5BDDzPRWPstJB601LZSg=
 P:perl-mozilla-ca
@@ -2111,22 +2111,6 @@ t:1623308501
 c:3696cb0079025d1e8458b8056372b53449ebc6a2
 D:so:libc.musl-x86.so.1 so:libcap.so.2 so:libgcc_s.so.1 so:liblxc.so.1 so:libseccomp.so.2
 p:cmd:init.lxc cmd:init.lxc.static cmd:lxc-attach cmd:lxc-autostart cmd:lxc-cgroup cmd:lxc-checkconfig cmd:lxc-checkpoint cmd:lxc-config cmd:lxc-console cmd:lxc-copy cmd:lxc-create cmd:lxc-destroy cmd:lxc-device cmd:lxc-execute cmd:lxc-freeze cmd:lxc-info cmd:lxc-ls cmd:lxc-monitor cmd:lxc-snapshot cmd:lxc-start cmd:lxc-stop cmd:lxc-top cmd:lxc-unfreeze cmd:lxc-unshare cmd:lxc-update-config cmd:lxc-usernsexec cmd:lxc-wait
-
-C:Q1uEUJcjqwH6xnBM0oH/zjXTcvLKQ=
-P:rsyslog-relp
-V:8.2012.0-r0
-A:x86
-S:18308
-I:69632
-T:relp support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1 so:librelp.so.0
-p:rsyslog-imrelp=8.2012.0-r0 rsyslog-omrelp=8.2012.0-r0
 
 C:Q1iqIW59GTkc5hsl/4jFloCKzRJqM=
 P:libvorbis-static
@@ -2944,22 +2928,6 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:libdaemon=0.14-r2 pkgconfig
 p:pc:libdaemon=0.14
-
-C:Q1g+Xtl+8BTBjEpZIoYLsd8AjoaEY=
-P:rsyslog-udpspoof
-V:8.2012.0-r0
-A:x86
-S:9550
-I:40960
-T:udpspoof support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1 so:libnet.so.9
-p:rsyslog-omudpspoof=8.2012.0-r0
 
 C:Q1jMXSUFVc/DGryXi5TYat1DBq+e8=
 P:fakeroot-dbg
@@ -4006,6 +3974,21 @@ t:1618694286
 c:43a23a52f91f26ad51ddd2fe2060406c2c2a8336
 i:docs tcpflow=1.6.1-r1
 
+C:Q19t4gkQQlfueQQiv/YB/TZhxOAvg=
+P:rsyslog-pmaixforwardedfrom
+V:8.2012.0-r1
+A:x86
+S:4677
+I:32768
+T:pmaixforwardedfrom support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1
+
 C:Q1Fyt7ieGu3qlUHZyIXHgvWdifHJ4=
 P:perl-tree-dag_node
 V:1.32-r0
@@ -4113,22 +4096,6 @@ t:1611128792
 c:44c9fa9914986c717a7206c57bc1dc9a55dc4641
 D:pkgconfig
 p:pc:bash=5.1.4 cmd:bashbug
-
-C:Q1CDm9Nn+pFslx6rdjrfOZFCuyIMc=
-P:rsyslog-gssapi
-V:8.2012.0-r0
-A:x86
-S:17735
-I:81920
-T:gssapi support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1 so:libgssapi_krb5.so.2
-p:rsyslog-lmgssutil=8.2012.0-r0 rsyslog-imgssapi=8.2012.0-r0 rsyslog-omgssapi=8.2012.0-r0
 
 C:Q1aMsKeV+0tOeViWOMBxdJCQ0jNEQ=
 P:lua5.3-curl
@@ -4553,21 +4520,6 @@ t:1518447418
 c:4307ea6f79a360536438ab97bab081742b1866a0
 D:pkgconfig rarian=0.8.1-r7
 p:pc:rarian=0.8.1 cmd:rarian-sk-config cmd:scrollkeeper-config
-
-C:Q1AiAB5/+fKqrzLOXuaHz80mqhtRQ=
-P:rsyslog-mmrm1stspace
-V:8.2012.0-r0
-A:x86
-S:4882
-I:32768
-T:mmrm1stspace support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1
 
 C:Q1EtoBHRRkUmVBHWpR3yHAFy8op6A=
 P:lua5.1-curl
@@ -5140,21 +5092,6 @@ t:1603276333
 c:9665d8688f433a8a7cb46ebfb32d8d18300f71eb
 D:perl perl-capture-tiny
 
-C:Q1S5z3tqYhjVp7ZXDb4DwI/EryDEU=
-P:rsyslog-mmfields
-V:8.2012.0-r0
-A:x86
-S:5793
-I:32768
-T:mmfields support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1
-
 C:Q1XMA04Xqwt7epkRT3jhojQE1o86Q=
 P:ciwiki
 V:2.0.5-r2
@@ -5663,6 +5600,22 @@ t:1616783721
 c:97a94bf1e99757161ee44c1f9eb6df0dbcf3be85
 i:docs softhsm=2.6.1-r1
 
+C:Q1xmaVl8KqAZ6NSO8ac43EqIUoifE=
+P:rsyslog-http
+V:8.2012.0-r1
+A:x86
+S:22292
+I:81920
+T:http support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1 so:libcurl.so.4
+p:rsyslog-omhttp=8.2012.0-r1 rsyslog-fmhttp=8.2012.0-r1
+
 C:Q16OJrehGKa2bCTvMZPjZCaGEnWC8=
 P:linux-firmware-isci
 V:20210511-r0
@@ -5847,6 +5800,22 @@ t:1622875132
 c:695c89eac1d43e3f8d6a335a9d60b62f88610f16
 D:perl ca-certificates perl-net-ssleay perl-mozilla-ca
 
+C:Q1XzzhJMQPhOzOPTLEn4NUdcTIhk0=
+P:rsyslog-elasticsearch
+V:8.2012.0-r1
+A:x86
+S:20704
+I:69632
+T:elasticsearch support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1 so:libcurl.so.4
+p:rsyslog-omelasticsearch=8.2012.0-r1
+
 C:Q1gE82FX+oWMvQ2A5DasdPdFkqPlQ=
 P:unifont
 V:13.0.06-r0
@@ -6001,22 +5970,6 @@ t:1624983700
 c:98710256acf90e670e79f32f1f0350b830979d24
 D:so:libc.musl-x86.so.1 so:libtls.so.2
 p:cmd:ntpctl cmd:ntpd
-
-C:Q1FVWOPBtv2l+LedvVnobNIoxVj9I=
-P:rsyslog-tls
-V:8.2012.0-r0
-A:x86
-S:18973
-I:65536
-T:tls support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1 so:libgnutls.so.30
-p:rsyslog-lmnsd_gtls=8.2012.0-r0
 
 C:Q11b8miLl0TAi7UubpYqi0IlKA5rc=
 P:perl-xml-simple
@@ -6216,21 +6169,6 @@ t:1617867766
 c:0130385402966b701a29a3a22040681043eeddd3
 D:libxkbcommon-x11=1.2.1-r0 libxkbcommon-x11=1.2.1-r0 libxkbcommon=1.2.1-r0 pc:libxml-2.0 pc:xcb-xkb>=1.10 pc:xcb>=1.10 pkgconfig
 p:pc:xkbcommon-x11=1.2.1 pc:xkbcommon=1.2.1 pc:xkbregistry=1.2.1
-
-C:Q1dsRzq2TmmfSEEhi8JrqbX7nxYQk=
-P:rsyslog-openrc
-V:8.2012.0-r0
-A:x86
-S:1721
-I:16384
-T:Enhanced multi-threaded syslogd with database support and more (OpenRC init scripts)
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-i:openrc rsyslog=8.2012.0-r0
 
 C:Q1qGDGABo+c69IOVg4st8fgFDNgB4=
 P:perl-inline
@@ -7633,6 +7571,22 @@ t:1619555798
 c:a385852e3239f1198d99704ee30336b9eb72dc87
 i:drbd-utils=9.16.0-r0 bash-completion
 
+C:Q1+c1uC/oyE/3J/OWPIJgag8i7kE4=
+P:rsyslog-clickhouse
+V:8.2012.0-r1
+A:x86
+S:11866
+I:49152
+T:clickhouse support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1 so:libcurl.so.4
+p:rsyslog-omclickhouse=8.2012.0-r1
+
 C:Q16vatnrR3eTl41BBiGXCeln31sGI=
 P:lua-stdlib-normalize
 V:2.0.3-r1
@@ -8603,22 +8557,6 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.3 so:libc.musl-x86.so.1
 i:lua-filesystem=1.8.0-r1 lua5.3
 
-C:Q1gQ+EzguF5RAjPzOfXnc6T325eNY=
-P:rsyslog-testing
-V:8.2012.0-r0
-A:x86
-S:6206
-I:32768
-T:testing support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1
-p:rsyslog-omtesting=8.2012.0-r0
-
 C:Q1NPXYEV3fV7MFWmdCq/h8nrzIMLw=
 P:varnish-doc
 V:6.6.0-r0
@@ -9299,21 +9237,21 @@ c:388a4fb3640f8ccbd18e105df3ad741dca4247e1
 D:so:libc.musl-x86.so.1
 p:so:libz.so.1=1.2.11
 
-C:Q1WugsD0c76lNmeOIHfEfMAjxax4U=
-P:rsyslog-mysql
-V:8.2012.0-r0
+C:Q1qy6leKRgaVl1h4KVxSqIFg61fPM=
+P:rsyslog-libdbi
+V:8.2012.0-r1
 A:x86
-S:8511
+S:8441
 I:40960
-T:mysql support for rsyslog
+T:libdbi support for rsyslog
 U:https://www.rsyslog.com/
 L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
 o:rsyslog
 m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1 so:libmariadb.so.3
-p:rsyslog-ommysql=8.2012.0-r0
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1 so:libdbi.so.1
+p:rsyslog-omlibdbi=8.2012.0-r1
 
 C:Q1faETfOL8gP2MeVJx35Yepi9ko+c=
 P:perl-super
@@ -9462,6 +9400,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1609980844
 c:3a7b32b46626043fb17dec6cb08d133d326b4c87
 D:perl so:libc.musl-x86.so.1
+
+C:Q11nAy/Za6TFbnPFhJ+bJfeuF/3Rg=
+P:rsyslog-openrc
+V:8.2012.0-r1
+A:x86
+S:1715
+I:16384
+T:Enhanced multi-threaded syslogd with database support and more (OpenRC init scripts)
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+i:openrc rsyslog=8.2012.0-r1
 
 C:Q1d2RXSnQEpc0NYY4jK1eRZbp/j/Q=
 P:boost1.75-serialization
@@ -9924,21 +9877,6 @@ t:1618824073
 c:2f969519f3c5e3bc67f75666f35c92fe2de0a349
 i:docs autoconf=2.71-r0
 
-C:Q1C/ueNeZ6h3RelY9+oeNbRZ3I8Pg=
-P:rsyslog-mmsequence
-V:8.2012.0-r0
-A:x86
-S:6709
-I:32768
-T:mmsequence support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1
-
 C:Q1nYbiimDPCjTFIwqfG2oKRQS9/ew=
 P:perl-html-formatter
 V:2.16-r2
@@ -9968,6 +9906,21 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1623580625
 c:b0ea1cc03a5ae8691e0036efea920e6dc2bacaea
 D:nginx so:libc.musl-x86.so.1
+
+C:Q1UhAqLRlKFeMff5gvgbaghsK19MQ=
+P:rsyslog-mmcount
+V:8.2012.0-r1
+A:x86
+S:6237
+I:32768
+T:mmcount support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1
 
 C:Q1pUa1OaFFW9u/+V2LLcbiy/tZeno=
 P:lmdb-dev
@@ -15414,21 +15367,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1616495961
 c:e4457f474e5417e5928fb7a164898d65f7e612df
 
-C:Q16/em5pF17ogLfvE6UqJe5hgEp7o=
-P:rsyslog-mmutf8fix
-V:8.2012.0-r0
-A:x86
-S:5604
-I:32768
-T:mmutf8fix support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1
-
 C:Q1HfNTGf5ixoSkV8MpnbDEEXX0ruU=
 P:lua5.4-filesize
 V:0.1.1-r2
@@ -16209,22 +16147,6 @@ t:1617817113
 c:b4eadfd32dd0859b1b3d797750807097e6295ee5
 D:so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libncursesw.so.6 so:libprotobuf.so.26 so:libstdc++.so.6 so:libz.so.1
 p:cmd:mosh-server
-
-C:Q15VVkWwB/gUlrbB9ll3cAl+0D2Q4=
-P:rsyslog
-V:8.2012.0-r0
-A:x86
-S:465686
-I:1323008
-T:Enhanced multi-threaded syslogd with database support and more
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:/bin/sh so:libc.musl-x86.so.1 so:libestr.so.0 so:libfastjson.so.4 so:libuuid.so.1 so:libz.so.1
-p:cmd:rsyslogd
 
 C:Q1ZtF6Z6VwK+V2SykvumGl+uu+XCE=
 P:font-schumacher-misc
@@ -19247,6 +19169,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1620852262
 c:2d63700fe78744e22c497d2cf7f8610828f00544
 
+C:Q1VX1/3CoCMXB38vmeROm/Ms1btOE=
+P:rsyslog
+V:8.2012.0-r1
+A:x86
+S:465661
+I:1323008
+T:Enhanced multi-threaded syslogd with database support and more
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:/bin/sh so:libc.musl-x86.so.1 so:libestr.so.0 so:libfastjson.so.4 so:libuuid.so.1 so:libz.so.1
+p:cmd:rsyslogd
+
 C:Q1lteHnrqRthF619AjLhrDrQ3nQPM=
 P:perl-class-returnvalue-doc
 V:0.55-r3
@@ -20384,6 +20322,21 @@ c:1b8af6d387a0bc3d4a19424a3c276b08928df7e5
 D:python3 py3-cffi py3-idna py3-asn1crypto py3-six so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
 p:py-cryptography=3.3.2-r1 py3.9:cryptography=3.3.2-r1
 
+C:Q1xhbHIrsqUfaPAUgcKk8uZcjFPu8=
+P:rsyslog-mmaudit
+V:8.2012.0-r1
+A:x86
+S:5649
+I:32768
+T:mmaudit support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1
+
 C:Q1eX9GwaRVB2EK0JkHUICEoQFvGI8=
 P:openssh-keygen
 V:8.6_p1-r2
@@ -21451,21 +21404,6 @@ t:1623105917
 c:796fb28785d81d70ee3506cd081d6f3aa34d727c
 D:so:libc.musl-x86.so.1
 p:cmd:xxd
-
-C:Q1PtVAOBECEtZ9DKRB1KBJYNpd8gE=
-P:rsyslog-mmdblookup
-V:8.2012.0-r0
-A:x86
-S:8023
-I:36864
-T:mmdblookup support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1 so:libmaxminddb.so.0
 
 C:Q1fpCeOcokp7X3kxJHPUvG0WQcvHk=
 P:eggdrop-doc
@@ -23368,6 +23306,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1617646684
 c:240f9308cc72246a2e99ae45c8ca8c102c84ce8c
 
+C:Q17CoFoOLQ4qTNA+2k1oh864n/ADs=
+P:rsyslog-pmsnare
+V:8.2012.0-r1
+A:x86
+S:6488
+I:32768
+T:pmsnare support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1
+
 C:Q1XdWk9OLJLgQtgwbaljhNLkkjh7w=
 P:cairo-gobject
 V:1.16.0-r3
@@ -24864,20 +24817,6 @@ t:1617097812
 c:d1e4cd552780a4645474e91c0995b8a5a375f210
 D:!bison so:libc.musl-x86.so.1
 p:cmd:yacc
-
-C:Q14Qwn1ugZK6IvFk6F0piemTSlsuY=
-P:rsyslog-dbg
-V:8.2012.0-r0
-A:x86
-S:2563470
-I:5414912
-T:Enhanced multi-threaded syslogd with database support and more (debug symbols)
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
 
 C:Q1Ic6AHPhGH+39+rApGe7wjLui9RE=
 P:bluez-hid2hci
@@ -27329,21 +27268,6 @@ t:1596925501
 c:b14866860b0cd0708f10f672f5348ba079dd64ac
 i:docs spawn-fcgi=1.6.4-r4
 
-C:Q1kenxJGpLahIpv6iKM0WQ6aJoFIA=
-P:rsyslog-pmaixforwardedfrom
-V:8.2012.0-r0
-A:x86
-S:4685
-I:32768
-T:pmaixforwardedfrom support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1
-
 C:Q1oqxcjHUrr4NnPA6To9TQhCL2kKs=
 P:kamailio
 V:5.4.5-r0
@@ -29290,22 +29214,6 @@ c:6044241d6756393d370fa5337762a6ae79ec8f12
 D:clang=11.1.0-r1 perl python3
 p:cmd:scan-build cmd:scan-view
 
-C:Q1revWogMz6t7rNt1PT+krvoaYAoA=
-P:rsyslog-libdbi
-V:8.2012.0-r0
-A:x86
-S:8450
-I:40960
-T:libdbi support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1 so:libdbi.so.1
-p:rsyslog-omlibdbi=8.2012.0-r0
-
 C:Q18oZlerIC8Xh8UA9z0LPl8nWwsF4=
 P:protobuf
 V:3.15.7-r1
@@ -31212,6 +31120,21 @@ t:1600709982
 c:e84b7776a6e9118469dcbf5f8461485e97b5052b
 i:docs perl-yaml=1.30-r2
 
+C:Q1G9gjNB0/hgUWll2c2mzGlFSE/W4=
+P:rsyslog-imdocker
+V:8.2012.0-r1
+A:x86
+S:15484
+I:57344
+T:imdocker support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1 so:libcurl.so.4
+
 C:Q1L9oG5KU0bRbhf0C5O+ZDHscrqxc=
 P:netcf-libs
 V:0.2.8-r6
@@ -32115,6 +32038,21 @@ c:69fe02dd09591c0942edc8baf4481d69d5e1253e
 D:libeconf=0.3.8-r1 pkgconfig
 p:pc:libeconf=0.3.8
 
+C:Q1JYZZPp6/suc5kDMiN3E6bxBBPYc=
+P:rsyslog-pmlastmsg
+V:8.2012.0-r1
+A:x86
+S:4490
+I:32768
+T:pmlastmsg support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1
+
 C:Q1V2jkX82CBkYGLDBEsgJQsUfmoMU=
 P:perl-extutils-installpaths-doc
 V:0.012-r2
@@ -32405,6 +32343,21 @@ t:1612557181
 c:766c1cc29f8cf5c4e0dc6da5e4aff669a472bc8e
 D:so:libc.musl-x86.so.1 so:libwayland-client.so.0
 p:so:libwayland-cursor.so.0=0.0.0
+
+C:Q18+gDD++U6NOP2rG6O/Am9Kr1At4=
+P:rsyslog-mmnormalize
+V:8.2012.0-r1
+A:x86
+S:8478
+I:40960
+T:mmnormalize support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1 so:liblognorm.so.5
 
 C:Q1VVv8Zg9HgjRVzIk3lHThrcIi9+c=
 P:pmacct-openrc
@@ -32730,21 +32683,6 @@ o:encodings
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1563296143
 c:def553ec493699faf1d7153c7657c633bd99ee18
-
-C:Q1WEwRgdhWXI7Ka/tLOIl5W5bwesM=
-P:rsyslog-doc
-V:8.2012.0-r0
-A:x86
-S:17669
-I:49152
-T:Enhanced multi-threaded syslogd with database support and more (documentation)
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-i:docs rsyslog=8.2012.0-r0
 
 C:Q1Svwm+ErFNiYiRs7HMJ1KpB4KcNY=
 P:perl-email-address-list-doc
@@ -34405,6 +34343,22 @@ t:1621001694
 c:0943d507137db5485ded9554e2a449a76b61de33
 D:logrotate
 i:squid=5.0.6-r0 lang-lv
+
+C:Q1ykP/nCHXh4e5qXWxE741BMbvBBU=
+P:rsyslog-snmp
+V:8.2012.0-r1
+A:x86
+S:9906
+I:40960
+T:snmp support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1 so:libnetsnmp.so.40
+p:rsyslog-omsnmp=8.2012.0-r1
 
 C:Q1rG91/AmR3wD6VooCerc4cJV0uNc=
 P:perl-www-robotrules
@@ -36136,6 +36090,21 @@ o:acf-skins
 m:Ted Trask <ttrask01@yahoo.com>
 t:1621040121
 c:15ec6d5f696cecea8d3059f298f8645e67d41fac
+
+C:Q14ti0PM6ePwRAhEcyea8vBkLDCDE=
+P:rsyslog-mmfields
+V:8.2012.0-r1
+A:x86
+S:5788
+I:32768
+T:mmfields support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1
 
 C:Q1c6Vnlm4UyxDo2UY1/hJgTXC0fRo=
 P:lksctp-tools-static
@@ -39399,6 +39368,22 @@ c:7271b0e881d240424907f6d9288eefb4216a6679
 D:mesa=21.1.2-r0 so:libLLVM-11.so so:libX11-xcb.so.1 so:libc.musl-x86.so.1 so:libdrm.so.2 so:libdrm_amdgpu.so.1 so:libelf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libwayland-client.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-randr.so.0 so:libxcb-sync.so.1 so:libxcb.so.1 so:libxshmfence.so.1 so:libz.so.1 so:libzstd.so.1
 p:so:libvulkan_radeon.so=0
 
+C:Q18z3DAA4lcgb/dPxuLLQFF+YClss=
+P:rsyslog-mysql
+V:8.2012.0-r1
+A:x86
+S:8501
+I:40960
+T:mysql support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1 so:libmariadb.so.3
+p:rsyslog-ommysql=8.2012.0-r1
+
 C:Q1aNj2IewjB5PXFf5J+NL3MEAqWmc=
 P:mpfr4-doc
 V:4.1.0-r0
@@ -41284,6 +41269,21 @@ t:1611952693
 c:2fc773a9b906b8af6d8e89a911cbdb2995e72243
 D:perl perl-sub-quote perl-devel-stacktrace perl-role-tiny perl-mro-compat perl-try-tiny perl-test-fatal perl-eval-closure perl-module-runtime
 
+C:Q1NjJNHozQo6g719jJbUnmbjMv0oM=
+P:rsyslog-mmpstrucdata
+V:8.2012.0-r1
+A:x86
+S:6567
+I:32768
+T:mmpstrucdata support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1
+
 C:Q159xBfjq6oqgdX4mvPJa+W3Pqb6g=
 P:fcgiwrap-doc
 V:1.1.0-r5
@@ -42401,21 +42401,6 @@ t:1614387067
 c:8fcf325b201ede224dec35a21896d81797c549b7
 i:docs perl-crypt-openssl-rsa=0.31-r6
 
-C:Q1Lo1MU410um2Vqhzy67hDomoldcc=
-P:rsyslog-mmnormalize
-V:8.2012.0-r0
-A:x86
-S:8488
-I:40960
-T:mmnormalize support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1 so:liblognorm.so.5
-
 C:Q1WRls16eqCi0cQMkVhEZr4OiLisQ=
 P:alpine-make-rootfs
 V:0.5.1-r0
@@ -42554,6 +42539,22 @@ t:1550670574
 c:bf94fe726e658c7944e10f2b38d14fa68ca642da
 i:docs libxau=1.0.9-r0
 
+C:Q15PhTcjRB67hfD+exDZGGbD6JDqM=
+P:rsyslog-rabbitmq
+V:8.2012.0-r1
+A:x86
+S:13421
+I:49152
+T:rabbitmq support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1 so:librabbitmq.so.4
+p:rsyslog-omrabbitmq=8.2012.0-r1
+
 C:Q1hx21QrBcmdfm3y8VdPBEl/5PIYM=
 P:encfs-doc
 V:1.9.5-r8
@@ -42584,6 +42585,22 @@ t:1601196004
 c:120ec33b549bf30b6b2c5a5f10326a2411f59fce
 D:so:libc.musl-x86.so.1 so:libusb-1.0.so.0
 p:cmd:usb_modeswitch
+
+C:Q1aoiRcMdp2jHNZkniW7I62oa81XU=
+P:rsyslog-uxsock
+V:8.2012.0-r1
+A:x86
+S:7025
+I:36864
+T:uxsock support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1
+p:rsyslog-omuxsock=8.2012.0-r1
 
 C:Q1m0D17CKPgghorWHFg/vZ6rgAtj4=
 P:lua-yaml
@@ -43117,22 +43134,6 @@ t:1621087673
 c:ec4e35bcdcf38829d2a36ff4d7cd4351ebb67d1c
 D:acf-core dhcp
 
-C:Q1LH/007leYC5xCCeptSTluw+9K4Q=
-P:rsyslog-elasticsearch
-V:8.2012.0-r0
-A:x86
-S:20716
-I:69632
-T:elasticsearch support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1 so:libcurl.so.4
-p:rsyslog-omelasticsearch=8.2012.0-r0
-
 C:Q1X8TJnTjcECo0VeD9NVtMH7v9PrI=
 P:perl-dbd-sqlite
 V:1.66-r1
@@ -43442,22 +43443,6 @@ t:1620804814
 c:d9ae5dcf5daba0aafb62723846e15b35745b4487
 p:linux-firmware-any
 
-C:Q15PMk1oqu/ZrClB0c7oW3p/khvrI=
-P:rsyslog-snmp
-V:8.2012.0-r0
-A:x86
-S:9916
-I:40960
-T:snmp support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1 so:libnetsnmp.so.40
-p:rsyslog-omsnmp=8.2012.0-r0
-
 C:Q1W/kfB4IxAYJYQHNeOUgPJrNU+Ew=
 P:obex-data-server
 V:0.4.6-r4
@@ -43489,22 +43474,6 @@ t:1616495977
 c:82412ac1d4f9888bacd05ead0067a7c435492c29
 D:so:libc.musl-x86.so.1 so:libgpg-error.so.0
 p:so:libassuan.so.0=0.8.5
-
-C:Q1ntd5IMAQ/iKO0AXXBbT2wUdu/FQ=
-P:rsyslog-pgsql
-V:8.2012.0-r0
-A:x86
-S:7672
-I:36864
-T:pgsql support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1 so:libpq.so.5
-p:rsyslog-ompgsql=8.2012.0-r0
 
 C:Q1jwBrQ5J+PK9eYepLgCraCtd45RQ=
 P:vanessa_logger
@@ -44138,6 +44107,21 @@ c:5f7faee855574435a5924b1cc148f17922369ee0
 D:popt-dev pc:openssl pkgconfig rabbitmq-c=0.10.0-r1
 p:pc:librabbitmq=0.10.0
 
+C:Q1ijzjXODbwbmUpihoX9UxSoVnhTs=
+P:rsyslog-mmrm1stspace
+V:8.2012.0-r1
+A:x86
+S:4876
+I:32768
+T:mmrm1stspace support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1
+
 C:Q1m3sO5x/QiiNLB8NOUoLtHulVAzc=
 P:uwsgi-symcall
 V:2.0.19.1-r2
@@ -44184,21 +44168,6 @@ t:1598725983
 c:b54075cc60f0d45dca3fa6edb5919b109200eeac
 D:so:libc.musl-x86.so.1 so:libmnl.so.0
 p:so:libnetfilter_cttimeout.so.1=1.0.0
-
-C:Q1plFW8dYVjoa5Z7ZVreCrctAoRf8=
-P:rsyslog-pmlastmsg
-V:8.2012.0-r0
-A:x86
-S:4498
-I:32768
-T:pmlastmsg support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1
 
 C:Q16KkZh65CztN5D4ei4z0AZGVg3ek=
 P:pciutils
@@ -45774,21 +45743,6 @@ c:1303a6a5dc1eccfcb0775eb39b3a4d580d558c3c
 D:dovecot-sql=2.3.15-r0 so:libc.musl-x86.so.1 so:libpq.so.5
 p:so:libdriver_pgsql.so=0
 
-C:Q1RQv3ZggVPWo35ZsPEKHXs0k1JF0=
-P:rsyslog-imdocker
-V:8.2012.0-r0
-A:x86
-S:15491
-I:57344
-T:imdocker support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1 so:libcurl.so.4
-
 C:Q1RyniP/CSTlxnBBbVUxawny3Ml1c=
 P:mrtg
 V:2.17.7-r0
@@ -46127,21 +46081,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1620804814
 c:d9ae5dcf5daba0aafb62723846e15b35745b4487
 p:linux-firmware-any
-
-C:Q1qPh2Ws/6CoW1q7i0j1+e+BDZQt4=
-P:rsyslog-pmsnare
-V:8.2012.0-r0
-A:x86
-S:6497
-I:32768
-T:pmsnare support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1
 
 C:Q12lQA7wg1BY68PvLZIGnTn/gpplc=
 P:lua5.4-expat
@@ -47360,21 +47299,6 @@ c:7b4500566fdaebb06be8fe956143564a9f43779e
 D:libwebp=1.2.0-r2 pkgconfig
 p:pc:libwebp=1.2.0 pc:libwebpdecoder=1.2.0 pc:libwebpdemux=1.2.0 pc:libwebpmux=1.2.0
 
-C:Q1iW4mpnHJYxdvZ51F1U/vThpKvLM=
-P:rsyslog-mmanon
-V:8.2012.0-r0
-A:x86
-S:11011
-I:45056
-T:mmanon support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1
-
 C:Q1XY7zG36UPUgnlxDtnu+9IJY6CVo=
 P:pssh
 V:2.3.4-r1
@@ -47515,22 +47439,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:mii-tool
-
-C:Q1Q98M7F0pVT2q1z4+6veVGWY6otY=
-P:rsyslog-zmq
-V:8.2012.0-r0
-A:x86
-S:14703
-I:65536
-T:zmq support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1 so:libczmq.so.4
-p:rsyslog-imczmq=8.2012.0-r0 rsyslog-omczmq=8.2012.0-r0
 
 C:Q1G6DAEcCycos0CYJJDjNnxls98cY=
 P:acf-core
@@ -48312,21 +48220,6 @@ m:Rasmus Thomsen <oss@cogitri.dev>
 t:1616500444
 c:3efd84ed6f161268d9ef941546d88275226c55ef
 
-C:Q1wcZcHi+AYKcj3/vyGhvoNw1k8Es=
-P:rsyslog-mmsnmptrapd
-V:8.2012.0-r0
-A:x86
-S:6689
-I:32768
-T:mmsnmptrapd support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1
-
 C:Q18vi8ujBTjZDTh2vpaQTXoNKZ3iU=
 P:cairo
 V:1.16.0-r3
@@ -48760,22 +48653,6 @@ t:1619343937
 c:694cae2ccfca3c5413548a4561ce9d940619c414
 D:so:libc.musl-x86.so.1
 p:cmd:wg
-
-C:Q11tw3nMAFnRYowltXcZ5FVfp5dbM=
-P:rsyslog-uxsock
-V:8.2012.0-r0
-A:x86
-S:7036
-I:36864
-T:uxsock support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1
-p:rsyslog-omuxsock=8.2012.0-r0
 
 C:Q1BiyekxVHAFLza2ubdc7dNvBtgdU=
 P:asterisk-tds
@@ -49357,6 +49234,22 @@ c:7893a66b914dd950ab536c686f622ef75f5e19b0
 D:so:libc.musl-x86.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libxmlrpc++.so.8 so:libxmlrpc.so.3 so:libxmlrpc_client.so.3 so:libxmlrpc_packetsocket.so.8 so:libxmlrpc_util++.so.8 so:libxmlrpc_util.so.4
 p:so:libxmlrpc_client++.so.8=8.51
 
+C:Q1LXIyk0IP9do4qSY+BkTAkbe2mAc=
+P:rsyslog-testing
+V:8.2012.0-r1
+A:x86
+S:6195
+I:32768
+T:testing support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1
+p:rsyslog-omtesting=8.2012.0-r1
+
 C:Q1fhldcZ17UVQLokYJUy2vCXWUsaQ=
 P:flashrom
 V:1.2-r0
@@ -49828,6 +49721,22 @@ o:yaml
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1591070835
 c:4f2d8aa1decf666770878397568a7d284a2dda30
+
+C:Q1BJpkDafLKJpfXNN0hZYn1pFRz6c=
+P:rsyslog-tls
+V:8.2012.0-r1
+A:x86
+S:18964
+I:65536
+T:tls support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1 so:libgnutls.so.30
+p:rsyslog-lmnsd_gtls=8.2012.0-r1
 
 C:Q1dXswqZ6pv93J/jwsOcQtpOW6Nbw=
 P:ssl_client
@@ -50930,21 +50839,6 @@ m:Rasmus Thomsen <oss@cogitri.dev>
 t:1622893290
 c:29ff78fff1a74df439a8cbe4e78c2e8a495837a4
 D:glib-dev
-
-C:Q1pzRICcsZ57URc+gNC5menV6fl3A=
-P:rsyslog-mmjsonparse
-V:8.2012.0-r0
-A:x86
-S:7228
-I:36864
-T:mmjsonparse support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1 so:libfastjson.so.4
 
 C:Q1qvc/y6WNcQ9SGpD1OOpg4+qwEF4=
 P:pkgconf-dev
@@ -52125,6 +52019,22 @@ t:1615314128
 c:6fcf2afba9ea987d3fdf04840267818b55f8f3d1
 i:docs userspace-rcu=0.12.2-r0
 
+C:Q1NSaJovp3lp022+7HHz7HtSli3Yc=
+P:rsyslog-hiredis
+V:8.2012.0-r1
+A:x86
+S:7232
+I:36864
+T:hiredis support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1 so:libhiredis.so.1.0.0
+p:rsyslog-omhiredis=8.2012.0-r1
+
 C:Q1l1sZ0ugvpHD+XKGODKrFgjot+i4=
 P:audit-static
 V:3.0.1-r1
@@ -52841,6 +52751,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1618209038
 c:c6cd82fe2919b638c08b5fcdae3060641cd7b3ca
 D:irssi so:libc.musl-x86.so.1 so:libgcrypt.so.20 so:libotr.so.5
+
+C:Q1szlCYuL30RVbtVGgS0GjwnXwpLc=
+P:rsyslog-mmsnmptrapd
+V:8.2012.0-r1
+A:x86
+S:6677
+I:32768
+T:mmsnmptrapd support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1
 
 C:Q1xBZl9zAGHPKEuF0KEfg17CfmJlk=
 P:kamailio-geoip2
@@ -58380,6 +58305,21 @@ t:1600709976
 c:ba41fb3c8431bd26f63c28df56a30cb4bf2a42c9
 i:docs perl-test-cpan-meta=0.25-r2
 
+C:Q14ofGYsc3flq+GbBbW5aIiKYusbA=
+P:rsyslog-mmutf8fix
+V:8.2012.0-r1
+A:x86
+S:5596
+I:32768
+T:mmutf8fix support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1
+
 C:Q1MwFne24jSfo+yUfDjmZFfQKTDfA=
 P:lua5.1-iconv
 V:7-r2
@@ -59418,21 +59358,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1617646683
 c:084c454e8b909b443ba56e183c6037faebbaa72c
 D:uwsgi so:libc.musl-x86.so.1
-
-C:Q1VUrh4RIYof4q6SptK99cB5/jDps=
-P:rsyslog-mmcount
-V:8.2012.0-r0
-A:x86
-S:6246
-I:32768
-T:mmcount support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1
 
 C:Q1NhW7ewtG3Il2aCx8D533pf43q74=
 P:iptables-openrc
@@ -60788,6 +60713,21 @@ t:1600709969
 c:96f9c22412fd22bb3334b054b0d30bda5b982b22
 i:docs perl-namespace-clean=0.27-r2
 
+C:Q1WXY8eE9AMPb4qVec0mZc7WWFusU=
+P:rsyslog-mmjsonparse
+V:8.2012.0-r1
+A:x86
+S:7220
+I:36864
+T:mmjsonparse support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1 so:libfastjson.so.4
+
 C:Q1C9ST25+mGSpajuTWxRQFkJGR+Js=
 P:libseccomp-dev
 V:2.5.1-r2
@@ -61571,21 +61511,6 @@ t:1584211375
 c:81633f00dd52212d62c630bbf6f6c8a9bc1f29cd
 D:flac=1.3.3-r0 pc:ogg pkgconfig
 p:pc:flac++=1.3.3 pc:flac=1.3.3
-
-C:Q1byuqQu1tKD15l/BPHbnCJRubS1w=
-P:rsyslog-mmaudit
-V:8.2012.0-r0
-A:x86
-S:5655
-I:32768
-T:mmaudit support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1
 
 C:Q1ozMbik/XD0me4NSf1pvQz2RZUHI=
 P:boost1.76-stacktrace_basic
@@ -63418,22 +63343,6 @@ t:1612366429
 c:e36769558404111c89e75c161dd52d816218250c
 D:mtd-utils-flash mtd-utils-jffs mtd-utils-misc mtd-utils-nand mtd-utils-nor mtd-utils-ubi mtd-utils-dev
 
-C:Q1OcK4Gcfk+yFjaVi8JDYcWQjB4ZA=
-P:rsyslog-hiredis
-V:8.2012.0-r0
-A:x86
-S:7238
-I:36864
-T:hiredis support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1 so:libhiredis.so.1.0.0
-p:rsyslog-omhiredis=8.2012.0-r0
-
 C:Q17Vcm2d2bkX0YFE8G85uAg14fdzA=
 P:perl-params-util-doc
 V:1.102-r0
@@ -63894,6 +63803,22 @@ t:1611952693
 c:2fc773a9b906b8af6d8e89a911cbdb2995e72243
 i:docs perl-specio=0.47-r0
 
+C:Q1HsCkUkY9x5qRhVKJvZKtVZ07Lcw=
+P:rsyslog-crypto
+V:8.2012.0-r1
+A:x86
+S:12847
+I:45056
+T:crypto support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1 so:libgcrypt.so.20
+p:rsyslog-lmcry_gcry=8.2012.0-r1
+
 C:Q1H4vmwhkIHjbDXV+k2t3ehUCtGZM=
 P:lua5.2-stringy
 V:0.5.1-r2
@@ -63939,6 +63864,22 @@ o:spice
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1622689924
 c:2ffc8e8361a8f89e698e2103c490f67c2b041afc
+
+C:Q11/PZp2Jm28N00r2IdahlrWzOlqo=
+P:rsyslog-pgsql
+V:8.2012.0-r1
+A:x86
+S:7666
+I:36864
+T:pgsql support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1 so:libpq.so.5
+p:rsyslog-ompgsql=8.2012.0-r1
 
 C:Q16Ry8pUDemLLIvk6BE+JuOhgy+qo=
 P:linux-lts
@@ -65489,6 +65430,22 @@ t:1623104237
 c:f910b467171b9a907abd0a804584a7077223b78c
 D:iperf3=3.10.1-r0
 
+C:Q1e4wQsk7+pZUZt3DQb738nZvjYA4=
+P:rsyslog-gssapi
+V:8.2012.0-r1
+A:x86
+S:17726
+I:81920
+T:gssapi support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1 so:libgssapi_krb5.so.2
+p:rsyslog-lmgssutil=8.2012.0-r1 rsyslog-imgssapi=8.2012.0-r1 rsyslog-omgssapi=8.2012.0-r1
+
 C:Q1jvBkDaFLBYFgvuCg+cAZKzJae44=
 P:lua-discount-doc
 V:1.2.10.1-r6
@@ -65736,6 +65693,21 @@ m:Ted Trask <ttrask01@yahoo.com>
 t:1621087673
 c:ec4e35bcdcf38829d2a36ff4d7cd4351ebb67d1c
 D:acf-core dovecot
+
+C:Q1RqXkUW3G6nwKnSNArcCh0J892as=
+P:rsyslog-mmdblookup
+V:8.2012.0-r1
+A:x86
+S:8011
+I:36864
+T:mmdblookup support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1 so:libmaxminddb.so.0
 
 C:Q1qItdTEjcY5NgsqGuM5hm7x3OmMA=
 P:libucontext0
@@ -66472,6 +66444,21 @@ c:33c9398136aea7c0607f1c5281bd863509d3e8ad
 D:pc:glib-2.0 pkgconfig syslog-ng=3.30.1-r1
 p:pc:syslog-ng-native-connector=0.1.0 pc:syslog-ng=3.30.1
 
+C:Q1pQLgrZ09eRihQORV5Y5/rV1mqjM=
+P:rsyslog-mmsequence
+V:8.2012.0-r1
+A:x86
+S:6696
+I:32768
+T:mmsequence support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1
+
 C:Q1J/pobJdLo6HOkC/XxwRdTwW/xpU=
 P:ltrace
 V:0.7.3-r4
@@ -66595,6 +66582,21 @@ t:1621485419
 c:1900db34ee50bab2ec08a92aacc6074a01ccd836
 D:so:libc.musl-x86.so.1 so:libgcc_s.so.1
 p:so:libboost_contract.so.1.75.0=1.75.0
+
+C:Q1de3z2iDrDdGsq5llBrKPtejrAIs=
+P:rsyslog-doc
+V:8.2012.0-r1
+A:x86
+S:17664
+I:49152
+T:Enhanced multi-threaded syslogd with database support and more (documentation)
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+i:docs rsyslog=8.2012.0-r1
 
 C:Q1Os3mthasLB1Jn+1byxZCJM5a+f4=
 P:perl-gdtextutil-doc
@@ -67663,22 +67665,6 @@ t:1615032922
 c:8ca1127086c4f1ffa8660caaa5e9e5174ea86690
 D:perl perl-html-tagset perl-http-message perl-uri so:libc.musl-x86.so.1
 
-C:Q1mNirYqctR02IlFSTclKNPxAY64Q=
-P:rsyslog-http
-V:8.2012.0-r0
-A:x86
-S:22303
-I:81920
-T:http support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1 so:libcurl.so.4
-p:rsyslog-omhttp=8.2012.0-r0 rsyslog-fmhttp=8.2012.0-r0
-
 C:Q1abB0LmHI/ac8Kc3IDx989aGicj8=
 P:sqlite-static
 V:3.35.5-r0
@@ -67923,6 +67909,22 @@ m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
 t:1587535969
 c:81c488b5b6ac132885d055e676bad180ddb615e2
 D:ruby so:libaugeas.so.0 so:libc.musl-x86.so.1 so:libruby.so.2.7
+
+C:Q1BK7/2qpIlwEqD0vhCoezg0p0t1I=
+P:rsyslog-udpspoof
+V:8.2012.0-r1
+A:x86
+S:9540
+I:40960
+T:udpspoof support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1 so:libnet.so.9
+p:rsyslog-omudpspoof=8.2012.0-r1
 
 C:Q1eOm2fcvs8/x4KU+cPs9CNOUjDfQ=
 P:perl-encode-hanextra
@@ -68682,6 +68684,21 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.1 so:libc.musl-x86.so.1
 p:lua5.1-bitlib=5.3.0-r4
 i:lua-bit32=5.3.0-r4 lua5.1
+
+C:Q1YsWPsRMsZO/BH2Oq86mrJKDg1j4=
+P:rsyslog-mmanon
+V:8.2012.0-r1
+A:x86
+S:11001
+I:45056
+T:mmanon support for rsyslog
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
+D:rsyslog=8.2012.0-r1 so:libc.musl-x86.so.1
 
 C:Q1s8ntOwcIPFZ5JYqLGOrdAzeVO2w=
 P:apache2-utils
@@ -70620,22 +70637,6 @@ t:1600709980
 c:780c07e229af15f12635ce55ea700eaca911a8d1
 D:so:libc.musl-x86.so.1
 
-C:Q1EduPLo8j4ymehlWNuhbZqdsYS9E=
-P:rsyslog-rabbitmq
-V:8.2012.0-r0
-A:x86
-S:13431
-I:49152
-T:rabbitmq support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1 so:librabbitmq.so.4
-p:rsyslog-omrabbitmq=8.2012.0-r0
-
 C:Q1VfUI0woaDL27XHdxkOqmCCBWOa0=
 P:acf-pingu
 V:0.4.0-r4
@@ -70679,21 +70680,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1620804814
 c:d9ae5dcf5daba0aafb62723846e15b35745b4487
 p:linux-firmware-any
-
-C:Q1/su2wl2r/ZwKKC1OPDVWBcnHZJg=
-P:rsyslog-mmpstrucdata
-V:8.2012.0-r0
-A:x86
-S:6573
-I:32768
-T:mmpstrucdata support for rsyslog
-U:https://www.rsyslog.com/
-L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
-o:rsyslog
-m:Cameron Banta <cbanta@gmail.com>
-t:1607490483
-c:548f4b140e8d45cacda4e1c9c821f0b1b4a5fcac
-D:rsyslog=8.2012.0-r0 so:libc.musl-x86.so.1
 
 C:Q1zwFz01emx/HVSvEMeQlq6ZSI+x8=
 P:nagios-plugins-radius
@@ -70740,6 +70726,20 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1620804814
 c:d9ae5dcf5daba0aafb62723846e15b35745b4487
 p:linux-firmware-any
+
+C:Q1ZGs4unytI7m11eaWheo0b1JVi9U=
+P:rsyslog-dbg
+V:8.2012.0-r1
+A:x86
+S:2563541
+I:5414912
+T:Enhanced multi-threaded syslogd with database support and more (debug symbols)
+U:https://www.rsyslog.com/
+L:Apache-2.0 GPL-3.0-or-later LGPL-3.0-or-later
+o:rsyslog
+m:Cameron Banta <cbanta@gmail.com>
+t:1625734784
+c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
 
 C:Q1bCSikoSviTYUGY565llJWqxR+EA=
 P:lua-iconv
