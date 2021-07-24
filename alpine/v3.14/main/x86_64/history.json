@@ -57594,6 +57594,35 @@
       "versions": {
         "0.11.2-r0": 1624644870
       }
+    },
+    "gummiboot-doc": {
+      "origin": "gummiboot",
+      "versions": {
+        "48.1-r1": 1627169327
+      }
+    },
+    "gummiboot-efistub": {
+      "origin": "gummiboot",
+      "versions": {
+        "48.1-r1": 1627169327
+      },
+      "dependencies": [
+        "gummiboot-efistub=48.1-r1"
+      ]
+    },
+    "gummiboot": {
+      "origin": "gummiboot",
+      "versions": {
+        "48.1-r1": 1627169327
+      },
+      "dependencies": [
+        "gummiboot-efistub=48.1-r1",
+        "so:libblkid.so.1",
+        "so:libc.musl-x86_64.so.1"
+      ],
+      "provides": [
+        "cmd:gummiboot"
+      ]
     }
   },
   "provide": {
