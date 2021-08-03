@@ -3381,21 +3381,6 @@ c:4c90226e6797660494cb8dfd54e04193b0492545
 D:cjson=1.7.14-r1 pkgconfig
 p:pc:libcjson=1.7.14
 
-C:Q1LUs+M69tdJZs0hbo4l1v6WEMOnQ=
-P:apk-tools-doc
-V:2.12.6-r0
-A:ppc64le
-S:21308
-I:118784
-T:Alpine Package Keeper - package manager for alpine (documentation)
-U:https://gitlab.alpinelinux.org/alpine/apk-tools
-L:GPL-2.0-only
-o:apk-tools
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1627368340
-c:d627ad2cf81fefe7873f6cb3c5b03222b4a2eb64
-i:docs apk-tools=2.12.6-r0
-
 C:Q1bl+MDgZs+MXrOCPk/4nUx1P8Uck=
 P:lua5.4-mosquitto
 V:0.3-r2
@@ -7417,6 +7402,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1628001887
 c:10998b5ca77ec8229976ed01346cfc819ddbbb99
 p:linux-firmware-any
+
+C:Q1wF5jd9/R7MXI4c0+Zk4DYZ9Tc1A=
+P:apk-tools-dev
+V:2.12.7-r0
+A:ppc64le
+S:106760
+I:413696
+T:Alpine Package Keeper - package manager for alpine (development files)
+U:https://gitlab.alpinelinux.org/alpine/apk-tools
+L:GPL-2.0-only
+o:apk-tools
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1628016016
+c:03c6b1b0ec20f417cee0f3c1d56795b27871b1c5
+D:apk-tools=2.12.7-r0 pc:openssl pc:zlib pkgconfig
+p:pc:apk=2.12.7
 
 C:Q1Y1UKDT4+R89nubkXpwjuy6hM/8A=
 P:curl-dev
@@ -18251,22 +18252,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 
-C:Q1hCtulozi2prLnEkjU9Smvh8C338=
-P:apk-tools-static
-V:2.12.6-r0
-A:ppc64le
-S:1263078
-I:2785280
-T:Alpine Package Keeper - static binary
-U:https://gitlab.alpinelinux.org/alpine/apk-tools
-L:GPL-2.0-only
-o:apk-tools
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1627368340
-c:d627ad2cf81fefe7873f6cb3c5b03222b4a2eb64
-D:musl>=1.2
-p:cmd:apk.static
-
 C:Q12WA0c7dCGge6MeWgLcAFqRWjeDQ=
 P:rdesktop-doc
 V:1.9.0-r1
@@ -25405,6 +25390,21 @@ t:1616495961
 c:e4457f474e5417e5928fb7a164898d65f7e612df
 D:so:libc.musl-ppc64le.so.1
 p:so:libgpg-error.so.0=0.32.0 cmd:gpg-error cmd:yat2m
+
+C:Q13zuzAaZCagXZ/8Tfi+YUHHm88Bo=
+P:lua5.3-apk
+V:2.12.7-r0
+A:ppc64le
+S:6274
+I:40960
+T:Lua module for apk-tools
+U:https://gitlab.alpinelinux.org/alpine/apk-tools
+L:GPL-2.0-only
+o:apk-tools
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1628016016
+c:03c6b1b0ec20f417cee0f3c1d56795b27871b1c5
+D:musl>=1.2 so:libapk.so.3.12.0 so:libc.musl-ppc64le.so.1
 
 C:Q1Ah7EkxJRunHA8cTe0dO9/63cPuM=
 P:talloc-dev
@@ -40037,6 +40037,21 @@ c:b889e515b90fe310a08c450d503998e4b29bc726
 D:libverto-libev so:libc.musl-ppc64le.so.1 so:libcom_err.so.2 so:libgssapi_krb5.so.2 so:libgssrpc.so.4 so:libk5crypto.so.3 so:libkadm5clnt_mit.so.12 so:libkadm5srv_mit.so.12 so:libkdb5.so.10 so:libkdb_ldap.so.1 so:libkrb5.so.3 so:libkrb5support.so.0 so:libss.so.2 so:libverto.so.1
 p:cmd:gss-server cmd:kadmin.local cmd:kadmind cmd:kdb5_ldap_util cmd:kdb5_util cmd:kprop cmd:kpropd cmd:kproplog cmd:krb5-send-pr cmd:krb5kdc cmd:sclient cmd:sim_server cmd:sserver cmd:uuserver
 
+C:Q1Zvt2Rf/l0T/c0FG1xaLwT5Z4pMU=
+P:apk-tools-zsh-completion
+V:2.12.7-r0
+A:ppc64le
+S:4836
+I:32768
+T:Zsh completions for apk-tools
+U:https://gitlab.alpinelinux.org/alpine/apk-tools
+L:GPL-2.0-only
+o:apk-tools
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1628016016
+c:03c6b1b0ec20f417cee0f3c1d56795b27871b1c5
+i:apk-tools=2.12.7-r0 zsh
+
 C:Q1917m9a7T9NebnGaPYEiwNYIdEXY=
 P:fish-dev
 V:3.2.2-r1
@@ -44917,6 +44932,22 @@ t:1622571733
 c:bcd4acce26aab9baceb45d84872e8244c3c02e4a
 D:so:libc.musl-ppc64le.so.1 so:libreplace-samba4.so
 p:so:libwbclient.so.0=0.15 so:libwinbind-client-samba4.so=0
+
+C:Q1ElOa9wHNufULoSBDraaE6avOPjA=
+P:apk-tools-static
+V:2.12.7-r0
+A:ppc64le
+S:1263047
+I:2785280
+T:Alpine Package Keeper - static binary
+U:https://gitlab.alpinelinux.org/alpine/apk-tools
+L:GPL-2.0-only
+o:apk-tools
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1628016016
+c:03c6b1b0ec20f417cee0f3c1d56795b27871b1c5
+D:musl>=1.2
+p:cmd:apk.static
 
 C:Q1g/e0kaHhCd/LdiPmNNbQOLhSU8U=
 P:asterisk-pgsql
@@ -52753,21 +52784,6 @@ c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:librlog.so.5=5.0.0
 
-C:Q18BQNwvJzXCTnO97kq46JxmTDz6o=
-P:lua5.3-apk
-V:2.12.6-r0
-A:ppc64le
-S:6272
-I:40960
-T:Lua module for apk-tools
-U:https://gitlab.alpinelinux.org/alpine/apk-tools
-L:GPL-2.0-only
-o:apk-tools
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1627368340
-c:d627ad2cf81fefe7873f6cb3c5b03222b4a2eb64
-D:musl>=1.2 so:libapk.so.3.12.0 so:libc.musl-ppc64le.so.1
-
 C:Q1odfV/i9bhTdu4loBL3I8dt2Ocmo=
 P:perl-xml-namespacesupport
 V:1.12-r2
@@ -58824,22 +58840,6 @@ t:1623580625
 c:b0ea1cc03a5ae8691e0036efea920e6dc2bacaea
 D:nginx nginx-mod-devel-kit so:libc.musl-ppc64le.so.1
 
-C:Q18nR7AeI7fTknPPPrHEuaVf6DH+g=
-P:apk-tools-dev
-V:2.12.6-r0
-A:ppc64le
-S:106759
-I:413696
-T:Alpine Package Keeper - package manager for alpine (development files)
-U:https://gitlab.alpinelinux.org/alpine/apk-tools
-L:GPL-2.0-only
-o:apk-tools
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1627368340
-c:d627ad2cf81fefe7873f6cb3c5b03222b4a2eb64
-D:apk-tools=2.12.6-r0 pc:openssl pc:zlib pkgconfig
-p:pc:apk=2.12.6
-
 C:Q1g56IPy0PPZSQRyMci0fMa1J8sDE=
 P:numactl-dev
 V:2.0.14-r0
@@ -64006,22 +64006,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1610928542
 c:211932f6e55643cd5b8be06197876727615eea78
 
-C:Q12mznHIIRzFIVAgyalzZalsW2BZE=
-P:apk-tools
-V:2.12.6-r0
-A:ppc64le
-S:125701
-I:348160
-T:Alpine Package Keeper - package manager for alpine
-U:https://gitlab.alpinelinux.org/alpine/apk-tools
-L:GPL-2.0-only
-o:apk-tools
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1627368340
-c:d627ad2cf81fefe7873f6cb3c5b03222b4a2eb64
-D:musl>=1.2 so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1 so:libz.so.1
-p:so:libapk.so.3.12.0=3.12.0 cmd:apk
-
 C:Q1WiBgoqSQHYXO3GDj992uCmekRqY=
 P:e2fsprogs-static
 V:1.46.2-r0
@@ -66964,6 +66948,22 @@ c:b75399b5b31b197bb336b881583c6862bcb897fb
 D:so:libc.musl-ppc64le.so.1
 p:so:libhandle.so.1=1.0.3
 
+C:Q152/nA/fGt0UyqrJ8FG8IpVNFAMA=
+P:apk-tools
+V:2.12.7-r0
+A:ppc64le
+S:125696
+I:348160
+T:Alpine Package Keeper - package manager for alpine
+U:https://gitlab.alpinelinux.org/alpine/apk-tools
+L:GPL-2.0-only
+o:apk-tools
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1628016016
+c:03c6b1b0ec20f417cee0f3c1d56795b27871b1c5
+D:musl>=1.2 so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1 so:libz.so.1
+p:so:libapk.so.3.12.0=3.12.0 cmd:apk
+
 C:Q1asw4SeaigPivQXT6OLKFQq5b6/s=
 P:gdbm-doc
 V:1.19-r0
@@ -68316,21 +68316,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1611425007
 c:9d9cf279f6a3fa5413fd36fb452b9036eff08b61
 i:docs m4=1.4.18-r2
-
-C:Q177IRC68KSuDZqSfukVxEWsCkcLQ=
-P:apk-tools-zsh-completion
-V:2.12.6-r0
-A:ppc64le
-S:4831
-I:32768
-T:Zsh completions for apk-tools
-U:https://gitlab.alpinelinux.org/alpine/apk-tools
-L:GPL-2.0-only
-o:apk-tools
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1627368340
-c:d627ad2cf81fefe7873f6cb3c5b03222b4a2eb64
-i:apk-tools=2.12.6-r0 zsh
 
 C:Q1IImVbBZ1SPBVoSEK6iZ33Na65Y0=
 P:mariadb-server-utils
@@ -70273,6 +70258,21 @@ t:1541609171
 c:4fe5858e462d0e75a58249973a80ee849b59847a
 D:so:libbz2.so.1 so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libexpat.so.1 so:libssl.so.1.1 so:libz.so.1
 p:cmd:elinks
+
+C:Q1TUYZyNQi4lrFqm2DQWrxXNXkdRs=
+P:apk-tools-doc
+V:2.12.7-r0
+A:ppc64le
+S:21317
+I:118784
+T:Alpine Package Keeper - package manager for alpine (documentation)
+U:https://gitlab.alpinelinux.org/alpine/apk-tools
+L:GPL-2.0-only
+o:apk-tools
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1628016016
+c:03c6b1b0ec20f417cee0f3c1d56795b27871b1c5
+i:docs apk-tools=2.12.7-r0
 
 C:Q10jOpk94Se/aXz7jJ7gmsgS93irk=
 P:bluez-cups
