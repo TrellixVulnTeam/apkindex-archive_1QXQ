@@ -968,22 +968,6 @@ t:1606832312
 c:fadf868d929d38297eee94b3645ef16a6e31a0a3
 D:nagios-plugins so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libdbi.so.1
 
-C:Q1PxQPjwqfS8fS7Orp1u7OnwQ6sCc=
-P:krb5-dev
-V:1.18.3-r1
-A:armv7
-S:151131
-I:888832
-T:The Kerberos network authentication system (development files)
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1606682637
-c:6315080241162d640cd7feb2ce292229ea0fa7c3
-D:e2fsprogs-dev krb5-libs=1.18.3-r1 krb5-server-ldap=1.18.3-r1 pkgconfig
-p:pc:gssrpc=1.18.3 pc:kadm-client=1.18.3 pc:kadm-server=1.18.3 pc:kdb=1.18.3 pc:krb5-gssapi=1.18.3 pc:krb5=1.18.3 pc:mit-krb5-gssapi=1.18.3 pc:mit-krb5=1.18.3 cmd:krb5-config
-
 C:Q1g7/gDlgvStcZ/aL8gAzzr9HyHPs=
 P:clucene-dev
 V:2.3.3.4-r7
@@ -1402,6 +1386,22 @@ t:1610099602
 c:d5506fa26b223a4dec66979caedb19341d17d3de
 D:perl-http-date perl-http-cookies perl-net-http perl-http-daemon perl-html-parser perl-file-listing perl-www-robotrules perl-http-negotiate perl-uri perl-http-message perl-lwp-mediatypes perl-encode-locale perl-try-tiny
 p:cmd:lwp-download cmd:lwp-dump cmd:lwp-mirror cmd:lwp-request
+
+C:Q11ujIVWQRyB5Eph3BpbFgkYwsz0c=
+P:krb5-server-ldap
+V:1.18.4-r0
+A:armv7
+S:41778
+I:139264
+T:The LDAP storage plugin for the Kerberos 5 KDC
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627233349
+c:41ad3dc1bca750a20ab2b0197b927b4ed9689b91
+D:krb5-conf so:libc.musl-armv7.so.1 so:libcom_err.so.2 so:libgssrpc.so.4 so:libkadm5srv_mit.so.12 so:libkdb5.so.10 so:libkrb5.so.3 so:libkrb5support.so.0 so:libldap-2.4.so.2
+p:so:libkdb_ldap.so.1=1.0
 
 C:Q1Go/XBvI1WDWLEk4cJ3cUfJG1jxk=
 P:makedepend
@@ -2384,22 +2384,6 @@ t:1610310472
 c:e757582f2cf8e3b721d2b2c5aa7dddddc72912d1
 i:docs execline=2.7.0.0-r0
 
-C:Q1NtaYSreu/iJsrwpD81QeW8AP5RM=
-P:postfix-pgsql
-V:3.5.11-r0
-A:armv7
-S:6618
-I:49152
-T:pgsql map support for postfix
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1624514488
-c:69d8716d3dfb903846c37cf6085e54745cf72b6e
-D:so:libc.musl-armv7.so.1 so:libpq.so.5
-p:so:postfix-pgsql.so=0
-
 C:Q1B3jzFB5an3I9qBflFGgVKhDPUyQ=
 P:curl-static
 V:7.78.0-r0
@@ -2920,6 +2904,22 @@ m:jv <jens@eisfair.org>
 t:1605858232
 c:83d207ecf9b548c9cbd4acf75f97b69ab4f03edd
 D:so:libc.musl-armv7.so.1 so:libevtlog-3.30.so.0 so:libglib-2.0.so.0 so:libivykis.so.0 so:libsyslog-ng-3.30.so.0
+
+C:Q1CsiPLN+eDPsolArmiP12yiMxhEo=
+P:krb5-libs
+V:1.18.4-r0
+A:armv7
+S:689765
+I:1359872
+T:The shared libraries used by Kerberos 5
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627233349
+c:41ad3dc1bca750a20ab2b0197b927b4ed9689b91
+D:krb5-conf so:libc.musl-armv7.so.1 so:libcom_err.so.2 so:libcrypto.so.1.1 so:libkeyutils.so.1 so:libssl.so.1.1 so:libverto.so.1
+p:so:libgssapi_krb5.so.2=2.2 so:libgssrpc.so.4=4.2 so:libk5crypto.so.3=3.1 so:libkadm5clnt_mit.so.12=12.0 so:libkadm5srv_mit.so.12=12.0 so:libkdb5.so.10=10.0 so:libkrad.so.0=0.0 so:libkrb5.so.3=3.3 so:libkrb5support.so.0=0.1
 
 C:Q1fa8R6YP7Fbc1q+H4q3O6FXTjBI4=
 P:linux-firmware-ath6k
@@ -4606,22 +4606,6 @@ c:c611bfce57dd34ff45363fd4e29fba7f6aea8f6b
 D:util-linux
 i:docs fish=3.1.2-r4
 
-C:Q1q+52QjKuLTN2OhEjHl1iY2OEfYo=
-P:apk-tools-static
-V:2.12.5-r0
-A:armv7
-S:1103007
-I:1675264
-T:Alpine Package Keeper - static binary
-U:https://gitlab.alpinelinux.org/alpine/apk-tools
-L:GPL-2.0-only
-o:apk-tools
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1618231316
-c:ac1b1085ae4954a01110b0a9b4d6796ba5a6d630
-D:musl>=1.2
-p:cmd:apk.static
-
 C:Q1YVUAFo94gUpVGGRMxnRY5dXB+38=
 P:bison-doc
 V:3.7.4-r0
@@ -5537,6 +5521,22 @@ t:1610352392
 c:2b60d922dd644cd6b7f6a8d89bab91b311a8ea8d
 D:dns-root-hints dnssec-root
 
+C:Q15BCKNaPXD1H3LrmXQfn17JkucjU=
+P:postfix-ldap
+V:3.5.12-r0
+A:armv7
+S:12513
+I:57344
+T:ldap map support for postfix
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627291311
+c:fd9a2ea17c5b0868ce48fc39eb234a9b323a7cef
+D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap-2.4.so.2
+p:so:postfix-ldap.so=0
+
 C:Q1RTvEB77c7X8sWYAX3NRA4XgZD/A=
 P:vde2
 V:2.3.2-r12
@@ -6154,22 +6154,6 @@ t:1610618509
 c:edee9fe71837d10372406c21d51b8cda5705ab52
 D:u-boot-beagleboard u-boot-cubieboard u-boot-leemaker u-boot-linksprite u-boot-cuboxi u-boot-raspberrypi u-boot-wandboard u-boot-qemu
 
-C:Q1V1Eml/cJAdeSG1B7QmLv2RYBfmI=
-P:krb5-server-openrc
-V:1.18.3-r1
-A:armv7
-S:1860
-I:24576
-T:The KDC and related programs for Kerberos 5 (OpenRC init scripts)
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1606682637
-c:6315080241162d640cd7feb2ce292229ea0fa7c3
-D:krb5-conf
-i:krb5-server=1.18.3-r1 openrc
-
 C:Q1WR7VXGCefJpt/BKSYt9umS+mzKg=
 P:git-gui
 V:2.30.2-r0
@@ -6439,22 +6423,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1600709952
 c:c37ae063bcc24079d9440538db3ff6192a851229
 D:perl-posix-strftime-compiler
-
-C:Q1dIPecCb/+l8P48GQ3Cn/ixAi+B0=
-P:apk-tools-dev
-V:2.12.5-r0
-A:armv7
-S:88342
-I:278528
-T:Alpine Package Keeper - package manager for alpine (development files)
-U:https://gitlab.alpinelinux.org/alpine/apk-tools
-L:GPL-2.0-only
-o:apk-tools
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1618231316
-c:ac1b1085ae4954a01110b0a9b4d6796ba5a6d630
-D:apk-tools=2.12.5-r0 pc:openssl pc:zlib pkgconfig
-p:pc:apk=2.12.5
 
 C:Q1SCayTY5VnQ+fcxIqSySzpP0TQUo=
 P:s6-portable-utils
@@ -7060,22 +7028,6 @@ c:d26b9b0b9da70da63bcb53f68ea1650f44760d1f
 D:so:libc.musl-armv7.so.1
 p:so:libspeexdsp.so.1=1.5.1
 
-C:Q1Jfarmk+8rr83EVzT6T4Bx9LZW6o=
-P:aspell-dev
-V:0.60.8-r0
-A:armv7
-S:9064
-I:69632
-T:A spell checker designed to eventually replace Ispell (development files)
-U:http://aspell.net/
-L:LGPL-2.0-or-later
-o:aspell
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1572015635
-c:ea01bb226907d1841c222a4d45832c3c36378115
-D:aspell-utils aspell-libs=0.60.8-r0
-p:cmd:pspell-config
-
 C:Q1zb/lOOB3rTngpK690cC0vTegAAE=
 P:flashcache-utils
 V:3.1.3-r0
@@ -7353,6 +7305,22 @@ t:1623360432
 c:40ccba543568ebe648a0cce6d1ba3a0c1b3d350d
 D:apache2 so:libc.musl-armv7.so.1
 
+C:Q1VFEXTnGzP9O9+9/zTYcbXtbJn80=
+P:haproxy
+V:2.2.15-r0
+A:armv7
+S:832058
+I:1572864
+T:A TCP/HTTP reverse proxy for high availability environments
+U:https://www.haproxy.org/
+L:(GPL-2.0-or-later AND GPL-2.1-or-later) WITH OpenSSL-Exception
+o:haproxy
+m:Milan P. Stanić <mps@arvanta.net>
+t:1627290262
+c:6456aa346941201e5cee4477ea243a827346e87c
+D:/bin/sh so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:liblua-5.3.so.0 so:libpcre.so.1 so:libssl.so.1.1 so:libz.so.1
+p:cmd:haproxy
+
 C:Q1+AGZ86jLK02XS/HS77SSdN/eRCQ=
 P:gnupg
 V:2.2.27-r0
@@ -7398,22 +7366,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1600709981
 c:f2a2901c7d112e081edba90e814cdb14dff01013
 i:docs perl-xml-simple=2.25-r2
-
-C:Q1QET5pwRunGvbuo9FfOL/tcr/jp8=
-P:postfix-stone
-V:3.5.11-r0
-A:armv7
-S:26906
-I:94208
-T:Postfix simulation and testing tools
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1624514488
-c:69d8716d3dfb903846c37cf6085e54745cf72b6e
-D:musl>=1.1.24-r7 so:libc.musl-armv7.so.1 so:libpostfix-global.so so:libpostfix-util.so
-p:cmd:fsstone cmd:qmqp-sink cmd:qmqp-source cmd:smtp-sink cmd:smtp-source
 
 C:Q1kVf5noGyC8zYvTloINjdF+W3oqQ=
 P:boost-regex
@@ -8782,6 +8734,22 @@ c:8e4d804fcc21e50b7af2947d77bd991ad8f184d1
 D:so:libc.musl-armv7.so.1 so:libmnl.so.0
 p:so:libnetfilter_cthelper.so.0=0.0.0
 
+C:Q1h/QAiT/LZpOMvduciQQZRKt/M7U=
+P:aspell-compat
+V:0.60.8-r1
+A:armv7
+S:1935
+I:20480
+T:aspell compatibility scripts for ispell and unix spell
+U:http://aspell.net/
+L:LGPL-2.0-or-later
+o:aspell
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627548687
+c:089e41c41db1a016e933ffaf2896a54cb535cd01
+D:aspell
+p:cmd:ispell cmd:spell
+
 C:Q1eTWM5dwpfFgm/j4Evofd0dt42+c=
 P:postgresql-bdr
 V:9.4.14_p1-r8
@@ -8840,22 +8808,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1600709963
 c:987e6ce93e2d1264cfff794a236fb8e1bac4eb38
 D:perl-html-formattext-withlinks
-
-C:Q1I0t3GMOW0Suqgt15EJQ2zgdp7OQ=
-P:npm
-V:14.16.1-r1
-A:armv7
-S:4766590
-I:28266496
-T:A package manager for JavaScript
-U:https://nodejs.org/
-L:MIT
-o:nodejs
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1618158269
-c:23f0f1cbd5b471e3bafae2026e9c6fcdcf7d2dbc
-D:nodejs
-p:nodejs-npm=14.16.1-r1 nodejs-current-npm=14.16.1-r1 cmd:npm cmd:npx
 
 C:Q1xHU/qFHpltSHU2mFi2YXRWyVUtc=
 P:py3-pluggy
@@ -9740,21 +9692,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1620154375
 c:5ee33bf24eafbf437f34d6a961ec48b9c7d7cf46
 
-C:Q1mMmjn96oW2ZF5W7+C9d4JqYoDYY=
-P:krb5-pkinit
-V:1.18.3-r1
-A:armv7
-S:39336
-I:94208
-T:The PKINIT module for Kerberos 5
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1606682637
-c:6315080241162d640cd7feb2ce292229ea0fa7c3
-D:krb5-conf so:libc.musl-armv7.so.1 so:libcom_err.so.2 so:libcrypto.so.1.1 so:libk5crypto.so.3 so:libkrb5.so.3 so:libkrb5support.so.0
-
 C:Q1mlCBbYYuC5ECk1+vKzg4gOeLasQ=
 P:squid-lang-th
 V:5.0.6-r0
@@ -9922,6 +9859,22 @@ t:1602651640
 c:1c9be9506a3d9e5657ae9f73d38c7ec3fc948c12
 D:so:libblkid.so.1 so:libc.musl-armv7.so.1 so:libsmartcols.so.1 so:libuuid.so.1
 p:cmd:bcache cmd:bcache-super-show cmd:make-bcache
+
+C:Q1aOn5ed2E4dXm+5dV/kjuUkYmzXM=
+P:postfix
+V:3.5.12-r0
+A:armv7
+S:790256
+I:2101248
+T:Secure and fast drop-in replacement for Sendmail (MTA)
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627291311
+c:fd9a2ea17c5b0868ce48fc39eb234a9b323a7cef
+D:musl>=1.1.24-r7 /bin/sh so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libicuuc.so.67 so:liblmdb.so.0 so:libsasl2.so.3 so:libssl.so.1.1
+p:so:libpostfix-dns.so=0 so:libpostfix-global.so=0 so:libpostfix-master.so=0 so:libpostfix-tls.so=0 so:libpostfix-util.so=0 so:postfix-lmdb.so=0 cmd:mailq cmd:newaliases cmd:postalias cmd:postcat cmd:postconf cmd:postdrop cmd:postfix cmd:postkick cmd:postlock cmd:postlog cmd:postmap cmd:postmulti cmd:postqueue cmd:postsuper cmd:qshape.pl cmd:sendmail
 
 C:Q1SYDj8PNVdahmu8UFS90a9Fo3yPc=
 P:proxychains-ng
@@ -10403,6 +10356,22 @@ m:Leo <thinkabit.ukim@gmail.com>
 t:1606201647
 c:49b119223e517ad3c3e953ef87c1643155f4923d
 i:docs libxkbcommon=1.0.3-r0
+
+C:Q1s2tHMnFr5d8JkHLTlpIoEYMwc54=
+P:rsync
+V:3.2.3-r4
+A:armv7
+S:194646
+I:344064
+T:A file transfer program to keep remote files in sync
+U:https://rsync.samba.org/
+L:GPL-3.0-or-later
+o:rsync
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627548897
+c:abc3ef77a4213abb22cbfae48fc012ecea440a5d
+D:so:libacl.so.1 so:libc.musl-armv7.so.1 so:libpopt.so.0 so:libz.so.1 so:libzstd.so.1
+p:cmd:rsync cmd:rsync-ssl
 
 C:Q1jnaovpOl8hpnW3i3JWJgXy0QXxg=
 P:argp-standalone
@@ -12762,6 +12731,22 @@ t:1600709981
 c:c49cebd9c4ef0a2ce669cd9a2a31cf5e2af53fa4
 i:docs perl-xml-namespacesupport=1.12-r2
 
+C:Q1EIBAjmrFTOpI+xOBVoAWF+YD2P4=
+P:postfix-pcre
+V:3.5.12-r0
+A:armv7
+S:6639
+I:49152
+T:pcre map support for postfix
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627291311
+c:fd9a2ea17c5b0868ce48fc39eb234a9b323a7cef
+D:so:libc.musl-armv7.so.1 so:libpcre.so.1
+p:so:postfix-pcre.so=0
+
 C:Q1IAJdMN+J/46BB/p3+OT13lCQmWE=
 P:ncurses-dev
 V:6.2_p20210109-r0
@@ -12884,22 +12869,6 @@ m:Francesco Colista <francesco.colista@gmail.com>
 t:1600709968
 c:66da56912fc4bdd5511fa0e6c8a9d12ff218ebf4
 i:docs perl-mime-lite=3.031-r2
-
-C:Q1nkAANBq1NSwVz/ePf1mkWNfyVVw=
-P:aspell-utils
-V:0.60.8-r0
-A:armv7
-S:8797
-I:61440
-T:aspell misc utils
-U:http://aspell.net/
-L:LGPL-2.0-or-later
-o:aspell
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1572015635
-c:ea01bb226907d1841c222a4d45832c3c36378115
-D:aspell perl so:libc.musl-armv7.so.1
-p:cmd:aspell-import cmd:precat cmd:preunzip cmd:prezip cmd:prezip-bin cmd:run-with-aspell cmd:word-list-compress
 
 C:Q1/k1izfEQ/b0S8+q6uaSRrdFGvLQ=
 P:kamailio-memcached
@@ -17422,6 +17391,22 @@ t:1600709964
 c:93aea7dca6fd34ab854fc5217fb1209d444e1798
 i:docs perl-http-daemon=6.12-r1
 
+C:Q1HtwrM/aLspI0lwiAwNLhcBPXClU=
+P:rrsync
+V:3.2.3-r4
+A:armv7
+S:4477
+I:20480
+T:Restricted rsync, restricts rsync to a subdir declared in .ssh/authorized_keys
+U:https://rsync.samba.org/
+L:GPL-3.0-or-later
+o:rsync
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627548897
+c:abc3ef77a4213abb22cbfae48fc012ecea440a5d
+D:rsync perl
+p:cmd:rrsync
+
 C:Q1ALQ/e0iplCLoLuKCu0Y4oONxQcA=
 P:bacula-pgsql
 V:9.6.7-r1
@@ -17438,21 +17423,36 @@ c:39d01321b8ef30e4696ae0ff2cd3729d71c0a7bc
 D:bacula so:libc.musl-armv7.so.1 so:libpq.so.5
 p:so:libbaccats-postgresql-9.6.7.so=0
 
-C:Q1hTxgwFqzfQwoqlOw89nnE/yjxPc=
-P:postfix-pcre
-V:3.5.11-r0
+C:Q18djyYgWYGdNwusZ21aERuPqx8T4=
+P:sofia-sip-dev
+V:1.13.4-r0
 A:armv7
-S:6639
-I:49152
-T:pcre map support for postfix
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
+S:261618
+I:2498560
+T:RFC3261 compliant SIP User-Agent library (development files)
+U:https://github.com/freeswitch/sofia-sip
+L:LGPL-2.1-only
+o:sofia-sip
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1627765486
+c:0751d26f2930f995c25de24723208658acc52891
+D:pc:glib-2.0 pkgconfig sofia-sip=1.13.4-r0
+p:pc:sofia-sip-ua-glib=1.13.4 pc:sofia-sip-ua=1.13.4
+
+C:Q1szFEZ9JBcCYDHf/GwKt5pePB1oU=
+P:rsync-doc
+V:3.2.3-r4
+A:armv7
+S:87930
+I:114688
+T:A file transfer program to keep remote files in sync (documentation)
+U:https://rsync.samba.org/
+L:GPL-3.0-or-later
+o:rsync
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1624514488
-c:69d8716d3dfb903846c37cf6085e54745cf72b6e
-D:so:libc.musl-armv7.so.1 so:libpcre.so.1
-p:so:postfix-pcre.so=0
+t:1627548897
+c:abc3ef77a4213abb22cbfae48fc012ecea440a5d
+i:docs rsync=3.2.3-r4
 
 C:Q1tWG00PjoV04I+0CnLN4sjmt8eo4=
 P:kamailio-presence
@@ -17743,21 +17743,6 @@ m:Leo <thinkabit.ukim@gmail.com>
 t:1606201647
 c:49b119223e517ad3c3e953ef87c1643155f4923d
 
-C:Q19iR7zBpoaFHkbWW3E7kHVQljlEk=
-P:nodejs-dev
-V:14.16.1-r1
-A:armv7
-S:207707
-I:1110016
-T:JavaScript runtime built on V8 engine - LTS version (development files)
-U:https://nodejs.org/
-L:MIT
-o:nodejs
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1618158269
-c:23f0f1cbd5b471e3bafae2026e9c6fcdcf7d2dbc
-p:nodejs-lts-dev=14.16.1
-
 C:Q1p5G2Gpi5gEEW3i54IlWpffWWLJ0=
 P:linux-firmware-atusb
 V:20201218-r0
@@ -18029,6 +18014,22 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1600709954
 c:e9210227014ba363607dc6c6d894c72bbf7b9ec4
 i:docs perl-class-method-modifiers=2.13-r2
+
+C:Q1X+BJ0FcTH9tCJSnHuHG1dccf/oY=
+P:krb5-server
+V:1.18.4-r0
+A:armv7
+S:198965
+I:471040
+T:The KDC and related programs for Kerberos 5
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627233349
+c:41ad3dc1bca750a20ab2b0197b927b4ed9689b91
+D:libverto-libev so:libc.musl-armv7.so.1 so:libcom_err.so.2 so:libgssapi_krb5.so.2 so:libgssrpc.so.4 so:libk5crypto.so.3 so:libkadm5clnt_mit.so.12 so:libkadm5srv_mit.so.12 so:libkdb5.so.10 so:libkdb_ldap.so.1 so:libkrb5.so.3 so:libkrb5support.so.0 so:libss.so.2 so:libverto.so.1
+p:cmd:gss-server cmd:kadmin.local cmd:kadmind cmd:kdb5_ldap_util cmd:kdb5_util cmd:kprop cmd:kpropd cmd:kproplog cmd:krb5-send-pr cmd:krb5kdc cmd:sclient cmd:sim_server cmd:sserver cmd:uuserver
 
 C:Q1QXw8OoUoX+6K7TRdosnqcXGNm4U=
 P:lua5.2-augeas
@@ -20713,6 +20714,21 @@ t:1600709979
 c:fa2188a98234828903640819dca70cafd2cf0123
 D:perl-class-accessor-chained
 
+C:Q14JJFZ58yqLmo3yR4wcy/WloKfxw=
+P:krb5-pkinit
+V:1.18.4-r0
+A:armv7
+S:39424
+I:94208
+T:The PKINIT module for Kerberos 5
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627233349
+c:41ad3dc1bca750a20ab2b0197b927b4ed9689b91
+D:krb5-conf so:libc.musl-armv7.so.1 so:libcom_err.so.2 so:libcrypto.so.1.1 so:libk5crypto.so.3 so:libkrb5.so.3 so:libkrb5support.so.0
+
 C:Q1MsfgoSGxJFjf+OszVh0Ag9F+wvw=
 P:liblogging-dev
 V:1.0.6-r1
@@ -20958,22 +20974,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1609804179
 c:5e4a02a38d1b548d85172acc2fd34a8a5047806e
 i:docs icu=67.1-r2
-
-C:Q1YM3I2qOXZz0EWL0kISANLdNohbY=
-P:krb5-libs
-V:1.18.3-r1
-A:armv7
-S:688656
-I:1347584
-T:The shared libraries used by Kerberos 5
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1606682637
-c:6315080241162d640cd7feb2ce292229ea0fa7c3
-D:krb5-conf so:libc.musl-armv7.so.1 so:libcom_err.so.2 so:libcrypto.so.1.1 so:libkeyutils.so.1 so:libssl.so.1.1 so:libverto.so.1
-p:so:libgssapi_krb5.so.2=2.2 so:libgssrpc.so.4=4.2 so:libk5crypto.so.3=3.1 so:libkadm5clnt_mit.so.12=12.0 so:libkadm5srv_mit.so.12=12.0 so:libkdb5.so.10=10.0 so:libkrad.so.0=0.0 so:libkrb5.so.3=3.3 so:libkrb5support.so.0=0.1
 
 C:Q1srayRELBxQCyM4Y8IYpQrkg4pBY=
 P:libprotoc
@@ -23010,37 +23010,6 @@ c:7d070009224664e4cb4e0a0b732c2e16626fce82
 D:so:libc.musl-armv7.so.1 so:libdbus-1.so.3 so:libexpat.so.1 so:libjackserver.so.0
 p:cmd:jackdbus
 
-C:Q1Bopfj1egPo3A3S73AeWZ6I7WbFY=
-P:haproxy-openrc
-V:2.2.14-r0
-A:armv7
-S:2006
-I:16384
-T:A TCP/HTTP reverse proxy for high availability environments (OpenRC init scripts)
-U:https://www.haproxy.org/
-L:(GPL-2.0-or-later AND GPL-2.1-or-later) WITH OpenSSL-Exception
-o:haproxy
-m:Milan P. Stanić <mps@arvanta.net>
-t:1620169050
-c:64bf67ea4a8d8058ad8f56cbef410ec6496cfe5b
-i:openrc haproxy=2.2.14-r0
-
-C:Q1d3mfQJOWl8gmpf8vE8JLyqqhPxM=
-P:postfix-mysql
-V:3.5.11-r0
-A:armv7
-S:7109
-I:49152
-T:mysql map support for postfix
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1624514488
-c:69d8716d3dfb903846c37cf6085e54745cf72b6e
-D:so:libc.musl-armv7.so.1 so:libmariadb.so.3
-p:so:postfix-mysql.so=0
-
 C:Q1TYgFVhd7rj/7++c0dt+L5QEAEaA=
 P:screen
 V:4.8.0-r5
@@ -23976,6 +23945,22 @@ c:79779d36ef2c85fb3da1b0a8130168ddc5cb808e
 D:gcr-base=3.38.1-r0 gcr=3.38.1-r0 pc:gio-2.0>=2.44 pc:glib-2.0>=2.44 pc:gobject-2.0>=2.44 pc:gtk+-3.0>=3.12 pc:p11-kit-1>=0.19.0 pkgconfig
 p:pc:gck-1=3.38.1 pc:gcr-3=3.38.1 pc:gcr-base-3=3.38.1 pc:gcr-ui-3=3.38.1
 
+C:Q1T8k0XFXgQzKTHApll2VY4bD/vz8=
+P:postfix-sqlite
+V:3.5.12-r0
+A:armv7
+S:4928
+I:45056
+T:sqlite map support for postfix
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627291311
+c:fd9a2ea17c5b0868ce48fc39eb234a9b323a7cef
+D:so:libc.musl-armv7.so.1 so:libsqlite3.so.0
+p:so:postfix-sqlite.so=0
+
 C:Q1T9q4xiAs+voKOMANLwqqLpKBEwo=
 P:nagios-plugins-hpjd
 V:2.3.2-r1
@@ -24098,22 +24083,6 @@ c:7dd43d0834285c208e83770facd2f7b7e8b1352d
 D:libnetfilter_queue=1.0.5-r0 pc:libnfnetlink pkgconfig
 p:pc:libnetfilter_queue=1.0.5
 
-C:Q1gwvd50PZQTHgiA+iK66zicY7K38=
-P:aspell-compat
-V:0.60.8-r0
-A:armv7
-S:1942
-I:20480
-T:aspell compatibility scripts for ispell and unix spell
-U:http://aspell.net/
-L:LGPL-2.0-or-later
-o:aspell
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1572015635
-c:ea01bb226907d1841c222a4d45832c3c36378115
-D:aspell
-p:cmd:ispell cmd:spell
-
 C:Q145GxBQqXhoZ63fDt5CEVU4GpnqA=
 P:lua-xctrl
 V:2015.04.10-r2
@@ -24189,6 +24158,22 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1600709968
 c:9f9adc5ba4f113b5340a0be255e9b7e98587850a
 i:docs perl-module-implementation=0.09-r3
+
+C:Q1miTwgzc79a1ChXo/v/dqW1AoyaM=
+P:npm
+V:14.17.4-r0
+A:armv7
+S:4767395
+I:28270592
+T:A package manager for JavaScript
+U:https://nodejs.org/
+L:MIT
+o:nodejs
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1627600362
+c:750eea6a8032a9050e6e799d593cf790b513b3f7
+D:nodejs
+p:nodejs-npm=14.17.4-r0 nodejs-current-npm=14.17.4-r0 cmd:npm cmd:npx
 
 C:Q1mwUypysbX6J4Z2J4EnhuTl3Ur1E=
 P:uwsgi-dummy
@@ -24709,6 +24694,22 @@ t:1600709975
 c:3e8986d0c4cc97cac173cf522fd3a29e779f0a9a
 D:so:libc.musl-armv7.so.1
 
+C:Q1RLViAks6yuW4KXPQnK4OsdV04Qk=
+P:krb5
+V:1.18.4-r0
+A:armv7
+S:83710
+I:274432
+T:The Kerberos network authentication system
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627233349
+c:41ad3dc1bca750a20ab2b0197b927b4ed9689b91
+D:krb5-conf so:libc.musl-armv7.so.1 so:libcom_err.so.2 so:libgssapi_krb5.so.2 so:libk5crypto.so.3 so:libkadm5clnt_mit.so.12 so:libkadm5srv_mit.so.12 so:libkdb5.so.10 so:libkrb5.so.3 so:libkrb5support.so.0 so:libss.so.2
+p:cmd:gss-client cmd:k5srvutil cmd:kadmin cmd:kdestroy cmd:kinit cmd:klist cmd:kpasswd cmd:ksu cmd:kswitch cmd:ktutil cmd:kvno cmd:sim_client cmd:uuclient
+
 C:Q1BgfVltF6msKqAg+5jlTqFhrOHBY=
 P:perl-hash-multivalue
 V:0.16-r2
@@ -24798,22 +24799,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:mii-tool
-
-C:Q13vnls16f96Isxql8aeoCqFzd42I=
-P:krb5-server-ldap
-V:1.18.3-r1
-A:armv7
-S:41608
-I:139264
-T:The LDAP storage plugin for the Kerberos 5 KDC
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1606682637
-c:6315080241162d640cd7feb2ce292229ea0fa7c3
-D:krb5-conf so:libc.musl-armv7.so.1 so:libcom_err.so.2 so:libgssrpc.so.4 so:libkadm5srv_mit.so.12 so:libkdb5.so.10 so:libkrb5.so.3 so:libkrb5support.so.0 so:libldap-2.4.so.2
-p:so:libkdb_ldap.so.1=1.0
 
 C:Q1wA6s7g+EN66glClRZxDEMPpHahI=
 P:gstreamer-dev
@@ -27246,6 +27231,21 @@ t:1608368164
 c:913ac67d7f0617fca406bb797e4cf6beed3f0ab8
 p:linux-firmware-any
 
+C:Q14YDDS//O8ETBcSncPEH4xAt/qJo=
+P:apk-tools-zsh-completion
+V:2.12.6-r0
+A:armv7
+S:4838
+I:32768
+T:Zsh completions for apk-tools
+U:https://gitlab.alpinelinux.org/alpine/apk-tools
+L:GPL-2.0-only
+o:apk-tools
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627368514
+c:136e0f8c692114a4c28f0bcf416cc0f1c2cf930e
+i:apk-tools=2.12.6-r0 zsh
+
 C:Q10Vx/N7Z7L+eCOiVeliDmmOOIBZs=
 P:audit
 V:2.8.5-r3
@@ -28307,6 +28307,22 @@ m:Roberto Oliveira <robertoguimaraes8@gmail.com>
 t:1600709976
 c:ba41fb3c8431bd26f63c28df56a30cb4bf2a42c9
 
+C:Q1lLZeqr5sFPqfUJ0gyBYDiyJIO/k=
+P:sofia-sip
+V:1.13.4-r0
+A:armv7
+S:619016
+I:1196032
+T:RFC3261 compliant SIP User-Agent library
+U:https://github.com/freeswitch/sofia-sip
+L:LGPL-2.1-only
+o:sofia-sip
+m:Francesco Colista <fcolista@alpinelinux.org>
+t:1627765486
+c:0751d26f2930f995c25de24723208658acc52891
+D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libglib-2.0.so.0 so:libssl.so.1.1 so:libz.so.1
+p:so:libsofia-sip-ua-glib.so.3=3.0.0 so:libsofia-sip-ua.so.0=0.4.0 cmd:addrinfo cmd:localinfo cmd:sip-date cmd:sip-dig cmd:sip-options cmd:stunc
+
 C:Q1LW/GHXD4RnBBIFfmv2gHnloarUQ=
 P:unbound
 V:1.13.0-r3
@@ -28595,6 +28611,21 @@ t:1595772987
 c:628545b43c627371f0bd268b172cb92afa6796ba
 i:docs libedit=20191231.3.1-r1
 
+C:Q14dXWAp5581dOrQrejmiU8JDTu/s=
+P:apk-tools-doc
+V:2.12.6-r0
+A:armv7
+S:21303
+I:118784
+T:Alpine Package Keeper - package manager for alpine (documentation)
+U:https://gitlab.alpinelinux.org/alpine/apk-tools
+L:GPL-2.0-only
+o:apk-tools
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627368514
+c:136e0f8c692114a4c28f0bcf416cc0f1c2cf930e
+i:docs apk-tools=2.12.6-r0
+
 C:Q10upten0XS6Pyr0/ji2CJzOktVg8=
 P:acf-opennhrp
 V:0.10.0-r3
@@ -28842,6 +28873,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1603313465
 c:8d974685e660aead1e2911dd1478598da9859dea
 D:perl
+
+C:Q16dkhEJ/zbbD0qXPUjfPaXa4NOp0=
+P:nodejs
+V:14.17.4-r0
+A:armv7
+S:12307507
+I:31039488
+T:JavaScript runtime built on V8 engine - LTS version
+U:https://nodejs.org/
+L:MIT
+o:nodejs
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1627600362
+c:750eea6a8032a9050e6e799d593cf790b513b3f7
+D:ca-certificates nghttp2-libs>=1.41 so:libbrotlidec.so.1 so:libbrotlienc.so.1 so:libc.musl-armv7.so.1 so:libcares.so.2 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libnghttp2.so.14 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
+p:nodejs-lts=14.17.4 cmd:node
 
 C:Q1mpqOD6kFZKJG7JnJO2xNEW97ug0=
 P:rpcsvc-proto-doc
@@ -30603,21 +30650,6 @@ t:1610489340
 c:5a7b755050736b28b503dfa74d6e519e8234273c
 i:docs py3-pygments=2.7.4-r0
 
-C:Q1Smzld93PS0T5PkNiZV7k9ZYUddU=
-P:apk-tools-doc
-V:2.12.5-r0
-A:armv7
-S:21916
-I:114688
-T:Alpine Package Keeper - package manager for alpine (documentation)
-U:https://gitlab.alpinelinux.org/alpine/apk-tools
-L:GPL-2.0-only
-o:apk-tools
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1618231316
-c:ac1b1085ae4954a01110b0a9b4d6796ba5a6d630
-i:docs apk-tools=2.12.5-r0
-
 C:Q1jctBWbauik8g7uHa8GPOv7Il3fo=
 P:perl-test-eol-doc
 V:2.02-r0
@@ -31474,6 +31506,21 @@ t:1606837030
 c:5c5c7caa186678936af436412f4b59ded884c52e
 D:so:libc.musl-armv7.so.1 so:libconfig.so.11 so:libnl.so.1
 p:so:liblldp_clif.so.1=1.0.0 cmd:dcbtool cmd:lldpad cmd:lldptool
+
+C:Q1yk/aJdqENHCmR8VBfRZ4kFzsiZA=
+P:haproxy-doc
+V:2.2.15-r0
+A:armv7
+S:439387
+I:1671168
+T:A TCP/HTTP reverse proxy for high availability environments (documentation)
+U:https://www.haproxy.org/
+L:(GPL-2.0-or-later AND GPL-2.1-or-later) WITH OpenSSL-Exception
+o:haproxy
+m:Milan P. Stanić <mps@arvanta.net>
+t:1627290262
+c:6456aa346941201e5cee4477ea243a827346e87c
+i:docs haproxy=2.2.15-r0
 
 C:Q1Pq5VkMOddApsOKeCLTyEdI9ohBA=
 P:ttf-linux-libertine
@@ -33290,21 +33337,6 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:lua-expat lua-socket
 
-C:Q16zgxd3zTaAnAvh95FB/2JLfTSfg=
-P:rsync-openrc
-V:3.2.3-r1
-A:armv7
-S:1823
-I:24576
-T:A file transfer program to keep remote files in sync (OpenRC init scripts)
-U:https://rsync.samba.org/
-L:GPL-3.0-or-later
-o:rsync
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1610107995
-c:725ac7fb785f7eeba7b0e65d6701fb9e79e456d2
-i:openrc rsync=3.2.3-r1
-
 C:Q1+zMyAqNum1h43lW86E83UOLqBfQ=
 P:perl-type-tiny-doc
 V:1.012001-r0
@@ -34741,21 +34773,20 @@ t:1610179599
 c:3a547fffd7984025cd2f57fa0664c210c252d97d
 D:uwsgi so:libc.musl-armv7.so.1 so:libcurl.so.4
 
-C:Q15IukDlWoDGXIKwVtut+tyikdzcY=
-P:postfix
-V:3.5.11-r0
+C:Q1wiYrSSchtFPLkeneqP4rUo/z8Ng=
+P:lua5.3-apk
+V:2.12.6-r0
 A:armv7
-S:790169
-I:2101248
-T:Secure and fast drop-in replacement for Sendmail (MTA)
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
+S:4885
+I:32768
+T:Lua module for apk-tools
+U:https://gitlab.alpinelinux.org/alpine/apk-tools
+L:GPL-2.0-only
+o:apk-tools
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1624514488
-c:69d8716d3dfb903846c37cf6085e54745cf72b6e
-D:musl>=1.1.24-r7 /bin/sh so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libicuuc.so.67 so:liblmdb.so.0 so:libsasl2.so.3 so:libssl.so.1.1
-p:so:libpostfix-dns.so=0 so:libpostfix-global.so=0 so:libpostfix-master.so=0 so:libpostfix-tls.so=0 so:libpostfix-util.so=0 so:postfix-lmdb.so=0 cmd:mailq cmd:newaliases cmd:postalias cmd:postcat cmd:postconf cmd:postdrop cmd:postfix cmd:postkick cmd:postlock cmd:postlog cmd:postmap cmd:postmulti cmd:postqueue cmd:postsuper cmd:qshape.pl cmd:sendmail
+t:1627368514
+c:136e0f8c692114a4c28f0bcf416cc0f1c2cf930e
+D:musl>=1.2 so:libapk.so.3.12.0 so:libc.musl-armv7.so.1
 
 C:Q1C6XrFbYM0pc51vUiWbrVFO307qE=
 P:libressl-dbg
@@ -37275,22 +37306,6 @@ t:1597474205
 c:fd67c24147c269b86e28192d244965e6c402aeb4
 D:glslang
 
-C:Q1s3Q9e/VtRmhjV5/MGZsch0vvoN0=
-P:aspell-libs
-V:0.60.8-r0
-A:armv7
-S:465199
-I:1785856
-T:A spell checker designed to eventually replace Ispell (libraries)
-U:http://aspell.net/
-L:LGPL-2.0-or-later
-o:aspell
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1572015635
-c:ea01bb226907d1841c222a4d45832c3c36378115
-D:so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libintl.so.8 so:libstdc++.so.6
-p:so:libaspell.so.15=15.3.1 so:libpspell.so.15=15.3.1
-
 C:Q13FFJT6hTGTfo1YrytmtsGNQHM9Q=
 P:perl-devel-overloadinfo-doc
 V:0.005-r2
@@ -37470,22 +37485,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1605434817
 c:43caa4feb4038478b21e2740281e5fc9f04cf18f
 i:docs perl-json-maybexs=1.004003-r0
-
-C:Q1qjQNhaijbqzJ/hSLhF/NM/UTG+k=
-P:rsync
-V:3.2.3-r1
-A:armv7
-S:194669
-I:344064
-T:A file transfer program to keep remote files in sync
-U:https://rsync.samba.org/
-L:GPL-3.0-or-later
-o:rsync
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1610107995
-c:725ac7fb785f7eeba7b0e65d6701fb9e79e456d2
-D:so:libacl.so.1 so:libc.musl-armv7.so.1 so:libpopt.so.0 so:libz.so.1 so:libzstd.so.1
-p:cmd:rsync cmd:rsync-ssl
 
 C:Q1Xau2bsdCyE4iCZ7ndnkJiTN+qyY=
 P:freeradius-utils
@@ -38111,6 +38110,22 @@ t:1580255759
 c:1eb911922a7e818a6f314a68c0561bba008e6efd
 i:docs igmpproxy=0.2.1-r0
 
+C:Q1w8ovGLlbIEk2Y+lmRTXkhTBtk1w=
+P:aspell-dev
+V:0.60.8-r1
+A:armv7
+S:9060
+I:69632
+T:A spell checker designed to eventually replace Ispell (development files)
+U:http://aspell.net/
+L:LGPL-2.0-or-later
+o:aspell
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627548687
+c:089e41c41db1a016e933ffaf2896a54cb535cd01
+D:aspell-utils aspell-libs=0.60.8-r1
+p:cmd:pspell-config
+
 C:Q1VI1z5cHXxYnCM4WrPHLlPrzRnKw=
 P:linux-firmware-slicoss
 V:20201218-r0
@@ -38295,6 +38310,22 @@ c:137de502e4378b960166411b35bf05795b089fbb
 D:so:libc.musl-armv7.so.1
 p:so:libhiredis.so.1.0.0=1.0.0
 
+C:Q1P0lBqvV2Z/ONNaodxDw6Tr/ir68=
+P:apk-tools-dev
+V:2.12.6-r0
+A:armv7
+S:89384
+I:278528
+T:Alpine Package Keeper - package manager for alpine (development files)
+U:https://gitlab.alpinelinux.org/alpine/apk-tools
+L:GPL-2.0-only
+o:apk-tools
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627368514
+c:136e0f8c692114a4c28f0bcf416cc0f1c2cf930e
+D:apk-tools=2.12.6-r0 pc:openssl pc:zlib pkgconfig
+p:pc:apk=2.12.6
+
 C:Q1YeO67jxflxMCpzp7dEGfOpR8nfU=
 P:lua5.1-uuid
 V:0.2.0-r1
@@ -38418,6 +38449,22 @@ t:1610179599
 c:3a547fffd7984025cd2f57fa0664c210c252d97d
 D:uwsgi so:libc.musl-armv7.so.1
 
+C:Q1P9a5kfPU9lfuqR3gCi2kFL7U3Mw=
+P:krb5-server-openrc
+V:1.18.4-r0
+A:armv7
+S:1859
+I:24576
+T:The KDC and related programs for Kerberos 5 (OpenRC init scripts)
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627233349
+c:41ad3dc1bca750a20ab2b0197b927b4ed9689b91
+D:krb5-conf
+i:krb5-server=1.18.4-r0 openrc
+
 C:Q1MkpR9RiDRNuMlDSGsbVACiaNHqY=
 P:uwsgi-rsyslog
 V:2.0.19.1-r1
@@ -38447,21 +38494,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1606294721
 c:62c4a5a54820b196773d00dea37125a3fe188dd9
 i:docs snort=2.9.15.1-r0
-
-C:Q1xDlGi2T0V9n/ZW5ponuXD1EsTt8=
-P:haproxy-doc
-V:2.2.14-r0
-A:armv7
-S:439227
-I:1667072
-T:A TCP/HTTP reverse proxy for high availability environments (documentation)
-U:https://www.haproxy.org/
-L:(GPL-2.0-or-later AND GPL-2.1-or-later) WITH OpenSSL-Exception
-o:haproxy
-m:Milan P. Stanić <mps@arvanta.net>
-t:1620169050
-c:64bf67ea4a8d8058ad8f56cbef410ec6496cfe5b
-i:docs haproxy=2.2.14-r0
 
 C:Q15aqA7IsypSS/P2kBO0ZCoa95M3w=
 P:perl-test-eol
@@ -39892,6 +39924,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1601650369
 c:04fefb4e439021704fdd54a6c982b69985769ec1
 D:shorewall-core perl iptables iproute2
+
+C:Q1IOHiSU/tpNxkSIJQGebS/D8NX2s=
+P:nodejs-doc
+V:14.17.4-r0
+A:armv7
+S:135675
+I:401408
+T:JavaScript runtime built on V8 engine - LTS version (documentation)
+U:https://nodejs.org/
+L:MIT
+o:nodejs
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1627600362
+c:750eea6a8032a9050e6e799d593cf790b513b3f7
+i:docs nodejs=14.17.4-r0
 
 C:Q1Ms3dSLVtIchPJJrZgoY/+lzNiqA=
 P:freeradius-python3
@@ -43278,21 +43325,6 @@ t:1602835593
 c:5ffa731075d77da30257f562781fbbf74b7ea8e4
 D:cups-client poppler-utils openssl dbus
 
-C:Q1LG9s5oiQroidNAnf0uh0/rTOYsY=
-P:postfix-doc
-V:3.5.11-r0
-A:armv7
-S:727712
-I:1929216
-T:Secure and fast drop-in replacement for Sendmail (MTA) (documentation)
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1624514488
-c:69d8716d3dfb903846c37cf6085e54745cf72b6e
-i:docs postfix=3.5.11-r0
-
 C:Q1UhMQhIkFUjAn5zwKRxjZpjFGH7s=
 P:gtest-dev
 V:1.10.0-r1
@@ -43909,22 +43941,6 @@ t:1610479975
 c:6c7404cb32ac69f7beeec716eb6d6a8aff50f3a7
 D:bdftopcf perl-gd so:libc.musl-armv7.so.1
 p:cmd:bdfimplode cmd:hex2bdf cmd:hex2sfd cmd:hexbraille cmd:hexdraw cmd:hexkinya cmd:hexmerge cmd:johab2ucs2 cmd:unibdf2hex cmd:unibmp2hex cmd:unibmpbump cmd:unicoverage cmd:unidup cmd:unifont-viewer cmd:unifont1per cmd:unifontchojung cmd:unifontksx cmd:unifontpic cmd:unigencircles cmd:unigenwidth cmd:unihex2bmp cmd:unihex2png cmd:unihexfill cmd:unihexgen cmd:unihexrotate cmd:unipagecount cmd:unipng2hex
-
-C:Q1A6uWLtJmOfir5iUA4JU1ZrrDqUA=
-P:haproxy
-V:2.2.14-r0
-A:armv7
-S:829939
-I:1568768
-T:A TCP/HTTP reverse proxy for high availability environments
-U:https://www.haproxy.org/
-L:(GPL-2.0-or-later AND GPL-2.1-or-later) WITH OpenSSL-Exception
-o:haproxy
-m:Milan P. Stanić <mps@arvanta.net>
-t:1620169050
-c:64bf67ea4a8d8058ad8f56cbef410ec6496cfe5b
-D:/bin/sh so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:liblua-5.3.so.0 so:libpcre.so.1 so:libssl.so.1.1 so:libz.so.1
-p:cmd:haproxy
 
 C:Q1Vj3geizoHoFG0X3Bxvwz3x9MfxE=
 P:lua5.3-dbi-sqlite3
@@ -45047,6 +45063,21 @@ t:1600709970
 c:c1eefafd7ab550ebb93d55beb717d96aebc0aee4
 i:docs perl-net-cidr=0.20-r1
 
+C:Q1HFE6sgc7vvRphKz63+kUt56EFs0=
+P:haproxy-openrc
+V:2.2.15-r0
+A:armv7
+S:1999
+I:16384
+T:A TCP/HTTP reverse proxy for high availability environments (OpenRC init scripts)
+U:https://www.haproxy.org/
+L:(GPL-2.0-or-later AND GPL-2.1-or-later) WITH OpenSSL-Exception
+o:haproxy
+m:Milan P. Stanić <mps@arvanta.net>
+t:1627290262
+c:6456aa346941201e5cee4477ea243a827346e87c
+i:openrc haproxy=2.2.15-r0
+
 C:Q16PDRGqB9f7OSh7oHIJH4P0lHoqA=
 P:postgresql
 V:13.3-r0
@@ -46137,22 +46168,6 @@ t:1614147272
 c:27516c3f4a8ac4b9e0fd96dfd6efb792d1a2f17a
 D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2
 
-C:Q1ifR5+tnWSiBNRRzh6fdB0zRJL+M=
-P:krb5
-V:1.18.3-r1
-A:armv7
-S:82771
-I:270336
-T:The Kerberos network authentication system
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1606682637
-c:6315080241162d640cd7feb2ce292229ea0fa7c3
-D:krb5-conf so:libc.musl-armv7.so.1 so:libcom_err.so.2 so:libgssapi_krb5.so.2 so:libk5crypto.so.3 so:libkadm5clnt_mit.so.12 so:libkadm5srv_mit.so.12 so:libkdb5.so.10 so:libkrb5.so.3 so:libkrb5support.so.0 so:libss.so.2
-p:cmd:gss-client cmd:k5srvutil cmd:kadmin cmd:kdestroy cmd:kinit cmd:klist cmd:kpasswd cmd:ksu cmd:kswitch cmd:ktutil cmd:kvno cmd:sim_client cmd:uuclient
-
 C:Q1/BEa9anx0/+BcLQ3bAYYVsmOFDc=
 P:boost-wave
 V:1.72.0-r6
@@ -46229,6 +46244,21 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:openjade-libs=1.3.2-r5
 
+C:Q10uRb6CfiPr+/nxF7Ti5o0OVGesg=
+P:postfix-doc
+V:3.5.12-r0
+A:armv7
+S:727733
+I:1929216
+T:Secure and fast drop-in replacement for Sendmail (MTA) (documentation)
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627291311
+c:fd9a2ea17c5b0868ce48fc39eb234a9b323a7cef
+i:docs postfix=3.5.12-r0
+
 C:Q1mxFGsrRJateLwJbpPzNUWWWJwvg=
 P:lua5.1-mqtt-publish
 V:0.3-r1
@@ -46244,6 +46274,21 @@ t:1587992810
 c:f3c1355ca20b2f845b6cd78942f0d66ce88ac527
 D:lua5.1-mosquitto
 i:lua5.1 lua-mqtt-publish=0.3-r1
+
+C:Q1rYVEip3csqgp569UTsQ5rNO74PM=
+P:nodejs-dev
+V:14.17.4-r0
+A:armv7
+S:208102
+I:1110016
+T:JavaScript runtime built on V8 engine - LTS version (development files)
+U:https://nodejs.org/
+L:MIT
+o:nodejs
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1627600362
+c:750eea6a8032a9050e6e799d593cf790b513b3f7
+p:nodejs-lts-dev=14.17.4
 
 C:Q18U1i+mq7X5GVKno1hlpvHfnDixk=
 P:orc
@@ -46582,6 +46627,21 @@ c:0fa87cde46ecac50c18ca8e6d676253bc806ae7f
 D:/bin/sh so:libassuan.so.0 so:libc.musl-armv7.so.1 so:libcap.so.2 so:libglib-2.0.so.0 so:libgpg-error.so.0 so:libncursesw.so.6 so:libsecret-1.so.0
 p:cmd:pinentry-curses
 
+C:Q12s0TKDzoCsYM0dnljyRFnJ/4KV4=
+P:aspell-lang
+V:0.60.8-r1
+A:armv7
+S:352261
+I:1376256
+T:Languages for package aspell
+U:http://aspell.net/
+L:LGPL-2.0-or-later
+o:aspell
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627548687
+c:089e41c41db1a016e933ffaf2896a54cb535cd01
+i:aspell=0.60.8-r1 lang
+
 C:Q1uylbzK9gCt7qJf8/z4b44ulqKgg=
 P:slang
 V:2.3.2-r0
@@ -46612,6 +46672,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1608368164
 c:913ac67d7f0617fca406bb797e4cf6beed3f0ab8
 p:linux-firmware-any
+
+C:Q1gIaVsfyQsm0lMEIInjkw8QKBCp8=
+P:postfix-mysql
+V:3.5.12-r0
+A:armv7
+S:7109
+I:49152
+T:mysql map support for postfix
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627291311
+c:fd9a2ea17c5b0868ce48fc39eb234a9b323a7cef
+D:so:libc.musl-armv7.so.1 so:libmariadb.so.3
+p:so:postfix-mysql.so=0
 
 C:Q18TM5aRbeTVaOqH2JRk7sSS9CdPE=
 P:perl-proc-wait3
@@ -46750,22 +46826,6 @@ t:1610702560
 c:f86bee87d3e2cb71bf77eb292307233ecbed3832
 D:so:libc.musl-armv7.so.1 so:libeconf.so.0 so:libpam.so.0 so:libpam_misc.so.0
 p:cmd:runuser
-
-C:Q1MJN8lseqBrJRfeqFSInzefHRFfE=
-P:rrsync
-V:3.2.3-r1
-A:armv7
-S:4483
-I:20480
-T:Restricted rsync, restricts rsync to a subdir declared in .ssh/authorized_keys
-U:https://rsync.samba.org/
-L:GPL-3.0-or-later
-o:rsync
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1610107995
-c:725ac7fb785f7eeba7b0e65d6701fb9e79e456d2
-D:rsync perl
-p:cmd:rrsync
 
 C:Q1AbnjhIvqrnurd4LIHpgHkO0E2qs=
 P:perl-proc-wait3-doc
@@ -47560,22 +47620,6 @@ t:1550653166
 c:104de42e838e77bb5e0cec959f07ddc476880897
 i:docs libsm=1.2.3-r0
 
-C:Q1Tsy0ptBtoKg2BAuAOUx9B8ZWLpI=
-P:postfix-sqlite
-V:3.5.11-r0
-A:armv7
-S:4931
-I:45056
-T:sqlite map support for postfix
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1624514488
-c:69d8716d3dfb903846c37cf6085e54745cf72b6e
-D:so:libc.musl-armv7.so.1 so:libsqlite3.so.0
-p:so:postfix-sqlite.so=0
-
 C:Q1UsP7E1nNvkXe3O9WttwbACLZchY=
 P:perl-probe-perl-doc
 V:0.03-r2
@@ -48190,22 +48234,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1610179599
 c:3a547fffd7984025cd2f57fa0664c210c252d97d
 D:uwsgi so:libc.musl-armv7.so.1
-
-C:Q1wGqGe0xtJhq9vMqX85WSWsOLkHM=
-P:postfix-ldap
-V:3.5.11-r0
-A:armv7
-S:12512
-I:57344
-T:ldap map support for postfix
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1624514488
-c:69d8716d3dfb903846c37cf6085e54745cf72b6e
-D:so:libc.musl-armv7.so.1 so:liblber-2.4.so.2 so:libldap-2.4.so.2
-p:so:postfix-ldap.so=0
 
 C:Q1EgHME4hjxti3lNkZCb/0BwJ1M+o=
 P:py3-bind
@@ -49457,6 +49485,21 @@ t:1606141859
 c:adfe0da2b041c7d4621c6635bd099cc40b882341
 i:docs mailx=8.1.1-r2
 
+C:Q1KhJA9aPcB8sXffDYJfVx3mPax/c=
+P:krb5-doc
+V:1.18.4-r0
+A:armv7
+S:86333
+I:233472
+T:The Kerberos network authentication system (documentation)
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627233349
+c:41ad3dc1bca750a20ab2b0197b927b4ed9689b91
+i:docs krb5=1.18.4-r0
+
 C:Q1m/BFBnJhTY/r7Hd05pmd57n9jcg=
 P:libxfixes-doc
 V:5.0.3-r2
@@ -49977,6 +50020,22 @@ t:1606304311
 c:e8df63792603fdde81309cdbecae96c9b71ffd44
 D:py3-cparser so:libc.musl-armv7.so.1 so:libffi.so.7
 p:py-cffi=1.14.4-r0
+
+C:Q1m8k4IsS+txkCqgQZMX60lo9egGQ=
+P:postfix-stone
+V:3.5.12-r0
+A:armv7
+S:26898
+I:94208
+T:Postfix simulation and testing tools
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627291311
+c:fd9a2ea17c5b0868ce48fc39eb234a9b323a7cef
+D:musl>=1.1.24-r7 so:libc.musl-armv7.so.1 so:libpostfix-global.so so:libpostfix-util.so
+p:cmd:fsstone cmd:qmqp-sink cmd:qmqp-source cmd:smtp-sink cmd:smtp-source
 
 C:Q1G972v2wcu6oMm7Xe83zKPe0DQvE=
 P:lua5.3-augeas
@@ -50980,22 +51039,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1609406099
 c:f98b6fdf1eaa9b0e662dc84b5c30172fd6dbbb12
 
-C:Q16CQNnAtYZYvyep0WNLlibcbtzUE=
-P:sofia-sip
-V:1.13.2-r0
-A:armv7
-S:615803
-I:1187840
-T:RFC3261 compliant SIP User-Agent library
-U:https://github.com/freeswitch/sofia-sip
-L:LGPL-2.1-only
-o:sofia-sip
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1605101117
-c:8d2973f3fb99b4492b4061095647e5545a668060
-D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libglib-2.0.so.0 so:libssl.so.1.1 so:libz.so.1
-p:so:libsofia-sip-ua-glib.so.3=3.0.0 so:libsofia-sip-ua.so.0=0.6.0 cmd:addrinfo cmd:localinfo cmd:sip-date cmd:sip-dig cmd:sip-options cmd:stunc
-
 C:Q1Ibls8IS8cEiNSVtxqBdlkFWsLXA=
 P:ttf-linux-libertine-doc
 V:5.3.0-r0
@@ -51101,22 +51144,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1601716270
 c:d4ff2122e05e2fb29419262dac6b10e3c665c3a2
 D:perl
-
-C:Q1DY4TriAblMAlMd9pH+Pp3hH/t+U=
-P:krb5-server
-V:1.18.3-r1
-A:armv7
-S:198522
-I:466944
-T:The KDC and related programs for Kerberos 5
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1606682637
-c:6315080241162d640cd7feb2ce292229ea0fa7c3
-D:libverto-libev so:libc.musl-armv7.so.1 so:libcom_err.so.2 so:libgssapi_krb5.so.2 so:libgssrpc.so.4 so:libk5crypto.so.3 so:libkadm5clnt_mit.so.12 so:libkadm5srv_mit.so.12 so:libkdb5.so.10 so:libkdb_ldap.so.1 so:libkrb5.so.3 so:libkrb5support.so.0 so:libss.so.2 so:libverto.so.1
-p:cmd:gss-server cmd:kadmin.local cmd:kadmind cmd:kdb5_ldap_util cmd:kdb5_util cmd:kprop cmd:kpropd cmd:kproplog cmd:krb5-send-pr cmd:krb5kdc cmd:sclient cmd:sim_server cmd:sserver cmd:uuserver
 
 C:Q1xDQUnRHrloUhhQQKPYrMYIXMCfI=
 P:fstrm
@@ -51423,21 +51450,6 @@ t:1601075920
 c:d31f0009ade63af0d195ca3460aaadb66417babd
 D:so:libc.musl-armv7.so.1
 p:so:libcdda_interface.so.0=0.10.2 so:libcdda_paranoia.so.0=0.10.2
-
-C:Q1tWWB1RcEZcH9rIXuPn6N1LqaeXI=
-P:krb5-doc
-V:1.18.3-r1
-A:armv7
-S:86331
-I:233472
-T:The Kerberos network authentication system (documentation)
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1606682637
-c:6315080241162d640cd7feb2ce292229ea0fa7c3
-i:docs krb5=1.18.3-r1
 
 C:Q1NVStRXVXRuMbWKkbjm95etltNzY=
 P:perl-css-minifier-xs-doc
@@ -52625,21 +52637,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1606299995
 c:682805fd8f7d081cefbef98cbc10d3cc5d3c46eb
 
-C:Q1sWIVKbqqCoLTrg3olRPGVGWvC+E=
-P:apk-tools-zsh-completion
-V:2.12.5-r0
-A:armv7
-S:4830
-I:32768
-T:Zsh completions for apk-tools
-U:https://gitlab.alpinelinux.org/alpine/apk-tools
-L:GPL-2.0-only
-o:apk-tools
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1618231316
-c:ac1b1085ae4954a01110b0a9b4d6796ba5a6d630
-i:apk-tools=2.12.5-r0 zsh
-
 C:Q1UnIiEqCgP8/BAinTzVnw021TQf4=
 P:asterisk-mobile
 V:18.2.1-r1
@@ -52717,6 +52714,22 @@ t:1604321856
 c:fc8a1465274d8c8c707090d9f4b3039d1ca185ad
 D:/bin/sh so:libc.musl-armv7.so.1 so:libgmp.so.10 so:libjansson.so.4 so:libmnl.so.0 so:libnftnl.so.11 so:libreadline.so.8
 p:so:libnftables.so.1=1.0.0 cmd:nft
+
+C:Q1eUNzQ6taL6JK9MCxK/aZFcvfNA0=
+P:aspell-libs
+V:0.60.8-r1
+A:armv7
+S:465603
+I:1785856
+T:A spell checker designed to eventually replace Ispell (libraries)
+U:http://aspell.net/
+L:LGPL-2.0-or-later
+o:aspell
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627548687
+c:089e41c41db1a016e933ffaf2896a54cb535cd01
+D:so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libintl.so.8 so:libstdc++.so.6
+p:so:libaspell.so.15=15.3.1 so:libpspell.so.15=15.3.1
 
 C:Q1bG4j0t+kyXhlcKLgxhv3a55T/G4=
 P:terminus-font
@@ -52870,22 +52883,6 @@ t:1602202128
 c:f57c5ba1f14c3fc3f55ebb457eba2caccef97e82
 D:so:libc.musl-armv7.so.1 so:libmnl.so.0 so:libnetfilter_acct.so.1 so:libnetfilter_conntrack.so.3 so:libnetfilter_log.so.1 so:libnfnetlink.so.0
 p:cmd:ulogd
-
-C:Q12bHWYlqPgsXgq8XgUTlqb0jCPUQ=
-P:apk-tools
-V:2.12.5-r0
-A:armv7
-S:101924
-I:217088
-T:Alpine Package Keeper - package manager for alpine
-U:https://gitlab.alpinelinux.org/alpine/apk-tools
-L:GPL-2.0-only
-o:apk-tools
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1618231316
-c:ac1b1085ae4954a01110b0a9b4d6796ba5a6d630
-D:musl>=1.2 so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1 so:libz.so.1
-p:so:libapk.so.3.12.0=3.12.0 cmd:apk
 
 C:Q1e/k1nnUR/T92JcEPqTjwyHaYSnw=
 P:ulogd-doc
@@ -53468,21 +53465,6 @@ m:Stuart Cardall <developer@it-offshore.co.uk>
 t:1610601350
 c:4f385aac47dcb363e459e05cbc7a3d17b74cd76b
 i:docs perl-module-scandeps=1.30-r0
-
-C:Q1FiHF/CTa/gUH/e7V+l9RTjwzzYQ=
-P:nodejs-doc
-V:14.16.1-r1
-A:armv7
-S:135474
-I:401408
-T:JavaScript runtime built on V8 engine - LTS version (documentation)
-U:https://nodejs.org/
-L:MIT
-o:nodejs
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1618158269
-c:23f0f1cbd5b471e3bafae2026e9c6fcdcf7d2dbc
-i:docs nodejs=14.16.1-r1
 
 C:Q1V3v+JMl7IcxzA9Zdx7p5K0mK4+o=
 P:lua5.3-dbi-postgresql
@@ -54564,21 +54546,6 @@ t:1610702560
 c:f86bee87d3e2cb71bf77eb292307233ecbed3832
 D:so:libc.musl-armv7.so.1 so:libfdisk.so.1 so:libmount.so.1 so:libncursesw.so.6 so:libsmartcols.so.1
 p:cmd:cfdisk
-
-C:Q1D68LLqgJTPUEwBPlVutTHBCYQcg=
-P:lua5.3-apk
-V:2.12.5-r0
-A:armv7
-S:4882
-I:32768
-T:Lua module for apk-tools
-U:https://gitlab.alpinelinux.org/alpine/apk-tools
-L:GPL-2.0-only
-o:apk-tools
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1618231316
-c:ac1b1085ae4954a01110b0a9b4d6796ba5a6d630
-D:musl>=1.2 so:libapk.so.3.12.0 so:libc.musl-armv7.so.1
 
 C:Q1cddlVQJzcS9DjOi3R8FyNNR7m80=
 P:lttng-ust-tools
@@ -55682,6 +55649,22 @@ m:Nathan Angelacos <nangel@alpinelinux.org>
 t:1581471336
 c:7b2f86e5ef7b2447ed91ae973473dc6b42a4e93b
 i:docs flashrom=1.2-r0
+
+C:Q11fsHoHSK8MdtWNDf+KKhT5v9uwU=
+P:aspell
+V:0.60.8-r1
+A:armv7
+S:45749
+I:90112
+T:A spell checker designed to eventually replace Ispell
+U:http://aspell.net/
+L:LGPL-2.0-or-later
+o:aspell
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627548687
+c:089e41c41db1a016e933ffaf2896a54cb535cd01
+D:so:libaspell.so.15 so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libintl.so.8 so:libncursesw.so.6 so:libstdc++.so.6
+p:cmd:aspell
 
 C:Q1NuJUy6cYZ/TRXzXnbiI8p/FJfKk=
 P:nagios-plugins-ide_smart
@@ -57481,6 +57464,22 @@ t:1605301578
 c:c7ce793e61cd26aaf51bba57653b717519288bf8
 i:docs gdb=10.1-r0
 
+C:Q1+i211rxfvXGsLwIRNwx4p3UVO2U=
+P:krb5-dev
+V:1.18.4-r0
+A:armv7
+S:151130
+I:888832
+T:The Kerberos network authentication system (development files)
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627233349
+c:41ad3dc1bca750a20ab2b0197b927b4ed9689b91
+D:e2fsprogs-dev krb5-libs=1.18.4-r0 krb5-server-ldap=1.18.4-r0 pkgconfig
+p:pc:gssrpc=1.18.4 pc:kadm-client=1.18.4 pc:kadm-server=1.18.4 pc:kdb=1.18.4 pc:krb5-gssapi=1.18.4 pc:krb5=1.18.4 pc:mit-krb5-gssapi=1.18.4 pc:mit-krb5=1.18.4 cmd:krb5-config
+
 C:Q1jF0BOuXdZ2DjNqgTNO0aii0mh4w=
 P:gdl-lang
 V:3.34.0-r0
@@ -58871,21 +58870,6 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:libxfixes=5.0.3-r2 pc:fixesproto>=5.0 pc:x11 pc:xproto pkgconfig
 p:pc:xfixes=5.0.3
-
-C:Q1Go/lvZHIDGqeCzMuNAvCkYIVchk=
-P:aspell-doc
-V:0.60.8-r0
-A:armv7
-S:112387
-I:380928
-T:A spell checker designed to eventually replace Ispell (documentation)
-U:http://aspell.net/
-L:LGPL-2.0-or-later
-o:aspell
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1572015635
-c:ea01bb226907d1841c222a4d45832c3c36378115
-i:docs aspell=0.60.8-r0
 
 C:Q1O6m6lXF7DIms8+M2wJ3WuJrxWhc=
 P:rtmpdump-dev
@@ -60724,6 +60708,22 @@ t:1610451866
 c:4280f227d08b8b1ba76efbe14cc4380be4ad4949
 p:llvm-static=10.0.1-r1
 
+C:Q11/OMvn3PCaTWkoL3o/1im05ctTg=
+P:postfix-pgsql
+V:3.5.12-r0
+A:armv7
+S:6618
+I:49152
+T:pgsql map support for postfix
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627291311
+c:fd9a2ea17c5b0868ce48fc39eb234a9b323a7cef
+D:so:libc.musl-armv7.so.1 so:libpq.so.5
+p:so:postfix-pgsql.so=0
+
 C:Q1SqSil4WHcA9Hk9C0s72XSl2/v4o=
 P:alsa-lib-dbg
 V:1.2.4-r2
@@ -61073,6 +61073,22 @@ t:1600709968
 c:7f928154d3878cede22db6e9b179d1f018ad5d66
 i:docs perl-module-install=1.19-r2
 
+C:Q1L+ufIYGy6p30vCJQaL1CbSyggNM=
+P:aspell-utils
+V:0.60.8-r1
+A:armv7
+S:8841
+I:61440
+T:aspell misc utils
+U:http://aspell.net/
+L:LGPL-2.0-or-later
+o:aspell
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627548687
+c:089e41c41db1a016e933ffaf2896a54cb535cd01
+D:aspell perl so:libc.musl-armv7.so.1
+p:cmd:aspell-import cmd:precat cmd:preunzip cmd:prezip cmd:prezip-bin cmd:run-with-aspell cmd:word-list-compress
+
 C:Q1hk86wzIhAmRCOrmzbAYqrVPwUUg=
 P:sfic
 V:0.1.7-r6
@@ -61366,6 +61382,22 @@ t:1605115593
 c:cd5b58787bb1c323370ec41c5b12a87bd793b5b3
 D:so:libc.musl-armv7.so.1
 p:so:libpri.so.1.4=1.4
+
+C:Q1LrcQedlppItUKmGMTZKS1mZonXI=
+P:apk-tools
+V:2.12.6-r0
+A:armv7
+S:102804
+I:221184
+T:Alpine Package Keeper - package manager for alpine
+U:https://gitlab.alpinelinux.org/alpine/apk-tools
+L:GPL-2.0-only
+o:apk-tools
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627368514
+c:136e0f8c692114a4c28f0bcf416cc0f1c2cf930e
+D:musl>=1.2 so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1 so:libz.so.1
+p:so:libapk.so.3.12.0=3.12.0 cmd:apk
 
 C:Q178jgE0b10/3cpwRevlxW5iagy+8=
 P:perl-html-scrubber
@@ -64176,21 +64208,6 @@ c:ecfcf9451f96b61f9acd6db9ffe5b1d147caf599
 D:so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:libde265.so.0=0.0.11 cmd:dec265
 
-C:Q1tMazYmlakRWSZaYQZXIYpyD+5+s=
-P:rsync-doc
-V:3.2.3-r1
-A:armv7
-S:87929
-I:114688
-T:A file transfer program to keep remote files in sync (documentation)
-U:https://rsync.samba.org/
-L:GPL-3.0-or-later
-o:rsync
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1610107995
-c:725ac7fb785f7eeba7b0e65d6701fb9e79e456d2
-i:docs rsync=3.2.3-r1
-
 C:Q1FJQEU4JS7XzeKiXdqZcq2l9rpXI=
 P:git-bash-completion
 V:2.30.2-r0
@@ -64453,6 +64470,21 @@ t:1600709971
 c:2ab01b52559825365dfab05c2007e7cc1b15888b
 i:docs perl-net-smtp-tls-butmaintained=0.24-r2
 
+C:Q1rN6N14IVb2dUkvnUsCF/XWR/Lf8=
+P:rsync-openrc
+V:3.2.3-r4
+A:armv7
+S:1824
+I:24576
+T:A file transfer program to keep remote files in sync (OpenRC init scripts)
+U:https://rsync.samba.org/
+L:GPL-3.0-or-later
+o:rsync
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627548897
+c:abc3ef77a4213abb22cbfae48fc012ecea440a5d
+i:openrc rsync=3.2.3-r4
+
 C:Q13MXZdGOmuuSfPPA8OAlmdfXxuEA=
 P:make-doc
 V:4.3-r0
@@ -64649,6 +64681,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 i:docs dansguardian=2.12.0.3-r4
+
+C:Q1XDXgIjyzhdgRsxlBO0018zJUjfs=
+P:aspell-doc
+V:0.60.8-r1
+A:armv7
+S:112381
+I:380928
+T:A spell checker designed to eventually replace Ispell (documentation)
+U:http://aspell.net/
+L:LGPL-2.0-or-later
+o:aspell
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627548687
+c:089e41c41db1a016e933ffaf2896a54cb535cd01
+i:docs aspell=0.60.8-r1
 
 C:Q1BkBM3h85dcFl4ek/TVHXBxBCKUE=
 P:s6-networking
@@ -65376,21 +65423,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1600709960
 c:47c14dba5fd20377c6ce8405c26a7957280b1e63
 D:perl
-
-C:Q12Ef2U5XupN6rl657thbPFkjFhZg=
-P:postfix-openrc
-V:3.5.11-r0
-A:armv7
-S:2262
-I:16384
-T:Secure and fast drop-in replacement for Sendmail (MTA) (OpenRC init scripts)
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1624514488
-c:69d8716d3dfb903846c37cf6085e54745cf72b6e
-i:openrc postfix=3.5.11-r0
 
 C:Q1iyTfgwO/+NSv9NQlKrtz/A4lM8A=
 P:libxkbfile
@@ -66422,6 +66454,21 @@ c:79b55a4a4fc9d6fbb260b9b6be5c6ff06ae61f28
 D:so:libc.musl-armv7.so.1 so:libgmp.so.10 so:libhiredis.so.1.0.0 so:libjson-c.so.5 so:libpcap.so.1
 p:cmd:zblacklist cmd:zmap cmd:ztee
 
+C:Q1DWE4sqORjFeHatQqSAaKAwULqXs=
+P:postfix-openrc
+V:3.5.12-r0
+A:armv7
+S:2262
+I:16384
+T:Secure and fast drop-in replacement for Sendmail (MTA) (OpenRC init scripts)
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627291311
+c:fd9a2ea17c5b0868ce48fc39eb234a9b323a7cef
+i:openrc postfix=3.5.12-r0
+
 C:Q1ZTlx8SWccrsMgKsCbfryuvNIhMs=
 P:unfs3-openrc
 V:0.9.22-r5
@@ -66821,22 +66868,6 @@ o:talloc
 t:1576513431
 c:4d8fc07de166c70bee9b1e0b3240199c9f8f0ad1
 i:docs talloc=2.3.1-r0
-
-C:Q1A49WWw0u8/qB9Bu1m2oHIjhOFA0=
-P:sofia-sip-dev
-V:1.13.2-r0
-A:armv7
-S:261024
-I:2494464
-T:RFC3261 compliant SIP User-Agent library (development files)
-U:https://github.com/freeswitch/sofia-sip
-L:LGPL-2.1-only
-o:sofia-sip
-m:Francesco Colista <fcolista@alpinelinux.org>
-t:1605101117
-c:8d2973f3fb99b4492b4061095647e5545a668060
-D:pc:glib-2.0 pkgconfig sofia-sip=1.13.2-r0
-p:pc:sofia-sip-ua-glib=1.13.2 pc:sofia-sip-ua=1.13.2
 
 C:Q11vhEfmBGdQbAO/nPUhjmNZxPrgk=
 P:gtk+3.0-dbg
@@ -67451,22 +67482,6 @@ t:1538845804
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:/bin/sh so:libc.musl-armv7.so.1
 p:cmd:tinydns cmd:tinydns-conf cmd:tinydns-data cmd:tinydns-edit cmd:tinydns-get
-
-C:Q132VqbY0eLSbdebZ/NzNckqFyGn8=
-P:nodejs
-V:14.16.1-r1
-A:armv7
-S:12166790
-I:30695424
-T:JavaScript runtime built on V8 engine - LTS version
-U:https://nodejs.org/
-L:MIT
-o:nodejs
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1618158269
-c:23f0f1cbd5b471e3bafae2026e9c6fcdcf7d2dbc
-D:ca-certificates nghttp2-libs>=1.41 so:libbrotlidec.so.1 so:libbrotlienc.so.1 so:libc.musl-armv7.so.1 so:libcares.so.2 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libnghttp2.so.14 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
-p:nodejs-lts=14.16.1 cmd:node
 
 C:Q1wW1yjLhQqzydHUkn2Bbpuai953w=
 P:libpng
@@ -68767,21 +68782,6 @@ t:1596091716
 c:6a3d7a69058aed25de9a49d0203b0bf02b1256ef
 i:docs clang=10.0.1-r0
 
-C:Q1gkyAJx75CYBj4pBLoOU3LJCGDlc=
-P:aspell-lang
-V:0.60.8-r0
-A:armv7
-S:352256
-I:1376256
-T:Languages for package aspell
-U:http://aspell.net/
-L:LGPL-2.0-or-later
-o:aspell
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1572015635
-c:ea01bb226907d1841c222a4d45832c3c36378115
-i:aspell=0.60.8-r0 lang
-
 C:Q1IwhUhPrYqAB/pp+n+XTbOh3SIRQ=
 P:liblockfile-dev
 V:1.16-r0
@@ -69842,22 +69842,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1600709970
 c:914824f96a6c0cebd245f97f19140dd1b016f162
 i:docs perl-net-libidn=0.12-r9
-
-C:Q14MWv2woaAw48MaHUykokXuoyBVE=
-P:aspell
-V:0.60.8-r0
-A:armv7
-S:45582
-I:90112
-T:A spell checker designed to eventually replace Ispell
-U:http://aspell.net/
-L:LGPL-2.0-or-later
-o:aspell
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1572015635
-c:ea01bb226907d1841c222a4d45832c3c36378115
-D:so:libaspell.so.15 so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libintl.so.8 so:libncursesw.so.6 so:libstdc++.so.6
-p:cmd:aspell
 
 C:Q11U0zLJe6V/SyhT21btq3FXx6n4M=
 P:curl-doc
@@ -71087,6 +71071,22 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1600709975
 c:8d945ce9af04c2262d4c131dc8dc5bbb8acf34f4
 D:perl
+
+C:Q1lyfgJDNQBkMuzPk9FUsozRGiVyU=
+P:apk-tools-static
+V:2.12.6-r0
+A:armv7
+S:1103740
+I:1675264
+T:Alpine Package Keeper - static binary
+U:https://gitlab.alpinelinux.org/alpine/apk-tools
+L:GPL-2.0-only
+o:apk-tools
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1627368514
+c:136e0f8c692114a4c28f0bcf416cc0f1c2cf930e
+D:musl>=1.2
+p:cmd:apk.static
 
 C:Q19yZjLrSu9sN0r7A2+TJydKBcNbs=
 P:privoxy
