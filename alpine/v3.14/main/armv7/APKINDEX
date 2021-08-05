@@ -650,21 +650,6 @@ c:4a92a58b46bf23924e243fb36bf3ba769a476178
 D:python3 py3-setuptools
 p:cmd:echo_supervisord_conf cmd:pidproxy cmd:supervisorctl cmd:supervisord py3.9:supervisor=4.2.2-r2
 
-C:Q1qgCODW0dDdkbvRIaQbd99WT+CXg=
-P:linux-rpi4
-V:5.10.55-r0
-A:armv7
-S:27740290
-I:75456512
-T:Linux kernel with Raspberry Pi patches
-U:https://github.com/raspberrypi/linux
-L:GPL-2.0
-o:linux-rpi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1628001887
-c:c1b3b144e467e4de7885ea9058d24878fe43f7ee
-D:mkinitfs linux-firmware-brcm linux-firmware-cypress
-
 C:Q1zZuS3v9utXKk6CDPHnmxpF3TcI0=
 P:open-isns-doc
 V:0.101-r0
@@ -2435,6 +2420,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1617646683
 c:084c454e8b909b443ba56e183c6037faebbaa72c
 D:uwsgi so:libc.musl-armv7.so.1
+
+C:Q140TlufzqUNLmaljZQb8e/6BLQUc=
+P:linux-rpi2-dev
+V:5.10.56-r0
+A:armv7
+S:17913097
+I:127410176
+T:Headers and script for third party modules for rpi2 kernel
+U:https://github.com/raspberrypi/linux
+L:GPL-2.0
+o:linux-rpi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1628149199
+c:bb502a5a417979eb484943af234e3c9a3c28f810
+D:perl gmp-dev elfutils-dev bash so:libc.musl-armv7.so.1 so:libcrypto.so.1.1
 
 C:Q11IYz82yUBEQjalI4LaVi6RXeX3s=
 P:openobex-apps
@@ -9017,6 +9017,20 @@ t:1617646683
 c:33c9398136aea7c0607f1c5281bd863509d3e8ad
 D:so:libc.musl-armv7.so.1 so:libevtlog-3.30.so.0 so:libglib-2.0.so.0 so:libsyslog-ng-3.30.so.0
 
+C:Q11GHnPrYRwfP+eRFyEqltJMG6ZIc=
+P:raspberrypi-bootloader-cutdown
+V:1.20210727-r0
+A:armv7
+S:1026424
+I:1622016
+T:Cut-down firmware for lower memory settings
+U:https://github.com/raspberrypi/firmware
+L:custom
+o:raspberrypi-bootloader
+m:Timo Teräs <timo.teras@iki.fi>
+t:1628155358
+c:3952ea2f59c99a9895e47f4fe3712c2cbd172794
+
 C:Q1BmRdMn3iOWQwjQzKbhJR+0i92SA=
 P:util-linux-doc
 V:2.37-r0
@@ -11550,6 +11564,21 @@ c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
 D:rsyslog=8.2012.0-r1 so:libc.musl-armv7.so.1 so:libgnutls.so.30
 p:rsyslog-lmnsd_gtls=8.2012.0-r1
 
+C:Q1jkjPE6rjzHUrbDfE/dFNL5Hej18=
+P:linux-rpi2
+V:5.10.56-r0
+A:armv7
+S:27058996
+I:74117120
+T:Linux kernel with Raspberry Pi patches
+U:https://github.com/raspberrypi/linux
+L:GPL-2.0
+o:linux-rpi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1628149199
+c:bb502a5a417979eb484943af234e3c9a3c28f810
+D:mkinitfs linux-firmware-brcm linux-firmware-cypress
+
 C:Q1/77wOGz4jO2eQbCWcIxv2UgPAQY=
 P:spamassassin-openrc
 V:3.4.6-r0
@@ -13792,6 +13821,21 @@ t:1538590349
 c:ac67b1d9da7f555dd5b0d8a95448c76793ce0574
 D:libxml2-utils /bin/sh
 
+C:Q19Lk/rhWMk2oWw1QKbD1t2qlrsSw=
+P:raspberrypi-bootloader-doc
+V:1.20210727-r0
+A:armv7
+S:2377
+I:24576
+T:Bootloader files for the Raspberry Pi (documentation)
+U:https://github.com/raspberrypi/firmware
+L:custom
+o:raspberrypi-bootloader
+m:Timo Teräs <timo.teras@iki.fi>
+t:1628155358
+c:3952ea2f59c99a9895e47f4fe3712c2cbd172794
+i:docs raspberrypi-bootloader=1.20210727-r0
+
 C:Q1Fx2bfyHFKGxH/w2NTtBXIOxT7jw=
 P:socat
 V:1.7.4.1-r1
@@ -13896,20 +13940,6 @@ m:Valery Kartel <valery.kartel@gmail.com>
 t:1518802429
 c:652c24b9cc07bf50cc0f4118255d3d0088060bc8
 D:libmilter=1.0.2-r6
-
-C:Q1gxiitCFwwPK+XnlBaRmVVww0g3s=
-P:raspberrypi-bootloader-cutdown
-V:1.20210527-r0
-A:armv7
-S:1016761
-I:1605632
-T:Cut-down firmware for lower memory settings
-U:https://github.com/raspberrypi/firmware
-L:custom
-o:raspberrypi-bootloader
-m:Timo Teräs <timo.teras@iki.fi>
-t:1623748007
-c:66df1ea233bed9857ddb74b7a4b26ca15307fc34
 
 C:Q189Qjz8c4uvp4mxfkoEs1ICSQgHo=
 P:tinydns
@@ -16244,21 +16274,6 @@ t:1623269064
 c:1481902efddbafea5eb144cca14fa31dd47c1d5f
 D:python3 so:libc.musl-armv7.so.1
 p:py3.9:_libfdt.cpython-39-arm-linux-musleabihf.so=1.6.1-r0 py3.9:libfdt-1.6.1_gbace8c5b_dirty-py3.9.egg-info=1.6.1-r0 py3.9:libfdt=1.6.1-r0
-
-C:Q1Ga7S9ppZ8pnMD108yan9DO5wFc8=
-P:linux-rpi
-V:5.10.55-r0
-A:armv7
-S:25882295
-I:71413760
-T:Linux kernel with Raspberry Pi patches
-U:https://github.com/raspberrypi/linux
-L:GPL-2.0
-o:linux-rpi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1628001887
-c:c1b3b144e467e4de7885ea9058d24878fe43f7ee
-D:mkinitfs linux-firmware-brcm linux-firmware-cypress
 
 C:Q1+0VbVjEINl2w5IZIT31JMdMmxkY=
 P:perl-class-tiny-doc
@@ -20187,20 +20202,6 @@ c:0943d507137db5485ded9554e2a449a76b61de33
 D:logrotate
 i:squid=5.0.6-r0 lang-af
 
-C:Q1ewJi5itjsXHBzPkVFcCa2mntx8E=
-P:raspberrypi-bootloader-debug
-V:1.20210527-r0
-A:armv7
-S:4716722
-I:8552448
-T:Debug firmware
-U:https://github.com/raspberrypi/firmware
-L:custom
-o:raspberrypi-bootloader
-m:Timo Teräs <timo.teras@iki.fi>
-t:1623748007
-c:66df1ea233bed9857ddb74b7a4b26ca15307fc34
-
 C:Q1ix9AaBXEBo9SOdhXeK9/B2UMsuY=
 P:fstrm
 V:0.6.1-r0
@@ -23687,21 +23688,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1620366529
 c:2f3d8f63ce1ce4c5f72e56aa82a34c91c62bcfc9
 D:perl perl-cpan-meta-check perl-dist-checkconflicts perl-file-sharedir perl-file-sharedir-install perl-list-moreutils perl-namespace-autoclean perl-params-validate perl-params-validationcompiler perl-scalar-list-utils perl-test-fatal perl-test-requires perl-test-warnings
-
-C:Q1mTrx6MNJO0apbB0KJHWo3ADHtjg=
-P:linux-rpi2
-V:5.10.55-r0
-A:armv7
-S:27057319
-I:74113024
-T:Linux kernel with Raspberry Pi patches
-U:https://github.com/raspberrypi/linux
-L:GPL-2.0
-o:linux-rpi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1628001887
-c:c1b3b144e467e4de7885ea9058d24878fe43f7ee
-D:mkinitfs linux-firmware-brcm linux-firmware-cypress
 
 C:Q1GetZGfj7WDhNmzOZHumOU6NvdSY=
 P:squid-lang-ka
@@ -38167,20 +38153,6 @@ c:37b6e467cdbd7eea2f2f9cf50ca51866bbcdac77
 D:libxcursor=1.2.0-r0 pc:x11 pc:xfixes pc:xproto pc:xrender pkgconfig
 p:pc:xcursor=1.2.0
 
-C:Q1qhNQPqtvnKlEt6HMRjR3+v828To=
-P:raspberrypi-bootloader
-V:1.20210527-r0
-A:armv7
-S:3063640
-I:5267456
-T:Bootloader files for the Raspberry Pi
-U:https://github.com/raspberrypi/firmware
-L:custom
-o:raspberrypi-bootloader
-m:Timo Teräs <timo.teras@iki.fi>
-t:1623748007
-c:66df1ea233bed9857ddb74b7a4b26ca15307fc34
-
 C:Q1bvkIYlmvdJ8LyAsm8+6LHHziYs4=
 P:openssh-server-pam
 V:8.6_p1-r2
@@ -38850,6 +38822,20 @@ m:Lucas Ramage <ramage.lucas@protonmail.com>
 t:1610489771
 c:1118fff73bb8f3a967c12d42de2d8c4a0a7ed162
 i:docs efibootmgr=17-r0
+
+C:Q1plK3rIM4qj9X3+ZwUlCRqcBfDJ4=
+P:raspberrypi-bootloader
+V:1.20210727-r0
+A:armv7
+S:3074720
+I:5275648
+T:Bootloader files for the Raspberry Pi
+U:https://github.com/raspberrypi/firmware
+L:custom
+o:raspberrypi-bootloader
+m:Timo Teräs <timo.teras@iki.fi>
+t:1628155358
+c:3952ea2f59c99a9895e47f4fe3712c2cbd172794
 
 C:Q1RxImelfhS/L478cM5+PZmJSqgTo=
 P:perl-text-password-pronounceable-doc
@@ -40844,21 +40830,6 @@ c:61f1f6da093f16b102c801a2802b5675fd955c4c
 D:python3
 p:py-py=1.10.0-r1 py3.9:py=1.10.0-r1
 
-C:Q1ABa/cvqbpNqlI6AqdwclycK4ohQ=
-P:linux-rpi2-dev
-V:5.10.55-r0
-A:armv7
-S:17912767
-I:127410176
-T:Headers and script for third party modules for rpi2 kernel
-U:https://github.com/raspberrypi/linux
-L:GPL-2.0
-o:linux-rpi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1628001887
-c:c1b3b144e467e4de7885ea9058d24878fe43f7ee
-D:perl gmp-dev elfutils-dev bash so:libc.musl-armv7.so.1 so:libcrypto.so.1.1
-
 C:Q1QBuGmH72bhkZN9Ax3n7OlcD42/c=
 P:nghttp2-dev
 V:1.43.0-r0
@@ -42451,6 +42422,20 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1610522534
 c:f8728fab65ed79764c8afca55fb72a170a443c92
 
+C:Q14qNuuULRYa6FWExrmfe6JLckjZ8=
+P:raspberrypi-bootloader-experimental
+V:1.20210727-r0
+A:armv7
+S:3872355
+I:6733824
+T:Experimental firmware with additional codecs
+U:https://github.com/raspberrypi/firmware
+L:custom
+o:raspberrypi-bootloader
+m:Timo Teräs <timo.teras@iki.fi>
+t:1628155358
+c:3952ea2f59c99a9895e47f4fe3712c2cbd172794
+
 C:Q1hGoKZ50XG37WJCjA+e9k7cvpLVo=
 P:perl-class-tiny
 V:1.008-r1
@@ -43325,6 +43310,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1620575739
 c:9799d6cea80c198145a8ae41a6308eefb73cce02
 D:so:libc.musl-armv7.so.1 so:libruby.so.2.7
+
+C:Q1tamq17053AxlDj8aiYAwNgBvcrU=
+P:linux-rpi-dev
+V:5.10.56-r0
+A:armv7
+S:17904086
+I:127197184
+T:Headers and script for third party modules for rpi kernel
+U:https://github.com/raspberrypi/linux
+L:GPL-2.0
+o:linux-rpi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1628149199
+c:bb502a5a417979eb484943af234e3c9a3c28f810
+D:perl gmp-dev elfutils-dev bash so:libc.musl-armv7.so.1 so:libcrypto.so.1.1
 
 C:Q1hlgES1t5Vt6g0g47gJdMNRBkf4E=
 P:perl-control-x10
@@ -45251,6 +45251,21 @@ t:1617646686
 c:56f9e56a314b1a961672f320b84491d737b22f29
 D:lttng-ust=2.12.0-r3 pc:liburcu-bp pkgconfig py3-lttng=2.12.0-r3
 p:pc:lttng-ust-ctl=2.12.0 pc:lttng-ust=2.12.0
+
+C:Q1CLZvlaBRyZRL/w6+U+D1o9Qw/tg=
+P:linux-rpi
+V:5.10.56-r0
+A:armv7
+S:25883961
+I:71417856
+T:Linux kernel with Raspberry Pi patches
+U:https://github.com/raspberrypi/linux
+L:GPL-2.0
+o:linux-rpi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1628149199
+c:bb502a5a417979eb484943af234e3c9a3c28f810
+D:mkinitfs linux-firmware-brcm linux-firmware-cypress
 
 C:Q1CSBvMYlK/nutEbhtwwpqD398ZOU=
 P:libasr
@@ -49745,6 +49760,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1617646683
 c:084c454e8b909b443ba56e183c6037faebbaa72c
 D:uwsgi
+
+C:Q1W6oCWWFpRWK7wvobYlRBe2k8bHA=
+P:linux-rpi4-dev
+V:5.10.56-r0
+A:armv7
+S:17934812
+I:127733760
+T:Headers and script for third party modules for rpi4 kernel
+U:https://github.com/raspberrypi/linux
+L:GPL-2.0
+o:linux-rpi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1628149199
+c:bb502a5a417979eb484943af234e3c9a3c28f810
+D:perl gmp-dev elfutils-dev bash so:libc.musl-armv7.so.1 so:libcrypto.so.1.1
 
 C:Q1rsQqmTDyMa1b8qfLVmbN/dPyL+Q=
 P:lua5.1-dbi-mysql
@@ -65697,6 +65727,21 @@ t:1600709967
 c:c9a22c497182e878430696c4a7333b5fed3b3c49
 i:docs perl-mail-dkim=1.20200907-r1
 
+C:Q1fmw9MeIdFPWKmUFIOcdO+N8yKWU=
+P:linux-rpi4
+V:5.10.56-r0
+A:armv7
+S:27741846
+I:75460608
+T:Linux kernel with Raspberry Pi patches
+U:https://github.com/raspberrypi/linux
+L:GPL-2.0
+o:linux-rpi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1628149199
+c:bb502a5a417979eb484943af234e3c9a3c28f810
+D:mkinitfs linux-firmware-brcm linux-firmware-cypress
+
 C:Q1jzQ2W9I0YxV/7K55cZ0qLQjT4G4=
 P:perl-set-intspan
 V:1.19-r3
@@ -68080,21 +68125,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1617259664
 c:1f417e69e18f42ef42975ff7b620a2dc0551183d
 i:docs perl-scalar-list-utils=1.56-r0
-
-C:Q11pwFxXspjJbWv47lBYuafxLr7xg=
-P:linux-rpi4-dev
-V:5.10.55-r0
-A:armv7
-S:17934768
-I:127733760
-T:Headers and script for third party modules for rpi4 kernel
-U:https://github.com/raspberrypi/linux
-L:GPL-2.0
-o:linux-rpi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1628001887
-c:c1b3b144e467e4de7885ea9058d24878fe43f7ee
-D:perl gmp-dev elfutils-dev bash so:libc.musl-armv7.so.1 so:libcrypto.so.1.1
 
 C:Q121pXUTbuIpPGIcDpp/6sQFVsTls=
 P:fontconfig-static
@@ -70580,21 +70610,6 @@ c:1900db34ee50bab2ec08a92aacc6074a01ccd836
 D:so:libc.musl-armv7.so.1 so:libgcc_s.so.1
 p:so:libboost_thread.so.1.75.0=1.75.0
 
-C:Q1SNeiCA4wp4KbFpETuNj+A+nDDy0=
-P:linux-rpi-dev
-V:5.10.55-r0
-A:armv7
-S:17903742
-I:127197184
-T:Headers and script for third party modules for rpi kernel
-U:https://github.com/raspberrypi/linux
-L:GPL-2.0
-o:linux-rpi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1628001887
-c:c1b3b144e467e4de7885ea9058d24878fe43f7ee
-D:perl gmp-dev elfutils-dev bash so:libc.musl-armv7.so.1 so:libcrypto.so.1.1
-
 C:Q1aJUAJ4jYxzMtDL2vdQUyfevOpQw=
 P:dahdi-linux
 V:3.1.0-r0
@@ -71391,6 +71406,20 @@ t:1610112630
 c:e6b956a47c968c56aca85169c623b3a2e5eca108
 D:so:libc.musl-armv7.so.1
 p:so:libhavege.so.2=2.0.0 cmd:haveged
+
+C:Q1oiJ2ab2QLsaRJ9X2gkv7TOszyek=
+P:raspberrypi-bootloader-debug
+V:1.20210727-r0
+A:armv7
+S:4728961
+I:8568832
+T:Debug firmware
+U:https://github.com/raspberrypi/firmware
+L:custom
+o:raspberrypi-bootloader
+m:Timo Teräs <timo.teras@iki.fi>
+t:1628155358
+c:3952ea2f59c99a9895e47f4fe3712c2cbd172794
 
 C:Q1VWCgCwl2HqjYS8dbbJDhCzKPlz0=
 P:mesa-dev
@@ -72457,21 +72486,6 @@ c:acc8d8098c2706b456f26989363525a38a88d5a6
 D:so:libasound.so.2 so:libc.musl-armv7.so.1 so:libjack.so.0
 p:so:libportaudio.so.2=2.0.0
 
-C:Q12XWyY9araGBFru8FTBfmmw8HdN8=
-P:raspberrypi-bootloader-doc
-V:1.20210527-r0
-A:armv7
-S:2375
-I:24576
-T:Bootloader files for the Raspberry Pi (documentation)
-U:https://github.com/raspberrypi/firmware
-L:custom
-o:raspberrypi-bootloader
-m:Timo Teräs <timo.teras@iki.fi>
-t:1623748007
-c:66df1ea233bed9857ddb74b7a4b26ca15307fc34
-i:docs raspberrypi-bootloader=1.20210527-r0
-
 C:Q1e2qZnD9tng79ahzkTgDxvka7JKE=
 P:iasl
 V:20210331-r0
@@ -72533,20 +72547,6 @@ t:1566478559
 c:fc59a9586afda7bbe15038391310a2afbf5c9780
 D:so:libc.musl-armv7.so.1
 p:so:libivykis.so.0=0.5.6
-
-C:Q1QFPoFJGNWZjmJUBa29OYBmOe+8Q=
-P:raspberrypi-bootloader-experimental
-V:1.20210527-r0
-A:armv7
-S:3862065
-I:6721536
-T:Experimental firmware with additional codecs
-U:https://github.com/raspberrypi/firmware
-L:custom
-o:raspberrypi-bootloader
-m:Timo Teräs <timo.teras@iki.fi>
-t:1623748007
-c:66df1ea233bed9857ddb74b7a4b26ca15307fc34
 
 C:Q1QJm9svskVgUGzlnJ0A6gsBqGqKo=
 P:libgo
