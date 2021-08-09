@@ -57106,6 +57106,93 @@
       "versions": {
         "0.11.2-r0": 1624643484
       }
+    },
+    "gpsd-clients": {
+      "origin": "gpsd",
+      "versions": {
+        "3.23-r0": 1628527076
+      },
+      "dependencies": [
+        "so:libc.musl-armv7.so.1",
+        "so:libncursesw.so.6"
+      ],
+      "provides": [
+        "cmd:cgps",
+        "cmd:gegps",
+        "cmd:gps2udp",
+        "cmd:gpscsv",
+        "cmd:gpsctl",
+        "cmd:gpsdebuginfo",
+        "cmd:gpsdecode",
+        "cmd:gpsmon",
+        "cmd:gpspipe",
+        "cmd:gpsplot",
+        "cmd:gpsrinex",
+        "cmd:gpssnmp",
+        "cmd:gpssubframe",
+        "cmd:gpxlogger",
+        "cmd:lcdgps",
+        "cmd:ntpshmmon",
+        "cmd:ppscheck",
+        "cmd:ubxtool",
+        "cmd:xgps",
+        "cmd:xgpsspeed",
+        "cmd:zerk"
+      ]
+    },
+    "gpsd-dev": {
+      "origin": "gpsd",
+      "versions": {
+        "3.23-r0": 1628527076
+      },
+      "dependencies": [
+        "gpsd=3.23-r0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:libgps=3.23"
+      ]
+    },
+    "py3-gpsd": {
+      "origin": "gpsd",
+      "versions": {
+        "3.23-r0": 1628527076
+      },
+      "provides": [
+        "cmd:gpscat",
+        "cmd:gpsfake",
+        "cmd:gpsprof",
+        "py3.9:gps=3.23-r0"
+      ]
+    },
+    "gpsd-doc": {
+      "origin": "gpsd",
+      "versions": {
+        "3.23-r0": 1628527076
+      }
+    },
+    "gpsd-openrc": {
+      "origin": "gpsd",
+      "versions": {
+        "3.23-r0": 1628527076
+      }
+    },
+    "gpsd": {
+      "origin": "gpsd",
+      "versions": {
+        "3.23-r0": 1628527076
+      },
+      "dependencies": [
+        "so:libc.musl-armv7.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:libgps.so.29=29.0.0",
+        "so:libgpsdpacket.so.29=29.0.0",
+        "cmd:gpsd",
+        "cmd:gpsdctl"
+      ]
     }
   },
   "provide": {
@@ -63519,6 +63606,14 @@
       "libtls.so.2": {
         "package": "libretls",
         "version": "2.0.3"
+      },
+      "libgps.so.29": {
+        "package": "gpsd",
+        "version": "29.0.0"
+      },
+      "libgpsdpacket.so.29": {
+        "package": "gpsd",
+        "version": "29.0.0"
       }
     }
   }

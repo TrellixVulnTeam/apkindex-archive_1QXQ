@@ -22046,14 +22046,15 @@
     "gpsd-dev": {
       "origin": "gpsd",
       "versions": {
-        "3.21-r0": 1596761920
+        "3.21-r0": 1596761920,
+        "3.23-r0": 1628527648
       },
       "dependencies": [
-        "gpsd=3.21-r0",
+        "gpsd=3.23-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libgps=3.21"
+        "pc:libgps=3.23"
       ]
     },
     "tdb-libs": {
@@ -33794,7 +33795,8 @@
     "gpsd-clients": {
       "origin": "gpsd",
       "versions": {
-        "3.21-r0": 1596761920
+        "3.21-r0": 1596761920,
+        "3.23-r0": 1628527648
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -33804,11 +33806,16 @@
         "cmd:cgps",
         "cmd:gegps",
         "cmd:gps2udp",
+        "cmd:gpscsv",
         "cmd:gpsctl",
+        "cmd:gpsdebuginfo",
         "cmd:gpsdecode",
         "cmd:gpsmon",
         "cmd:gpspipe",
+        "cmd:gpsplot",
         "cmd:gpsrinex",
+        "cmd:gpssnmp",
+        "cmd:gpssubframe",
         "cmd:gpxlogger",
         "cmd:lcdgps",
         "cmd:ntpshmmon",
@@ -34232,7 +34239,8 @@
     "py3-gpsd": {
       "origin": "gpsd",
       "versions": {
-        "3.21-r0": 1596761920
+        "3.21-r0": 1596761920,
+        "3.23-r0": 1628527648
       },
       "provides": [
         "cmd:gpscat",
@@ -41644,7 +41652,8 @@
     "gpsd-doc": {
       "origin": "gpsd",
       "versions": {
-        "3.21-r0": 1596761920
+        "3.21-r0": 1596761920,
+        "3.23-r0": 1628527648
       }
     },
     "perl-term-table": {
@@ -45962,7 +45971,8 @@
     "gpsd": {
       "origin": "gpsd",
       "versions": {
-        "3.21-r0": 1596761920
+        "3.21-r0": 1596761920,
+        "3.23-r0": 1628527648
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -45970,8 +45980,8 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "so:libgps.so.27=27.0.0",
-        "so:libgpsdpacket.so.27=27.0.0",
+        "so:libgps.so.29=29.0.0",
+        "so:libgpsdpacket.so.29=29.0.0",
         "cmd:gpsd",
         "cmd:gpsdctl"
       ]
@@ -58707,6 +58717,12 @@
       "versions": {
         "5.9-r3": 1620830627
       }
+    },
+    "gpsd-openrc": {
+      "origin": "gpsd",
+      "versions": {
+        "3.23-r0": 1628527648
+      }
     }
   },
   "provide": {
@@ -65048,6 +65064,14 @@
       "libns-9.16.15.so": {
         "package": "bind-libs",
         "version": "0"
+      },
+      "libgps.so.29": {
+        "package": "gpsd",
+        "version": "29.0.0"
+      },
+      "libgpsdpacket.so.29": {
+        "package": "gpsd",
+        "version": "29.0.0"
       }
     }
   }
