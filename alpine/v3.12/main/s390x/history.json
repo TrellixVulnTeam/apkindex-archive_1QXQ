@@ -1742,7 +1742,8 @@
     "py3-gpsd": {
       "origin": "gpsd",
       "versions": {
-        "3.20-r1": 1586268009
+        "3.20-r1": 1586268009,
+        "3.23-r0": 1628529579
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1"
@@ -20412,14 +20413,16 @@
     "gpsd": {
       "origin": "gpsd",
       "versions": {
-        "3.20-r1": 1586268009
+        "3.20-r1": 1586268009,
+        "3.23-r0": 1628529579
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1",
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "so:libgps.so.25=25.0.0",
+        "so:libgps.so.29=29.0.0",
+        "so:libgpsdpacket.so.29=29.0.0",
         "cmd:gpsd",
         "cmd:gpsdctl"
       ]
@@ -21727,14 +21730,15 @@
     "gpsd-dev": {
       "origin": "gpsd",
       "versions": {
-        "3.20-r1": 1586268009
+        "3.20-r1": 1586268009,
+        "3.23-r0": 1628529579
       },
       "dependencies": [
-        "gpsd=3.20-r1",
+        "gpsd=3.23-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libgps=3.20"
+        "pc:libgps=3.23"
       ]
     },
     "ivykis-dev": {
@@ -33331,7 +33335,8 @@
     "gpsd-clients": {
       "origin": "gpsd",
       "versions": {
-        "3.20-r1": 1586268009
+        "3.20-r1": 1586268009,
+        "3.23-r0": 1628529579
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1",
@@ -33341,16 +33346,23 @@
         "cmd:cgps",
         "cmd:gegps",
         "cmd:gps2udp",
+        "cmd:gpscsv",
         "cmd:gpsctl",
+        "cmd:gpsdebuginfo",
         "cmd:gpsdecode",
         "cmd:gpsmon",
         "cmd:gpspipe",
+        "cmd:gpsplot",
         "cmd:gpsrinex",
+        "cmd:gpssnmp",
+        "cmd:gpssubframe",
         "cmd:gpxlogger",
         "cmd:lcdgps",
         "cmd:ntpshmmon",
         "cmd:ppscheck",
         "cmd:ubxtool",
+        "cmd:xgps",
+        "cmd:xgpsspeed",
         "cmd:zerk"
       ]
     },
@@ -41831,7 +41843,8 @@
     "gpsd-doc": {
       "origin": "gpsd",
       "versions": {
-        "3.20-r1": 1586268009
+        "3.20-r1": 1586268009,
+        "3.23-r0": 1628529579
       }
     },
     "samba-pidl": {
@@ -58054,6 +58067,12 @@
       "versions": {
         "20200519-r1": 1600991000
       }
+    },
+    "gpsd-openrc": {
+      "origin": "gpsd",
+      "versions": {
+        "3.23-r0": 1628529579
+      }
     }
   },
   "provide": {
@@ -64339,6 +64358,14 @@
       "libns-9.16.15.so": {
         "package": "bind-libs",
         "version": "0"
+      },
+      "libgps.so.29": {
+        "package": "gpsd",
+        "version": "29.0.0"
+      },
+      "libgpsdpacket.so.29": {
+        "package": "gpsd",
+        "version": "29.0.0"
       }
     }
   }

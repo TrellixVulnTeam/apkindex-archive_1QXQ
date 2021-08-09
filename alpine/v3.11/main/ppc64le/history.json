@@ -7370,7 +7370,8 @@
       "origin": "gpsd",
       "versions": {
         "3.18.1-r3": 1572968030,
-        "3.19-r0": 1576151991
+        "3.19-r0": 1576151991,
+        "3.23-r0": 1628529916
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1"
@@ -10302,7 +10303,8 @@
       "origin": "gpsd",
       "versions": {
         "3.18.1-r3": 1572968030,
-        "3.19-r0": 1576151991
+        "3.19-r0": 1576151991,
+        "3.23-r0": 1628529916
       }
     },
     "skalibs-dev": {
@@ -34059,14 +34061,16 @@
       "origin": "gpsd",
       "versions": {
         "3.18.1-r3": 1572968030,
-        "3.19-r0": 1576151991
+        "3.19-r0": 1576151991,
+        "3.23-r0": 1628529916
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "so:libgps.so.25=25.0.0",
+        "so:libgps.so.29=29.0.0",
+        "so:libgpsdpacket.so.29=29.0.0",
         "cmd:gpsd",
         "cmd:gpsdctl"
       ]
@@ -43770,7 +43774,8 @@
       "origin": "gpsd",
       "versions": {
         "3.18.1-r3": 1572968030,
-        "3.19-r0": 1576151991
+        "3.19-r0": 1576151991,
+        "3.23-r0": 1628529916
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -43780,16 +43785,23 @@
         "cmd:cgps",
         "cmd:gegps",
         "cmd:gps2udp",
+        "cmd:gpscsv",
         "cmd:gpsctl",
+        "cmd:gpsdebuginfo",
         "cmd:gpsdecode",
         "cmd:gpsmon",
         "cmd:gpspipe",
+        "cmd:gpsplot",
         "cmd:gpsrinex",
+        "cmd:gpssnmp",
+        "cmd:gpssubframe",
         "cmd:gpxlogger",
         "cmd:lcdgps",
         "cmd:ntpshmmon",
         "cmd:ppscheck",
         "cmd:ubxtool",
+        "cmd:xgps",
+        "cmd:xgpsspeed",
         "cmd:zerk"
       ]
     },
@@ -61459,14 +61471,15 @@
       "origin": "gpsd",
       "versions": {
         "3.18.1-r3": 1572968030,
-        "3.19-r0": 1576151991
+        "3.19-r0": 1576151991,
+        "3.23-r0": 1628529916
       },
       "dependencies": [
-        "gpsd=3.19-r0",
+        "gpsd=3.23-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libgps=3.19"
+        "pc:libgps=3.23"
       ]
     },
     "libxext-doc": {
@@ -68952,6 +68965,12 @@
       "dependencies": [
         "strongswan"
       ]
+    },
+    "gpsd-openrc": {
+      "origin": "gpsd",
+      "versions": {
+        "3.23-r0": 1628529916
+      }
     }
   },
   "provide": {
@@ -75007,6 +75026,14 @@
       "libns-9.16.15.so": {
         "package": "bind-libs",
         "version": "0"
+      },
+      "libgps.so.29": {
+        "package": "gpsd",
+        "version": "29.0.0"
+      },
+      "libgpsdpacket.so.29": {
+        "package": "gpsd",
+        "version": "29.0.0"
       }
     },
     "package": {
