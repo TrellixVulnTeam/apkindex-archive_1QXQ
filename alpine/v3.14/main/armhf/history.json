@@ -57360,6 +57360,55 @@
       "provides": [
         "pc:libgps=3.23"
       ]
+    },
+    "numactl-dev": {
+      "origin": "numactl",
+      "versions": {
+        "2.0.14-r0": 1630403208
+      },
+      "dependencies": [
+        "numactl=2.0.14-r0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:numa=2.0.14"
+      ]
+    },
+    "numactl-doc": {
+      "origin": "numactl",
+      "versions": {
+        "2.0.14-r0": 1630403208
+      }
+    },
+    "numactl-tools": {
+      "origin": "numactl",
+      "versions": {
+        "2.0.14-r0": 1630403208
+      },
+      "dependencies": [
+        "so:libc.musl-armhf.so.1",
+        "so:libnuma.so.1"
+      ],
+      "provides": [
+        "cmd:memhog",
+        "cmd:migratepages",
+        "cmd:migspeed",
+        "cmd:numactl",
+        "cmd:numademo",
+        "cmd:numastat"
+      ]
+    },
+    "numactl": {
+      "origin": "numactl",
+      "versions": {
+        "2.0.14-r0": 1630403208
+      },
+      "dependencies": [
+        "so:libc.musl-armhf.so.1"
+      ],
+      "provides": [
+        "so:libnuma.so.1=1.0.0"
+      ]
     }
   },
   "provide": {
@@ -63873,6 +63922,10 @@
       "libns-9.16.20.so": {
         "package": "bind-libs",
         "version": "0"
+      },
+      "libnuma.so.1": {
+        "package": "numactl",
+        "version": "1.0.0"
       }
     }
   }
