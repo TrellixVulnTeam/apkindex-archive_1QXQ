@@ -511,21 +511,6 @@ c:e260bfbc3fa360ede0fb8aab04a1b3c1b078b407
 D:so:libblkid.so.1 so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libintl.so.8 so:libtirpc.so.3 so:libuuid.so.1 so:libz.so.1
 p:so:libnvpair.so.3=3.0.0 so:libuutil.so.3=3.0.0 so:libzfs.so.4=4.0.0 so:libzfs_core.so.3=3.0.0 so:libzfsbootenv.so.1=1.0.0 so:libzpool.so.4=4.0.0
 
-C:Q14108XOfJOO85NutLD/BwHa2Cpxk=
-P:openssh-keysign
-V:8.6_p1-r2
-A:ppc64le
-S:193178
-I:503808
-T:ssh helper program for host-based authentication
-U:https://www.openssh.com/portable.html
-L:BSD
-o:openssh
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1624384626
-c:61662e7eee873f3dea30eb58740286d5a206320a
-D:openssh-client=8.6_p1-r2 so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libz.so.1
-
 C:Q1eO3gfqfDCaOBYJvrF0Ey/m/JNw8=
 P:lua5.3-iconv
 V:7-r2
@@ -541,6 +526,22 @@ t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:so:libc.musl-ppc64le.so.1
 i:lua5.3 lua-iconv=7-r2
+
+C:Q1aKTsdv6ijJaBwH3j0nHy9PDeRnA=
+P:openssh-server-krb5
+V:8.6_p1-r3
+A:ppc64le
+S:373656
+I:933888
+T:OpenSSH server with krb5 support
+U:https://www.openssh.com/portable.html
+L:BSD
+o:openssh
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633456058
+c:d10d87c0d9c31c3fe062e31ae65e3c05a8b6a060
+D:openssh-keygen=8.6_p1-r3 openssh-server-common=8.6_p1-r3 so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libgssapi_krb5.so.2 so:libkrb5.so.3 so:libpam.so.0 so:libz.so.1
+p:cmd:sshd.krb5
 
 C:Q1w+Omr+bTmPTNjOgkSCxcHAeOrks=
 P:grub-dev
@@ -1418,6 +1419,20 @@ c:620a4dae1cef61d8fe19fcc52dbae9a7ce310466
 D:so:libacl.so.1 so:libc.musl-ppc64le.so.1 so:libpopt.so.0 so:libz.so.1 so:libzstd.so.1
 p:cmd:rsync cmd:rsync-ssl
 
+C:Q1N9BCFVR+uVqRY/Rt3HebTGH/I4E=
+P:openssh-server-common
+V:8.6_p1-r3
+A:ppc64le
+S:4836
+I:32768
+T:OpenSSH server configuration files
+U:https://www.openssh.com/portable.html
+L:BSD
+o:openssh
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633456058
+c:d10d87c0d9c31c3fe062e31ae65e3c05a8b6a060
+
 C:Q1G6wRHFQRSC1nkUzs/zrZIy3MelA=
 P:dovecot-submissiond
 V:2.3.15-r0
@@ -1526,22 +1541,6 @@ m:Jeff Bilyk <jbilyk@gmail.com>
 t:1619080659
 c:553b52b33f4111f77c68ac4f2d42c6763e561527
 D:nagios-plugins perl
-
-C:Q1Vq8HDCgODF7gEYDudl2TNfEvMLM=
-P:squid-lang-uz
-V:5.0.6-r0
-A:ppc64le
-S:13560
-I:204800
-T:squid language pack for uz
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-uz
 
 C:Q1e5bZGWzCJc3WmIGNyTToNFk2neo=
 P:geoip-dev
@@ -1741,6 +1740,22 @@ c:60a428a4c1d968e35626e302d12d9c4711100612
 D:so:libc.musl-ppc64le.so.1
 p:so:liblinenoise.so.0=0.0.0
 
+C:Q1tP8hazGxYw1arEAjSAn8GyaV0+Q=
+P:squid-lang-sv
+V:5.0.6-r1
+A:ppc64le
+S:13403
+I:204800
+T:squid language pack for sv
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-sv
+
 C:Q1lYt5jp5Hr48l9Tyt3PdVVtxPfrM=
 P:libuv
 V:1.41.0-r0
@@ -1832,6 +1847,21 @@ c:8fabef1349971b78ecff6d736bfab6098bc338d1
 D:perl
 p:cmd:dnssort
 i:ndisc6 perl
+
+C:Q1oFfdY9caQuK01e8j6zkW6G0pqic=
+P:openssh-doc
+V:8.6_p1-r3
+A:ppc64le
+S:102939
+I:159744
+T:Port of OpenBSD's free SSH release (documentation)
+U:https://www.openssh.com/portable.html
+L:BSD
+o:openssh
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633456058
+c:d10d87c0d9c31c3fe062e31ae65e3c05a8b6a060
+i:docs openssh=8.6_p1-r3
 
 C:Q1osW5X7l8sh19GkkW18u+IuzgQW8=
 P:boost1.76-filesystem
@@ -4168,6 +4198,22 @@ t:1622805808
 c:77197c63f2d73e27d951de95397d4aed9f771537
 i:docs perl-dbd-pg=3.15.0-r0
 
+C:Q1bdFnSTf6RxA9HlPcQHZtIZzHzoc=
+P:squid-lang-ja
+V:5.0.6-r1
+A:ppc64le
+S:14121
+I:204800
+T:squid language pack for ja
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-ja
+
 C:Q1/neC7VoyyAJ+XJFd5oksEaCuMtw=
 P:vanessa_logger
 V:0.0.10-r1
@@ -4246,22 +4292,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1614407779
 c:fbebfd04c46e643df43f04c74986f0ab298d8f40
 i:docs mailcap=2.1.52-r0
-
-C:Q1YbtGRqKDRGd1imcOtsmQGdvQD7s=
-P:squid-lang-uk
-V:5.0.6-r0
-A:ppc64le
-S:14414
-I:204800
-T:squid language pack for uk
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-uk
 
 C:Q1QaOWTBq5Mqf7327MwK+kl1ApvkA=
 P:graphviz
@@ -5025,6 +5055,22 @@ t:1617646683
 c:084c454e8b909b443ba56e183c6037faebbaa72c
 D:uwsgi so:libc.musl-ppc64le.so.1 so:libxml2.so.2 so:libxslt.so.1
 
+C:Q1c+a7HgCIKmekmykb5qegywREVbg=
+P:squid-lang-uz
+V:5.0.6-r1
+A:ppc64le
+S:13558
+I:204800
+T:squid language pack for uz
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-uz
+
 C:Q1hHDzW1zKhrNv9q6mKGlNUTihO6c=
 P:apr-dev
 V:1.7.0-r0
@@ -5254,22 +5300,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1600709967
 c:86f493955249c6a788c5531a2bf41b19ff300f8f
 i:docs perl-mailtools=2.21-r2
-
-C:Q1eyRBxYRod8cp9qifpG4xbr1UX4A=
-P:squid-lang-ka
-V:5.0.6-r0
-A:ppc64le
-S:13461
-I:204800
-T:squid language pack for ka
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-ka
 
 C:Q1qyk+mFWoCGkO/gDuGvcIwPv0HPQ=
 P:setup-box
@@ -11850,22 +11880,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1620131670
 c:c8c465f2b499377705d6a1e8c0ecac53cec04783
 
-C:Q13W/SaJ8nOGC8MhB3rbQoEHokpXQ=
-P:squid-lang-cs
-V:5.0.6-r0
-A:ppc64le
-S:13258
-I:204800
-T:squid language pack for cs
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-cs
-
 C:Q1ZfFnNuhA05Lbvrc76Sgm45NlXgo=
 P:net-snmp-tools
 V:5.9-r4
@@ -12019,6 +12033,22 @@ t:1630450762
 c:d4163d4c6c5e91541ac6e54a11f53a917da8a4c8
 k:100
 p:nodejs-lts-dev=14.17.6
+
+C:Q1bBi+4fI73mzU/cekae4pFEKxGlA=
+P:squid-lang-tr
+V:5.0.6-r1
+A:ppc64le
+S:13389
+I:204800
+T:squid language pack for tr
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-tr
 
 C:Q1EEFZRwuEXYpLk2a8TQ1+E0RS45U=
 P:mesa-vulkan-layers
@@ -12283,22 +12313,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1600709973
 c:deb42bc0a5f3d2a7b1f163f1c928426571ab0db9
 i:docs perl-regexp-common=2017060201-r2
-
-C:Q1hTfgjXot3FJ86quis83Dz5Fpydc=
-P:squid-lang-bg
-V:5.0.6-r0
-A:ppc64le
-S:14310
-I:204800
-T:squid language pack for bg
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-bg
 
 C:Q1KUYhXf8eGCLDlb8nqIs1/fsN36Y=
 P:lua-curl
@@ -15254,22 +15268,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 
-C:Q1/uhVj5jabC6cb4bPGeCh0EJKw2Q=
-P:squid-lang-ko
-V:5.0.6-r0
-A:ppc64le
-S:13536
-I:204800
-T:squid language pack for ko
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-ko
-
 C:Q1jn4RrlOO5yCzwmrKLiqoZU7OwT8=
 P:libtirpc-static
 V:1.3.2-r0
@@ -15315,22 +15313,6 @@ t:1622571733
 c:bcd4acce26aab9baceb45d84872e8244c3c02e4a
 D:so:libc.musl-ppc64le.so.1 so:libcap.so.2 so:libcom_err-samba4.so.0 so:libgenrand-samba4.so so:libgnutls.so.30 so:libiov-buf-samba4.so so:libjansson.so.4 so:liblber-2.4.so.2 so:libldap-2.4.so.2 so:libldb.so.2 so:libpam.so.0 so:libpopt.so.0 so:libreplace-samba4.so so:libsamba-debug-samba4.so so:libsamba-util.so.0 so:libsocket-blocking-samba4.so so:libsys-rw-samba4.so so:libtalloc.so.2 so:libtdb.so.1 so:libtevent.so.0 so:libtime-basic-samba4.so so:libwbclient.so.0 so:libz.so.1
 p:so:libCHARSET3-samba4.so=0 so:libMESSAGING-SEND-samba4.so=0 so:libMESSAGING-samba4.so=0 so:libaddns-samba4.so=0 so:libads-samba4.so=0 so:libasn1-samba4.so.8=8.0.0 so:libasn1util-samba4.so=0 so:libauth-samba4.so=0 so:libauthkrb5-samba4.so=0 so:libcli-cldap-samba4.so=0 so:libcli-ldap-common-samba4.so=0 so:libcli-nbt-samba4.so=0 so:libcli-smb-common-samba4.so=0 so:libcli-spoolss-samba4.so=0 so:libcliauth-samba4.so=0 so:libclidns-samba4.so=0 so:libcmocka-samba4.so=0 so:libcommon-auth-samba4.so=0 so:libdbwrap-samba4.so=0 so:libdcerpc-binding.so.0=0.0.1 so:libdcerpc-samba-samba4.so=0 so:libevents-samba4.so=0 so:libflag-mapping-samba4.so=0 so:libgensec-samba4.so=0 so:libgse-samba4.so=0 so:libgssapi-samba4.so.2=2.0.0 so:libhcrypto-samba4.so.5=5.0.1 so:libheimbase-samba4.so.1=1.0.0 so:libheimntlm-samba4.so.1=1.0.1 so:libhx509-samba4.so.5=5.0.0 so:libinterfaces-samba4.so=0 so:libkrb5-samba4.so.26=26.0.0 so:libkrb5samba-samba4.so=0 so:libldbsamba-samba4.so=0 so:liblibcli-lsa3-samba4.so=0 so:liblibcli-netlogon3-samba4.so=0 so:liblibsmb-samba4.so=0 so:libmessages-dgm-samba4.so=0 so:libmessages-util-samba4.so=0 so:libmsghdr-samba4.so=0 so:libmsrpc3-samba4.so=0 so:libndr-krb5pac.so.0=0.0.1 so:libndr-nbt.so.0=0.0.1 so:libndr-samba-samba4.so=0 so:libndr-samba4.so=0 so:libndr-standard.so.0=0.0.1 so:libndr.so.1=1.0.1 so:libpopt-samba3-samba4.so=0 so:libroken-samba4.so.19=19.0.1 so:libsamba-cluster-support-samba4.so=0 so:libsamba-credentials.so.1=1.0.0 so:libsamba-errors.so.1=1 so:libsamba-hostconfig.so.0=0.0.1 so:libsamba-modules-samba4.so=0 so:libsamba-passdb.so.0=0.28.0 so:libsamba-security-samba4.so=0 so:libsamba-sockets-samba4.so=0 so:libsamba3-util-samba4.so=0 so:libsamdb-common-samba4.so=0 so:libsamdb.so.0=0.0.1 so:libsecrets3-samba4.so=0 so:libserver-id-db-samba4.so=0 so:libserver-role-samba4.so=0 so:libsmb-transport-samba4.so=0 so:libsmbconf.so.0=0 so:libsmbd-shim-samba4.so=0 so:libsmbldap.so.2=2.1.0 so:libtalloc-report-printf-samba4.so=0 so:libtalloc-report-samba4.so=0 so:libtdb-wrap-samba4.so=0 so:libtevent-util.so.0=0.0.1 so:libtrusts-util-samba4.so=0 so:libutil-cmdline-samba4.so=0 so:libutil-reg-samba4.so=0 so:libutil-setid-samba4.so=0 so:libutil-tdb-samba4.so=0 so:libwind-samba4.so.0=0.0.0
-
-C:Q1lwqbOQ5PKck3YFz2lNXqaWWEdbU=
-P:squid-lang-da
-V:5.0.6-r0
-A:ppc64le
-S:13071
-I:204800
-T:squid language pack for da
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-da
 
 C:Q12xegjJHN4R4ZshlfLXLiVw6L+Bk=
 P:perl-devel-stacktrace-ashtml
@@ -16684,21 +16666,21 @@ t:1611214606
 c:1356b123da67b224162415628d04df58649460da
 i:openrc ppp=2.4.9-r0
 
-C:Q1jeKelzD2hO7mI4wIS+cK/zxZv20=
-P:squid-lang-et
-V:5.0.6-r0
+C:Q12jH0Fu5d2fXjzFpayD9MUbPZNhs=
+P:openssh-client-krb5
+V:8.6_p1-r3
 A:ppc64le
-S:13095
-I:204800
-T:squid language pack for et
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
+S:336945
+I:839680
+T:OpenBSD's SSH client with kerberos support
+U:https://www.openssh.com/portable.html
+L:BSD
+o:openssh
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-et
+t:1633456058
+c:d10d87c0d9c31c3fe062e31ae65e3c05a8b6a060
+D:openssh-keygen=8.6_p1-r3 openssh-client-common=8.6_p1-r3 !openssh-client-default so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libgssapi_krb5.so.2 so:libz.so.1
+p:openssh-client=8.6_p1-r3 cmd:ssh
 
 C:Q1oG8tPyP/1t3I0fy85BfU7PX6syM=
 P:py3-wheel-doc
@@ -16909,6 +16891,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1623437961
 c:8158d9828f0d8492fd170ac7270b6339ae7cc4c2
 i:docs perl-socket=2.032-r0
+
+C:Q11avMohkxnY/sK/3a/V1hYV8p1VU=
+P:squid-lang-az
+V:5.0.6-r1
+A:ppc64le
+S:13385
+I:204800
+T:squid language pack for az
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-az
 
 C:Q1SKDTyIoSrZ/tFSoiJJXRK+f9rhc=
 P:py3-docutils-doc
@@ -17451,22 +17449,6 @@ o:sipsak
 m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1606299995
 c:682805fd8f7d081cefbef98cbc10d3cc5d3c46eb
-
-C:Q1pFrNFGrkZ8FzdEk17iQ5JuccPEg=
-P:squid-lang-fa
-V:5.0.6-r0
-A:ppc64le
-S:13607
-I:204800
-T:squid language pack for fa
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-fa
 
 C:Q1xWvhfjBB3noF6uUoEPuiRkmPcLM=
 P:perl-test2-plugin-nowarnings
@@ -18323,6 +18305,21 @@ m:Laurent Bercot <ska-devel@skarnet.org>
 t:1618990205
 c:11ee0ec4973d9f15d29c645de4a9b7917de07371
 
+C:Q1b2j7Qj5TQSkiD1qDnf8EV0LSEJY=
+P:openssh
+V:8.6_p1-r3
+A:ppc64le
+S:262639
+I:724992
+T:Port of OpenBSD's free SSH release
+U:https://www.openssh.com/portable.html
+L:BSD
+o:openssh
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633456058
+c:d10d87c0d9c31c3fe062e31ae65e3c05a8b6a060
+D:openssh-client openssh-sftp-server openssh-server so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1
+
 C:Q1kJxsoEp4s37CyoafD8R6+mhWcl8=
 P:libxdamage-dev
 V:1.1.5-r1
@@ -18929,22 +18926,6 @@ k:1
 D:linux-firmware-yamaha=20210716-r0 linux-firmware-yam=20210716-r0 linux-firmware-vxge=20210716-r0 linux-firmware-vicam=20210716-r0 linux-firmware-ueagle-atm=20210716-r0 linux-firmware-ttusb-budget=20210716-r0 linux-firmware-tigon=20210716-r0 linux-firmware-ti-keystone=20210716-r0 linux-firmware-ti-connectivity=20210716-r0 linux-firmware-ti=20210716-r0 linux-firmware-tehuti=20210716-r0 linux-firmware-sxg=20210716-r0 linux-firmware-sun=20210716-r0 linux-firmware-slicoss=20210716-r0 linux-firmware-silabs=20210716-r0 linux-firmware-sb16=20210716-r0 linux-firmware-rtw89=20210716-r0 linux-firmware-rtw88=20210716-r0 linux-firmware-rtlwifi=20210716-r0 linux-firmware-rtl_nic=20210716-r0 linux-firmware-rtl_bt=20210716-r0 linux-firmware-rtl8192e=20210716-r0 linux-firmware-rsi=20210716-r0 linux-firmware-rockchip=20210716-r0 linux-firmware-radeon=20210716-r0 linux-firmware-r128=20210716-r0 linux-firmware-qlogic=20210716-r0 linux-firmware-qed=20210716-r0 linux-firmware-qcom=20210716-r0 linux-firmware-qca=20210716-r0 linux-firmware-ositech=20210716-r0 linux-firmware-nvidia=20210716-r0 linux-firmware-netronome=20210716-r0 linux-firmware-myricom=20210716-r0 linux-firmware-mwlwifi=20210716-r0 linux-firmware-mwl8k=20210716-r0 linux-firmware-mrvl=20210716-r0 linux-firmware-moxa=20210716-r0 linux-firmware-microchip=20210716-r0 linux-firmware-meson=20210716-r0 linux-firmware-mellanox=20210716-r0 linux-firmware-mediatek=20210716-r0 linux-firmware-matrox=20210716-r0 linux-firmware-liquidio=20210716-r0 linux-firmware-libertas=20210716-r0 linux-firmware-korg=20210716-r0 linux-firmware-keyspan_pda=20210716-r0 linux-firmware-keyspan=20210716-r0 linux-firmware-kaweth=20210716-r0 linux-firmware-isci=20210716-r0 linux-firmware-intel=20210716-r0 linux-firmware-inside-secure=20210716-r0 linux-firmware-imx=20210716-r0 linux-firmware-i915=20210716-r0 linux-firmware-go7007=20210716-r0 linux-firmware-ess=20210716-r0 linux-firmware-ene-ub6250=20210716-r0 linux-firmware-emi62=20210716-r0 linux-firmware-emi26=20210716-r0 linux-firmware-edgeport=20210716-r0 linux-firmware-e100=20210716-r0 linux-firmware-dsp56k=20210716-r0 linux-firmware-dpaa2=20210716-r0 linux-firmware-dabusb=20210716-r0 linux-firmware-cypress=20210716-r0 linux-firmware-cxgb4=20210716-r0 linux-firmware-cxgb3=20210716-r0 linux-firmware-cpia2=20210716-r0 linux-firmware-cis=20210716-r0 linux-firmware-cavium=20210716-r0 linux-firmware-cadence=20210716-r0 linux-firmware-brcm=20210716-r0 linux-firmware-bnx2x=20210716-r0 linux-firmware-bnx2=20210716-r0 linux-firmware-av7110=20210716-r0 linux-firmware-atusb=20210716-r0 linux-firmware-atmel=20210716-r0 linux-firmware-ath9k_htc=20210716-r0 linux-firmware-ath6k=20210716-r0 linux-firmware-ath11k=20210716-r0 linux-firmware-ath10k=20210716-r0 linux-firmware-ar3k=20210716-r0 linux-firmware-amdgpu=20210716-r0 linux-firmware-amd-ucode=20210716-r0 linux-firmware-amd=20210716-r0 linux-firmware-advansys=20210716-r0 linux-firmware-adaptec=20210716-r0 linux-firmware-acenic=20210716-r0 linux-firmware-3com=20210716-r0 linux-firmware-other=20210716-r0
 p:linux-firmware-any
 
-C:Q1OUE5evN32jhg+FIImGfjrKdQNnk=
-P:squid-lang-el
-V:5.0.6-r0
-A:ppc64le
-S:14043
-I:204800
-T:squid language pack for el
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-el
-
 C:Q1KWESgkbCm4XSTuPuE2RF8N9EqUM=
 P:pptpd-doc
 V:1.4.0-r2
@@ -19113,22 +19094,6 @@ t:1610959646
 c:cc57b1fa27a4ddc19d930ef27a766ce90f999486
 D:lua5.2 so:libc.musl-ppc64le.so.1 so:libmariadb.so.3
 i:lua-sql-mysql=2.6.0-r1 lua5.2
-
-C:Q1nfcFxWJxPTWW79G60w9V8M4clHU=
-P:openssh-client-common
-V:8.6_p1-r2
-A:ppc64le
-S:767464
-I:2531328
-T:OpenBSD's SSH client common files
-U:https://www.openssh.com/portable.html
-L:BSD
-o:openssh
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1624384626
-c:61662e7eee873f3dea30eb58740286d5a206320a
-D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libedit.so.0 so:libz.so.1
-p:cmd:findssl.sh cmd:scp cmd:sftp cmd:ssh-add cmd:ssh-agent cmd:ssh-copy-id cmd:ssh-keyscan cmd:ssh-pkcs11-helper
 
 C:Q1/ljLZvOmV1T081duHs1By6r/730=
 P:py3-tz
@@ -19326,6 +19291,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:encodings font-alias mkfontscale mkfontdir fontconfig
+
+C:Q1Oz9LmiwwXc835DocADK0R40UBVk=
+P:openssh-server-pam
+V:8.6_p1-r3
+A:ppc64le
+S:364645
+I:909312
+T:OpenSSH server with pam support
+U:https://www.openssh.com/portable.html
+L:BSD
+o:openssh
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633456058
+c:d10d87c0d9c31c3fe062e31ae65e3c05a8b6a060
+D:openssh-keygen=8.6_p1-r3 openssh-server-common=8.6_p1-r3 so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libpam.so.0 so:libz.so.1
+p:cmd:sshd.pam
 
 C:Q1nco5NKm/8YlMXfVIGnCryUW5mg0=
 P:ldapvi-doc
@@ -19850,22 +19831,6 @@ c:0aea2d90f9f43ac56ff36ff172c3e7d1c9a29852
 D:/bin/sh so:libc.musl-ppc64le.so.1 so:libestr.so.0 so:libfastjson.so.4 so:libuuid.so.1 so:libz.so.1
 p:cmd:rsyslogd
 
-C:Q1y1u3VMRfcCPOMC1Y7SQbt4aPK8g=
-P:squid-lang-fr
-V:5.0.6-r0
-A:ppc64le
-S:13764
-I:204800
-T:squid language pack for fr
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-fr
-
 C:Q1ALPMe7ls13b9jWtcx8+mz7Ylaoc=
 P:zeromq-doc
 V:4.3.4-r0
@@ -20175,22 +20140,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1601650369
 c:28190295aeed8d16298cfc941b2737843fb8e94a
 p:cmd:shorewall
-
-C:Q1e5ahPAGv+ayvvTLjx19zpAAhmL8=
-P:squid-lang-th
-V:5.0.6-r0
-A:ppc64le
-S:13825
-I:204800
-T:squid language pack for th
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-th
 
 C:Q1vr1FWUqBrBo5ceV4fYzC3ubPVmA=
 P:lksctp-tools
@@ -20682,6 +20631,22 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.2 so:libc.musl-ppc64le.so.1 so:libsqlite3.so.0
 i:lua-sqlite=0.9.5-r4 lua5.2
 
+C:Q1peuXDOinu4jEgdgSr483JJJ7BRo=
+P:squid-lang-he
+V:5.0.6-r1
+A:ppc64le
+S:13458
+I:204800
+T:squid language pack for he
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-he
+
 C:Q1LiUZCWzKZ0KVOcVf8e2VZZObbkU=
 P:uwsgi-stats_pusher_socket
 V:2.0.19.1-r2
@@ -20742,6 +20707,22 @@ t:1626352809
 c:cb9ae5a494e79f54358e972d8ca28369c7913f5f
 i:openrc kamailio=5.4.5-r1
 
+C:Q1dkD0rsb2nKjD6zrwkxUJTiTMe/w=
+P:squid-lang-vi
+V:5.0.6-r1
+A:ppc64le
+S:13459
+I:204800
+T:squid language pack for vi
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-vi
+
 C:Q1hyMcxgqgUwKt1rMEWS9PXGq+t6s=
 P:libtheora-dev
 V:1.1.1-r16
@@ -20773,6 +20754,22 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:lua lua-ldap /bin/sh
 p:cmd:ssh-getkey-ldap
+
+C:Q1PPYw6DaE4lxJOjwyLaZbaAWCQSM=
+P:squid-lang-el
+V:5.0.6-r1
+A:ppc64le
+S:14047
+I:204800
+T:squid language pack for el
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-el
 
 C:Q1zovjyRbL4I3+f/q0aO/Z8/t+Jto=
 P:bluez-doc
@@ -20971,6 +20968,22 @@ m:Michael Mason <ms13sp@gmail.com>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:rtnppd
+
+C:Q14URt8BDNQ3XMLxghTHRHDWo4Jwk=
+P:squid-lang-fi
+V:5.0.6-r1
+A:ppc64le
+S:13300
+I:204800
+T:squid language pack for fi
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-fi
 
 C:Q1Ne01xmtTF1k1b6cjmZn2zsEOHMQ=
 P:procps-doc
@@ -21411,22 +21424,6 @@ t:1627219944
 c:b889e515b90fe310a08c450d503998e4b29bc726
 D:e2fsprogs-dev krb5-libs=1.18.4-r0 krb5-server-ldap=1.18.4-r0 pkgconfig
 p:pc:gssrpc=1.18.4 pc:kadm-client=1.18.4 pc:kadm-server=1.18.4 pc:kdb=1.18.4 pc:krb5-gssapi=1.18.4 pc:krb5=1.18.4 pc:mit-krb5-gssapi=1.18.4 pc:mit-krb5=1.18.4 cmd:krb5-config
-
-C:Q11KQ/fSRLKIUQxIuo+hZSxAVbS5Y=
-P:squid-lang-lt
-V:5.0.6-r0
-A:ppc64le
-S:13235
-I:204800
-T:squid language pack for lt
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-lt
 
 C:Q1mB3kGBfocEkp3V172dzF9YEqSEE=
 P:py3-coverage
@@ -23138,6 +23135,22 @@ t:1583167112
 c:86d1e50b1e85c2d0172c4d2a9d279312bbfc7f8b
 i:docs ddate=0.2.2-r1
 
+C:Q1pouxe20C/2A/GyUs7ApdlsecYLc=
+P:squid-lang-it
+V:5.0.6-r1
+A:ppc64le
+S:13361
+I:204800
+T:squid language pack for it
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-it
+
 C:Q1uIO34EavvYQ00FiJKVhPnlrWtVE=
 P:git-subtree-doc
 V:2.32.0-r0
@@ -23415,6 +23428,22 @@ t:1632249167
 c:54079fa2e969ae7108e0b368584cb60a97282ade
 D:awall
 
+C:Q1b+2x09oXM9XOuVw37mIXDiTqPOc=
+P:squid-lang-ka
+V:5.0.6-r1
+A:ppc64le
+S:13461
+I:204800
+T:squid language pack for ka
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-ka
+
 C:Q1ZU6sb74sOrC+Ux3Te8UfkIwUuF8=
 P:ifupdown-ng-ethtool
 V:0.11.3-r0
@@ -23479,6 +23508,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1600709966
 c:8a8981454fb8832c89cd88565765ead9bac233cc
 i:docs perl-list-allutils=0.18-r1
+
+C:Q1GgFcgDNfCBONCvmd1CAw0t8ABz4=
+P:openssh-sftp-server
+V:8.6_p1-r3
+A:ppc64le
+S:58289
+I:159744
+T:ssh sftp server module
+U:https://www.openssh.com/portable.html
+L:BSD
+o:openssh
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633456058
+c:d10d87c0d9c31c3fe062e31ae65e3c05a8b6a060
+D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1
 
 C:Q1y5qCq7l9L3htZy2AA412hemy20o=
 P:perl-xml-rss
@@ -25626,6 +25670,22 @@ t:1614408129
 c:8c15987c61ae41ab1358e8a819ccaaf581997ae0
 i:docs perl-class-accessor=0.51-r2
 
+C:Q1AFc/5SnNK2snbcV9RpzgTLxrRLw=
+P:squid-lang-et
+V:5.0.6-r1
+A:ppc64le
+S:13095
+I:204800
+T:squid language pack for et
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-et
+
 C:Q1onBKWGnP+g21juw4QToAx4D3a3w=
 P:iperf3-dev
 V:3.10.1-r0
@@ -26750,22 +26810,6 @@ c:561ef63847954e319f7d916b3c78661a6e22f510
 D:so:libc.musl-ppc64le.so.1
 p:so:libcom_err.so.2=2.1
 
-C:Q1mF3H4wR3dxgluZqAc7Wi8vFAxXA=
-P:squid-lang-es
-V:5.0.6-r0
-A:ppc64le
-S:25786
-I:389120
-T:squid language pack for es
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-es
-
 C:Q1zac4ROEcNyFSywneCQ2w7ZoEpqo=
 P:arpwatch
 V:2.1a15-r17
@@ -26979,21 +27023,6 @@ c:074082328bf9854b7725fa17e8436ebbef39e705
 D:gc=8.0.4-r5 libgc++=8.0.4-r5 pkgconfig
 p:pc:bdw-gc=8.0.4
 
-C:Q1Qb8lEj6Ma3iLxXXx9bMFPS8HgUU=
-P:openssh-doc
-V:8.6_p1-r2
-A:ppc64le
-S:102937
-I:159744
-T:Port of OpenBSD's free SSH release (documentation)
-U:https://www.openssh.com/portable.html
-L:BSD
-o:openssh
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1624384626
-c:61662e7eee873f3dea30eb58740286d5a206320a
-i:docs openssh=8.6_p1-r2
-
 C:Q1klcJ19R3llgN4rHfOxqsKhuemKo=
 P:openldap-overlay-memberof
 V:2.4.58-r0
@@ -27008,6 +27037,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1621253816
 c:8748c7dc25cbcb3c103c0140a571d528ddc58ec9
 D:so:libc.musl-ppc64le.so.1 so:liblber-2.4.so.2
+
+C:Q1BDZWbqFYf+FA4Ovqz03aq8GzZwE=
+P:squid-lang-lt
+V:5.0.6-r1
+A:ppc64le
+S:13233
+I:204800
+T:squid language pack for lt
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-lt
 
 C:Q1ZY5xszQ2Ub3OxJ4xZXDENMpC77Y=
 P:freetype
@@ -27129,22 +27174,6 @@ o:libgcrypt
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1630775753
 c:907744abd50a5a0a8b38537ab062795aefb269a7
-
-C:Q1N59y8M7yv/Au663qGzaGcjMnl/k=
-P:squid-lang-ro
-V:5.0.6-r0
-A:ppc64le
-S:13591
-I:204800
-T:squid language pack for ro
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-ro
 
 C:Q1R91VzhTEnil5uvqJq9UhsTB2Drg=
 P:dkimproxy-doc
@@ -27816,22 +27845,6 @@ t:1628485259
 c:dfc51b8103f95d354bdab495ce2a44565342b196
 D:mariadb-common mariadb-embedded=10.5.12-r0
 
-C:Q1cGHPnaR+HQnQQwGaSmEcvW+yMVY=
-P:squid-lang-fi
-V:5.0.6-r0
-A:ppc64le
-S:13295
-I:204800
-T:squid language pack for fi
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-fi
-
 C:Q1I2YSM4ZYN4ol4JQH9qDnguljLbU=
 P:e2fsprogs
 V:1.46.2-r0
@@ -27939,6 +27952,22 @@ c:750f13cd41a829078c8df6c36c13feae86abe200
 D:so:libICE.so.6 so:libSM.so.6 so:libX11.so.6 so:libc.musl-ppc64le.so.1
 p:so:libXt.so.6=6.0.0
 
+C:Q1w80n5EkBbnfkkfP5fcXp4OOpexU=
+P:squid-lang-ca
+V:5.0.6-r1
+A:ppc64le
+S:13085
+I:204800
+T:squid language pack for ca
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-ca
+
 C:Q19RwCIognoumbswP9vmxtLmm4Yb4=
 P:rng-tools-doc
 V:6.12-r0
@@ -27984,22 +28013,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1600709977
 c:bf03aaeca3f580950fdf10e40e5e064009066517
 i:docs perl-test-needs=0.002006-r1
-
-C:Q1G8veTv3CRMyd8jjo6ZJI1V7OdTM=
-P:openssh-server
-V:8.6_p1-r2
-A:ppc64le
-S:350006
-I:872448
-T:OpenSSH server
-U:https://www.openssh.com/portable.html
-L:BSD
-o:openssh
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1624384626
-c:61662e7eee873f3dea30eb58740286d5a206320a
-D:openssh-keygen=8.6_p1-r2 openssh-server-common=8.6_p1-r2 so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libz.so.1
-p:cmd:sshd
 
 C:Q1Xv+fD/+mhN6nll7HdHOv6eN7VXk=
 P:lua5.3-posixtz
@@ -28634,6 +28647,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1618481039
 c:44ba6a87d6f6922a92f44143bb9859d01af13373
 i:openrc nsd=4.3.6-r1
+
+C:Q1CEju9RlF+0p4gR772xa/a/mjLf0=
+P:squid-lang-hy
+V:5.0.6-r1
+A:ppc64le
+S:13550
+I:204800
+T:squid language pack for hy
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-hy
 
 C:Q1bF8Q0It3HwY2cevXGxPV8WwNzic=
 P:open-isns-lib
@@ -29372,22 +29401,6 @@ c:92c19596a494fdc9ee025ec071a7394adea00d4b
 D:so:libc.musl-ppc64le.so.1
 p:cmd:cutter
 
-C:Q1ZouoXqFGBQmKp91XUT4lHaUqsmo=
-P:squid-lang-lv
-V:5.0.6-r0
-A:ppc64le
-S:13346
-I:204800
-T:squid language pack for lv
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-lv
-
 C:Q1qSa2DIhnJ2fA2gNz2/+/2jNpAt0=
 P:s6-rc-dev
 V:0.5.2.2-r0
@@ -29653,21 +29666,21 @@ c:2dd7e3cbec142193aa28fe6ee22037566830b53f
 D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libgmp.so.10 so:libstdc++.so.6
 p:cmd:gvpe cmd:gvpectrl
 
-C:Q19YGI9bGju+CWffnR+ctrhUVUARI=
-P:squid-lang-nl
-V:5.0.6-r0
+C:Q1hecNTivK3Cr3jmb0qJBsPCedrFc=
+P:squid-lang-bg
+V:5.0.6-r1
 A:ppc64le
-S:13226
+S:14311
 I:204800
-T:squid language pack for nl
+T:squid language pack for bg
 U:http://www.squid-cache.org/
 L:GPL-2.0-or-later
 o:squid
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
 D:logrotate
-i:squid=5.0.6-r0 lang-nl
+i:squid=5.0.6-r1 lang-bg
 
 C:Q1xhiB4Sajq5ESmLn2jhOTqc7QsaU=
 P:nasm-doc
@@ -30151,22 +30164,6 @@ t:1600709981
 c:feb302c84661b9cd959d9824831d43f14783f5e9
 i:docs perl-www-robotrules=6.02-r3
 
-C:Q1oTbklF339hbRv63twPHdhlKR77k=
-P:squid-lang-ca
-V:5.0.6-r0
-A:ppc64le
-S:13081
-I:204800
-T:squid language pack for ca
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-ca
-
 C:Q1Mu6682rRDO7rUUdofoW18lPEEik=
 P:libxcb-doc
 V:1.14-r2
@@ -30290,6 +30287,21 @@ m:Nathan Angelacos <nangel@alpinelinux.org>
 t:1626352809
 c:cb9ae5a494e79f54358e972d8ca28369c7913f5f
 D:gawk
+
+C:Q1jTjjizFnwPmSjJtlbGbZDuyKcN8=
+P:openssh-dbg
+V:8.6_p1-r3
+A:ppc64le
+S:6274423
+I:18472960
+T:Port of OpenBSD's free SSH release (debug symbols)
+U:https://www.openssh.com/portable.html
+L:BSD
+o:openssh
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633456058
+c:d10d87c0d9c31c3fe062e31ae65e3c05a8b6a060
+D:openssh-client openssh-sftp-server openssh-server
 
 C:Q1b01NgszkEROJr/21776vsfsdncE=
 P:cifs-utils-doc
@@ -31079,6 +31091,22 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1614694954
 c:3a083c008f2774bfab5a03b74bbf346e00069c00
 i:docs pcre2=10.36-r0
+
+C:Q1SMM+vos/+VxyLqn0ikJNEyJOuWo=
+P:squid-lang-ko
+V:5.0.6-r1
+A:ppc64le
+S:13533
+I:204800
+T:squid language pack for ko
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-ko
 
 C:Q1eZuwnkTv849cXVY0qW7RlNuMm+k=
 P:wget-doc
@@ -32490,6 +32518,38 @@ t:1628001887
 c:10998b5ca77ec8229976ed01346cfc819ddbbb99
 p:linux-firmware-any
 
+C:Q1J6yaphQ2fHGTyYnKqAJqbL2/Zzc=
+P:squid-lang-pl
+V:5.0.6-r1
+A:ppc64le
+S:13455
+I:204800
+T:squid language pack for pl
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-pl
+
+C:Q12kTVabEM+zt9rCiGtyPUDQF/06s=
+P:squid-lang-th
+V:5.0.6-r1
+A:ppc64le
+S:13823
+I:204800
+T:squid language pack for th
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-th
+
 C:Q1K1TQ1xddlJdAKMXz5KkcclaqH/o=
 P:mariadb-test
 V:10.5.12-r0
@@ -32626,37 +32686,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1621253816
 c:8748c7dc25cbcb3c103c0140a571d528ddc58ec9
 i:docs openldap=2.4.58-r0
-
-C:Q1iZh+ReHHNBnfPtrc7laB1vPSuSc=
-P:openssh-dbg
-V:8.6_p1-r2
-A:ppc64le
-S:6272602
-I:18472960
-T:Port of OpenBSD's free SSH release (debug symbols)
-U:https://www.openssh.com/portable.html
-L:BSD
-o:openssh
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1624384626
-c:61662e7eee873f3dea30eb58740286d5a206320a
-D:openssh-client openssh-sftp-server openssh-server
-
-C:Q1D0YqmbeD8wfV0CdlRm7MY2qzENk=
-P:squid-lang-de
-V:5.0.6-r0
-A:ppc64le
-S:13514
-I:204800
-T:squid language pack for de
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-de
 
 C:Q15WHW3YyIVlorPhIQCoeaIZTFfdI=
 P:avahi-dev
@@ -32824,22 +32853,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1600709959
 c:78e99cb2e1351154fbe889eb6c9bada8700b8cf3
 i:docs perl-email-address-list=0.06-r2
-
-C:Q1C/geCZgawKZ/AIWZKiViSirjjx0=
-P:squid-lang-ja
-V:5.0.6-r0
-A:ppc64le
-S:14124
-I:204800
-T:squid language pack for ja
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-ja
 
 C:Q1HxD91H8Q0Nn8jpFbARyws2g1Nh4=
 P:djbdns-doc
@@ -33210,22 +33223,6 @@ t:1607833208
 c:d4c436973cf17ca86638c57daa1fd7ba983326fe
 D:so:libc.musl-ppc64le.so.1 so:libffi.so.7 so:libp11-kit.so.0
 
-C:Q1KJR5+dehWp9R1Filr24FiTO6CQg=
-P:squid-lang-sv
-V:5.0.6-r0
-A:ppc64le
-S:13409
-I:204800
-T:squid language pack for sv
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-sv
-
 C:Q12dFZ0S2KxhRwl+/n9qTFOJeXyoc=
 P:awall
 V:1.9.2-r0
@@ -33272,22 +33269,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1602202128
 c:f57c5ba1f14c3fc3f55ebb457eba2caccef97e82
 i:docs ulogd=2.0.7-r7
-
-C:Q1EvoybqgIFJzibsqKg5isPZGr/M0=
-P:squid-lang-af
-V:5.0.6-r0
-A:ppc64le
-S:13098
-I:204800
-T:squid language pack for af
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-af
 
 C:Q1Ux2nI7UHqDUbOSjkF8S9c9u2v60=
 P:build-base
@@ -34175,6 +34156,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:encodings font-alias mkfontscale mkfontdir fontconfig
+
+C:Q16rM4KGgv8j6p0KF/18DCji9sZ34=
+P:squid-lang-fr
+V:5.0.6-r1
+A:ppc64le
+S:13771
+I:204800
+T:squid language pack for fr
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-fr
 
 C:Q1HCOQ6sYspxYWMndoPEbolovKbjM=
 P:alpine-conf
@@ -35324,21 +35321,6 @@ t:1610489771
 c:1118fff73bb8f3a967c12d42de2d8c4a0a7ed162
 i:docs dtach=0.9-r2
 
-C:Q147WST0dKHoEySm9uN4ue8Y/ihwo=
-P:openssh
-V:8.6_p1-r2
-A:ppc64le
-S:262288
-I:724992
-T:Port of OpenBSD's free SSH release
-U:https://www.openssh.com/portable.html
-L:BSD
-o:openssh
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1624384626
-c:61662e7eee873f3dea30eb58740286d5a206320a
-D:openssh-client openssh-sftp-server openssh-server so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1
-
 C:Q1pbkxtT/5J2/hB76P2qoX9rPyEO4=
 P:imlib2
 V:1.7.1-r0
@@ -35416,6 +35398,22 @@ c:ea0e64a2ab874ed15f5a95834b7f90ec92e4d2bf
 D:so:libc.musl-ppc64le.so.1 so:libelf.so.1 so:libxtables.so.12
 p:cmd:tc
 i:iproute2=5.12.0-r0
+
+C:Q1DNaVNNUCkpslbyEJWPD0Ee/VQ6s=
+P:squid-lang-es
+V:5.0.6-r1
+A:ppc64le
+S:25787
+I:389120
+T:squid language pack for es
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-es
 
 C:Q1HxQIEFmCF6uyeU6C+AUYzq0dhyA=
 P:perl-carp-clan
@@ -37453,22 +37451,6 @@ c:b14866860b0cd0708f10f672f5348ba079dd64ac
 D:so:libc.musl-ppc64le.so.1
 p:cmd:spawn-fcgi
 
-C:Q1rmZoeeFyek2fyRbAWUDuJUupw2A=
-P:squid-lang-hu
-V:5.0.6-r0
-A:ppc64le
-S:13330
-I:204800
-T:squid language pack for hu
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-hu
-
 C:Q1o2IWIV5XAf1YwCK69MU+Wqnvv9g=
 P:perl-parse-recdescent
 V:1.967015-r3
@@ -38476,22 +38458,6 @@ c:b8255c24a2a0a19e7cafca4e0c1497d8deb935b8
 D:shared-mime-info
 i:gdk-pixbuf=2.42.6-r0 lang
 
-C:Q1Z7jYR0QgtnFk17ghcOAxtKjx47w=
-P:squid-lang-ms
-V:5.0.6-r0
-A:ppc64le
-S:12846
-I:204800
-T:squid language pack for ms
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-ms
-
 C:Q1SX6VIQhCKQxFf9cPfFU6ZGpJDHQ=
 P:perl-mime-types-doc
 V:2.18-r0
@@ -38709,6 +38675,22 @@ t:1621739426
 c:e0532d99dd90fab8ab0375475733b2ea46dd4f50
 D:gnokii-smsd so:libc.musl-ppc64le.so.1
 
+C:Q1UaIrO/Jy6jQRKSzSlawdh2REXD8=
+P:squid-lang-pt
+V:5.0.6-r1
+A:ppc64le
+S:24637
+I:389120
+T:squid language pack for pt
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-pt
+
 C:Q1SPprU+uu+xYPt2/WhBjS5JPDyoc=
 P:perl-net-smtp-tls-butmaintained
 V:0.24-r2
@@ -38843,22 +38825,6 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1600709973
 c:3bcb0194151666131eec7ee89bd715f841f64f0f
 D:perl
-
-C:Q1kdWmUhtfV8Kcq0FPo3uTehpnkYU=
-P:openssh-client-krb5
-V:8.6_p1-r2
-A:ppc64le
-S:336862
-I:835584
-T:OpenBSD's SSH client with kerberos support
-U:https://www.openssh.com/portable.html
-L:BSD
-o:openssh
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1624384626
-c:61662e7eee873f3dea30eb58740286d5a206320a
-D:openssh-keygen=8.6_p1-r2 openssh-client-common=8.6_p1-r2 !openssh-client-default so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libgssapi_krb5.so.2 so:libz.so.1
-p:openssh-client=8.6_p1-r2 cmd:ssh
 
 C:Q1tK0R+S/Ufy/9FciyJ0LAfSfLxT8=
 P:etckeeper
@@ -39186,22 +39152,6 @@ c:da06763adef46bcf435561cf3a3429b467f15340
 D:/bin/sh so:libc.musl-ppc64le.so.1 so:libevent-2.1.so.7 so:libsasl2.so.3 so:libseccomp.so.2
 p:cmd:memcached
 
-C:Q15Y8Ef/rx5XBgeNpJa61cCxK64Ck=
-P:squid-lang-hy
-V:5.0.6-r0
-A:ppc64le
-S:13551
-I:204800
-T:squid language pack for hy
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-hy
-
 C:Q1Sd3Zja5Lkcmc03KCns2G3+6TbgM=
 P:uwsgi-router_redirect
 V:2.0.19.1-r2
@@ -39401,6 +39351,22 @@ t:1622992887
 c:64174c1766fcd3c8dc724b14ff02dce06e0ef07c
 D:git=2.32.0-r0 perl
 p:cmd:diff-highlight
+
+C:Q1YtoNe5sw9LL43HwgyBocCYd23U0=
+P:squid-lang-nl
+V:5.0.6-r1
+A:ppc64le
+S:13220
+I:204800
+T:squid language pack for nl
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-nl
 
 C:Q1esUeZf3NQS/FYTImbQKZqx2OoCQ=
 P:luajit
@@ -39835,6 +39801,22 @@ t:1627219944
 c:b889e515b90fe310a08c450d503998e4b29bc726
 D:libverto-libev so:libc.musl-ppc64le.so.1 so:libcom_err.so.2 so:libgssapi_krb5.so.2 so:libgssrpc.so.4 so:libk5crypto.so.3 so:libkadm5clnt_mit.so.12 so:libkadm5srv_mit.so.12 so:libkdb5.so.10 so:libkdb_ldap.so.1 so:libkrb5.so.3 so:libkrb5support.so.0 so:libss.so.2 so:libverto.so.1
 p:cmd:gss-server cmd:kadmin.local cmd:kadmind cmd:kdb5_ldap_util cmd:kdb5_util cmd:kprop cmd:kpropd cmd:kproplog cmd:krb5-send-pr cmd:krb5kdc cmd:sclient cmd:sim_server cmd:sserver cmd:uuserver
+
+C:Q1lMqIk07zus/0rX4P5j3iLTPQTpE=
+P:squid-lang-af
+V:5.0.6-r1
+A:ppc64le
+S:13103
+I:204800
+T:squid language pack for af
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-af
 
 C:Q1Zvt2Rf/l0T/c0FG1xaLwT5Z4pMU=
 P:apk-tools-zsh-completion
@@ -40991,6 +40973,22 @@ t:1621253816
 c:8748c7dc25cbcb3c103c0140a571d528ddc58ec9
 D:so:libc.musl-ppc64le.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
 
+C:Q1alXfzZvOuN8+sKCeflSn2o33YZE=
+P:squid-lang-ms
+V:5.0.6-r1
+A:ppc64le
+S:12848
+I:204800
+T:squid language pack for ms
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-ms
+
 C:Q1T3+GmgNVG0KvdP8+1RTWHo61TkA=
 P:linux-firmware-amdgpu
 V:20210716-r0
@@ -41546,21 +41544,6 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:encodings font-alias mkfontscale mkfontdir fontconfig
 
-C:Q10UPaFeatR5nu2mWBuUGufEqDw78=
-P:openssh-sftp-server
-V:8.6_p1-r2
-A:ppc64le
-S:58183
-I:159744
-T:ssh sftp server module
-U:https://www.openssh.com/portable.html
-L:BSD
-o:openssh
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1624384626
-c:61662e7eee873f3dea30eb58740286d5a206320a
-D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1
-
 C:Q1JfY1bA1eJ+/1Idua9p31IgyEEWk=
 P:boost1.76-log_setup
 V:1.76.0-r0
@@ -41941,6 +41924,22 @@ t:1621087673
 c:ec4e35bcdcf38829d2a36ff4d7cd4351ebb67d1c
 D:acf-core postgresql acf-db-lib lua-sql-postgres
 
+C:Q1ZQNwapCm2pUliWUY8L0ddVioL2c=
+P:openssh-server
+V:8.6_p1-r3
+A:ppc64le
+S:350104
+I:872448
+T:OpenSSH server
+U:https://www.openssh.com/portable.html
+L:BSD
+o:openssh
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633456058
+c:d10d87c0d9c31c3fe062e31ae65e3c05a8b6a060
+D:openssh-keygen=8.6_p1-r3 openssh-server-common=8.6_p1-r3 so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libz.so.1
+p:cmd:sshd
+
 C:Q1ifOhCoMJT+RXp9WT+WdJbLCPLJY=
 P:nano
 V:5.7-r2
@@ -42140,6 +42139,22 @@ t:1610192902
 c:62659d31f101c1ba55c900f26cff855203ad27b3
 D:tar
 p:cmd:alpine-make-rootfs
+
+C:Q1ajSNQFDqtf0WucDtuYWqYBvMj1A=
+P:squid-lang-de
+V:5.0.6-r1
+A:ppc64le
+S:13517
+I:204800
+T:squid language pack for de
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-de
 
 C:Q1uy740HC7gIewEMi3wGl3Rnmg224=
 P:joe-doc
@@ -42923,6 +42938,22 @@ t:1600709958
 c:b35362aa6c86c00d227c50be6c8ac6a4a6fc1595
 i:docs perl-dbd-odbc=1.61-r1
 
+C:Q1t3uszC6HUJhXpv+DuDeiqpKzdBo=
+P:squid-lang-zh
+V:5.0.6-r1
+A:ppc64le
+S:26231
+I:389120
+T:squid language pack for zh
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-zh
+
 C:Q16SLkfNWZusBc049UXqfaHxFtebY=
 P:linux-firmware-rockchip
 V:20210716-r0
@@ -43153,6 +43184,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1613930684
 c:be08be886bc0a50698a6e8286dad5291b18068b3
 i:openrc nfs-utils=2.5.3-r0
+
+C:Q1gHSMXSOk09kZ6rQO+5Ef/qbk6U8=
+P:squid-lang-id
+V:5.0.6-r1
+A:ppc64le
+S:12814
+I:204800
+T:squid language pack for id
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-id
 
 C:Q1Rsq3XQuVZggZjNs2VXgiQsE5d9s=
 P:lua5.2-dbi-sqlite3
@@ -43520,22 +43567,6 @@ t:1567526663
 c:792fb875f317d992027428297ea0103d82b98373
 D:so:libc.musl-ppc64le.so.1 so:libnl-3.so.200 so:libnl-genl-3.so.200 so:libnl-idiag-3.so.200 so:libnl-nf-3.so.200 so:libnl-route-3.so.200
 p:so:libnl-cli-3.so.200=200.26.0 cmd:genl-ctrl-list cmd:idiag-socket-details cmd:nf-ct-add cmd:nf-ct-events cmd:nf-ct-list cmd:nf-exp-add cmd:nf-exp-delete cmd:nf-exp-list cmd:nf-log cmd:nf-monitor cmd:nf-queue cmd:nl-addr-add cmd:nl-addr-delete cmd:nl-addr-list cmd:nl-class-add cmd:nl-class-delete cmd:nl-class-list cmd:nl-classid-lookup cmd:nl-cls-add cmd:nl-cls-delete cmd:nl-cls-list cmd:nl-fib-lookup cmd:nl-link-enslave cmd:nl-link-ifindex2name cmd:nl-link-list cmd:nl-link-name2ifindex cmd:nl-link-release cmd:nl-link-set cmd:nl-link-stats cmd:nl-list-caches cmd:nl-list-sockets cmd:nl-monitor cmd:nl-neigh-add cmd:nl-neigh-delete cmd:nl-neigh-list cmd:nl-neightbl-list cmd:nl-pktloc-lookup cmd:nl-qdisc-add cmd:nl-qdisc-delete cmd:nl-qdisc-list cmd:nl-route-add cmd:nl-route-delete cmd:nl-route-get cmd:nl-route-list cmd:nl-rule-list cmd:nl-tctree-list cmd:nl-util-addr
-
-C:Q1AgeM3xChrsCmxwh46kqSR5WStiY=
-P:squid-lang-sl
-V:5.0.6-r0
-A:ppc64le
-S:13219
-I:204800
-T:squid language pack for sl
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-sl
 
 C:Q1hlgES1t5Vt6g0g47gJdMNRBkf4E=
 P:perl-control-x10
@@ -44077,6 +44108,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1620864447
 c:78b130a98f1134e9936e6729ea8e18f2fdc178cd
 i:openrc nfdump=1.6.23-r0
+
+C:Q1FMLlKHWC08ZPL54GnuKM3ttTGZM=
+P:openssh-keysign
+V:8.6_p1-r3
+A:ppc64le
+S:193252
+I:507904
+T:ssh helper program for host-based authentication
+U:https://www.openssh.com/portable.html
+L:BSD
+o:openssh
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633456058
+c:d10d87c0d9c31c3fe062e31ae65e3c05a8b6a060
+D:openssh-client=8.6_p1-r3 so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libz.so.1
 
 C:Q19lIXLKts78ZZNJpovddIrK3siK4=
 P:unifont-doc
@@ -44681,23 +44727,6 @@ c:cd2d9fe07f299ce733b756d658c34ba089ddbbfd
 D:so:libXau.so.6 so:libXdmcp.so.6 so:libc.musl-ppc64le.so.1
 p:so:libxcb-composite.so.0=0.0.0 so:libxcb-damage.so.0=0.0.0 so:libxcb-dpms.so.0=0.0.0 so:libxcb-dri2.so.0=0.0.0 so:libxcb-dri3.so.0=0.0.0 so:libxcb-glx.so.0=0.0.0 so:libxcb-present.so.0=0.0.0 so:libxcb-randr.so.0=0.1.0 so:libxcb-record.so.0=0.0.0 so:libxcb-render.so.0=0.0.0 so:libxcb-res.so.0=0.0.0 so:libxcb-screensaver.so.0=0.0.0 so:libxcb-shape.so.0=0.0.0 so:libxcb-shm.so.0=0.0.0 so:libxcb-sync.so.1=1.0.0 so:libxcb-xf86dri.so.0=0.0.0 so:libxcb-xfixes.so.0=0.0.0 so:libxcb-xinerama.so.0=0.0.0 so:libxcb-xinput.so.0=0.1.0 so:libxcb-xkb.so.1=1.0.0 so:libxcb-xtest.so.0=0.0.0 so:libxcb-xv.so.0=0.0.0 so:libxcb-xvmc.so.0=0.0.0 so:libxcb.so.1=1.1.0
 
-C:Q1NEZ1aIgeM/yg9TwGQ86fe5FtG1w=
-P:openssh-client-default
-V:8.6_p1-r2
-A:ppc64le
-S:333825
-I:827392
-T:OpenBSD's SSH client
-U:https://www.openssh.com/portable.html
-L:BSD
-o:openssh
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1624384626
-c:61662e7eee873f3dea30eb58740286d5a206320a
-k:1
-D:openssh-keygen=8.6_p1-r2 openssh-client-common=8.6_p1-r2 !openssh-client-krb5 so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libz.so.1
-p:openssh-client=8.6_p1-r2 cmd:ssh
-
 C:Q1BS+wJIlF4hevrGG7u/CdPyZjd9Q=
 P:openjpeg-tools
 V:2.4.0-r1
@@ -45040,6 +45069,21 @@ t:1608935064
 c:52ea931d3610d6ed59bb4f157a0b7e5ff6732bda
 D:so:libc.musl-ppc64le.so.1 so:libncursesw.so.6 so:libz.so.1
 p:cmd:atop cmd:atop-2.6.0 cmd:atopacctd cmd:atopcat cmd:atopconvert cmd:atopgpud cmd:atopsar cmd:atopsar-2.6.0
+
+C:Q1vAYWwbmV9naJx6BNz+kXiJGeSd0=
+P:squid-doc
+V:5.0.6-r1
+A:ppc64le
+S:48424
+I:106496
+T:full-featured Web proxy cache server (documentation)
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+i:docs squid=5.0.6-r1
 
 C:Q1Lws9/WO5MYUAWX+rPr9ql5JbIi4=
 P:mpfr-dev
@@ -46213,6 +46257,22 @@ c:f2fe82833510b5790a1f818acd273a74f2ee9f91
 D:so:libc.musl-ppc64le.so.1
 p:boost-context=1.76.0-r0 so:libboost_context.so.1.76.0=1.76.0
 
+C:Q1emOZXLv8IYXKZ5rtamJmY0Kc2EY=
+P:squid-lang-lv
+V:5.0.6-r1
+A:ppc64le
+S:13350
+I:204800
+T:squid language pack for lv
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-lv
+
 C:Q1rEp9NLsBFxRoWPrdPDwQ5HLIxT8=
 P:asterisk-openrc
 V:18.2.2-r2
@@ -46933,21 +46993,6 @@ t:1628001887
 c:10998b5ca77ec8229976ed01346cfc819ddbbb99
 p:linux-firmware-any
 
-C:Q11J1Pd+YZ5Fg9X00WZ1WDxz1HLs0=
-P:squid-doc
-V:5.0.6-r0
-A:ppc64le
-S:48422
-I:106496
-T:full-featured Web proxy cache server (documentation)
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-i:docs squid=5.0.6-r0
-
 C:Q19aOMWttUQ02xvNGpgp949Zwwp2Y=
 P:aconf-mod-strongswan
 V:0.8.1-r1
@@ -47164,6 +47209,22 @@ t:1618942877
 c:54d058dd730209a2b4c7305b4d4c910f0d28cb3a
 i:docs sqlite-tcl=3.35.5-r0
 
+C:Q1np3tOObIGemXMt++lshu1OyqNV8=
+P:squid-lang-uk
+V:5.0.6-r1
+A:ppc64le
+S:14417
+I:204800
+T:squid language pack for uk
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-uk
+
 C:Q1vwIrCPbsQKl25hQqmLKSsNgWmII=
 P:pgpool-static
 V:4.2.4-r0
@@ -47301,22 +47362,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1622905849
 c:7271b0e881d240424907f6d9288eefb4216a6679
 D:mesa=21.1.2-r0 so:libc.musl-ppc64le.so.1 so:libdrm.so.2 so:libdrm_nouveau.so.2 so:libdrm_radeon.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libglapi.so.0 so:libstdc++.so.6 so:libz.so.1 so:libzstd.so.1
-
-C:Q1dLiwCbbiehcrgonL209Ec717+c0=
-P:squid-lang-sr
-V:5.0.6-r0
-A:ppc64le
-S:24551
-I:389120
-T:squid language pack for sr
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-sr
 
 C:Q1xQXlUO2zIYOUkiLLglN0vJUa6KA=
 P:liblksctp
@@ -47565,22 +47610,6 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:so:libc.musl-ppc64le.so.1 so:liblua.so.5 so:libzmq.so.5
 i:lua5.4 lua-lzmq=0.4.4-r2
 
-C:Q1yvuL0zPIdBY95osauIFPeQ/IMZs=
-P:squid-lang-he
-V:5.0.6-r0
-A:ppc64le
-S:13461
-I:204800
-T:squid language pack for he
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-he
-
 C:Q13NtPnd0WJnQvd/8tX4riqf6Tkeg=
 P:perl-net-dns-resolver-programmable-doc
 V:0.009-r2
@@ -47808,22 +47837,6 @@ t:1620852262
 c:2d63700fe78744e22c497d2cf7f8610828f00544
 D:so:libc.musl-ppc64le.so.1 so:libgcrypt.so.20 so:libotr.so.5
 p:cmd:otr_mackey cmd:otr_modify cmd:otr_parse cmd:otr_readforge cmd:otr_remac cmd:otr_sesskeys
-
-C:Q1rTwTKS7QvebHJ8rka2Dz4wzqoOo=
-P:squid-lang-az
-V:5.0.6-r0
-A:ppc64le
-S:13386
-I:204800
-T:squid language pack for az
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-az
 
 C:Q1TtfMa+sBBJAm4FWbMVq7FEzYp7o=
 P:cairo-dbg
@@ -48292,6 +48305,22 @@ o:perl-class-method-modifiers
 m:Francesco Colista <fcolista@alpinelinux.org>
 t:1600709954
 c:e9210227014ba363607dc6c6d894c72bbf7b9ec4
+
+C:Q1kOKxxj/s2LX1d42lsgsot19GwvM=
+P:squid-lang-sl
+V:5.0.6-r1
+A:ppc64le
+S:13215
+I:204800
+T:squid language pack for sl
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-sl
 
 C:Q1t7M8m7AaebZMQ/LFRGHxIuPDF+Q=
 P:bwm-ng
@@ -48983,22 +49012,6 @@ t:1578311765
 c:270ea23c9be20cfc1d3f8c0ecbaddf35ba238cbb
 i:hunspell=1.7.0-r1 lang
 
-C:Q1jYy7X1/NyKgG4JLGScMKZE3p1gQ=
-P:squid-lang-pl
-V:5.0.6-r0
-A:ppc64le
-S:13454
-I:204800
-T:squid language pack for pl
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-pl
-
 C:Q1PjJ87k8NUviOFl3fDQ7+b4AOp/A=
 P:perl-universal-can-doc
 V:1.20140328-r1
@@ -49413,20 +49426,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1600709980
 c:780c07e229af15f12635ce55ea700eaca911a8d1
 i:docs perl-time-hires=1.9764-r1
-
-C:Q1soXGf1eIIQEtFVDej0XQRyOZhBI=
-P:openssh-server-common
-V:8.6_p1-r2
-A:ppc64le
-S:4837
-I:32768
-T:OpenSSH server configuration files
-U:https://www.openssh.com/portable.html
-L:BSD
-o:openssh
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1624384626
-c:61662e7eee873f3dea30eb58740286d5a206320a
 
 C:Q11jXGN1FTPYdJW/hUszycIReIZIY=
 P:dovecot-doc
@@ -50227,22 +50226,6 @@ c:4753eda10ff5a149b8f948d774e54a3c7029d18f
 D:ifupdown-any /bin/sh so:libc.musl-ppc64le.so.1
 p:so:libeinfo.so.1=1 so:librc.so.1=1 cmd:openrc cmd:openrc-init cmd:openrc-run cmd:openrc-shutdown cmd:rc cmd:rc-service cmd:rc-sstat cmd:rc-status cmd:rc-update cmd:runscript cmd:service cmd:start-stop-daemon cmd:supervise-daemon
 
-C:Q1wDOK5hafp2rqd8BA9ec0iNXO6qw=
-P:squid-lang-oc
-V:5.0.6-r0
-A:ppc64le
-S:12998
-I:204800
-T:squid language pack for oc
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-oc
-
 C:Q19PDogfK397qArz29QlrPwF71M+Q=
 P:perl-db-doc
 V:0.64-r1
@@ -50304,22 +50287,6 @@ m:Jeff Bilyk <jbilyk@gmail.com>
 t:1538845804
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs sendpage=1.0.3-r5
-
-C:Q1HErl7Za5gtze0UwngGkGktRDBmc=
-P:squid-lang-id
-V:5.0.6-r0
-A:ppc64le
-S:12814
-I:204800
-T:squid language pack for id
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-id
 
 C:Q1zxQiVV2HJAduHSqVi9gqen/NjIs=
 P:freetds
@@ -51007,6 +50974,23 @@ t:1610310490
 c:428083424e3512a6ababda08f42696a64ed4ad88
 D:/bin/sh so:libacl.so.1 so:libattr.so.1 so:libc.musl-ppc64le.so.1 so:libutmps.so.0.1
 p:cmd:[ cmd:b2sum cmd:base32 cmd:base64 cmd:basename cmd:basenc cmd:cat cmd:chcon cmd:chgrp cmd:chmod cmd:chown cmd:chroot cmd:cksum cmd:comm cmd:coreutils cmd:cp cmd:csplit cmd:cut cmd:date cmd:dd cmd:df cmd:dir cmd:dircolors cmd:dirname cmd:du cmd:echo cmd:env cmd:expand cmd:expr cmd:factor cmd:false cmd:fmt cmd:fold cmd:groups cmd:head cmd:hostid cmd:id cmd:install cmd:join cmd:link cmd:ln cmd:logname cmd:ls cmd:md5sum cmd:mkdir cmd:mkfifo cmd:mknod cmd:mktemp cmd:mv cmd:nice cmd:nl cmd:nohup cmd:nproc cmd:numfmt cmd:od cmd:paste cmd:pathchk cmd:pinky cmd:pr cmd:printenv cmd:printf cmd:ptx cmd:pwd cmd:readlink cmd:realpath cmd:rm cmd:rmdir cmd:runcon cmd:seq cmd:sha1sum cmd:sha224sum cmd:sha256sum cmd:sha384sum cmd:sha512sum cmd:shred cmd:shuf cmd:sleep cmd:sort cmd:split cmd:stat cmd:stdbuf cmd:stty cmd:sum cmd:sync cmd:tac cmd:tail cmd:tee cmd:test cmd:timeout cmd:touch cmd:tr cmd:true cmd:truncate cmd:tsort cmd:tty cmd:uname cmd:unexpand cmd:uniq cmd:unlink cmd:users cmd:vdir cmd:wc cmd:who cmd:whoami cmd:yes
+
+C:Q1R2Ni8SUtf0a4vAxVS/wDdz/stQc=
+P:openssh-client-default
+V:8.6_p1-r3
+A:ppc64le
+S:333990
+I:827392
+T:OpenBSD's SSH client
+U:https://www.openssh.com/portable.html
+L:BSD
+o:openssh
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633456058
+c:d10d87c0d9c31c3fe062e31ae65e3c05a8b6a060
+k:1
+D:openssh-keygen=8.6_p1-r3 openssh-client-common=8.6_p1-r3 !openssh-client-krb5 so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libz.so.1
+p:openssh-client=8.6_p1-r3 cmd:ssh
 
 C:Q1ech356CgEIf7SyZPMkUqMGwcFZg=
 P:speexdsp-dev
@@ -52500,6 +52484,22 @@ c:ecd7f7f66ea746074bfd000480a90e667c6b3e22
 D:nghttp2-libs=1.43.0-r0 pkgconfig
 p:pc:libnghttp2=1.43.0
 
+C:Q1WOX5sFw8yX0zb1ev6d/kEXfHA3Y=
+P:squid-lang-sr
+V:5.0.6-r1
+A:ppc64le
+S:24544
+I:389120
+T:squid language pack for sr
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-sr
+
 C:Q1SaiEVbDZbHGi2AoyH9Id15mciTo=
 P:libfastjson-dbg
 V:0.99.9-r0
@@ -52925,6 +52925,22 @@ t:1610489771
 c:1118fff73bb8f3a967c12d42de2d8c4a0a7ed162
 D:linux-headers libnetfilter_log=1.0.1-r4 pc:libnfnetlink pkgconfig
 p:pc:libnetfilter_log=1.0.1
+
+C:Q1f4xkaVuUKHbQbZtgTol/hNm4Wmc=
+P:squid-lang-fa
+V:5.0.6-r1
+A:ppc64le
+S:13606
+I:204800
+T:squid language pack for fa
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-fa
 
 C:Q1BbxtnKqIJ+So1JrEReMwjJNG8FQ=
 P:kbd-openrc
@@ -53652,38 +53668,6 @@ c:e0532d99dd90fab8ab0375475733b2ea46dd4f50
 D:so:libc.musl-ppc64le.so.1 so:libglib-2.0.so.0 so:libgnokii.so.7 so:libintl.so.8
 p:cmd:gnokii cmd:gnokiid cmd:mgnokiidev
 
-C:Q1mf6+em/kSvJ660v2fS/SbKf9v3E=
-P:squid-lang-tr
-V:5.0.6-r0
-A:ppc64le
-S:13383
-I:204800
-T:squid language pack for tr
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-tr
-
-C:Q1+k9/vU+mrMWdm29uUkIt9cSpkmg=
-P:squid-lang-ru
-V:5.0.6-r0
-A:ppc64le
-S:14316
-I:204800
-T:squid language pack for ru
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-ru
-
 C:Q1Gw62o6He3bkMhd49tqEzXs95bKA=
 P:linux-firmware-netronome
 V:20210716-r0
@@ -54055,22 +54039,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1622875132
 c:695c89eac1d43e3f8d6a335a9d60b62f88610f16
 i:docs perl-io-socket-ssl=2.071-r0
-
-C:Q1mpO6Ycy9nusxfmCSFPCZz7ixKJ0=
-P:squid-lang-vi
-V:5.0.6-r0
-A:ppc64le
-S:13464
-I:204800
-T:squid language pack for vi
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-vi
 
 C:Q18MzzhVPc0Fpf2/q6/h8xTPEViag=
 P:bridge-utils-doc
@@ -54600,22 +54568,6 @@ t:1623156598
 c:dc17465e5bf137b8a67bd361f76c53e39bf7f57c
 i:meson=0.58.1-r0 zsh
 
-C:Q10mXMa7OJuWEfU8lyBQyAslj4t2k=
-P:squid
-V:5.0.6-r0
-A:ppc64le
-S:2863723
-I:8650752
-T:full-featured Web proxy cache server
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate /bin/sh so:libc.musl-ppc64le.so.1 so:libcap.so.2 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libltdl.so.7 so:libssl.so.1.1 so:libstdc++.so.6 squid-lang-es=5.0.6-r0
-p:cmd:purge cmd:squid cmd:squidclient
-
 C:Q1BmhShspj+tHBK32hULQxArQ9+Y8=
 P:syslog-ng-dev
 V:3.30.1-r1
@@ -54907,22 +54859,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1600709957
 c:02ded52ef5b210d2c9332ab56bfc54182e26a7ca
 D:perl so:libc.musl-ppc64le.so.1
-
-C:Q1T749rDq5aMMIL+6eYbtGh3+FsDs=
-P:squid-lang-pt
-V:5.0.6-r0
-A:ppc64le
-S:24644
-I:389120
-T:squid language pack for pt
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-pt
 
 C:Q1hBlPH2mqxeQ2OXaHpW8+CndxtZ0=
 P:acf-openldap
@@ -56413,22 +56349,6 @@ t:1614888912
 c:2e4ac250cd94da3ae208319c26050b143aad57d3
 i:docs iperf=2.0.14a-r0
 
-C:Q1wtg+QYRGlfEQSyfk0bvZ6MeiChQ=
-P:squid-lang-ar
-V:5.0.6-r0
-A:ppc64le
-S:13189
-I:204800
-T:squid language pack for ar
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-ar
-
 C:Q1kjhpfYPLsloCpp4xB0rIpfk9P8g=
 P:boost1.76-program_options
 V:1.76.0-r0
@@ -56980,6 +56900,22 @@ t:1600709964
 c:74051ce86743073945e53cefafaa61e628f6cdc0
 D:perl perl-http-message
 
+C:Q1Hrb3vZcAZs1OuEVWcV6ihRO77Fk=
+P:squid-lang-ro
+V:5.0.6-r1
+A:ppc64le
+S:13583
+I:204800
+T:squid language pack for ro
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-ro
+
 C:Q1QCqATEXr7PSYRqdqqj4Rz0HYVM4=
 P:ferm-doc
 V:2.6-r0
@@ -57488,6 +57424,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1622992887
 c:64174c1766fcd3c8dc724b14ff02dce06e0ef07c
 i:docs git=2.32.0-r0
+
+C:Q1efFJ3n0PADcaq03X5GKD3bvMoSk=
+P:squid
+V:5.0.6-r1
+A:ppc64le
+S:2864656
+I:8654848
+T:full-featured Web proxy cache server
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate /bin/sh so:libc.musl-ppc64le.so.1 so:libcap.so.2 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libltdl.so.7 so:libssl.so.1.1 so:libstdc++.so.6 squid-lang-es=5.0.6-r1
+p:cmd:purge cmd:squid cmd:squidclient
 
 C:Q1qjE8i7XLAMVUimN4y1a/oOWysNQ=
 P:lua-filesystem
@@ -58052,22 +58004,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580255759
 c:1eb911922a7e818a6f314a68c0561bba008e6efd
 i:newt=0.52.21-r0 lang
-
-C:Q1PbNs1ud1WpS3kEYrzxx4qirbI6w=
-P:openssh-keygen
-V:8.6_p1-r2
-A:ppc64le
-S:196803
-I:512000
-T:ssh helper program for generating keys
-U:https://www.openssh.com/portable.html
-L:BSD
-o:openssh
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1624384626
-c:61662e7eee873f3dea30eb58740286d5a206320a
-D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1
-p:cmd:ssh-keygen
 
 C:Q1noJRVLfhB0TzdDy/D1S3qyeepTQ=
 P:libssh2-dev
@@ -62183,6 +62119,22 @@ t:1621671609
 c:fd354cc1c651835dbbbf558f05e500d0e7f01dbc
 i:docs batctl=2021.1-r0
 
+C:Q1gJJeVnp6uE+HdjpplIHk/0UB2tI=
+P:squid-lang-ru
+V:5.0.6-r1
+A:ppc64le
+S:14314
+I:204800
+T:squid language pack for ru
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-ru
+
 C:Q1QQB+gR5AeM3hFd5W50elHCXYSm8=
 P:wireless-regdb
 V:2021.04.21-r0
@@ -62500,6 +62452,22 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1623677958
 c:649f2b78f62ed9ee9fa8dae4a4dbff1e1dff8f9f
 i:docs freeradius=3.0.23-r0
+
+C:Q1hqEwJ+uJ4S8AQGc5/RvtDBzIc/A=
+P:squid-lang-da
+V:5.0.6-r1
+A:ppc64le
+S:13071
+I:204800
+T:squid language pack for da
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-da
 
 C:Q1aaq6lUUIhBpVHqPw2uoTqhdMoU8=
 P:perl-test-requiresinternet-doc
@@ -63485,6 +63453,22 @@ c:2639e57cd0d7157c13ff0a967c9ef4d247e47198
 D:less so:libc.musl-ppc64le.so.1
 p:cmd:gunzip cmd:gzexe cmd:gzip cmd:uncompress cmd:zcat cmd:zcmp cmd:zdiff cmd:zegrep cmd:zfgrep cmd:zforce cmd:zgrep cmd:zless cmd:zmore cmd:znew
 
+C:Q1ZInpMYXKI1I3IFcdoPkE7kS8uXY=
+P:squid-lang-hu
+V:5.0.6-r1
+A:ppc64le
+S:13321
+I:204800
+T:squid language pack for hu
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-hu
+
 C:Q1VcUb2HnKXKqqUrqluYAp9O9LG7w=
 P:rtmpdump-dev
 V:2.4_git20190330-r1
@@ -63776,22 +63760,6 @@ t:1621053410
 c:abfccc5dc9d7366d989ae61b9493b3f15be0a7a8
 D:krb5-conf so:libc.musl-ppc64le.so.1 so:libcom_err.so.2 so:libreadline.so.8 so:libsqlite3.so.0
 p:so:libasn1.so.8=8.0.0 so:libgssapi.so.3=3.0.0 so:libhcrypto.so.4=4.1.0 so:libhdb.so.9=9.2.0 so:libheimbase.so.1=1.0.0 so:libheimntlm.so.0=0.1.0 so:libhx509.so.5=5.0.0 so:libkadm5clnt.so.7=7.0.1 so:libkadm5srv.so.8=8.0.1 so:libkafs.so.0=0.5.1 so:libkdc.so.2=2.0.0 so:libkrb5.so.26=26.0.0 so:libroken.so.18=18.1.0 so:libsl.so.0=0.2.1 so:libwind.so.0=0.0.0 so:windc.so.0=0.0.0 cmd:digest-service cmd:kdigest cmd:string2key cmd:verify_krb5_conf
-
-C:Q1uPIFBHfe7NkzQbujpnngZ/MIZSA=
-P:openssh-server-krb5
-V:8.6_p1-r2
-A:ppc64le
-S:373522
-I:933888
-T:OpenSSH server with krb5 support
-U:https://www.openssh.com/portable.html
-L:BSD
-o:openssh
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1624384626
-c:61662e7eee873f3dea30eb58740286d5a206320a
-D:openssh-keygen=8.6_p1-r2 openssh-server-common=8.6_p1-r2 so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libgssapi_krb5.so.2 so:libkrb5.so.3 so:libpam.so.0 so:libz.so.1
-p:cmd:sshd.krb5
 
 C:Q1m6uE+rU5LixdnWnYJgE6HodPasE=
 P:lua5.1-mqtt-publish
@@ -64326,6 +64294,22 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:so:libc.musl-ppc64le.so.1
 i:lua5.4 lua-iconv=7-r2
 
+C:Q1bW6VTedY4oRajNLhhBcQNITHhNo=
+P:openssh-client-common
+V:8.6_p1-r3
+A:ppc64le
+S:767942
+I:2531328
+T:OpenBSD's SSH client common files
+U:https://www.openssh.com/portable.html
+L:BSD
+o:openssh
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633456058
+c:d10d87c0d9c31c3fe062e31ae65e3c05a8b6a060
+D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libedit.so.0 so:libz.so.1
+p:cmd:findssl.sh cmd:scp cmd:sftp cmd:ssh-add cmd:ssh-agent cmd:ssh-copy-id cmd:ssh-keyscan cmd:ssh-pkcs11-helper
+
 C:Q1MLo/R5xp4DmKoY5sNRVb9UgTf0E=
 P:ldapvi
 V:1.7-r11
@@ -64356,22 +64340,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1561734758
 c:08824c6305acc2bac05566a86a554060495b5c5d
 i:docs giflib=5.2.1-r0
-
-C:Q1sLeOTfISnveDA6vPPZ+QUAaxv4s=
-P:openssh-server-pam
-V:8.6_p1-r2
-A:ppc64le
-S:364604
-I:909312
-T:OpenSSH server with pam support
-U:https://www.openssh.com/portable.html
-L:BSD
-o:openssh
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1624384626
-c:61662e7eee873f3dea30eb58740286d5a206320a
-D:openssh-keygen=8.6_p1-r2 openssh-server-common=8.6_p1-r2 so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1 so:libpam.so.0 so:libz.so.1
-p:cmd:sshd.pam
 
 C:Q1kn+53qTCFuEOjPlRrrxXaY9NRqs=
 P:libsodium-dev
@@ -64541,22 +64509,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1611952693
 c:2fc773a9b906b8af6d8e89a911cbdb2995e72243
 i:docs perl-specio=0.47-r0
-
-C:Q1PRYDziGZUug+7VB/OVzVcGbD7Zs=
-P:squid-lang-zh
-V:5.0.6-r0
-A:ppc64le
-S:26230
-I:389120
-T:squid language pack for zh
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-zh
 
 C:Q1nvNcw7QM3XmyPhrSnHrXT+MkDR8=
 P:uwsgi-carbon
@@ -68484,6 +68436,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1623667870
 c:aa27aba79e74e849b6e8e6ca6669a4190d49bc4a
 
+C:Q1H6T6Br8aUl4tUrSCCxO4i4R2wqE=
+P:squid-lang-oc
+V:5.0.6-r1
+A:ppc64le
+S:12996
+I:204800
+T:squid language pack for oc
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-oc
+
 C:Q1guHfdMvnnZbVrJ0oSoEfHG4lbLE=
 P:poppler
 V:21.06.1-r0
@@ -69264,21 +69232,21 @@ c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:logrotate /bin/sh so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libpcreposix.so.0 so:libstdc++.so.6 so:libz.so.1
 p:cmd:dansguardian
 
-C:Q1/Ka61dalA1ccO7iLlDPt4JgugTs=
-P:squid-lang-sk
-V:5.0.6-r0
+C:Q1QHkXXTrCR6fPFW/9oar+lWWNv2U=
+P:openssh-keygen
+V:8.6_p1-r3
 A:ppc64le
-S:13581
-I:204800
-T:squid language pack for sk
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
+S:196912
+I:512000
+T:ssh helper program for generating keys
+U:https://www.openssh.com/portable.html
+L:BSD
+o:openssh
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-sk
+t:1633456058
+c:d10d87c0d9c31c3fe062e31ae65e3c05a8b6a060
+D:so:libc.musl-ppc64le.so.1 so:libcrypto.so.1.1
+p:cmd:ssh-keygen
 
 C:Q1YczX53uyP3inqJHyrsSe9ioLmug=
 P:pinentry-doc
@@ -69356,6 +69324,22 @@ t:1617646688
 c:eab597df643c4e27355781a222e6e416a7a8e297
 D:pkgconfig vde2-libs=2.3.2-r13
 p:pc:vdehist=2.3.2 pc:vdemgmt=2.3.2 pc:vdeplug=2.3.2 pc:vdesnmp=2.3.2
+
+C:Q1n8DPJgxMfR8+s2xwcdfuhC1C5RY=
+P:squid-lang-ar
+V:5.0.6-r1
+A:ppc64le
+S:13185
+I:204800
+T:squid language pack for ar
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-ar
 
 C:Q1M6f6ERySzg2lm5TMqe1M/tOuVdc=
 P:mariadb-common
@@ -70043,22 +70027,6 @@ t:1622162897
 c:2edf2cf352e699f9f4f6e8975d4d3095d6b0acbc
 i:docs s6-linux-init=1.0.6.3-r0
 
-C:Q1rCFwIEN0nLCeTKQo/aAcdMrSR/k=
-P:squid-lang-it
-V:5.0.6-r0
-A:ppc64le
-S:13364
-I:204800
-T:squid language pack for it
-U:http://www.squid-cache.org/
-L:GPL-2.0-or-later
-o:squid
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1621001694
-c:0943d507137db5485ded9554e2a449a76b61de33
-D:logrotate
-i:squid=5.0.6-r0 lang-it
-
 C:Q1rquluqDEKPWbi5gLWXkLXwcoRXs=
 P:perl-digest-md5-doc
 V:2.58-r1
@@ -70257,6 +70225,22 @@ t:1617646684
 c:f0c8634c2d7f30fa88899f4aadcecdee76d5442f
 D:py3-dbus pc:dbus-1>=1.0 pkgconfig
 p:pc:dbus-python=1.2.16
+
+C:Q1TnzAy8o/dVmnwDViUhVa0iHxDO8=
+P:squid-lang-sk
+V:5.0.6-r1
+A:ppc64le
+S:13585
+I:204800
+T:squid language pack for sk
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-sk
 
 C:Q1EQqZAH9OURU9ek7t3MqlD7bjPNc=
 P:perl-text-wikiformat-doc
@@ -71776,6 +71760,22 @@ t:1623293560
 c:c8aabb59a37ac1fbf0ecd199c96f95d902e36226
 D:fuse-common so:libc.musl-ppc64le.so.1 so:libfuse3.so.3
 p:cmd:fusermount3 cmd:mount.fuse3
+
+C:Q1jbNMebqNzw6il7aRE+7QMQGGQPw=
+P:squid-lang-cs
+V:5.0.6-r1
+A:ppc64le
+S:13256
+I:204800
+T:squid language pack for cs
+U:http://www.squid-cache.org/
+L:GPL-2.0-or-later
+o:squid
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1633453811
+c:be1a3f9d79622d58bdea6fb00d37adb104b8003c
+D:logrotate
+i:squid=5.0.6-r1 lang-cs
 
 C:Q1D7MKKOPDUH5t6IC7+DjVTG8/0ps=
 P:sfdisk
