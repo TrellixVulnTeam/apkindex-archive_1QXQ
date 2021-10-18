@@ -540,15 +540,16 @@
       ]
     },
     "ruby-rake": {
-      "origin": "ruby",
+      "origin": "ruby-rake",
       "versions": {
-        "2.7.4-r2": 1634209377
+        "2.7.4-r2": 1634209377,
+        "13.0.3-r0": 1634575482
       },
       "dependencies": [
         "ruby"
       ],
       "provides": [
-        "cmd:rake=2.7.4-r2"
+        "cmd:rake=13.0.3-r0"
       ]
     },
     "lua5.4-libs": {
@@ -5982,7 +5983,8 @@
     "ruby-doc": {
       "origin": "ruby",
       "versions": {
-        "2.7.4-r2": 1634209377
+        "2.7.4-r2": 1634209377,
+        "3.0.2-r0": 1634575484
       }
     },
     "samba-libs": {
@@ -6402,7 +6404,8 @@
     "ghi-doc": {
       "origin": "ghi",
       "versions": {
-        "1.2.0-r5": 1587535969
+        "1.2.0-r5": 1587535969,
+        "1.2.0-r6": 1634575481
       }
     },
     "cmake-doc": {
@@ -6818,7 +6821,8 @@
     "protoc": {
       "origin": "protobuf",
       "versions": {
-        "3.18.1-r0": 1633537624
+        "3.18.1-r0": 1633537624,
+        "3.18.1-r1": 1634575484
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -6827,7 +6831,7 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:protoc=3.18.1-r0"
+        "cmd:protoc=3.18.1-r1"
       ]
     },
     "sqlite-tcl-doc": {
@@ -11348,7 +11352,8 @@
     "ruby-dbg": {
       "origin": "ruby",
       "versions": {
-        "2.7.4-r2": 1634209377
+        "2.7.4-r2": 1634209377,
+        "3.0.2-r0": 1634575484
       },
       "dependencies": [
         "ca-certificates"
@@ -11567,16 +11572,15 @@
     "ruby-bundler": {
       "origin": "ruby-bundler",
       "versions": {
-        "2.2.27-r0": 1630881168
+        "2.2.27-r0": 1630881168,
+        "2.2.29-r0": 1634575484
       },
       "dependencies": [
-        "ruby",
-        "ruby-etc",
-        "ruby-io-console"
+        "ruby"
       ],
       "provides": [
-        "cmd:bundle=2.2.27-r0",
-        "cmd:bundler=2.2.27-r0"
+        "cmd:bundle=2.2.29-r0",
+        "cmd:bundler=2.2.29-r0"
       ]
     },
     "ulogd-mysql": {
@@ -11978,12 +11982,13 @@
       }
     },
     "ruby-power_assert": {
-      "origin": "ruby",
+      "origin": "ruby-power_assert",
       "versions": {
-        "2.7.4-r2": 1634209377
+        "2.7.4-r2": 1634209377,
+        "1.2.0-r0": 1634575482
       },
       "dependencies": [
-        "ruby-libs"
+        "ruby"
       ]
     },
     "linux-firmware-dpaa2": {
@@ -14575,7 +14580,8 @@
       "origin": "alpine-keys",
       "versions": {
         "2.3-r1": 1623334078,
-        "2.4-r0": 1634554112
+        "2.4-r0": 1634554112,
+        "2.4-r1": 1634579657
       }
     },
     "py3-pyzfs": {
@@ -19945,14 +19951,15 @@
     "protobuf-dev": {
       "origin": "protobuf",
       "versions": {
-        "3.18.1-r0": 1633537624
+        "3.18.1-r0": 1633537624,
+        "3.18.1-r1": 1634575484
       },
       "dependencies": [
         "zlib-dev",
-        "protoc=3.18.1-r0",
-        "libprotobuf-lite=3.18.1-r0",
-        "libprotobuf=3.18.1-r0",
-        "libprotoc=3.18.1-r0",
+        "protoc=3.18.1-r1",
+        "libprotobuf-lite=3.18.1-r1",
+        "libprotobuf=3.18.1-r1",
+        "libprotoc=3.18.1-r1",
         "pkgconfig"
       ],
       "provides": [
@@ -21833,28 +21840,21 @@
     "ruby-full": {
       "origin": "ruby",
       "versions": {
-        "2.7.4-r2": 1634209377
+        "2.7.4-r2": 1634209377,
+        "3.0.2-r0": 1634575484
       },
       "dependencies": [
         "ruby",
-        "ruby-dbg",
-        "ruby-bigdecimal",
-        "ruby-etc",
-        "ruby-fiddle",
-        "ruby-gdbm",
-        "ruby-io-console",
-        "ruby-irb",
-        "ruby-json",
-        "ruby-minitest",
-        "ruby-net-telnet",
-        "ruby-power_assert",
-        "ruby-rake",
         "ruby-rdoc",
-        "ruby-sdbm",
-        "ruby-test-unit",
-        "ruby-webrick",
-        "ruby-xmlrpc",
-        "ruby-bundler"
+        "ruby-bundler",
+        "ruby-minitest>=5.14.2",
+        "ruby-power_assert>=1.2.0",
+        "ruby-rake>=13.0.3",
+        "ruby-test-unit>=3.3.7",
+        "ruby-rexml>=3.2.5",
+        "ruby-rss>=0.2.9",
+        "ruby-rbs>=1.0.4",
+        "ruby-typeprof>=0.12.0"
       ]
     },
     "usbutils-doc": {
@@ -22292,7 +22292,8 @@
     "libprotoc": {
       "origin": "protobuf",
       "versions": {
-        "3.18.1-r0": 1633537624
+        "3.18.1-r0": 1633537624,
+        "3.18.1-r1": 1634575484
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -24260,11 +24261,13 @@
     "ruby-libs": {
       "origin": "ruby",
       "versions": {
-        "2.7.4-r2": 1634209377
+        "2.7.4-r2": 1634209377,
+        "3.0.2-r0": 1634575484
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
         "so:libcrypto.so.1.1",
+        "so:libffi.so.8",
         "so:libgdbm.so.6",
         "so:libgdbm_compat.so.4",
         "so:libgmp.so.10",
@@ -24274,7 +24277,7 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "so:libruby.so.2.7=2.7.4"
+        "so:libruby.so.3.0=3.0.2"
       ]
     },
     "samurai": {
@@ -26364,7 +26367,8 @@
     "ruby-bundler-doc": {
       "origin": "ruby-bundler",
       "versions": {
-        "2.2.27-r0": 1630881168
+        "2.2.27-r0": 1630881168,
+        "2.2.29-r0": 1634575484
       }
     },
     "meson-vim": {
@@ -26583,21 +26587,28 @@
     "ruby": {
       "origin": "ruby",
       "versions": {
-        "2.7.4-r2": 1634209377
+        "2.7.4-r2": 1634209377,
+        "3.0.2-r0": 1634575484
       },
       "dependencies": [
         "ca-certificates",
         "/bin/sh",
         "so:libc.musl-ppc64le.so.1",
-        "so:libruby.so.2.7"
+        "so:libruby.so.3.0"
       ],
       "provides": [
-        "cmd:erb=2.7.4-r2",
-        "cmd:gem=2.7.4-r2",
-        "cmd:racc2y=2.7.4-r2",
-        "cmd:racc=2.7.4-r2",
-        "cmd:ruby=2.7.4-r2",
-        "cmd:y2racc=2.7.4-r2"
+        "ruby-bigdecimal=3.0.2-r0",
+        "ruby-etc=3.0.2-r0",
+        "ruby-fiddle=3.0.2-r0",
+        "ruby-gdbm=3.0.2-r0",
+        "ruby-io-console=3.0.2-r0",
+        "ruby-irb=3.0.2-r0",
+        "ruby-json=3.0.2-r0",
+        "cmd:erb=3.0.2-r0",
+        "cmd:gem=3.0.2-r0",
+        "cmd:irb=3.0.2-r0",
+        "cmd:racc=3.0.2-r0",
+        "cmd:ruby=3.0.2-r0"
       ]
     },
     "lua5.1-stringy": {
@@ -26953,7 +26964,8 @@
     "mpg123-doc": {
       "origin": "mpg123",
       "versions": {
-        "1.29.0-r0": 1630924854
+        "1.29.0-r0": 1630924854,
+        "1.29.1-r0": 1634567851
       }
     },
     "ca-certificates-bundle": {
@@ -27169,17 +27181,19 @@
     "ruby-dev": {
       "origin": "ruby",
       "versions": {
-        "2.7.4-r2": 1634209377
+        "2.7.4-r2": 1634209377,
+        "3.0.2-r0": 1634575484
       },
       "dependencies": [
-        "ruby=2.7.4-r2",
+        "ruby=3.0.2-r0",
+        "ruby-rdoc=3.0.2-r0",
         "gmp-dev",
         "libucontext-dev",
         "pkgconfig",
-        "ruby-libs=2.7.4-r2"
+        "ruby-libs=3.0.2-r0"
       ],
       "provides": [
-        "pc:ruby-2.7=2.7.0"
+        "pc:ruby-3.0=3.0.0"
       ]
     },
     "uwsgi-webdav": {
@@ -27411,9 +27425,10 @@
       }
     },
     "ruby-test-unit": {
-      "origin": "ruby",
+      "origin": "ruby-test-unit",
       "versions": {
-        "2.7.4-r2": 1634209377
+        "2.7.4-r2": 1634209377,
+        "3.3.8-r0": 1634575482
       },
       "dependencies": [
         "ruby",
@@ -33482,16 +33497,15 @@
     "ruby-rdoc": {
       "origin": "ruby",
       "versions": {
-        "2.7.4-r2": 1634209377
+        "2.7.4-r2": 1634209377,
+        "3.0.2-r0": 1634575484
       },
       "dependencies": [
-        "ruby",
-        "ruby-json",
-        "ruby-io-console"
+        "ruby"
       ],
       "provides": [
-        "cmd:rdoc=2.7.4-r2",
-        "cmd:ri=2.7.4-r2"
+        "cmd:rdoc=3.0.2-r0",
+        "cmd:ri=3.0.2-r0"
       ]
     },
     "udev-init-scripts": {
@@ -34614,11 +34628,12 @@
     "ruby-google-protobuf": {
       "origin": "protobuf",
       "versions": {
-        "3.18.1-r0": 1633537624
+        "3.18.1-r0": 1633537624,
+        "3.18.1-r1": 1634575484
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
-        "so:libruby.so.2.7"
+        "so:libruby.so.3.0"
       ]
     },
     "zeromq-dev": {
@@ -37258,9 +37273,10 @@
       }
     },
     "ruby-minitest": {
-      "origin": "ruby",
+      "origin": "ruby-minitest",
       "versions": {
-        "2.7.4-r2": 1634209377
+        "2.7.4-r2": 1634209377,
+        "5.14.2-r0": 1634575482
       },
       "dependencies": [
         "ruby"
@@ -38892,7 +38908,8 @@
     "asciidoctor": {
       "origin": "asciidoctor",
       "versions": {
-        "2.0.16-r0": 1628077271
+        "2.0.16-r0": 1628077271,
+        "2.0.16-r1": 1634575484
       },
       "dependencies": [
         "ruby"
@@ -39218,16 +39235,16 @@
     "ghi": {
       "origin": "ghi",
       "versions": {
-        "1.2.0-r5": 1587535969
+        "1.2.0-r5": 1587535969,
+        "1.2.0-r6": 1634575481
       },
       "dependencies": [
         "ruby",
-        "ruby-json",
         "ncurses",
         "less"
       ],
       "provides": [
-        "cmd:ghi=1.2.0-r5"
+        "cmd:ghi=1.2.0-r6"
       ]
     },
     "sntpc": {
@@ -40920,7 +40937,8 @@
     "protobuf-vim": {
       "origin": "protobuf",
       "versions": {
-        "3.18.1-r0": 1633537624
+        "3.18.1-r0": 1633537624,
+        "3.18.1-r1": 1634575484
       }
     },
     "libunistring-static": {
@@ -41138,13 +41156,14 @@
     "protobuf": {
       "origin": "protobuf",
       "versions": {
-        "3.18.1-r0": 1633537624
+        "3.18.1-r0": 1633537624,
+        "3.18.1-r1": 1634575484
       },
       "dependencies": [
-        "protoc=3.18.1-r0",
-        "libprotoc=3.18.1-r0",
-        "libprotobuf=3.18.1-r0",
-        "libprotobuf-lite=3.18.1-r0"
+        "protoc=3.18.1-r1",
+        "libprotoc=3.18.1-r1",
+        "libprotobuf=3.18.1-r1",
+        "libprotobuf-lite=3.18.1-r1"
       ]
     },
     "openjade-libs": {
@@ -42222,16 +42241,17 @@
     "mpg123-dev": {
       "origin": "mpg123",
       "versions": {
-        "1.29.0-r0": 1630924854
+        "1.29.0-r0": 1630924854,
+        "1.29.1-r0": 1634567851
       },
       "dependencies": [
-        "mpg123-libs=1.29.0-r0",
+        "mpg123-libs=1.29.1-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libmpg123=1.29.0",
-        "pc:libout123=1.29.0",
-        "pc:libsyn123=1.29.0"
+        "pc:libmpg123=1.29.1",
+        "pc:libout123=1.29.1",
+        "pc:libsyn123=1.29.1"
       ]
     },
     "wayland-libs-client": {
@@ -49173,7 +49193,8 @@
     "libprotobuf-lite": {
       "origin": "protobuf",
       "versions": {
-        "3.18.1-r0": 1633537624
+        "3.18.1-r0": 1633537624,
+        "3.18.1-r1": 1634575484
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -54273,14 +54294,15 @@
     "mpg123-libs": {
       "origin": "mpg123",
       "versions": {
-        "1.29.0-r0": 1630924854
+        "1.29.0-r0": 1630924854,
+        "1.29.1-r0": 1634567851
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1"
       ],
       "provides": [
-        "so:libmpg123.so.0=0.46.4",
-        "so:libout123.so.0=0.4.2",
+        "so:libmpg123.so.0=0.46.5",
+        "so:libout123.so.0=0.4.3",
         "so:libsyn123.so.0=0.1.4"
       ]
     },
@@ -54757,7 +54779,8 @@
     "libprotobuf": {
       "origin": "protobuf",
       "versions": {
-        "3.18.1-r0": 1633537624
+        "3.18.1-r0": 1633537624,
+        "3.18.1-r1": 1634575484
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -55241,7 +55264,8 @@
     "mpg123": {
       "origin": "mpg123",
       "versions": {
-        "1.29.0-r0": 1630924854
+        "1.29.0-r0": 1630924854,
+        "1.29.1-r0": 1634567851
       },
       "dependencies": [
         "so:libasound.so.2",
@@ -55251,10 +55275,10 @@
         "so:libsyn123.so.0"
       ],
       "provides": [
-        "cmd:mpg123-id3dump=1.29.0-r0",
-        "cmd:mpg123-strip=1.29.0-r0",
-        "cmd:mpg123=1.29.0-r0",
-        "cmd:out123=1.29.0-r0"
+        "cmd:mpg123-id3dump=1.29.1-r0",
+        "cmd:mpg123-strip=1.29.1-r0",
+        "cmd:mpg123=1.29.1-r0",
+        "cmd:out123=1.29.1-r0"
       ]
     },
     "irssi": {
@@ -56536,6 +56560,87 @@
       "provides": [
         "llvm-static=12.0.1-r0"
       ]
+    },
+    "ruby-test-unit-doc": {
+      "origin": "ruby-test-unit",
+      "versions": {
+        "3.3.8-r0": 1634575482
+      },
+      "dependencies": [
+        "ruby",
+        "ruby-power_assert"
+      ]
+    },
+    "ruby-minitest-doc": {
+      "origin": "ruby-minitest",
+      "versions": {
+        "5.14.2-r0": 1634575482
+      },
+      "dependencies": [
+        "ruby"
+      ]
+    },
+    "ruby-rbs-doc": {
+      "origin": "ruby-rbs",
+      "versions": {
+        "1.0.4-r0": 1634575483
+      },
+      "dependencies": [
+        "ruby"
+      ]
+    },
+    "ruby-rbs": {
+      "origin": "ruby-rbs",
+      "versions": {
+        "1.0.4-r0": 1634575483
+      },
+      "dependencies": [
+        "ruby"
+      ],
+      "provides": [
+        "cmd:rbs=1.0.4-r0"
+      ]
+    },
+    "ruby-rake-doc": {
+      "origin": "ruby-rake",
+      "versions": {
+        "13.0.3-r0": 1634575482
+      },
+      "dependencies": [
+        "ruby"
+      ]
+    },
+    "ruby-power_assert-doc": {
+      "origin": "ruby-power_assert",
+      "versions": {
+        "1.2.0-r0": 1634575482
+      },
+      "dependencies": [
+        "ruby"
+      ]
+    },
+    "ruby-typeprof": {
+      "origin": "ruby-typeprof",
+      "versions": {
+        "0.12.0-r0": 1634575483
+      },
+      "dependencies": [
+        "ruby",
+        "ruby-rbs"
+      ],
+      "provides": [
+        "cmd:typeprof=0.12.0-r0"
+      ]
+    },
+    "ruby-typeprof-doc": {
+      "origin": "ruby-typeprof",
+      "versions": {
+        "0.12.0-r0": 1634575483
+      },
+      "dependencies": [
+        "ruby",
+        "ruby-rbs"
+      ]
     }
   },
   "provide": {
@@ -57575,6 +57680,34 @@
       "boost": {
         "package": "boost1.77",
         "version": "1.77.0-r1"
+      },
+      "ruby-bigdecimal": {
+        "package": "ruby",
+        "version": "3.0.2-r0"
+      },
+      "ruby-etc": {
+        "package": "ruby",
+        "version": "3.0.2-r0"
+      },
+      "ruby-fiddle": {
+        "package": "ruby",
+        "version": "3.0.2-r0"
+      },
+      "ruby-gdbm": {
+        "package": "ruby",
+        "version": "3.0.2-r0"
+      },
+      "ruby-io-console": {
+        "package": "ruby",
+        "version": "3.0.2-r0"
+      },
+      "ruby-irb": {
+        "package": "ruby",
+        "version": "3.0.2-r0"
+      },
+      "ruby-json": {
+        "package": "ruby",
+        "version": "3.0.2-r0"
       }
     },
     "so": {
@@ -62656,11 +62789,11 @@
       },
       "libmpg123.so.0": {
         "package": "mpg123-libs",
-        "version": "0.46.4"
+        "version": "0.46.5"
       },
       "libout123.so.0": {
         "package": "mpg123-libs",
-        "version": "0.4.2"
+        "version": "0.4.3"
       },
       "libsyn123.so.0": {
         "package": "mpg123-libs",
@@ -62833,6 +62966,10 @@
       "libLLVM-12.so": {
         "package": "llvm12-libs",
         "version": "0"
+      },
+      "libruby.so.3.0": {
+        "package": "ruby-libs",
+        "version": "3.0.2"
       }
     }
   }
