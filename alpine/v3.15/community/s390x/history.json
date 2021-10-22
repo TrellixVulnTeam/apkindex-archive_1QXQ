@@ -3231,7 +3231,8 @@
     "duplicity-lang": {
       "origin": "duplicity",
       "versions": {
-        "0.8.20-r1": 1629333217
+        "0.8.20-r1": 1629333217,
+        "0.8.20-r2": 1634869239
       },
       "dependencies": [
         "python3",
@@ -8546,7 +8547,8 @@
     "duplicity": {
       "origin": "duplicity",
       "versions": {
-        "0.8.20-r1": 1629333217
+        "0.8.20-r1": 1629333217,
+        "0.8.20-r2": 1634869239
       },
       "dependencies": [
         "python3",
@@ -8560,9 +8562,9 @@
         "so:librsync.so.2"
       ],
       "provides": [
-        "cmd:duplicity=0.8.20-r1",
-        "cmd:rdiffdir=0.8.20-r1",
-        "py3.9:duplicity=0.8.20-r1"
+        "cmd:duplicity=0.8.20-r2",
+        "cmd:rdiffdir=0.8.20-r2",
+        "py3.9:duplicity=0.8.20-r2"
       ]
     },
     "sdl2_net": {
@@ -68571,7 +68573,8 @@
     "duplicity-doc": {
       "origin": "duplicity",
       "versions": {
-        "0.8.20-r1": 1629333217
+        "0.8.20-r1": 1629333217,
+        "0.8.20-r2": 1634869239
       }
     },
     "liborcus": {
@@ -99351,6 +99354,54 @@
         "postgresql",
         "so:libc.musl-s390x.so.1"
       ]
+    },
+    "libhandy-dev": {
+      "origin": "libhandy",
+      "versions": {
+        "0.0.13-r4": 1634867960
+      },
+      "dependencies": [
+        "libhandy=0.0.13-r4",
+        "pc:gio-2.0>=2.44",
+        "pc:glib-2.0>=2.44",
+        "pc:gmodule-2.0>=2.44",
+        "pc:gtk+-3.0>=3.24.1",
+        "pkgconfig",
+        "so:libc.musl-s390x.so.1",
+        "so:libgdk-3.so.0",
+        "so:libgio-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libgtk-3.so.0",
+        "so:libhandy-0.0.so.0",
+        "so:libintl.so.8"
+      ],
+      "provides": [
+        "pc:libhandy-0.0=0.0.13",
+        "cmd:handy-0.0-demo=0.0.13-r4"
+      ]
+    },
+    "libhandy": {
+      "origin": "libhandy",
+      "versions": {
+        "0.0.13-r4": 1634867960
+      },
+      "dependencies": [
+        "so:libatk-1.0.so.0",
+        "so:libc.musl-s390x.so.1",
+        "so:libcairo.so.2",
+        "so:libgdk-3.so.0",
+        "so:libgdk_pixbuf-2.0.so.0",
+        "so:libgio-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libgtk-3.so.0",
+        "so:libintl.so.8",
+        "so:libpango-1.0.so.0"
+      ],
+      "provides": [
+        "so:libhandy-0.0.so.0=0"
+      ]
     }
   },
   "provide": {
@@ -109540,6 +109591,10 @@
       "libSDL_image-1.2.so.0": {
         "package": "sdl_image",
         "version": "0.8.4"
+      },
+      "libhandy-0.0.so.0": {
+        "package": "libhandy",
+        "version": "0"
       }
     }
   }
