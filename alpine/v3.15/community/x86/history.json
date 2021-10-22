@@ -120933,6 +120933,35 @@
       "dependencies": [
         "kirigami2"
       ]
+    },
+    "libtorrent-dev": {
+      "origin": "libtorrent",
+      "versions": {
+        "0.13.8-r2": 1634887588
+      },
+      "dependencies": [
+        "libtorrent=0.13.8-r2",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:libtorrent=0.13.8"
+      ]
+    },
+    "libtorrent": {
+      "origin": "libtorrent",
+      "versions": {
+        "0.13.8-r2": 1634887588
+      },
+      "dependencies": [
+        "so:libc.musl-x86.so.1",
+        "so:libcrypto.so.1.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "so:libtorrent.so.21=21.0.0"
+      ]
     }
   },
   "provide": {
@@ -133250,6 +133279,10 @@
       "libKF5AkonadiCalendar.so.5": {
         "package": "akonadi-calendar",
         "version": "5.18.2"
+      },
+      "libtorrent.so.21": {
+        "package": "libtorrent",
+        "version": "21.0.0"
       }
     }
   }
