@@ -1520,6 +1520,22 @@ c:4d91c2c50829684162b2b5036e77aa5a75f74cef
 D:oniguruma=6.9.7.1-r0 pkgconfig
 p:pc:oniguruma=6.9.7 cmd:onig-config=6.9.7.1-r0
 
+C:Q1QwZY1y0ryBKCjHu1NVEbjZk4bdY=
+P:ncurses-libs
+V:6.2_p20211017-r0
+A:armhf
+S:186330
+I:417792
+T:Ncurses libraries
+U:https://invisible-island.net/ncurses/
+L:MIT
+o:ncurses
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1635117995
+c:69ef197ad93e104b25de6e2a89ca52324c2bc719
+D:ncurses-terminfo-base=6.2_p20211017-r0 so:libc.musl-armhf.so.1
+p:ncurses-widec-libs=6.2_p20211017-r0 so:libformw.so.6=6.2 so:libmenuw.so.6=6.2 so:libncursesw.so.6=6.2 so:libpanelw.so.6=6.2
+
 C:Q1xPcji+0EfbRM82MYYeO3Hx9elsw=
 P:sofia-sip
 V:1.13.4-r2
@@ -3362,22 +3378,6 @@ c:3ec3aafa689b134df3f999baf8841099c6e8c422
 D:libxslt=1.1.34-r1 pc:libxml-2.0 pkgconfig
 p:pc:libexslt=0.8.20 pc:libxslt=1.1.34 cmd:xslt-config=1.1.34-r1
 
-C:Q1oy+56MPpfBBLWRezmty5GPCzLfA=
-P:postgresql-plperl-contrib
-V:14.0-r3
-A:armhf
-S:15834
-I:86016
-T:PL/Perl extension modules distributed with PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1634564284
-c:4be185db91194cfd3fbf6a94a30745e7ae47764f
-D:postgresql-plperl=14.0-r3 so:libc.musl-armhf.so.1 so:libperl.so
-i:postgresql-plperl=14.0-r3 postgresql-contrib=14.0-r3
-
 C:Q1FfS8AS5Bcdfbnf1OwW0D2nAFWf0=
 P:syslog-ng-redis
 V:3.30.1-r3
@@ -4788,6 +4788,21 @@ t:1633420876
 c:7d19e46b827b7c5e284ef76785840e06497db80c
 p:linux-firmware-any
 
+C:Q1pgjRJyWdTNdINoWzKVjiXl+dRk4=
+P:postgresql-openrc
+V:14.0-r4
+A:armhf
+S:6361
+I:36864
+T:A sophisticated object-relational DBMS (OpenRC init scripts)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1635117238
+c:851c34539078ca0608fd2aa912f5d4bd646a0dbd
+i:openrc postgresql=14.0-r4
+
 C:Q1FvdGErmL0uNrdlMWeRoZtTC/loQ=
 P:font-misc-meltho
 V:1.0.3-r0
@@ -5415,6 +5430,20 @@ t:1631638546
 c:3b7df8e1ec95e39428c838a7ac6468c5d0295a44
 D:so:libc.musl-armhf.so.1
 p:so:libzstd.so.1=1.5.0
+
+C:Q1m1WOYGIEsrSAONsRLeB9L6LNgmY=
+P:ncurses-static
+V:6.2_p20211017-r0
+A:armhf
+S:1931410
+I:5521408
+T:Static libraries for the ncurses library
+U:https://invisible-island.net/ncurses/
+L:MIT
+o:ncurses
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1635117995
+c:69ef197ad93e104b25de6e2a89ca52324c2bc719
 
 C:Q17fYZL1sUSScMfnu0ybze3cQ0pzo=
 P:meson-bash-completion
@@ -9644,21 +9673,6 @@ t:1617756148
 c:fc06c50bbaead363b0984598330ea375e7ac52f4
 D:so:libacl.so.1 so:libc.musl-armhf.so.1
 p:cmd:tar=1.34-r0
-
-C:Q1qg3oQ5StSeXi6W0p3s7hbniloI4=
-P:postgresql-pltcl
-V:14.0-r3
-A:armhf
-S:24531
-I:102400
-T:PL/Tcl procedural language for PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1634564284
-c:4be185db91194cfd3fbf6a94a30745e7ae47764f
-D:postgresql=14.0-r3 pgtcl so:libc.musl-armhf.so.1 so:libtcl8.6.so
 
 C:Q1vS2PlPFUkIU+vWXAEdm5Bo2BUcM=
 P:squid-lang-el
@@ -14982,6 +14996,22 @@ t:1623939067
 c:7d5538388935358a15205e75f1fe31c9ed913b70
 i:docs tmux=3.2a-r0
 
+C:Q1+O87SlqlwOQDYeNJgoiyfdrAjNQ=
+P:libpq-dev
+V:14.0-r4
+A:armhf
+S:161129
+I:512000
+T:PostgreSQL client library (development files)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1635117238
+c:851c34539078ca0608fd2aa912f5d4bd646a0dbd
+D:libpq=14.0-r4 pc:libcrypto pc:libssl pkgconfig so:libc.musl-armhf.so.1
+p:pc:libpq=14.0 cmd:pg_config=14.0-r4
+
 C:Q1yj38rHm/0O1VorALJwFQD2gH7gI=
 P:pssh-doc
 V:2.3.4-r1
@@ -17713,22 +17743,6 @@ t:1631406932
 c:fcce25abafbe3911e3a3d1d22c0593c5ac5d16ec
 D:perl perl-cgi perl-fcgi
 
-C:Q14mTyN/Q7YxDuU7kRAeSRrt6d4x0=
-P:postgresql-dev
-V:14.0-r3
-A:armhf
-S:2141808
-I:9945088
-T:A sophisticated object-relational DBMS (development files)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1634564284
-c:4be185db91194cfd3fbf6a94a30745e7ae47764f
-D:clang icu-dev llvm12 openssl1.1-compat-dev libpq=14.0-r3 pc:libcrypto pc:libssl pkgconfig postgresql-libs=14.0-r3 so:libc.musl-armhf.so.1 so:libpq.so.5
-p:pc:libecpg=14.0 pc:libecpg_compat=14.0 pc:libpgtypes=14.0 pc:libpq=14.0 cmd:ecpg=14.0-r3 cmd:pg_config=14.0-r3
-
 C:Q19lY2+6lGfNcwnKL+ctaYXRZl0Xw=
 P:py3-talloc
 V:2.3.3-r0
@@ -18879,6 +18893,21 @@ o:libnet
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1593500452
 c:f85c8c6e958602ed65fe6048ea60ce6e8989517b
+
+C:Q1/ZCKFYj50OujT5YrGqqkVrNhqaE=
+P:postgresql-dev
+V:14.0-r4
+A:armhf
+S:1690597
+I:8212480
+T:A sophisticated object-relational DBMS (development files)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1635117238
+c:851c34539078ca0608fd2aa912f5d4bd646a0dbd
+D:libpq-dev=14.0-r4 libecpg-dev=14.0-r4 clang icu-dev llvm12 openssl1.1-compat-dev so:libc.musl-armhf.so.1 so:libpq.so.5
 
 C:Q1r3e2AieiOAQg/S7DlXgTHjmczEY=
 P:lua5.2-b64
@@ -22895,21 +22924,6 @@ c:6e177c1b4a005ddb2b759427441624e186a90593
 D:so:libc.musl-armhf.so.1 so:libev.so.4
 p:cmd:pingu=1.5-r2 cmd:pinguctl=1.5-r2
 
-C:Q1qFu8tKvgnJHvQbxjQi0BKL1cgpE=
-P:postgresql-openrc
-V:14.0-r3
-A:armhf
-S:6356
-I:36864
-T:A sophisticated object-relational DBMS (OpenRC init scripts)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1634564284
-c:4be185db91194cfd3fbf6a94a30745e7ae47764f
-i:openrc postgresql=14.0-r3
-
 C:Q1muOtw/448pv01tOQroROnHdlaHY=
 P:gmp
 V:6.2.1-r0
@@ -23479,21 +23493,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1634321403
 c:aedfe60e91af878f60614b2f325abf7e464bb427
 i:docs subversion=1.14.1-r6
-
-C:Q1a6mjjd6NMQy945aqRBEZ/u6zGXY=
-P:postgresql-plperl
-V:14.0-r3
-A:armhf
-S:36548
-I:122880
-T:PL/Perl procedural language for PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1634564284
-c:4be185db91194cfd3fbf6a94a30745e7ae47764f
-D:postgresql=14.0-r3 so:libc.musl-armhf.so.1 so:libperl.so
 
 C:Q11HUz9Amfm0QJ85ipQb7sDDZxfH0=
 P:perl-convert-tnef-doc
@@ -24162,6 +24161,20 @@ c:5342340d59c0daccaad57f13b253453ba5fe7a7f
 D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:liblber-2.4.so.2 so:libldap-2.4.so.2 so:libsasl2.so.3 so:libstdc++.so.6
 p:so:libldapcpp.so.0=0.0.0
 
+C:Q16h++Bj514cEY+uusTpcmw/eEmXA=
+P:ncurses-terminfo-base
+V:6.2_p20211017-r0
+A:armhf
+S:22285
+I:221184
+T:Descriptions of common terminals
+U:https://invisible-island.net/ncurses/
+L:MIT
+o:ncurses
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1635117995
+c:69ef197ad93e104b25de6e2a89ca52324c2bc719
+
 C:Q1bBo+tkzNguumaRix//cVbd5BUOM=
 P:crconf
 V:0_pre2-r1
@@ -24747,6 +24760,21 @@ t:1634826504
 c:51e8bef8ac956f9022935811d584993ea8757818
 D:python3
 p:py-idna=3.3-r0 py3.9:idna=3.3-r0
+
+C:Q1SLHq0w/qCk3XwHlIgvKana+8q2Y=
+P:postgresql-pltcl
+V:14.0-r4
+A:armhf
+S:24531
+I:102400
+T:PL/Tcl procedural language for PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1635117238
+c:851c34539078ca0608fd2aa912f5d4bd646a0dbd
+D:postgresql=14.0-r4 pgtcl so:libc.musl-armhf.so.1 so:libtcl8.6.so
 
 C:Q1yUk1XX1iOVGVPST9vYP2T6zAOvo=
 P:dropbear
@@ -25423,6 +25451,21 @@ t:1631921855
 c:088adc32a4fb96981c959a54188f4b205d3d003e
 D:python3
 p:py3.9:iso8601=0.1.16-r0
+
+C:Q1Hqbe3sqKi+5EmUmSJHayj4Kt5XU=
+P:ncurses-terminfo
+V:6.2_p20211017-r0
+A:armhf
+S:564624
+I:7405568
+T:Console display library (other terminfo files)
+U:https://invisible-island.net/ncurses/
+L:MIT
+o:ncurses
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1635117995
+c:69ef197ad93e104b25de6e2a89ca52324c2bc719
+D:ncurses-terminfo-base=6.2_p20211017-r0 ncurses-terminfo-base=6.2_p20211017-r0
 
 C:Q1YIU+tcagr1KR3l9bb4Z+WlrB9Bg=
 P:ttf-cantarell
@@ -28825,21 +28868,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-file-sharedir=1.118-r0
 
-C:Q1tmeuh8VYb1WmKi8n2YR1xJIBigU=
-P:postgresql-plpython3
-V:14.0-r3
-A:armhf
-S:44929
-I:143360
-T:PL/Python3 procedural language for PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1634564284
-c:4be185db91194cfd3fbf6a94a30745e7ae47764f
-D:postgresql=14.0-r3 python3 so:libc.musl-armhf.so.1 so:libpython3.9.so.1.0
-
 C:Q1ycAqa+wjdYC8n9QerzhCB9EXuq4=
 P:perl-test-mockobject-doc
 V:1.20200122-r1
@@ -29875,22 +29903,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1616015145
 c:3912567f75368c9ba09ca0e7b34d0c74c3aa6b50
 i:docs xkbcomp=1.4.5-r0
-
-C:Q1JyYzfcb+Ehb2Nrh53u2xDqzJ7oc=
-P:postgresql-plpython3-contrib
-V:14.0-r3
-A:armhf
-S:18319
-I:106496
-T:PL/Python 3 extension modules distributed with PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1634564284
-c:4be185db91194cfd3fbf6a94a30745e7ae47764f
-D:postgresql-plpython3=14.0-r3 so:libc.musl-armhf.so.1 so:libpython3.9.so.1.0
-i:postgresql-plpython3=14.0-r3 postgresql-contrib=14.0-r3
 
 C:Q12G2GhxUHk94jj+JdwFMMSlNb7ww=
 P:email
@@ -31185,21 +31197,6 @@ t:1629882792
 c:d2c8e034f802e043e616ab33a29ba47db58dcd93
 D:so:libblkid.so.1 so:libc.musl-armhf.so.1 so:libcom_err.so.2 so:libe2p.so.2 so:libext2fs.so.2 so:libuuid.so.1
 p:cmd:e2fsck=1.46.4-r0 cmd:fsck.ext2=1.46.4-r0 cmd:fsck.ext3=1.46.4-r0 cmd:fsck.ext4=1.46.4-r0 cmd:mke2fs=1.46.4-r0 cmd:mkfs.ext2=1.46.4-r0 cmd:mkfs.ext3=1.46.4-r0 cmd:mkfs.ext4=1.46.4-r0
-
-C:Q1/MbPPrC2z/1awTrEaANH9tLnW4Q=
-P:apr-util-ldap
-V:1.6.1-r9
-A:armhf
-S:5002
-I:28672
-T:The Apache Portable Runtime Utility Library - LDAP driver
-U:http://apr.apache.org/
-L:Apache-2.0
-o:apr-util
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1631363274
-c:25ec54cf8154961f7578a187433b83f8a3872515
-D:so:libc.musl-armhf.so.1 so:libldap-2.4.so.2
 
 C:Q1vq9ZDPf9j/lu4mcEaaqofQRlIYg=
 P:libatomic_ops-static
@@ -33380,6 +33377,22 @@ t:1621087673
 c:ec4e35bcdcf38829d2a36ff4d7cd4351ebb67d1c
 D:acf-core iproute2-qos acf-alpine-baselayout>=0.5.7
 
+C:Q11wqDDLZwD2hrz3BTjE0zWEvGJ5s=
+P:postgresql-plpython3-contrib
+V:14.0-r4
+A:armhf
+S:18320
+I:106496
+T:PL/Python 3 extension modules distributed with PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1635117238
+c:851c34539078ca0608fd2aa912f5d4bd646a0dbd
+D:postgresql-plpython3=14.0-r4 so:libc.musl-armhf.so.1 so:libpython3.9.so.1.0
+i:postgresql-plpython3=14.0-r4 postgresql-contrib=14.0-r4
+
 C:Q1qlonwKmLdp8Qn16kY6jOhgY12Vo=
 P:lua5.1-iconv
 V:7-r2
@@ -34372,6 +34385,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1563740005
 c:b4da96464eb0fb31be260e00ef340c31806ad654
 
+C:Q18Yxq8Kgkp9sS6RNrQ/UsII3b6FE=
+P:ncurses
+V:6.2_p20211017-r0
+A:armhf
+S:81740
+I:258048
+T:Console display library
+U:https://invisible-island.net/ncurses/
+L:MIT
+o:ncurses
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1635117995
+c:69ef197ad93e104b25de6e2a89ca52324c2bc719
+D:so:libc.musl-armhf.so.1 so:libncursesw.so.6
+p:cmd:captoinfo=6.2_p20211017-r0 cmd:clear=6.2_p20211017-r0 cmd:infocmp=6.2_p20211017-r0 cmd:infotocap=6.2_p20211017-r0 cmd:reset=6.2_p20211017-r0 cmd:tabs=6.2_p20211017-r0 cmd:tic=6.2_p20211017-r0 cmd:toe=6.2_p20211017-r0 cmd:tput=6.2_p20211017-r0 cmd:tset=6.2_p20211017-r0
+
 C:Q1wo5xcoTBThiLB4efBv3GnFcMWsE=
 P:expect-doc
 V:5.45.4-r2
@@ -34758,6 +34787,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 i:lua5.4 lua-stdlib=41.2.2-r1
+
+C:Q1am+lTiQXA9bOBClAE0fqFA13EHc=
+P:apr-util
+V:1.6.1-r10
+A:armhf
+S:78522
+I:180224
+T:The Apache Portable Runtime Utility Library
+U:http://apr.apache.org/
+L:Apache-2.0
+o:apr-util
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1635117238
+c:2cf3fe063b1b9e308372af7e2c2348e9e494a135
+D:so:libapr-1.so.0 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libexpat.so.1
+p:so:libaprutil-1.so.0=0.6.1
 
 C:Q13cKQuOy0uU+Wee+2uusjDcJSIsE=
 P:pmacct
@@ -38231,6 +38276,22 @@ c:fd79dc08fe3fb5f0c0a491bea711c1821980893d
 D:libverto-libev so:libc.musl-armhf.so.1 so:libcom_err.so.2 so:libgssapi_krb5.so.2 so:libgssrpc.so.4 so:libk5crypto.so.3 so:libkadm5clnt_mit.so.12 so:libkadm5srv_mit.so.12 so:libkdb5.so.10 so:libkdb_ldap.so.1 so:libkrb5.so.3 so:libkrb5support.so.0 so:libss.so.2 so:libverto.so.1
 p:cmd:gss-server=1.19.2-r2 cmd:kadmin.local=1.19.2-r2 cmd:kadmind=1.19.2-r2 cmd:kdb5_ldap_util=1.19.2-r2 cmd:kdb5_util=1.19.2-r2 cmd:kprop=1.19.2-r2 cmd:kpropd=1.19.2-r2 cmd:kproplog=1.19.2-r2 cmd:krb5-send-pr=1.19.2-r2 cmd:krb5kdc=1.19.2-r2 cmd:sclient=1.19.2-r2 cmd:sim_server=1.19.2-r2 cmd:sserver=1.19.2-r2 cmd:uuserver=1.19.2-r2
 
+C:Q1QGMjtV/N556gm+7VJCrXIevWjYQ=
+P:apr-util-dev
+V:1.6.1-r10
+A:armhf
+S:182864
+I:733184
+T:The Apache Portable Runtime Utility Library (development files)
+U:http://apr.apache.org/
+L:Apache-2.0
+o:apr-util
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1635117238
+c:2cf3fe063b1b9e308372af7e2c2348e9e494a135
+D:expat-dev openldap-dev sqlite-dev libpq-dev openssl1.1-compat-dev mariadb-dev apr-util=1.6.1-r10 pc:apr-1 pkgconfig
+p:pc:apr-util-1=1.6.1 cmd:apu-1-config=1.6.1-r10
+
 C:Q1oU2/MyUav5TFSqP+nwUvOmxIK2I=
 P:bash-dbg
 V:5.1.8-r0
@@ -38276,6 +38337,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1617646683
 c:084c454e8b909b443ba56e183c6037faebbaa72c
 D:uwsgi so:libc.musl-armhf.so.1
+
+C:Q1kzYiKsNXWNs7dKWsvURftC4HfYQ=
+P:apr-util-dbd_mysql
+V:1.6.1-r10
+A:armhf
+S:7963
+I:36864
+T:The Apache Portable Runtime Utility Library - MySQL driver
+U:http://apr.apache.org/
+L:Apache-2.0
+o:apr-util
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1635117238
+c:2cf3fe063b1b9e308372af7e2c2348e9e494a135
+D:so:libc.musl-armhf.so.1 so:libmariadb.so.3
 
 C:Q1dEVEvoFDkd5yjT+/mhNsTdSmBlU=
 P:lua5.3-discount
@@ -41728,21 +41804,6 @@ c:e7ff9936274a26068c1ff0dcd03e814ac3594ae4
 D:so:libc.musl-armhf.so.1
 p:cmd:ciwiki=2.0.5-r2
 
-C:Q1ydkt4pD/b/4fSFgqZvxnERT0pzc=
-P:apr-util-dbd_pgsql
-V:1.6.1-r9
-A:armhf
-S:7996
-I:32768
-T:The Apache Portable Runtime Utility Library - PostgreSQL driver
-U:http://apr.apache.org/
-L:Apache-2.0
-o:apr-util
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1631363274
-c:25ec54cf8154961f7578a187433b83f8a3872515
-D:so:libc.musl-armhf.so.1 so:libpq.so.5
-
 C:Q1ja5phdjS6KqbaA9cUATK7pgv3sA=
 P:logrotate-openrc
 V:3.18.1-r0
@@ -42035,6 +42096,21 @@ t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua lua-expat
 p:lua-feedparser-common=0.71-r3 lua5.1-feedparser=0.71-r3 lua5.2-feedparser=0.71-r3 lua5.3-feedparser=0.71-r3 lua5.4-feedparser=0.71-r3
+
+C:Q1IUhl0VKn3rbnuBGgoHT715gFprk=
+P:postgresql-doc
+V:14.0-r4
+A:armhf
+S:3617943
+I:19427328
+T:A sophisticated object-relational DBMS (documentation)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1635117238
+c:851c34539078ca0608fd2aa912f5d4bd646a0dbd
+i:docs postgresql=14.0-r4
 
 C:Q1sdtamn79QDzHzr3bKDtUIOvZTTI=
 P:perl-future-doc
@@ -42978,6 +43054,21 @@ c:a785a8c994f9bec1bedeb39b899e7fc6cb20ac1d
 D:samba-common=4.15.0-r0 samba-server=4.15.0-r0 samba-winbind=4.15.0-r0 py3-samba=4.15.0-r0 py3-dnspython py3-markdown tdb so:libMESSAGING-SEND-samba4.so so:libMESSAGING-samba4.so so:libasn1util-samba4.so so:libauth-samba4.so so:libauth4-samba4.so so:libauthkrb5-samba4.so so:libc.musl-armhf.so.1 so:libcli-cldap-samba4.so so:libcli-ldap-common-samba4.so so:libcli-ldap-samba4.so so:libcliauth-samba4.so so:libcluster-samba4.so so:libcmdline-samba4.so so:libcom_err-samba4.so.0 so:libcommon-auth-samba4.so so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libdsdb-module-samba4.so so:libevents-samba4.so so:libflag-mapping-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libgnutls.so.30 so:libkrb5-samba4.so.26 so:libkrb5samba-samba4.so so:libldb.so.2 so:libldbsamba-samba4.so so:libndr-samba-samba4.so so:libndr-samba4.so so:libndr.so.2 so:libnetif-samba4.so so:libpopt.so.0 so:libposix-eadb-samba4.so so:libprocess-model-samba4.so so:libreplace-samba4.so so:libsamba-credentials.so.1 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-modules-samba4.so so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamdb-common-samba4.so so:libsamdb.so.0 so:libsecrets3-samba4.so so:libservice-samba4.so so:libsmbconf.so.0 so:libsmbd-base-samba4.so so:libsmbd-shim-samba4.so so:libsocket-blocking-samba4.so so:libtalloc.so.2 so:libtdb-wrap-samba4.so so:libtdb.so.1 so:libtevent-util.so.0 so:libtevent.so.0 so:libtime-basic-samba4.so
 p:so:libsmbpasswdparser-samba4.so=0 cmd:samba-gpupdate=4.15.0-r0 cmd:samba-tool=4.15.0-r0 cmd:samba=4.15.0-r0 cmd:samba_dnsupdate=4.15.0-r0 cmd:samba_downgrade_db=4.15.0-r0 cmd:samba_kcc=4.15.0-r0 cmd:samba_spnupdate=4.15.0-r0 cmd:samba_upgradedns=4.15.0-r0
 
+C:Q1LWVuDntOqWMVPiYcj1Kk6uO4tMo=
+P:apr-util-dbd_sqlite3
+V:1.6.1-r10
+A:armhf
+S:6312
+I:32768
+T:The Apache Portable Runtime Utility Library - SQLite3 driver
+U:http://apr.apache.org/
+L:Apache-2.0
+o:apr-util
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1635117238
+c:2cf3fe063b1b9e308372af7e2c2348e9e494a135
+D:so:libc.musl-armhf.so.1 so:libsqlite3.so.0
+
 C:Q1HsHFKQKiOJh4+2si6hsJRKd25tY=
 P:vanessa_logger-doc
 V:0.0.10-r1
@@ -43022,21 +43113,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-file-temp=0.2311-r0
-
-C:Q1J7IlEMnp+sUv0iWP+60LRbpwtiE=
-P:apr-util-dbd_mysql
-V:1.6.1-r9
-A:armhf
-S:7963
-I:36864
-T:The Apache Portable Runtime Utility Library - MySQL driver
-U:http://apr.apache.org/
-L:Apache-2.0
-o:apr-util
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1631363274
-c:25ec54cf8154961f7578a187433b83f8a3872515
-D:so:libc.musl-armhf.so.1 so:libmariadb.so.3
 
 C:Q1ifcqsMpmGQdYt7NxOsaK2vgQTwA=
 P:aspell-utils
@@ -43352,22 +43428,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1574839756
 c:2c843fd6dacfbad67368e3332b6024fae41b897c
 i:docs gperf=3.1-r2
-
-C:Q1cIo7XFeqYbU7DzmvMNhiSIVxHgo=
-P:postgresql-contrib
-V:14.0-r3
-A:armhf
-S:2163769
-I:6045696
-T:Extension modules distributed with PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1634564284
-c:4be185db91194cfd3fbf6a94a30745e7ae47764f
-D:postgresql=14.0-r3 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libpq.so.5 so:libuuid.so.1 so:libxml2.so.2 so:libz.so.1
-p:cmd:oid2name=14.0-r3 cmd:vacuumlo=14.0-r3
 
 C:Q1NX1o0eIbgRWuTR1QEodihLLW/L0=
 P:font-cronyx-cyrillic
@@ -44341,6 +44401,22 @@ c:63732ef8ab13eb789eb6ce768b0eba8d3fd3182c
 D:logrotate
 i:squid=5.2-r0 lang-ko
 
+C:Q1m6gSZ8/nsoOTR8hWifZlQfwdI4k=
+P:postgresql-contrib
+V:14.0-r4
+A:armhf
+S:2163798
+I:6045696
+T:Extension modules distributed with PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1635117238
+c:851c34539078ca0608fd2aa912f5d4bd646a0dbd
+D:postgresql=14.0-r4 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libpq.so.5 so:libuuid.so.1 so:libxml2.so.2 so:libz.so.1
+p:cmd:oid2name=14.0-r4 cmd:vacuumlo=14.0-r4
+
 C:Q1rSA2Fq+gjiIj7Vt0BhDbM5ZrFbE=
 P:cups-doc
 V:2.3.3-r4
@@ -45198,21 +45274,6 @@ t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:so:libc.musl-armhf.so.1
 i:lua5.1 lua-rex-posix=2.9.1-r1
-
-C:Q13lgHjrQk9OyQtLAfq9rjABprHXk=
-P:apr-util-dbd_sqlite3
-V:1.6.1-r9
-A:armhf
-S:6309
-I:32768
-T:The Apache Portable Runtime Utility Library - SQLite3 driver
-U:http://apr.apache.org/
-L:Apache-2.0
-o:apr-util
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1631363274
-c:25ec54cf8154961f7578a187433b83f8a3872515
-D:so:libc.musl-armhf.so.1 so:libsqlite3.so.0
 
 C:Q138oor4qC6KIFMLEIZOUfbPdN7HQ=
 P:squid-lang-pl
@@ -50573,22 +50634,6 @@ c:670bf5a8cc5bc605eede8ca2fd55b50a5c9f8660
 D:openssh-client perl-io-tty so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libncursesw.so.6 so:libprotobuf.so.29 so:libstdc++.so.6 so:libz.so.1
 p:cmd:mosh-client=1.3.2-r22
 
-C:Q1NDgqAJGrvcxk5o5sG1d1QgSNMqM=
-P:postgresql-libs
-V:14.0-r3
-A:armhf
-S:87686
-I:200704
-T:A sophisticated object-relational DBMS (libraries)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1634564284
-c:4be185db91194cfd3fbf6a94a30745e7ae47764f
-D:so:libc.musl-armhf.so.1 so:libpq.so.5
-p:so:libecpg.so.6=6.14 so:libecpg_compat.so.3=3.14 so:libpgtypes.so.3=3.14
-
 C:Q16SCY1XWMyPqq2Xh81KsWICzVaKo=
 P:libtool
 V:2.4.6-r7
@@ -51223,6 +51268,22 @@ c:63732ef8ab13eb789eb6ce768b0eba8d3fd3182c
 D:logrotate
 i:squid=5.2-r0 lang-ro
 
+C:Q1uk6JTPksH3J1KFYQDUF1PeV7TtA=
+P:postgresql-plperl-contrib
+V:14.0-r4
+A:armhf
+S:15834
+I:86016
+T:PL/Perl extension modules distributed with PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1635117238
+c:851c34539078ca0608fd2aa912f5d4bd646a0dbd
+D:postgresql-plperl=14.0-r4 so:libc.musl-armhf.so.1 so:libperl.so
+i:postgresql-plperl=14.0-r4 postgresql-contrib=14.0-r4
+
 C:Q1C7tv73knzTdhHHltIArwYeS+U8c=
 P:xkbcomp
 V:1.4.5-r0
@@ -51299,22 +51360,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1631354021
 c:3f7d60891e3b5eba1eeaa3c60fb3fe990af8574e
 D:/bin/sh
-
-C:Q1VKuJLURlN84M8XvPQNlWZW3Dezo=
-P:apr-util-dev
-V:1.6.1-r9
-A:armhf
-S:182862
-I:733184
-T:The Apache Portable Runtime Utility Library (development files)
-U:http://apr.apache.org/
-L:Apache-2.0
-o:apr-util
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1631363274
-c:25ec54cf8154961f7578a187433b83f8a3872515
-D:expat-dev openldap-dev sqlite-dev postgresql-dev openssl1.1-compat-dev mariadb-dev apr-util=1.6.1-r9 pc:apr-1 pkgconfig
-p:pc:apr-util-1=1.6.1 cmd:apu-1-config=1.6.1-r9
 
 C:Q11p6J9bmhtoktF7lDTHv+q6nMs+c=
 P:htop
@@ -51977,6 +52022,22 @@ m:Drew DeVault <sir@cmpwn.com>
 t:1631403774
 c:d8a5ac7439a1911967a21a99c88b0e6552c6dc57
 
+C:Q1w+9eIuHtCO3qVX0u2VbyPXq6itE=
+P:ncurses-dev
+V:6.2_p20211017-r0
+A:armhf
+S:50152
+I:319488
+T:Console display library (development files)
+U:https://invisible-island.net/ncurses/
+L:MIT
+o:ncurses
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1635117995
+c:69ef197ad93e104b25de6e2a89ca52324c2bc719
+D:ncurses-libs=6.2_p20211017-r0 pkgconfig
+p:pc:form=6.2.20211017 pc:formw=6.2.20211017 pc:menu=6.2.20211017 pc:menuw=6.2.20211017 pc:ncurses=6.2.20211017 pc:ncursesw=6.2.20211017 pc:panel=6.2.20211017 pc:panelw=6.2.20211017 cmd:ncursesw6-config=6.2_p20211017-r0
+
 C:Q1FHnAyNJuveW/jafRT3Ck35/IQ6A=
 P:ifupdown-ng-batman
 V:0.11.3-r0
@@ -52210,21 +52271,6 @@ t:1612009770
 c:5b6fa05ad0828932f8ea6a003ea0c3d5fa7abc49
 i:docs sshpass=1.09-r0
 
-C:Q16r8+fKzGsAHGFs3ULIr5SGAGlZY=
-P:postgresql-doc
-V:14.0-r3
-A:armhf
-S:3617764
-I:19427328
-T:A sophisticated object-relational DBMS (documentation)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1634564284
-c:4be185db91194cfd3fbf6a94a30745e7ae47764f
-i:docs postgresql=14.0-r3
-
 C:Q10sO+lTVbQ7eodX2egssQtiK3znA=
 P:libxcb-doc
 V:1.14-r2
@@ -52254,6 +52300,21 @@ m:Nathan Angelacos <nangel@alpinelinux.org>
 t:1631356783
 c:c86446c44633b2b73665056172bbd258afce6946
 D:kamailio so:libc.musl-armhf.so.1 so:libsrdb1.so.1 so:libxml2.so.2
+
+C:Q1xbYc0hXT7JgI5SbbMECXDcJiQUY=
+P:apr-util-dbd_pgsql
+V:1.6.1-r10
+A:armhf
+S:7997
+I:32768
+T:The Apache Portable Runtime Utility Library - PostgreSQL driver
+U:http://apr.apache.org/
+L:Apache-2.0
+o:apr-util
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1635117238
+c:2cf3fe063b1b9e308372af7e2c2348e9e494a135
+D:so:libc.musl-armhf.so.1 so:libpq.so.5
 
 C:Q1+PTZeazA3+L39DZJQ6ruwsxBYtM=
 P:libspf2
@@ -52666,22 +52727,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1617646683
 c:084c454e8b909b443ba56e183c6037faebbaa72c
 D:uwsgi so:libc.musl-armhf.so.1
-
-C:Q1kyOVZz3awBvIMs9a1g1IOSxErtw=
-P:libpq
-V:14.0-r3
-A:armhf
-S:123631
-I:282624
-T:PostgreSQL libraries
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1634564284
-c:4be185db91194cfd3fbf6a94a30745e7ae47764f
-D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libldap_r-2.4.so.2 so:libssl.so.1.1
-p:so:libpq.so.5=5.14
 
 C:Q1hNNlqxjCsaMPso+MnY/56ZNdKY8=
 P:dmraid-doc
@@ -54796,6 +54841,22 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:encodings font-alias mkfontscale mkfontdir fontconfig
 
+C:Q1/hqz5j/ftO937yelR666v8/IBMA=
+P:libpq
+V:14.0-r4
+A:armhf
+S:122004
+I:282624
+T:PostgreSQL client library
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1635117238
+c:851c34539078ca0608fd2aa912f5d4bd646a0dbd
+D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
+p:so:libpq.so.5=5.14
+
 C:Q1QBMGu2Mp6EuRuT6OFOl/YnwD5Y0=
 P:check-doc
 V:0.15.2-r0
@@ -55902,6 +55963,21 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1632475386
 c:ebb9e5491bc3a877bf9c94d5d181e6f0707ea2bd
 i:docs cifs-utils=6.14-r0
+
+C:Q16ZRlyUvp+JGMFlZoi5mIRX9Now0=
+P:postgresql-plperl
+V:14.0-r4
+A:armhf
+S:36555
+I:122880
+T:PL/Perl procedural language for PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1635117238
+c:851c34539078ca0608fd2aa912f5d4bd646a0dbd
+D:postgresql=14.0-r4 so:libc.musl-armhf.so.1 so:libperl.so
 
 C:Q1GjdQRDMn/UjCVi6pAQ3Mn+bzpIg=
 P:perl-error
@@ -58381,6 +58457,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1631548101
 c:fd79dc08fe3fb5f0c0a491bea711c1821980893d
 i:docs libarchive=3.5.2-r2
+
+C:Q1z8eisMTnQ2aMs49/EPOKLWB7edw=
+P:libecpg
+V:14.0-r4
+A:armhf
+S:75684
+I:167936
+T:ECPG - Embedded SQL in C
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1635117238
+c:851c34539078ca0608fd2aa912f5d4bd646a0dbd
+D:so:libc.musl-armhf.so.1 so:libpq.so.5
+p:so:libecpg.so.6=6.14 so:libpgtypes.so.3=3.14
 
 C:Q1r5PAUM/y8AqizU2lcvwn+dlcfNg=
 P:lua5.4-sql-odbc
@@ -61662,22 +61754,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1625524980
 c:361b9aa1c47d56d234cc2f724558ac9492dd6fcf
 
-C:Q1isS7/r76j7seryGeS2ZtiiN0T3I=
-P:postgresql-client
-V:14.0-r3
-A:armhf
-S:887226
-I:2076672
-T:PostgreSQL client
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1634564284
-c:4be185db91194cfd3fbf6a94a30745e7ae47764f
-D:so:libc.musl-armhf.so.1 so:libpq.so.5 so:libreadline.so.8 so:libz.so.1
-p:cmd:clusterdb=14.0-r3 cmd:createdb=14.0-r3 cmd:createuser=14.0-r3 cmd:dropdb=14.0-r3 cmd:dropuser=14.0-r3 cmd:pg_basebackup=14.0-r3 cmd:pg_dump=14.0-r3 cmd:pg_dumpall=14.0-r3 cmd:pg_isready=14.0-r3 cmd:pg_receivewal=14.0-r3 cmd:pg_recvlogical=14.0-r3 cmd:pg_restore=14.0-r3 cmd:psql=14.0-r3 cmd:reindexdb=14.0-r3 cmd:vacuumdb=14.0-r3
-
 C:Q11dtEnI59RAo3rJGWwj6yAIyWpxU=
 P:yajl
 V:2.1.0-r2
@@ -62491,6 +62567,22 @@ t:1626475195
 c:d823991d6b63a7b6d48d470a693fe7637f46e441
 D:so:libc.musl-armhf.so.1 so:libdbus-1.so.3 so:libintl.so.8
 p:so:libavahi-client.so.3=3.2.9 so:libavahi-common.so.3=3.5.4
+
+C:Q19MkUtTwSWfHsYXXbh4ZnV8bGg4I=
+P:libecpg-dev
+V:14.0-r4
+A:armhf
+S:287560
+I:1245184
+T:ECPG - Embedded SQL in C (development files)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1635117238
+c:851c34539078ca0608fd2aa912f5d4bd646a0dbd
+D:libecpg=14.0-r4 pkgconfig so:libc.musl-armhf.so.1
+p:pc:libecpg=14.0 pc:libpgtypes=14.0 cmd:ecpg=14.0-r4
 
 C:Q1pgqRKlEeAJE4yP1Pb4vjGLRZfSw=
 P:iptables-openrc
@@ -64367,6 +64459,21 @@ c:3b7df8e1ec95e39428c838a7ac6468c5d0295a44
 D:so:libc.musl-armhf.so.1
 p:cmd:unzstd=1.5.0-r0 cmd:zstd=1.5.0-r0 cmd:zstdcat=1.5.0-r0 cmd:zstdgrep=1.5.0-r0 cmd:zstdless=1.5.0-r0 cmd:zstdmt=1.5.0-r0
 
+C:Q1navxpftYBMntKNTB1FGqtUGEKCM=
+P:postgresql-plpython3
+V:14.0-r4
+A:armhf
+S:44943
+I:143360
+T:PL/Python3 procedural language for PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1635117238
+c:851c34539078ca0608fd2aa912f5d4bd646a0dbd
+D:postgresql=14.0-r4 python3 so:libc.musl-armhf.so.1 so:libpython3.9.so.1.0
+
 C:Q13cEz+VpL3DasalWNxtpPEGrPCKc=
 P:po4a
 V:0.64-r0
@@ -64917,6 +65024,21 @@ o:expat
 m:Carlo Landmeter <clandmeter@alpinelinux.org>
 t:1622802572
 c:4cbbe1c47b1e5b9d04d552cb1f8fb09c7df257de
+
+C:Q16WTRx5Ac+ekx8Lr1tURtc1Ea3IM=
+P:postgresql-jit
+V:14.0-r4
+A:armhf
+S:11633870
+I:21716992
+T:Just-in-time compilation support for PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1635117238
+c:851c34539078ca0608fd2aa912f5d4bd646a0dbd
+D:postgresql=14.0-r4 so:libLLVM-12.so so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 
 C:Q1ypVpfhcwIoEArl8RCGXQ7piiP6A=
 P:fish
@@ -67295,6 +67417,21 @@ t:1621087673
 c:ec4e35bcdcf38829d2a36ff4d7cd4351ebb67d1c
 D:acf-core squid
 
+C:Q10ybTrKl5CvKOFfXAatzv/xeWKJs=
+P:ncurses-doc
+V:6.2_p20211017-r0
+A:armhf
+S:472379
+I:761856
+T:Console display library (documentation)
+U:https://invisible-island.net/ncurses/
+L:MIT
+o:ncurses
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1635117995
+c:69ef197ad93e104b25de6e2a89ca52324c2bc719
+i:docs ncurses=6.2_p20211017-r0
+
 C:Q1hBGesKFyQzaR0+PXcA/PXPorkjA=
 P:xl2tpd
 V:1.3.16-r0
@@ -67694,6 +67831,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1611212030
 c:db22c19760d13306605463f8b056bab714f4e3b5
 i:shared-mime-info=2.1-r0 lang
+
+C:Q1nCIv7TLZZxKADXnzb9ETFS+qEoA=
+P:apr-util-ldap
+V:1.6.1-r10
+A:armhf
+S:4998
+I:28672
+T:The Apache Portable Runtime Utility Library - LDAP driver
+U:http://apr.apache.org/
+L:Apache-2.0
+o:apr-util
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1635117238
+c:2cf3fe063b1b9e308372af7e2c2348e9e494a135
+D:so:libc.musl-armhf.so.1 so:libldap-2.4.so.2
 
 C:Q1jTheY9Og+llsFV0xKiSzTczayfU=
 P:font-bh-type1
@@ -68902,22 +69054,6 @@ t:1634870032
 c:8d914822d65c66e2c9b22d120568b7f58bb5160e
 D:so:libc.musl-armhf.so.1 so:libdevmapper.so.1.02
 p:so:libdevmapper-event.so.1.02=1.02
-
-C:Q1qzdtUjv1D2cYLeOnGOwb3a1kZmo=
-P:apr-util
-V:1.6.1-r9
-A:armhf
-S:78522
-I:180224
-T:The Apache Portable Runtime Utility Library
-U:http://apr.apache.org/
-L:Apache-2.0
-o:apr-util
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1631363274
-c:25ec54cf8154961f7578a187433b83f8a3872515
-D:so:libapr-1.so.0 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libexpat.so.1
-p:so:libaprutil-1.so.0=0.6.1
 
 C:Q1LAEblxEQ63YMx4DEgnBWfRMcmQc=
 P:lksctp-tools-static
@@ -71172,21 +71308,21 @@ c:387f15ef4ad58136f82973ff1634e57549685988
 D:eudev-dev pcsc-lite-libs=1.9.4-r0 pcsc-lite-spy-libs=1.9.4-r0 pkgconfig
 p:pc:libpcsclite=1.9.4
 
-C:Q1zWX5lbPyHjhW+Tps+6sRMTPIjrs=
+C:Q1b4nfAEJBooE7ZlFStKTw65vAF0o=
 P:postgresql
-V:14.0-r3
+V:14.0-r4
 A:armhf
-S:17045439
-I:34938880
+S:5413025
+I:13242368
 T:A sophisticated object-relational DBMS
 U:https://www.postgresql.org/
 L:PostgreSQL
 o:postgresql
 m:Jakub Jirutka <jakub@jirutka.cz>
-t:1634564284
-c:4be185db91194cfd3fbf6a94a30745e7ae47764f
-D:postgresql-client tzdata /bin/sh so:libLLVM-12.so so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libicui18n.so.69 so:libicuuc.so.69 so:libldap-2.4.so.2 so:libpq.so.5 so:libssl.so.1.1 so:libstdc++.so.6 so:libxml2.so.2
-p:cmd:initdb=14.0-r3 cmd:pg_amcheck=14.0-r3 cmd:pg_archivecleanup=14.0-r3 cmd:pg_checksums=14.0-r3 cmd:pg_controldata=14.0-r3 cmd:pg_ctl=14.0-r3 cmd:pg_resetwal=14.0-r3 cmd:pg_rewind=14.0-r3 cmd:pg_test_fsync=14.0-r3 cmd:pg_test_timing=14.0-r3 cmd:pg_upgrade=14.0-r3 cmd:pg_verifybackup=14.0-r3 cmd:pg_waldump=14.0-r3 cmd:pgbench=14.0-r3 cmd:postgres=14.0-r3 cmd:postmaster=14.0-r3
+t:1635117238
+c:851c34539078ca0608fd2aa912f5d4bd646a0dbd
+D:postgresql-client tzdata /bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libicui18n.so.69 so:libicuuc.so.69 so:libldap-2.4.so.2 so:libpq.so.5 so:libssl.so.1.1 so:libxml2.so.2
+p:cmd:initdb=14.0-r4 cmd:pg_amcheck=14.0-r4 cmd:pg_archivecleanup=14.0-r4 cmd:pg_checksums=14.0-r4 cmd:pg_controldata=14.0-r4 cmd:pg_ctl=14.0-r4 cmd:pg_resetwal=14.0-r4 cmd:pg_rewind=14.0-r4 cmd:pg_test_fsync=14.0-r4 cmd:pg_test_timing=14.0-r4 cmd:pg_upgrade=14.0-r4 cmd:pg_verifybackup=14.0-r4 cmd:pg_waldump=14.0-r4 cmd:pgbench=14.0-r4 cmd:postgres=14.0-r4 cmd:postmaster=14.0-r4
 
 C:Q1NOHXQG5NSbMtcJIkIO64HbzM8bM=
 P:openldap-overlay-accesslog
@@ -72363,6 +72499,22 @@ t:1633453111
 c:63732ef8ab13eb789eb6ce768b0eba8d3fd3182c
 D:logrotate
 i:squid=5.2-r0 lang-af
+
+C:Q19CqrWTbBmDfFt5Rlhh2VPPr7E30=
+P:postgresql-client
+V:14.0-r4
+A:armhf
+S:887213
+I:2076672
+T:PostgreSQL client
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1635117238
+c:851c34539078ca0608fd2aa912f5d4bd646a0dbd
+D:so:libc.musl-armhf.so.1 so:libpq.so.5 so:libreadline.so.8 so:libz.so.1
+p:cmd:clusterdb=14.0-r4 cmd:createdb=14.0-r4 cmd:createuser=14.0-r4 cmd:dropdb=14.0-r4 cmd:dropuser=14.0-r4 cmd:pg_basebackup=14.0-r4 cmd:pg_dump=14.0-r4 cmd:pg_dumpall=14.0-r4 cmd:pg_isready=14.0-r4 cmd:pg_receivewal=14.0-r4 cmd:pg_recvlogical=14.0-r4 cmd:pg_restore=14.0-r4 cmd:psql=14.0-r4 cmd:reindexdb=14.0-r4 cmd:vacuumdb=14.0-r4
 
 C:Q1xr4DArM/CfOExfukv+D6DWEkP6k=
 P:libxml2-doc
