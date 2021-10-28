@@ -116166,6 +116166,21 @@
         "so:libxcvt.so.0=0.1.1",
         "cmd:cvt=0.1.1-r0"
       ]
+    },
+    "postgresql-timescaledb": {
+      "origin": "postgresql-timescaledb",
+      "versions": {
+        "2.5.0-r0": 1635420489
+      },
+      "dependencies": [
+        "/bin/sh",
+        "so:libc.musl-armhf.so.1",
+        "so:libcrypto.so.1.1",
+        "so:libssl.so.1.1"
+      ],
+      "provides": [
+        "timescaledb=2.5.0-r0"
+      ]
     }
   },
   "provide": {
@@ -118057,6 +118072,10 @@
       "kea-utils": {
         "package": "kea-common",
         "version": "2.0.0-r0"
+      },
+      "timescaledb": {
+        "package": "postgresql-timescaledb",
+        "version": "2.5.0-r0"
       }
     },
     "so": {

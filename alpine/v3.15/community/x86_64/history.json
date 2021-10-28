@@ -146765,6 +146765,21 @@
       "versions": {
         "0.1.1-r0": 1635417796
       }
+    },
+    "postgresql-timescaledb": {
+      "origin": "postgresql-timescaledb",
+      "versions": {
+        "2.5.0-r0": 1635420489
+      },
+      "dependencies": [
+        "/bin/sh",
+        "so:libc.musl-x86_64.so.1",
+        "so:libcrypto.so.1.1",
+        "so:libssl.so.1.1"
+      ],
+      "provides": [
+        "timescaledb=2.5.0-r0"
+      ]
     }
   },
   "provide": {
@@ -148668,6 +148683,10 @@
       "python-tests": {
         "package": "python2-tests",
         "version": "2.7.18-r4"
+      },
+      "timescaledb": {
+        "package": "postgresql-timescaledb",
+        "version": "2.5.0-r0"
       }
     },
     "so": {
