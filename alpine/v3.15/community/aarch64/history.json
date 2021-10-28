@@ -20101,12 +20101,19 @@
     "dtools": {
       "origin": "dtools",
       "versions": {
-        "2.096.1-r0": 1619666262
+        "2.096.1-r0": 1619666262,
+        "2.098.0-r0": 1635407495
       },
       "dependencies": [
-        "dtools-ddemangle",
-        "dtools-dustmite",
-        "dtools-rdmd"
+        "so:libc.musl-aarch64.so.1",
+        "so:libdruntime-ldc-shared.so.98",
+        "so:libphobos2-ldc-shared.so.98",
+        "so:libunwind.so.1"
+      ],
+      "provides": [
+        "cmd:ddemangle=2.098.0-r0",
+        "cmd:dustmite=2.098.0-r0",
+        "cmd:rdmd=2.098.0-r0"
       ]
     },
     "py3-pynamecheap": {
