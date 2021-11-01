@@ -104040,6 +104040,82 @@
       "dependencies": [
         "perl"
       ]
+    },
+    "chafa": {
+      "origin": "chafa",
+      "versions": {
+        "1.8.0-r0": 1635733972
+      },
+      "dependencies": [
+        "so:libMagickWand-7.Q16HDRI.so.10",
+        "so:libc.musl-s390x.so.1",
+        "so:libchafa.so.0",
+        "so:libfreetype.so.6",
+        "so:libglib-2.0.so.0"
+      ],
+      "provides": [
+        "cmd:chafa=1.8.0-r0"
+      ]
+    },
+    "chafa-dev": {
+      "origin": "chafa",
+      "versions": {
+        "1.8.0-r0": 1635733972
+      },
+      "dependencies": [
+        "chafa-libs=1.8.0-r0",
+        "pc:glib-2.0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:chafa=1.8.0"
+      ]
+    },
+    "xfce4-weather-plugin": {
+      "origin": "xfce4-weather-plugin",
+      "versions": {
+        "0.11.0-r0": 1635733933
+      },
+      "dependencies": [
+        "so:libc.musl-s390x.so.1",
+        "so:libgdk-3.so.0",
+        "so:libgdk_pixbuf-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libgtk-3.so.0",
+        "so:libpango-1.0.so.0",
+        "so:libsoup-2.4.so.1",
+        "so:libxfce4panel-2.0.so.4",
+        "so:libxfce4ui-2.so.0",
+        "so:libxfce4util.so.7",
+        "so:libxfconf-0.so.3",
+        "so:libxml2.so.2"
+      ]
+    },
+    "xfce4-weather-plugin-lang": {
+      "origin": "xfce4-weather-plugin",
+      "versions": {
+        "0.11.0-r0": 1635733933
+      }
+    },
+    "chafa-libs": {
+      "origin": "chafa",
+      "versions": {
+        "1.8.0-r0": 1635733972
+      },
+      "dependencies": [
+        "so:libc.musl-s390x.so.1",
+        "so:libglib-2.0.so.0"
+      ],
+      "provides": [
+        "so:libchafa.so.0=0.6.0"
+      ]
+    },
+    "chafa-doc": {
+      "origin": "chafa",
+      "versions": {
+        "1.8.0-r0": 1635733972
+      }
     }
   },
   "provide": {
@@ -115321,6 +115397,10 @@
       "openjdk15:libsplashscreen.so": {
         "package": "openjdk15-jre",
         "version": "0"
+      },
+      "libchafa.so.0": {
+        "package": "chafa-libs",
+        "version": "0.6.0"
       }
     }
   }
