@@ -3424,7 +3424,8 @@
       "origin": "py3-aiohttp",
       "versions": {
         "3.7.4-r2": 1617646698,
-        "3.8.0-r0": 1635770862
+        "3.8.0-r0": 1635770862,
+        "3.8.0-r1": 1635861072
       },
       "dependencies": [
         "python3",
@@ -3435,11 +3436,12 @@
         "py3-idna-ssl",
         "py3-attrs",
         "py3-typing-extensions",
+        "py3-aiosignal",
         "so:libc.musl-aarch64.so.1"
       ],
       "provides": [
-        "py3.9:aiohttp=3.8.0-r0",
-        "py3.9:examples=3.8.0-r0"
+        "py3.9:aiohttp=3.8.0-r1",
+        "py3.9:examples=3.8.0-r1"
       ]
     },
     "py3-configargparse": {
@@ -23975,7 +23977,8 @@
       "origin": "py3-aiohttp",
       "versions": {
         "3.7.4-r2": 1617646698,
-        "3.8.0-r0": 1635770862
+        "3.8.0-r0": 1635770862,
+        "3.8.0-r1": 1635861072
       }
     },
     "xcb-util-renderutil-dev": {
@@ -31416,13 +31419,15 @@
     "py3-async-timeout": {
       "origin": "py3-async-timeout",
       "versions": {
-        "3.0.1-r4": 1617646697
+        "3.0.1-r4": 1617646697,
+        "4.0.0-r0": 1635861072
       },
       "dependencies": [
-        "python3"
+        "python3",
+        "py3-typing-extensions"
       ],
       "provides": [
-        "py3.9:async_timeout=3.0.1-r4"
+        "py3.9:async_timeout=4.0.0-r0"
       ]
     },
     "nvme-cli-zsh-completion": {
@@ -81359,32 +81364,34 @@
     "nototools": {
       "origin": "nototools",
       "versions": {
-        "0.2.13-r1": 1617646714
+        "0.2.13-r1": 1617646714,
+        "0.2.16-r0": 1635858330
       },
       "dependencies": [
-        "python3"
+        "python3",
+        "py3-fonttools"
       ],
       "provides": [
-        "cmd:add_vs_cmap.py=0.2.13-r1",
-        "cmd:autofix_for_release.py=0.2.13-r1",
-        "cmd:create_image.py=0.2.13-r1",
-        "cmd:decompose_ttc.py=0.2.13-r1",
-        "cmd:drop_hints.py=0.2.13-r1",
-        "cmd:dump_otl.py=0.2.13-r1",
-        "cmd:fix_khmer_and_lao_coverage.py=0.2.13-r1",
-        "cmd:fix_noto_cjk_thin.py=0.2.13-r1",
-        "cmd:generate_sample_text.py=0.2.13-r1",
-        "cmd:generate_website_2_data.py=0.2.13-r1",
-        "cmd:merge_fonts.py=0.2.13-r1",
-        "cmd:merge_noto.py=0.2.13-r1",
-        "cmd:noto_lint.py=0.2.13-r1",
-        "cmd:notocoverage=0.2.13-r1",
-        "cmd:notodiff=0.2.13-r1",
-        "cmd:scale.py=0.2.13-r1",
-        "cmd:subset.py=0.2.13-r1",
-        "cmd:subset_symbols.py=0.2.13-r1",
-        "cmd:test_vertical_extents.py=0.2.13-r1",
-        "py3.9:nototools=0.2.13-r1"
+        "cmd:add_vs_cmap.py=0.2.16-r0",
+        "cmd:autofix_for_release.py=0.2.16-r0",
+        "cmd:create_image.py=0.2.16-r0",
+        "cmd:decompose_ttc.py=0.2.16-r0",
+        "cmd:drop_hints.py=0.2.16-r0",
+        "cmd:dump_otl.py=0.2.16-r0",
+        "cmd:fix_khmer_and_lao_coverage.py=0.2.16-r0",
+        "cmd:fix_noto_cjk_thin.py=0.2.16-r0",
+        "cmd:generate_sample_text.py=0.2.16-r0",
+        "cmd:generate_website_2_data.py=0.2.16-r0",
+        "cmd:merge_fonts.py=0.2.16-r0",
+        "cmd:merge_noto.py=0.2.16-r0",
+        "cmd:noto_lint.py=0.2.16-r0",
+        "cmd:notocoverage=0.2.16-r0",
+        "cmd:notodiff=0.2.16-r0",
+        "cmd:scale.py=0.2.16-r0",
+        "cmd:subset.py=0.2.16-r0",
+        "cmd:subset_symbols.py=0.2.16-r0",
+        "cmd:test_vertical_extents.py=0.2.16-r0",
+        "py3.9:nototools=0.2.16-r0"
       ]
     },
     "sdl2_mixer-dev": {
@@ -146736,6 +146743,42 @@
       ],
       "provides": [
         "py3-jaraco-context=4.1.1-r0"
+      ]
+    },
+    "php8-pecl-amqp": {
+      "origin": "php8-pecl-amqp",
+      "versions": {
+        "1.11.0_rc1-r0": 1635861335
+      },
+      "dependencies": [
+        "php8-common",
+        "so:libc.musl-aarch64.so.1",
+        "so:librabbitmq.so.4"
+      ]
+    },
+    "py3-aiosignal": {
+      "origin": "py3-aiosignal",
+      "versions": {
+        "1.2.0-r0": 1635861072
+      },
+      "dependencies": [
+        "python3",
+        "py3-frozenlist"
+      ],
+      "provides": [
+        "py3.9:aiosignal=1.2.0-r0"
+      ]
+    },
+    "py3-frozenlist": {
+      "origin": "py3-frozenlist",
+      "versions": {
+        "1.2.0-r0": 1635861072
+      },
+      "dependencies": [
+        "so:libc.musl-aarch64.so.1"
+      ],
+      "provides": [
+        "py3.9:frozenlist=1.2.0-r0"
       ]
     }
   },
