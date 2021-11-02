@@ -15118,16 +15118,17 @@
     "mosquitto-dev": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.12-r2": 1634388423
+        "2.0.12-r2": 1634388423,
+        "2.0.13-r0": 1635867064
       },
       "dependencies": [
-        "mosquitto-libs++=2.0.12-r2",
-        "mosquitto-libs=2.0.12-r2",
+        "mosquitto-libs++=2.0.13-r0",
+        "mosquitto-libs=2.0.13-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libmosquitto=2.0.12",
-        "pc:libmosquittopp=2.0.12"
+        "pc:libmosquitto=2.0.13",
+        "pc:libmosquittopp=2.0.13"
       ]
     },
     "pjproject-dev": {
@@ -21195,7 +21196,8 @@
     "mosquitto-libs": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.12-r2": 1634388423
+        "2.0.12-r2": 1634388423,
+        "2.0.13-r0": 1635867064
       },
       "dependencies": [
         "so:libc.musl-armv7.so.1",
@@ -28234,19 +28236,24 @@
     "mosquitto": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.12-r2": 1634388423
+        "2.0.12-r2": 1634388423,
+        "2.0.13-r0": 1635867064
       },
       "dependencies": [
         "/bin/sh",
         "so:libc.musl-armv7.so.1",
+        "so:libcjson.so.1",
         "so:libcrypto.so.1.1",
         "so:libmosquitto.so.1",
-        "so:libssl.so.1.1"
+        "so:libssl.so.1.1",
+        "so:libwebsockets.so.19"
       ],
       "provides": [
-        "cmd:mosquitto=2.0.12-r2",
-        "cmd:mosquitto_passwd=2.0.12-r2",
-        "cmd:mosquitto_rr=2.0.12-r2"
+        "so:mosquitto_dynamic_security.so=0",
+        "cmd:mosquitto=2.0.13-r0",
+        "cmd:mosquitto_ctrl=2.0.13-r0",
+        "cmd:mosquitto_passwd=2.0.13-r0",
+        "cmd:mosquitto_rr=2.0.13-r0"
       ]
     },
     "perl-sub-identify-doc": {
@@ -34359,15 +34366,17 @@
     "mosquitto-clients": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.12-r2": 1634388423
+        "2.0.12-r2": 1634388423,
+        "2.0.13-r0": 1635867064
       },
       "dependencies": [
         "so:libc.musl-armv7.so.1",
+        "so:libcjson.so.1",
         "so:libmosquitto.so.1"
       ],
       "provides": [
-        "cmd:mosquitto_pub=2.0.12-r2",
-        "cmd:mosquitto_sub=2.0.12-r2"
+        "cmd:mosquitto_pub=2.0.13-r0",
+        "cmd:mosquitto_sub=2.0.13-r0"
       ]
     },
     "perl-data-uuid": {
@@ -39751,7 +39760,8 @@
     "mosquitto-doc": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.12-r2": 1634388423
+        "2.0.12-r2": 1634388423,
+        "2.0.13-r0": 1635867064
       }
     },
     "perl-specio-doc": {
@@ -42418,7 +42428,8 @@
     "mosquitto-libs++": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.12-r2": 1634388423
+        "2.0.12-r2": 1634388423,
+        "2.0.13-r0": 1635867064
       },
       "dependencies": [
         "so:libgcc_s.so.1",
@@ -48221,7 +48232,8 @@
     "mosquitto-dbg": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.12-r2": 1634388423
+        "2.0.12-r2": 1634388423,
+        "2.0.13-r0": 1635867064
       }
     },
     "shorewall-doc": {
@@ -50832,7 +50844,8 @@
     "mosquitto-openrc": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.12-r2": 1634388423
+        "2.0.12-r2": 1634388423,
+        "2.0.13-r0": 1635867064
       }
     },
     "perl-test-pod-coverage": {
@@ -62909,6 +62922,10 @@
       "libruby.so.3.0": {
         "package": "ruby-libs",
         "version": "3.0.2"
+      },
+      "mosquitto_dynamic_security.so": {
+        "package": "mosquitto",
+        "version": "0"
       }
     },
     "package": {
