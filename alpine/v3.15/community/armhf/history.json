@@ -109736,7 +109736,8 @@
     "fzf-bash-completion": {
       "origin": "fzf",
       "versions": {
-        "0.27.3-r0": 1634326704
+        "0.27.3-r0": 1634326704,
+        "0.28.0-r0": 1635898791
       }
     },
     "collectd-sysevent": {
@@ -110569,7 +110570,8 @@
     "fzf-neovim": {
       "origin": "fzf",
       "versions": {
-        "0.27.3-r0": 1634326704
+        "0.27.3-r0": 1634326704,
+        "0.28.0-r0": 1635898791
       }
     },
     "glab-zsh-completion": {
@@ -110840,7 +110842,8 @@
     "fzf-zsh-completion": {
       "origin": "fzf",
       "versions": {
-        "0.27.3-r0": 1634326704
+        "0.27.3-r0": 1634326704,
+        "0.28.0-r0": 1635898791
       }
     },
     "dnscrypt-proxy": {
@@ -113996,7 +113999,8 @@
     "fzf-vim": {
       "origin": "fzf",
       "versions": {
-        "0.27.3-r0": 1634326704
+        "0.27.3-r0": 1634326704,
+        "0.28.0-r0": 1635898791
       },
       "dependencies": [
         "/bin/sh"
@@ -114391,10 +114395,11 @@
     "fzf": {
       "origin": "fzf",
       "versions": {
-        "0.27.3-r0": 1634326704
+        "0.27.3-r0": 1634326704,
+        "0.28.0-r0": 1635898791
       },
       "provides": [
-        "cmd:fzf=0.27.3-r0"
+        "cmd:fzf=0.28.0-r0"
       ]
     },
     "ceph-fuse": {
@@ -115430,14 +115435,15 @@
     "fzf-tmux": {
       "origin": "fzf",
       "versions": {
-        "0.27.3-r0": 1634326704
+        "0.27.3-r0": 1634326704,
+        "0.28.0-r0": 1635898791
       },
       "dependencies": [
         "tmux",
         "bash"
       ],
       "provides": [
-        "cmd:fzf-tmux=0.27.3-r0"
+        "cmd:fzf-tmux=0.28.0-r0"
       ]
     },
     "caddy": {
@@ -115724,7 +115730,8 @@
     "fzf-doc": {
       "origin": "fzf",
       "versions": {
-        "0.27.3-r0": 1634326704
+        "0.27.3-r0": 1634326704,
+        "0.28.0-r0": 1635898791
       }
     },
     "vouch-proxy-openrc": {
@@ -117685,6 +117692,46 @@
       "provides": [
         "pc:pdal=2.3.0",
         "cmd:pdal-config=2.3.0-r1"
+      ]
+    },
+    "libcoap-doc": {
+      "origin": "libcoap",
+      "versions": {
+        "4.3.0-r1": 1636014645
+      }
+    },
+    "libcoap-dev": {
+      "origin": "libcoap",
+      "versions": {
+        "4.3.0-r1": 1636014645
+      },
+      "dependencies": [
+        "libcoap=4.3.0-r1",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:libcoap-3-openssl=4.3.0",
+        "pc:libcoap-3=4.3.0"
+      ]
+    },
+    "libcoap": {
+      "origin": "libcoap",
+      "versions": {
+        "4.3.0-r1": 1636014645
+      },
+      "dependencies": [
+        "so:libc.musl-armhf.so.1",
+        "so:libcrypto.so.1.1",
+        "so:libssl.so.1.1"
+      ],
+      "provides": [
+        "so:libcoap-3-openssl.so.3=3.0.0",
+        "cmd:coap-client-openssl=4.3.0-r1",
+        "cmd:coap-client=4.3.0-r1",
+        "cmd:coap-rd-openssl=4.3.0-r1",
+        "cmd:coap-rd=4.3.0-r1",
+        "cmd:coap-server-openssl=4.3.0-r1",
+        "cmd:coap-server=4.3.0-r1"
       ]
     }
   },
@@ -128603,6 +128650,10 @@
       "libpdal_util.so.13": {
         "package": "pdal",
         "version": "13.0.0"
+      },
+      "libcoap-3-openssl.so.3": {
+        "package": "libcoap",
+        "version": "3.0.0"
       }
     }
   }
