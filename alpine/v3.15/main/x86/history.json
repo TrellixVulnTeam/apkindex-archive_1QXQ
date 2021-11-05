@@ -1365,10 +1365,12 @@
       "versions": {
         "0.44.6-r1": 1634192667,
         "0.44.7-r0": 1634870866,
-        "0.44.7-r1": 1635851892
+        "0.44.7-r1": 1635851892,
+        "0.44.7-r2": 1636111015
       },
       "dependencies": [
-        "ifupdown-any"
+        "ifupdown-any",
+        "kmod"
       ]
     },
     "avahi-ui": {
@@ -2150,17 +2152,18 @@
     "libxml2-dev": {
       "origin": "libxml2",
       "versions": {
-        "2.9.12-r1": 1627021973
+        "2.9.12-r1": 1627021973,
+        "2.9.12-r2": 1636121179
       },
       "dependencies": [
         "zlib-dev",
         "xz-dev",
-        "libxml2=2.9.12-r1",
+        "libxml2=2.9.12-r2",
         "pkgconfig"
       ],
       "provides": [
         "pc:libxml-2.0=2.9.12",
-        "cmd:xml2-config=2.9.12-r1"
+        "cmd:xml2-config=2.9.12-r2"
       ]
     },
     "nginx": {
@@ -6414,7 +6417,8 @@
     "py3-libxml2": {
       "origin": "libxml2",
       "versions": {
-        "2.9.12-r1": 1627021973
+        "2.9.12-r1": 1627021973,
+        "2.9.12-r2": 1636121179
       },
       "dependencies": [
         "python3",
@@ -7827,7 +7831,8 @@
     "eudev-netifnames": {
       "origin": "eudev",
       "versions": {
-        "3.2.10-r1": 1624605271
+        "3.2.10-r1": 1624605271,
+        "3.2.11_pre1-r0": 1636119571
       },
       "dependencies": [
         "!eudev-rule-generator"
@@ -9357,17 +9362,23 @@
         "5.10.72-r1": 1634364270,
         "5.10.74-r0": 1634542471,
         "5.10.75-r0": 1634807001,
-        "5.10.76-r0": 1635492738
+        "5.10.76-r0": 1635492738,
+        "5.15.0-r0": 1636130974
       },
       "dependencies": [
         "perl",
         "gmp-dev",
+        "mpc1-dev",
+        "mpfr-dev",
         "elfutils-dev",
         "bash",
         "flex",
         "bison",
+        "zstd",
         "so:libc.musl-x86.so.1",
-        "so:libcrypto.so.1.1"
+        "so:libcrypto.so.1.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
       ]
     },
     "ilbc-dev": {
@@ -13273,7 +13284,8 @@
     "eudev-openrc": {
       "origin": "eudev",
       "versions": {
-        "3.2.10-r1": 1624605271
+        "3.2.10-r1": 1624605271,
+        "3.2.11_pre1-r0": 1636119571
       }
     },
     "py3-ply": {
@@ -17063,7 +17075,8 @@
       "versions": {
         "0.44.6-r1": 1634192667,
         "0.44.7-r0": 1634870866,
-        "0.44.7-r1": 1635851892
+        "0.44.7-r1": 1635851892,
+        "0.44.7-r2": 1636111015
       }
     },
     "gpg-wks-server": {
@@ -18065,7 +18078,8 @@
     "mkinitfs-doc": {
       "origin": "mkinitfs",
       "versions": {
-        "3.5.0-r1": 1627080301
+        "3.5.0-r1": 1627080301,
+        "3.5.0-r2": 1636110302
       }
     },
     "freeswitch-sounds-music-32000": {
@@ -21439,10 +21453,11 @@
     "eudev-dev": {
       "origin": "eudev",
       "versions": {
-        "3.2.10-r1": 1624605271
+        "3.2.10-r1": 1624605271,
+        "3.2.11_pre1-r0": 1636119571
       },
       "dependencies": [
-        "eudev=3.2.10-r1",
+        "eudev=3.2.11_pre1-r0",
         "pkgconfig"
       ],
       "provides": [
@@ -23495,10 +23510,11 @@
       "versions": {
         "0.44.6-r1": 1634192667,
         "0.44.7-r0": 1634870866,
-        "0.44.7-r1": 1635851892
+        "0.44.7-r1": 1635851892,
+        "0.44.7-r2": 1636111015
       },
       "dependencies": [
-        "openrc=0.44.7-r1",
+        "openrc=0.44.7-r2",
         "pkgconfig"
       ],
       "provides": [
@@ -24723,28 +24739,30 @@
       "versions": {
         "0.44.6-r1": 1634192667,
         "0.44.7-r0": 1634870866,
-        "0.44.7-r1": 1635851892
+        "0.44.7-r1": 1635851892,
+        "0.44.7-r2": 1636111015
       },
       "dependencies": [
         "ifupdown-any",
+        "kmod",
         "/bin/sh",
         "so:libc.musl-x86.so.1"
       ],
       "provides": [
         "so:libeinfo.so.1=1",
         "so:librc.so.1=1",
-        "cmd:openrc-init=0.44.7-r1",
-        "cmd:openrc-run=0.44.7-r1",
-        "cmd:openrc-shutdown=0.44.7-r1",
-        "cmd:openrc=0.44.7-r1",
-        "cmd:rc-service=0.44.7-r1",
-        "cmd:rc-sstat=0.44.7-r1",
-        "cmd:rc-status=0.44.7-r1",
-        "cmd:rc-update=0.44.7-r1",
-        "cmd:rc=0.44.7-r1",
-        "cmd:service=0.44.7-r1",
-        "cmd:start-stop-daemon=0.44.7-r1",
-        "cmd:supervise-daemon=0.44.7-r1"
+        "cmd:openrc-init=0.44.7-r2",
+        "cmd:openrc-run=0.44.7-r2",
+        "cmd:openrc-shutdown=0.44.7-r2",
+        "cmd:openrc=0.44.7-r2",
+        "cmd:rc-service=0.44.7-r2",
+        "cmd:rc-sstat=0.44.7-r2",
+        "cmd:rc-status=0.44.7-r2",
+        "cmd:rc-update=0.44.7-r2",
+        "cmd:rc=0.44.7-r2",
+        "cmd:service=0.44.7-r2",
+        "cmd:start-stop-daemon=0.44.7-r2",
+        "cmd:supervise-daemon=0.44.7-r2"
       ]
     },
     "perl-datetime-format-w3cdtf": {
@@ -24997,7 +25015,8 @@
         "5.10.72-r1": 1634364270,
         "5.10.74-r0": 1634542471,
         "5.10.75-r0": 1634807001,
-        "5.10.76-r0": 1635492738
+        "5.10.76-r0": 1635492738,
+        "5.15.0-r0": 1636130974
       },
       "dependencies": [
         "mkinitfs",
@@ -27992,17 +28011,23 @@
         "5.10.72-r1": 1634364270,
         "5.10.74-r0": 1634542471,
         "5.10.75-r0": 1634807001,
-        "5.10.76-r0": 1635492738
+        "5.10.76-r0": 1635492738,
+        "5.15.0-r0": 1636130974
       },
       "dependencies": [
         "perl",
         "gmp-dev",
+        "mpc1-dev",
+        "mpfr-dev",
         "elfutils-dev",
         "bash",
         "flex",
         "bison",
+        "zstd",
         "so:libc.musl-x86.so.1",
-        "so:libcrypto.so.1.1"
+        "so:libcrypto.so.1.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
       ]
     },
     "pspg": {
@@ -30555,10 +30580,11 @@
         "5.10.72-r1": 1634364560,
         "5.10.74-r0": 1634542471,
         "5.10.75-r0": 1634807001,
-        "5.10.76-r0": 1635492739
+        "5.10.76-r0": 1635492739,
+        "5.15.0-r0": 1636120551
       },
       "dependencies": [
-        "linux-virt=5.10.76-r0"
+        "linux-virt=5.15.0-r0"
       ]
     },
     "boost1.77-chrono": {
@@ -33947,14 +33973,15 @@
         "5.10.72-r1": 1634364560,
         "5.10.74-r0": 1634542471,
         "5.10.75-r0": 1634807001,
-        "5.10.76-r0": 1635492739
+        "5.10.76-r0": 1635492739,
+        "5.15.0-r0": 1636120551
       },
       "dependencies": [
         "glib-dev",
         "e2fsprogs-dev",
         "util-linux-dev",
         "libtirpc-dev",
-        "linux-lts-dev=5.10.76-r0"
+        "linux-lts-dev=5.15.0-r0"
       ]
     },
     "itstool": {
@@ -39466,21 +39493,22 @@
     "eudev": {
       "origin": "eudev",
       "versions": {
-        "3.2.10-r1": 1624605271
+        "3.2.10-r1": 1624605271,
+        "3.2.11_pre1-r0": 1636119571
       },
       "dependencies": [
         "udev-init-scripts",
         "/bin/sh",
-        "eudev-libs=3.2.10-r1",
+        "eudev-libs=3.2.11_pre1-r0",
         "so:libblkid.so.1",
         "so:libc.musl-x86.so.1",
         "so:libkmod.so.2"
       ],
       "provides": [
         "udev=176",
-        "cmd:setup-udev=3.2.10-r1",
-        "cmd:udevadm=3.2.10-r1",
-        "cmd:udevd=3.2.10-r1"
+        "cmd:setup-udev=3.2.11_pre1-r0",
+        "cmd:udevadm=3.2.11_pre1-r0",
+        "cmd:udevd=3.2.11_pre1-r0"
       ]
     },
     "perl-locale-maketext-fuzzy-doc": {
@@ -40025,7 +40053,8 @@
       "versions": {
         "0.44.6-r1": 1634192667,
         "0.44.7-r0": 1634870866,
-        "0.44.7-r1": 1635851892
+        "0.44.7-r1": 1635851892,
+        "0.44.7-r2": 1636111015
       }
     },
     "samurai": {
@@ -40315,10 +40344,11 @@
         "5.10.72-r1": 1634364560,
         "5.10.74-r0": 1634542471,
         "5.10.75-r0": 1634807001,
-        "5.10.76-r0": 1635492739
+        "5.10.76-r0": 1635492739,
+        "5.15.0-r1": 1636120551
       },
       "dependencies": [
-        "linux-lts=5.10.76-r0"
+        "linux-lts=5.15.0-r0"
       ]
     },
     "ncurses-libs": {
@@ -41876,10 +41906,11 @@
         "5.10.72-r1": 1634364560,
         "5.10.74-r0": 1634542471,
         "5.10.75-r0": 1634807001,
-        "5.10.76-r0": 1635492739
+        "5.10.76-r0": 1635492739,
+        "5.15.0-r0": 1636120551
       },
       "dependencies": [
-        "linux-lts=5.10.76-r0"
+        "linux-lts=5.15.0-r0"
       ],
       "provides": [
         "spl-vanilla"
@@ -45766,7 +45797,8 @@
     "eudev-libs": {
       "origin": "eudev",
       "versions": {
-        "3.2.10-r1": 1624605271
+        "3.2.10-r1": 1624605271,
+        "3.2.11_pre1-r0": 1636119571
       },
       "dependencies": [
         "so:libc.musl-x86.so.1"
@@ -48417,7 +48449,8 @@
     "mkinitfs": {
       "origin": "mkinitfs",
       "versions": {
-        "3.5.0-r1": 1627080301
+        "3.5.0-r1": 1627080301,
+        "3.5.0-r2": 1636110302
       },
       "dependencies": [
         "busybox>=1.28.2-r1",
@@ -48430,9 +48463,9 @@
         "so:libkmod.so.2"
       ],
       "provides": [
-        "cmd:bootchartd=3.5.0-r1",
-        "cmd:mkinitfs=3.5.0-r1",
-        "cmd:nlplug-findfs=3.5.0-r1"
+        "cmd:bootchartd=3.5.0-r2",
+        "cmd:mkinitfs=3.5.0-r2",
+        "cmd:nlplug-findfs=3.5.0-r2"
       ]
     },
     "gnupg-utils": {
@@ -50882,7 +50915,8 @@
       "versions": {
         "0.44.6-r1": 1634192667,
         "0.44.7-r0": 1634870866,
-        "0.44.7-r1": 1635851892
+        "0.44.7-r1": 1635851892,
+        "0.44.7-r2": 1636111015
       }
     },
     "bluez-hid2hci": {
@@ -50938,7 +50972,8 @@
     "libxml2-dbg": {
       "origin": "libxml2",
       "versions": {
-        "2.9.12-r1": 1627021973
+        "2.9.12-r1": 1627021973,
+        "2.9.12-r2": 1636121179
       }
     },
     "libsamplerate-dev": {
@@ -53441,7 +53476,8 @@
     "eudev-rule-generator": {
       "origin": "eudev",
       "versions": {
-        "3.2.10-r1": 1624605271
+        "3.2.10-r1": 1624605271,
+        "3.2.11_pre1-r0": 1636119571
       },
       "dependencies": [
         "!eudev-netifnames"
@@ -53814,7 +53850,8 @@
         "5.10.72-r1": 1634364270,
         "5.10.74-r0": 1634542471,
         "5.10.75-r0": 1634807001,
-        "5.10.76-r0": 1635492738
+        "5.10.76-r0": 1635492738,
+        "5.15.0-r0": 1636130974
       },
       "dependencies": [
         "mkinitfs"
@@ -53932,7 +53969,8 @@
     "eudev-doc": {
       "origin": "eudev",
       "versions": {
-        "3.2.10-r1": 1624605271
+        "3.2.10-r1": 1624605271,
+        "3.2.11_pre1-r0": 1636119571
       }
     },
     "lighttpd": {
@@ -54150,15 +54188,16 @@
     "libxml2-utils": {
       "origin": "libxml2",
       "versions": {
-        "2.9.12-r1": 1627021973
+        "2.9.12-r1": 1627021973,
+        "2.9.12-r2": 1636121179
       },
       "dependencies": [
         "so:libc.musl-x86.so.1",
         "so:libxml2.so.2"
       ],
       "provides": [
-        "cmd:xmlcatalog=2.9.12-r1",
-        "cmd:xmllint=2.9.12-r1"
+        "cmd:xmlcatalog=2.9.12-r2",
+        "cmd:xmllint=2.9.12-r2"
       ]
     },
     "ulogd-xml": {
@@ -56354,7 +56393,8 @@
     "libxml2": {
       "origin": "libxml2",
       "versions": {
-        "2.9.12-r1": 1627021973
+        "2.9.12-r1": 1627021973,
+        "2.9.12-r2": 1636121179
       },
       "dependencies": [
         "so:libc.musl-x86.so.1",
@@ -57029,7 +57069,8 @@
     "libxml2-doc": {
       "origin": "libxml2",
       "versions": {
-        "2.9.12-r1": 1627021973
+        "2.9.12-r1": 1627021973,
+        "2.9.12-r2": 1636121179
       }
     },
     "ldns-tools": {
