@@ -6637,7 +6637,8 @@
     "libindicator": {
       "origin": "libindicator",
       "versions": {
-        "12.10.1-r0": 1574420075
+        "12.10.1-r0": 1574420075,
+        "16.10-r0": 1636301843
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1",
@@ -6646,9 +6647,16 @@
         "so:libglib-2.0.so.0",
         "so:libgmodule-2.0.so.0",
         "so:libgobject-2.0.so.0",
-        "so:libgtk-3.so.0"
+        "so:libgtk-3.so.0",
+        "so:libido3-0.1.so.0"
       ],
       "provides": [
+        "so:libdummy-indicator-blank.so=0",
+        "so:libdummy-indicator-entry-func.so=0",
+        "so:libdummy-indicator-null.so=0",
+        "so:libdummy-indicator-signaler.so=0",
+        "so:libdummy-indicator-simple.so=0",
+        "so:libdummy-indicator-visible.so=0",
         "so:libindicator3.so.7=7.0.0"
       ]
     },
@@ -14936,7 +14944,8 @@
       "origin": "perl-moose",
       "versions": {
         "2.2015-r1": 1627487164,
-        "2.2200-r0": 1635763024
+        "2.2200-r0": 1635763024,
+        "2.2201-r0": 1636282530
       }
     },
     "qt5-qtscript": {
@@ -25560,10 +25569,11 @@
     "consul-template": {
       "origin": "consul-template",
       "versions": {
-        "0.27.1-r0": 1632770910
+        "0.27.1-r0": 1632770910,
+        "0.27.2-r0": 1636282497
       },
       "provides": [
-        "cmd:consul-template=0.27.1-r0"
+        "cmd:consul-template=0.27.2-r0"
       ]
     },
     "xcb-util-image-dev": {
@@ -32707,15 +32717,16 @@
     "libindicator-dev": {
       "origin": "libindicator",
       "versions": {
-        "12.10.1-r0": 1574420075
+        "12.10.1-r0": 1574420075,
+        "16.10-r0": 1636301843
       },
       "dependencies": [
-        "libindicator=12.10.1-r0",
+        "libindicator=16.10-r0",
         "pc:gtk+-3.0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:indicator3-0.4=12.10.1"
+        "pc:indicator3-0.4=12.10.2"
       ]
     },
     "nmh": {
@@ -34718,7 +34729,8 @@
       "origin": "perl-moose",
       "versions": {
         "2.2015-r1": 1627487164,
-        "2.2200-r0": 1635763024
+        "2.2200-r0": 1635763024,
+        "2.2201-r0": 1636282530
       },
       "dependencies": [
         "perl",
@@ -34746,7 +34758,7 @@
         "so:libc.musl-s390x.so.1"
       ],
       "provides": [
-        "cmd:moose-outdated=2.2200-r0"
+        "cmd:moose-outdated=2.2201-r0"
       ]
     },
     "font-noto-buhid": {
@@ -85827,7 +85839,8 @@
     "consul-template-openrc": {
       "origin": "consul-template",
       "versions": {
-        "0.27.1-r0": 1632770910
+        "0.27.1-r0": 1632770910,
+        "0.27.2-r0": 1636282497
       }
     },
     "xorg-server-xephyr": {
@@ -105287,6 +105300,42 @@
       "provides": [
         "cmd:pgbackrest=2.36-r1"
       ]
+    },
+    "libido3": {
+      "origin": "libido3",
+      "versions": {
+        "13.10.0-r0": 1636301768
+      },
+      "dependencies": [
+        "so:libc.musl-s390x.so.1",
+        "so:libcairo.so.2",
+        "so:libgdk-3.so.0",
+        "so:libgdk_pixbuf-2.0.so.0",
+        "so:libgio-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libgtk-3.so.0",
+        "so:libintl.so.8",
+        "so:libpango-1.0.so.0",
+        "so:libpangocairo-1.0.so.0"
+      ],
+      "provides": [
+        "so:libido3-0.1.so.0=0.0.0"
+      ]
+    },
+    "libido3-dev": {
+      "origin": "libido3",
+      "versions": {
+        "13.10.0-r0": 1636301768
+      },
+      "dependencies": [
+        "libido3=13.10.0-r0",
+        "pc:gtk+-3.0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:libido3-0.1=13.10.1"
+      ]
     }
   },
   "provide": {
@@ -116608,6 +116657,34 @@
       "librttopo.so.1": {
         "package": "librttopo",
         "version": "1.1.0"
+      },
+      "libdummy-indicator-blank.so": {
+        "package": "libindicator",
+        "version": "0"
+      },
+      "libdummy-indicator-entry-func.so": {
+        "package": "libindicator",
+        "version": "0"
+      },
+      "libdummy-indicator-null.so": {
+        "package": "libindicator",
+        "version": "0"
+      },
+      "libdummy-indicator-signaler.so": {
+        "package": "libindicator",
+        "version": "0"
+      },
+      "libdummy-indicator-simple.so": {
+        "package": "libindicator",
+        "version": "0"
+      },
+      "libdummy-indicator-visible.so": {
+        "package": "libindicator",
+        "version": "0"
+      },
+      "libido3-0.1.so.0": {
+        "package": "libido3",
+        "version": "0.0.0"
       }
     }
   }
