@@ -68814,13 +68814,14 @@
     "nfpm": {
       "origin": "nfpm",
       "versions": {
-        "2.6.0-r1": 1631173052
+        "2.6.0-r1": 1631173052,
+        "2.8.0-r0": 1636321584
       },
       "dependencies": [
         "so:libc.musl-x86.so.1"
       ],
       "provides": [
-        "cmd:nfpm=2.6.0-r1"
+        "cmd:nfpm=2.8.0-r0"
       ]
     },
     "libva-glx": {
@@ -124933,7 +124934,8 @@
     "fwupd-doc": {
       "origin": "fwupd",
       "versions": {
-        "1.6.4-r0": 1632999556
+        "1.6.4-r0": 1632999556,
+        "1.6.4-r2": 1636321598
       }
     },
     "appstream": {
@@ -125547,10 +125549,11 @@
     "fwupd-dev": {
       "origin": "fwupd",
       "versions": {
-        "1.6.4-r0": 1632999556
+        "1.6.4-r0": 1632999556,
+        "1.6.4-r2": 1636321598
       },
       "dependencies": [
-        "fwupd=1.6.4-r0",
+        "fwupd=1.6.4-r2",
         "pc:gio-2.0",
         "pc:gio-unix-2.0>=2.45.8",
         "pc:gmodule-2.0",
@@ -127208,7 +127211,8 @@
       "origin": "gdm",
       "versions": {
         "40.1-r0": 1629030744,
-        "41.0-r0": 1635885002
+        "41.0-r0": 1635885002,
+        "41.0-r1": 1636321545
       }
     },
     "yad-lang": {
@@ -127645,7 +127649,8 @@
     "fwupd-openrc": {
       "origin": "fwupd",
       "versions": {
-        "1.6.4-r0": 1632999556
+        "1.6.4-r0": 1632999556,
+        "1.6.4-r2": 1636321598
       }
     },
     "abiword-plugin-hrtext": {
@@ -128205,18 +128210,20 @@
       "origin": "gdm",
       "versions": {
         "40.1-r0": 1629030744,
-        "41.0-r0": 1635885002
+        "41.0-r0": 1635885002,
+        "41.0-r1": 1636321545
       },
       "dependencies": [
+        "dbus",
         "dconf",
-        "linux-pam>=1.4",
+        "gnome-session",
         "gnome-settings-daemon",
         "gnome-shell",
-        "xorg-server",
-        "xwayland",
-        "xrdb",
         "gsettings-desktop-schemas",
-        "gnome-session"
+        "linux-pam>=1.4",
+        "xorg-server",
+        "xrdb",
+        "xwayland"
       ]
     },
     "libnma-dev": {
@@ -129813,18 +129820,20 @@
       "origin": "gdm",
       "versions": {
         "40.1-r0": 1629030744,
-        "41.0-r0": 1635885002
+        "41.0-r0": 1635885002,
+        "41.0-r1": 1636321545
       },
       "dependencies": [
+        "dbus",
         "dconf",
-        "linux-pam>=1.4",
+        "gnome-session",
         "gnome-settings-daemon",
         "gnome-shell",
-        "xorg-server",
-        "xwayland",
-        "xrdb",
         "gsettings-desktop-schemas",
-        "gnome-session",
+        "linux-pam>=1.4",
+        "xorg-server",
+        "xrdb",
+        "xwayland",
         "/bin/sh",
         "so:libX11.so.6",
         "so:libXau.so.6",
@@ -129846,9 +129855,9 @@
       ],
       "provides": [
         "so:libgdm.so.1=1.0.0",
-        "cmd:gdm-screenshot=41.0-r0",
-        "cmd:gdm=41.0-r0",
-        "cmd:gdmflexiserver=41.0-r0"
+        "cmd:gdm-screenshot=41.0-r1",
+        "cmd:gdm=41.0-r1",
+        "cmd:gdmflexiserver=41.0-r1"
       ]
     },
     "plasma-nm-lang": {
@@ -131160,7 +131169,8 @@
     "fwupd-lang": {
       "origin": "fwupd",
       "versions": {
-        "1.6.4-r0": 1632999556
+        "1.6.4-r0": 1632999556,
+        "1.6.4-r2": 1636321598
       },
       "dependencies": [
         "dbus"
@@ -131196,7 +131206,8 @@
     "fwupd-fish-completion": {
       "origin": "fwupd",
       "versions": {
-        "1.6.4-r0": 1632999556
+        "1.6.4-r0": 1632999556,
+        "1.6.4-r2": 1636321598
       }
     },
     "brasero-lang": {
@@ -132285,7 +132296,8 @@
     "fwupd": {
       "origin": "fwupd",
       "versions": {
-        "1.6.4-r0": 1632999556
+        "1.6.4-r0": 1632999556,
+        "1.6.4-r2": 1636321598
       },
       "dependencies": [
         "dbus",
@@ -132304,7 +132316,10 @@
         "so:libintl.so.8",
         "so:libjcat.so.1",
         "so:libjson-glib-1.0.so.0",
+        "so:libmbim-glib.so.4",
+        "so:libmm-glib.so.0",
         "so:libpolkit-gobject-1.so.0",
+        "so:libqmi-glib.so.5",
         "so:libsmbios_c.so.2",
         "so:libsqlite3.so.0",
         "so:libtss2-esys.so.0",
@@ -132313,13 +132328,13 @@
       "provides": [
         "so:libfwupd.so.2=2.0.0",
         "so:libfwupdplugin.so.2=2.0.0",
-        "cmd:dbxtool=1.6.4-r0",
-        "cmd:dfu-tool=1.6.4-r0",
-        "cmd:fwupdagent=1.6.4-r0",
-        "cmd:fwupdate=1.6.4-r0",
-        "cmd:fwupdmgr=1.6.4-r0",
-        "cmd:fwupdtool=1.6.4-r0",
-        "cmd:fwupdtpmevlog=1.6.4-r0"
+        "cmd:dbxtool=1.6.4-r2",
+        "cmd:dfu-tool=1.6.4-r2",
+        "cmd:fwupdagent=1.6.4-r2",
+        "cmd:fwupdate=1.6.4-r2",
+        "cmd:fwupdmgr=1.6.4-r2",
+        "cmd:fwupdtool=1.6.4-r2",
+        "cmd:fwupdtpmevlog=1.6.4-r2"
       ]
     },
     "xfce4-whiskermenu-plugin-lang": {
@@ -135685,10 +135700,11 @@
       "origin": "gdm",
       "versions": {
         "40.1-r0": 1629030744,
-        "41.0-r0": 1635885002
+        "41.0-r0": 1635885002,
+        "41.0-r1": 1636321545
       },
       "dependencies": [
-        "gdm=41.0-r0",
+        "gdm=41.0-r1",
         "pc:gio-2.0>=2.56.0",
         "pc:gio-unix-2.0>=2.56.0",
         "pc:glib-2.0>=2.56.0",
@@ -145062,6 +145078,12 @@
         "kirigami2",
         "qt5-qtlocation"
       ]
+    },
+    "gdm-doc": {
+      "origin": "gdm",
+      "versions": {
+        "41.0-r1": 1636321545
+      }
     }
   },
   "provide": {
