@@ -105339,6 +105339,59 @@
       "provides": [
         "pc:libido3-0.1=13.10.1"
       ]
+    },
+    "libspatialite": {
+      "origin": "libspatialite",
+      "versions": {
+        "5.0.1-r2": 1636326399
+      },
+      "dependencies": [
+        "so:libc.musl-s390x.so.1",
+        "so:libgeos_c.so.1",
+        "so:libminizip.so.1",
+        "so:libproj.so.22",
+        "so:librttopo.so.1",
+        "so:libsqlite3.so.0",
+        "so:libxml2.so.2",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "so:libspatialite.so.7=7.1.2",
+        "so:mod_spatialite.so.7=7.1.0"
+      ]
+    },
+    "libspatialite-dev": {
+      "origin": "libspatialite",
+      "versions": {
+        "5.0.1-r2": 1636326399
+      },
+      "dependencies": [
+        "geos-dev",
+        "librttopo-dev",
+        "libxml2-dev",
+        "minizip-dev",
+        "proj-dev",
+        "sqlite-dev",
+        "libspatialite=5.0.1-r2",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:spatialite=5.0.1"
+      ]
+    },
+    "py3-shapely": {
+      "origin": "py3-shapely",
+      "versions": {
+        "1.8.0-r0": 1636326369
+      },
+      "dependencies": [
+        "py3-numpy",
+        "so:libc.musl-s390x.so.1",
+        "so:libgeos_c.so.1"
+      ],
+      "provides": [
+        "py3.9:shapely=1.8.0-r0"
+      ]
     }
   },
   "provide": {
@@ -116688,6 +116741,14 @@
       "libido3-0.1.so.0": {
         "package": "libido3",
         "version": "0.0.0"
+      },
+      "libspatialite.so.7": {
+        "package": "libspatialite",
+        "version": "7.1.2"
+      },
+      "mod_spatialite.so.7": {
+        "package": "libspatialite",
+        "version": "7.1.0"
       }
     }
   }
