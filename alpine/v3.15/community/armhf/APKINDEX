@@ -8263,21 +8263,6 @@ c:e63fdbc7dce66a92a62f07348d9e487965d9cfe1
 D:kmod so:libc.musl-armhf.so.1 so:libdaxctl.so.1 so:libjson-c.so.5 so:libkeyutils.so.1 so:libndctl.so.6 so:libuuid.so.1
 p:cmd:daxctl=71.1-r2 cmd:ndctl=71.1-r2
 
-C:Q1KR3tXRQfe6iZiHVxXPdtqL6n9Ks=
-P:baculum-common
-V:9.6.7-r0
-A:armhf
-S:4941204
-I:21053440
-T:Common libraries for Baculum
-U:https://bacula.org/
-L:AGPLv3
-o:baculum
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1609500579
-c:1accbaa8697947f6ddf5d4c812676e69f969d9b9
-D:php7-common php7-ctype php7-curl php7-dom php7-json php7-session php7-xml
-
 C:Q1Kw2V928KaQGeDrRlH+McVNOts4Q=
 P:lego
 V:4.5.3-r0
@@ -10815,6 +10800,21 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1599344127
 c:f36cc410e11cc6d08721afeaf5a871f113e0e343
 
+C:Q1QmYsDhrTYFGBOz8cKfgsk8e84js=
+P:baculum-web-lighttpd
+V:11.0.5-r0
+A:armhf
+S:2682
+I:16384
+T:Lighttpd configuration for Baculum WebGUI
+U:https://bacula.org/
+L:AGPL-3.0-or-later
+o:baculum
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1636364262
+c:6aaaaa0027db4b977934c9d09a543e436beff2a6
+D:baculum-web=11.0.5-r0 lighttpd lighttpd-mod_auth php8-cgi
+
 C:Q1pWFVNEyEzql62jbFJ/M7Mc4QROY=
 P:fwknop-dev
 V:2.6.10-r2
@@ -11956,21 +11956,6 @@ t:1624055259
 c:d14267221f8a2104d0f3d8db12d23c7cdcde552e
 D:libpeas=1.30.0-r2 pc:gio-2.0>=2.38.0 pc:glib-2.0>=2.38.0 pc:gmodule-2.0>=2.38.0 pc:gobject-2.0>=2.38.0 pc:gobject-introspection-1.0>=1.39.0 pc:gtk+-3.0>=3.0.0 pkgconfig
 p:pc:libpeas-1.0=1.30.0 pc:libpeas-gtk-1.0=1.30.0
-
-C:Q1fDOpayuRft493HdBQGxshr+SsOQ=
-P:baculum-api-lighttpd
-V:9.6.7-r0
-A:armhf
-S:2732
-I:16384
-T:Lighttpd configuration for Baculum API
-U:https://bacula.org/
-L:AGPLv3
-o:baculum
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1609500579
-c:1accbaa8697947f6ddf5d4c812676e69f969d9b9
-D:baculum-api=9.6.7-r0 lighttpd lighttpd-mod_auth php7-cgi
 
 C:Q1DVc36M/TWhL5ymQ3BDWUxB0qEJQ=
 P:go-md2man-doc
@@ -41551,21 +41536,6 @@ t:1623681066
 c:a1d280418cf836b25202ce6378c3ff11e333d852
 i:docs graphicsmagick=1.3.36-r0
 
-C:Q1O1raKj5tKYsiBd2vP0gYovouNoQ=
-P:baculum-api
-V:9.6.7-r0
-A:armhf
-S:99930
-I:991232
-T:Baculum API files
-U:https://bacula.org/
-L:AGPLv3
-o:baculum
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1609500579
-c:1accbaa8697947f6ddf5d4c812676e69f969d9b9
-D:baculum-common=9.6.7-r0 php7-bcmath php7-mysqlnd php7-pdo php7-pgsql baculum-common=9.6.7-r0
-
 C:Q1vEk5ibJ3yML9pTY4I3dNOwtUDnY=
 P:perl-furl-doc
 V:3.14-r0
@@ -48383,6 +48353,21 @@ t:1632132102
 c:75cbcc242479a37dc803ef29629682ac9d445ff9
 D:py3-openvswitch=2.12.3-r3 py-twisted so:libc.musl-armhf.so.1 so:libcap-ng.so.0 so:libcrypto.so.1.1 so:libssl.so.1.1
 p:cmd:ovs-pcap=2.12.3-r3 cmd:ovs-tcpdump=2.12.3-r3 cmd:ovs-tcpundump=2.12.3-r3 cmd:ovs-testcontroller=2.12.3-r3 py3.9:ovstest=2.12.3-r3
+
+C:Q1rgaOnPXTi46SqwMSPU17i03o/Mo=
+P:baculum-api-apache2
+V:11.0.5-r0
+A:armhf
+S:2502
+I:20480
+T:Apache configuration for Baculum API
+U:https://bacula.org/
+L:AGPL-3.0-or-later
+o:baculum
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1636364262
+c:6aaaaa0027db4b977934c9d09a543e436beff2a6
+D:baculum-api=11.0.5-r0 apache2 php8-apache2
 
 C:Q1r1L8UM3yNp9JZc5GJkaO6vW2C30=
 P:ocaml-findlib-dev
@@ -58201,6 +58186,21 @@ c:f60261a8b40d10ebedd83f0319bb8924565c67f2
 D:perl perl-text-glob perl-number-compare
 p:cmd:findrule=0.34-r3
 
+C:Q1vB58wqSnjiWpA1vkVH7iB16p+e0=
+P:baculum-api-lighttpd
+V:11.0.5-r0
+A:armhf
+S:2738
+I:16384
+T:Lighttpd configuration for Baculum API
+U:https://bacula.org/
+L:AGPL-3.0-or-later
+o:baculum
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1636364262
+c:6aaaaa0027db4b977934c9d09a543e436beff2a6
+D:baculum-api=11.0.5-r0 lighttpd lighttpd-mod_auth php8-cgi
+
 C:Q1Tpsdq4L8O9vidIAAtdu5X/2S1b4=
 P:libldac-dev
 V:2.0.2.3-r0
@@ -66595,6 +66595,21 @@ t:1634867960
 c:f3c2037771f13007736981b5f467f7f31c6c5196
 D:gsettings-desktop-schemas dbus:org.freedesktop.Secrets so:libarchive.so.13 so:libatk-1.0.so.0 so:libc.musl-armhf.so.1 so:libcairo.so.2 so:libdazzle-1.0.so.0 so:libgcr-base-3.so.1 so:libgcr-ui-3.so.1 so:libgdk-3.so.0 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmp.so.10 so:libgobject-2.0.so.0 so:libgtk-3.so.0 so:libhandy-1.so.0 so:libhogweed.so.6 so:libintl.so.8 so:libjavascriptcoregtk-4.0.so.18 so:libjson-glib-1.0.so.0 so:libnettle.so.8 so:libpango-1.0.so.0 so:libportal.so.0 so:libsecret-1.so.0 so:libsoup-2.4.so.1 so:libsqlite3.so.0 so:libwebkit2gtk-4.0.so.37 so:libxml2.so.2
 p:so:libephymain.so=0 so:libephymisc.so=0 so:libephysync.so=0 cmd:epiphany=41.0-r0
+
+C:Q1Qm9no5yC7NuDTTXM2tZqSnWM6hM=
+P:baculum-api
+V:11.0.5-r0
+A:armhf
+S:130887
+I:1224704
+T:Baculum API files
+U:https://bacula.org/
+L:AGPL-3.0-or-later
+o:baculum
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1636364262
+c:6aaaaa0027db4b977934c9d09a543e436beff2a6
+D:baculum-common=11.0.5-r0 php8-bcmath php8-mysqlnd php8-pdo php8-pgsql baculum-common=11.0.5-r0
 
 C:Q1M3BigCZ6y2U6yXCWbVtYjojmYsc=
 P:html2text
@@ -77600,20 +77615,6 @@ c:e5ea77a8e9eabc78381c59b510e0fe10bf0e9b52
 D:so:libc.musl-armhf.so.1
 p:cmd:micro=2.0.10-r3
 
-C:Q1EZD4eD3leQ6V8EGQSTq73j/fJtI=
-P:baculum
-V:9.6.7-r0
-A:armhf
-S:4906
-I:57344
-T:API layer to Baculum WebGUI tool for Bacula Community program
-U:https://bacula.org/
-L:AGPLv3
-o:baculum
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1609500579
-c:1accbaa8697947f6ddf5d4c812676e69f969d9b9
-
 C:Q1gpDMu0+ALz5dgXeC7q5n7Uh3rRs=
 P:py3-bitstring
 V:3.1.9-r0
@@ -84484,21 +84485,6 @@ t:1635181005
 c:0cf2932731217e414379ae156506afb4e7b371d2
 D:so:libc.musl-armhf.so.1 so:libepoxy.so.0 so:libgcc_s.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libstdc++.so.6 so:libwayland-client.so.0 so:libwayland-egl.so.1 so:libwayland-server.so.0 so:libwpe-1.0.so.1
 p:so:libWPEBackend-fdo-1.0.so.1=1.8.3
-
-C:Q1aPdTpNc+buB5zARPzKmqWMPreKw=
-P:baculum-web
-V:9.6.7-r0
-A:armhf
-S:618530
-I:3289088
-T:Baculum Web files
-U:https://bacula.org/
-L:AGPLv3
-o:baculum
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1609500579
-c:1accbaa8697947f6ddf5d4c812676e69f969d9b9
-D:baculum-common=9.6.7-r0 php7-mbstring baculum-common=9.6.7-r0
 
 C:Q1aiyMc2Y/BdpuVSKZVaWjqvfKhak=
 P:lsscsi
@@ -98661,21 +98647,6 @@ c:5eb9cf646dbd78167bc8ae144b36835fd2ec7ccf
 D:lirc=0.10.1-r1
 p:py3.9:lirc=0.10.1-r1
 
-C:Q1h5uHTzzIH+P/ARdCtiNvJ+7LOXI=
-P:baculum-web-lighttpd
-V:9.6.7-r0
-A:armhf
-S:2674
-I:16384
-T:Lighttpd configuration for Baculum WebGUI
-U:https://bacula.org/
-L:AGPLv3
-o:baculum
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1609500579
-c:1accbaa8697947f6ddf5d4c812676e69f969d9b9
-D:baculum-web=9.6.7-r0 lighttpd lighttpd-mod_auth php7-cgi
-
 C:Q1SYjsKTerg5R1bWEOkanROrCjh+A=
 P:coova-chilli-doc
 V:1.6-r1
@@ -105555,6 +105526,21 @@ t:1617646700
 c:ccc76cb2efb10c96b553bcc264a0f54b72bf77c1
 D:python3
 
+C:Q1z1lCu+DvDE/KpY5EOktfePbIstM=
+P:baculum-common
+V:11.0.5-r0
+A:armhf
+S:5142029
+I:21708800
+T:Common libraries for Baculum
+U:https://bacula.org/
+L:AGPL-3.0-or-later
+o:baculum
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1636364262
+c:6aaaaa0027db4b977934c9d09a543e436beff2a6
+D:php8-common php8-ctype php8-curl php8-dom php8-json php8-session php8-xml
+
 C:Q18FKcneqWCF7X+H3VU0ygTrwtUik=
 P:py3-libvirt
 V:7.9.0-r0
@@ -110792,6 +110778,20 @@ t:1634277926
 c:1dd313c4b2f5cd0b4607f3ce3b57061c65a1ea3d
 D:so:libc.musl-armhf.so.1 so:libcairo.so.2 so:libgdk-3.so.0 so:libgeany.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-3.so.0
 
+C:Q1OeACNlfD72RLIxD6ojLI43biq58=
+P:baculum
+V:11.0.5-r0
+A:armhf
+S:4909
+I:57344
+T:API layer to Baculum WebGUI tool for Bacula Community program
+U:https://bacula.org/
+L:AGPL-3.0-or-later
+o:baculum
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1636364262
+c:6aaaaa0027db4b977934c9d09a543e436beff2a6
+
 C:Q1imuJuiqDmF9xItlqAoqsWCKUJt8=
 P:libretro-handy
 V:0_git20210325-r0
@@ -111784,6 +111784,21 @@ t:1634372390
 c:82d7315dd0e5b8d8fca73c175c95c280d24707b1
 k:10
 i:pulseaudio=15.0-r2 zsh
+
+C:Q1uKpMbrREcLH0g6BiNpWq5Gdd+2w=
+P:baculum-web-apache2
+V:11.0.5-r0
+A:armhf
+S:2550
+I:20480
+T:Apache configuration for Baculum WebGUI
+U:https://bacula.org/
+L:AGPL-3.0-or-later
+o:baculum
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1636364262
+c:6aaaaa0027db4b977934c9d09a543e436beff2a6
+D:baculum-web=11.0.5-r0 apache2 php8-apache2
 
 C:Q1OdXMdXZtdTdtwYP8iX3TyjHmdss=
 P:ruby-kramdown-parser-gfm
@@ -114179,21 +114194,6 @@ o:gnome-builder
 m:Rasmus Thomsen <oss@cogitri.dev>
 t:1634898118
 c:ddd98cdcd69e672ad9a66ec7acfc8bcf9ca18659
-
-C:Q18N9TxXaBMlAL5IhHPvh6ebly6q8=
-P:baculum-api-apache2
-V:9.6.7-r0
-A:armhf
-S:2499
-I:20480
-T:Apache configuration for Baculum API
-U:https://bacula.org/
-L:AGPLv3
-o:baculum
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1609500579
-c:1accbaa8697947f6ddf5d4c812676e69f969d9b9
-D:baculum-api=9.6.7-r0 apache2 php7-apache2
 
 C:Q1QfYGa3nqbXr3ONxhAj/fSRnw4dI=
 P:notcurses-dbg
@@ -117783,21 +117783,6 @@ c:63f47f4d2ae2a2bd4255d73f054ffe4297d3cb2b
 D:so:libc.musl-armhf.so.1 so:libgio-2.0.so.0 so:libgit2.so.1.3 so:libglib-2.0.so.0 so:libgobject-2.0.so.0
 p:so:libgit2-glib-1.0.so.0=0.9900.0
 
-C:Q1WNV5h7nvAySVHYhLQPxN3VIn4cM=
-P:baculum-web-apache2
-V:9.6.7-r0
-A:armhf
-S:2546
-I:20480
-T:Apache configuration for Baculum WebGUI
-U:https://bacula.org/
-L:AGPLv3
-o:baculum
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1609500579
-c:1accbaa8697947f6ddf5d4c812676e69f969d9b9
-D:baculum-web=9.6.7-r0 apache2 php7-apache2
-
 C:Q1WTi0COBRgU3AHJV37AGffZ3StO0=
 P:mate-settings-daemon
 V:1.26.0-r1
@@ -118504,6 +118489,21 @@ t:1634219936
 c:06de28a6f96069be401cea6a839f7624874c2954
 D:java-jre-headless so:libc.musl-armhf.so.1 so:libffi.so.8
 p:so:/home/buildozer/aports/community/java-jna/src/jna-5.6.0/build/native-linux-arm/libjnidispatch.so=5.1.0
+
+C:Q1ts5IYjvrtbvxrc0tbgy48uXu2sg=
+P:baculum-web
+V:11.0.5-r0
+A:armhf
+S:470921
+I:2744320
+T:Baculum Web files
+U:https://bacula.org/
+L:AGPL-3.0-or-later
+o:baculum
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1636364262
+c:6aaaaa0027db4b977934c9d09a543e436beff2a6
+D:baculum-common=11.0.5-r0 php8-mbstring baculum-common=11.0.5-r0
 
 C:Q111xWZVD/2+wv9aaGwsBNuJh2MEw=
 P:outils-lam
