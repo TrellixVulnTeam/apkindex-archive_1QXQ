@@ -2019,16 +2019,17 @@
       "origin": "py3-wolframalpha",
       "versions": {
         "5.0.0-r1": 1622637907,
-        "5.0.0-r2": 1635857557
+        "5.0.0-r2": 1635857557,
+        "5.0.0-r3": 1636491332
       },
       "dependencies": [
         "py3-jaraco.context",
-        "py3-jaraco-itertools",
+        "py3-jaraco.itertools",
         "py3-xmltodict",
         "python3"
       ],
       "provides": [
-        "py3.9:wolframalpha=5.0.0-r2"
+        "py3.9:wolframalpha=5.0.0-r3"
       ]
     },
     "stunnel": {
@@ -31213,16 +31214,17 @@
       "origin": "py3-tempora",
       "versions": {
         "4.1.1-r0": 1626517888,
-        "4.1.2-r0": 1636358679
+        "4.1.2-r0": 1636358679,
+        "4.1.2-r1": 1636491332
       },
       "dependencies": [
-        "py3-jaraco-functools",
+        "py3-jaraco.functools",
         "py3-tz",
         "python3"
       ],
       "provides": [
-        "cmd:calc-prorate=4.1.2-r0",
-        "py3.9:tempora=4.1.2-r0"
+        "cmd:calc-prorate=4.1.2-r1",
+        "py3.9:tempora=4.1.2-r1"
       ]
     },
     "perl-sys-meminfo": {
@@ -136790,6 +136792,45 @@
       "versions": {
         "2.3.0-r0": 1636358750
       }
+    },
+    "py3-jaraco.itertools": {
+      "origin": "py3-jaraco.itertools",
+      "versions": {
+        "6.0.3-r1": 1636491332
+      },
+      "dependencies": [
+        "py3-inflect",
+        "py3-more-itertools",
+        "python3"
+      ],
+      "provides": [
+        "py3-jaraco-itertools=6.0.3-r1"
+      ]
+    },
+    "py3-jaraco.classes": {
+      "origin": "py3-jaraco.classes",
+      "versions": {
+        "3.2.1-r1": 1636491332
+      },
+      "dependencies": [
+        "python3"
+      ],
+      "provides": [
+        "py3-jaraco-classes=3.2.1-r1"
+      ]
+    },
+    "py3-jaraco.functools": {
+      "origin": "py3-jaraco.functools",
+      "versions": {
+        "3.4.0-r0": 1636491332
+      },
+      "dependencies": [
+        "py3-jaraco.classes",
+        "python3"
+      ],
+      "provides": [
+        "py3-jaraco-functools=3.4.0-r0"
+      ]
     }
   },
   "provide": {
@@ -138697,6 +138738,18 @@
       "lapack-dev": {
         "package": "openblas-dev",
         "version": 0
+      },
+      "py3-jaraco-itertools": {
+        "package": "py3-jaraco.itertools",
+        "version": "6.0.3-r1"
+      },
+      "py3-jaraco-classes": {
+        "package": "py3-jaraco.classes",
+        "version": "3.2.1-r1"
+      },
+      "py3-jaraco-functools": {
+        "package": "py3-jaraco.functools",
+        "version": "3.4.0-r0"
       }
     },
     "so": {
