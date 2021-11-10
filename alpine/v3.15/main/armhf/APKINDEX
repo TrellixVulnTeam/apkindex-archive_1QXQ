@@ -697,20 +697,20 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1610956447
 c:6d61b748376d9edefe2ea601b0824790a835cbac
 
-C:Q1CVVuC04BrJ0FQoGspWXrCof/VtQ=
-P:curl-static
-V:7.79.1-r0
+C:Q16Kmkd7UUWSvcBp0HqNHy6oYVWTk=
+P:apache2-http2
+V:2.4.51-r1
 A:armhf
-S:2909312
-I:6561792
-T:URL retrival utility and library (static library)
-U:https://curl.se/
-L:MIT
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1632298693
-c:397373762da97a88bf52faac8f6d4e5db94eccce
-D:ca-certificates
+S:88190
+I:233472
+T:HTTP/2 transport layer for the Apache HTTP Server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1636541269
+c:0967f68984e4fa0be310074b5059b8b86c328041
+D:apache2 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libnghttp2.so.14
 
 C:Q1GvPFUPiI/SCGufYyfZPhRGbOj7o=
 P:ruby-rss-doc
@@ -2974,6 +2974,21 @@ t:1627487152
 c:11ba415863456832657a0bb01116efb60ab377fe
 D:perl perl-html-tagset perl-uri perl-html-parser
 
+C:Q1XweT3QJSvFZxPq72OXbex7ngefQ=
+P:apache2-lua
+V:2.4.51-r1
+A:armhf
+S:43558
+I:135168
+T:Lua support for the Apache HTTP server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1636541269
+c:0967f68984e4fa0be310074b5059b8b86c328041
+D:apache2 so:libc.musl-armhf.so.1 so:liblua.so.5
+
 C:Q1MZfP610RLHHkYX+XyOfAStdG1iY=
 P:lmdb-dev
 V:0.9.29-r1
@@ -3718,22 +3733,6 @@ c:8e1f6d0b0f4cca3d659519153071083ca92e3594
 D:pixman=0.40.0-r3 pkgconfig
 p:pc:pixman-1=0.40.0
 
-C:Q1OLiVm74ZjkWRMlpcnWqGw1rnhPs=
-P:libcurl
-V:7.79.1-r0
-A:armhf
-S:229773
-I:462848
-T:The multiprotocol file transfer library
-U:https://curl.se/
-L:MIT
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1632298693
-c:397373762da97a88bf52faac8f6d4e5db94eccce
-D:ca-certificates so:libbrotlidec.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libnghttp2.so.14 so:libssl.so.1.1 so:libz.so.1
-p:so:libcurl.so.4=4.7.0
-
 C:Q1jFZ6PBbIPL9FE/7kXREWw0gR/bM=
 P:heimdal-libs
 V:7.7.0-r6
@@ -4378,21 +4377,6 @@ t:1634209377
 c:c21b9f6f5ad4882058daba08185e8c9f69dea648
 D:python3 so:libc.musl-armhf.so.1 so:libcairo-gobject.so.2 so:libcairo.so.2 so:libffi.so.8 so:libgirepository-1.0.so.1 so:libglib-2.0.so.0 so:libgobject-2.0.so.0
 p:py-gobject3=3.42.0-r1 py3.9:gi=3.42.0-r1 py3.9:pygtkcompat=3.42.0-r1
-
-C:Q1D8/9JZ1S2i7/af7e1DiEb6iPCdw=
-P:perl-datetime-locale-doc
-V:1.32-r0
-A:armhf
-S:2650589
-I:3358720
-T:DateTime::Locale perl module (documentation)
-U:https://metacpan.org/release/DateTime-Locale
-L:Artistic-1.0-Perl GPL-1.0-or-later
-o:perl-datetime-locale
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1627487151
-c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
-i:docs perl-datetime-locale=1.32-r0
 
 C:Q1H/sZ9SxGzEy5IVNYtffatRT5th4=
 P:iaxmodem-dbg
@@ -6448,6 +6432,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1635494978
 c:87f6509d7aee77e5c5f5b2753690e039be33d359
 p:linux-firmware-any
+
+C:Q18hZihOCcYt6KVexu04dzVsnHc5Q=
+P:curl-dbg
+V:7.80.0-r0
+A:armhf
+S:1555934
+I:3547136
+T:URL retrival utility and library (debug symbols)
+U:https://curl.se/
+L:MIT
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1636549317
+c:33234bad6dce8a36eabcadaf6ee78ef7678d168b
+D:ca-certificates
 
 C:Q1dR/p7FQLqv+K8ZdzH6OzWLcmiNI=
 P:unfs3-openrc
@@ -8926,6 +8925,21 @@ c:670bf5a8cc5bc605eede8ca2fd55b50a5c9f8660
 D:/bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
 p:cmd:nrpe=4.0.3-r2
 
+C:Q1vJ1QlLBVPXPMYng8toB+bNsVuqs=
+P:apache2-proxy-html
+V:2.4.51-r1
+A:armhf
+S:21474
+I:86016
+T:HTML and XML content filters for the Apache HTTP Server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1636541269
+c:0967f68984e4fa0be310074b5059b8b86c328041
+D:apache2 so:libc.musl-armhf.so.1 so:libxml2.so.2
+
 C:Q1DrQjiLuPRsHQxsJtboS/GGkOlhg=
 P:perl-scalar-list-utils
 V:1.60-r0
@@ -9414,6 +9428,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1620502819
 c:0de81d62244a5a6c26864b59c90d0e93aa492708
 
+C:Q1sr8eVP0/hOSL2fe1htQ+M7CtJQk=
+P:jwhois
+V:4.0-r6
+A:armhf
+S:37698
+I:106496
+T:WHOIS/RWHOIS client
+U:https://www.gnu.org/software/jwhois/
+L:GPL
+o:jwhois
+t:1636539728
+c:a9e36d97f54746c01bbbd85f1b6b3f82a10d8294
+D:so:libc.musl-armhf.so.1 so:libgdbm.so.6
+p:cmd:jwhois=4.0-r6
+
 C:Q19LV11VbqjH4xyza5SYhbDpgj8ig=
 P:libarchive-dev
 V:3.5.2-r2
@@ -9492,6 +9521,20 @@ t:1631548101
 c:fd79dc08fe3fb5f0c0a491bea711c1821980893d
 D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libnetsnmp.so.40 so:libnetsnmpagent.so.40
 p:cmd:agentxtrap=5.9.1-r5 cmd:checkbandwidth=5.9.1-r5 cmd:encode_keychange=5.9.1-r5 cmd:net-snmp-create-v3-user=5.9.1-r5 cmd:snmpbulkget=5.9.1-r5 cmd:snmpbulkwalk=5.9.1-r5 cmd:snmpconf=5.9.1-r5 cmd:snmpdelta=5.9.1-r5 cmd:snmpdf=5.9.1-r5 cmd:snmpget=5.9.1-r5 cmd:snmpgetnext=5.9.1-r5 cmd:snmpinform=5.9.1-r5 cmd:snmpnetstat=5.9.1-r5 cmd:snmpping=5.9.1-r5 cmd:snmpset=5.9.1-r5 cmd:snmpstatus=5.9.1-r5 cmd:snmptable=5.9.1-r5 cmd:snmptest=5.9.1-r5 cmd:snmptranslate=5.9.1-r5 cmd:snmptrap=5.9.1-r5 cmd:snmpusm=5.9.1-r5 cmd:snmpvacm=5.9.1-r5 cmd:snmpwalk=5.9.1-r5
+
+C:Q1TgONEvyOV1sH7aibSpGPbUhXkB8=
+P:apache2-error
+V:2.4.51-r1
+A:armhf
+S:43755
+I:299008
+T:Apache Multi Language Custom Error Documents
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1636541269
+c:0967f68984e4fa0be310074b5059b8b86c328041
 
 C:Q1/1iom2Ea+YOc2sUUfPkjX7K0yyA=
 P:nftables-doc
@@ -10732,6 +10775,21 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-try-tiny=0.30-r3
 
+C:Q1M1pmHzDntQ77jS1puQ4Lv+TPsjM=
+P:apache2-ldap
+V:2.4.51-r1
+A:armhf
+S:42892
+I:151552
+T:LDAP authentication/authorization module for the Apache HTTP Server
+U:https://httpd.apache.org/docs/2.4/mod/mod_authnz_ldap.html
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1636541269
+c:0967f68984e4fa0be310074b5059b8b86c328041
+D:apache2 apr-util-ldap so:libc.musl-armhf.so.1 so:liblber.so.2 so:libldap.so.2
+
 C:Q1pHWsL85lyafN11TYjatXGNHIRno=
 P:lua-optarg
 V:0.2-r2
@@ -11836,6 +11894,21 @@ m:Timo Teras <timo.teras@iki.fi>
 t:1634486665
 c:48367644027d98b2a0c7a6f6f5577a30807713d4
 D:so:libc.musl-armhf.so.1 so:libogg.so.0 so:libspeex.so.1 so:libspeexdsp.so.1
+
+C:Q1d43cLKFDejJYRONg/rr92bcSn1s=
+P:apache2-doc
+V:2.4.51-r1
+A:armhf
+S:5724913
+I:25731072
+T:A high performance Unix-based HTTP server (documentation)
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1636541269
+c:0967f68984e4fa0be310074b5059b8b86c328041
+i:docs apache2=2.4.51-r1
 
 C:Q191JcXemTl++3I/fEKcZ5wgoGPdY=
 P:gnupg-lang
@@ -13788,6 +13861,21 @@ t:1631969562
 c:a5f650c08cb959c5b358bf11d3cc2d179cc6ce03
 i:docs pgpool=4.2.5-r0
 
+C:Q1SlT4PgaQlqmGMHUn2QGTz9dXOpA=
+P:apache2-brotli
+V:2.4.51-r1
+A:armhf
+S:7370
+I:49152
+T:Brotli content compression for the Apache HTTP Server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1636541269
+c:0967f68984e4fa0be310074b5059b8b86c328041
+D:apache2 so:libbrotlienc.so.1 so:libc.musl-armhf.so.1
+
 C:Q1eqakiIj3ruP0EFHm0UtJoQGkuys=
 P:font-sony-misc
 V:1.0.3-r1
@@ -15155,35 +15243,6 @@ L:BSD-3-Clause
 o:glslang
 t:1632999572
 c:f6fd82b4f28bc3b62b971b3f3fa5eaf56caa27b0
-
-C:Q1FdkSN8nIiaLSA/L24igpqoTZujY=
-P:apache2-proxy-html
-V:2.4.51-r0
-A:armhf
-S:21470
-I:86016
-T:HTML and XML content filters for the Apache HTTP Server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1633673979
-c:63f0efeed181c376672c3c5ef1e0f9b9bc32894c
-D:apache2 so:libc.musl-armhf.so.1 so:libxml2.so.2
-
-C:Q1pay/tzJ938EZkR9zDEQw97LVTCE=
-P:jwhois-doc
-V:4.0-r5
-A:armhf
-S:11305
-I:61440
-T:WHOIS/RWHOIS client (documentation)
-U:https://www.gnu.org/software/jwhois/
-L:GPL
-o:jwhois
-t:1600920521
-c:6c8f869da8f25b0eb482285f638a92dabb795edd
-i:docs jwhois=4.0-r5
 
 C:Q1JWIv+T4FkCOHO3sn596rKdF5wPc=
 P:guile
@@ -19022,6 +19081,21 @@ t:1584211375
 c:81633f00dd52212d62c630bbf6f6c8a9bc1f29cd
 D:augeas-libs=1.12.0-r0 pc:libxml-2.0 pkgconfig
 p:pc:augeas=1.12.0
+
+C:Q10U+RqSVWZevvSlCB4Z1thiGqv7c=
+P:apache2-ssl
+V:2.4.51-r1
+A:armhf
+S:90007
+I:253952
+T:SSL/TLS module for the Apache HTTP Server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1636541269
+c:0967f68984e4fa0be310074b5059b8b86c328041
+D:apache2 openssl /bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
 
 C:Q1EiHxsGR1oRosxXLSG43sZcPyRbg=
 P:linux-firmware-e100
@@ -22865,21 +22939,6 @@ c:c0eb4c4bdd5d22fea8912c857ac2019f091a7cce
 D:dbus so:libc.musl-armhf.so.1 so:libudev.so.1
 p:cmd:btmon=5.62-r0
 
-C:Q199tfIKYsYt9dq7aUfAoXqi8bi30=
-P:curl-dbg
-V:7.79.1-r0
-A:armhf
-S:1554541
-I:3526656
-T:URL retrival utility and library (debug symbols)
-U:https://curl.se/
-L:MIT
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1632298693
-c:397373762da97a88bf52faac8f6d4e5db94eccce
-D:ca-certificates
-
 C:Q1qNx87fI3PhG44RR8nzbQqcGIrXM=
 P:libconfig
 V:1.7.3-r0
@@ -26583,6 +26642,21 @@ c:3857b78b85101637a48500402bb76baddb57c9e5
 D:cmd:node
 p:cmd:node-gyp=8.1.3-r0 cmd:npm=8.1.3-r0 cmd:npx=8.1.3-r0
 
+C:Q14sq4ec9qzEPW7Y/UCpfFwjFvqJg=
+P:apache2-proxy
+V:2.4.51-r1
+A:armhf
+S:171242
+I:524288
+T:Proxy modules for the Apache HTTP Server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1636541269
+c:0967f68984e4fa0be310074b5059b8b86c328041
+D:apache2 so:libc.musl-armhf.so.1
+
 C:Q1klpqH9d/8S3TOxIibUCobhJocOE=
 P:links
 V:2.25-r1
@@ -27288,6 +27362,22 @@ t:1631548101
 c:fd79dc08fe3fb5f0c0a491bea711c1821980893d
 D:so:libacl.so.1 so:libbz2.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libexpat.so.1 so:liblz4.so.1 so:liblzma.so.5 so:libz.so.1 so:libzstd.so.1
 p:so:libarchive.so.13=13.5.2
+
+C:Q1HzO6Drz14JUSTMAa0EYgdTRST0I=
+P:apache2
+V:2.4.51-r1
+A:armhf
+S:764023
+I:2453504
+T:A high performance Unix-based HTTP server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1636541269
+c:0967f68984e4fa0be310074b5059b8b86c328041
+D:/bin/sh so:libapr-1.so.0 so:libaprutil-1.so.0 so:libc.musl-armhf.so.1 so:libpcre.so.1 so:libz.so.1
+p:cmd:fcgistarter=2.4.51-r1 cmd:httpd=2.4.51-r1 cmd:suexec=2.4.51-r1
 
 C:Q1knjoie9G4zQlIoBi27rKFZUuSDM=
 P:nagios-plugins-real
@@ -28221,22 +28311,6 @@ c:988e7300962f6a4c824d904d95c2a29b9fa7621d
 D:zsh
 i:zsh=5.8-r3 subversion
 
-C:Q1698x0mZLWpTgTOiAYAuV/M2fiSo=
-P:apache2-ctl
-V:2.4.51-r0
-A:armhf
-S:3132
-I:16384
-T:Apache control script
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1633673979
-c:63f0efeed181c376672c3c5ef1e0f9b9bc32894c
-D:lynx
-p:cmd:apachectl=2.4.51-r0
-
 C:Q1/XnYhkPNyYQTkI0v0Vsc8mNvafw=
 P:cups-dbg
 V:2.3.3-r4
@@ -28519,6 +28593,22 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 i:docs wipe=2.3.1-r0
 
+C:Q1X20TMpmbhiEdhoH9bGu4gyNqwRI=
+P:curl-dev
+V:7.80.0-r0
+A:armhf
+S:57631
+I:299008
+T:URL retrival utility and library (development files)
+U:https://curl.se/
+L:MIT
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1636549317
+c:33234bad6dce8a36eabcadaf6ee78ef7678d168b
+D:openssl1.1-compat-dev nghttp2-dev zlib-dev brotli-dev libcurl=7.80.0-r0 pkgconfig
+p:pc:libcurl=7.80.0 cmd:curl-config=7.80.0-r0
+
 C:Q1Yd0tcO4Umk85vN0ul0Os/ucu97A=
 P:openssh
 V:8.8_p1-r0
@@ -28718,6 +28808,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1611871299
 c:72ec48c9eb574e933462bae1c6c202fc64f28aa1
 i:docs liblockfile=1.17-r0
+
+C:Q1EtznBBr6zIkf+n5mSvPK8/xcK9E=
+P:apache2-utils
+V:2.4.51-r1
+A:armhf
+S:66114
+I:221184
+T:Apache utility programs for webservers
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1636541269
+c:0967f68984e4fa0be310074b5059b8b86c328041
+D:so:libapr-1.so.0 so:libaprutil-1.so.0 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
+p:cmd:ab=2.4.51-r1 cmd:checkgid=2.4.51-r1 cmd:dbmmanage=2.4.51-r1 cmd:htcacheclean=2.4.51-r1 cmd:htdbm=2.4.51-r1 cmd:htdigest=2.4.51-r1 cmd:htpasswd=2.4.51-r1 cmd:httxt2dbm=2.4.51-r1 cmd:logresolve=2.4.51-r1 cmd:rotatelogs=2.4.51-r1
 
 C:Q1UtowlrFxHordwHJ1SPDcqwvO/k4=
 P:perl-canary-stability-doc
@@ -29324,22 +29430,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1627487157
 c:6f91cc60595d660d3213f1f554925258dead4d72
 D:perl so:libc.musl-armhf.so.1
-
-C:Q1sEFH1iSDclwQUUBdU9jS4mAx1DU=
-P:apache2
-V:2.4.51-r0
-A:armhf
-S:764035
-I:2453504
-T:A high performance Unix-based HTTP server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1633673979
-c:63f0efeed181c376672c3c5ef1e0f9b9bc32894c
-D:/bin/sh so:libapr-1.so.0 so:libaprutil-1.so.0 so:libc.musl-armhf.so.1 so:libpcre.so.1 so:libz.so.1
-p:cmd:fcgistarter=2.4.51-r0 cmd:httpd=2.4.51-r0 cmd:suexec=2.4.51-r0
 
 C:Q14CzIcSC1xG8LCnxp5j9r9VOeEk8=
 P:lua5.2
@@ -30818,21 +30908,6 @@ t:1627487159
 c:3dd4a79fc549f87ef7920422887e12794ad61537
 D:so:libc.musl-armhf.so.1
 
-C:Q1H9fZ9a1BtgdnvMbn0USAxWrXNi0=
-P:perl-datetime-locale
-V:1.32-r0
-A:armhf
-S:787035
-I:18784256
-T:DateTime::Locale perl module
-U:https://metacpan.org/release/DateTime-Locale
-L:Artistic-1.0-Perl GPL-1.0-or-later
-o:perl-datetime-locale
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1627487151
-c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
-D:perl perl-cpan-meta-check perl-dist-checkconflicts perl-file-sharedir perl-file-sharedir-install perl-list-moreutils perl-namespace-autoclean perl-params-validate perl-params-validationcompiler perl-scalar-list-utils perl-test-fatal perl-test-requires perl-test-warnings
-
 C:Q1X25tcnUHs97lT1kr7HGs+fC6TSw=
 P:perl-javascript-minifier-doc
 V:1.16-r0
@@ -30862,6 +30937,22 @@ m:Dermot Bradley <dermot_bradley@yahoo.com>
 t:1634824330
 c:6f05c8f74be888b60eff31c3b2d8b39f0185abd2
 D:jitterentropy-library=3.3.0-r0
+
+C:Q1cJYkzjirseimJRIVX9lD8rfXVeo=
+P:libcurl
+V:7.80.0-r0
+A:armhf
+S:230061
+I:466944
+T:The multiprotocol file transfer library
+U:https://curl.se/
+L:MIT
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1636549317
+c:33234bad6dce8a36eabcadaf6ee78ef7678d168b
+D:ca-certificates so:libbrotlidec.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libnghttp2.so.14 so:libssl.so.1.1 so:libz.so.1
+p:so:libcurl.so.4=4.7.0
 
 C:Q1JfCe0ZP4Aqe4k6rS5Fp3CRByP/o=
 P:dovecot-ldap
@@ -32947,21 +33038,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1635494978
 c:87f6509d7aee77e5c5f5b2753690e039be33d359
 p:linux-firmware-any
-
-C:Q1qjFcIzhTNxgKW8amCcAcarmXAts=
-P:apache2-proxy
-V:2.4.51-r0
-A:armhf
-S:171211
-I:524288
-T:Proxy modules for the Apache HTTP Server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1633673979
-c:63f0efeed181c376672c3c5ef1e0f9b9bc32894c
-D:apache2 so:libc.musl-armhf.so.1
 
 C:Q1qlonwKmLdp8Qn16kY6jOhgY12Vo=
 P:lua5.1-iconv
@@ -35355,6 +35431,21 @@ t:1635896151
 c:0b3a50c008537261a5102ffabfaf6301284b7272
 D:openldap so:libc.musl-armhf.so.1 so:liblber.so.2 so:libsodium.so.23
 
+C:Q1suA85Nl9KsgXtUiBBCHvS16XuC8=
+P:apache2-webdav
+V:2.4.51-r1
+A:armhf
+S:67120
+I:188416
+T:WebDAV support for the Apache HTTP Server
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1636541269
+c:0967f68984e4fa0be310074b5059b8b86c328041
+D:apache2 so:libc.musl-armhf.so.1
+
 C:Q1sx6pdsXJtcMQwLFvqvLKxgK25kM=
 P:in-sync-openrc
 V:1.0-r0
@@ -35648,6 +35739,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:encodings font-alias mkfontscale mkfontdir fontconfig
+
+C:Q1RIXRvafe4SQSq9PbxSJlEpPyBdw=
+P:apache2-ctl
+V:2.4.51-r1
+A:armhf
+S:3132
+I:16384
+T:Apache control script
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1636541269
+c:0967f68984e4fa0be310074b5059b8b86c328041
+D:lynx
+p:cmd:apachectl=2.4.51-r1
 
 C:Q15F79T41WRjPZSePVEvK5Nhr5UfY=
 P:clang-dev
@@ -39678,21 +39785,6 @@ c:77ea1bc3e56fdba49a8fbae0f77f356f5b81b8ab
 D:so:libc.musl-armhf.so.1
 p:so:libspeex.so.1=1.5.1
 
-C:Q1pg4As1ZPevrX+pHLLtfJ6qS6Wx8=
-P:apache2-http2
-V:2.4.51-r0
-A:armhf
-S:88185
-I:233472
-T:HTTP/2 transport layer for the Apache HTTP Server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1633673979
-c:63f0efeed181c376672c3c5ef1e0f9b9bc32894c
-D:apache2 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libnghttp2.so.14
-
 C:Q1l1t+AvwbTeGs1zUSll1sKcvnmHU=
 P:perl-super-doc
 V:1.20190531-r1
@@ -41443,21 +41535,6 @@ t:1610489771
 c:1118fff73bb8f3a967c12d42de2d8c4a0a7ed162
 D:so:libc.musl-armhf.so.1
 p:so:libopus.so.0=0.8.0
-
-C:Q14vyM2bHCVVzpltTyr07et3cYXho=
-P:jwhois
-V:4.0-r5
-A:armhf
-S:37684
-I:106496
-T:WHOIS/RWHOIS client
-U:https://www.gnu.org/software/jwhois/
-L:GPL
-o:jwhois
-t:1600920521
-c:6c8f869da8f25b0eb482285f638a92dabb795edd
-D:so:libc.musl-armhf.so.1 so:libgdbm.so.6
-p:cmd:jwhois=4.0-r5
 
 C:Q1Y7b2E16QUS6llhBCUxRKZvTQlsQ=
 P:gdl-lang
@@ -44912,21 +44989,6 @@ t:1586814340
 c:03a1c4a5f1d68055801d45c2b4830cec96a727e4
 D:encodings font-alias mkfontscale mkfontdir fontconfig
 
-C:Q1o2ABKXdu5aX2KIfR62SSyxvjmmk=
-P:apache2-ldap
-V:2.4.51-r0
-A:armhf
-S:42626
-I:147456
-T:LDAP authentication/authorization module for the Apache HTTP Server
-U:https://httpd.apache.org/docs/2.4/mod/mod_authnz_ldap.html
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1633673979
-c:63f0efeed181c376672c3c5ef1e0f9b9bc32894c
-D:apache2 apr-util-ldap so:libc.musl-armhf.so.1 so:liblber-2.4.so.2 so:libldap-2.4.so.2
-
 C:Q1Q1iUJjckVCbwB1X0dTSP49sOoiA=
 P:perl-file-remove-doc
 V:1.60-r0
@@ -45710,22 +45772,6 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:so:libc.musl-armhf.so.1 so:librc.so.1
 i:lua5.4 lua-openrc=0.2-r4
 
-C:Q1SEtxiBhC0e+Q/IywHoVtW9Yvsnc=
-P:curl-dev
-V:7.79.1-r0
-A:armhf
-S:57261
-I:299008
-T:URL retrival utility and library (development files)
-U:https://curl.se/
-L:MIT
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1632298693
-c:397373762da97a88bf52faac8f6d4e5db94eccce
-D:openssl1.1-compat-dev nghttp2-dev zlib-dev brotli-dev libcurl=7.79.1-r0 pkgconfig
-p:pc:libcurl=7.79.1 cmd:curl-config=7.79.1-r0
-
 C:Q1mkeX3iLUph+yKZdfu9SiAVU1fS8=
 P:lua-stdlib-debug
 V:1.0.1-r1
@@ -45849,22 +45895,6 @@ c:f8d500fddcd7432ba711fea82ba0e55cb626592c
 D:so:libc.musl-armhf.so.1 so:libgomp.so.1 so:libintl.so.8 so:libtextstyle.so.0 so:libunistring.so.2 so:libxml2.so.2
 p:so:libgettextlib-0.21.so=0 so:libgettextsrc-0.21.so=0 cmd:autopoint=0.21-r0 cmd:envsubst=0.21-r0 cmd:gettext.sh=0.21-r0 cmd:gettext=0.21-r0 cmd:gettextize=0.21-r0 cmd:msgattrib=0.21-r0 cmd:msgcat=0.21-r0 cmd:msgcmp=0.21-r0 cmd:msgcomm=0.21-r0 cmd:msgconv=0.21-r0 cmd:msgen=0.21-r0 cmd:msgexec=0.21-r0 cmd:msgfilter=0.21-r0 cmd:msgfmt=0.21-r0 cmd:msggrep=0.21-r0 cmd:msginit=0.21-r0 cmd:msgmerge=0.21-r0 cmd:msgunfmt=0.21-r0 cmd:msguniq=0.21-r0 cmd:ngettext=0.21-r0 cmd:recode-sr-latin=0.21-r0 cmd:xgettext=0.21-r0
 
-C:Q1n7mSaLgqsF4nRtJ+/upofwKV6wE=
-P:apache2-utils
-V:2.4.51-r0
-A:armhf
-S:66079
-I:221184
-T:Apache utility programs for webservers
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1633673979
-c:63f0efeed181c376672c3c5ef1e0f9b9bc32894c
-D:so:libapr-1.so.0 so:libaprutil-1.so.0 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
-p:cmd:ab=2.4.51-r0 cmd:checkgid=2.4.51-r0 cmd:dbmmanage=2.4.51-r0 cmd:htcacheclean=2.4.51-r0 cmd:htdbm=2.4.51-r0 cmd:htdigest=2.4.51-r0 cmd:htpasswd=2.4.51-r0 cmd:httxt2dbm=2.4.51-r0 cmd:logresolve=2.4.51-r0 cmd:rotatelogs=2.4.51-r0
-
 C:Q1kHhNkGQKCT7FKR0w2sUr996qmHE=
 P:logrotate-doc
 V:3.18.1-r0
@@ -45939,6 +45969,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1615957378
 c:fd7fe54b66c466c7a616ec1e703cf284ffc01844
 i:openrc sshguard=2.4.2-r0
+
+C:Q1c894ZZ8ygmktN982ST+M1ZIh/0E=
+P:perl-datetime-locale-doc
+V:1.33-r0
+A:armhf
+S:2699563
+I:3399680
+T:DateTime::Locale perl module (documentation)
+U:https://metacpan.org/release/DateTime-Locale
+L:Artistic-1.0-Perl GPL-1.0-or-later
+o:perl-datetime-locale
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1636542550
+c:1b62f41cc0b4f4966ec4692b3cb061894043af28
+i:docs perl-datetime-locale=1.33-r0
 
 C:Q1xAMUoJs22zc1oLQYR+9Leh0uY2c=
 P:mpg123-dev
@@ -57030,6 +57075,22 @@ c:5a8419d87f56775f1f48f9959cd1d57143cb18ab
 D:so:libc.musl-armhf.so.1 so:libglib-2.0.so.0 so:libncursesw.so.6
 p:cmd:irqbalance-ui=1.8.0-r0 cmd:irqbalance=1.8.0-r0
 
+C:Q1w5gCGuDrMZhFYyuD+dY7OqXn4qo=
+P:apache2-dev
+V:2.4.51-r1
+A:armhf
+S:215610
+I:1069056
+T:A high performance Unix-based HTTP server (development files)
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1636541269
+c:0967f68984e4fa0be310074b5059b8b86c328041
+D:perl apr-util-dev
+p:cmd:apxs=2.4.51-r1
+
 C:Q1o36gl9C9e6zaYe/wMlLSl1YRnLk=
 P:lua5.1-stdlib
 V:41.2.2-r1
@@ -59031,21 +59092,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
 
-C:Q1Q6Ow3rk1GgzZg9hYwF1m/JHUDn8=
-P:apache2-brotli
-V:2.4.51-r0
-A:armhf
-S:7373
-I:49152
-T:Brotli content compression for the Apache HTTP Server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1633673979
-c:63f0efeed181c376672c3c5ef1e0f9b9bc32894c
-D:apache2 so:libbrotlienc.so.1 so:libc.musl-armhf.so.1
-
 C:Q1FVnUA19AW8TmiTKIMlXxPrWc4X4=
 P:nftables-static
 V:1.0.0-r0
@@ -59961,6 +60007,21 @@ c:3f7d60891e3b5eba1eeaa3c60fb3fe990af8574e
 D:perl perl-dbi perl-dbd-mysql perl-getopt-long perl-socket perl-term-readkey
 p:cmd:mytop=10.6.4-r1
 
+C:Q1A+uM7Ds44SL1dKUqF9m2kyydkZ8=
+P:curl-doc
+V:7.80.0-r0
+A:armhf
+S:771846
+I:2064384
+T:URL retrival utility and library (documentation)
+U:https://curl.se/
+L:MIT
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1636549317
+c:33234bad6dce8a36eabcadaf6ee78ef7678d168b
+i:docs curl=7.80.0-r0
+
 C:Q1FLNci5ImDjMXbA0ipGQ8vz3O2To=
 P:cdparanoia-libs
 V:10.2-r9
@@ -60067,6 +60128,22 @@ t:1565006756
 c:b1b7fa90dd470ef226a9e80c0572986b9932ffe9
 D:so:libc.musl-armhf.so.1 so:libz.so.1
 p:cmd:cramfsck=1.1-r3 cmd:mkcramfs=1.1-r3
+
+C:Q1W0F0zTkIMXZRdfCsjoL5ya3MwlE=
+P:curl
+V:7.80.0-r0
+A:armhf
+S:128224
+I:221184
+T:URL retrival utility and library
+U:https://curl.se/
+L:MIT
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1636549317
+c:33234bad6dce8a36eabcadaf6ee78ef7678d168b
+D:ca-certificates so:libc.musl-armhf.so.1 so:libcurl.so.4 so:libz.so.1
+p:cmd:curl=7.80.0-r0
 
 C:Q1XLJULLoHT0F8ZztUlP8mnRgZ9WY=
 P:perl-yaml-syck
@@ -60313,21 +60390,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1634884277
 c:c1075101a31c5989f237d0c155b3dabdeb899cea
 D:dnsmasq
-
-C:Q1BRiB9esoERTRlKoGfQ6dLwn3C6o=
-P:apache2-doc
-V:2.4.51-r0
-A:armhf
-S:5724901
-I:25731072
-T:A high performance Unix-based HTTP server (documentation)
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1633673979
-c:63f0efeed181c376672c3c5ef1e0f9b9bc32894c
-i:docs apache2=2.4.51-r0
 
 C:Q1BQhvszlnY2mxh3nWoB6d/oVgroE=
 P:perl-file-slurp-tiny-doc
@@ -60588,6 +60650,22 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl perl-sub-exporter-progressive
+
+C:Q1Nj8cdNPZAnzhZbk9i1B9/59WBqo=
+P:hypermail
+V:2.3.0-r6
+A:armhf
+S:150826
+I:356352
+T:Mail Archiver
+U:http://www.hypermail-project.org
+L:GPL-2.0-or-later
+o:hypermail
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1636539685
+c:78cd2a423b11de43c58b01e37b7930e3c3121c1f
+D:lua so:libc.musl-armhf.so.1 so:libgdbm.so.6 so:libpcre.so.1
+p:cmd:hypermail=2.3.0-r6 cmd:mdir2mbox.lua=2.3.0-r6 cmd:msgarchive=2.3.0-r6 cmd:rdmsg=2.3.0-r6
 
 C:Q1qCUMugPywYa4nROotP/2mscZA3k=
 P:dbus
@@ -62671,21 +62749,6 @@ c:87fbbd17b5ae73d934c8872c12f3e7563ce6b483
 D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
 p:boost-thread=1.77.0-r1 so:libboost_thread.so.1.77.0=1.77.0
 
-C:Q13RV8HknH69fvucnU81RWqN0aqDg=
-P:apache2-ssl
-V:2.4.51-r0
-A:armhf
-S:90005
-I:253952
-T:SSL/TLS module for the Apache HTTP Server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1633673979
-c:63f0efeed181c376672c3c5ef1e0f9b9bc32894c
-D:apache2 openssl /bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
-
 C:Q1IMeK4Qv+JW0TtCCCRfSGQn9dsz4=
 P:linux-firmware-brcm
 V:20211027-r0
@@ -63541,6 +63604,21 @@ c:670bf5a8cc5bc605eede8ca2fd55b50a5c9f8660
 D:mtd-utils-flash mtd-utils-jffs mtd-utils-misc mtd-utils-nand mtd-utils-nor mtd-utils-ubi mtd-utils-dev so:libc.musl-armhf.so.1
 p:cmd:fectest=2.1.3-r2
 
+C:Q1abLGmI4USF8iggHbLcy6iPO0OtU=
+P:perl-datetime-locale
+V:1.33-r0
+A:armhf
+S:803627
+I:19103744
+T:DateTime::Locale perl module
+U:https://metacpan.org/release/DateTime-Locale
+L:Artistic-1.0-Perl GPL-1.0-or-later
+o:perl-datetime-locale
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1636542550
+c:1b62f41cc0b4f4966ec4692b3cb061894043af28
+D:perl perl-cpan-meta-check perl-dist-checkconflicts perl-file-sharedir perl-file-sharedir-install perl-list-moreutils perl-namespace-autoclean perl-params-validate perl-params-validationcompiler perl-scalar-list-utils perl-test-fatal perl-test-requires perl-test-warnings
+
 C:Q1StmBBL1cvMUHoNAMbscG+ZsOaNg=
 P:perl-io-captureoutput
 V:1.1105-r1
@@ -64199,22 +64277,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1635951019
 c:9359922aac493ab768960f230e8a76d6c8c0d9bd
 
-C:Q1WAxLegHSuXx1//FOjP5nzEtOrtA=
-P:apache2-dev
-V:2.4.51-r0
-A:armhf
-S:215597
-I:1069056
-T:A high performance Unix-based HTTP server (development files)
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1633673979
-c:63f0efeed181c376672c3c5ef1e0f9b9bc32894c
-D:perl apr-util-dev
-p:cmd:apxs=2.4.51-r0
-
 C:Q1+jzFhJ0/A0b/TViT696WzbD22/s=
 P:busybox-static
 V:1.34.1-r2
@@ -64357,20 +64419,6 @@ t:1631616333
 c:1e3528761825d7026d2faffeacba58727f3c5bad
 D:rsyslog=8.2108.0-r0 so:libc.musl-armhf.so.1 so:libgnutls.so.30
 p:rsyslog-lmnsd_gtls=8.2108.0-r0
-
-C:Q1u8BM2AkR0liFiH0muIMNw5PZUYs=
-P:apache2-icons
-V:2.4.51-r0
-A:armhf
-S:159312
-I:1368064
-T:Apache Public Domain Icons
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1633673979
-c:63f0efeed181c376672c3c5ef1e0f9b9bc32894c
 
 C:Q1q4ETem2EDSG+wg/9r8UAdbtdK48=
 P:flac-doc
@@ -65621,21 +65669,6 @@ c:573e07da91784d4d27c4bc8b9e9122495c7356d3
 D:so:libc.musl-armhf.so.1 so:libogg.so.0
 p:so:libvorbis.so.0=0.4.9 so:libvorbisenc.so.2=2.0.12 so:libvorbisfile.so.3=3.3.8
 
-C:Q1+R6rxP4uj8JYKBBWt6J33exBTXE=
-P:apache2-lua
-V:2.4.51-r0
-A:armhf
-S:43557
-I:135168
-T:Lua support for the Apache HTTP server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1633673979
-c:63f0efeed181c376672c3c5ef1e0f9b9bc32894c
-D:apache2 so:libc.musl-armhf.so.1 so:liblua.so.5
-
 C:Q1+mltrVPj2JwFXqP6UVYmlNz6sMg=
 P:liburing-doc
 V:2.1-r0
@@ -65789,21 +65822,6 @@ t:1635339052
 c:1e550564a952290f15f05f332d87f828b8ed7524
 D:gcc=10.3.1_git20211027-r0 libgphobos=10.3.1_git20211027-r0 musl-dev libucontext-dev so:libc.musl-armhf.so.1 so:libgmp.so.10 so:libisl.so.22 so:libmpc.so.3 so:libmpfr.so.6 so:libz.so.1
 p:cmd:armv6-alpine-linux-musleabihf-gdc=10.3.1_git20211027-r0 cmd:gdc=10.3.1_git20211027-r0
-
-C:Q1+wSswG/phRpBBbrWgRzMeC2nJKg=
-P:curl-doc
-V:7.79.1-r0
-A:armhf
-S:761780
-I:2043904
-T:URL retrival utility and library (documentation)
-U:https://curl.se/
-L:MIT
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1632298693
-c:397373762da97a88bf52faac8f6d4e5db94eccce
-i:docs curl=7.79.1-r0
 
 C:Q1jvR22m6vQhm/S1CvN6wIwYeUuhI=
 P:u-boot-cubieboard
@@ -69213,6 +69231,20 @@ t:1635951019
 c:9359922aac493ab768960f230e8a76d6c8c0d9bd
 D:so:libc.musl-armhf.so.1 so:libfreeswitch.so.1 so:libnetsnmp.so.40 so:libnetsnmpagent.so.40
 
+C:Q1Zbgx0NXwuoTZ+aSanlt6PPV8rlU=
+P:jwhois-doc
+V:4.0-r6
+A:armhf
+S:11303
+I:61440
+T:WHOIS/RWHOIS client (documentation)
+U:https://www.gnu.org/software/jwhois/
+L:GPL
+o:jwhois
+t:1636539728
+c:a9e36d97f54746c01bbbd85f1b6b3f82a10d8294
+i:docs jwhois=4.0-r6
+
 C:Q19tIUjhviO1wYk5nnojc5zxE0aiU=
 P:linux-firmware-qca
 V:20211027-r0
@@ -70703,22 +70735,6 @@ t:1629882792
 c:d2c8e034f802e043e616ab33a29ba47db58dcd93
 i:docs e2fsprogs=1.46.4-r0
 
-C:Q1hxQM9Tm2CR0yG/xGRL4Tv/J/cLo=
-P:hypermail
-V:2.3.0-r5
-A:armhf
-S:150827
-I:356352
-T:Mail Archiver
-U:http://www.hypermail-project.org
-L:GPL-2.0-or-later
-o:hypermail
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1600920521
-c:6c8f869da8f25b0eb482285f638a92dabb795edd
-D:lua so:libc.musl-armhf.so.1 so:libgdbm.so.6 so:libpcre.so.1
-p:cmd:hypermail=2.3.0-r5 cmd:mdir2mbox.lua=2.3.0-r5 cmd:msgarchive=2.3.0-r5 cmd:rdmsg=2.3.0-r5
-
 C:Q1COlRFRIWVXxnKlWQcbcezqxQKac=
 P:lua5.1-struct
 V:0.2-r3
@@ -70978,6 +70994,21 @@ c:cb6336fc7c49f30d55339c6811bc1f612cb64ce2
 D:rpcbind python3 so:libc.musl-armhf.so.1
 p:cmd:rpcgen=2.5.4-r1
 
+C:Q13LXndTRW+DOWjDvp5nR5MLqY/hY=
+P:curl-static
+V:7.80.0-r0
+A:armhf
+S:2920636
+I:6594560
+T:URL retrival utility and library (static library)
+U:https://curl.se/
+L:MIT
+o:curl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1636549317
+c:33234bad6dce8a36eabcadaf6ee78ef7678d168b
+D:ca-certificates
+
 C:Q1jij7hWmQU0/Z6oZTDUMspi9Gtl4=
 P:perl-net-smtp-ssl-doc
 V:1.04-r2
@@ -71145,21 +71176,6 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
-
-C:Q1exDvR49OrK0YL4e3DUwWPzxZY7s=
-P:apache2-webdav
-V:2.4.51-r0
-A:armhf
-S:67136
-I:188416
-T:WebDAV support for the Apache HTTP Server
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1633673979
-c:63f0efeed181c376672c3c5ef1e0f9b9bc32894c
-D:apache2 so:libc.musl-armhf.so.1
 
 C:Q1bNjx/2YzUa/ubqAmAEG2pSEYxWg=
 P:logcheck-doc
@@ -71954,21 +71970,19 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-html-mason=1.59-r1
 
-C:Q1OaIISvAIF4Q1OBOSvQBRyrwpl+w=
-P:curl
-V:7.79.1-r0
+C:Q1auAKJaQxJ0aKH/OgUSlMUlXUNsE=
+P:apache2-icons
+V:2.4.51-r1
 A:armhf
-S:127364
-I:221184
-T:URL retrival utility and library
-U:https://curl.se/
-L:MIT
-o:curl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1632298693
-c:397373762da97a88bf52faac8f6d4e5db94eccce
-D:ca-certificates so:libc.musl-armhf.so.1 so:libcurl.so.4 so:libz.so.1
-p:cmd:curl=7.79.1-r0
+S:159282
+I:1368064
+T:Apache Public Domain Icons
+U:https://httpd.apache.org/
+L:Apache-2.0
+o:apache2
+m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
+t:1636541269
+c:0967f68984e4fa0be310074b5059b8b86c328041
 
 C:Q1jKHl9MdsUxAcGBfy4E0s5wFFS4A=
 P:perl-ipc-sharelite
@@ -72720,20 +72734,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1627487159
 c:533234584087bcc80e54326e07a353fa3ba8f22d
 D:so:libc.musl-armhf.so.1
-
-C:Q1mwSbpSYCPYC1DR4bEgGwTZGWKPY=
-P:apache2-error
-V:2.4.51-r0
-A:armhf
-S:43747
-I:299008
-T:Apache Multi Language Custom Error Documents
-U:https://httpd.apache.org/
-L:Apache-2.0
-o:apache2
-m:Kaarle Ritvanen <kaarle.ritvanen@datakunkku.fi>
-t:1633673979
-c:63f0efeed181c376672c3c5ef1e0f9b9bc32894c
 
 C:Q1q7EtgzP4jR9ccBC0U0KgvUo0DPU=
 P:perl-crypt-rijndael
