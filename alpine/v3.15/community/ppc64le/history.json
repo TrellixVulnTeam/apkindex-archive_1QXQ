@@ -137071,6 +137071,61 @@
       "versions": {
         "4.43.0-r0": 1636515281
       }
+    },
+    "sxmo-bemenu": {
+      "origin": "sxmo-bemenu",
+      "versions": {
+        "0.6.3.0-r0": 1636573880
+      },
+      "dependencies": [
+        "so:libX11.so.6",
+        "so:libXinerama.so.1",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcairo.so.2",
+        "so:libgobject-2.0.so.0",
+        "so:libncursesw.so.6",
+        "so:libpango-1.0.so.0",
+        "so:libpangocairo-1.0.so.0",
+        "so:libwayland-client.so.0",
+        "so:libxkbcommon.so.0"
+      ],
+      "provides": [
+        "bemenu",
+        "so:libbemenu.so.0=0.6.3",
+        "cmd:bemenu-run=0.6.3.0-r0",
+        "cmd:bemenu=0.6.3.0-r0"
+      ]
+    },
+    "sxmo-bemenu-dbg": {
+      "origin": "sxmo-bemenu",
+      "versions": {
+        "0.6.3.0-r0": 1636573880
+      }
+    },
+    "sxmo-bemenu-dev": {
+      "origin": "sxmo-bemenu",
+      "versions": {
+        "0.6.3.0-r0": 1636573880
+      },
+      "dependencies": [
+        "libxkbcommon-dev",
+        "libxinerama-dev",
+        "ncurses-dev",
+        "wayland-dev",
+        "pango-dev",
+        "wayland-protocols",
+        "pkgconfig",
+        "sxmo-bemenu=0.6.3.0-r0"
+      ],
+      "provides": [
+        "pc:bemenu=0.6.3"
+      ]
+    },
+    "sxmo-bemenu-doc": {
+      "origin": "sxmo-bemenu",
+      "versions": {
+        "0.6.3.0-r0": 1636573880
+      }
     }
   },
   "provide": {
@@ -138990,6 +139045,10 @@
       "py3-jaraco-functools": {
         "package": "py3-jaraco.functools",
         "version": "3.4.0-r0"
+      },
+      "bemenu": {
+        "package": "sxmo-bemenu",
+        "version": 0
       }
     },
     "so": {
@@ -143910,7 +143969,7 @@
         "version": "2.3.0"
       },
       "libbemenu.so.0": {
-        "package": "bemenu",
+        "package": "sxmo-bemenu",
         "version": "0.6.3"
       },
       "libgdkmm-2.4.so.1": {
