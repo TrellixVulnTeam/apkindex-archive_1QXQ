@@ -1653,7 +1653,8 @@
       "origin": "fcft",
       "versions": {
         "2.4.5-r0": 1629034731,
-        "2.4.6-r0": 1635015563
+        "2.4.6-r0": 1635015563,
+        "2.5.0-r0": 1636931937
       }
     },
     "py3-hiredis": {
@@ -6723,7 +6724,8 @@
     "foot-fish-completion": {
       "origin": "foot",
       "versions": {
-        "1.9.2-r0": 1633182590
+        "1.9.2-r0": 1633182590,
+        "1.10.0-r0": 1636932452
       }
     },
     "postfwd-doc": {
@@ -29427,17 +29429,19 @@
       "origin": "fcft",
       "versions": {
         "2.4.5-r0": 1629034731,
-        "2.4.6-r0": 1635015563
+        "2.4.6-r0": 1635015563,
+        "2.5.0-r0": 1636931937
       },
       "dependencies": [
         "so:libc.musl-armv7.so.1",
         "so:libfontconfig.so.1",
         "so:libfreetype.so.6",
         "so:libharfbuzz.so.0",
-        "so:libpixman-1.so.0"
+        "so:libpixman-1.so.0",
+        "so:libutf8proc.so.2"
       ],
       "provides": [
-        "so:libfcft.so.3=3.4.6"
+        "so:libfcft.so.3=3.5.0"
       ]
     },
     "hivex-dev": {
@@ -35360,7 +35364,8 @@
     "foot": {
       "origin": "foot",
       "versions": {
-        "1.9.2-r0": 1633182590
+        "1.9.2-r0": 1633182590,
+        "1.10.0-r0": 1636932452
       },
       "dependencies": [
         "ncurses-terminfo",
@@ -35374,8 +35379,8 @@
         "so:libxkbcommon.so.0"
       ],
       "provides": [
-        "cmd:foot=1.9.2-r0",
-        "cmd:footclient=1.9.2-r0"
+        "cmd:foot=1.10.0-r0",
+        "cmd:footclient=1.10.0-r0"
       ]
     },
     "R": {
@@ -59236,19 +59241,21 @@
       "origin": "fcft",
       "versions": {
         "2.4.5-r0": 1629034731,
-        "2.4.6-r0": 1635015563
+        "2.4.6-r0": 1635015563,
+        "2.5.0-r0": 1636931937
       },
       "dependencies": [
-        "fcft=2.4.6-r0",
+        "fcft=2.5.0-r0",
         "pc:fontconfig",
         "pc:freetype2",
         "pc:harfbuzz",
+        "pc:libutf8proc",
         "pc:pixman-1",
         "pc:tllist>=1.0.1",
         "pkgconfig"
       ],
       "provides": [
-        "pc:fcft=2.4.6"
+        "pc:fcft=2.5.0"
       ]
     },
     "jbig2enc-dev": {
@@ -70824,7 +70831,8 @@
     "foot-zsh-completion": {
       "origin": "foot",
       "versions": {
-        "1.9.2-r0": 1633182590
+        "1.9.2-r0": 1633182590,
+        "1.10.0-r0": 1636932452
       }
     },
     "nextcloud-photos": {
@@ -96560,7 +96568,8 @@
     "foot-bash-completion": {
       "origin": "foot",
       "versions": {
-        "1.9.2-r0": 1633182590
+        "1.9.2-r0": 1633182590,
+        "1.10.0-r0": 1636932452
       }
     },
     "py3-pysol-cards": {
@@ -123194,7 +123203,8 @@
     "foot-doc": {
       "origin": "foot",
       "versions": {
-        "1.9.2-r0": 1633182590
+        "1.9.2-r0": 1633182590,
+        "1.10.0-r0": 1636932452
       }
     },
     "perl-number-compare": {
@@ -148375,6 +148385,66 @@
       "provides": [
         "py3.9:keyutils=0.6-r0"
       ]
+    },
+    "fuzzel-zsh-completion": {
+      "origin": "fuzzel",
+      "versions": {
+        "1.6.5-r0": 1636934640
+      }
+    },
+    "wlrctl-doc": {
+      "origin": "wlrctl",
+      "versions": {
+        "0.2.1-r0": 1636934862
+      }
+    },
+    "wlrctl-zsh-completion": {
+      "origin": "wlrctl",
+      "versions": {
+        "0.2.1-r0": 1636934862
+      }
+    },
+    "fuzzel-doc": {
+      "origin": "fuzzel",
+      "versions": {
+        "1.6.5-r0": 1636934640
+      }
+    },
+    "fuzzel": {
+      "origin": "fuzzel",
+      "versions": {
+        "1.6.5-r0": 1636934640
+      },
+      "dependencies": [
+        "so:libc.musl-armv7.so.1",
+        "so:libcairo.so.2",
+        "so:libfcft.so.3",
+        "so:libfontconfig.so.1",
+        "so:libgobject-2.0.so.0",
+        "so:libpixman-1.so.0",
+        "so:libpng16.so.16",
+        "so:librsvg-2.so.2",
+        "so:libwayland-client.so.0",
+        "so:libwayland-cursor.so.0",
+        "so:libxkbcommon.so.0"
+      ],
+      "provides": [
+        "cmd:fuzzel=1.6.5-r0"
+      ]
+    },
+    "wlrctl": {
+      "origin": "wlrctl",
+      "versions": {
+        "0.2.1-r0": 1636934862
+      },
+      "dependencies": [
+        "so:libc.musl-armv7.so.1",
+        "so:libwayland-client.so.0",
+        "so:libxkbcommon.so.0"
+      ],
+      "provides": [
+        "cmd:wlrctl=0.2.1-r0"
+      ]
     }
   },
   "provide": {
@@ -152831,7 +152901,7 @@
       },
       "libfcft.so.3": {
         "package": "fcft",
-        "version": "3.4.6"
+        "version": "3.5.0"
       },
       "libQt6Svg.so.6": {
         "package": "qt6-qtsvg",
