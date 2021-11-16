@@ -13310,13 +13310,14 @@
     "x264-libs": {
       "origin": "x264",
       "versions": {
-        "20210211-r0": 1623460625
+        "20210211-r0": 1623460625,
+        "20210613-r0": 1637103172
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1"
       ],
       "provides": [
-        "so:libx264.so.161=161"
+        "so:libx264.so.163=163"
       ]
     },
     "py3-vobject": {
@@ -27645,14 +27646,15 @@
     "x264-dev": {
       "origin": "x264",
       "versions": {
-        "20210211-r0": 1623460625
+        "20210211-r0": 1623460625,
+        "20210613-r0": 1637103172
       },
       "dependencies": [
         "pkgconfig",
-        "x264-libs=20210211-r0"
+        "x264-libs=20210613-r0"
       ],
       "provides": [
-        "pc:x264=0.161.x"
+        "pc:x264=0.163.x"
       ]
     },
     "php8-pecl-lzf": {
@@ -110274,13 +110276,14 @@
     "x264": {
       "origin": "x264",
       "versions": {
-        "20210211-r0": 1623460625
+        "20210211-r0": 1623460625,
+        "20210613-r0": 1637103172
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1"
       ],
       "provides": [
-        "cmd:x264=20210211-r0"
+        "cmd:x264=20210613-r0"
       ]
     },
     "perl-www-mechanize-cached": {
@@ -138793,6 +138796,31 @@
       "versions": {
         "9.4.14_p1-r12": 1637100588
       }
+    },
+    "cargo-watch-doc": {
+      "origin": "cargo-watch",
+      "versions": {
+        "8.1.2-r1": 1637104304
+      }
+    },
+    "cargo-watch": {
+      "origin": "cargo-watch",
+      "versions": {
+        "8.1.2-r1": 1637104304
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1",
+        "so:libgcc_s.so.1"
+      ],
+      "provides": [
+        "cmd:cargo-watch=8.1.2-r1"
+      ]
+    },
+    "cargo-watch-zsh-completion": {
+      "origin": "cargo-watch",
+      "versions": {
+        "8.1.2-r1": 1637104304
+      }
     }
   },
   "provide": {
@@ -153026,6 +153054,10 @@
       "libpgtypes.so.3": {
         "package": "postgresql-bdr-libs",
         "version": "3.5"
+      },
+      "libx264.so.163": {
+        "package": "x264-libs",
+        "version": "163"
       }
     }
   }

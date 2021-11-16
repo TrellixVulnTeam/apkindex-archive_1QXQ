@@ -4738,13 +4738,14 @@
     "x264": {
       "origin": "x264",
       "versions": {
-        "20210211-r0": 1623460625
+        "20210211-r0": 1623460625,
+        "20210613-r0": 1637103172
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1"
       ],
       "provides": [
-        "cmd:x264=20210211-r0"
+        "cmd:x264=20210613-r0"
       ]
     },
     "docker-compose": {
@@ -83777,14 +83778,15 @@
     "x264-dev": {
       "origin": "x264",
       "versions": {
-        "20210211-r0": 1623460625
+        "20210211-r0": 1623460625,
+        "20210613-r0": 1637103172
       },
       "dependencies": [
         "pkgconfig",
-        "x264-libs=20210211-r0"
+        "x264-libs=20210613-r0"
       ],
       "provides": [
-        "pc:x264=0.161.x"
+        "pc:x264=0.163.x"
       ]
     },
     "arch-install-scripts-zsh-completion": {
@@ -110557,13 +110559,14 @@
     "x264-libs": {
       "origin": "x264",
       "versions": {
-        "20210211-r0": 1623460625
+        "20210211-r0": 1623460625,
+        "20210613-r0": 1637103172
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1"
       ],
       "provides": [
-        "so:libx264.so.161=161"
+        "so:libx264.so.163=163"
       ]
     },
     "w3m-doc": {
@@ -154469,6 +154472,31 @@
       "versions": {
         "9.4.14_p1-r12": 1637100588
       }
+    },
+    "cargo-edit": {
+      "origin": "cargo-edit",
+      "versions": {
+        "0.8.0-r2": 1637104288
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1",
+        "so:libcrypto.so.1.1",
+        "so:libgcc_s.so.1",
+        "so:libgit2.so.1.3",
+        "so:libssl.so.1.1"
+      ],
+      "provides": [
+        "cmd:cargo-add=0.8.0-r2",
+        "cmd:cargo-rm=0.8.0-r2",
+        "cmd:cargo-set-version=0.8.0-r2",
+        "cmd:cargo-upgrade=0.8.0-r2"
+      ]
+    },
+    "cargo-edit-doc": {
+      "origin": "cargo-edit",
+      "versions": {
+        "0.8.0-r2": 1637104288
+      }
     }
   },
   "provide": {
@@ -171370,6 +171398,10 @@
       "libpgtypes.so.3": {
         "package": "postgresql-bdr-libs",
         "version": "3.5"
+      },
+      "libx264.so.163": {
+        "package": "x264-libs",
+        "version": "163"
       }
     }
   }
