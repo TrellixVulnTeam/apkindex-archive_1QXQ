@@ -11733,18 +11733,23 @@
     "clamav": {
       "origin": "clamav",
       "versions": {
-        "0.103.3-r1": 1632132102
+        "0.103.3-r1": 1632132102,
+        "0.104.1-r0": 1637146138
       },
       "dependencies": [
         "clamav-scanner",
         "clamav-daemon",
         "so:libc.musl-ppc64le.so.1",
         "so:libclamav.so.9",
+        "so:libcrypto.so.1.1",
         "so:libcurl.so.4",
-        "so:libfts.so.0"
+        "so:libfts.so.0",
+        "so:libjson-c.so.5",
+        "so:libssl.so.1.1"
       ],
       "provides": [
-        "cmd:clamonacc=0.103.3-r1"
+        "cmd:clamonacc=0.104.1-r0",
+        "cmd:clamsubmit=0.104.1-r0"
       ]
     },
     "py3-google-auth-httplib2": {
@@ -20662,17 +20667,18 @@
     "clamav-dev": {
       "origin": "clamav",
       "versions": {
-        "0.103.3-r1": 1632132102
+        "0.103.3-r1": 1632132102,
+        "0.104.1-r0": 1637146138
       },
       "dependencies": [
         "openssl1.1-compat-dev",
-        "clamav-libs=0.103.3-r1",
-        "clamav-libunrar=0.103.3-r1",
+        "clamav-libs=0.104.1-r0",
+        "clamav-libunrar=0.104.1-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libclamav=0.103.3",
-        "cmd:clamav-config=0.103.3-r1"
+        "pc:libclamav=0.104.1",
+        "cmd:clamav-config=0.104.1-r0"
       ]
     },
     "knotifyconfig-doc": {
@@ -28487,17 +28493,11 @@
         "6.2.0-r1": 1634138177,
         "6.2.0-r2": 1635117238,
         "6.2.1-r0": 1635588621,
-        "6.2.1-r1": 1637099420
+        "6.2.1-r1": 1637099420,
+        "6.2.1-r2": 1637144218
       },
       "dependencies": [
         "xdg-utils",
-        "so:libEGL.so.1",
-        "so:libGL.so.1",
-        "so:libQt6Gui.so.6",
-        "so:libQt6OpenGL.so.6",
-        "so:libQt6Widgets.so.6",
-        "so:libX11-xcb.so.1",
-        "so:libX11.so.6",
         "so:libb2.so.1",
         "so:libbrotlidec.so.1",
         "so:libc.musl-ppc64le.so.1",
@@ -28511,22 +28511,6 @@
         "so:libpcre2-16.so.0",
         "so:libssl.so.1.1",
         "so:libstdc++.so.6",
-        "so:libxcb-glx.so.0",
-        "so:libxcb-icccm.so.4",
-        "so:libxcb-image.so.0",
-        "so:libxcb-keysyms.so.1",
-        "so:libxcb-randr.so.0",
-        "so:libxcb-render-util.so.0",
-        "so:libxcb-render.so.0",
-        "so:libxcb-shape.so.0",
-        "so:libxcb-shm.so.0",
-        "so:libxcb-sync.so.1",
-        "so:libxcb-xfixes.so.0",
-        "so:libxcb-xinput.so.0",
-        "so:libxcb-xkb.so.1",
-        "so:libxcb.so.1",
-        "so:libxkbcommon-x11.so.0",
-        "so:libxkbcommon.so.0",
         "so:libz.so.1",
         "so:libzstd.so.1"
       ],
@@ -28535,10 +28519,8 @@
         "so:libQt6Core.so.6=6.2.1",
         "so:libQt6DBus.so.6=6.2.1",
         "so:libQt6Network.so.6=6.2.1",
-        "so:libQt6OpenGLWidgets.so.6=6.2.1",
         "so:libQt6Sql.so.6=6.2.1",
         "so:libQt6Test.so.6=6.2.1",
-        "so:libQt6XcbQpa.so.6=6.2.1",
         "so:libQt6Xml.so.6=6.2.1"
       ]
     },
@@ -33339,7 +33321,8 @@
         "6.2.0-r1": 1634138177,
         "6.2.0-r2": 1635117238,
         "6.2.1-r0": 1635588621,
-        "6.2.1-r1": 1637099420
+        "6.2.1-r1": 1637099420,
+        "6.2.1-r2": 1637144218
       },
       "dependencies": [
         "xdg-utils"
@@ -42935,7 +42918,8 @@
     "clamav-db": {
       "origin": "clamav",
       "versions": {
-        "0.103.3-r1": 1632132102
+        "0.103.3-r1": 1632132102,
+        "0.104.1-r0": 1637146138
       },
       "dependencies": [
         "freshclam"
@@ -54085,7 +54069,8 @@
     "clamav-milter": {
       "origin": "clamav",
       "versions": {
-        "0.103.3-r1": 1632132102
+        "0.103.3-r1": 1632132102,
+        "0.104.1-r0": 1637146138
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -54093,7 +54078,7 @@
         "so:libmilter.so.1.0.2"
       ],
       "provides": [
-        "cmd:clamav-milter=0.103.3-r1"
+        "cmd:clamav-milter=0.104.1-r0"
       ]
     },
     "libatasmart-dev": {
@@ -57475,7 +57460,8 @@
     "clamav-libunrar": {
       "origin": "clamav",
       "versions": {
-        "0.103.3-r1": 1632132102
+        "0.103.3-r1": 1632132102,
+        "0.104.1-r0": 1637146138
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -57483,8 +57469,8 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "so:libclamunrar.so.9=9.0.5",
-        "so:libclamunrar_iface.so.9=9.0.5"
+        "so:libclamunrar.so.9=9.1.0",
+        "so:libclamunrar_iface.so.9=9.1.0"
       ]
     },
     "php7-pdo_mysql": {
@@ -58931,7 +58917,8 @@
         "6.2.0-r1": 1634138177,
         "6.2.0-r2": 1635117238,
         "6.2.1-r0": 1635588621,
-        "6.2.1-r1": 1637099420
+        "6.2.1-r1": 1637099420,
+        "6.2.1-r2": 1637144218
       },
       "dependencies": [
         "xdg-utils",
@@ -72488,7 +72475,8 @@
         "6.2.0-r1": 1634138177,
         "6.2.0-r2": 1635117238,
         "6.2.1-r0": 1635588621,
-        "6.2.1-r1": 1637099420
+        "6.2.1-r1": 1637099420,
+        "6.2.1-r2": 1637144218
       }
     },
     "php7-pecl-event": {
@@ -84975,7 +84963,8 @@
     "clamav-scanner": {
       "origin": "clamav",
       "versions": {
-        "0.103.3-r1": 1632132102
+        "0.103.3-r1": 1632132102,
+        "0.104.1-r0": 1637146138
       },
       "dependencies": [
         "freshclam",
@@ -84985,9 +84974,9 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:clambc=0.103.3-r1",
-        "cmd:clamscan=0.103.3-r1",
-        "cmd:sigtool=0.103.3-r1"
+        "cmd:clambc=0.104.1-r0",
+        "cmd:clamscan=0.104.1-r0",
+        "cmd:sigtool=0.104.1-r0"
       ]
     },
     "py3-fontmath": {
@@ -86899,7 +86888,8 @@
     "clamav-clamdscan": {
       "origin": "clamav",
       "versions": {
-        "0.103.3-r1": 1632132102
+        "0.103.3-r1": 1632132102,
+        "0.104.1-r0": 1637146138
       },
       "dependencies": [
         "openssl",
@@ -86907,7 +86897,7 @@
         "so:libclamav.so.9"
       ],
       "provides": [
-        "cmd:clamdscan=0.103.3-r1"
+        "cmd:clamdscan=0.104.1-r0"
       ]
     },
     "luasrcdiet": {
@@ -87834,7 +87824,8 @@
     "clamav-daemon": {
       "origin": "clamav",
       "versions": {
-        "0.103.3-r1": 1632132102
+        "0.103.3-r1": 1632132102,
+        "0.104.1-r0": 1637146138
       },
       "dependencies": [
         "freshclam",
@@ -87846,15 +87837,16 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:clamconf=0.103.3-r1",
-        "cmd:clamd=0.103.3-r1",
-        "cmd:clamdtop=0.103.3-r1"
+        "cmd:clamconf=0.104.1-r0",
+        "cmd:clamd=0.104.1-r0",
+        "cmd:clamdtop=0.104.1-r0"
       ]
     },
     "clamav-daemon-openrc": {
       "origin": "clamav",
       "versions": {
-        "0.103.3-r1": 1632132102
+        "0.103.3-r1": 1632132102,
+        "0.104.1-r0": 1637146138
       },
       "dependencies": [
         "freshclam-openrc"
@@ -90383,7 +90375,8 @@
         "6.2.0-r1": 1634138177,
         "6.2.0-r2": 1635117238,
         "6.2.1-r0": 1635588621,
-        "6.2.1-r1": 1637099420
+        "6.2.1-r1": 1637099420,
+        "6.2.1-r2": 1637144218
       },
       "dependencies": [
         "xdg-utils",
@@ -95642,22 +95635,24 @@
     "clamav-libs": {
       "origin": "clamav",
       "versions": {
-        "0.103.3-r1": 1632132102
+        "0.103.3-r1": 1632132102,
+        "0.104.1-r0": 1637146138
       },
       "dependencies": [
         "so:libbz2.so.1",
         "so:libc.musl-ppc64le.so.1",
         "so:libcrypto.so.1.1",
         "so:libcurl.so.4",
-        "so:libltdl.so.7",
-        "so:libpcre.so.1",
+        "so:libjson-c.so.5",
+        "so:libmspack.so.0",
+        "so:libpcre2-8.so.0",
         "so:libssl.so.1.1",
+        "so:libxml2.so.2",
         "so:libz.so.1"
       ],
       "provides": [
-        "so:libclamav.so.9=9.0.5",
-        "so:libclammspack.so.0=0.1.0",
-        "so:libfreshclam.so.2=2.0.1"
+        "so:libclamav.so.9=9.1.0",
+        "so:libfreshclam.so.2=2.0.2"
       ]
     },
     "blas-dev": {
@@ -98213,7 +98208,8 @@
         "6.2.0-r1": 1634138177,
         "6.2.0-r2": 1635117238,
         "6.2.1-r0": 1635588621,
-        "6.2.1-r1": 1637099420
+        "6.2.1-r1": 1637099420,
+        "6.2.1-r2": 1637144218
       },
       "dependencies": [
         "hicolor-icon-theme",
@@ -98222,7 +98218,6 @@
         "so:libQt6Core.so.6",
         "so:libQt6DBus.so.6",
         "so:libQt6Network.so.6",
-        "so:libQt6XcbQpa.so.6",
         "so:libX11-xcb.so.1",
         "so:libX11.so.6",
         "so:libc.musl-ppc64le.so.1",
@@ -98243,7 +98238,21 @@
         "so:libstdc++.so.6",
         "so:libts.so.0",
         "so:libudev.so.1",
+        "so:libxcb-glx.so.0",
+        "so:libxcb-icccm.so.4",
+        "so:libxcb-image.so.0",
+        "so:libxcb-keysyms.so.1",
+        "so:libxcb-randr.so.0",
+        "so:libxcb-render-util.so.0",
+        "so:libxcb-render.so.0",
+        "so:libxcb-shape.so.0",
+        "so:libxcb-shm.so.0",
+        "so:libxcb-sync.so.1",
+        "so:libxcb-xfixes.so.0",
+        "so:libxcb-xinput.so.0",
+        "so:libxcb-xkb.so.1",
         "so:libxcb.so.1",
+        "so:libxkbcommon-x11.so.0",
         "so:libxkbcommon.so.0",
         "so:libz.so.1"
       ],
@@ -98253,8 +98262,10 @@
         "so:libQt6EglFsKmsSupport.so.6=6.2.1",
         "so:libQt6Gui.so.6=6.2.1",
         "so:libQt6OpenGL.so.6=6.2.1",
+        "so:libQt6OpenGLWidgets.so.6=6.2.1",
         "so:libQt6PrintSupport.so.6=6.2.1",
-        "so:libQt6Widgets.so.6=6.2.1"
+        "so:libQt6Widgets.so.6=6.2.1",
+        "so:libQt6XcbQpa.so.6=6.2.1"
       ]
     },
     "py3-dotenv": {
@@ -102614,7 +102625,8 @@
     "freshclam-openrc": {
       "origin": "clamav",
       "versions": {
-        "0.103.3-r1": 1632132102
+        "0.103.3-r1": 1632132102,
+        "0.104.1-r0": 1637146138
       }
     },
     "rspamd-client": {
@@ -107410,7 +107422,8 @@
     "clamav-doc": {
       "origin": "clamav",
       "versions": {
-        "0.103.3-r1": 1632132102
+        "0.103.3-r1": 1632132102,
+        "0.104.1-r0": 1637146138
       }
     },
     "qtquickcontrols-nemo": {
@@ -107821,7 +107834,8 @@
         "6.2.0-r1": 1634138177,
         "6.2.0-r2": 1635117238,
         "6.2.1-r0": 1635588621,
-        "6.2.1-r1": 1637099420
+        "6.2.1-r1": 1637099420,
+        "6.2.1-r2": 1637144218
       },
       "dependencies": [
         "xdg-utils",
@@ -109219,7 +109233,8 @@
     "freshclam": {
       "origin": "clamav",
       "versions": {
-        "0.103.3-r1": 1632132102
+        "0.103.3-r1": 1632132102,
+        "0.104.1-r0": 1637146138
       },
       "dependencies": [
         "/bin/sh",
@@ -109228,7 +109243,7 @@
         "so:libfreshclam.so.2"
       ],
       "provides": [
-        "cmd:freshclam=0.103.3-r1"
+        "cmd:freshclam=0.104.1-r0"
       ]
     },
     "iptstate": {
@@ -110429,7 +110444,8 @@
         "6.2.0-r1": 1634138177,
         "6.2.0-r2": 1635117238,
         "6.2.1-r0": 1635588621,
-        "6.2.1-r1": 1637099420
+        "6.2.1-r1": 1637099420,
+        "6.2.1-r2": 1637144218
       },
       "dependencies": [
         "qt6-qtbase-mysql",
@@ -110470,8 +110486,8 @@
         "xcb-util-renderutil-dev",
         "xcb-util-wm-dev",
         "zlib-dev",
-        "qt6-qtbase-x11=6.2.1-r1",
-        "qt6-qtbase=6.2.1-r1"
+        "qt6-qtbase-x11=6.2.1-r2",
+        "qt6-qtbase=6.2.1-r2"
       ]
     },
     "xbps-zsh-completion": {
@@ -112121,7 +112137,8 @@
         "6.2.0-r1": 1634138177,
         "6.2.0-r2": 1635117238,
         "6.2.1-r0": 1635588621,
-        "6.2.1-r1": 1637099420
+        "6.2.1-r1": 1637099420,
+        "6.2.1-r2": 1637144218
       },
       "dependencies": [
         "xdg-utils",
@@ -143675,7 +143692,7 @@
         "version": "6.2.1"
       },
       "libQt6OpenGLWidgets.so.6": {
-        "package": "qt6-qtbase",
+        "package": "qt6-qtbase-x11",
         "version": "6.2.1"
       },
       "libQt6Sql.so.6": {
@@ -143687,7 +143704,7 @@
         "version": "6.2.1"
       },
       "libQt6XcbQpa.so.6": {
-        "package": "qt6-qtbase",
+        "package": "qt6-qtbase-x11",
         "version": "6.2.1"
       },
       "libQt6Xml.so.6": {
@@ -146176,11 +146193,11 @@
       },
       "libclamunrar.so.9": {
         "package": "clamav-libunrar",
-        "version": "9.0.5"
+        "version": "9.1.0"
       },
       "libclamunrar_iface.so.9": {
         "package": "clamav-libunrar",
-        "version": "9.0.5"
+        "version": "9.1.0"
       },
       "libphonon4qt5.so.4": {
         "package": "phonon",
@@ -148984,7 +149001,7 @@
       },
       "libclamav.so.9": {
         "package": "clamav-libs",
-        "version": "9.0.5"
+        "version": "9.1.0"
       },
       "libclammspack.so.0": {
         "package": "clamav-libs",
@@ -148992,7 +149009,7 @@
       },
       "libfreshclam.so.2": {
         "package": "clamav-libs",
-        "version": "2.0.1"
+        "version": "2.0.2"
       },
       "libgsf-1.so.114": {
         "package": "libgsf",
