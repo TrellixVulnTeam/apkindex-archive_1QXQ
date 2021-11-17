@@ -4118,22 +4118,6 @@ c:6bbdbea9eb6849e5b3b5277be249ffff15274bf1
 D:ca-certificates so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libexpat.so.1 so:libssl.so.1.1 so:libz.so.1
 p:so:libneon.so.27=27.5.1
 
-C:Q1mtTsNnOufMxx7DB9d7BMN52gGZI=
-P:mosquitto-libs++
-V:2.0.13-r0
-A:s390x
-S:7641
-I:36864
-T:C++ wrapper for libmosquitto
-U:https://mosquitto.org/
-L:EPL-1.0
-o:mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635867064
-c:12da719cec6fbd5b5a03f3227f23b7db11d0cdaa
-D:so:libmosquitto.so.1 so:libstdc++.so.6
-p:so:libmosquittopp.so.1=1
-
 C:Q1jGGFbICJpd4lWRybel15HsST/l8=
 P:shorewall6
 V:5.2.8-r0
@@ -4949,6 +4933,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1630251065
 c:ca69744d716fb4fc75f2442df6e3e9c972d85cf2
 i:docs perl-test-warnings=0.031-r0
+
+C:Q1AXdkW8UP2RcFYDT353qqYtEBqLc=
+P:mosquitto-dev
+V:2.0.14-r0
+A:s390x
+S:32831
+I:208896
+T:open source MQTT broker (development files)
+U:https://mosquitto.org/
+L:EPL-1.0
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1637188206
+c:c944fdad28bc919fddac93701d46cd6d5e0dcc1a
+D:mosquitto-libs++=2.0.14-r0 mosquitto-libs=2.0.14-r0 pkgconfig
+p:pc:libmosquitto=2.0.14 pc:libmosquittopp=2.0.14
 
 C:Q1ggZoti9j48nDBo5d3XJjbx2fhWw=
 P:xcb-util
@@ -6567,20 +6567,6 @@ c:bf5bbfdbf780092f387b7abe401fbfceda90c84d
 D:scanelf so:libc.musl-s390x.so.1
 p:cmd:getconf=1.2.2-r7 cmd:getent=1.2.2-r7 cmd:iconv=1.2.2-r7 cmd:ldconfig=1.2.2-r7 cmd:ldd=1.2.2-r7
 
-C:Q1bmZu60DDL8wys8BcnL60cwh7cHA=
-P:mosquitto-dbg
-V:2.0.13-r0
-A:s390x
-S:934601
-I:2895872
-T:open source MQTT broker (debug symbols)
-U:https://mosquitto.org/
-L:EPL-1.0
-o:mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635867064
-c:12da719cec6fbd5b5a03f3227f23b7db11d0cdaa
-
 C:Q1T+l0QZfrqtylJ13EhtOWf09CMoU=
 P:aspell-compat
 V:0.60.8-r1
@@ -7448,6 +7434,22 @@ m:Michael Mason <ms13sp@gmail.com>
 t:1631548101
 c:fd79dc08fe3fb5f0c0a491bea711c1821980893d
 D:freetds=1.3.3-r2
+
+C:Q1MICSAKmJRjuv7anEXEMSnE42vJU=
+P:mosquitto
+V:2.0.14-r0
+A:s390x
+S:219862
+I:602112
+T:open source MQTT broker
+U:https://mosquitto.org/
+L:EPL-1.0
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1637188206
+c:c944fdad28bc919fddac93701d46cd6d5e0dcc1a
+D:/bin/sh so:libc.musl-s390x.so.1 so:libcjson.so.1 so:libcrypto.so.1.1 so:libmosquitto.so.1 so:libssl.so.1.1 so:libwebsockets.so.19
+p:so:mosquitto_dynamic_security.so=0 cmd:mosquitto=2.0.14-r0 cmd:mosquitto_ctrl=2.0.14-r0 cmd:mosquitto_passwd=2.0.14-r0 cmd:mosquitto_rr=2.0.14-r0
 
 C:Q1ZlA0csHGicXnKtMXjvmbySj4/dc=
 P:libgpg-error
@@ -20145,6 +20147,20 @@ t:1623139747
 c:5afecb3f1f11fd82baa0ce97d60d4e80ae0826d5
 D:so:libc.musl-s390x.so.1 so:libgcrypt.so.20 so:libpam.so.0 so:libpq.so.5
 
+C:Q1lUAGKkGdJH+ta90q2LT1tUTuySo=
+P:mosquitto-dbg
+V:2.0.14-r0
+A:s390x
+S:935687
+I:2904064
+T:open source MQTT broker (debug symbols)
+U:https://mosquitto.org/
+L:EPL-1.0
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1637188206
+c:c944fdad28bc919fddac93701d46cd6d5e0dcc1a
+
 C:Q1l587Iv5WeHJrqDMx2GviDB/f1ok=
 P:lua5.1-openrc
 V:0.2-r4
@@ -23546,22 +23562,6 @@ m:Nathan Angelacos <nangel@alpinelinux.org>
 t:1635896151
 c:64761a2c023a7e2325d5528cccbe1a260d1d0a4d
 D:kamailio so:libc.musl-s390x.so.1 so:libnetsnmp.so.40 so:libnetsnmpagent.so.40
-
-C:Q1k1b3bjaTTlDrCFgzg2ltcZBxeqk=
-P:mosquitto-clients
-V:2.0.13-r0
-A:s390x
-S:42826
-I:126976
-T:Mosquitto command line MQTT clients
-U:https://mosquitto.org/
-L:EPL-1.0
-o:mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635867064
-c:12da719cec6fbd5b5a03f3227f23b7db11d0cdaa
-D:so:libc.musl-s390x.so.1 so:libcjson.so.1 so:libmosquitto.so.1
-p:cmd:mosquitto_pub=2.0.13-r0 cmd:mosquitto_sub=2.0.13-r0
 
 C:Q1dPd4/Y4wA+XE/POcvJ8hOkXPSZs=
 P:lua-socket
@@ -29172,22 +29172,6 @@ m:Drew DeVault <sir@cmpwn.com>
 t:1632757027
 c:0042b9a366bb1139115d18bfdb29d995038798e6
 i:docs libbsd=0.11.3-r1
-
-C:Q1jHEWGPLEajC9RGdBlUc8ce+OyOY=
-P:mosquitto
-V:2.0.13-r0
-A:s390x
-S:219238
-I:602112
-T:open source MQTT broker
-U:https://mosquitto.org/
-L:EPL-1.0
-o:mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635867064
-c:12da719cec6fbd5b5a03f3227f23b7db11d0cdaa
-D:/bin/sh so:libc.musl-s390x.so.1 so:libcjson.so.1 so:libcrypto.so.1.1 so:libmosquitto.so.1 so:libssl.so.1.1 so:libwebsockets.so.19
-p:so:mosquitto_dynamic_security.so=0 cmd:mosquitto=2.0.13-r0 cmd:mosquitto_ctrl=2.0.13-r0 cmd:mosquitto_passwd=2.0.13-r0 cmd:mosquitto_rr=2.0.13-r0
 
 C:Q1DGYFjP3JkmNrvJE56QZCwOW56oY=
 P:openldap-overlay-sssvlv
@@ -35259,22 +35243,6 @@ m:Nathan Angelacos <nangel@alpinelinux.org>
 t:1635896151
 c:64761a2c023a7e2325d5528cccbe1a260d1d0a4d
 D:kamailio kamailio-db so:libc.musl-s390x.so.1 so:libpq.so.5 so:libsrdb1.so.1 so:libsrdb2.so.1
-
-C:Q1aNf4mNHqrfvc+4HD5R8FSnaH92Y=
-P:mosquitto-dev
-V:2.0.13-r0
-A:s390x
-S:32832
-I:208896
-T:open source MQTT broker (development files)
-U:https://mosquitto.org/
-L:EPL-1.0
-o:mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635867064
-c:12da719cec6fbd5b5a03f3227f23b7db11d0cdaa
-D:mosquitto-libs++=2.0.13-r0 mosquitto-libs=2.0.13-r0 pkgconfig
-p:pc:libmosquitto=2.0.13 pc:libmosquittopp=2.0.13
 
 C:Q1ik1Z9yV3QH3pPueC4meuhxN+4qE=
 P:py-unbound
@@ -43354,6 +43322,22 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-html-formatter=2.16-r2
 
+C:Q1P5aXZCeSw0WGQ6I2UpHxP+1larw=
+P:mosquitto-libs
+V:2.0.14-r0
+A:s390x
+S:46528
+I:122880
+T:open source MQTT broker (libraries)
+U:https://mosquitto.org/
+L:EPL-1.0
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1637188206
+c:c944fdad28bc919fddac93701d46cd6d5e0dcc1a
+D:so:libc.musl-s390x.so.1 so:libcares.so.2 so:libcrypto.so.1.1 so:libssl.so.1.1
+p:so:libmosquitto.so.1=1
+
 C:Q1AbPwFbeeTsoD5AMHpyMR4kTF/bM=
 P:lua-md5
 V:1.3-r1
@@ -44768,21 +44752,6 @@ t:1617646685
 c:38fc3a14c8c98d8d1cbc1a6caaae401ad52226ca
 D:libogg-dev opus-dev libsndfile=1.0.31-r1 pc:flac pc:ogg pc:opus pc:vorbis pc:vorbisenc pkgconfig
 p:pc:sndfile=1.0.31
-
-C:Q10LqluV441nGz4OoH+4VrqbA7UTI=
-P:mosquitto-doc
-V:2.0.13-r0
-A:s390x
-S:67450
-I:126976
-T:open source MQTT broker (documentation)
-U:https://mosquitto.org/
-L:EPL-1.0
-o:mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635867064
-c:12da719cec6fbd5b5a03f3227f23b7db11d0cdaa
-i:docs mosquitto=2.0.13-r0
 
 C:Q14k6WTabu1QQ72Ox78/GxbF0sls8=
 P:perl-file-next
@@ -55376,21 +55345,6 @@ t:1603313428
 c:4c3c236c08cfdc06c2dad755360c2fee5c839e49
 D:perl perl-exporter-tiny perl-list-moreutils-xs
 
-C:Q14npZ84TAnU93UCLuT0YSUjZ4kBg=
-P:mosquitto-openrc
-V:2.0.13-r0
-A:s390x
-S:2071
-I:24576
-T:open source MQTT broker (OpenRC init scripts)
-U:https://mosquitto.org/
-L:EPL-1.0
-o:mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635867064
-c:12da719cec6fbd5b5a03f3227f23b7db11d0cdaa
-i:openrc mosquitto=2.0.13-r0
-
 C:Q1lD3bqR1tGwG2Rv2k+LncEL5TZw8=
 P:perl-module-build-tiny-doc
 V:0.039-r2
@@ -60241,6 +60195,21 @@ t:1636398456
 c:ce145f839a8059e7bc3e24990fd30bd583fc55d2
 i:docs lua5.3=5.3.6-r1
 
+C:Q1np+erzpJYVC0trBdy5PKj8ACkkA=
+P:mosquitto-openrc
+V:2.0.14-r0
+A:s390x
+S:2074
+I:24576
+T:open source MQTT broker (OpenRC init scripts)
+U:https://mosquitto.org/
+L:EPL-1.0
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1637188206
+c:c944fdad28bc919fddac93701d46cd6d5e0dcc1a
+i:openrc mosquitto=2.0.14-r0
+
 C:Q1kFLdbnKjpja9umTplK70/Q8rMRk=
 P:dovecot-fts-solr
 V:2.3.17-r2
@@ -61919,6 +61888,21 @@ c:988c4057d60ade6a214b14741f3e0950b3105c3a
 D:pkgconfig unixodbc=2.3.9-r1
 p:pc:odbc=2.3.9 pc:odbccr=2.3.9 pc:odbcinst=2.3.9
 
+C:Q1GfNzNjip0oOm/92+IFsYVK1xi9E=
+P:mosquitto-doc
+V:2.0.14-r0
+A:s390x
+S:67442
+I:126976
+T:open source MQTT broker (documentation)
+U:https://mosquitto.org/
+L:EPL-1.0
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1637188206
+c:c944fdad28bc919fddac93701d46cd6d5e0dcc1a
+i:docs mosquitto=2.0.14-r0
+
 C:Q1Kn4LIjEN4AZigh8WyxbNmE7JrKw=
 P:perl-subversion
 V:1.14.1-r7
@@ -63086,22 +63070,6 @@ c:48367644027d98b2a0c7a6f6f5577a30807713d4
 D:/bin/sh so:libc.musl-s390x.so.1 so:libcap.so.2 so:libcrypto.so.1.1 so:libcurl.so.4 so:libedit.so.0 so:libjansson.so.4 so:liblua.so.5 so:libpj.so.2 so:libpjlib-util.so.2 so:libpjmedia.so.2 so:libpjnath.so.2 so:libpjsip-simple.so.2 so:libpjsip-ua.so.2 so:libpjsip.so.2 so:libportaudio.so.2 so:libsqlite3.so.0 so:libssl.so.1.1 so:libunbound.so.8 so:libuuid.so.1 so:libxml2.so.2 so:libz.so.1
 p:so:libasteriskssl.so.1=1 cmd:astcanary=18.2.2-r5 cmd:astdb2bdb=18.2.2-r5 cmd:astdb2sqlite3=18.2.2-r5 cmd:asterisk=18.2.2-r5 cmd:astgenkey=18.2.2-r5 cmd:astversion=18.2.2-r5 cmd:autosupport=18.2.2-r5 cmd:rasterisk=18.2.2-r5 cmd:safe_asterisk=18.2.2-r5
 
-C:Q1V9qxnRsEIigWmfQir792YZ2wR8Q=
-P:mosquitto-libs
-V:2.0.13-r0
-A:s390x
-S:46049
-I:122880
-T:open source MQTT broker (libraries)
-U:https://mosquitto.org/
-L:EPL-1.0
-o:mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635867064
-c:12da719cec6fbd5b5a03f3227f23b7db11d0cdaa
-D:so:libc.musl-s390x.so.1 so:libcares.so.2 so:libcrypto.so.1.1 so:libssl.so.1.1
-p:so:libmosquitto.so.1=1
-
 C:Q16e1b+qoxY0+dcVxBj9fFnwjN03g=
 P:libgpg-error-doc
 V:1.42-r1
@@ -63161,6 +63129,22 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1634364270
 c:670bf5a8cc5bc605eede8ca2fd55b50a5c9f8660
 i:docs open-isns=0.101-r2
+
+C:Q18mriPZ4Lf7ODVxhBDNgRha/6S+c=
+P:mosquitto-libs++
+V:2.0.14-r0
+A:s390x
+S:7642
+I:36864
+T:C++ wrapper for libmosquitto
+U:https://mosquitto.org/
+L:EPL-1.0
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1637188206
+c:c944fdad28bc919fddac93701d46cd6d5e0dcc1a
+D:so:libmosquitto.so.1 so:libstdc++.so.6
+p:so:libmosquittopp.so.1=1
 
 C:Q1ONbWL8eRWvMC3+XUCQsl0/uIQzg=
 P:ethtool
@@ -67546,6 +67530,22 @@ c:186f263b8a60f286e5701acc9341dee11602f04d
 D:so:libc.musl-s390x.so.1 so:libelf.so.1
 p:cmd:ip=5.15.0-r0
 i:iproute2=5.15.0-r0
+
+C:Q1VhIC859vbgkYGVSzyCgwe4AppNg=
+P:mosquitto-clients
+V:2.0.14-r0
+A:s390x
+S:42837
+I:126976
+T:Mosquitto command line MQTT clients
+U:https://mosquitto.org/
+L:EPL-1.0
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1637188206
+c:c944fdad28bc919fddac93701d46cd6d5e0dcc1a
+D:so:libc.musl-s390x.so.1 so:libcjson.so.1 so:libmosquitto.so.1
+p:cmd:mosquitto_pub=2.0.14-r0 cmd:mosquitto_sub=2.0.14-r0
 
 C:Q1yyvH4ECdxkH7qgc6a/cXRqxsxNU=
 P:py3-fixtures
