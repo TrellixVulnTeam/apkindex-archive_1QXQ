@@ -65848,11 +65848,12 @@
     "ansible": {
       "origin": "ansible",
       "versions": {
-        "2.10.7-r0": 1631353163
+        "2.10.7-r0": 1631353163,
+        "4.8.0-r0": 1637130498
       },
       "dependencies": [
         "python3",
-        "ansible-base"
+        "ansible-core"
       ]
     },
     "docker-cli-compose": {
@@ -149210,6 +149211,54 @@
       "origin": "procs",
       "versions": {
         "0.11.10-r0": 1637105512
+      }
+    },
+    "ansible-core": {
+      "origin": "ansible-core",
+      "versions": {
+        "2.11.6-r0": 1637130498
+      },
+      "dependencies": [
+        "python3",
+        "py3-jinja2",
+        "py3-packaging",
+        "py3-yaml",
+        "py3-cryptography",
+        "py3-paramiko",
+        "py3-resolvelib"
+      ],
+      "provides": [
+        "cmd:ansible-config=2.11.6-r0",
+        "cmd:ansible-connection=2.11.6-r0",
+        "cmd:ansible-console=2.11.6-r0",
+        "cmd:ansible-doc=2.11.6-r0",
+        "cmd:ansible-galaxy=2.11.6-r0",
+        "cmd:ansible-inventory=2.11.6-r0",
+        "cmd:ansible-playbook=2.11.6-r0",
+        "cmd:ansible-pull=2.11.6-r0",
+        "cmd:ansible-test=2.11.6-r0",
+        "cmd:ansible-vault=2.11.6-r0",
+        "cmd:ansible=2.11.6-r0",
+        "py3.9:ansible=2.11.6-r0",
+        "py3.9:ansible_test=2.11.6-r0"
+      ]
+    },
+    "py3-resolvelib": {
+      "origin": "py3-resolvelib",
+      "versions": {
+        "0.7.1-r0": 1637130498
+      },
+      "dependencies": [
+        "python3"
+      ],
+      "provides": [
+        "py3.9:resolvelib=0.7.1-r0"
+      ]
+    },
+    "ansible-core-doc": {
+      "origin": "ansible-core",
+      "versions": {
+        "2.11.6-r0": 1637130498
       }
     }
   },
