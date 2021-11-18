@@ -139969,7 +139969,8 @@
       "origin": "telegraf",
       "versions": {
         "1.20.2-r0": 1633731420,
-        "1.20.3-r0": 1635504858
+        "1.20.3-r0": 1635504858,
+        "1.20.4-r0": 1637230082
       }
     },
     "namecoin": {
@@ -148589,14 +148590,15 @@
       "origin": "telegraf",
       "versions": {
         "1.20.2-r0": 1633731420,
-        "1.20.3-r0": 1635504858
+        "1.20.3-r0": 1635504858,
+        "1.20.4-r0": 1637230082
       },
       "dependencies": [
         "/bin/sh",
         "so:libc.musl-aarch64.so.1"
       ],
       "provides": [
-        "cmd:telegraf=1.20.3-r0"
+        "cmd:telegraf=1.20.4-r0"
       ]
     },
     "tepl-lang": {
@@ -154353,6 +154355,80 @@
         "so:libglib-2.0.so.0",
         "so:libgobject-2.0.so.0",
         "so:libgusb.so.2"
+      ]
+    },
+    "meek-doc": {
+      "origin": "meek",
+      "versions": {
+        "0.37.0-r1": 1637230674
+      }
+    },
+    "cargo-outdated-doc": {
+      "origin": "cargo-outdated",
+      "versions": {
+        "0.10.2-r1": 1637230646
+      }
+    },
+    "meek": {
+      "origin": "meek",
+      "versions": {
+        "0.37.0-r1": 1637230674
+      },
+      "dependencies": [
+        "ca-certificates",
+        "so:libc.musl-aarch64.so.1"
+      ],
+      "provides": [
+        "cmd:meek-client=0.37.0-r1"
+      ]
+    },
+    "pushgateway-openrc": {
+      "origin": "pushgateway",
+      "versions": {
+        "1.4.2-r0": 1637230642
+      }
+    },
+    "cargo-outdated": {
+      "origin": "cargo-outdated",
+      "versions": {
+        "0.10.2-r1": 1637230646
+      },
+      "dependencies": [
+        "so:libc.musl-aarch64.so.1",
+        "so:libcrypto.so.1.1",
+        "so:libcurl.so.4",
+        "so:libgcc_s.so.1",
+        "so:libgit2.so.1.3",
+        "so:libssl.so.1.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:cargo-outdated=0.10.2-r1"
+      ]
+    },
+    "pushgateway": {
+      "origin": "pushgateway",
+      "versions": {
+        "1.4.2-r0": 1637230642
+      },
+      "dependencies": [
+        "/bin/sh",
+        "so:libc.musl-aarch64.so.1"
+      ],
+      "provides": [
+        "cmd:pushgateway=1.4.2-r0"
+      ]
+    },
+    "meek-server": {
+      "origin": "meek",
+      "versions": {
+        "0.37.0-r1": 1637230674
+      },
+      "dependencies": [
+        "so:libc.musl-aarch64.so.1"
+      ],
+      "provides": [
+        "cmd:meek-server=0.37.0-r1"
       ]
     }
   },

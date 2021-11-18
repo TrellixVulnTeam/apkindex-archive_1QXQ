@@ -26126,7 +26126,8 @@
       "origin": "telegraf",
       "versions": {
         "1.20.2-r0": 1633731420,
-        "1.20.3-r0": 1635504858
+        "1.20.3-r0": 1635504858,
+        "1.20.4-r0": 1637230082
       }
     },
     "mruby-tools": {
@@ -26282,14 +26283,15 @@
       "origin": "telegraf",
       "versions": {
         "1.20.2-r0": 1633731420,
-        "1.20.3-r0": 1635504858
+        "1.20.3-r0": 1635504858,
+        "1.20.4-r0": 1637230082
       },
       "dependencies": [
         "/bin/sh",
         "so:libc.musl-x86_64.so.1"
       ],
       "provides": [
-        "cmd:telegraf=1.20.3-r0"
+        "cmd:telegraf=1.20.4-r0"
       ]
     },
     "py3-shiboken2": {
@@ -156015,7 +156017,8 @@
     "cabal": {
       "origin": "cabal",
       "versions": {
-        "0_git20211105-r0": 1637179927
+        "0_git20211105-r0": 1637179927,
+        "3.6.2.0-r0": 1637227052
       },
       "dependencies": [
         "gmp",
@@ -156026,7 +156029,119 @@
         "so:libz.so.1"
       ],
       "provides": [
+        "cmd:cabal=3.6.2.0-r0"
+      ]
+    },
+    "meek-doc": {
+      "origin": "meek",
+      "versions": {
+        "0.37.0-r1": 1637230674
+      }
+    },
+    "shellcheck-doc": {
+      "origin": "shellcheck",
+      "versions": {
+        "0.7.2-r1": 1637231000
+      }
+    },
+    "cabal-bootstrap": {
+      "origin": "cabal-bootstrap",
+      "versions": {
+        "0_git20211105-r0": 1637227052
+      },
+      "dependencies": [
+        "gmp",
+        "zlib",
+        "!cabal",
+        "so:libc.musl-x86_64.so.1",
+        "so:libffi.so.8",
+        "so:libgmp.so.10",
+        "so:libz.so.1"
+      ],
+      "provides": [
         "cmd:cabal=0_git20211105-r0"
+      ]
+    },
+    "cargo-outdated-doc": {
+      "origin": "cargo-outdated",
+      "versions": {
+        "0.10.2-r1": 1637230646
+      }
+    },
+    "pushgateway-openrc": {
+      "origin": "pushgateway",
+      "versions": {
+        "1.4.2-r0": 1637230642
+      }
+    },
+    "cargo-outdated": {
+      "origin": "cargo-outdated",
+      "versions": {
+        "0.10.2-r1": 1637230646
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1",
+        "so:libcrypto.so.1.1",
+        "so:libcurl.so.4",
+        "so:libgcc_s.so.1",
+        "so:libgit2.so.1.3",
+        "so:libssl.so.1.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:cargo-outdated=0.10.2-r1"
+      ]
+    },
+    "pushgateway": {
+      "origin": "pushgateway",
+      "versions": {
+        "1.4.2-r0": 1637230642
+      },
+      "dependencies": [
+        "/bin/sh",
+        "so:libc.musl-x86_64.so.1"
+      ],
+      "provides": [
+        "cmd:pushgateway=1.4.2-r0"
+      ]
+    },
+    "shellcheck": {
+      "origin": "shellcheck",
+      "versions": {
+        "0.7.2-r1": 1637231000
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1",
+        "so:libffi.so.8",
+        "so:libgmp.so.10"
+      ],
+      "provides": [
+        "cmd:shellcheck=0.7.2-r1"
+      ]
+    },
+    "meek-server": {
+      "origin": "meek",
+      "versions": {
+        "0.37.0-r1": 1637230674
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1"
+      ],
+      "provides": [
+        "cmd:meek-server=0.37.0-r1"
+      ]
+    },
+    "meek": {
+      "origin": "meek",
+      "versions": {
+        "0.37.0-r1": 1637230674
+      },
+      "dependencies": [
+        "ca-certificates",
+        "so:libc.musl-x86_64.so.1"
+      ],
+      "provides": [
+        "cmd:meek-client=0.37.0-r1"
       ]
     }
   },
