@@ -141827,7 +141827,8 @@
       "versions": {
         "0.4.4-r1": 1635016650,
         "0.4.4-r2": 1635430354,
-        "0.4.5-r0": 1636718618
+        "0.4.5-r0": 1636718618,
+        "0.4.5-r1": 1637240080
       },
       "dependencies": [
         "elogind-dev",
@@ -141839,7 +141840,7 @@
         "pc:gobject-2.0>=2.62",
         "pc:libpipewire-0.3>=0.3.37",
         "pkgconfig",
-        "wireplumber=0.4.5-r0"
+        "wireplumber=0.4.5-r1"
       ],
       "provides": [
         "pc:wireplumber-0.4=0.4.5"
@@ -143463,11 +143464,11 @@
       "versions": {
         "0.4.4-r1": 1635016650,
         "0.4.4-r2": 1635430354,
-        "0.4.5-r0": 1636718618
+        "0.4.5-r0": 1636718618,
+        "0.4.5-r1": 1637240080
       },
       "dependencies": [
         "so:libc.musl-armv7.so.1",
-        "so:libelogind.so.0",
         "so:libgio-2.0.so.0",
         "so:libglib-2.0.so.0",
         "so:libgmodule-2.0.so.0",
@@ -143478,9 +143479,9 @@
       "provides": [
         "pipewire-session-manager",
         "so:libwireplumber-0.4.so.0=0.4.5",
-        "cmd:wireplumber=0.4.5-r0",
-        "cmd:wpctl=0.4.5-r0",
-        "cmd:wpexec=0.4.5-r0"
+        "cmd:wireplumber=0.4.5-r1",
+        "cmd:wpctl=0.4.5-r1",
+        "cmd:wpexec=0.4.5-r1"
       ]
     },
     "xdg-desktop-portal-gtk-lang": {
@@ -150714,6 +150715,27 @@
       "provides": [
         "cmd:meek-server=0.37.0-r1"
       ]
+    },
+    "wireplumber-logind": {
+      "origin": "wireplumber",
+      "versions": {
+        "0.4.5-r1": 1637240080
+      },
+      "dependencies": [
+        "elogind",
+        "so:libc.musl-armv7.so.1",
+        "so:libelogind.so.0",
+        "so:libgio-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libwireplumber-0.4.so.0"
+      ]
+    },
+    "wireplumber-dbg": {
+      "origin": "wireplumber",
+      "versions": {
+        "0.4.5-r1": 1637240080
+      }
     }
   },
   "provide": {
@@ -152619,7 +152641,7 @@
         "version": "3.5.1-r1"
       },
       "pipewire-session-manager": {
-        "package": "pipewire-media-session",
+        "package": "wireplumber",
         "version": 0
       },
       "gnome-apps": {

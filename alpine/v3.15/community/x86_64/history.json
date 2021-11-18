@@ -128843,7 +128843,8 @@
       "versions": {
         "0.4.4-r1": 1635016650,
         "0.4.4-r2": 1635430354,
-        "0.4.5-r0": 1636718618
+        "0.4.5-r0": 1636718618,
+        "0.4.5-r1": 1637240080
       },
       "dependencies": [
         "elogind-dev",
@@ -128855,7 +128856,7 @@
         "pc:gobject-2.0>=2.62",
         "pc:libpipewire-0.3>=0.3.37",
         "pkgconfig",
-        "wireplumber=0.4.5-r0"
+        "wireplumber=0.4.5-r1"
       ],
       "provides": [
         "pc:wireplumber-0.4=0.4.5"
@@ -135346,11 +135347,11 @@
       "versions": {
         "0.4.4-r1": 1635016650,
         "0.4.4-r2": 1635430354,
-        "0.4.5-r0": 1636718618
+        "0.4.5-r0": 1636718618,
+        "0.4.5-r1": 1637240080
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
-        "so:libelogind.so.0",
         "so:libgio-2.0.so.0",
         "so:libglib-2.0.so.0",
         "so:libgmodule-2.0.so.0",
@@ -135361,9 +135362,9 @@
       "provides": [
         "pipewire-session-manager",
         "so:libwireplumber-0.4.so.0=0.4.5",
-        "cmd:wireplumber=0.4.5-r0",
-        "cmd:wpctl=0.4.5-r0",
-        "cmd:wpexec=0.4.5-r0"
+        "cmd:wireplumber=0.4.5-r1",
+        "cmd:wpctl=0.4.5-r1",
+        "cmd:wpexec=0.4.5-r1"
       ]
     },
     "java-lz4": {
@@ -156146,6 +156147,27 @@
       "provides": [
         "cmd:meek-client=0.37.0-r1"
       ]
+    },
+    "wireplumber-dbg": {
+      "origin": "wireplumber",
+      "versions": {
+        "0.4.5-r1": 1637240080
+      }
+    },
+    "wireplumber-logind": {
+      "origin": "wireplumber",
+      "versions": {
+        "0.4.5-r1": 1637240080
+      },
+      "dependencies": [
+        "elogind",
+        "so:libc.musl-x86_64.so.1",
+        "so:libelogind.so.0",
+        "so:libgio-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libwireplumber-0.4.so.0"
+      ]
     }
   },
   "provide": {
@@ -158011,7 +158033,7 @@
         "version": 0
       },
       "pipewire-session-manager": {
-        "package": "wireplumber",
+        "package": "pipewire-media-session",
         "version": 0
       },
       "gnome-online-accounts-static": {
