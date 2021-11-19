@@ -12614,12 +12614,16 @@
     "grpc": {
       "origin": "grpc",
       "versions": {
-        "1.40.0-r2": 1634372390
+        "1.40.0-r2": 1634372390,
+        "1.42.0-r0": 1637282197
       },
       "dependencies": [
         "protobuf",
         "so:libabsl_bad_optional_access.so.2103.0.1",
+        "so:libabsl_bad_variant_access.so.2103.0.1",
         "so:libabsl_cord.so.2103.0.1",
+        "so:libabsl_hash.so.2103.0.1",
+        "so:libabsl_raw_hash_set.so.2103.0.1",
         "so:libabsl_raw_logging_internal.so.2103.0.1",
         "so:libabsl_spinlock_wait.so.2103.0.1",
         "so:libabsl_status.so.2103.0.1",
@@ -12642,27 +12646,27 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "so:libaddress_sorting.so.18=18.0.0",
+        "so:libaddress_sorting.so.20=20.0.0",
         "so:libbenchmark.so.3=3.15.0",
         "so:libbenchmark_main.so.3=3.15.0",
-        "so:libgpr.so.18=18.0.0",
-        "so:libgrpc++.so.1.40=1.40.0",
-        "so:libgrpc++_alts.so.1.40=1.40.0",
-        "so:libgrpc++_error_details.so.1.40=1.40.0",
-        "so:libgrpc++_reflection.so.1.40=1.40.0",
-        "so:libgrpc++_unsecure.so.1.40=1.40.0",
-        "so:libgrpc.so.18=18.0.0",
-        "so:libgrpc_plugin_support.so.1.40=1.40.0",
-        "so:libgrpc_unsecure.so.18=18.0.0",
-        "so:libgrpcpp_channelz.so.1.40=1.40.0",
-        "so:libupb.so.18=18.0.0",
-        "cmd:grpc_cpp_plugin=1.40.0-r2",
-        "cmd:grpc_csharp_plugin=1.40.0-r2",
-        "cmd:grpc_node_plugin=1.40.0-r2",
-        "cmd:grpc_objective_c_plugin=1.40.0-r2",
-        "cmd:grpc_php_plugin=1.40.0-r2",
-        "cmd:grpc_python_plugin=1.40.0-r2",
-        "cmd:grpc_ruby_plugin=1.40.0-r2"
+        "so:libgpr.so.20=20.0.0",
+        "so:libgrpc++.so.1.42=1.42.0",
+        "so:libgrpc++_alts.so.1.42=1.42.0",
+        "so:libgrpc++_error_details.so.1.42=1.42.0",
+        "so:libgrpc++_reflection.so.1.42=1.42.0",
+        "so:libgrpc++_unsecure.so.1.42=1.42.0",
+        "so:libgrpc.so.20=20.0.0",
+        "so:libgrpc_plugin_support.so.1.42=1.42.0",
+        "so:libgrpc_unsecure.so.20=20.0.0",
+        "so:libgrpcpp_channelz.so.1.42=1.42.0",
+        "so:libupb.so.20=20.0.0",
+        "cmd:grpc_cpp_plugin=1.42.0-r0",
+        "cmd:grpc_csharp_plugin=1.42.0-r0",
+        "cmd:grpc_node_plugin=1.42.0-r0",
+        "cmd:grpc_objective_c_plugin=1.42.0-r0",
+        "cmd:grpc_php_plugin=1.42.0-r0",
+        "cmd:grpc_python_plugin=1.42.0-r0",
+        "cmd:grpc_ruby_plugin=1.42.0-r0"
       ]
     },
     "cmus-doc": {
@@ -20687,7 +20691,8 @@
     "grpc-cli": {
       "origin": "grpc",
       "versions": {
-        "1.40.0-r2": 1634372390
+        "1.40.0-r2": 1634372390,
+        "1.42.0-r0": 1637282197
       },
       "dependencies": [
         "protobuf",
@@ -20700,15 +20705,15 @@
         "so:libabsl_throw_delegate.so.2103.0.1",
         "so:libc.musl-aarch64.so.1",
         "so:libgcc_s.so.1",
-        "so:libgpr.so.18",
-        "so:libgrpc++.so.1.40",
-        "so:libgrpc.so.18",
+        "so:libgpr.so.20",
+        "so:libgrpc++.so.1.42",
+        "so:libgrpc.so.20",
         "so:libprotobuf.so.29",
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "so:libgrpc++_test_config.so.1.40=1.40.0",
-        "cmd:grpc_cli=1.40.0-r2"
+        "so:libgrpc++_test_config.so.1.42=1.42.0",
+        "cmd:grpc_cli=1.42.0-r0"
       ]
     },
     "sane-backend-artec": {
@@ -51011,15 +51016,17 @@
     "grpc-dev": {
       "origin": "grpc",
       "versions": {
-        "1.40.0-r2": 1634372390
+        "1.40.0-r2": 1634372390,
+        "1.42.0-r0": 1637282197
       },
       "dependencies": [
-        "grpc=1.40.0-r2",
+        "grpc=1.42.0-r0",
         "pc:absl_base",
         "pc:absl_bind_front",
         "pc:absl_cord",
         "pc:absl_core_headers",
         "pc:absl_flat_hash_map",
+        "pc:absl_hash",
         "pc:absl_inlined_vector",
         "pc:absl_memory",
         "pc:absl_optional",
@@ -51029,16 +51036,18 @@
         "pc:absl_strings",
         "pc:absl_synchronization",
         "pc:absl_time",
+        "pc:absl_utility",
+        "pc:absl_variant",
         "pc:openssl",
         "pkgconfig"
       ],
       "provides": [
         "pc:benchmark=3.15.0",
-        "pc:gpr=18.0.0",
-        "pc:grpc++=1.40.0",
-        "pc:grpc++_unsecure=1.40.0",
-        "pc:grpc=18.0.0",
-        "pc:grpc_unsecure=18.0.0"
+        "pc:gpr=20.0.0",
+        "pc:grpc++=1.42.0",
+        "pc:grpc++_unsecure=1.42.0",
+        "pc:grpc=20.0.0",
+        "pc:grpc_unsecure=20.0.0"
       ]
     },
     "qemu-ui-egl-headless": {
@@ -63291,7 +63300,8 @@
     "webrtc-audio-processing": {
       "origin": "webrtc-audio-processing",
       "versions": {
-        "0.3.1-r2": 1631787379
+        "0.3.1-r2": 1631787379,
+        "0.3.1-r3": 1637282197
       },
       "dependencies": [
         "so:libc.musl-aarch64.so.1",
@@ -68358,11 +68368,12 @@
     "webrtc-audio-processing-dev": {
       "origin": "webrtc-audio-processing",
       "versions": {
-        "0.3.1-r2": 1631787379
+        "0.3.1-r2": 1631787379,
+        "0.3.1-r3": 1637282197
       },
       "dependencies": [
         "pkgconfig",
-        "webrtc-audio-processing=0.3.1-r2"
+        "webrtc-audio-processing=0.3.1-r3"
       ],
       "provides": [
         "pc:webrtc-audio-processing=0.3.1"
@@ -144080,22 +144091,23 @@
       "origin": "bear",
       "versions": {
         "3.0.16-r1": 1633621299,
-        "3.0.17-r0": 1636994621
+        "3.0.17-r0": 1636994621,
+        "3.0.17-r1": 1637282197
       },
       "dependencies": [
         "so:libabsl_synchronization.so.2103.0.1",
         "so:libc.musl-aarch64.so.1",
         "so:libfmt.so.8",
         "so:libgcc_s.so.1",
-        "so:libgrpc++.so.1.40",
+        "so:libgrpc++.so.1.42",
         "so:libprotobuf.so.29",
         "so:libspdlog.so.1",
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:bear=3.0.17-r0",
-        "cmd:citnames=3.0.17-r0",
-        "cmd:intercept=3.0.17-r0"
+        "cmd:bear=3.0.17-r1",
+        "cmd:citnames=3.0.17-r1",
+        "cmd:intercept=3.0.17-r1"
       ]
     },
     "yad-doc": {
@@ -144223,7 +144235,8 @@
       "origin": "bear",
       "versions": {
         "3.0.16-r1": 1633621299,
-        "3.0.17-r0": 1636994621
+        "3.0.17-r0": 1636994621,
+        "3.0.17-r1": 1637282197
       }
     },
     "gnome-shell-dbg": {
@@ -169297,6 +169310,58 @@
       "libguestStoreClient.so.0": {
         "package": "open-vm-tools",
         "version": "0.0.0"
+      },
+      "libaddress_sorting.so.20": {
+        "package": "grpc",
+        "version": "20.0.0"
+      },
+      "libgpr.so.20": {
+        "package": "grpc",
+        "version": "20.0.0"
+      },
+      "libgrpc++.so.1.42": {
+        "package": "grpc",
+        "version": "1.42.0"
+      },
+      "libgrpc++_alts.so.1.42": {
+        "package": "grpc",
+        "version": "1.42.0"
+      },
+      "libgrpc++_error_details.so.1.42": {
+        "package": "grpc",
+        "version": "1.42.0"
+      },
+      "libgrpc++_reflection.so.1.42": {
+        "package": "grpc",
+        "version": "1.42.0"
+      },
+      "libgrpc++_unsecure.so.1.42": {
+        "package": "grpc",
+        "version": "1.42.0"
+      },
+      "libgrpc.so.20": {
+        "package": "grpc",
+        "version": "20.0.0"
+      },
+      "libgrpc_plugin_support.so.1.42": {
+        "package": "grpc",
+        "version": "1.42.0"
+      },
+      "libgrpc_unsecure.so.20": {
+        "package": "grpc",
+        "version": "20.0.0"
+      },
+      "libgrpcpp_channelz.so.1.42": {
+        "package": "grpc",
+        "version": "1.42.0"
+      },
+      "libupb.so.20": {
+        "package": "grpc",
+        "version": "20.0.0"
+      },
+      "libgrpc++_test_config.so.1.42": {
+        "package": "grpc-cli",
+        "version": "1.42.0"
       }
     },
     "package": {
