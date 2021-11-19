@@ -3232,7 +3232,8 @@
     "pgpool-static": {
       "origin": "pgpool",
       "versions": {
-        "4.2.5-r0": 1631969562
+        "4.2.5-r0": 1631969562,
+        "4.2.6-r0": 1637334254
       }
     },
     "linux-firmware-go7007": {
@@ -11088,7 +11089,8 @@
     "pgpool-doc": {
       "origin": "pgpool",
       "versions": {
-        "4.2.5-r0": 1631969562
+        "4.2.5-r0": 1631969562,
+        "4.2.6-r0": 1637334254
       }
     },
     "font-sony-misc": {
@@ -24073,10 +24075,11 @@
     "pgpool-dev": {
       "origin": "pgpool",
       "versions": {
-        "4.2.5-r0": 1631969562
+        "4.2.5-r0": 1631969562,
+        "4.2.6-r0": 1637334254
       },
       "dependencies": [
-        "pgpool=4.2.5-r0"
+        "pgpool=4.2.6-r0"
       ]
     },
     "py3-btrfs-progs": {
@@ -34340,7 +34343,8 @@
     "pgpool-openrc": {
       "origin": "pgpool",
       "versions": {
-        "4.2.5-r0": 1631969562
+        "4.2.5-r0": 1631969562,
+        "4.2.6-r0": 1637334254
       }
     },
     "sysfsutils-doc": {
@@ -34738,8 +34742,17 @@
       "origin": "libnftnl",
       "versions": {
         "1.2.0-r0": 1622016910,
-        "1.2.0-r2": 1634909495
-      }
+        "1.2.0-r2": 1634909495,
+        "1.2.1-r0": 1637334665
+      },
+      "dependencies": [
+        "so:libc.musl-x86.so.1",
+        "so:libmnl.so.0"
+      ],
+      "provides": [
+        "libnftnl-libs=1.2.1-r0",
+        "so:libnftnl.so.11=11.6.0"
+      ]
     },
     "goaccess-lang": {
       "origin": "goaccess",
@@ -47191,37 +47204,38 @@
     "pgpool": {
       "origin": "pgpool",
       "versions": {
-        "4.2.5-r0": 1631969562
+        "4.2.5-r0": 1631969562,
+        "4.2.6-r0": 1637334254
       },
       "dependencies": [
         "/bin/sh",
         "so:libc.musl-x86.so.1",
-        "so:libcrypto.so.1.1",
+        "so:libcrypto.so.3",
         "so:libpq.so.5",
-        "so:libssl.so.1.1"
+        "so:libssl.so.3"
       ],
       "provides": [
         "so:libpcp.so.2=2.0.0",
-        "cmd:pcp_attach_node=4.2.5-r0",
-        "cmd:pcp_detach_node=4.2.5-r0",
-        "cmd:pcp_health_check_stats=4.2.5-r0",
-        "cmd:pcp_node_count=4.2.5-r0",
-        "cmd:pcp_node_info=4.2.5-r0",
-        "cmd:pcp_pool_status=4.2.5-r0",
-        "cmd:pcp_proc_count=4.2.5-r0",
-        "cmd:pcp_proc_info=4.2.5-r0",
-        "cmd:pcp_promote_node=4.2.5-r0",
-        "cmd:pcp_recovery_node=4.2.5-r0",
-        "cmd:pcp_reload_config=4.2.5-r0",
-        "cmd:pcp_stop_pgpool=4.2.5-r0",
-        "cmd:pcp_watchdog_info=4.2.5-r0",
-        "cmd:pg_enc=4.2.5-r0",
-        "cmd:pg_md5=4.2.5-r0",
-        "cmd:pgpool=4.2.5-r0",
-        "cmd:pgpool_setup=4.2.5-r0",
-        "cmd:pgproto=4.2.5-r0",
-        "cmd:watchdog_setup=4.2.5-r0",
-        "cmd:wd_cli=4.2.5-r0"
+        "cmd:pcp_attach_node=4.2.6-r0",
+        "cmd:pcp_detach_node=4.2.6-r0",
+        "cmd:pcp_health_check_stats=4.2.6-r0",
+        "cmd:pcp_node_count=4.2.6-r0",
+        "cmd:pcp_node_info=4.2.6-r0",
+        "cmd:pcp_pool_status=4.2.6-r0",
+        "cmd:pcp_proc_count=4.2.6-r0",
+        "cmd:pcp_proc_info=4.2.6-r0",
+        "cmd:pcp_promote_node=4.2.6-r0",
+        "cmd:pcp_recovery_node=4.2.6-r0",
+        "cmd:pcp_reload_config=4.2.6-r0",
+        "cmd:pcp_stop_pgpool=4.2.6-r0",
+        "cmd:pcp_watchdog_info=4.2.6-r0",
+        "cmd:pg_enc=4.2.6-r0",
+        "cmd:pg_md5=4.2.6-r0",
+        "cmd:pgpool=4.2.6-r0",
+        "cmd:pgpool_setup=4.2.6-r0",
+        "cmd:pgproto=4.2.6-r0",
+        "cmd:watchdog_setup=4.2.6-r0",
+        "cmd:wd_cli=4.2.6-r0"
       ]
     },
     "syslog-ng-add-contextual-data": {
@@ -56224,16 +56238,16 @@
       "origin": "libnftnl",
       "versions": {
         "1.2.0-r0": 1622016910,
-        "1.2.0-r2": 1634909495
+        "1.2.0-r2": 1634909495,
+        "1.2.1-r0": 1637334665
       },
       "dependencies": [
-        "libmnl-dev",
-        "libnftnl-libs=1.2.0-r2",
+        "libnftnl=1.2.1-r0",
         "pc:libmnl",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libnftnl=1.2.0"
+        "pc:libnftnl=1.2.1"
       ]
     },
     "npth-dev": {
@@ -62466,8 +62480,8 @@
         "version": "0.1805.0"
       },
       "libnftnl.so.11": {
-        "package": "libnftnl-libs",
-        "version": "11.5.0"
+        "package": "libnftnl",
+        "version": "11.6.0"
       },
       "libboost_atomic.so.1.76.0": {
         "package": "boost1.76-atomic",
@@ -66062,6 +66076,10 @@
       "postgresql-pltcl": {
         "package": "postgresql13-pltcl",
         "version": 0
+      },
+      "libnftnl-libs": {
+        "package": "libnftnl",
+        "version": "1.2.1-r0"
       }
     }
   }

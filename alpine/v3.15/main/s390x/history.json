@@ -253,7 +253,8 @@
         "5.15.1-r3": 1636639027,
         "5.15.2-r0": 1636965182,
         "5.15.2-r1": 1636992886,
-        "5.15.2-r2": 1637163817
+        "5.15.2-r2": 1637163817,
+        "5.15.3-r0": 1637334688
       },
       "dependencies": [
         "mkinitfs",
@@ -1198,7 +1199,8 @@
     "pgpool-doc": {
       "origin": "pgpool",
       "versions": {
-        "4.2.5-r0": 1631969562
+        "4.2.5-r0": 1631969562,
+        "4.2.6-r0": 1637334254
       }
     },
     "font-arabic-misc": {
@@ -1913,7 +1915,8 @@
     "pgpool-static": {
       "origin": "pgpool",
       "versions": {
-        "4.2.5-r0": 1631969562
+        "4.2.5-r0": 1631969562,
+        "4.2.6-r0": 1637334254
       }
     },
     "datefudge": {
@@ -3822,7 +3825,8 @@
         "5.15.1-r3": 1636639027,
         "5.15.2-r0": 1636965182,
         "5.15.2-r1": 1636992886,
-        "5.15.2-r2": 1637163817
+        "5.15.2-r2": 1637163817,
+        "5.15.3-r0": 1637334688
       },
       "dependencies": [
         "perl",
@@ -10325,10 +10329,11 @@
     "pgpool-dev": {
       "origin": "pgpool",
       "versions": {
-        "4.2.5-r0": 1631969562
+        "4.2.5-r0": 1631969562,
+        "4.2.6-r0": 1637334254
       },
       "dependencies": [
-        "pgpool=4.2.5-r0"
+        "pgpool=4.2.6-r0"
       ]
     },
     "openldap-backend-all": {
@@ -25508,7 +25513,8 @@
     "pgpool-openrc": {
       "origin": "pgpool",
       "versions": {
-        "4.2.5-r0": 1631969562
+        "4.2.5-r0": 1631969562,
+        "4.2.6-r0": 1637334254
       }
     },
     "perl-test-fatal": {
@@ -41051,10 +41057,11 @@
         "5.15.1-r4": 1636639028,
         "5.15.2-r1": 1636965182,
         "5.15.2-r2": 1636992887,
-        "5.15.2-r3": 1637163817
+        "5.15.2-r3": 1637163817,
+        "5.15.3-r1": 1637334688
       },
       "dependencies": [
-        "linux-lts=5.15.2-r2"
+        "linux-lts=5.15.3-r0"
       ]
     },
     "lua5.2-dbi-postgresql": {
@@ -41386,16 +41393,16 @@
       "origin": "libnftnl",
       "versions": {
         "1.2.0-r0": 1622016910,
-        "1.2.0-r2": 1634909495
+        "1.2.0-r2": 1634909495,
+        "1.2.1-r0": 1637334665
       },
       "dependencies": [
-        "libmnl-dev",
-        "libnftnl-libs=1.2.0-r2",
+        "libnftnl=1.2.1-r0",
         "pc:libmnl",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libnftnl=1.2.0"
+        "pc:libnftnl=1.2.1"
       ]
     },
     "ldb": {
@@ -49880,8 +49887,17 @@
       "origin": "libnftnl",
       "versions": {
         "1.2.0-r0": 1622016910,
-        "1.2.0-r2": 1634909495
-      }
+        "1.2.0-r2": 1634909495,
+        "1.2.1-r0": 1637334665
+      },
+      "dependencies": [
+        "so:libc.musl-s390x.so.1",
+        "so:libmnl.so.0"
+      ],
+      "provides": [
+        "libnftnl-libs=1.2.1-r0",
+        "so:libnftnl.so.11=11.6.0"
+      ]
     },
     "linux-firmware-dpaa2": {
       "origin": "linux-firmware",
@@ -52522,37 +52538,38 @@
     "pgpool": {
       "origin": "pgpool",
       "versions": {
-        "4.2.5-r0": 1631969562
+        "4.2.5-r0": 1631969562,
+        "4.2.6-r0": 1637334254
       },
       "dependencies": [
         "/bin/sh",
         "so:libc.musl-s390x.so.1",
-        "so:libcrypto.so.1.1",
+        "so:libcrypto.so.3",
         "so:libpq.so.5",
-        "so:libssl.so.1.1"
+        "so:libssl.so.3"
       ],
       "provides": [
         "so:libpcp.so.2=2.0.0",
-        "cmd:pcp_attach_node=4.2.5-r0",
-        "cmd:pcp_detach_node=4.2.5-r0",
-        "cmd:pcp_health_check_stats=4.2.5-r0",
-        "cmd:pcp_node_count=4.2.5-r0",
-        "cmd:pcp_node_info=4.2.5-r0",
-        "cmd:pcp_pool_status=4.2.5-r0",
-        "cmd:pcp_proc_count=4.2.5-r0",
-        "cmd:pcp_proc_info=4.2.5-r0",
-        "cmd:pcp_promote_node=4.2.5-r0",
-        "cmd:pcp_recovery_node=4.2.5-r0",
-        "cmd:pcp_reload_config=4.2.5-r0",
-        "cmd:pcp_stop_pgpool=4.2.5-r0",
-        "cmd:pcp_watchdog_info=4.2.5-r0",
-        "cmd:pg_enc=4.2.5-r0",
-        "cmd:pg_md5=4.2.5-r0",
-        "cmd:pgpool=4.2.5-r0",
-        "cmd:pgpool_setup=4.2.5-r0",
-        "cmd:pgproto=4.2.5-r0",
-        "cmd:watchdog_setup=4.2.5-r0",
-        "cmd:wd_cli=4.2.5-r0"
+        "cmd:pcp_attach_node=4.2.6-r0",
+        "cmd:pcp_detach_node=4.2.6-r0",
+        "cmd:pcp_health_check_stats=4.2.6-r0",
+        "cmd:pcp_node_count=4.2.6-r0",
+        "cmd:pcp_node_info=4.2.6-r0",
+        "cmd:pcp_pool_status=4.2.6-r0",
+        "cmd:pcp_proc_count=4.2.6-r0",
+        "cmd:pcp_proc_info=4.2.6-r0",
+        "cmd:pcp_promote_node=4.2.6-r0",
+        "cmd:pcp_recovery_node=4.2.6-r0",
+        "cmd:pcp_reload_config=4.2.6-r0",
+        "cmd:pcp_stop_pgpool=4.2.6-r0",
+        "cmd:pcp_watchdog_info=4.2.6-r0",
+        "cmd:pg_enc=4.2.6-r0",
+        "cmd:pg_md5=4.2.6-r0",
+        "cmd:pgpool=4.2.6-r0",
+        "cmd:pgpool_setup=4.2.6-r0",
+        "cmd:pgproto=4.2.6-r0",
+        "cmd:watchdog_setup=4.2.6-r0",
+        "cmd:wd_cli=4.2.6-r0"
       ]
     },
     "acl-dev": {
@@ -63396,8 +63413,8 @@
         "version": "0"
       },
       "libnftnl.so.11": {
-        "package": "libnftnl-libs",
-        "version": "11.5.0"
+        "package": "libnftnl",
+        "version": "11.6.0"
       },
       "libpcre2-32.so.0": {
         "package": "libpcre2-32",
@@ -64772,6 +64789,10 @@
       "postgresql-pltcl": {
         "package": "postgresql13-pltcl",
         "version": 0
+      },
+      "libnftnl-libs": {
+        "package": "libnftnl",
+        "version": "1.2.1-r0"
       }
     }
   }
