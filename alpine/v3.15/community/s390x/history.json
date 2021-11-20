@@ -108492,6 +108492,31 @@
       "provides": [
         "cmd:matterbridge=1.23.2-r1"
       ]
+    },
+    "php8-pecl-rdkafka": {
+      "origin": "php8-pecl-rdkafka",
+      "versions": {
+        "5.0.1-r0": 1637398122
+      },
+      "dependencies": [
+        "php8-common",
+        "so:libc.musl-s390x.so.1",
+        "so:librdkafka.so.1"
+      ]
+    },
+    "php7-pecl-rdkafka": {
+      "origin": "php7-pecl-rdkafka",
+      "versions": {
+        "5.0.1-r0": 1637398122
+      },
+      "dependencies": [
+        "php7-common",
+        "so:libc.musl-s390x.so.1",
+        "so:librdkafka.so.1"
+      ],
+      "provides": [
+        "php7-rdkafka=5.0.1-r0"
+      ]
     }
   },
   "provide": {
@@ -110395,6 +110420,10 @@
       "postgresql-libs": {
         "package": "postgresql-bdr-libs",
         "version": "9.4.14_p1-r12"
+      },
+      "php7-rdkafka": {
+        "package": "php7-pecl-rdkafka",
+        "version": "5.0.1-r0"
       }
     },
     "so": {
