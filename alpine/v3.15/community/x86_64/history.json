@@ -20467,14 +20467,15 @@
     "z3-dev": {
       "origin": "z3",
       "versions": {
-        "4.8.12-r0": 1626318399
+        "4.8.12-r0": 1626318399,
+        "4.8.13-r0": 1637422736
       },
       "dependencies": [
         "pkgconfig",
-        "z3=4.8.12-r0"
+        "z3=4.8.13-r0"
       ],
       "provides": [
-        "pc:z3=4.8.12.0"
+        "pc:z3=4.8.13.0"
       ]
     },
     "php7-bz2": {
@@ -91577,13 +91578,14 @@
     "py3-z3": {
       "origin": "z3",
       "versions": {
-        "4.8.12-r0": 1626318399
+        "4.8.12-r0": 1626318399,
+        "4.8.13-r0": 1637422736
       },
       "dependencies": [
         "python3"
       ],
       "provides": [
-        "py3.9:z3=4.8.12-r0"
+        "py3.9:z3=4.8.13-r0"
       ]
     },
     "lua5.3-luatz": {
@@ -115927,7 +115929,8 @@
     "z3": {
       "origin": "z3",
       "versions": {
-        "4.8.12-r0": 1626318399
+        "4.8.12-r0": 1626318399,
+        "4.8.13-r0": 1637422736
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
@@ -115935,8 +115938,8 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "so:libz3.so.4.8=4.8.12.0",
-        "cmd:z3=4.8.12-r0"
+        "so:libz3.so.4.8=4.8.13.0",
+        "cmd:z3=4.8.13-r0"
       ]
     },
     "herbstluftwm-doc": {
@@ -121257,10 +121260,12 @@
     "gnome-clocks": {
       "origin": "gnome-clocks",
       "versions": {
-        "40.0-r0": 1625048547
+        "40.0-r0": 1625048547,
+        "40.0-r1": 1637422841
       },
       "dependencies": [
         "gsettings-desktop-schemas",
+        "waked",
         "so:libc.musl-x86_64.so.1",
         "so:libgdk-3.so.0",
         "so:libgeoclue-2.so.0",
@@ -121276,7 +121281,7 @@
         "so:libintl.so.8"
       ],
       "provides": [
-        "cmd:gnome-clocks=40.0-r0"
+        "cmd:gnome-clocks=40.0-r1"
       ]
     },
     "flatpak-builder-doc": {
@@ -125202,10 +125207,12 @@
     "gnome-clocks-lang": {
       "origin": "gnome-clocks",
       "versions": {
-        "40.0-r0": 1625048547
+        "40.0-r0": 1625048547,
+        "40.0-r1": 1637422841
       },
       "dependencies": [
-        "gsettings-desktop-schemas"
+        "gsettings-desktop-schemas",
+        "waked"
       ]
     },
     "nautilus-dev": {
@@ -134279,7 +134286,8 @@
     "gnome-clocks-doc": {
       "origin": "gnome-clocks",
       "versions": {
-        "40.0-r0": 1625048547
+        "40.0-r0": 1625048547,
+        "40.0-r1": 1637422841
       }
     },
     "gnome-software-dev": {
@@ -156500,6 +156508,27 @@
         "so:libc.musl-x86_64.so.1",
         "so:librdkafka.so.1"
       ]
+    },
+    "waked-openrc": {
+      "origin": "waked",
+      "versions": {
+        "0.1.1-r1": 1637422841
+      }
+    },
+    "waked": {
+      "origin": "waked",
+      "versions": {
+        "0.1.1-r1": 1637422841
+      },
+      "dependencies": [
+        "so:libc.musl-x86_64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libsdbus-c++.so.0",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "cmd:waked=0.1.1-r1"
+      ]
     }
   },
   "provide": {
@@ -167684,7 +167713,7 @@
       },
       "libz3.so.4.8": {
         "package": "z3",
-        "version": "4.8.12.0"
+        "version": "4.8.13.0"
       },
       "libKPimPkPass.so.5": {
         "package": "kpkpass",
