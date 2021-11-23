@@ -58582,6 +58582,89 @@
         "so:libc.musl-s390x.so.1",
         "so:libmaxminddb.so.0"
       ]
+    },
+    "hylafax-lang": {
+      "origin": "hylafax",
+      "versions": {
+        "6.0.7-r3": 1637699421
+      },
+      "dependencies": [
+        "ghostscript",
+        "bash",
+        "tiff-tools"
+      ]
+    },
+    "hylafax-doc": {
+      "origin": "hylafax",
+      "versions": {
+        "6.0.7-r3": 1637699421
+      }
+    },
+    "hylafax": {
+      "origin": "hylafax",
+      "versions": {
+        "6.0.7-r3": 1637699421
+      },
+      "dependencies": [
+        "ghostscript",
+        "bash",
+        "tiff-tools",
+        "so:libc.musl-s390x.so.1",
+        "so:libgcc_s.so.1",
+        "so:libintl.so.8",
+        "so:libstdc++.so.6",
+        "so:libtiff.so.5",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "so:libhylafax-6.0.so.7=7",
+        "cmd:choptest=6.0.7-r3",
+        "cmd:cqtest=6.0.7-r3",
+        "cmd:dialtest=6.0.7-r3",
+        "cmd:edit-faxcover=6.0.7-r3",
+        "cmd:faxabort=6.0.7-r3",
+        "cmd:faxaddmodem=6.0.7-r3",
+        "cmd:faxadduser=6.0.7-r3",
+        "cmd:faxalter=6.0.7-r3",
+        "cmd:faxanswer=6.0.7-r3",
+        "cmd:faxconfig=6.0.7-r3",
+        "cmd:faxcover=6.0.7-r3",
+        "cmd:faxcron=6.0.7-r3",
+        "cmd:faxdeluser=6.0.7-r3",
+        "cmd:faxgetty=6.0.7-r3",
+        "cmd:faxinfo=6.0.7-r3",
+        "cmd:faxlock=6.0.7-r3",
+        "cmd:faxmail=6.0.7-r3",
+        "cmd:faxmodem=6.0.7-r3",
+        "cmd:faxmsg=6.0.7-r3",
+        "cmd:faxq=6.0.7-r3",
+        "cmd:faxqclean=6.0.7-r3",
+        "cmd:faxquit=6.0.7-r3",
+        "cmd:faxrm=6.0.7-r3",
+        "cmd:faxsend=6.0.7-r3",
+        "cmd:faxsetup.bsdi=6.0.7-r3",
+        "cmd:faxsetup.irix=6.0.7-r3",
+        "cmd:faxsetup.linux=6.0.7-r3",
+        "cmd:faxsetup=6.0.7-r3",
+        "cmd:faxstat=6.0.7-r3",
+        "cmd:faxstate=6.0.7-r3",
+        "cmd:faxwatch=6.0.7-r3",
+        "cmd:hfaxd=6.0.7-r3",
+        "cmd:hylafax=6.0.7-r3",
+        "cmd:lockname=6.0.7-r3",
+        "cmd:ondelay=6.0.7-r3",
+        "cmd:pagesend=6.0.7-r3",
+        "cmd:probemodem=6.0.7-r3",
+        "cmd:recvstats=6.0.7-r3",
+        "cmd:sendfax=6.0.7-r3",
+        "cmd:sendpage=6.0.7-r3",
+        "cmd:tagtest=6.0.7-r3",
+        "cmd:textfmt=6.0.7-r3",
+        "cmd:tiffcheck=6.0.7-r3",
+        "cmd:tsitest=6.0.7-r3",
+        "cmd:typetest=6.0.7-r3",
+        "cmd:xferfaxstats=6.0.7-r3"
+      ]
     }
   },
   "provide": {
@@ -63917,6 +64000,10 @@
       "openssl3:so:libssl.so.3": {
         "package": "libssl3",
         "version": "3"
+      },
+      "libhylafax-6.0.so.7": {
+        "package": "hylafax",
+        "version": "7"
       }
     },
     "package": {
