@@ -3573,6 +3573,21 @@ c:0201ddc3cae9e5902031a5b0d2a88cffe6ad73d3
 D:bash so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libpq.so.5 so:libssl.so.1.1 so:libz.so.1
 p:postgresql-contrib=9.4.14_p1-r12 cmd:oid2name=9.4.14_p1-r12 cmd:pg_archivecleanup=9.4.14_p1-r12 cmd:pg_standby=9.4.14_p1-r12 cmd:pg_test_fsync=9.4.14_p1-r12 cmd:pg_test_timing=9.4.14_p1-r12 cmd:pg_upgrade=9.4.14_p1-r12 cmd:pg_xlogdump=9.4.14_p1-r12 cmd:pgbench=9.4.14_p1-r12 cmd:vacuumlo=9.4.14_p1-r12
 
+C:Q1byMuztnRkrVDpogha2ACbaRowCQ=
+P:polkit-elogind-dev
+V:0.119-r7
+A:armhf
+S:25652
+I:311296
+T:Polkit with elogind session tracking (development files)
+U:https://www.freedesktop.org/wiki/Software/polkit/
+L:GPL-2.0-or-later
+o:polkit
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1640779794
+c:bed2216cfa4759cd6acd16c21c158df6a7d28e2d
+D:polkit-dev=0.119-r7 polkit-elogind-libs=0.119-r7
+
 C:Q1IF2iSFdo2DDgHf5lNdX6pG0WN3E=
 P:potrace
 V:1.16-r1
@@ -14346,21 +14361,6 @@ c:26108ebdc9f88bcbe3595069742dddef9e4f9232
 D:libblockdev=2.26-r0 pc:glib-2.0 pkgconfig
 p:pc:blockdev-utils=2.26 pc:blockdev=2.26
 
-C:Q14flXcf6RcJ+O9IrM7o43u5tcgxQ=
-P:polkit-openrc
-V:0.119-r6
-A:armhf
-S:1815
-I:16384
-T:Application development toolkit for controlling system-wide privileges (OpenRC init scripts)
-U:https://www.freedesktop.org/wiki/Software/polkit/
-L:GPL-2.0-or-later
-o:polkit
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1637406697
-c:ff54831613633cfc8b319ecc1b41c81cbb19d38c
-i:openrc polkit=0.119-r6
-
 C:Q1EqGKiok1XQ1Iy+dXSx+i/AgzWeA=
 P:gspell-dev
 V:1.9.1-r1
@@ -18981,6 +18981,23 @@ t:1632948125
 c:ed63b146aeecdcf36115d8e2cb1757fbbae25988
 i:openrc gmnisrv=1.0-r0
 
+C:Q1U56/pOaD+cJUy2UsvjNYT8Mr/eI=
+P:polkit-libs
+V:0.119-r7
+A:armhf
+S:48213
+I:147456
+T:Application development toolkit for controlling system-wide privileges (libraries)
+U:https://www.freedesktop.org/wiki/Software/polkit/
+L:GPL-2.0-or-later
+o:polkit
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1640779794
+c:bed2216cfa4759cd6acd16c21c158df6a7d28e2d
+k:100
+D:so:libc.musl-armhf.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0
+p:so:libpolkit-agent-1.so.0=0.0.0 so:libpolkit-gobject-1.so.0=0.0.0
+
 C:Q1pVhTLyy7asqDPgN201fFZNk0kok=
 P:maturin-doc
 V:0.10.6-r0
@@ -22227,6 +22244,22 @@ t:1620684701
 c:626f0505ccc0eb49d4be3e9742512d294ef8ec06
 D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 
+C:Q1RW2iSfp4WCXddDxAi9crJ7M6Wg4=
+P:polkit
+V:0.119-r7
+A:armhf
+S:46269
+I:126976
+T:Application development toolkit for controlling system-wide privileges
+U:https://www.freedesktop.org/wiki/Software/polkit/
+L:GPL-2.0-or-later
+o:polkit
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1640779794
+c:bed2216cfa4759cd6acd16c21c158df6a7d28e2d
+k:100
+D:polkit-common=0.119-r7 polkit-libs=0.119-r7 so:libc.musl-armhf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libmozjs-78.so so:libpolkit-gobject-1.so.0 so:libstdc++.so.6
+
 C:Q1Zpey7lK4mAwGYuFqLBOn2L/MTPQ=
 P:php7-pecl-yaml
 V:2.2.2-r0
@@ -23160,22 +23193,6 @@ t:1635885002
 c:1342bc9d6dfa1a772926d8556cab73885388d756
 D:alsa-plugins-pulse bash dconf gnome-shell mesa mesa-dri-gallium polkit pulseaudio-alsa so:libEGL.so.1 so:libGL.so.1 so:libGLESv2.so.2 so:libICE.so.6 so:libSM.so.6 so:libX11.so.6 so:libXcomposite.so.1 so:libc.musl-armhf.so.1 so:libelogind.so.0 so:libepoxy.so.0 so:libgdk-3.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgnome-desktop-3.so.19 so:libgobject-2.0.so.0 so:libgtk-3.so.0 so:libintl.so.8 so:libjson-glib-1.0.so.0
 p:cmd:gnome-session-custom-session=40.1.1-r0 cmd:gnome-session-inhibit=40.1.1-r0 cmd:gnome-session-quit=40.1.1-r0 cmd:gnome-session=40.1.1-r0
-
-C:Q12rO0kNjQeY8qS6H3VVQzjvfj4eA=
-P:polkit-common
-V:0.119-r6
-A:armhf
-S:37907
-I:233472
-T:Common files for polkit and polkit-elogind
-U:https://www.freedesktop.org/wiki/Software/polkit/
-L:GPL-2.0-or-later
-o:polkit
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1637406697
-c:ff54831613633cfc8b319ecc1b41c81cbb19d38c
-D:/bin/sh so:libc.musl-armhf.so.1 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8 so:libpam.so.0 so:libpolkit-agent-1.so.0 so:libpolkit-gobject-1.so.0
-p:cmd:pk-example-frobnicate=0.119-r6 cmd:pkaction=0.119-r6 cmd:pkcheck=0.119-r6 cmd:pkexec=0.119-r6 cmd:pkttyagent=0.119-r6
 
 C:Q1axWfeHWB55hWu+nKnU890+pe7BE=
 P:proftpd-mod_deflate
@@ -29405,23 +29422,6 @@ t:1584976050
 c:41ab224df12b8487004a1522b4f671680c082954
 D:heimdal-dev heimdal-libs so:libc.musl-armhf.so.1
 p:so:libgssglue.so.1=1.0.0
-
-C:Q1LnR3koT87+ck9kLO/ZlKy3VQb04=
-P:polkit-elogind
-V:0.119-r6
-A:armhf
-S:45978
-I:126976
-T:Polkit with elogind session tracking
-U:https://www.freedesktop.org/wiki/Software/polkit/
-L:GPL-2.0-or-later
-o:polkit
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1637406697
-c:ff54831613633cfc8b319ecc1b41c81cbb19d38c
-k:10
-D:polkit-elogind-libs=0.119-r6 polkit-common=0.119-r6 so:libc.musl-armhf.so.1 so:libelogind.so.0 so:libexpat.so.1 so:libgcc_s.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libmozjs-78.so so:libpolkit-gobject-1.so.0 so:libstdc++.so.6
-p:polkit=0.119-r6
 
 C:Q1MX1PEWXJHncTGzGZl+mWGqe/8Bw=
 P:tesseract-ocr-data-eus
@@ -37738,22 +37738,6 @@ m:Marian Buschsieweke <marian.buschsieweke@ovgu.de>
 t:1636066909
 c:c3a3c168958f4af32e915ea417387e21cb0cb77b
 
-C:Q12emlC9Pa6tmSZHMJiubAw9EaODk=
-P:polkit
-V:0.119-r6
-A:armhf
-S:46272
-I:126976
-T:Application development toolkit for controlling system-wide privileges
-U:https://www.freedesktop.org/wiki/Software/polkit/
-L:GPL-2.0-or-later
-o:polkit
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1637406697
-c:ff54831613633cfc8b319ecc1b41c81cbb19d38c
-k:100
-D:polkit-common=0.119-r6 polkit-libs=0.119-r6 so:libc.musl-armhf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libmozjs-78.so so:libpolkit-gobject-1.so.0 so:libstdc++.so.6
-
 C:Q1ilMrZ71/ws8wTbfVltqIFw4OmMc=
 P:salt-api-openrc
 V:3004-r0
@@ -43899,23 +43883,6 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1583150207
 c:370c61a9d7ca3f6b331c75e34cc2a71256d4eaf6
 
-C:Q1in1YvSZWWhgZ0ycuXke6r0NS6H4=
-P:polkit-elogind-libs
-V:0.119-r6
-A:armhf
-S:48303
-I:147456
-T:Polkit with elogind session tracking (libraries)
-U:https://www.freedesktop.org/wiki/Software/polkit/
-L:GPL-2.0-or-later
-o:polkit
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1637406697
-c:ff54831613633cfc8b319ecc1b41c81cbb19d38c
-k:10
-D:so:libc.musl-armhf.so.1 so:libelogind.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0
-p:polkit-libs=0.119-r6 so:libpolkit-agent-1.so.0=0.0.0 so:libpolkit-gobject-1.so.0=0.0.0
-
 C:Q1SkXYl1dOWDDGtgfBkdxxXRdh6n4=
 P:lua5.2-loadkit
 V:1.1.0-r1
@@ -44009,6 +43976,23 @@ t:1634687472
 c:e549b2ebeced1556194f2a0f6003b3924886757c
 D:seatd so:libc.musl-armhf.so.1
 p:cmd:seatd-launch=0.6.3-r0
+
+C:Q1/33zTcfm09INYmHHNiCN+FezYng=
+P:polkit-elogind-libs
+V:0.119-r7
+A:armhf
+S:48300
+I:147456
+T:Polkit with elogind session tracking (libraries)
+U:https://www.freedesktop.org/wiki/Software/polkit/
+L:GPL-2.0-or-later
+o:polkit
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1640779794
+c:bed2216cfa4759cd6acd16c21c158df6a7d28e2d
+k:10
+D:so:libc.musl-armhf.so.1 so:libelogind.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0
+p:polkit-libs=0.119-r7 so:libpolkit-agent-1.so.0=0.0.0 so:libpolkit-gobject-1.so.0=0.0.0
 
 C:Q1sKbnA3/300uZemVNT4g/7BNC1ps=
 P:presage-static
@@ -58007,6 +57991,23 @@ m:Andy Hawkins <andy@gently.org.uk>
 t:1631110413
 c:bc36a4a73d3ebed79a5ad3c2660eccd6e2b501c2
 D:py3-inform
+
+C:Q1AzMXbo4U4CJJEK7rNAIFmWAim1M=
+P:polkit-elogind
+V:0.119-r7
+A:armhf
+S:45978
+I:126976
+T:Polkit with elogind session tracking
+U:https://www.freedesktop.org/wiki/Software/polkit/
+L:GPL-2.0-or-later
+o:polkit
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1640779794
+c:bed2216cfa4759cd6acd16c21c158df6a7d28e2d
+k:10
+D:polkit-elogind-libs=0.119-r7 polkit-common=0.119-r7 so:libc.musl-armhf.so.1 so:libelogind.so.0 so:libexpat.so.1 so:libgcc_s.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libmozjs-78.so so:libpolkit-gobject-1.so.0 so:libstdc++.so.6
+p:polkit=0.119-r7
 
 C:Q1xMq064dlwOi2mIkiTF10IsUHnQA=
 P:telepathy-mission-control
@@ -73005,23 +73006,6 @@ c:123e3b9a98d74c2758787c8ead27ac05c192f05a
 D:so:libc.musl-armhf.so.1 so:libceph-common.so.2 so:libgcc_s.so.1 so:libnl-3.so.200 so:libnl-genl-3.so.200 so:librados.so.2 so:librbd.so.1 so:libstdc++.so.6
 p:cmd:rbd-nbd=16.2.7-r0
 
-C:Q1GmJHdBGixalHYLaDdwwdujug35E=
-P:polkit-libs
-V:0.119-r6
-A:armhf
-S:48223
-I:147456
-T:Application development toolkit for controlling system-wide privileges (libraries)
-U:https://www.freedesktop.org/wiki/Software/polkit/
-L:GPL-2.0-or-later
-o:polkit
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1637406697
-c:ff54831613633cfc8b319ecc1b41c81cbb19d38c
-k:100
-D:so:libc.musl-armhf.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0
-p:so:libpolkit-agent-1.so.0=0.0.0 so:libpolkit-gobject-1.so.0=0.0.0
-
 C:Q1Gl6V8puFOdV6BdTv6cwbLE/y8/w=
 P:font-liberation-nerd
 V:2.1.0-r7
@@ -73995,6 +73979,22 @@ t:1637288699
 c:781eb0361e231a6bf47b4a1980c6c487e112da55
 D:runc so:libc.musl-armhf.so.1
 p:cmd:containerd-shim-runc-v1=1.5.8-r0 cmd:containerd-shim-runc-v2=1.5.8-r0 cmd:containerd-shim=1.5.8-r0 cmd:containerd=1.5.8-r0 cmd:ctr=1.5.8-r0
+
+C:Q1qq6rqzPFMZDKeq8alWRWhIeZHGQ=
+P:polkit-common
+V:0.119-r7
+A:armhf
+S:37886
+I:233472
+T:Common files for polkit and polkit-elogind
+U:https://www.freedesktop.org/wiki/Software/polkit/
+L:GPL-2.0-or-later
+o:polkit
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1640779794
+c:bed2216cfa4759cd6acd16c21c158df6a7d28e2d
+D:/bin/sh so:libc.musl-armhf.so.1 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8 so:libpam.so.0 so:libpolkit-agent-1.so.0 so:libpolkit-gobject-1.so.0
+p:cmd:pk-example-frobnicate=0.119-r7 cmd:pkaction=0.119-r7 cmd:pkcheck=0.119-r7 cmd:pkexec=0.119-r7 cmd:pkttyagent=0.119-r7
 
 C:Q1O5dFP33o+mrzrBYWxgzIl86rGm8=
 P:ocaml-camlp4-dev
@@ -77354,6 +77354,22 @@ c:b43ff91db1ca83371f94dc1ef936d52662065d24
 D:so:libc.musl-armhf.so.1
 p:cmd:ec=2.3.5-r2
 
+C:Q1pgQ1b269pna2bCI6hNK13xQ9IbI=
+P:polkit-lang
+V:0.119-r7
+A:armhf
+S:20147
+I:278528
+T:Languages for package polkit
+U:https://www.freedesktop.org/wiki/Software/polkit/
+L:GPL-2.0-or-later
+o:polkit
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1640779794
+c:bed2216cfa4759cd6acd16c21c158df6a7d28e2d
+D:polkit-common=0.119-r7 polkit-libs=0.119-r7
+i:polkit=0.119-r7 lang
+
 C:Q1t+L4P/9yarTm7K2kCCLy4QmDHQ8=
 P:loudmouth-doc
 V:1.5.3-r1
@@ -79990,6 +80006,21 @@ m:Sheila Aman <sheila@vulpine.house>
 t:1626299249
 c:f60261a8b40d10ebedd83f0319bb8924565c67f2
 D:perl
+
+C:Q19QKLX13bgpwNyXpWzZCZZiL6ZXA=
+P:polkit-doc
+V:0.119-r7
+A:armhf
+S:19390
+I:57344
+T:Application development toolkit for controlling system-wide privileges (documentation)
+U:https://www.freedesktop.org/wiki/Software/polkit/
+L:GPL-2.0-or-later
+o:polkit
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1640779794
+c:bed2216cfa4759cd6acd16c21c158df6a7d28e2d
+i:docs polkit=0.119-r7
 
 C:Q1BiNnvKzo9jXEi1GbZ+m+5Yk160I=
 P:dvd+rw-tools
@@ -91369,21 +91400,6 @@ c:dd8ca940a3c5fd07c3817f2d78167930647ee7e5
 D:py3-six
 p:py3.9:dockerpycreds=0.4.0-r2
 
-C:Q1Axx87KpLEwmen84VFysQb+U1jzw=
-P:polkit-elogind-dev
-V:0.119-r6
-A:armhf
-S:25664
-I:311296
-T:Polkit with elogind session tracking (development files)
-U:https://www.freedesktop.org/wiki/Software/polkit/
-L:GPL-2.0-or-later
-o:polkit
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1637406697
-c:ff54831613633cfc8b319ecc1b41c81cbb19d38c
-D:polkit-dev=0.119-r6 polkit-elogind-libs=0.119-r6
-
 C:Q1x8mB4igDerF6+ouPTBDYXzaOT2U=
 P:xcb-util-keysyms-dev
 V:0.4.0-r1
@@ -96403,6 +96419,22 @@ t:1599471426
 c:dcbc776cd968becb57c0eea8215d403f12d56f9d
 D:/bin/sh so:libc.musl-armhf.so.1 so:libglib-2.0.so.0 so:libintl.so.8
 p:cmd:desktop-file-edit=0.26-r0 cmd:desktop-file-install=0.26-r0 cmd:desktop-file-validate=0.26-r0 cmd:update-desktop-database=0.26-r0
+
+C:Q1dkbpQfAk34UFyOMSRvctYs14G2c=
+P:polkit-dev
+V:0.119-r7
+A:armhf
+S:39161
+I:499712
+T:Application development toolkit for controlling system-wide privileges (development files)
+U:https://www.freedesktop.org/wiki/Software/polkit/
+L:GPL-2.0-or-later
+o:polkit
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1640779794
+c:bed2216cfa4759cd6acd16c21c158df6a7d28e2d
+D:polkit-common=0.119-r7 polkit-libs=0.119-r7 dbus-glib-dev pc:gio-2.0>=2.18 pc:glib-2.0>=2.18 pkgconfig
+p:pc:polkit-agent-1=0.119 pc:polkit-gobject-1=0.119
 
 C:Q15yrlDx9qkwgL4YintspHyJHvCEY=
 P:perl-getopt-argvfile-doc
@@ -107138,22 +107170,6 @@ t:1635867215
 c:8c4ebbcae0cce68f721947eae0afabb6eb5cce0d
 D:fontconfig
 
-C:Q1WXsMhdlIm0a/0kp1C5IBMv3XwBI=
-P:polkit-lang
-V:0.119-r6
-A:armhf
-S:20149
-I:278528
-T:Languages for package polkit
-U:https://www.freedesktop.org/wiki/Software/polkit/
-L:GPL-2.0-or-later
-o:polkit
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1637406697
-c:ff54831613633cfc8b319ecc1b41c81cbb19d38c
-D:polkit-common=0.119-r6 polkit-libs=0.119-r6
-i:polkit=0.119-r6 lang
-
 C:Q16U3Uh90Qd310RR8Sk1wQjCcohjI=
 P:binutils-riscv-none-elf
 V:2.37-r0
@@ -109765,21 +109781,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1640343460
 c:448fbdb6e590eaff193467d54642c0d5172d0954
 D:nextcloud21
-
-C:Q1EqPV1TsKYjG1JAOFNWYMgsWE+30=
-P:polkit-doc
-V:0.119-r6
-A:armhf
-S:19397
-I:57344
-T:Application development toolkit for controlling system-wide privileges (documentation)
-U:https://www.freedesktop.org/wiki/Software/polkit/
-L:GPL-2.0-or-later
-o:polkit
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1637406697
-c:ff54831613633cfc8b319ecc1b41c81cbb19d38c
-i:docs polkit=0.119-r6
 
 C:Q1BZ8yyTIcxZ6FCiCyZ7g0+STIOXU=
 P:uglify-js
@@ -120612,6 +120613,21 @@ t:1617646713
 c:34b25f81b4b7a09bba6352ffbae00b068122c731
 D:python3
 
+C:Q1XoofA3bTX7Gyem6jRrFWqq3ZmIo=
+P:polkit-openrc
+V:0.119-r7
+A:armhf
+S:1812
+I:16384
+T:Application development toolkit for controlling system-wide privileges (OpenRC init scripts)
+U:https://www.freedesktop.org/wiki/Software/polkit/
+L:GPL-2.0-or-later
+o:polkit
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1640779794
+c:bed2216cfa4759cd6acd16c21c158df6a7d28e2d
+i:openrc polkit=0.119-r7
+
 C:Q1IK8t3QesiTtbmLp+4jBSNilja1w=
 P:waypipe-doc
 V:0.8.1-r1
@@ -121518,22 +121534,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1589190854
 c:73491742f51e47a7b589ddcca33f7882e44f2df3
 i:faenza-icon-theme=1.3.1-r6 zim
-
-C:Q1uRTM6LsuhYzKtclqHbAre8a3a34=
-P:polkit-dev
-V:0.119-r6
-A:armhf
-S:39162
-I:499712
-T:Application development toolkit for controlling system-wide privileges (development files)
-U:https://www.freedesktop.org/wiki/Software/polkit/
-L:GPL-2.0-or-later
-o:polkit
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1637406697
-c:ff54831613633cfc8b319ecc1b41c81cbb19d38c
-D:polkit-common=0.119-r6 polkit-libs=0.119-r6 dbus-glib-dev pc:gio-2.0>=2.18 pc:glib-2.0>=2.18 pkgconfig
-p:pc:polkit-agent-1=0.119 pc:polkit-gobject-1=0.119
 
 C:Q1uctxvtww506hSUL7yvetpMwk3Kc=
 P:fuzzel
