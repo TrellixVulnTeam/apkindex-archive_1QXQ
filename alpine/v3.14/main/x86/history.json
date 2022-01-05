@@ -57838,6 +57838,148 @@
       "provides": [
         "pc:libgps=3.23"
       ]
+    },
+    "bacula": {
+      "origin": "bacula",
+      "versions": {
+        "9.6.7-r1": 1641373536
+      },
+      "dependencies": [
+        "/bin/sh",
+        "so:libbac-9.6.7.so",
+        "so:libbaccfg-9.6.7.so",
+        "so:libbacfind-9.6.7.so",
+        "so:libbacsd-9.6.7.so",
+        "so:libbacsql-9.6.7.so",
+        "so:libc.musl-x86.so.1",
+        "so:libgcc_s.so.1",
+        "so:liblzo2.so.2",
+        "so:libstdc++.so.6",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:bacula-dir",
+        "cmd:bacula-sd",
+        "cmd:bbconsjson",
+        "cmd:bcopy",
+        "cmd:bdirjson",
+        "cmd:bextract",
+        "cmd:bfdjson",
+        "cmd:bls",
+        "cmd:bregex",
+        "cmd:bscan",
+        "cmd:bsdjson",
+        "cmd:bsmtp",
+        "cmd:btape",
+        "cmd:bwild",
+        "cmd:dbcheck"
+      ]
+    },
+    "bacula-doc": {
+      "origin": "bacula",
+      "versions": {
+        "9.6.7-r1": 1641373536
+      }
+    },
+    "bacula-sqlite": {
+      "origin": "bacula",
+      "versions": {
+        "9.6.7-r1": 1641373536
+      },
+      "dependencies": [
+        "bacula",
+        "so:libc.musl-x86.so.1",
+        "so:libsqlite3.so.0"
+      ],
+      "provides": [
+        "so:libbaccats-sqlite3-9.6.7.so=0"
+      ]
+    },
+    "bacula-mysql": {
+      "origin": "bacula",
+      "versions": {
+        "9.6.7-r1": 1641373536
+      },
+      "dependencies": [
+        "bacula",
+        "so:libc.musl-x86.so.1",
+        "so:libmariadb.so.3"
+      ],
+      "provides": [
+        "so:libbaccats-mysql-9.6.7.so=0"
+      ]
+    },
+    "bacula-client-openrc": {
+      "origin": "bacula",
+      "versions": {
+        "9.6.7-r1": 1641373536
+      }
+    },
+    "bacula-client": {
+      "origin": "bacula",
+      "versions": {
+        "9.6.7-r1": 1641373536
+      },
+      "dependencies": [
+        "so:libacl.so.1",
+        "so:libbac-9.6.7.so",
+        "so:libbaccfg-9.6.7.so",
+        "so:libbacfind-9.6.7.so",
+        "so:libc.musl-x86.so.1",
+        "so:libgcc_s.so.1",
+        "so:liblzo2.so.2",
+        "so:libncursesw.so.6",
+        "so:libstdc++.so.6",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "cmd:bacula",
+        "cmd:bacula-fd",
+        "cmd:bconsole",
+        "cmd:btraceback"
+      ]
+    },
+    "bacula-pgsql": {
+      "origin": "bacula",
+      "versions": {
+        "9.6.7-r1": 1641373536
+      },
+      "dependencies": [
+        "bacula",
+        "so:libc.musl-x86.so.1",
+        "so:libpq.so.5"
+      ],
+      "provides": [
+        "so:libbaccats-postgresql-9.6.7.so=0"
+      ]
+    },
+    "bacula-openrc": {
+      "origin": "bacula",
+      "versions": {
+        "9.6.7-r1": 1641373536
+      }
+    },
+    "bacula-libs": {
+      "origin": "bacula",
+      "versions": {
+        "9.6.7-r1": 1641373536
+      },
+      "dependencies": [
+        "so:libc.musl-x86.so.1",
+        "so:libcrypto.so.1.1",
+        "so:libgcc_s.so.1",
+        "so:libssl.so.1.1",
+        "so:libstdc++.so.6",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "so:bpipe-fd.so=0",
+        "so:libbac-9.6.7.so=0",
+        "so:libbaccfg-9.6.7.so=0",
+        "so:libbacfind-9.6.7.so=0",
+        "so:libbacsd-9.6.7.so=0",
+        "so:libbacsql-9.6.7.so=0"
+      ]
     }
   },
   "provide": {
@@ -63412,6 +63554,42 @@
       },
       "libns-9.16.20.so": {
         "package": "bind-libs",
+        "version": "0"
+      },
+      "libbaccats-sqlite3-9.6.7.so": {
+        "package": "bacula-sqlite",
+        "version": "0"
+      },
+      "libbaccats-mysql-9.6.7.so": {
+        "package": "bacula-mysql",
+        "version": "0"
+      },
+      "libbaccats-postgresql-9.6.7.so": {
+        "package": "bacula-pgsql",
+        "version": "0"
+      },
+      "bpipe-fd.so": {
+        "package": "bacula-libs",
+        "version": "0"
+      },
+      "libbac-9.6.7.so": {
+        "package": "bacula-libs",
+        "version": "0"
+      },
+      "libbaccfg-9.6.7.so": {
+        "package": "bacula-libs",
+        "version": "0"
+      },
+      "libbacfind-9.6.7.so": {
+        "package": "bacula-libs",
+        "version": "0"
+      },
+      "libbacsd-9.6.7.so": {
+        "package": "bacula-libs",
+        "version": "0"
+      },
+      "libbacsql-9.6.7.so": {
+        "package": "bacula-libs",
         "version": "0"
       }
     },
