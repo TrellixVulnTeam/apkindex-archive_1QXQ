@@ -12962,6 +12962,22 @@ t:1600709968
 c:66da56912fc4bdd5511fa0e6c8a9d12ff218ebf4
 i:docs perl-mime-lite=3.031-r2
 
+C:Q1jXbGg5GFVWRk1jTfgfeUpvfAtHk=
+P:cryptsetup
+V:2.3.7-r0
+A:x86_64
+S:121625
+I:331776
+T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi
+U:https://gitlab.com/cryptsetup/cryptsetup
+L:GPL-2.0-or-later WITH OpenSSL-Exception
+o:cryptsetup
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1642436588
+c:d1ca60cbe02aad9db6f9ce9f155b67db46002538
+D:so:libblkid.so.1 so:libc.musl-x86_64.so.1 so:libcryptsetup.so.12 so:libpopt.so.0 so:libuuid.so.1
+p:cmd:cryptsetup cmd:cryptsetup-reencrypt cmd:integritysetup cmd:veritysetup
+
 C:Q1vuSb9rf4M4JGkuy5LiprvGa40fI=
 P:lua-cmsgpack
 V:0.4.0-r0
@@ -28074,22 +28090,6 @@ t:1611508853
 c:c55d9bf31a7ed27592c16b0099b8bf2a4db68419
 i:docs libxt=1.2.1-r0
 
-C:Q1kzMWZcT/ge/04G6aLZ2hB3jvVS8=
-P:cryptsetup-libs
-V:2.3.4-r1
-A:x86_64
-S:191731
-I:417792
-T:Cryptsetup shared library
-U:https://gitlab.com/cryptsetup/cryptsetup
-L:GPL-2.0-or-later WITH OpenSSL-Exception
-o:cryptsetup
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1607591879
-c:ef0985a880219a49d49655152b14c09cf6bf89c6
-D:so:libargon2.so.1 so:libblkid.so.1 so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libdevmapper.so.1.02 so:libjson-c.so.5 so:libuuid.so.1
-p:so:libcryptsetup.so.12=12.6.0
-
 C:Q1ODvAO4RQFFxuW+gJ8awxFok8rBc=
 P:busybox-suid
 V:1.32.1-r7
@@ -30274,6 +30274,21 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1600709973
 c:3bcb0194151666131eec7ee89bd715f841f64f0f
 D:perl
+
+C:Q1dqLeQ2LTuAsoGNCKjV+BzBqa/zY=
+P:cryptsetup-openrc
+V:2.3.7-r0
+A:x86_64
+S:6292
+I:32768
+T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi (OpenRC init scripts)
+U:https://gitlab.com/cryptsetup/cryptsetup
+L:GPL-2.0-or-later WITH OpenSSL-Exception
+o:cryptsetup
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1642436588
+c:d1ca60cbe02aad9db6f9ce9f155b67db46002538
+i:openrc cryptsetup=2.3.7-r0
 
 C:Q117EQYd/z25eYwX4++ozFlyRInJo=
 P:perl-class-load-doc
@@ -33150,22 +33165,6 @@ t:1593500452
 c:f85c8c6e958602ed65fe6048ea60ce6e8989517b
 i:docs libnet=1.2-r0
 
-C:Q1i/YqZTs7x5Gyk8SzB3QVQuTGwVs=
-P:cryptsetup
-V:2.3.4-r1
-A:x86_64
-S:119494
-I:327680
-T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi
-U:https://gitlab.com/cryptsetup/cryptsetup
-L:GPL-2.0-or-later WITH OpenSSL-Exception
-o:cryptsetup
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1607591879
-c:ef0985a880219a49d49655152b14c09cf6bf89c6
-D:so:libblkid.so.1 so:libc.musl-x86_64.so.1 so:libcryptsetup.so.12 so:libpopt.so.0 so:libuuid.so.1
-p:cmd:cryptsetup cmd:cryptsetup-reencrypt cmd:integritysetup cmd:veritysetup
-
 C:Q1g8gEb16xCHoYzAwbRqW7sGe9Brw=
 P:p7zip
 V:16.02-r4
@@ -35113,6 +35112,22 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1600709981
 c:30b7b69023d17902b5377b2b12911ee9eb58ec46
 D:so:libc.musl-x86_64.so.1
+
+C:Q1uVZMQPNtTQGXDOndraJFfFz9CF0=
+P:cryptsetup-dev
+V:2.3.7-r0
+A:x86_64
+S:18713
+I:106496
+T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi (development files)
+U:https://gitlab.com/cryptsetup/cryptsetup
+L:GPL-2.0-or-later WITH OpenSSL-Exception
+o:cryptsetup
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1642436588
+c:d1ca60cbe02aad9db6f9ce9f155b67db46002538
+D:cryptsetup-libs=2.3.7-r0 pkgconfig
+p:pc:libcryptsetup=2.3.7
 
 C:Q1muiu3l3MAMaBCCEkhCN1Qb2qYRQ=
 P:py3-fixtures
@@ -37350,21 +37365,6 @@ c:0114d980979232104aeb64ddb3f052d394528d2e
 D:attr-dev e2fsprogs-dev glib-dev libtirpc-dev openssl-dev util-linux-dev pc:blkid pc:libcrypto pc:libtirpc pc:uuid pc:zlib pkgconfig zfs-libs=2.0.1-r0
 p:pc:libzfs=2.0.1 pc:libzfs_core=2.0.1 pc:libzfsbootenv=2.0.1
 
-C:Q168r1mC6nTuzqCvBHg0gqgK39EkQ=
-P:cryptsetup-doc
-V:2.3.4-r1
-A:x86_64
-S:87164
-I:225280
-T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi (documentation)
-U:https://gitlab.com/cryptsetup/cryptsetup
-L:GPL-2.0-or-later WITH OpenSSL-Exception
-o:cryptsetup
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1607591879
-c:ef0985a880219a49d49655152b14c09cf6bf89c6
-i:docs cryptsetup=2.3.4-r1
-
 C:Q1HHm/qhn5aSvU+8HmsSBonjh0qoA=
 P:aconf-mod-network
 V:0.8.1-r1
@@ -37471,21 +37471,6 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:so:libaugeas.so.0 so:libc.musl-x86_64.so.1
 i:lua5.3 lua-augeas=0.1.2-r4
-
-C:Q1q5CUFhT+Zs7W9MH0xuiq55bX7sg=
-P:cryptsetup-openrc
-V:2.3.4-r1
-A:x86_64
-S:6302
-I:32768
-T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi (OpenRC init scripts)
-U:https://gitlab.com/cryptsetup/cryptsetup
-L:GPL-2.0-or-later WITH OpenSSL-Exception
-o:cryptsetup
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1607591879
-c:ef0985a880219a49d49655152b14c09cf6bf89c6
-i:openrc cryptsetup=2.3.4-r1
 
 C:Q1rOdRPrdq06CLG2iAk6UJHHbJ5DY=
 P:perl-json-doc
@@ -52141,6 +52126,22 @@ m:Drew DeVault <sir@cmpwn.com>
 t:1595772987
 c:628545b43c627371f0bd268b172cb92afa6796ba
 
+C:Q1t3jWxa/vI719+l2Qr7AKBM3ioQg=
+P:cryptsetup-libs
+V:2.3.7-r0
+A:x86_64
+S:197984
+I:434176
+T:Cryptsetup shared library
+U:https://gitlab.com/cryptsetup/cryptsetup
+L:GPL-2.0-or-later WITH OpenSSL-Exception
+o:cryptsetup
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1642436588
+c:d1ca60cbe02aad9db6f9ce9f155b67db46002538
+D:so:libargon2.so.1 so:libblkid.so.1 so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libdevmapper.so.1.02 so:libjson-c.so.5 so:libuuid.so.1
+p:so:libcryptsetup.so.12=12.6.0
+
 C:Q1aD8X4XnO1GksDZrhDNorKikoeDY=
 P:f2fs-tools-dev
 V:1.14.0-r0
@@ -56237,6 +56238,21 @@ t:1626475349
 c:759e422a568903b92393d355533fe9a20d6de25b
 D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-x86_64.so.1
 p:so:libhowl.so.0=0.0.0
+
+C:Q1/YWAGxVy60OjSmeIvNV1DcQQoa0=
+P:cryptsetup-doc
+V:2.3.7-r0
+A:x86_64
+S:87922
+I:225280
+T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi (documentation)
+U:https://gitlab.com/cryptsetup/cryptsetup
+L:GPL-2.0-or-later WITH OpenSSL-Exception
+o:cryptsetup
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1642436588
+c:d1ca60cbe02aad9db6f9ce9f155b67db46002538
+i:docs cryptsetup=2.3.7-r0
 
 C:Q1H1oC4VeZ9Werguv+dvBlleHqB3Y=
 P:po4a
@@ -65746,22 +65762,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1614147272
 c:27516c3f4a8ac4b9e0fd96dfd6efb792d1a2f17a
 D:so:libc.musl-x86_64.so.1 so:liblber-2.4.so.2 so:libldap_r-2.4.so.2
-
-C:Q13KdFh7jkARmHUFNMoZTAWwIAZ28=
-P:cryptsetup-dev
-V:2.3.4-r1
-A:x86_64
-S:18642
-I:106496
-T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi (development files)
-U:https://gitlab.com/cryptsetup/cryptsetup
-L:GPL-2.0-or-later WITH OpenSSL-Exception
-o:cryptsetup
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1607591879
-c:ef0985a880219a49d49655152b14c09cf6bf89c6
-D:cryptsetup-libs=2.3.4-r1 pkgconfig
-p:pc:libcryptsetup=2.3.4
 
 C:Q1Hj5drXu9igryBq9d5GACU0+sD0A=
 P:linux-firmware-yam

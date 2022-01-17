@@ -225,22 +225,6 @@ t:1622631350
 c:537d75886466e62dc688e319fa22b37e41dee107
 D:nginx so:libc.musl-s390x.so.1
 
-C:Q1uTPTd7zpkdvDhTe+UT43QUEQxTU=
-P:cryptsetup-dev
-V:2.3.2-r1
-A:s390x
-S:18472
-I:106496
-T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi (development files)
-U:https://gitlab.com/cryptsetup/cryptsetup
-L:GPL-2.0-or-later
-o:cryptsetup
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1600790729
-c:fbe243dbcf2b24d3ce02b823fe625c940249bde1
-D:cryptsetup-libs=2.3.2-r1 pkgconfig
-p:pc:libcryptsetup=2.3.2
-
 C:Q1CixF+Q2TCVWS0iJoTeBEMvQ3MlE=
 P:openldap-overlay-dynlist
 V:2.4.50-r2
@@ -6290,6 +6274,22 @@ c:c93375f7e8eb197e2a99c603d9308ab589740d85
 D:so:libc.musl-s390x.so.1
 p:cmd:make
 
+C:Q1VNPEoQZ4Rt9sybbVF8Ty8PM/4W4=
+P:cryptsetup-libs
+V:2.3.7-r0
+A:s390x
+S:194537
+I:475136
+T:Cryptsetup shared library
+U:https://gitlab.com/cryptsetup/cryptsetup
+L:GPL-2.0-or-later
+o:cryptsetup
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1642437581
+c:3928da42a48bb0f6578be64e41834c9c68251f09
+D:so:libargon2.so.1 so:libblkid.so.1 so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libdevmapper.so.1.02 so:libjson-c.so.5 so:libuuid.so.1
+p:so:libcryptsetup.so.12=12.6.0
+
 C:Q1xjNDSXITy6pRqM0oHjIjltb+Tvo=
 P:uwsgi-router_hash
 V:2.0.18-r8
@@ -6348,22 +6348,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1598203726
 c:a79726f4871165dc7569d9be8efa689c286ba417
 i:docs chrony=3.5.1-r0
-
-C:Q1TRtI0tlPHrNf4RS7yAXxjQ2tnFE=
-P:cryptsetup
-V:2.3.2-r1
-A:s390x
-S:118289
-I:348160
-T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi
-U:https://gitlab.com/cryptsetup/cryptsetup
-L:GPL-2.0-or-later
-o:cryptsetup
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1600790729
-c:fbe243dbcf2b24d3ce02b823fe625c940249bde1
-D:so:libblkid.so.1 so:libc.musl-s390x.so.1 so:libcryptsetup.so.12 so:libpopt.so.0 so:libuuid.so.1
-p:cmd:cryptsetup cmd:cryptsetup-reencrypt cmd:integritysetup cmd:veritysetup
 
 C:Q1/nPdV6GOE6ze69UEcZRccgTQvYc=
 P:dhcp-libs-static
@@ -12875,6 +12859,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1636803438
 c:c0ce965629274177a7ed5028234200c516c51ba7
 D:mariadb-common mariadb-embedded=10.4.22-r0
+
+C:Q1kzGS0CBUOl40GYKE7c+VC1v5KqI=
+P:cryptsetup-dev
+V:2.3.7-r0
+A:s390x
+S:18695
+I:106496
+T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi (development files)
+U:https://gitlab.com/cryptsetup/cryptsetup
+L:GPL-2.0-or-later
+o:cryptsetup
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1642437581
+c:3928da42a48bb0f6578be64e41834c9c68251f09
+D:cryptsetup-libs=2.3.7-r0 pkgconfig
+p:pc:libcryptsetup=2.3.7
 
 C:Q1GP9pg4Rg+0z/x+SOMEVkX7GyJH4=
 P:libverto-dev
@@ -26038,6 +26038,21 @@ o:pgpool
 m:Jakub Jirutka <jakub@jirutka.cz>
 t:1590155362
 c:c6a753463b4a9028cd944f6e2fc841c2090a0a49
+
+C:Q1rOqACW1O9+xUzlGvzyYB/eFjXbs=
+P:cryptsetup-openrc
+V:2.3.7-r0
+A:s390x
+S:6283
+I:32768
+T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi (OpenRC init scripts)
+U:https://gitlab.com/cryptsetup/cryptsetup
+L:GPL-2.0-or-later
+o:cryptsetup
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1642437581
+c:3928da42a48bb0f6578be64e41834c9c68251f09
+i:openrc cryptsetup=2.3.7-r0
 
 C:Q1rcXnJmTS9UK7kn4wv376ks3kYCM=
 P:apache2-mod-wsgi-doc
@@ -41091,21 +41106,6 @@ c:ecfcf9451f96b61f9acd6db9ffe5b1d147caf599
 D:so:libc.musl-s390x.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:libde265.so.0=0.0.11 cmd:dec265
 
-C:Q1fNaZz1guF0m2jmWHlYM6vEicPeE=
-P:cryptsetup-doc
-V:2.3.2-r1
-A:s390x
-S:85230
-I:221184
-T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi (documentation)
-U:https://gitlab.com/cryptsetup/cryptsetup
-L:GPL-2.0-or-later
-o:cryptsetup
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1600790729
-c:fbe243dbcf2b24d3ce02b823fe625c940249bde1
-i:docs cryptsetup=2.3.2-r1
-
 C:Q1L5fRwscuW1otFrnNpTuHR6hwhjM=
 P:fcgiwrap
 V:1.1.0-r5
@@ -47030,6 +47030,21 @@ t:1582713092
 c:5d6650c822f30909b431f03124bedb7432b1194d
 i:docs powertop=2.11-r1
 
+C:Q1KSsVLwYkLVNfU3hOui6SJdwUtXI=
+P:cryptsetup-doc
+V:2.3.7-r0
+A:s390x
+S:87913
+I:225280
+T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi (documentation)
+U:https://gitlab.com/cryptsetup/cryptsetup
+L:GPL-2.0-or-later
+o:cryptsetup
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1642437581
+c:3928da42a48bb0f6578be64e41834c9c68251f09
+i:docs cryptsetup=2.3.7-r0
+
 C:Q1iofthaNKu8HJNdiQmCB0QyRIOGk=
 P:perl-test-deep
 V:1.130-r0
@@ -50172,21 +50187,6 @@ t:1636847775
 c:99a235d4efb9d577b965134bb6521371812d82ba
 D:so:libc.musl-s390x.so.1 so:libedit.so.0 so:libpq.so.5 so:libz.so.1
 p:cmd:clusterdb cmd:createdb cmd:createuser cmd:dropdb cmd:dropuser cmd:pg_basebackup cmd:pg_dump cmd:pg_dumpall cmd:pg_isready cmd:pg_receivewal cmd:pg_recvlogical cmd:pg_restore cmd:psql cmd:reindexdb cmd:vacuumdb
-
-C:Q1ApnLq4TjK4cEThlWmvcGQ3ZbQeo=
-P:cryptsetup-openrc
-V:2.3.2-r1
-A:s390x
-S:6279
-I:32768
-T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi (OpenRC init scripts)
-U:https://gitlab.com/cryptsetup/cryptsetup
-L:GPL-2.0-or-later
-o:cryptsetup
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1600790729
-c:fbe243dbcf2b24d3ce02b823fe625c940249bde1
-i:openrc cryptsetup=2.3.2-r1
 
 C:Q1RkWsJd6W6EOiAaptIE90YUc8/Dk=
 P:linux-pam-dev
@@ -56013,6 +56013,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1600991000
 c:c8b5ea21f034e2a2ce267121ec4cfb7c2be8d2ef
 p:linux-firmware-any
+
+C:Q1B87DEM6Dy6D8Ka1HCeQYB0tAvoI=
+P:cryptsetup
+V:2.3.7-r0
+A:s390x
+S:120911
+I:352256
+T:Userspace setup tool for transparent encryption of block devices using the Linux 2.6 cryptoapi
+U:https://gitlab.com/cryptsetup/cryptsetup
+L:GPL-2.0-or-later
+o:cryptsetup
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1642437581
+c:3928da42a48bb0f6578be64e41834c9c68251f09
+D:so:libblkid.so.1 so:libc.musl-s390x.so.1 so:libcryptsetup.so.12 so:libpopt.so.0 so:libuuid.so.1
+p:cmd:cryptsetup cmd:cryptsetup-reencrypt cmd:integritysetup cmd:veritysetup
 
 C:Q1OK5uh52wglECXKZylkjNjxqDOHs=
 P:lua5.3-luaxml
@@ -64852,22 +64868,6 @@ o:bluez-firmware
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1514664350
 c:63f5e7d295659a855709901ce22a3e5f40fce455
-
-C:Q1g4LHXJDUsPrKnMf50qsVKZkRcE0=
-P:cryptsetup-libs
-V:2.3.2-r1
-A:s390x
-S:187004
-I:458752
-T:Cryptsetup shared library
-U:https://gitlab.com/cryptsetup/cryptsetup
-L:GPL-2.0-or-later
-o:cryptsetup
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1600790729
-c:fbe243dbcf2b24d3ce02b823fe625c940249bde1
-D:so:libargon2.so.1 so:libblkid.so.1 so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libdevmapper.so.1.02 so:libjson-c.so.5 so:libuuid.so.1
-p:so:libcryptsetup.so.12=12.6.0
 
 C:Q1heEhOo3Cj1bPzWABiSgf3l8bDqw=
 P:kamailio-ruby
