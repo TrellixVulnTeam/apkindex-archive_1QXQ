@@ -60817,6 +60817,81 @@
       "provides": [
         "cmd:haserl-lua5.4=0.9.36-r1"
       ]
+    },
+    "tiny-cloud-oci": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "2.0.0-r0": 1643584619
+      },
+      "dependencies": [
+        "tiny-cloud=2.0.0-r0"
+      ]
+    },
+    "tiny-cloud-aws": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "2.0.0-r0": 1643584619
+      },
+      "dependencies": [
+        "nvme-cli",
+        "tiny-cloud-network=2.0.0-r0"
+      ],
+      "provides": [
+        "tiny-ec2-bootstrap"
+      ]
+    },
+    "tiny-cloud": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "2.0.0-r0": 1643584619
+      },
+      "dependencies": [
+        "e2fsprogs-extra",
+        "partx",
+        "sfdisk"
+      ],
+      "provides": [
+        "cmd:imds=2.0.0-r0"
+      ]
+    },
+    "tiny-cloud-azure": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "2.0.0-r0": 1643584619
+      },
+      "dependencies": [
+        "tiny-cloud=2.0.0-r0"
+      ]
+    },
+    "tiny-cloud-openrc": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "2.0.0-r0": 1643584619
+      }
+    },
+    "tiny-cloud-network": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "2.0.0-r0": 1643584619
+      },
+      "dependencies": [
+        "ifupdown-ng",
+        "iproute2-minimal",
+        "tiny-cloud=2.0.0-r0"
+      ],
+      "provides": [
+        "cmd:assemble-interfaces=2.0.0-r0",
+        "cmd:imds-net-sync=2.0.0-r0"
+      ]
+    },
+    "tiny-cloud-gcp": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "2.0.0-r0": 1643584619
+      },
+      "dependencies": [
+        "tiny-cloud=2.0.0-r0"
+      ]
     }
   },
   "provide": {
@@ -67658,6 +67733,10 @@
       "openssl1.1-compat-libs-static": {
         "package": "openssl-libs-static",
         "version": "1.1.1l-r8"
+      },
+      "tiny-ec2-bootstrap": {
+        "package": "tiny-cloud-aws",
+        "version": 0
       }
     }
   }
