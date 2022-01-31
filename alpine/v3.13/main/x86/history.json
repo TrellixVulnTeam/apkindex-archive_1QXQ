@@ -58500,6 +58500,81 @@
       "provides": [
         "pc:libgps=3.23"
       ]
+    },
+    "tiny-cloud-oci": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "2.0.0-r0": 1643586942
+      },
+      "dependencies": [
+        "tiny-cloud=2.0.0-r0"
+      ]
+    },
+    "tiny-cloud-azure": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "2.0.0-r0": 1643586942
+      },
+      "dependencies": [
+        "tiny-cloud=2.0.0-r0"
+      ]
+    },
+    "tiny-cloud-network": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "2.0.0-r0": 1643586942
+      },
+      "dependencies": [
+        "ifupdown-ng",
+        "iproute2-minimal",
+        "tiny-cloud=2.0.0-r0"
+      ],
+      "provides": [
+        "cmd:assemble-interfaces",
+        "cmd:imds-net-sync"
+      ]
+    },
+    "tiny-cloud-aws": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "2.0.0-r0": 1643586942
+      },
+      "dependencies": [
+        "nvme-cli",
+        "tiny-cloud-network=2.0.0-r0"
+      ],
+      "provides": [
+        "tiny-ec2-bootstrap"
+      ]
+    },
+    "tiny-cloud": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "2.0.0-r0": 1643586942
+      },
+      "dependencies": [
+        "e2fsprogs-extra",
+        "partx",
+        "sfdisk"
+      ],
+      "provides": [
+        "cmd:imds"
+      ]
+    },
+    "tiny-cloud-openrc": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "2.0.0-r0": 1643586942
+      }
+    },
+    "tiny-cloud-gcp": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "2.0.0-r0": 1643586942
+      },
+      "dependencies": [
+        "tiny-cloud=2.0.0-r0"
+      ]
     }
   },
   "provide": {
@@ -59371,6 +59446,10 @@
       "py-cffi": {
         "package": "py3-cffi",
         "version": "1.14.4-r0"
+      },
+      "tiny-ec2-bootstrap": {
+        "package": "tiny-cloud-aws",
+        "version": 0
       }
     },
     "so": {

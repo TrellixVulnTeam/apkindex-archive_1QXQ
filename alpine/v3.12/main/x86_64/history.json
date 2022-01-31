@@ -60125,6 +60125,81 @@
       "versions": {
         "3.23-r0": 1628529579
       }
+    },
+    "tiny-cloud-openrc": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "2.0.0-r0": 1643588012
+      }
+    },
+    "tiny-cloud": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "2.0.0-r0": 1643588012
+      },
+      "dependencies": [
+        "e2fsprogs-extra",
+        "util-linux",
+        "sfdisk"
+      ],
+      "provides": [
+        "cmd:imds"
+      ]
+    },
+    "tiny-cloud-oci": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "2.0.0-r0": 1643588012
+      },
+      "dependencies": [
+        "tiny-cloud=2.0.0-r0"
+      ]
+    },
+    "tiny-cloud-azure": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "2.0.0-r0": 1643588012
+      },
+      "dependencies": [
+        "tiny-cloud=2.0.0-r0"
+      ]
+    },
+    "tiny-cloud-network": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "2.0.0-r0": 1643588012
+      },
+      "dependencies": [
+        "ifupdown",
+        "iproute2",
+        "tiny-cloud=2.0.0-r0"
+      ],
+      "provides": [
+        "cmd:assemble-interfaces",
+        "cmd:imds-net-sync"
+      ]
+    },
+    "tiny-cloud-gcp": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "2.0.0-r0": 1643588012
+      },
+      "dependencies": [
+        "tiny-cloud=2.0.0-r0"
+      ]
+    },
+    "tiny-cloud-aws": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "2.0.0-r0": 1643588012
+      },
+      "dependencies": [
+        "nvme-cli",
+        "tiny-cloud-network=2.0.0-r0"
+      ],
+      "provides": [
+        "tiny-ec2-bootstrap"
+      ]
     }
   },
   "provide": {
@@ -61052,6 +61127,10 @@
       "rsyslog-ommysql": {
         "package": "rsyslog-mysql",
         "version": "8.2004.0-r0"
+      },
+      "tiny-ec2-bootstrap": {
+        "package": "tiny-cloud-aws",
+        "version": 0
       }
     },
     "so": {
