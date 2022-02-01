@@ -57182,6 +57182,81 @@
         "cmd:bconsole",
         "cmd:btraceback"
       ]
+    },
+    "tiny-cloud-aws": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "2.0.0-r0": 1643693857
+      },
+      "dependencies": [
+        "nvme-cli",
+        "tiny-cloud-network=2.0.0-r0"
+      ],
+      "provides": [
+        "tiny-ec2-bootstrap"
+      ]
+    },
+    "tiny-cloud-oci": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "2.0.0-r0": 1643693857
+      },
+      "dependencies": [
+        "tiny-cloud=2.0.0-r0"
+      ]
+    },
+    "tiny-cloud-azure": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "2.0.0-r0": 1643693857
+      },
+      "dependencies": [
+        "tiny-cloud=2.0.0-r0"
+      ]
+    },
+    "tiny-cloud": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "2.0.0-r0": 1643693857
+      },
+      "dependencies": [
+        "e2fsprogs-extra",
+        "partx",
+        "sfdisk"
+      ],
+      "provides": [
+        "cmd:imds"
+      ]
+    },
+    "tiny-cloud-gcp": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "2.0.0-r0": 1643693857
+      },
+      "dependencies": [
+        "tiny-cloud=2.0.0-r0"
+      ]
+    },
+    "tiny-cloud-network": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "2.0.0-r0": 1643693857
+      },
+      "dependencies": [
+        "ifupdown-ng",
+        "iproute2-minimal",
+        "tiny-cloud=2.0.0-r0"
+      ],
+      "provides": [
+        "cmd:assemble-interfaces",
+        "cmd:imds-net-sync"
+      ]
+    },
+    "tiny-cloud-openrc": {
+      "origin": "tiny-cloud",
+      "versions": {
+        "2.0.0-r0": 1643693857
+      }
     }
   },
   "provide": {
@@ -63527,6 +63602,10 @@
       "openssh-client": {
         "package": "openssh-client-default",
         "version": "8.6_p1-r3"
+      },
+      "tiny-ec2-bootstrap": {
+        "package": "tiny-cloud-aws",
+        "version": 0
       }
     }
   }
