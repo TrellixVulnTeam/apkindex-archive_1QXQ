@@ -398,21 +398,6 @@ c:b3fc85f1ac209b642fa1e5e564a49e69ac49611d
 D:fakeroot scanelf openssl apk-tools>=2.0.7-r1 libc-utils attr tar pkgconf patch lzip curl /bin/sh so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libz.so.1
 p:cmd:abuild cmd:abuild-addgroup cmd:abuild-adduser cmd:abuild-apk cmd:abuild-fetch cmd:abuild-gzsplit cmd:abuild-keygen cmd:abuild-rmtemp cmd:abuild-sign cmd:abuild-sudo cmd:abuild-tar cmd:abump cmd:apkbuild-pypi cmd:apkgrel cmd:buildlab cmd:checkapk cmd:newapkbuild
 
-C:Q1l7kLA2TyzfpJJGBPzeNc0siWFyE=
-P:mysql-client
-V:10.4.22-r0
-A:armv7
-S:1226
-I:4096
-T:Dummy package for mysql-client migration
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1636803438
-c:c0ce965629274177a7ed5028234200c516c51ba7
-D:mariadb-client
-
 C:Q1PZnl2rwVZ1EBWDcmAwKupMx2kYw=
 P:perl-git
 V:2.26.3-r1
@@ -991,6 +976,22 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:so:libc.musl-armv7.so.1
 p:cmd:logtail
+
+C:Q1g252iadnRAuCYYlj2Up5cqFeVxo=
+P:mariadb-embedded
+V:10.4.24-r0
+A:armv7
+S:4740753
+I:12460032
+T:MariaDB as an embeddable library
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1647606493
+c:67345564d26dd55526901f148a7584792f89e8e6
+D:mariadb-common=10.4.24-r0 so:libaio.so.1 so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:liblzma.so.5 so:libpcre.so.1 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
+p:so:libmariadbd.so.19=19
 
 C:Q1hCLasv9hLZLJiDmsC6p7ekWkoIw=
 P:pkgconf-doc
@@ -1931,22 +1932,6 @@ c:bcb3ce476101cf115f8e9309e838a788a9ee5c91
 D:so:libc.musl-armv7.so.1 so:libintl.so.8 so:libncursesw.so.6 so:libunistring.so.2
 p:so:libgettextpo.so.0=0.5.6 so:libtextstyle.so.0=0.0.1
 
-C:Q1qfkxpxbXdfRMdEIwf/pADl+kL4o=
-P:mariadb-backup
-V:10.4.22-r0
-A:armv7
-S:6117824
-I:16531456
-T:The mariabackup tool for physical online backups
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1636803438
-c:c0ce965629274177a7ed5028234200c516c51ba7
-D:mariadb-common so:libaio.so.1 so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:liblzma.so.5 so:libpcre.so.1 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
-p:cmd:mariabackup cmd:mariadb-backup cmd:mbstream
-
 C:Q1nD1LzSKbYydw2AAyl2HrIInjx4M=
 P:xf86-video-fbdev
 V:0.5.0-r2
@@ -2815,6 +2800,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1587139622
 c:1ed20c2c04f77f28a29f650dc6dde74e3b5e3a8b
 D:uwsgi so:libc.musl-armv7.so.1
+
+C:Q1TOwrQE34fbQ4gTXYbUe4Ha5MvDc=
+P:mariadb-mytop
+V:10.4.24-r0
+A:armv7
+S:20329
+I:77824
+T:Command line tool used for monitoring MariaDB performance
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1647606493
+c:67345564d26dd55526901f148a7584792f89e8e6
+D:perl perl-dbi perl-dbd-mysql perl-getopt-long perl-socket perl-term-readkey
+p:cmd:mytop
 
 C:Q1k7eGxTk5fSUQSJM/m3x/bLsKclE=
 P:libxcb-static
@@ -7516,6 +7517,21 @@ c:8085a3b70a2c70701fac0662996e237a053a4c2a
 D:so:libc.musl-armv7.so.1 so:liblmdb.so.0
 p:cmd:mdb_copy cmd:mdb_dump cmd:mdb_load cmd:mdb_stat
 
+C:Q1jxBPWoVhn6mQl59k7lOmEkvCt4s=
+P:mariadb-openrc
+V:10.4.24-r0
+A:armv7
+S:1798
+I:16384
+T:A fast SQL database server (OpenRC init scripts)
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1647606493
+c:67345564d26dd55526901f148a7584792f89e8e6
+i:openrc mariadb=10.4.24-r0
+
 C:Q1IIkOTPxOC880MZbx5JIlwqytPxM=
 P:e2fsprogs
 V:1.45.6-r0
@@ -7824,22 +7840,6 @@ t:1607561851
 c:0e1cfdcae4ef86baf530de61d2540c7b6d2da001
 D:dbus so:libc.musl-armv7.so.1 so:libglib-2.0.so.0 so:libreadline.so.8 so:libudev.so.1
 p:cmd:ciptool cmd:gatttool cmd:hciattach cmd:hciconfig cmd:hcidump cmd:hcitool cmd:rfcomm cmd:sdptool
-
-C:Q1MXoluf21Sq1MpLPBlAFK0Tqf8Wc=
-P:mariadb-dev
-V:10.4.22-r0
-A:armv7
-S:1288941
-I:6316032
-T:A fast SQL database server (development files)
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1636803438
-c:c0ce965629274177a7ed5028234200c516c51ba7
-D:openssl-dev zlib-dev mariadb-connector-c-dev mariadb-embedded=10.4.22-r0 pkgconfig
-p:mysql-dev=10.4.22-r0 pc:mariadb=10.4.22
 
 C:Q1svvhvmunRCcUaXdFVihFoaoqy+M=
 P:lua5.2-sql-postgres
@@ -8222,21 +8222,6 @@ m:Jeff Bilyk <jbilyk@gmail.com>
 t:1582391838
 c:c642cb7ab45ed41d9d80e6b6d177858c39c7075f
 D:nagios-plugins perl
-
-C:Q1fVskTBSoJJaiJ6zklckO0Scrmu0=
-P:mariadb-doc
-V:10.4.22-r0
-A:armv7
-S:232124
-I:655360
-T:A fast SQL database server (documentation)
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1636803438
-c:c0ce965629274177a7ed5028234200c516c51ba7
-i:docs mariadb=10.4.22-r0
 
 C:Q178WKzkmsyK+zuk7vETpq+LHL8hQ=
 P:pkgconf
@@ -8995,22 +8980,6 @@ t:1638964248
 c:c92ea703eb60b096734113a716b3f30ea92e076c
 i:docs lz4=1.9.2-r1
 
-C:Q1n85zUtRpfJ+rkorOm7ltlOCwvYM=
-P:mariadb-client
-V:10.4.22-r0
-A:armv7
-S:6781511
-I:26607616
-T:Client for the MariaDB database
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1636803438
-c:c0ce965629274177a7ed5028234200c516c51ba7
-D:mariadb-common=10.4.22-r0 so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libncursesw.so.6 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
-p:cmd:mariadb cmd:mariadb-access cmd:mariadb-admin cmd:mariadb-check cmd:mariadb-dump cmd:mariadb-dumpslow cmd:mariadb-find-rows cmd:mariadb-fix-extensions cmd:mariadb-import cmd:mariadb-show cmd:mariadb-waitpid cmd:myisam_ftdump cmd:mysql cmd:mysql_find_rows cmd:mysql_fix_extensions cmd:mysql_waitpid cmd:mysqlaccess cmd:mysqladmin cmd:mysqlcheck cmd:mysqldump cmd:mysqldumpslow cmd:mysqlimport cmd:mysqlshow
-
 C:Q1ISxztsYDgmIkSHwXSHL3z9IGdq0=
 P:openjpeg-dev
 V:2.4.0-r1
@@ -9596,6 +9565,21 @@ t:1504771131
 c:55018d4a38cf88588db244133dce56de10223736
 D:so:libc.musl-armv7.so.1
 p:so:libdnet.so.1=1.0.1 cmd:dnet
+
+C:Q1/q+oQtrE+QX3yPPFBzS6qTqF7Zc=
+P:mariadb-embedded-dev
+V:10.4.24-r0
+A:armv7
+S:1297
+I:12288
+T:MariaDB as an embeddable library - development files
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1647606493
+c:67345564d26dd55526901f148a7584792f89e8e6
+D:mariadb-common mariadb-embedded=10.4.24-r0
 
 C:Q14AHFK6jK7IaovfWyF9AsKf6x6SA=
 P:lz4
@@ -10947,20 +10931,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1606882594
 c:e0f25e8e687f162b3459005c0271f60e3d2f1025
 
-C:Q1K64hdREJIqz77xODlsN5mMsHpE4=
-P:bind-dnssec-root
-V:9.16.20-r1
-A:armv7
-S:2540
-I:20480
-T:ISC BIND DNSSEC Root Keys
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1629564731
-c:1a919bbc217a21f87272114be315fea69d85740a
-D:dnssec-root
-
 C:Q1Xn3QlJbPXs8RAjryTLKQHEzkGo4=
 P:gmp
 V:6.2.1-r1
@@ -12058,6 +12028,22 @@ c:465f55968c0b15e7aa82ae1132b9dcc741c5ff4a
 D:/bin/sh so:libc.musl-armv7.so.1
 p:cmd:nscd
 
+C:Q1tkOJeP46GNly1IMr24zxa5FxB4s=
+P:mariadb
+V:10.4.24-r0
+A:armv7
+S:33660897
+I:103211008
+T:A fast SQL database server
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1647606493
+c:67345564d26dd55526901f148a7584792f89e8e6
+D:mariadb-common /bin/sh so:libaio.so.1 so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:liblzma.so.5 so:libncursesw.so.6 so:libpam.so.0 so:libpcre.so.1 so:libssl.so.1.1 so:libstdc++.so.6 so:libxml2.so.2 so:libz.so.1
+p:cmd:aria_chk cmd:aria_dump_log cmd:aria_ftdump cmd:aria_pack cmd:aria_read_log cmd:innochecksum cmd:mariadb-binlog cmd:mariadb-embedded cmd:mariadb-install-db cmd:mariadb-ldb cmd:mariadb-plugin cmd:mariadb-secure-installation cmd:mariadb-slap cmd:mariadb-tzinfo-to-sql cmd:mariadbd cmd:mariadbd-safe cmd:msql2mysql cmd:my_print_defaults cmd:myisamchk cmd:myisamlog cmd:myisampack cmd:myrocks_hotbackup cmd:mysql_embedded cmd:mysql_install_db cmd:mysql_ldb cmd:mysql_plugin cmd:mysql_secure_installation cmd:mysql_tzinfo_to_sql cmd:mysqlbinlog cmd:mysqld cmd:mysqld_safe cmd:mysqlslap cmd:replace cmd:resolve_stack_dump cmd:resolveip cmd:sst_dump cmd:test-connect-t cmd:wsrep_sst_mariabackup cmd:wsrep_sst_mysqldump cmd:wsrep_sst_rsync cmd:wsrep_sst_rsync_wan
+
 C:Q16jp/kgywfabVExWSdh/clEfGnss=
 P:jansson-dev
 V:2.13.1-r0
@@ -12257,21 +12243,6 @@ t:1619538204
 c:0919d2cd769a700b38a322e3eab684f250da5206
 D:so:libc.musl-armv7.so.1 so:liblcms2.so.2 so:libopenjp2.so.7 so:libpng16.so.16 so:libtiff.so.5
 p:cmd:opj_compress cmd:opj_decompress cmd:opj_dump
-
-C:Q1N92LrmuoHUuQRc9p3xYS2Ii5SCI=
-P:mariadb-static
-V:10.4.22-r0
-A:armv7
-S:145358498
-I:404680704
-T:Static libraries for MariaDB
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1636803438
-c:c0ce965629274177a7ed5028234200c516c51ba7
-D:mariadb-common
 
 C:Q1t74gO14iLJLPWOSp0VaGVKCl7Kk=
 P:linux-lts
@@ -18594,20 +18565,6 @@ c:b30af4dea59ea152688f542ab3461dbf645c3020
 D:/bin/sh so:libc-client.so.1 so:libc.musl-armv7.so.1 so:libcap.so.2 so:libcrypto.so.1.1 so:libcurl.so.4 so:libedit.so.0 so:libgcc_s.so.1 so:libjansson.so.4 so:liblua.so.5 so:libpj.so.2 so:libpjlib-util.so.2 so:libpjmedia.so.2 so:libpjnath.so.2 so:libpjsip-simple.so.2 so:libpjsip-ua.so.2 so:libpjsip.so.2 so:libportaudio.so.2 so:libsqlite3.so.0 so:libssl.so.1.1 so:libuuid.so.1 so:libxml2.so.2 so:libz.so.1
 p:so:libasteriskssl.so.1=1 cmd:astcanary cmd:astdb2bdb cmd:astdb2sqlite3 cmd:asterisk cmd:astgenkey cmd:astversion cmd:autosupport cmd:rasterisk cmd:safe_asterisk
 
-C:Q1GCHi7BYAsdIxUXm2JW3nXfxBlOw=
-P:bind-plugins
-V:9.16.20-r1
-A:armv7
-S:6590
-I:32768
-T:The ISC DNS server plugins
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1629564731
-c:1a919bbc217a21f87272114be315fea69d85740a
-D:bind so:libc.musl-armv7.so.1
-
 C:Q1mlc95enb2gkTQxcTxgzBuJ20w+o=
 P:acl-dev
 V:2.2.53-r0
@@ -20267,21 +20224,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1590038431
 c:e616331f1873d0bd22246259920dab5e65bdecf1
 
-C:Q1FOcbJvO+OqamGkt5LqTlUvQ5gIg=
-P:mariadb-openrc
-V:10.4.22-r0
-A:armv7
-S:1793
-I:16384
-T:A fast SQL database server (OpenRC init scripts)
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1636803438
-c:c0ce965629274177a7ed5028234200c516c51ba7
-i:openrc mariadb=10.4.22-r0
-
 C:Q1hyKbeFWmy6PEHkfmo42pPE5a3dI=
 P:perl-file-sharedir-install-doc
 V:0.13-r1
@@ -20685,21 +20627,6 @@ t:1557246460
 c:bc1d89f01dff303b5272324190d795218d2fbf3c
 D:so:libX11.so.6 so:libc.musl-armv7.so.1
 p:so:libXdamage.so.1=1.1.0
-
-C:Q1H0MDkAdqYQ9sHvTI180fceVdils=
-P:bind-tools
-V:9.16.20-r1
-A:armv7
-S:207421
-I:462848
-T:The ISC DNS tools
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1629564731
-c:1a919bbc217a21f87272114be315fea69d85740a
-D:so:libbind9-9.16.20.so so:libc.musl-armv7.so.1 so:libdns-9.16.20.so so:libirs-9.16.20.so so:libisc-9.16.20.so so:libisccfg-9.16.20.so so:libkrb5.so.3 so:libns-9.16.20.so so:libprotobuf-c.so.1
-p:cmd:arpaname cmd:ddns-confgen cmd:delv cmd:dig cmd:dnstap-read cmd:host cmd:mdig cmd:named-checkzone cmd:named-compilezone cmd:named-journalprint cmd:named-rrchecker cmd:nslookup cmd:nsupdate cmd:rndc-confgen cmd:tsig-keygen
 
 C:Q1xvAqFgqnfFAWW8jHfPsohfCZufM=
 P:python3-dbg
@@ -23726,6 +23653,21 @@ c:234c8fe7737f97ec355b069a1f0c8764af8b7e43
 D:git-daemon=2.26.3-r1
 i:openrc git-daemon=2.26.3-r1
 
+C:Q14XNgCiPLrZMuU2ktS+xY2lo2yGs=
+P:bind
+V:9.16.27-r1
+A:armv7
+S:209565
+I:507904
+T:The ISC DNS server
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1647600467
+c:ec4631dd9213c6c0873cb50ffc886f00d1e081ac
+D:dns-root-hints bind-tools /bin/sh bind-dnssec-root=9.16.27-r1 so:libbind9-9.16.27.so so:libc.musl-armv7.so.1 so:libcap.so.2 so:libcrypto.so.1.1 so:libdns-9.16.27.so so:libfstrm.so.0 so:libisc-9.16.27.so so:libisccc-9.16.27.so so:libisccfg-9.16.27.so so:libjson-c.so.5 so:libldap-2.4.so.2 so:libns-9.16.27.so so:libprotobuf-c.so.1 so:libuv.so.1 so:libxml2.so.2 so:libz.so.1
+p:cmd:named cmd:named-checkconf cmd:rndc
+
 C:Q1k9MoaZuFD6io8JSAovc8S0MGISs=
 P:uwsgi-router_hash
 V:2.0.18-r8
@@ -24213,21 +24155,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1587777590
 c:67b4ef65d4c4d93a4e554aa8a76f17a3fcabce3e
 
-C:Q1LdHvqm+IGn0CsIGZRvqHpYdG+Ig=
-P:mysql
-V:10.4.22-r0
-A:armv7
-S:1218
-I:4096
-T:Dummy package for mysql migration
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1636803438
-c:c0ce965629274177a7ed5028234200c516c51ba7
-D:mariadb
-
 C:Q1nl7Gi2VK/nxFcgbiUEqoIxWT3dA=
 P:uwsgi-rrdtool
 V:2.0.18-r8
@@ -24521,6 +24448,20 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 i:docs libxv=1.0.11-r2
 
+C:Q1wzvF3FcDDqePAO38wHDwLSLFRDQ=
+P:bind-dev
+V:9.16.27-r1
+A:armv7
+S:1909995
+I:5844992
+T:The ISC DNS server (development files)
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1647600467
+c:ec4631dd9213c6c0873cb50ffc886f00d1e081ac
+D:bind bind-plugins bind-tools bind-libs=9.16.27-r1
+
 C:Q1d46Br/w+TTcwTOeCddl7v/JCq0o=
 P:ruby-rake
 V:2.7.5-r0
@@ -24536,6 +24477,20 @@ t:1637774267
 c:398cfee532a71f6a7321e64a5d1323d3b4e4d561
 D:ruby
 p:cmd:rake
+
+C:Q1B78vFHkoMPRzjMW2WYjexOCJJ9M=
+P:bind-doc
+V:9.16.27-r1
+A:armv7
+S:103223
+I:204800
+T:The ISC DNS server (documentation)
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1647600467
+c:ec4631dd9213c6c0873cb50ffc886f00d1e081ac
+i:docs bind=9.16.27-r1
 
 C:Q1S847Shte4rkre5vlzv2T9d0Vo7Q=
 P:perl-io-stringy
@@ -25230,22 +25185,6 @@ t:1577964208
 c:07ff6c1ac69c7738334063ca6c2192a06a29a644
 D:guile so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libpcre.so.1 so:libstdc++.so.6 so:libz.so.1
 p:cmd:ccache-swig cmd:swig
-
-C:Q1z+e/+Yz/ylzOYh1hrAf/5seocyc=
-P:mariadb
-V:10.4.22-r0
-A:armv7
-S:33596983
-I:102948864
-T:A fast SQL database server
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1636803438
-c:c0ce965629274177a7ed5028234200c516c51ba7
-D:mariadb-common /bin/sh so:libaio.so.1 so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:liblzma.so.5 so:libncursesw.so.6 so:libpam.so.0 so:libpcre.so.1 so:libssl.so.1.1 so:libstdc++.so.6 so:libxml2.so.2 so:libz.so.1
-p:cmd:aria_chk cmd:aria_dump_log cmd:aria_ftdump cmd:aria_pack cmd:aria_read_log cmd:innochecksum cmd:mariadb-binlog cmd:mariadb-embedded cmd:mariadb-install-db cmd:mariadb-ldb cmd:mariadb-plugin cmd:mariadb-secure-installation cmd:mariadb-slap cmd:mariadb-tzinfo-to-sql cmd:mariadbd cmd:mariadbd-safe cmd:msql2mysql cmd:my_print_defaults cmd:myisamchk cmd:myisamlog cmd:myisampack cmd:myrocks_hotbackup cmd:mysql_embedded cmd:mysql_install_db cmd:mysql_ldb cmd:mysql_plugin cmd:mysql_secure_installation cmd:mysql_tzinfo_to_sql cmd:mysqlbinlog cmd:mysqld cmd:mysqld_safe cmd:mysqlslap cmd:replace cmd:resolve_stack_dump cmd:resolveip cmd:sst_dump cmd:test-connect-t cmd:wsrep_sst_mariabackup cmd:wsrep_sst_mysqldump cmd:wsrep_sst_rsync cmd:wsrep_sst_rsync_wan
 
 C:Q1sT9uDx40vLrAfnOwjOFKcEqJ9uo=
 P:cgdb
@@ -27802,6 +27741,22 @@ t:1561734758
 c:08824c6305acc2bac05566a86a554060495b5c5d
 i:docs giflib=5.2.1-r0
 
+C:Q1CCdTxPSeu+wuInI4R95g3owj01o=
+P:mariadb-test
+V:10.4.24-r0
+A:armv7
+S:38292480
+I:267653120
+T:The test suite distributed with MariaDB
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1647606493
+c:67345564d26dd55526901f148a7584792f89e8e6
+D:mariadb-common so:libaio.so.1 so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:liblzma.so.5 so:libpam.so.0 so:libpcre.so.1 so:libpcreposix.so.0 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
+p:cmd:mariadb-client-test cmd:mariadb-client-test-embedded cmd:mariadb-test cmd:mariadb-test-embedded cmd:my_safe_process cmd:mysql_client_test cmd:mysql_client_test_embedded cmd:mysqltest cmd:mysqltest_embedded
+
 C:Q1mZ7zlC8ilq4b6gbm38y/NebBCUs=
 P:lua5.2-luaxml
 V:130610-r5
@@ -27864,6 +27819,20 @@ t:1560345115
 c:f2c041ba3a38367b28c8ebfc0a25395ab1cb0dcb
 D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libogg.so.0 so:libspeex.so.1 so:libssl.so.1.1 so:libtheora.so.0 so:libvorbis.so.0
 p:so:libshout.so.3=3.2.0
+
+C:Q1drBq8HCmlWCbwYXeQO0YhdE+OXk=
+P:bind-openrc
+V:9.16.27-r1
+A:armv7
+S:2318
+I:24576
+T:The ISC DNS server (OpenRC init scripts)
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1647600467
+c:ec4631dd9213c6c0873cb50ffc886f00d1e081ac
+i:openrc bind=9.16.27-r1
 
 C:Q1KK2PpsuBHJmCnzJVZSBlW780H+g=
 P:ip6tables
@@ -30347,22 +30316,6 @@ m:Francesco Colista <francesco.colista@gmail.com>
 t:1579434469
 c:3a7bf6eb91607f29318bfd06542c033efe92167b
 i:docs perl-io-tty=1.14-r0
-
-C:Q1zLIRddGqiXJKnRMQmPdNHwRyja0=
-P:mariadb-mytop
-V:10.4.22-r0
-A:armv7
-S:20325
-I:77824
-T:Command line tool used for monitoring MariaDB performance
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1636803438
-c:c0ce965629274177a7ed5028234200c516c51ba7
-D:perl perl-dbi perl-dbd-mysql perl-getopt-long perl-socket perl-term-readkey
-p:cmd:mytop
 
 C:Q1ndI+1WL3Nyvqiaj3fiALgYlsUKk=
 P:lua5.2-expat
@@ -33302,6 +33255,21 @@ t:1646992490
 c:dbdd4309d0b31de329cf6955d97aaad60da4af82
 i:docs openldap=2.4.58-r0
 
+C:Q1l3c/9t8ZOPCaKVP3uBRQLW6SLBs=
+P:bind-dnssec-tools
+V:9.16.27-r1
+A:armv7
+S:98618
+I:303104
+T:Utilities for DNSSEC keys and DNS zone files management
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1647600467
+c:ec4631dd9213c6c0873cb50ffc886f00d1e081ac
+D:py3-bind=9.16.27-r1 so:libc.musl-armv7.so.1 so:libdns-9.16.27.so so:libisc-9.16.27.so so:libisccfg-9.16.27.so
+p:cmd:dnssec-cds cmd:dnssec-checkds cmd:dnssec-coverage cmd:dnssec-dsfromkey cmd:dnssec-importkey cmd:dnssec-keyfromlabel cmd:dnssec-keygen cmd:dnssec-keymgr cmd:dnssec-revoke cmd:dnssec-settime cmd:dnssec-signzone cmd:dnssec-verify cmd:nsec3hash
+
 C:Q1qHUjpQKcqo+YELPabneDg0n0C8Q=
 P:intltool
 V:0.51.0-r4
@@ -33730,20 +33698,6 @@ t:1560928830
 c:91ac22a209c4f1cc130f9ee182b3bfaa6a3a4e86
 D:libogg-dev libtheora=1.1.1-r14 pc:ogg>=1.1 pkgconfig
 p:pc:theora=1.1.1 pc:theoradec=1.1.1 pc:theoraenc=1.1.1
-
-C:Q1yIvhGGR3U+a9PwpsmjlkxC9N5fg=
-P:py3-bind
-V:9.16.20-r1
-A:armv7
-S:59029
-I:286720
-T:A module allowing rndc commands to be sent from Python programs
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1629564731
-c:1a919bbc217a21f87272114be315fea69d85740a
-D:py3-ply python3
 
 C:Q1aUFbmUUw7JCeAr6jmuaQuxKsoJU=
 P:libsndfile-doc
@@ -34758,20 +34712,6 @@ t:1626352930
 c:66a4d9f90c341674b0da54d18ddfff0b19c0d885
 D:kamailio so:libc.musl-armv7.so.1 so:libkamailio_ims.so.0 so:libsrdb1.so.1 so:libsrutils.so.1 so:libxml2.so.2
 
-C:Q18RHo6xGfK8AzKl/LRMdeJma92Mk=
-P:bind-doc
-V:9.16.20-r1
-A:armv7
-S:102910
-I:204800
-T:The ISC DNS server (documentation)
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1629564731
-c:1a919bbc217a21f87272114be315fea69d85740a
-i:docs bind=9.16.20-r1
-
 C:Q1sjJNEBLn+Z2hzviyDjtBPIDjZ/0=
 P:speexdsp-doc
 V:1.2.0-r0
@@ -34963,6 +34903,21 @@ m:Kiyoshi Aman <kiyoshi.aman@gmail.com>
 t:1567058978
 c:5a163b7c64e53695023ca223c90455098becd821
 
+C:Q1I/Ed5SD2brUt6PZ63OjXPFgBba4=
+P:mariadb-common
+V:10.4.24-r0
+A:armv7
+S:610514
+I:2265088
+T:MariaDB common files for both server and client
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1647606493
+c:67345564d26dd55526901f148a7584792f89e8e6
+D:/bin/sh
+
 C:Q1VrDh+sN47dFa3ZjCA9Yk+OY85no=
 P:fortify-headers
 V:1.1-r0
@@ -35101,6 +35056,22 @@ t:1580230624
 c:4f52d1ac038ca18df1ed78ff6ae06d43d7498d00
 i:docs pciutils=3.6.4-r0
 
+C:Q1C2MRg+iRsUQJTd7/ISJjM0Lpf3c=
+P:mariadb-dev
+V:10.4.24-r0
+A:armv7
+S:1291595
+I:6328320
+T:A fast SQL database server (development files)
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1647606493
+c:67345564d26dd55526901f148a7584792f89e8e6
+D:openssl-dev zlib-dev mariadb-connector-c-dev mariadb-embedded=10.4.24-r0 pkgconfig
+p:mysql-dev=10.4.24-r0 pc:mariadb=10.4.24
+
 C:Q1TDjSV4D7SGtBxFcUwV6cYv2I3qs=
 P:lua-posix-doc
 V:33.4.0-r1
@@ -35224,21 +35195,6 @@ t:1584483911
 c:9d8a8521f972a1ee34a26d9a654a01528c3bf0a4
 D:pkgconfig xz-libs=5.2.5-r0
 p:pc:liblzma=5.2.5
-
-C:Q1gvcXOJX1d80zTBf+NzSqzV7Rljg=
-P:bind
-V:9.16.20-r1
-A:armv7
-S:209985
-I:507904
-T:The ISC DNS server
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1629564731
-c:1a919bbc217a21f87272114be315fea69d85740a
-D:dns-root-hints bind-tools /bin/sh bind-dnssec-root=9.16.20-r1 so:libbind9-9.16.20.so so:libc.musl-armv7.so.1 so:libcap.so.2 so:libcrypto.so.1.1 so:libdns-9.16.20.so so:libfstrm.so.0 so:libisc-9.16.20.so so:libisccc-9.16.20.so so:libisccfg-9.16.20.so so:libjson-c.so.5 so:libldap-2.4.so.2 so:libns-9.16.20.so so:libprotobuf-c.so.1 so:libuv.so.1 so:libxml2.so.2 so:libz.so.1
-p:cmd:named cmd:named-checkconf cmd:rndc
 
 C:Q1A4IfEvUFgnnrgzHpo0e9R+D7bwA=
 P:lm-sensors-doc
@@ -37350,6 +37306,21 @@ c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 D:so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:liblua-5.3.so.0 so:libstdc++.so.6
 p:so:liblutok.so.3=3.0.0
 
+C:Q1M66sXpu6Ycytc3Ul/YOj0M0QEo8=
+P:mysql-bench
+V:10.4.24-r0
+A:armv7
+S:1228
+I:4096
+T:Dummy package for mysql-bench migration
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1647606493
+c:67345564d26dd55526901f148a7584792f89e8e6
+D:mariadb-client
+
 C:Q1CB8EWBIds4zn5Q9nwiMDU7f0wlc=
 P:ruby-dev
 V:2.7.5-r0
@@ -38225,20 +38196,6 @@ m:Fabian Affolter <fabian@affolter-engineering.ch>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 
-C:Q1m4mG0Sb9Lw+2UAox9bhAHONk/wM=
-P:bind-openrc
-V:9.16.20-r1
-A:armv7
-S:2316
-I:24576
-T:The ISC DNS server (OpenRC init scripts)
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1629564731
-c:1a919bbc217a21f87272114be315fea69d85740a
-i:openrc bind=9.16.20-r1
-
 C:Q1vztRdiOJmNN25It7jR5zf4wsskw=
 P:xf86-input-synaptics-doc
 V:1.9.1-r1
@@ -38448,22 +38405,6 @@ m:Francesco Colista <francesco.colista@gmail.com>
 t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 i:docs perl-net-telnet=3.04-r1
-
-C:Q1xWg7oftlm6UlL3oPuFlDeH5eqis=
-P:mariadb-embedded
-V:10.4.22-r0
-A:armv7
-S:4738204
-I:12443648
-T:MariaDB as an embeddable library
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1636803438
-c:c0ce965629274177a7ed5028234200c516c51ba7
-D:mariadb-common=10.4.22-r0 so:libaio.so.1 so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:liblzma.so.5 so:libpcre.so.1 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
-p:so:libmariadbd.so.19=19
 
 C:Q1ZpTXJTGGXW00vpoMi9XD9SnHwEw=
 P:glib
@@ -39387,21 +39328,6 @@ c:53f204015203ff233de06c55b9d1347ab631bcde
 D:so:libX11.so.6 so:libXext.so.6 so:libXfixes.so.3 so:libc.musl-armv7.so.1 so:libdrm.so.2 so:libwayland-client.so.0
 p:so:libva-drm.so.2=2.700.0 so:libva-wayland.so.2=2.700.0 so:libva-x11.so.2=2.700.0 so:libva.so.2=2.700.0
 
-C:Q1zNPyJ/c689k3FpHtE9zBIA4winY=
-P:mariadb-common
-V:10.4.22-r0
-A:armv7
-S:610512
-I:2265088
-T:MariaDB common files for both server and client
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1636803438
-c:c0ce965629274177a7ed5028234200c516c51ba7
-D:/bin/sh
-
 C:Q17rL0xrzhkkM2ifxf/Lo4J7GvwFQ=
 P:bcache-tools-doc
 V:1.0.8-r2
@@ -39552,6 +39478,21 @@ t:1585575738
 c:71d2bbb6b7de6c2c477fa65e7af8412eac057119
 D:nfdump so:libc.musl-armv7.so.1 so:libnfdump-1.6.20.so so:librrd.so.8
 p:cmd:nfprofile
+
+C:Q1uOGyuqCu1P5k5u0IM3MFLsgGvPM=
+P:mariadb-plugin-rocksdb
+V:10.4.24-r0
+A:armv7
+S:1526635
+I:3317760
+T:MariaDB plugin for RocksDB (MyRocks)
+U:https://mariadb.com/kb/en/library/myrocks/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1647606493
+c:67345564d26dd55526901f148a7584792f89e8e6
+D:mariadb=10.4.24-r0 so:libc.musl-armv7.so.1 so:libstdc++.so.6 so:libz.so.1
 
 C:Q1i3j1cCOUqcZZWoaHPFLkG/F4kK8=
 P:libsndfile-dev
@@ -41006,6 +40947,22 @@ t:1588189594
 c:7d2e84c0e8ad134e1a4fc6687b3cac48d4f0e4e5
 i:docs apcupsd=3.14.14-r1
 
+C:Q1V+9++eCg2WZSaF2PzCXuxoA4J/M=
+P:mariadb-backup
+V:10.4.24-r0
+A:armv7
+S:6124150
+I:16560128
+T:The mariabackup tool for physical online backups
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1647606493
+c:67345564d26dd55526901f148a7584792f89e8e6
+D:mariadb-common so:libaio.so.1 so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:liblzma.so.5 so:libpcre.so.1 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
+p:cmd:mariabackup cmd:mariadb-backup cmd:mbstream
+
 C:Q1+Eu43JYzaDAj7zYN7Vf5mw71uYc=
 P:uwsgi-ping
 V:2.0.18-r8
@@ -42157,20 +42114,6 @@ t:1626352930
 c:66a4d9f90c341674b0da54d18ddfff0b19c0d885
 D:kamailio so:libc.musl-armv7.so.1 so:libcrypto.so.1.1
 
-C:Q1YIXd0d4T14oRFKv1xGtpXbe6AXM=
-P:bind-dev
-V:9.16.20-r1
-A:armv7
-S:1898349
-I:5799936
-T:The ISC DNS server (development files)
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1629564731
-c:1a919bbc217a21f87272114be315fea69d85740a
-D:bind bind-plugins bind-tools bind-libs=9.16.20-r1
-
 C:Q1IlivYylcNbz0MjFZPnpX/ceYG7I=
 P:pango
 V:1.44.7-r2
@@ -42927,22 +42870,6 @@ t:1594913334
 c:8085a3b70a2c70701fac0662996e237a053a4c2a
 i:docs lmdb=0.9.25-r1
 
-C:Q1SIegwLIS+4DXG7SxWXxhoEQgsOY=
-P:mariadb-server-utils
-V:10.4.22-r0
-A:armv7
-S:2344852
-I:9723904
-T:Non-essential server utilities for MariaDB/MySQL applications
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1636803438
-c:c0ce965629274177a7ed5028234200c516c51ba7
-D:perl mariadb-common=10.4.22-r0 so:libc.musl-armv7.so.1
-p:cmd:mariadb-convert-table-format cmd:mariadb-hotcopy cmd:mariadb-setpermission cmd:mariadb-upgrade cmd:mariadbd-multi cmd:mariadbd-safe-helper cmd:mysql_convert_table_format cmd:mysql_setpermission cmd:mysql_upgrade cmd:mysqld_multi cmd:mysqld_safe_helper cmd:mysqlhotcopy cmd:perror
-
 C:Q1LGId7RMFpHMJpqwplLBWwXXZyz8=
 P:linux-firmware-dabusb
 V:20200519-r1
@@ -43127,6 +43054,20 @@ m:Natanael Copa <ncopa@alpinlinux.org>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 i:lua5.3 lua-alt-getopt=0.7-r8
+
+C:Q1wRBrHcVqz6TITnZd0tL3uB7mOaU=
+P:py3-bind
+V:9.16.27-r1
+A:armv7
+S:58950
+I:282624
+T:A module allowing rndc commands to be sent from Python programs
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1647600467
+c:ec4631dd9213c6c0873cb50ffc886f00d1e081ac
+D:py3-ply python3
 
 C:Q18lf/UtmPD+Ha+ayUsdV1oBfrR+g=
 P:ngircd-doc
@@ -43475,6 +43416,22 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1587943049
 c:b33a87281e341ed18ebe97e3c841ac4794dc3bfc
 i:bubblewrap=0.4.1-r0 bash-completion
+
+C:Q1RhbxBUD+uv5lVwbxti2vSrzq+yY=
+P:mariadb-server-utils
+V:10.4.24-r0
+A:armv7
+S:2356727
+I:9760768
+T:Non-essential server utilities for MariaDB/MySQL applications
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1647606493
+c:67345564d26dd55526901f148a7584792f89e8e6
+D:perl mariadb-common=10.4.24-r0 so:libc.musl-armv7.so.1
+p:cmd:mariadb-convert-table-format cmd:mariadb-hotcopy cmd:mariadb-setpermission cmd:mariadb-upgrade cmd:mariadbd-multi cmd:mariadbd-safe-helper cmd:mysql_convert_table_format cmd:mysql_setpermission cmd:mysql_upgrade cmd:mysqld_multi cmd:mysqld_safe_helper cmd:mysqlhotcopy cmd:perror
 
 C:Q16Lau2bqSLXKdW7jYbfyUVqHKjqg=
 P:pax-utils-doc
@@ -45724,6 +45681,21 @@ t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 i:docs perl-test-nowarnings=1.04-r2
 
+C:Q1wFvcG+pY/xnONnsPm63NNQKIXwo=
+P:bind-tools
+V:9.16.27-r1
+A:armv7
+S:207223
+I:462848
+T:The ISC DNS tools
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1647600467
+c:ec4631dd9213c6c0873cb50ffc886f00d1e081ac
+D:so:libbind9-9.16.27.so so:libc.musl-armv7.so.1 so:libdns-9.16.27.so so:libirs-9.16.27.so so:libisc-9.16.27.so so:libisccfg-9.16.27.so so:libkrb5.so.3 so:libns-9.16.27.so so:libprotobuf-c.so.1
+p:cmd:arpaname cmd:ddns-confgen cmd:delv cmd:dig cmd:dnstap-read cmd:host cmd:mdig cmd:named-checkzone cmd:named-compilezone cmd:named-journalprint cmd:named-rrchecker cmd:nslookup cmd:nsupdate cmd:rndc-confgen cmd:tsig-keygen
+
 C:Q1ZH52pXDiVLC/iouFdAXzhMsQnUE=
 P:xvfb
 V:1.20.11-r0
@@ -46114,21 +46086,6 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:so:libc.musl-armv7.so.1
 p:cmd:which
-
-C:Q1l4t1/mGvP8ARfaZMbX+me9mI//4=
-P:bind-dnssec-tools
-V:9.16.20-r1
-A:armv7
-S:98464
-I:303104
-T:Utilities for DNSSEC keys and DNS zone files management
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1629564731
-c:1a919bbc217a21f87272114be315fea69d85740a
-D:py3-bind=9.16.20-r1 so:libc.musl-armv7.so.1 so:libdns-9.16.20.so so:libisc-9.16.20.so so:libisccfg-9.16.20.so
-p:cmd:dnssec-cds cmd:dnssec-checkds cmd:dnssec-coverage cmd:dnssec-dsfromkey cmd:dnssec-importkey cmd:dnssec-keyfromlabel cmd:dnssec-keygen cmd:dnssec-keymgr cmd:dnssec-revoke cmd:dnssec-settime cmd:dnssec-signzone cmd:dnssec-verify cmd:nsec3hash
 
 C:Q1J3GNSWWvqXNNMJ2O67sSLiMFC3U=
 P:ruby-dbm
@@ -49645,21 +49602,6 @@ c:00ddfca0faf8db707ba01da94de8b1d919803492
 D:lua5.1 so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
 i:lua5.1 lua-cqueues=20190813-r0
 
-C:Q1eSFUGMW6jKoccHNz+bVHNVFDAoA=
-P:mariadb-plugin-rocksdb
-V:10.4.22-r0
-A:armv7
-S:1526276
-I:3317760
-T:MariaDB plugin for RocksDB (MyRocks)
-U:https://mariadb.com/kb/en/library/myrocks/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1636803438
-c:c0ce965629274177a7ed5028234200c516c51ba7
-D:mariadb=10.4.22-r0 so:libc.musl-armv7.so.1 so:libstdc++.so.6 so:libz.so.1
-
 C:Q1Lljdk2kNEqRQfF1wFE/wf7ndbc4=
 P:popt-dev
 V:1.16-r7
@@ -50548,22 +50490,6 @@ m:Matt Smith <mcs@darkregion.net>
 t:1629394935
 c:807a5b50d3df7adf4dce7268a46d2ab84224011e
 i:docs perl-net-cidr-lite=0.22-r0
-
-C:Q19tKJstqB5Ah8bi0ln1OUoDXy3PY=
-P:mariadb-test
-V:10.4.22-r0
-A:armv7
-S:38188877
-I:266870784
-T:The test suite distributed with MariaDB
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1636803438
-c:c0ce965629274177a7ed5028234200c516c51ba7
-D:mariadb-common so:libaio.so.1 so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:liblzma.so.5 so:libpam.so.0 so:libpcre.so.1 so:libpcreposix.so.0 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
-p:cmd:mariadb-client-test cmd:mariadb-client-test-embedded cmd:mariadb-test cmd:mariadb-test-embedded cmd:my_safe_process cmd:mysql_client_test cmd:mysql_client_test_embedded cmd:mysqltest cmd:mysqltest_embedded
 
 C:Q1KrAtEZPAS13JAMfDP5flK9Ikad8=
 P:lua-penlight
@@ -52248,6 +52174,21 @@ t:1646992490
 c:dbdd4309d0b31de329cf6955d97aaad60da4af82
 D:cyrus-sasl-dev openssl-dev util-linux-dev libldap=2.4.58-r0 libldapcpp=2.4.58-r0
 
+C:Q1riDPTjchur6h/EhGhsqdL+KyVm8=
+P:mariadb-bench
+V:10.4.24-r0
+A:armv7
+S:488817
+I:2891776
+T:MariaDB benchmark scripts and data
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1647606493
+c:67345564d26dd55526901f148a7584792f89e8e6
+D:mariadb-common
+
 C:Q1XwKpb4jNukiGVeO5wH1Tq74M1ek=
 P:freeradius-dev
 V:3.0.21-r3
@@ -52682,6 +52623,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1558945573
 c:45e1149f3d5a36b2d15eb5d916905eb032152f1b
 i:docs perl-net-http=6.19-r0
+
+C:Q1frdR8I6tB1Kj0niPYnC3s1VYrd0=
+P:mysql
+V:10.4.24-r0
+A:armv7
+S:1221
+I:4096
+T:Dummy package for mysql migration
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1647606493
+c:67345564d26dd55526901f148a7584792f89e8e6
+D:mariadb
 
 C:Q1EabwBRxNyG3rI794ZTj68v0WPeA=
 P:libva-glx-dev
@@ -58149,6 +58105,20 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-armv7.so.1
 p:cmd:dtach
 
+C:Q1cC3zXakil4zib1Ww+5gg8wOrUhY=
+P:bind-dnssec-root
+V:9.16.27-r1
+A:armv7
+S:2542
+I:20480
+T:ISC BIND DNSSEC Root Keys
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1647600467
+c:ec4631dd9213c6c0873cb50ffc886f00d1e081ac
+D:dnssec-root
+
 C:Q1wbtYYB86tZYC71X4KJlD2nKS6lY=
 P:openldap-overlay-dyngroup
 V:2.4.58-r0
@@ -58256,6 +58226,21 @@ t:1587933421
 c:cdc8838a68e96dc864d9fbb465d01520e1699bd7
 D:so:libc.musl-armv7.so.1
 p:so:libhandle.so.1=1.0.3
+
+C:Q1fG03wFO4ewR+71TqkeNstrh8rsQ=
+P:mariadb-static
+V:10.4.24-r0
+A:armv7
+S:211561313
+I:589099008
+T:Static libraries for MariaDB
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1647606493
+c:67345564d26dd55526901f148a7584792f89e8e6
+D:mariadb-common
 
 C:Q1XRkJs73QjGmLUx+6JnZZrzJ//kI=
 P:freeradius-lib
@@ -58982,21 +58967,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1538845804
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs dkimproxy=1.4.1-r5
-
-C:Q1lApRhnJ1+77w8iZGQWO7udEaAZU=
-P:mariadb-embedded-dev
-V:10.4.22-r0
-A:armv7
-S:1298
-I:12288
-T:MariaDB as an embeddable library - development files
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1636803438
-c:c0ce965629274177a7ed5028234200c516c51ba7
-D:mariadb-common mariadb-embedded=10.4.22-r0
 
 C:Q1lbeznhvGl8kqrLDghijLD7VLyoo=
 P:py3-olefile
@@ -61635,6 +61605,21 @@ c:b9dd8d800b02628a678afd8c11582c4c1e53a412
 D:lua5.2 so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
 i:lua5.2 lua-ossl=20190731-r1
 
+C:Q1UfuduQyxp4HUt0Dmsl0HlpSjpO4=
+P:mysql-client
+V:10.4.24-r0
+A:armv7
+S:1229
+I:4096
+T:Dummy package for mysql-client migration
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1647606493
+c:67345564d26dd55526901f148a7584792f89e8e6
+D:mariadb-client
+
 C:Q1khZXvowepAdWb4T8sTZR7CuhEAo=
 P:czmq-static
 V:4.2.0-r2
@@ -63482,6 +63467,21 @@ t:1590559831
 c:de8cc2ed6da8c231924e236349e20d48c89d1846
 D:perl perl-http-date perl-http-message
 
+C:Q18U4ZT34tcXVWZBQbnNLJL/BmeaA=
+P:bind-libs
+V:9.16.27-r1
+A:armv7
+S:1139228
+I:2105344
+T:The ISC DNS server (libraries)
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1647600467
+c:ec4631dd9213c6c0873cb50ffc886f00d1e081ac
+D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libfstrm.so.0 so:libgssapi_krb5.so.2 so:libjson-c.so.5 so:libkrb5.so.3 so:libprotobuf-c.so.1 so:libssl.so.1.1 so:libuv.so.1 so:libxml2.so.2 so:libz.so.1
+p:so:libbind9-9.16.27.so=0 so:libdns-9.16.27.so=0 so:libirs-9.16.27.so=0 so:libisc-9.16.27.so=0 so:libisccc-9.16.27.so=0 so:libisccfg-9.16.27.so=0 so:libns-9.16.27.so=0
+
 C:Q1Nc16kzQyNuFUu7zIS/TZ4HABSSE=
 P:efivar-doc
 V:37-r2
@@ -64707,6 +64707,20 @@ c:115b97fbb2a160d7ec810eda935d4bf27238e4f1
 D:mesa=20.0.7-r0 so:libLLVM-10.so so:libc.musl-armv7.so.1 so:libdrm.so.2 so:libdrm_nouveau.so.2 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libz.so.1 so:libzstd.so.1
 p:so:libxatracker.so.2=2.5.0
 
+C:Q1yNI+AwjcjeoxYex3rM4pok/+xAw=
+P:bind-plugins
+V:9.16.27-r1
+A:armv7
+S:6408
+I:32768
+T:The ISC DNS server plugins
+U:https://www.isc.org/
+L:MPL-2.0
+o:bind
+t:1647600467
+c:ec4631dd9213c6c0873cb50ffc886f00d1e081ac
+D:bind so:libc.musl-armv7.so.1
+
 C:Q1us/Te1muTH6WY5dfX7XAmJXzwVs=
 P:libxcursor-dev
 V:1.2.0-r0
@@ -64859,21 +64873,6 @@ t:1592543942
 c:e684959dd09576a280eda8616faeb6c3dbd460ff
 D:so:libc.musl-armv7.so.1
 p:cmd:dropbearconvert
-
-C:Q17+g60QxUCGuSgVtPAiyg+5F2/2A=
-P:mariadb-bench
-V:10.4.22-r0
-A:armv7
-S:488815
-I:2891776
-T:MariaDB benchmark scripts and data
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1636803438
-c:c0ce965629274177a7ed5028234200c516c51ba7
-D:mariadb-common
 
 C:Q1UIrRf9jSBoGUIO73ZHnTiwgwBiQ=
 P:ncftp-doc
@@ -65044,6 +65043,21 @@ t:1591281952
 c:fe7417f5c2fd0ea8b513ce1f1eeebf14f20eb56d
 D:nghttp2-libs=1.41.0-r0 pkgconfig
 p:pc:libnghttp2=1.41.0
+
+C:Q1/YpXsylBGvBLkcBg9j0Ne/C58XM=
+P:mariadb-doc
+V:10.4.24-r0
+A:armv7
+S:232230
+I:659456
+T:A fast SQL database server (documentation)
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1647606493
+c:67345564d26dd55526901f148a7584792f89e8e6
+i:docs mariadb=10.4.24-r0
 
 C:Q1XyFJo03GUBghgtWub8vWQYpMKnk=
 P:libcap-ng-dev
@@ -65564,21 +65578,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 D:perl perl-crypt-openssl-random perl-crypt-openssl-guess so:libc.musl-armv7.so.1 so:libcrypto.so.1.1
-
-C:Q1ThqzmiXX8Df4Q/858O2XUQ9xjCI=
-P:mysql-bench
-V:10.4.22-r0
-A:armv7
-S:1228
-I:4096
-T:Dummy package for mysql-bench migration
-U:https://www.mariadb.org/
-L:GPL-2.0-or-later
-o:mariadb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1636803438
-c:c0ce965629274177a7ed5028234200c516c51ba7
-D:mariadb-client
 
 C:Q10dfpDb/YsUwMX1HzOU0mlsvviBw=
 P:openldap-overlay-refint
@@ -66306,6 +66305,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1626475489
 c:e5c8d4b73f9195ca485604bf10532f3651131657
 i:docs avahi=0.8-r4
+
+C:Q1AfDYQL2lJg7iT7Esjq/1nZzzQSU=
+P:mariadb-client
+V:10.4.24-r0
+A:armv7
+S:6812273
+I:26685440
+T:Client for the MariaDB database
+U:https://www.mariadb.org/
+L:GPL-2.0-or-later
+o:mariadb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1647606493
+c:67345564d26dd55526901f148a7584792f89e8e6
+D:mariadb-common=10.4.24-r0 so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libncursesw.so.6 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
+p:cmd:mariadb cmd:mariadb-access cmd:mariadb-admin cmd:mariadb-check cmd:mariadb-dump cmd:mariadb-dumpslow cmd:mariadb-find-rows cmd:mariadb-fix-extensions cmd:mariadb-import cmd:mariadb-show cmd:mariadb-waitpid cmd:myisam_ftdump cmd:mysql cmd:mysql_find_rows cmd:mysql_fix_extensions cmd:mysql_waitpid cmd:mysqlaccess cmd:mysqladmin cmd:mysqlcheck cmd:mysqldump cmd:mysqldumpslow cmd:mysqlimport cmd:mysqlshow
 
 C:Q1QwMO9HJaDx5AWL4U//7FXwHOaL8=
 P:openldap-overlay-ppolicy
@@ -69955,21 +69970,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1587574643
 c:4ba5a5fe5280881cee0d7ba9c8db747dc9a820a4
 i:docs perl-future=0.45-r0
-
-C:Q1PFp9spHrYkZxkcJ4gwByd6LnXys=
-P:bind-libs
-V:9.16.20-r1
-A:armv7
-S:1128982
-I:2088960
-T:The ISC DNS server (libraries)
-U:https://www.isc.org/
-L:MPL-2.0
-o:bind
-t:1629564731
-c:1a919bbc217a21f87272114be315fea69d85740a
-D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:libfstrm.so.0 so:libgssapi_krb5.so.2 so:libjson-c.so.5 so:libkrb5.so.3 so:libprotobuf-c.so.1 so:libssl.so.1.1 so:libuv.so.1 so:libxml2.so.2 so:libz.so.1
-p:so:libbind9-9.16.20.so=0 so:libdns-9.16.20.so=0 so:libirs-9.16.20.so=0 so:libisc-9.16.20.so=0 so:libisccc-9.16.20.so=0 so:libisccfg-9.16.20.so=0 so:libns-9.16.20.so=0
 
 C:Q1bk9BCwtzBN4GS0ywc2wkgNp2ZTU=
 P:freetds-doc
