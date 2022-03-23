@@ -490,22 +490,6 @@ t:1582818049
 c:3ab4e4ba20826e66d92c7770d268e3139473fcc6
 i:docs pigz=2.4-r1
 
-C:Q1gavhVuJ4PkymxdQvpPLg9mbBp/k=
-P:krb5-server-openrc
-V:1.18.4-r0
-A:s390x
-S:1856
-I:24576
-T:The KDC and related programs for Kerberos 5 (OpenRC init scripts)
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1627233385
-c:e72125cb54c186241962a6a08340dcbda98d4ab0
-D:krb5-conf
-i:krb5-server=1.18.4-r0 openrc
-
 C:Q1VQVInjtz+DDzQ3wkc/JTT1v0prQ=
 P:espeak
 V:1.48.04-r1
@@ -2433,22 +2417,6 @@ t:1589508430
 c:b34014637ea8d2caf92609d5e245ae0099ad5a88
 D:python3 so:libc.musl-s390x.so.1
 p:cmd:hg cmd:hg-ssh cmd:hgeditor cmd:hgk
-
-C:Q1UIxZUntxq+/Ebqn8nXZuvetAsrs=
-P:libsasl
-V:2.1.27-r6
-A:s390x
-S:65847
-I:192512
-T:Cyrus Simple Authentication and Security Layer (SASL) library
-U:https://www.cyrusimap.org/sasl/
-L:custom
-o:cyrus-sasl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1586055127
-c:0995c6915e73082bc55f45f1326b20a7a209ea53
-D:so:libc.musl-s390x.so.1 so:libdb-5.3.so
-p:so:libsasl2.so.3=3.0.0
 
 C:Q10ueJIzdbaJxHsucJSaboDAk8/jc=
 P:mesa-egl
@@ -5335,6 +5303,38 @@ t:1574272657
 c:e52864ba5c3af946a9cb0a524ff275ae91747f15
 i:openrc snort=2.9.14.1-r0
 
+C:Q1q4hJs6FIBQxDAaei4Q90iEijehA=
+P:krb5-server-openrc
+V:1.18.5-r0
+A:s390x
+S:1860
+I:24576
+T:The KDC and related programs for Kerberos 5 (OpenRC init scripts)
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1648054588
+c:fb93d94bdf2d29a6c4953c795ce9d465792faead
+D:krb5-conf
+i:krb5-server=1.18.5-r0 openrc
+
+C:Q1zVZpUNpUFKhFenYjRYoTO01z87M=
+P:krb5-libs
+V:1.18.5-r0
+A:s390x
+S:847743
+I:2174976
+T:The shared libraries used by Kerberos 5
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1648054588
+c:fb93d94bdf2d29a6c4953c795ce9d465792faead
+D:krb5-conf so:libc.musl-s390x.so.1 so:libcom_err.so.2 so:libcrypto.so.1.1 so:libkeyutils.so.1 so:libssl.so.1.1 so:libverto.so.1
+p:so:libgssapi_krb5.so.2=2.2 so:libgssrpc.so.4=4.2 so:libk5crypto.so.3=3.1 so:libkadm5clnt_mit.so.12=12.0 so:libkadm5srv_mit.so.12=12.0 so:libkdb5.so.10=10.0 so:libkrad.so.0=0.0 so:libkrb5.so.3=3.3 so:libkrb5support.so.0=0.1
+
 C:Q1bux21Uq6YTT+eCPrcMKF3I3V7yQ=
 P:lua5.1-sec
 V:0.9-r0
@@ -5611,6 +5611,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1582854717
 c:bc60bb71fcd31cf2ef7196cf61d7817d7f7392df
 D:ppp-daemon
+
+C:Q1BXKXnEFWplyI2p1BxcWLmmOAd1s=
+P:krb5-server
+V:1.18.5-r0
+A:s390x
+S:232408
+I:679936
+T:The KDC and related programs for Kerberos 5
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1648054588
+c:fb93d94bdf2d29a6c4953c795ce9d465792faead
+D:libverto-libev so:libc.musl-s390x.so.1 so:libcom_err.so.2 so:libgssapi_krb5.so.2 so:libgssrpc.so.4 so:libk5crypto.so.3 so:libkadm5clnt_mit.so.12 so:libkadm5srv_mit.so.12 so:libkdb5.so.10 so:libkdb_ldap.so.1 so:libkrb5.so.3 so:libkrb5support.so.0 so:libss.so.2 so:libverto.so.1
+p:cmd:gss-server cmd:kadmin.local cmd:kadmind cmd:kdb5_ldap_util cmd:kdb5_util cmd:kprop cmd:kpropd cmd:kproplog cmd:krb5-send-pr cmd:krb5kdc cmd:sclient cmd:sim_server cmd:sserver cmd:uuserver
 
 C:Q1K2x/TxZJJtqCQKIomgT6aqzndpg=
 P:libunwind-dev
@@ -8252,6 +8268,21 @@ t:1574164131
 c:8dc70211da8b6afb23319a48f9c8e83a1a7e4ff3
 D:python3 so:libc.musl-s390x.so.1
 p:py-markupsafe=1.1.1-r3
+
+C:Q1Vu4svJrrxWmrlkalABlPQTxFH0E=
+P:cyrus-sasl-digestmd5
+V:2.1.28-r0
+A:s390x
+S:25354
+I:77824
+T:Cyrus SASL plugin for digestmd5
+U:https://www.cyrusimap.org/sasl/
+L:custom
+o:cyrus-sasl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1648054205
+c:a5ec67b9b43cbbeff6b4d0874937299a50c40e5a
+D:so:libc.musl-s390x.so.1 so:libcrypto.so.1.1
 
 C:Q1x0Lngww+blMubg9bJpwKdrhBlMw=
 P:ghostscript-fonts
@@ -11305,21 +11336,6 @@ c:7445adce501f8473efdb93b17b5eaf2f1445ed4c
 D:clang=10.0.0-r2 perl python3
 p:cmd:scan-build cmd:scan-view
 
-C:Q120lhO0/l1qYJeJ2kF97uH30/jP4=
-P:cyrus-sasl-crammd5
-V:2.1.27-r6
-A:s390x
-S:10000
-I:40960
-T:Cyrus SASL plugin for crammd5
-U:https://www.cyrusimap.org/sasl/
-L:custom
-o:cyrus-sasl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1586055127
-c:0995c6915e73082bc55f45f1326b20a7a209ea53
-D:so:libc.musl-s390x.so.1
-
 C:Q1zXg49MWT3usjD7ECSTFmrSxfp5E=
 P:kamailio-dbg
 V:5.3.7-r2
@@ -11732,6 +11748,21 @@ t:1626475489
 c:e5c8d4b73f9195ca485604bf10532f3651131657
 D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-s390x.so.1 so:libglib-2.0.so.0 so:libgobject-2.0.so.0
 p:so:libavahi-glib.so.1=1.0.2 so:libavahi-gobject.so.0=0.0.5
+
+C:Q1frhWrWWM8z/UOAb9dpjhgjgFsZg=
+P:cyrus-sasl-login
+V:2.1.28-r0
+A:s390x
+S:8858
+I:36864
+T:Cyrus SASL plugin for login
+U:https://www.cyrusimap.org/sasl/
+L:custom
+o:cyrus-sasl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1648054205
+c:a5ec67b9b43cbbeff6b4d0874937299a50c40e5a
+D:so:libc.musl-s390x.so.1
 
 C:Q1RXJ4IfK2kq7pwv5r1CpB0JuNL5Q=
 P:doas
@@ -13383,6 +13414,21 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1541609172
 c:a5bbe2b19caadf886ae754aa2369ef02d0937f81
 i:docs icecast=2.4.4-r1
+
+C:Q1N7hYGqyaCR7YQtY/Si8YegXnDb0=
+P:cyrus-sasl-gs2
+V:2.1.28-r0
+A:s390x
+S:14955
+I:53248
+T:Cyrus SASL plugin for gs2
+U:https://www.cyrusimap.org/sasl/
+L:custom
+o:cyrus-sasl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1648054205
+c:a5ec67b9b43cbbeff6b4d0874937299a50c40e5a
+D:so:libc.musl-s390x.so.1 so:libgssapi.so.3
 
 C:Q1SsJeQLzAVnKeDsqh+Bo4LfDFs28=
 P:lua5.1-sqlite
@@ -15794,21 +15840,6 @@ c:67345564d26dd55526901f148a7584792f89e8e6
 D:perl perl-dbi perl-dbd-mysql perl-getopt-long perl-socket perl-term-readkey
 p:cmd:mytop
 
-C:Q1h1T+UTvvV0YnezzK+0lgqeMBdlw=
-P:cyrus-sasl-scram
-V:2.1.27-r6
-A:s390x
-S:17817
-I:57344
-T:Cyrus SASL plugin for scram
-U:https://www.cyrusimap.org/sasl/
-L:custom
-o:cyrus-sasl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1586055127
-c:0995c6915e73082bc55f45f1326b20a7a209ea53
-D:so:libc.musl-s390x.so.1 so:libcrypto.so.1.1
-
 C:Q1CFC+YbA2jV37Yr9qZHiHZAIw7n4=
 P:clang-libs
 V:10.0.0-r2
@@ -16332,21 +16363,6 @@ t:1625078447
 c:2652f1efda91ad8ddd71cc7829708c6bc9b09701
 D:openssl /bin/sh so:libbz2.so.1 so:libc.musl-s390x.so.1 so:libcap.so.2 so:libcrypto.so.1.1 so:libicui18n.so.67 so:libicuuc.so.67 so:libsodium.so.23 so:libssl.so.1.1 so:libz.so.1
 p:so:lib01_acl_plugin.so=0 so:lib02_imap_acl_plugin.so=0 so:lib02_lazy_expunge_plugin.so=0 so:lib05_mail_crypt_acl_plugin.so=0 so:lib05_pop3_migration_plugin.so=0 so:lib10_last_login_plugin.so=0 so:lib10_mail_crypt_plugin.so=0 so:lib10_quota_plugin.so=0 so:lib11_imap_quota_plugin.so=0 so:lib11_trash_plugin.so=0 so:lib15_notify_plugin.so=0 so:lib20_charset_alias_plugin.so=0 so:lib20_fts_plugin.so=0 so:lib20_listescape_plugin.so=0 so:lib20_mail_log_plugin.so=0 so:lib20_mailbox_alias_plugin.so=0 so:lib20_notify_status_plugin.so=0 so:lib20_push_notification_plugin.so=0 so:lib20_quota_clone_plugin.so=0 so:lib20_replication_plugin.so=0 so:lib20_var_expand_crypt.so=0 so:lib20_virtual_plugin.so=0 so:lib20_zlib_plugin.so=0 so:lib21_fts_squat_plugin.so=0 so:lib30_imap_zlib_plugin.so=0 so:lib90_old_stats_plugin.so=0 so:lib95_imap_old_stats_plugin.so=0 so:lib99_welcome_plugin.so=0 so:libdcrypt_openssl.so=0 so:libdovecot-compression.so.0=0.0.0 so:libdovecot-dsync.so.0=0.0.0 so:libdovecot-fts.so.0=0.0.0 so:libdovecot-lda.so.0=0.0.0 so:libdovecot-login.so.0=0.0.0 so:libdovecot-storage.so.0=0.0.0 so:libdovecot.so.0=0.0.0 so:libfs_compress.so=0 so:libfs_crypt.so=0 so:libfs_mail_crypt.so=0 so:libold_stats_mail.so=0 so:libssl_iostream_openssl.so=0 so:libstats_auth.so=0 cmd:doveadm cmd:doveconf cmd:dovecot cmd:dovecot-sysreport cmd:dsync
-
-C:Q1YJnwskHHOIrANlv9l9mnDicy18g=
-P:cyrus-sasl-digestmd5
-V:2.1.27-r6
-A:s390x
-S:25311
-I:73728
-T:Cyrus SASL plugin for digestmd5
-U:https://www.cyrusimap.org/sasl/
-L:custom
-o:cyrus-sasl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1586055127
-c:0995c6915e73082bc55f45f1326b20a7a209ea53
-D:so:libc.musl-s390x.so.1 so:libcrypto.so.1.1
 
 C:Q1cBs5JGDCRTTCD7Km5eJg4g3/wPk=
 P:lua5.1-rex-posix
@@ -19027,22 +19043,6 @@ t:1538845804
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 i:docs bdftopcf=1.1-r0
 
-C:Q1m/MYjathokrsQzIqqGB5tE9mco0=
-P:cyrus-sasl
-V:2.1.27-r6
-A:s390x
-S:44855
-I:167936
-T:Cyrus Simple Authentication Service Layer (SASL)
-U:https://www.cyrusimap.org/sasl/
-L:custom
-o:cyrus-sasl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1586055127
-c:0995c6915e73082bc55f45f1326b20a7a209ea53
-D:so:libc.musl-s390x.so.1 so:libdb-5.3.so so:libkrb5.so.26 so:libroken.so.18 so:libsasl2.so.3
-p:cmd:pluginviewer cmd:saslauthd cmd:sasldblistusers2 cmd:saslpasswd2 cmd:testsaslauthd
-
 C:Q1Df57qjDKLzUh35Zeva68g1Q4n0Y=
 P:s6-networking-dev
 V:2.3.1.2-r0
@@ -19258,6 +19258,21 @@ c:704d5a88f356872bd94ac4dc41d931965effeb84
 D:so:libc.musl-s390x.so.1 so:liblxc.so.1
 i:lua-lxc=3.0.2-r0 lua5.3
 
+C:Q1y4ocuvz8PrqEF8DUDFDooDbzG+Y=
+P:krb5-pkinit
+V:1.18.5-r0
+A:s390x
+S:49073
+I:147456
+T:The PKINIT module for Kerberos 5
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1648054588
+c:fb93d94bdf2d29a6c4953c795ce9d465792faead
+D:krb5-conf so:libc.musl-s390x.so.1 so:libcom_err.so.2 so:libcrypto.so.1.1 so:libk5crypto.so.3 so:libkrb5.so.3 so:libkrb5support.so.0
+
 C:Q1rNsQRQVy7DucG8BRRncCmsRD1UE=
 P:lua5.2-lzmq
 V:0.4.4-r1
@@ -19365,21 +19380,6 @@ t:1563189806
 c:fa24fcb44c8012dc251bf28039a6d043d1928773
 D:so:libc.musl-s390x.so.1 so:libglib-2.0.so.0 so:libncursesw.so.6 so:libnuma.so.1
 p:cmd:irqbalance cmd:irqbalance-ui
-
-C:Q1BLyMSB7trGPkksXT34mHwGEahq0=
-P:cyrus-sasl-login
-V:2.1.27-r6
-A:s390x
-S:8841
-I:36864
-T:Cyrus SASL plugin for login
-U:https://www.cyrusimap.org/sasl/
-L:custom
-o:cyrus-sasl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1586055127
-c:0995c6915e73082bc55f45f1326b20a7a209ea53
-D:so:libc.musl-s390x.so.1
 
 C:Q1ONTKnmQpUdbKZbZL+Z+EaPYlNrg=
 P:perl-email-address-doc
@@ -20617,22 +20617,6 @@ c:76546be34302be2baa77d68030f818b0a7017dd4
 D:so:libc.musl-s390x.so.1
 p:cmd:rpcgen
 
-C:Q1SSk4qO1AXpWc1wDpEtN93y0+qPQ=
-P:krb5-server
-V:1.18.4-r0
-A:s390x
-S:232414
-I:679936
-T:The KDC and related programs for Kerberos 5
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1627233385
-c:e72125cb54c186241962a6a08340dcbda98d4ab0
-D:libverto-libev so:libc.musl-s390x.so.1 so:libcom_err.so.2 so:libgssapi_krb5.so.2 so:libgssrpc.so.4 so:libk5crypto.so.3 so:libkadm5clnt_mit.so.12 so:libkadm5srv_mit.so.12 so:libkdb5.so.10 so:libkdb_ldap.so.1 so:libkrb5.so.3 so:libkrb5support.so.0 so:libss.so.2 so:libverto.so.1
-p:cmd:gss-server cmd:kadmin.local cmd:kadmind cmd:kdb5_ldap_util cmd:kdb5_util cmd:kprop cmd:kpropd cmd:kproplog cmd:krb5-send-pr cmd:krb5kdc cmd:sclient cmd:sim_server cmd:sserver cmd:uuserver
-
 C:Q1+roJld9pwSnobvf7WkVnhKF3oFY=
 P:lua5.2-mosquitto
 V:0.3-r1
@@ -21395,6 +21379,21 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:so:libc.musl-s390x.so.1 so:libvanessa_logger.so.0
 p:so:libvanessa_adt.so.1=1.0.0
+
+C:Q1EVR0HVG6tflW05fXDF6yuIass3Q=
+P:cyrus-sasl-doc
+V:2.1.28-r0
+A:s390x
+S:62129
+I:233472
+T:Cyrus Simple Authentication Service Layer (SASL) (documentation)
+U:https://www.cyrusimap.org/sasl/
+L:custom
+o:cyrus-sasl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1648054205
+c:a5ec67b9b43cbbeff6b4d0874937299a50c40e5a
+i:docs cyrus-sasl=2.1.28-r0
 
 C:Q1ww4D02pnaMxFnLSIgD+pecTS9+s=
 P:dejagnu-dev
@@ -22244,22 +22243,6 @@ t:1590774991
 c:17d4129dcccac8df705bb91e7c36924d727cbb84
 D:so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1 so:libz.so.1
 p:so:libmariadb.so.3=3
-
-C:Q17RTPoVAtCV7T+CTOgNH0alex4Zo=
-P:krb5-libs
-V:1.18.4-r0
-A:s390x
-S:847752
-I:2174976
-T:The shared libraries used by Kerberos 5
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1627233385
-c:e72125cb54c186241962a6a08340dcbda98d4ab0
-D:krb5-conf so:libc.musl-s390x.so.1 so:libcom_err.so.2 so:libcrypto.so.1.1 so:libkeyutils.so.1 so:libssl.so.1.1 so:libverto.so.1
-p:so:libgssapi_krb5.so.2=2.2 so:libgssrpc.so.4=4.2 so:libk5crypto.so.3=3.1 so:libkadm5clnt_mit.so.12=12.0 so:libkadm5srv_mit.so.12=12.0 so:libkdb5.so.10=10.0 so:libkrad.so.0=0.0 so:libkrb5.so.3=3.3 so:libkrb5support.so.0=0.1
 
 C:Q1USFc5B/tBvyjNIQQ+5zupRpoOug=
 P:smokeping-doc
@@ -23420,6 +23403,22 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:so:libc.musl-s390x.so.1 so:liblua.so.5
 p:cmd:tolua++
+
+C:Q1V1yeCcnS/+1HTv0Xen43Z4P//9U=
+P:krb5-server-ldap
+V:1.18.5-r0
+A:s390x
+S:41469
+I:126976
+T:The LDAP storage plugin for the Kerberos 5 KDC
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1648054588
+c:fb93d94bdf2d29a6c4953c795ce9d465792faead
+D:krb5-conf so:libc.musl-s390x.so.1 so:libcom_err.so.2 so:libgssrpc.so.4 so:libkadm5srv_mit.so.12 so:libkdb5.so.10 so:libkrb5.so.3 so:libkrb5support.so.0 so:libldap-2.4.so.2
+p:so:libkdb_ldap.so.1=1.0
 
 C:Q1qEGAppAxSNjcAH5TDuOaxUa9v6k=
 P:tdb
@@ -27160,21 +27159,6 @@ t:1626475489
 c:e5c8d4b73f9195ca485604bf10532f3651131657
 i:avahi=0.8-r4 lang
 
-C:Q1N74sdq/57ldJtFw1X9yHDVxWs5w=
-P:cyrus-sasl-ntlm
-V:2.1.27-r6
-A:s390x
-S:16337
-I:53248
-T:Cyrus SASL plugin for ntlm
-U:https://www.cyrusimap.org/sasl/
-L:custom
-o:cyrus-sasl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1586055127
-c:0995c6915e73082bc55f45f1326b20a7a209ea53
-D:so:libc.musl-s390x.so.1 so:libcrypto.so.1.1
-
 C:Q1SRT9lAs95cT4vrR8nOFlNEnX46s=
 P:lua5.1-hashids
 V:1.0.6-r1
@@ -30175,21 +30159,6 @@ c:174cb409b539ad4b1a1f3a2fb8cc6cbbfc32b232
 D:spirv-headers spirv-tools=2020.3-r0 pkgconfig
 p:pc:SPIRV-Tools-shared=2020.3.1 pc:SPIRV-Tools=2020.3.1
 
-C:Q1uNGNEkVunhRt8Gjjdje/Z2UhzAw=
-P:cyrus-sasl-openrc
-V:2.1.27-r6
-A:s390x
-S:1519
-I:16384
-T:Cyrus Simple Authentication Service Layer (SASL) (OpenRC init scripts)
-U:https://www.cyrusimap.org/sasl/
-L:custom
-o:cyrus-sasl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1586055127
-c:0995c6915e73082bc55f45f1326b20a7a209ea53
-i:openrc cyrus-sasl=2.1.27-r6
-
 C:Q1qct9sECErVyu2sQ3eoi8qv6iJ2s=
 P:logcheck
 V:1.3.20-r1
@@ -31849,6 +31818,21 @@ m:Carlo Landmeter <clandmeter@gmail.com>
 t:1590475404
 c:026fa2e3a140dabd96794413481809d050c25afe
 i:docs sqlite-tcl=3.32.1-r0
+
+C:Q12Psx2EwhJFnYT625lWBWOUGBIlg=
+P:cyrus-sasl-openrc
+V:2.1.28-r0
+A:s390x
+S:1519
+I:16384
+T:Cyrus Simple Authentication Service Layer (SASL) (OpenRC init scripts)
+U:https://www.cyrusimap.org/sasl/
+L:custom
+o:cyrus-sasl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1648054205
+c:a5ec67b9b43cbbeff6b4d0874937299a50c40e5a
+i:openrc cyrus-sasl=2.1.28-r0
 
 C:Q1rAsEHZ8lz0BgWIh7xqGxUNIK/Z8=
 P:samba-dev
@@ -36755,22 +36739,6 @@ c:4f4123805c0934af087f92ae85217b6c1d33d9f2
 D:so:libc.musl-s390x.so.1 so:libncursesw.so.6
 p:cmd:dialog
 
-C:Q1aBk/JG+W1jEyBao2ynWk0nr+wY8=
-P:cyrus-sasl-dev
-V:2.1.27-r6
-A:s390x
-S:274713
-I:962560
-T:Cyrus Simple Authentication Service Layer (SASL) (development files)
-U:https://www.cyrusimap.org/sasl/
-L:custom
-o:cyrus-sasl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1586055127
-c:0995c6915e73082bc55f45f1326b20a7a209ea53
-D:libsasl=2.1.27-r6 pkgconfig
-p:pc:libsasl2=2.1.27
-
 C:Q16ds5yE7R+ng1K8mNtLXmWoOoquo=
 P:py3-pluggy
 V:0.13.1-r0
@@ -37106,21 +37074,6 @@ t:1587777590
 c:67b4ef65d4c4d93a4e554aa8a76f17a3fcabce3e
 D:ntfs-3g-libs=2017.3.23-r2 pkgconfig
 p:pc:libntfs-3g=2017.3.23
-
-C:Q1JH368b54qZNEbAYKudlVl75zdhQ=
-P:cyrus-sasl-gssapiv2
-V:2.1.27-r6
-A:s390x
-S:14608
-I:53248
-T:Cyrus SASL plugin for gssapiv2
-U:https://www.cyrusimap.org/sasl/
-L:custom
-o:cyrus-sasl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1586055127
-c:0995c6915e73082bc55f45f1326b20a7a209ea53
-D:so:libc.musl-s390x.so.1 so:libgssapi.so.3
 
 C:Q1VdW+KFK5RF4EtkZaiL9Cx5MOZ9I=
 P:lua-cjson
@@ -41723,6 +41676,21 @@ t:1578281753
 c:ace10bc8f04fc9cd5b0503ce63ad4e460239abe5
 i:docs perl-db_file=1.853-r0
 
+C:Q1UzUmUpXRQn+sg/qA+SUIpwVo2O0=
+P:cyrus-sasl-scram
+V:2.1.28-r0
+A:s390x
+S:18201
+I:61440
+T:Cyrus SASL plugin for scram
+U:https://www.cyrusimap.org/sasl/
+L:custom
+o:cyrus-sasl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1648054205
+c:a5ec67b9b43cbbeff6b4d0874937299a50c40e5a
+D:so:libc.musl-s390x.so.1 so:libcrypto.so.1.1
+
 C:Q115XYZOE8Hr368Yw4c309BS8fBUM=
 P:aaudit
 V:0.7.2-r2
@@ -45367,22 +45335,6 @@ t:1590559842
 c:676a6a112b17383eaa238184c7a0b70e68a27d32
 D:so:libc.musl-s390x.so.1 so:libruby.so.2.7
 
-C:Q13GcJ1ONP/95JA/P7ttXGetECDDs=
-P:krb5-server-ldap
-V:1.18.4-r0
-A:s390x
-S:41473
-I:126976
-T:The LDAP storage plugin for the Kerberos 5 KDC
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1627233385
-c:e72125cb54c186241962a6a08340dcbda98d4ab0
-D:krb5-conf so:libc.musl-s390x.so.1 so:libcom_err.so.2 so:libgssrpc.so.4 so:libkadm5srv_mit.so.12 so:libkdb5.so.10 so:libkrb5.so.3 so:libkrb5support.so.0 so:libldap-2.4.so.2
-p:so:libkdb_ldap.so.1=1.0
-
 C:Q1pBSLJ8GteSVwwSTjo46Pr8LhyWg=
 P:py3-atomicwrites
 V:1.4.0-r0
@@ -46260,21 +46212,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1618391217
 c:f47b4dfb0d91b4069504b354560134b224627834
 i:docs xorg-server=1.20.11-r0
-
-C:Q129IbnY6X0I/urfGCgFdhUbEj5UA=
-P:cyrus-sasl-gs2
-V:2.1.27-r6
-A:s390x
-S:14939
-I:53248
-T:Cyrus SASL plugin for gs2
-U:https://www.cyrusimap.org/sasl/
-L:custom
-o:cyrus-sasl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1586055127
-c:0995c6915e73082bc55f45f1326b20a7a209ea53
-D:so:libc.musl-s390x.so.1 so:libgssapi.so.3
 
 C:Q1O0B7ouNpsjb606gv5M2GYxePocw=
 P:postfix-lmdb
@@ -49601,6 +49538,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 
+C:Q1P069B4/Lu9TBq4hIM4Tvi0WdjMg=
+P:cyrus-sasl-dev
+V:2.1.28-r0
+A:s390x
+S:275297
+I:962560
+T:Cyrus Simple Authentication Service Layer (SASL) (development files)
+U:https://www.cyrusimap.org/sasl/
+L:custom
+o:cyrus-sasl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1648054205
+c:a5ec67b9b43cbbeff6b4d0874937299a50c40e5a
+D:libsasl=2.1.28-r0 pkgconfig
+p:pc:libsasl2=2.1.28
+
 C:Q1EoQKacVN1WL9w1vzCFYmH/Dwf9o=
 P:librelp
 V:1.5.0-r0
@@ -50204,6 +50157,21 @@ m:Daniel Sabogal <dsabogalcc@gmail.com>
 t:1594659086
 c:96d355a76e7b7cdb9a76090bbe8ef57118149d60
 i:docs libinput=1.15.5-r1
+
+C:Q1OU5/vSSAb3O1gwBxGLHSyLhq9W4=
+P:cyrus-sasl-plain
+V:2.1.28-r0
+A:s390x
+S:9078
+I:36864
+T:Cyrus SASL plugin for plain
+U:https://www.cyrusimap.org/sasl/
+L:custom
+o:cyrus-sasl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1648054205
+c:a5ec67b9b43cbbeff6b4d0874937299a50c40e5a
+D:so:libc.musl-s390x.so.1
 
 C:Q1+81ZdllliDrOdwvEgiiccy51PBw=
 P:lua5.1-iconv
@@ -52527,6 +52495,22 @@ c:ad3b4eb0e296121f9995e4d2146eab141d904242
 D:so:libasound.so.2 so:libc.musl-s390x.so.1 so:libdbus-1.so.3 so:libgcc_s.so.1 so:libsamplerate.so.0 so:libstdc++.so.6
 p:so:libjack.so.0=0.1.0 so:libjacknet.so.0=0.1.0 so:libjackserver.so.0=0.1.0 cmd:jackd
 
+C:Q1c+GhD9X/pDaYJPaBMaCNncg/19c=
+P:cyrus-sasl
+V:2.1.28-r0
+A:s390x
+S:44780
+I:167936
+T:Cyrus Simple Authentication Service Layer (SASL)
+U:https://www.cyrusimap.org/sasl/
+L:custom
+o:cyrus-sasl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1648054205
+c:a5ec67b9b43cbbeff6b4d0874937299a50c40e5a
+D:so:libc.musl-s390x.so.1 so:libdb-5.3.so so:libkrb5.so.26 so:libroken.so.18 so:libsasl2.so.3
+p:cmd:pluginviewer cmd:saslauthd cmd:sasldblistusers2 cmd:saslpasswd2 cmd:testsaslauthd
+
 C:Q1lIQxHD3k6w2sJC1d21KnhZShJR4=
 P:eudev
 V:3.2.9-r3
@@ -53713,21 +53697,6 @@ c:e2d7f0c8cec7799e3877adab43e9b96366007954
 D:so:libc.musl-s390x.so.1 so:libcrypto.so.1.1 so:libodbc.so.2 so:libodbcinst.so.2 so:libreadline.so.8 so:libssl.so.1.1
 p:so:libct.so.4=4.0.0 so:libsybdb.so.5=5.1.0 so:libtdsodbc.so.0=0.0.0 cmd:bsqldb cmd:bsqlodbc cmd:datacopy cmd:defncopy cmd:fisql cmd:freebcp cmd:osql cmd:tdspool cmd:tsql
 
-C:Q1RkYWGp5ZGTDWK4GZnG2xytMh7P8=
-P:cyrus-sasl-plain
-V:2.1.27-r6
-A:s390x
-S:9066
-I:36864
-T:Cyrus SASL plugin for plain
-U:https://www.cyrusimap.org/sasl/
-L:custom
-o:cyrus-sasl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1586055127
-c:0995c6915e73082bc55f45f1326b20a7a209ea53
-D:so:libc.musl-s390x.so.1
-
 C:Q11lTR2Dn1LkA8zf3ZPSFcbUNZx1o=
 P:nettle-utils
 V:3.5.1-r1
@@ -54262,6 +54231,22 @@ t:1585388522
 c:c1a6926484739c337a89489c34e4f63e365c375e
 D:python3
 p:py-wcwidth=0.1.9-r0
+
+C:Q1t4deRzb2cBGZVdJRWG3o9CtXYqQ=
+P:krb5
+V:1.18.5-r0
+A:s390x
+S:97490
+I:360448
+T:The Kerberos network authentication system
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1648054588
+c:fb93d94bdf2d29a6c4953c795ce9d465792faead
+D:krb5-conf so:libc.musl-s390x.so.1 so:libcom_err.so.2 so:libgssapi_krb5.so.2 so:libk5crypto.so.3 so:libkadm5clnt_mit.so.12 so:libkadm5srv_mit.so.12 so:libkdb5.so.10 so:libkrb5.so.3 so:libkrb5support.so.0 so:libss.so.2
+p:cmd:gss-client cmd:k5srvutil cmd:kadmin cmd:kdestroy cmd:kinit cmd:klist cmd:kpasswd cmd:ksu cmd:kswitch cmd:ktutil cmd:kvno cmd:sim_client cmd:uuclient
 
 C:Q1PHKC6qTQKYmV/E1bm/unbXNWXvs=
 P:graphviz-graphs
@@ -55428,6 +55413,21 @@ t:1633454295
 c:b0e083e89d73f5accccbd9c3f691ac38aa03ee58
 D:logrotate
 i:squid=4.17-r0 lang-pt
+
+C:Q1aFBH+smLfNOMHd/+CrGKsQw9H8w=
+P:cyrus-sasl-ntlm
+V:2.1.28-r0
+A:s390x
+S:16347
+I:53248
+T:Cyrus SASL plugin for ntlm
+U:https://www.cyrusimap.org/sasl/
+L:custom
+o:cyrus-sasl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1648054205
+c:a5ec67b9b43cbbeff6b4d0874937299a50c40e5a
+D:so:libc.musl-s390x.so.1 so:libcrypto.so.1.1
 
 C:Q1L/HmcrKSyKmZqDG6FChzHcy4600=
 P:iproute2-bash-completion
@@ -57021,6 +57021,21 @@ t:1568798039
 c:acc8d8098c2706b456f26989363525a38a88d5a6
 D:so:libc.musl-s390x.so.1 so:libgcc_s.so.1 so:libportaudio.so.2 so:libstdc++.so.6
 p:so:libportaudiocpp.so.0=0.0.12
+
+C:Q1Rjz5qyWww+/wndxrZZjnlGAPe+E=
+P:cyrus-sasl-gssapiv2
+V:2.1.28-r0
+A:s390x
+S:14637
+I:53248
+T:Cyrus SASL plugin for gssapiv2
+U:https://www.cyrusimap.org/sasl/
+L:custom
+o:cyrus-sasl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1648054205
+c:a5ec67b9b43cbbeff6b4d0874937299a50c40e5a
+D:so:libc.musl-s390x.so.1 so:libgssapi.so.3
 
 C:Q1ZyXwl3t/+RI+IoaJv4MXn9m0gdM=
 P:perl-gdgraph
@@ -59371,6 +59386,22 @@ c:b0e083e89d73f5accccbd9c3f691ac38aa03ee58
 D:logrotate
 i:squid=4.17-r0 lang-ms
 
+C:Q17mMezr2uYDD99d+qHBcngdixJkw=
+P:libsasl
+V:2.1.28-r0
+A:s390x
+S:65807
+I:192512
+T:Cyrus Simple Authentication and Security Layer (SASL) library
+U:https://www.cyrusimap.org/sasl/
+L:custom
+o:cyrus-sasl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1648054205
+c:a5ec67b9b43cbbeff6b4d0874937299a50c40e5a
+D:so:libc.musl-s390x.so.1 so:libdb-5.3.so
+p:so:libsasl2.so.3=3.0.0
+
 C:Q1c26YTHnro5fV02pBfwAPYAwd2n4=
 P:py3-distlib
 V:0.3.0-r0
@@ -61581,22 +61612,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1580598585
 c:3c8264c6e10f5bc2a8eddadef23433c0d2a0496a
 
-C:Q1JWT0HLGq3m/2TOoITA+L6b15pe4=
-P:krb5
-V:1.18.4-r0
-A:s390x
-S:97497
-I:360448
-T:The Kerberos network authentication system
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1627233385
-c:e72125cb54c186241962a6a08340dcbda98d4ab0
-D:krb5-conf so:libc.musl-s390x.so.1 so:libcom_err.so.2 so:libgssapi_krb5.so.2 so:libk5crypto.so.3 so:libkadm5clnt_mit.so.12 so:libkadm5srv_mit.so.12 so:libkdb5.so.10 so:libkrb5.so.3 so:libkrb5support.so.0 so:libss.so.2
-p:cmd:gss-client cmd:k5srvutil cmd:kadmin cmd:kdestroy cmd:kinit cmd:klist cmd:kpasswd cmd:ksu cmd:kswitch cmd:ktutil cmd:kvno cmd:sim_client cmd:uuclient
-
 C:Q1ilAHkJAC2nppuj33uD1Z+7Qe+aU=
 P:linux-firmware-ath10k
 V:20200519-r1
@@ -62008,6 +62023,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1585490598
 c:66fd930fc2d14371e704f0f1835cb1a4fd114b8a
 D:so:libc.musl-s390x.so.1 so:libcrypto.so.1.1
+
+C:Q1bEv6NFdm5zLEBbyckVGLln4jj+8=
+P:cyrus-sasl-crammd5
+V:2.1.28-r0
+A:s390x
+S:10010
+I:40960
+T:Cyrus SASL plugin for crammd5
+U:https://www.cyrusimap.org/sasl/
+L:custom
+o:cyrus-sasl
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1648054205
+c:a5ec67b9b43cbbeff6b4d0874937299a50c40e5a
+D:so:libc.musl-s390x.so.1
 
 C:Q1bSkBloFLpQ6nw3g/FPW8VJfNOT0=
 P:iw
@@ -64053,6 +64083,22 @@ c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:so:libc.musl-s390x.so.1 so:libdbus-1.so.3
 i:lua5.3 lua-ldbus=20150430-r2
 
+C:Q1IkosQmUIAXJPCLQr6mNdLX03Dyw=
+P:krb5-dev
+V:1.18.5-r0
+A:s390x
+S:151130
+I:888832
+T:The Kerberos network authentication system (development files)
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1648054588
+c:fb93d94bdf2d29a6c4953c795ce9d465792faead
+D:e2fsprogs-dev krb5-libs=1.18.5-r0 krb5-server-ldap=1.18.5-r0 pkgconfig
+p:pc:gssrpc=1.18.5 pc:kadm-client=1.18.5 pc:kadm-server=1.18.5 pc:kdb=1.18.5 pc:krb5-gssapi=1.18.5 pc:krb5=1.18.5 pc:mit-krb5-gssapi=1.18.5 pc:mit-krb5=1.18.5 cmd:krb5-config
+
 C:Q1430r6rPx2CHkTYYUTY99vMtgMH4=
 P:lua-posixtz
 V:0.5-r1
@@ -65241,21 +65287,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1566811371
 c:c81bc2ce8be78a538b77b2cce1fd97056bcc3831
 i:docs perl-net-cidr=0.20-r0
-
-C:Q1tUWv955/1TbHl0v33usw/h2gaMo=
-P:krb5-doc
-V:1.18.4-r0
-A:s390x
-S:86338
-I:233472
-T:The Kerberos network authentication system (documentation)
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1627233385
-c:e72125cb54c186241962a6a08340dcbda98d4ab0
-i:docs krb5=1.18.4-r0
 
 C:Q11hPkUse87nAoJAmn5IazK2+/DaE=
 P:bonding
@@ -66524,21 +66555,6 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:encodings font-alias mkfontscale mkfontdir fontconfig
 
-C:Q1ArXZdu68N6njuNBa+hkXgB65Ej8=
-P:krb5-pkinit
-V:1.18.4-r0
-A:s390x
-S:49079
-I:147456
-T:The PKINIT module for Kerberos 5
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1627233385
-c:e72125cb54c186241962a6a08340dcbda98d4ab0
-D:krb5-conf so:libc.musl-s390x.so.1 so:libcom_err.so.2 so:libcrypto.so.1.1 so:libk5crypto.so.3 so:libkrb5.so.3 so:libkrb5support.so.0
-
 C:Q19L7XsH+31IhGTj23rc874pn44SI=
 P:htop-doc
 V:2.2.0-r0
@@ -66584,21 +66600,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1580791776
 c:27109a26afa9d8455323fdb8933be5a90a280926
 D:open-isns-lib=0.100-r0
-
-C:Q155ok7S3Aewqsuv1y6QJGFMsZ+vE=
-P:cyrus-sasl-doc
-V:2.1.27-r6
-A:s390x
-S:61799
-I:229376
-T:Cyrus Simple Authentication Service Layer (SASL) (documentation)
-U:https://www.cyrusimap.org/sasl/
-L:custom
-o:cyrus-sasl
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1586055127
-c:0995c6915e73082bc55f45f1326b20a7a209ea53
-i:docs cyrus-sasl=2.1.27-r6
 
 C:Q153FJKdUEeDJrDVd1Ypw/RjECxbE=
 P:gnats-doc
@@ -67700,6 +67701,21 @@ c:05b08137f6bbb672e3077fee28ac82871244d352
 D:so:libc.musl-s390x.so.1 so:libpj.so.2 so:libpjlib-util.so.2 so:libpjmedia.so.2 so:libpjsip-simple.so.2 so:libpjsip.so.2 so:libpjsua.so.2
 p:cmd:pjsua
 
+C:Q1ZZ34BcK83GOCFHsO4omRXbCdf0k=
+P:krb5-doc
+V:1.18.5-r0
+A:s390x
+S:86322
+I:233472
+T:The Kerberos network authentication system (documentation)
+U:https://web.mit.edu/kerberos/www/
+L:MIT
+o:krb5
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1648054588
+c:fb93d94bdf2d29a6c4953c795ce9d465792faead
+i:docs krb5=1.18.5-r0
+
 C:Q1+Yu9Ym10LjGnNsfmpj3qvlzTVjE=
 P:ngircd-openrc
 V:25-r1
@@ -68445,22 +68461,6 @@ t:1580250445
 c:238b6bccbab3b844079fa109d5cee096b81756d3
 D:so:libacl.so.1 so:libbac-9.4.4.so so:libbaccfg-9.4.4.so so:libbacfind-9.4.4.so so:libc.musl-s390x.so.1 so:liblzo2.so.2 so:libncursesw.so.6 so:libstdc++.so.6 so:libz.so.1
 p:cmd:bacula cmd:bacula-fd cmd:bconsole cmd:btraceback
-
-C:Q1/uiArJrCSThuWvkKqBqT5LZokr8=
-P:krb5-dev
-V:1.18.4-r0
-A:s390x
-S:151138
-I:888832
-T:The Kerberos network authentication system (development files)
-U:https://web.mit.edu/kerberos/www/
-L:MIT
-o:krb5
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1627233385
-c:e72125cb54c186241962a6a08340dcbda98d4ab0
-D:e2fsprogs-dev krb5-libs=1.18.4-r0 krb5-server-ldap=1.18.4-r0 pkgconfig
-p:pc:gssrpc=1.18.4 pc:kadm-client=1.18.4 pc:kadm-server=1.18.4 pc:kdb=1.18.4 pc:krb5-gssapi=1.18.4 pc:krb5=1.18.4 pc:mit-krb5-gssapi=1.18.4 pc:mit-krb5=1.18.4 cmd:krb5-config
 
 C:Q1n8fyiUrP2ZRK+8Y2DR9N6um8Rok=
 P:libassuan-dev
