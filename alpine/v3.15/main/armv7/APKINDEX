@@ -121,6 +121,21 @@ m:Mika Havela <mika.havela@gmail.com>
 t:1610959636
 c:9eeb3749e2dbceaca434b6ddf5ea82d0b6cc8d81
 
+C:Q1DGT6GSQgO9ey8eI0UfxoawBnynQ=
+P:bluez-zsh-completion
+V:5.64-r0
+A:armv7
+S:2591
+I:24576
+T:Zsh completions for bluez
+U:http://www.bluez.org/
+L:GPL-2.0-or-later
+o:bluez
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1649309238
+c:3643179f8d7f45dcf3bdd7f2d6b6a21a1c1d68f4
+i:bluez=5.64-r0 zsh
+
 C:Q1Jqt4j/3pG46cqyIH/9+dUFcLb6U=
 P:rsyslog-elasticsearch
 V:8.2108.0-r1
@@ -353,22 +368,6 @@ c:2a25151758ac79ae114e728cfb91fa47aa2d4c4a
 D:python3
 p:py-asn1=0.4.8-r1 py3.9:pyasn1=0.4.8-r1
 
-C:Q1P35jNj4PWR7p5EvYCcPbJIXkG1U=
-P:bluez-btmon
-V:5.63-r0
-A:armv7
-S:290262
-I:626688
-T:Bluez bluetooth monitor
-U:http://www.bluez.org/
-L:GPL-2.0-or-later
-o:bluez
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1642630070
-c:ab57705546ffe7e9ebabd09f85a2a1299ae04951
-D:dbus so:libc.musl-armv7.so.1 so:libudev.so.1
-p:cmd:btmon=5.63-r0
-
 C:Q18gZdpJxD7V0TtLGaeb+f5FkCR2s=
 P:libxinerama
 V:1.1.4-r1
@@ -523,21 +522,6 @@ c:40049605a0df5dae7005f4274efd4b5053e17190
 D:so:libc.musl-armv7.so.1 so:libuuid.so.1
 p:cmd:uuidgen=2.37.4-r0
 i:util-linux=2.37.4-r0
-
-C:Q1VrL2I91WoV7TA5ItsRLZNQY5Jew=
-P:bluez-obexd
-V:5.63-r0
-A:armv7
-S:172324
-I:376832
-T:Bluez OBEX daemon
-U:http://www.bluez.org/
-L:GPL-2.0-or-later
-o:bluez
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1642630070
-c:ab57705546ffe7e9ebabd09f85a2a1299ae04951
-D:dbus so:libc.musl-armv7.so.1 so:libdbus-1.so.3 so:libglib-2.0.so.0 so:libicalvcal.so.3
 
 C:Q1WESm4eOBfYO995+66xtwDN9P14k=
 P:asterisk-pgsql
@@ -4211,6 +4195,22 @@ c:a6fbb8861cee2d8cb889b397589d9008061d648c
 D:so:libc.musl-armv7.so.1 so:libcbor.so.0.8 so:libcrypto.so.1.1 so:libudev.so.1 so:libz.so.1
 p:so:libfido2.so.1=1.8.0
 
+C:Q1EaSn6KS/OeHZ+5w5hPsDhQSHeNk=
+P:bluez-dev
+V:5.64-r0
+A:armv7
+S:31478
+I:192512
+T:Tools for the Bluetooth protocol stack (development files)
+U:http://www.bluez.org/
+L:GPL-2.0-or-later
+o:bluez
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1649309238
+c:3643179f8d7f45dcf3bdd7f2d6b6a21a1c1d68f4
+D:bluez-libs=5.64-r0 pkgconfig
+p:pc:bluez=5.64
+
 C:Q1AruW90xgv7dRWIT/y0iD5GrM/zQ=
 P:perl-digest-md5
 V:2.58-r2
@@ -7665,6 +7665,22 @@ t:1628454297
 c:43bf7b5a87c9aa69d0893d4f87cedc99202b3618
 D:pkgconfig sqlite-libs=3.36.0-r0
 p:pc:sqlite3=3.36.0
+
+C:Q1kFQo40uBGiYp4PsjcsAGbhzPhCo=
+P:bluez-btmgmt
+V:5.64-r0
+A:armv7
+S:116742
+I:270336
+T:Bluez tool for the Bluetooth Management API
+U:http://www.bluez.org/
+L:GPL-2.0-or-later
+o:bluez
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1649309238
+c:3643179f8d7f45dcf3bdd7f2d6b6a21a1c1d68f4
+D:dbus so:libc.musl-armv7.so.1 so:libreadline.so.8
+p:cmd:btmgmt=5.64-r0
 
 C:Q1Kjs8vfpUXiT/GnAbHvjSdGJAxUA=
 P:hdparm-doc
@@ -13742,6 +13758,22 @@ c:4a71fed914fde34940327c1f0db25fd1b1839ab5
 D:so:libLLVM-11.so so:libc.musl-armv7.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libz.so.1
 p:cmd:bugpoint11=11.1.0-r5 cmd:dsymutil11=11.1.0-r5 cmd:llc11=11.1.0-r5 cmd:lli11=11.1.0-r5 cmd:llvm11-addr2line=11.1.0-r5 cmd:llvm11-ar=11.1.0-r5 cmd:llvm11-as=11.1.0-r5 cmd:llvm11-bcanalyzer=11.1.0-r5 cmd:llvm11-c-test=11.1.0-r5 cmd:llvm11-cat=11.1.0-r5 cmd:llvm11-cfi-verify=11.1.0-r5 cmd:llvm11-cov=11.1.0-r5 cmd:llvm11-cvtres=11.1.0-r5 cmd:llvm11-cxxdump=11.1.0-r5 cmd:llvm11-cxxfilt=11.1.0-r5 cmd:llvm11-cxxmap=11.1.0-r5 cmd:llvm11-diff=11.1.0-r5 cmd:llvm11-dis=11.1.0-r5 cmd:llvm11-dlltool=11.1.0-r5 cmd:llvm11-dwarfdump=11.1.0-r5 cmd:llvm11-dwp=11.1.0-r5 cmd:llvm11-elfabi=11.1.0-r5 cmd:llvm11-exegesis=11.1.0-r5 cmd:llvm11-extract=11.1.0-r5 cmd:llvm11-gsymutil=11.1.0-r5 cmd:llvm11-ifs=11.1.0-r5 cmd:llvm11-install-name-tool=11.1.0-r5 cmd:llvm11-jitlink=11.1.0-r5 cmd:llvm11-lib=11.1.0-r5 cmd:llvm11-link=11.1.0-r5 cmd:llvm11-lipo=11.1.0-r5 cmd:llvm11-lto2=11.1.0-r5 cmd:llvm11-lto=11.1.0-r5 cmd:llvm11-mc=11.1.0-r5 cmd:llvm11-mca=11.1.0-r5 cmd:llvm11-ml=11.1.0-r5 cmd:llvm11-modextract=11.1.0-r5 cmd:llvm11-mt=11.1.0-r5 cmd:llvm11-nm=11.1.0-r5 cmd:llvm11-objcopy=11.1.0-r5 cmd:llvm11-objdump=11.1.0-r5 cmd:llvm11-opt-report=11.1.0-r5 cmd:llvm11-pdbutil=11.1.0-r5 cmd:llvm11-profdata=11.1.0-r5 cmd:llvm11-ranlib=11.1.0-r5 cmd:llvm11-rc=11.1.0-r5 cmd:llvm11-readelf=11.1.0-r5 cmd:llvm11-readobj=11.1.0-r5 cmd:llvm11-reduce=11.1.0-r5 cmd:llvm11-rtdyld=11.1.0-r5 cmd:llvm11-size=11.1.0-r5 cmd:llvm11-split=11.1.0-r5 cmd:llvm11-stress=11.1.0-r5 cmd:llvm11-strings=11.1.0-r5 cmd:llvm11-strip=11.1.0-r5 cmd:llvm11-symbolizer=11.1.0-r5 cmd:llvm11-tblgen=11.1.0-r5 cmd:llvm11-undname=11.1.0-r5 cmd:llvm11-xray=11.1.0-r5 cmd:opt11=11.1.0-r5 cmd:sancov11=11.1.0-r5 cmd:sanstats11=11.1.0-r5 cmd:verify-uselistorder11=11.1.0-r5
 
+C:Q118eRgty+aKqIY6VMTnWaWFOZTkY=
+P:bluez-libs
+V:5.64-r0
+A:armv7
+S:66406
+I:163840
+T:Tools for the Bluetooth protocol stack (libraries)
+U:http://www.bluez.org/
+L:GPL-2.0-or-later
+o:bluez
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1649309238
+c:3643179f8d7f45dcf3bdd7f2d6b6a21a1c1d68f4
+D:so:libc.musl-armv7.so.1
+p:so:libbluetooth.so.3=3.19.6
+
 C:Q16em8OYEnkYZmmdkh0duu2nYuvMI=
 P:gcc-doc
 V:10.3.1_git20211027-r0
@@ -14302,22 +14334,6 @@ t:1637154272
 c:36d8e13fe6078a163f4cf2f37fe0e3961045001e
 D:nginx so:libc.musl-armv7.so.1
 
-C:Q1fI7uM6nWluMIk1pR3wz/ev4qoq4=
-P:bluez
-V:5.63-r0
-A:armv7
-S:1126570
-I:2256896
-T:Tools for the Bluetooth protocol stack
-U:http://www.bluez.org/
-L:GPL-2.0-or-later
-o:bluez
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1642630070
-c:ab57705546ffe7e9ebabd09f85a2a1299ae04951
-D:dbus so:libc.musl-armv7.so.1 so:libdbus-1.so.3 so:libglib-2.0.so.0 so:libjson-c.so.5 so:libreadline.so.8 so:libudev.so.1
-p:cmd:bluemoon=5.63-r0 cmd:bluetoothctl=5.63-r0 cmd:bluez-simple-agent=5.63-r0 cmd:btattach=5.63-r0 cmd:hex2hcd=5.63-r0 cmd:l2ping=5.63-r0 cmd:l2test=5.63-r0 cmd:mesh-cfgclient=5.63-r0 cmd:mesh-cfgtest=5.63-r0 cmd:mpris-proxy=5.63-r0 cmd:rctest=5.63-r0
-
 C:Q1rV6FFZotxIEf3sGayuWgfO69iKs=
 P:linux-firmware-rtl_bt
 V:20211027-r0
@@ -14551,22 +14567,6 @@ t:1622914361
 c:988c4057d60ade6a214b14741f3e0950b3105c3a
 D:so:libasound.so.2 so:libc.musl-armv7.so.1
 p:so:libflite.so.1=2.2 so:libflite_cmu_grapheme_lang.so.1=2.2 so:libflite_cmu_grapheme_lex.so.1=2.2 so:libflite_cmu_indic_lang.so.1=2.2 so:libflite_cmu_indic_lex.so.1=2.2 so:libflite_cmu_time_awb.so.1=2.2 so:libflite_cmu_us_awb.so.1=2.2 so:libflite_cmu_us_kal.so.1=2.2 so:libflite_cmu_us_kal16.so.1=2.2 so:libflite_cmu_us_rms.so.1=2.2 so:libflite_cmu_us_slt.so.1=2.2 so:libflite_cmulex.so.1=2.2 so:libflite_usenglish.so.1=2.2 cmd:flite=2.2-r0 cmd:flite_cmu_time_awb=2.2-r0 cmd:flite_cmu_us_awb=2.2-r0 cmd:flite_cmu_us_kal16=2.2-r0 cmd:flite_cmu_us_kal=2.2-r0 cmd:flite_cmu_us_rms=2.2-r0 cmd:flite_cmu_us_slt=2.2-r0 cmd:flite_time=2.2-r0
-
-C:Q1PVnfLZkZsZ/ugCCArcKwIP9BAZY=
-P:bluez-libs
-V:5.63-r0
-A:armv7
-S:66409
-I:163840
-T:Tools for the Bluetooth protocol stack (libraries)
-U:http://www.bluez.org/
-L:GPL-2.0-or-later
-o:bluez
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1642630070
-c:ab57705546ffe7e9ebabd09f85a2a1299ae04951
-D:so:libc.musl-armv7.so.1
-p:so:libbluetooth.so.3=3.19.6
 
 C:Q1DlhOuGcyr/AgUUfsC6Ivo2B133U=
 P:cyrus-sasl-digestmd5
@@ -17604,6 +17604,22 @@ t:1630401903
 c:fc767a058048c2ff75253d3a53d7c3a6ababfd66
 D:so:libc.musl-armv7.so.1 so:libnuma.so.1
 p:cmd:memhog=2.0.14-r0 cmd:migratepages=2.0.14-r0 cmd:migspeed=2.0.14-r0 cmd:numactl=2.0.14-r0 cmd:numademo=2.0.14-r0 cmd:numastat=2.0.14-r0
+
+C:Q1nXPs4NrCFD9eTM1wokDlY4cFyWI=
+P:bluez-meshctl
+V:5.64-r0
+A:armv7
+S:89060
+I:176128
+T:Bluez tool for interacting with bluetooth mesh networks
+U:http://www.bluez.org/
+L:GPL-2.0-or-later
+o:bluez
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1649309238
+c:3643179f8d7f45dcf3bdd7f2d6b6a21a1c1d68f4
+D:dbus so:libc.musl-armv7.so.1 so:libdbus-1.so.3 so:libglib-2.0.so.0 so:libjson-c.so.5 so:libreadline.so.8
+p:cmd:meshctl=5.64-r0
 
 C:Q1r7uKaKuBF3GOfg+ZfEHofd0UsWo=
 P:ssmtp-doc
@@ -23104,21 +23120,6 @@ c:2e508d7528ca4d9496f05d7f453cbd17dbb80f9d
 D:so:libc.musl-armv7.so.1
 p:so:libtxc_dxtn.so=0
 
-C:Q1dSqEZHLmBn/aTJi/kC/M5gZFOUY=
-P:bluez-cups
-V:5.63-r0
-A:armv7
-S:72402
-I:176128
-T:Bluez backend for CUPS
-U:http://www.bluez.org/
-L:GPL-2.0-or-later
-o:bluez
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1642630070
-c:ab57705546ffe7e9ebabd09f85a2a1299ae04951
-D:dbus so:libc.musl-armv7.so.1 so:libdbus-1.so.3 so:libglib-2.0.so.0
-
 C:Q1Ftm587lMuLOMRwhddypGf9r4H+c=
 P:chrony-openrc
 V:4.1-r0
@@ -23288,6 +23289,22 @@ t:1634364270
 c:670bf5a8cc5bc605eede8ca2fd55b50a5c9f8660
 D:so:libc.musl-armv7.so.1 so:libcrypto.so.1.1 so:liblzma.so.5 so:libz.so.1 so:libzstd.so.1
 p:so:libkmod.so.2=2.3.7
+
+C:Q1LnVqf8yQ3ES+b0+h7A0lSTLXnP0=
+P:bluez-deprecated
+V:5.64-r0
+A:armv7
+S:613689
+I:1392640
+T:Deprecated bluetooth tools
+U:http://www.bluez.org/
+L:GPL-2.0-or-later
+o:bluez
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1649309238
+c:3643179f8d7f45dcf3bdd7f2d6b6a21a1c1d68f4
+D:dbus so:libc.musl-armv7.so.1 so:libglib-2.0.so.0 so:libreadline.so.8 so:libudev.so.1
+p:cmd:ciptool=5.64-r0 cmd:gatttool=5.64-r0 cmd:hciattach=5.64-r0 cmd:hciconfig=5.64-r0 cmd:hcidump=5.64-r0 cmd:hcitool=5.64-r0 cmd:rfcomm=5.64-r0 cmd:sdptool=5.64-r0
 
 C:Q1QNgPyyz8RFF+8Ante/T3xvoqZjU=
 P:nfdump
@@ -28008,6 +28025,21 @@ c:459e8b823bbc7b2bc267245a30f1defd3587df6e
 D:lua5.4
 i:lua-unit=3.3-r2 lua5.4
 
+C:Q1RALMq8gtb6x8NrVI0w+Fyi2uTR8=
+P:bluez-cups
+V:5.64-r0
+A:armv7
+S:72408
+I:176128
+T:Bluez backend for CUPS
+U:http://www.bluez.org/
+L:GPL-2.0-or-later
+o:bluez
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1649309238
+c:3643179f8d7f45dcf3bdd7f2d6b6a21a1c1d68f4
+D:dbus so:libc.musl-armv7.so.1 so:libdbus-1.so.3 so:libglib-2.0.so.0
+
 C:Q1BnbgMbacB0jj4k51mY6WKeDK8Qc=
 P:libretls-doc
 V:3.3.4-r3
@@ -29073,6 +29105,21 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-timedate=2.33-r1
 
+C:Q1gmceJ9V0TLFLcTIYnHm7a77oBEE=
+P:bluez-openrc
+V:5.64-r0
+A:armv7
+S:1774
+I:16384
+T:Tools for the Bluetooth protocol stack (OpenRC init scripts)
+U:http://www.bluez.org/
+L:GPL-2.0-or-later
+o:bluez
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1649309238
+c:3643179f8d7f45dcf3bdd7f2d6b6a21a1c1d68f4
+i:openrc bluez=5.64-r0
+
 C:Q1Q0JL8NgdI1dYpt0+0dQL4sXWpMw=
 P:uwsgi-alarm_curl
 V:2.0.19.1-r2
@@ -29240,6 +29287,21 @@ t:1649067567
 c:2745de7e1b09e663b477a8141b84f7d81a049963
 D:busybox so:libc.musl-armv7.so.1
 p:cmd:bbsuid=1.34.1-r5
+
+C:Q19RpxxZh/4cCfXp7GUpGOLnV3NBk=
+P:bluez-hid2hci
+V:5.64-r0
+A:armv7
+S:6427
+I:32768
+T:Put HID proxying bluetooth HCI's into HCI mode
+U:http://www.bluez.org/
+L:GPL-2.0-or-later
+o:bluez
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1649309238
+c:3643179f8d7f45dcf3bdd7f2d6b6a21a1c1d68f4
+D:dbus so:libc.musl-armv7.so.1 so:libudev.so.1
 
 C:Q1J7B1+8yJoS6PSifiED9+JJbEopE=
 P:perl-probe-perl
@@ -30492,6 +30554,22 @@ m:Cameron Banta <cbanta@gmail.com>
 t:1641551231
 c:71ee1909ab3295f3cbdfd1ce640e818bf8defae7
 
+C:Q1BplswznIkBqs6MvJSlumII0GaNY=
+P:bluez
+V:5.64-r0
+A:armv7
+S:1120318
+I:2244608
+T:Tools for the Bluetooth protocol stack
+U:http://www.bluez.org/
+L:GPL-2.0-or-later
+o:bluez
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1649309238
+c:3643179f8d7f45dcf3bdd7f2d6b6a21a1c1d68f4
+D:dbus so:libc.musl-armv7.so.1 so:libdbus-1.so.3 so:libglib-2.0.so.0 so:libjson-c.so.5 so:libreadline.so.8 so:libudev.so.1
+p:cmd:bluemoon=5.64-r0 cmd:bluetoothctl=5.64-r0 cmd:bluez-simple-agent=5.64-r0 cmd:btattach=5.64-r0 cmd:hex2hcd=5.64-r0 cmd:l2ping=5.64-r0 cmd:l2test=5.64-r0 cmd:mesh-cfgclient=5.64-r0 cmd:mesh-cfgtest=5.64-r0 cmd:mpris-proxy=5.64-r0 cmd:rctest=5.64-r0
+
 C:Q1SgrpsxcL8KvJno/gvI11jobFw00=
 P:font-misc-ethiopic
 V:1.0.4-r0
@@ -31333,22 +31411,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1584211375
 c:81633f00dd52212d62c630bbf6f6c8a9bc1f29cd
 i:docs sed=4.8-r0
-
-C:Q189np2KoOrUCrFSR5uJazIrm4AEM=
-P:bluez-btmgmt
-V:5.63-r0
-A:armv7
-S:116644
-I:270336
-T:Bluez tool for the Bluetooth Management API
-U:http://www.bluez.org/
-L:GPL-2.0-or-later
-o:bluez
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1642630070
-c:ab57705546ffe7e9ebabd09f85a2a1299ae04951
-D:dbus so:libc.musl-armv7.so.1 so:libreadline.so.8
-p:cmd:btmgmt=5.63-r0
 
 C:Q1NfZMVh7zd1XABEX/SzMnF5TfZZY=
 P:perl-cgi-session
@@ -37491,6 +37553,22 @@ t:1631548101
 c:fd79dc08fe3fb5f0c0a491bea711c1821980893d
 D:freetds=1.3.3-r2
 
+C:Q1h4BTYALV44lt+Z9YDV0VC5+IXVA=
+P:bluez-btmon
+V:5.64-r0
+A:armv7
+S:290447
+I:630784
+T:Bluez bluetooth monitor
+U:http://www.bluez.org/
+L:GPL-2.0-or-later
+o:bluez
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1649309238
+c:3643179f8d7f45dcf3bdd7f2d6b6a21a1c1d68f4
+D:dbus so:libc.musl-armv7.so.1 so:libudev.so.1
+p:cmd:btmon=5.64-r0
+
 C:Q1+yygpmkUfQygp9VtG1jt7PemN38=
 P:samba-test
 V:4.15.5-r0
@@ -41012,21 +41090,6 @@ t:1635494978
 c:87f6509d7aee77e5c5f5b2753690e039be33d359
 p:linux-firmware-any
 
-C:Q1LD+YRTCi0aGmm5MYLg2VplKngyQ=
-P:bluez-plugins
-V:5.63-r0
-A:armv7
-S:6951
-I:45056
-T:Bluez plugins (PS3 Sixaxis controller)
-U:http://www.bluez.org/
-L:GPL-2.0-or-later
-o:bluez
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1642630070
-c:ab57705546ffe7e9ebabd09f85a2a1299ae04951
-D:dbus so:libc.musl-armv7.so.1 so:libudev.so.1
-
 C:Q1TRqWTIWhmfRIXVntG0EZK+rhQbE=
 P:hwids-usb
 V:20210613-r0
@@ -44254,21 +44317,6 @@ t:1621087673
 c:ec4e35bcdcf38829d2a36ff4d7cd4351ebb67d1c
 D:acf-core lua-posix apk-tools
 
-C:Q1LbL+dX/6ZtsFzq0KgfOwdnA1RJ0=
-P:bluez-zsh-completion
-V:5.63-r0
-A:armv7
-S:2588
-I:24576
-T:Zsh completions for bluez
-U:http://www.bluez.org/
-L:GPL-2.0-or-later
-o:bluez
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1642630070
-c:ab57705546ffe7e9ebabd09f85a2a1299ae04951
-i:bluez=5.63-r0 zsh
-
 C:Q1rrlGb7Fvc6QafPNsc9uxXFNkH1Y=
 P:newt-dev
 V:0.52.21-r0
@@ -44594,22 +44642,6 @@ t:1616579718
 c:a6a29b59574fe2eb241231ab5604780f0b4ee240
 D:so:libc.musl-armv7.so.1 so:libgnutls.so.30 so:libtasn1.so.6 so:libunistring.so.2
 p:cmd:certtool=3.7.1-r0 cmd:gnutls-cli-debug=3.7.1-r0 cmd:gnutls-cli=3.7.1-r0 cmd:gnutls-serv=3.7.1-r0 cmd:ocsptool=3.7.1-r0 cmd:p11tool=3.7.1-r0 cmd:psktool=3.7.1-r0 cmd:srptool=3.7.1-r0
-
-C:Q1e0MDupDj3ZjYoQ1CPe2iYyke35I=
-P:bluez-meshctl
-V:5.63-r0
-A:armv7
-S:88964
-I:176128
-T:Bluez tool for interacting with bluetooth mesh networks
-U:http://www.bluez.org/
-L:GPL-2.0-or-later
-o:bluez
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1642630070
-c:ab57705546ffe7e9ebabd09f85a2a1299ae04951
-D:dbus so:libc.musl-armv7.so.1 so:libdbus-1.so.3 so:libglib-2.0.so.0 so:libjson-c.so.5 so:libreadline.so.8
-p:cmd:meshctl=5.63-r0
 
 C:Q17A6+GfTzjNJH4xmZ9Wt+opycQLk=
 P:squid-lang-sk
@@ -46136,22 +46168,6 @@ t:1634927619
 c:555da11fc33a43d321d29de5e1e25ca9a31f9765
 i:docs nsd=4.3.8-r0
 
-C:Q1aikzthkM0KqkN7fum5jfXlrcs4E=
-P:bluez-dev
-V:5.63-r0
-A:armv7
-S:31467
-I:192512
-T:Tools for the Bluetooth protocol stack (development files)
-U:http://www.bluez.org/
-L:GPL-2.0-or-later
-o:bluez
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1642630070
-c:ab57705546ffe7e9ebabd09f85a2a1299ae04951
-D:bluez-libs=5.63-r0 pkgconfig
-p:pc:bluez=5.63
-
 C:Q1gchEm4891CdS3WSdn4ZHqExC9kA=
 P:cups-doc
 V:2.3.3-r5
@@ -46981,21 +46997,6 @@ t:1617121253
 c:54fcfc69ffdeb11d2779ea4c64f9b48ae122383a
 D:so:libc.musl-armv7.so.1 so:libpcap.so.1
 p:cmd:ucarp=1.5.2-r9
-
-C:Q1PM4pvDY9KlVClW4fzmw9/9xVEK8=
-P:bluez-deprecated-openrc
-V:5.63-r0
-A:armv7
-S:2219
-I:24576
-T:Deprecated bluez tools (OpenRC init scripts)
-U:http://www.bluez.org/
-L:GPL-2.0-or-later
-o:bluez
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1642630070
-c:ab57705546ffe7e9ebabd09f85a2a1299ae04951
-i:openrc bluez-deprecated=5.63-r0
 
 C:Q1UduyG4cqkPqub8TDo5Xc9+NGKSg=
 P:linux-firmware-emi62
@@ -49944,21 +49945,6 @@ c:bd9138885dba8f95bfd58d71f10a7d4e72a65800
 D:perl perl-dbi perl-dbd-mysql perl-getopt-long perl-socket perl-term-readkey
 p:cmd:mytop=10.6.7-r0
 
-C:Q1qZKjNyCouE6PUa3QRTyjDeWvY40=
-P:bluez-doc
-V:5.63-r0
-A:armv7
-S:24369
-I:81920
-T:Tools for the Bluetooth protocol stack (documentation)
-U:http://www.bluez.org/
-L:GPL-2.0-or-later
-o:bluez
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1642630070
-c:ab57705546ffe7e9ebabd09f85a2a1299ae04951
-i:docs bluez=5.63-r0
-
 C:Q12hL858H6UwKVH1wIMqVH5qKBPwA=
 P:rng-tools-doc
 V:6.14-r3
@@ -51797,21 +51783,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1637481630
 c:d69dc1a17026ff1844636db10fa77c7b546ac45a
 i:docs nftables=1.0.1-r0
-
-C:Q1PFAIWZOJoWkxNBLdHdDhDAs2kY4=
-P:bluez-openrc
-V:5.63-r0
-A:armv7
-S:1767
-I:16384
-T:Tools for the Bluetooth protocol stack (OpenRC init scripts)
-U:http://www.bluez.org/
-L:GPL-2.0-or-later
-o:bluez
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1642630070
-c:ab57705546ffe7e9ebabd09f85a2a1299ae04951
-i:openrc bluez=5.63-r0
 
 C:Q18OAR0iso4KzBusw7GUyUi6Q9H/8=
 P:dconf-dev
@@ -60409,6 +60380,21 @@ c:525056496dac23fbf7d18b7933132447d4aa7117
 D:inih-inireader=53-r1 pkgconfig
 p:pc:INIReader=53
 
+C:Q18p5U5Yn68g3zjXRBbRdoaZFwuow=
+P:bluez-obexd
+V:5.64-r0
+A:armv7
+S:185219
+I:409600
+T:Bluez OBEX daemon
+U:http://www.bluez.org/
+L:GPL-2.0-or-later
+o:bluez
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1649309238
+c:3643179f8d7f45dcf3bdd7f2d6b6a21a1c1d68f4
+D:dbus so:libc.musl-armv7.so.1 so:libdbus-1.so.3 so:libglib-2.0.so.0 so:libicalvcal.so.3
+
 C:Q1JMHxoJJE9QGcLQP7mWF0B1k24VY=
 P:python3-tests
 V:3.9.7-r4
@@ -60606,6 +60592,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1634355282
 c:c94c03ccc9320f4dcbc424fb34b76f6118ed230c
 D:sngtc_client=1.3.11-r1
+
+C:Q12QLxBpINHII0igaW/crBxzKp0Dk=
+P:bluez-doc
+V:5.64-r0
+A:armv7
+S:24365
+I:81920
+T:Tools for the Bluetooth protocol stack (documentation)
+U:http://www.bluez.org/
+L:GPL-2.0-or-later
+o:bluez
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1649309238
+c:3643179f8d7f45dcf3bdd7f2d6b6a21a1c1d68f4
+i:docs bluez=5.64-r0
 
 C:Q1a3klqMtVkkZ1DOsiV+4bsbil4WQ=
 P:openntpd-openrc
@@ -62244,22 +62245,6 @@ t:1623107908
 c:1c6d5ae58ac33861aaf4d0c97e3f0d3861e332cc
 D:libucontext-dev libunwind=1.5.0-r1 pkgconfig
 p:pc:libunwind-coredump=1.5.0 pc:libunwind-generic=1.5.0 pc:libunwind-ptrace=1.5.0 pc:libunwind-setjmp=1.5.0 pc:libunwind=1.5.0
-
-C:Q1X3Le7VtDGk8CV26EV5dA7Ge2kBs=
-P:bluez-deprecated
-V:5.63-r0
-A:armv7
-S:613647
-I:1392640
-T:Deprecated bluetooth tools
-U:http://www.bluez.org/
-L:GPL-2.0-or-later
-o:bluez
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1642630070
-c:ab57705546ffe7e9ebabd09f85a2a1299ae04951
-D:dbus so:libc.musl-armv7.so.1 so:libglib-2.0.so.0 so:libreadline.so.8 so:libudev.so.1
-p:cmd:ciptool=5.63-r0 cmd:gatttool=5.63-r0 cmd:hciattach=5.63-r0 cmd:hciconfig=5.63-r0 cmd:hcidump=5.63-r0 cmd:hcitool=5.63-r0 cmd:rfcomm=5.63-r0 cmd:sdptool=5.63-r0
 
 C:Q1EtYBIYUszMQBisWCBi2bBRIXEaY=
 P:acl-dev
@@ -67358,6 +67343,21 @@ t:1641625532
 c:273f76be9964871f583a96adf0982b71e9641ce8
 i:docs etckeeper=1.18.17-r0
 
+C:Q1SsjbwL6KkBs7MGil0JeVIFszDZ4=
+P:bluez-plugins
+V:5.64-r0
+A:armv7
+S:6950
+I:45056
+T:Bluez plugins (PS3 Sixaxis controller)
+U:http://www.bluez.org/
+L:GPL-2.0-or-later
+o:bluez
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1649309238
+c:3643179f8d7f45dcf3bdd7f2d6b6a21a1c1d68f4
+D:dbus so:libc.musl-armv7.so.1 so:libudev.so.1
+
 C:Q1TeIOH/pZA+qC6UbOmbdBlUogS1U=
 P:lua5.1-optarg
 V:0.2-r2
@@ -68386,6 +68386,21 @@ m:Nathan Angelacos <nangel@alpinelinux.org>
 t:1635896151
 c:64761a2c023a7e2325d5528cccbe1a260d1d0a4d
 D:kamailio so:libc.musl-armv7.so.1 so:librabbitmq.so.4 so:libuuid.so.1
+
+C:Q1X9fjjdNaJgy8lyoqUidQTY9bTZg=
+P:bluez-deprecated-openrc
+V:5.64-r0
+A:armv7
+S:2216
+I:24576
+T:Deprecated bluez tools (OpenRC init scripts)
+U:http://www.bluez.org/
+L:GPL-2.0-or-later
+o:bluez
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1649309238
+c:3643179f8d7f45dcf3bdd7f2d6b6a21a1c1d68f4
+i:openrc bluez-deprecated=5.64-r0
 
 C:Q1crunSU35w1n4MMsUnbTtKm29ojM=
 P:nagios-plugins-dhcp
@@ -71233,21 +71248,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1629317755
 c:46ba745039332c388f3462e2638cc29d5b8361df
 i:docs logcheck=1.3.23-r1
-
-C:Q1zg+KA9Ud3Wiy+WLWXCKpslVsOe0=
-P:bluez-hid2hci
-V:5.63-r0
-A:armv7
-S:6424
-I:32768
-T:Put HID proxying bluetooth HCI's into HCI mode
-U:http://www.bluez.org/
-L:GPL-2.0-or-later
-o:bluez
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1642630070
-c:ab57705546ffe7e9ebabd09f85a2a1299ae04951
-D:dbus so:libc.musl-armv7.so.1 so:libudev.so.1
 
 C:Q1taFkjv0dD7OGJGPcE6TXWwb9lQI=
 P:lua5.3-uuid
