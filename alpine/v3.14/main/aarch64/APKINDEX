@@ -1650,22 +1650,6 @@ c:649f2b78f62ed9ee9fa8dae4a4dbff1e1dff8f9f
 D:freeradius=3.0.23-r0 so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libfreeradius-radius.so so:libfreeradius-server.so so:libssl.so.1.1 so:libtalloc.so.2
 p:freeradius3-eap=3.0.23-r0 so:libfreeradius-eap.so=0 so:rlm_eap.so=0 so:rlm_eap_fast.so=0 so:rlm_eap_gtc.so=0 so:rlm_eap_md5.so=0 so:rlm_eap_mschapv2.so=0 so:rlm_eap_peap.so=0 so:rlm_eap_pwd.so=0 so:rlm_eap_sim.so=0 so:rlm_eap_tls.so=0 so:rlm_eap_ttls.so=0 cmd:radeapclient
 
-C:Q1gvNpvKbP7yIlM8eeLUhzM74C31c=
-P:xz-dev
-V:5.2.5-r0
-A:aarch64
-S:136063
-I:528384
-T:Library and CLI tools for XZ and LZMA compressed files (development files)
-U:https://tukaani.org/xz
-L:GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
-o:xz
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1584483911
-c:9d8a8521f972a1ee34a26d9a654a01528c3bf0a4
-D:pkgconfig xz-libs=5.2.5-r0
-p:pc:liblzma=5.2.5
-
 C:Q1LIJSPF0Z/HwFIt+Il2Tv070HS5Y=
 P:perl-term-readkey-doc
 V:2.38-r5
@@ -17847,22 +17831,6 @@ c:5f13bd268c7d86ade44d1bf5c4b2ac3925877626
 D:expat-dev openldap-dev sqlite-dev postgresql-dev openssl-dev mariadb-dev apr-util=1.6.1-r7 pc:apr-1 pkgconfig
 p:pc:apr-util-1=1.6.1 cmd:apu-1-config
 
-C:Q1T+FWifTg/ok13LHcJbxquDWamiM=
-P:xz
-V:5.2.5-r0
-A:aarch64
-S:47320
-I:155648
-T:Library and CLI tools for XZ and LZMA compressed files
-U:https://tukaani.org/xz
-L:GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
-o:xz
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1584483911
-c:9d8a8521f972a1ee34a26d9a654a01528c3bf0a4
-D:so:libc.musl-aarch64.so.1 so:liblzma.so.5
-p:cmd:lzcat cmd:lzcmp cmd:lzdiff cmd:lzegrep cmd:lzfgrep cmd:lzgrep cmd:lzless cmd:lzma cmd:lzmadec cmd:lzmainfo cmd:lzmore cmd:unlzma cmd:unxz cmd:xz cmd:xzcat cmd:xzcmp cmd:xzdec cmd:xzdiff cmd:xzegrep cmd:xzfgrep cmd:xzgrep cmd:xzless cmd:xzmore
-
 C:Q1f1NyEgb5lzUrScNl/VBiP1qjdBs=
 P:lua5.2-sql-postgres
 V:2.6.0-r1
@@ -18642,6 +18610,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1496780657
 c:ecce10225bfb48726286cbfbeb1b6acb34b9264e
 i:docs nload=0.7.4-r3
+
+C:Q1W1oYHvNVDmX2KfYGXhboYnK6mLE=
+P:xz-libs
+V:5.2.5-r1
+A:aarch64
+S:73306
+I:151552
+T:Library and CLI tools for XZ and LZMA compressed files (libraries)
+U:https://tukaani.org/xz
+L:GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
+o:xz
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1649447365
+c:137ac4b8fa7b857334e5dab7408bde623b70891d
+D:so:libc.musl-aarch64.so.1
+p:so:liblzma.so.5=5.2.5
 
 C:Q1oqqe6FVtFzYzUqykRH3kpsCeAUE=
 P:unifont
@@ -25421,6 +25405,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1585632275
 c:60424133be2e79bbfeff3d58147a22886f817ce2
 
+C:Q169WiQJB9MCWRGdB71nA+fJVckIk=
+P:xz-doc
+V:5.2.5-r1
+A:aarch64
+S:28431
+I:69632
+T:Library and CLI tools for XZ and LZMA compressed files (documentation)
+U:https://tukaani.org/xz
+L:GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
+o:xz
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1649447365
+c:137ac4b8fa7b857334e5dab7408bde623b70891d
+i:docs xz=5.2.5-r1
+
 C:Q1nARUAe4WQNuZPu2PzpC1NRXg0IY=
 P:rsync
 V:3.2.3-r4
@@ -28696,37 +28695,6 @@ t:1622906363
 c:d38564f6fedaf021ca7cc3fdb3b0d3d959763ce7
 D:so:libc.musl-aarch64.so.1 so:libfontconfig.so.1 so:libfreetype.so.6 so:libgcc_s.so.1 so:libjpeg.so.8 so:liblcms2.so.2 so:libopenjp2.so.7 so:libpng16.so.16 so:libstdc++.so.6 so:libtiff.so.5 so:libz.so.1
 p:so:libpoppler-cpp.so.0=0.9.0 so:libpoppler.so.111=111.0.0
-
-C:Q1Voj6uV8B7gQlJxeno8M7mCNe+eE=
-P:gzip-doc
-V:1.10-r1
-A:aarch64
-S:31024
-I:122880
-T:Popular data compression program (documentation)
-U:https://www.gnu.org/software/gzip/
-L:GPL-3.0-or-later
-o:gzip
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1597476672
-c:2639e57cd0d7157c13ff0a967c9ef4d247e47198
-i:docs gzip=1.10-r1
-
-C:Q1x+nRJXnjd5i5v3Ls6mbCMiU9naY=
-P:gzip
-V:1.10-r1
-A:aarch64
-S:51078
-I:159744
-T:Popular data compression program
-U:https://www.gnu.org/software/gzip/
-L:GPL-3.0-or-later
-o:gzip
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1597476672
-c:2639e57cd0d7157c13ff0a967c9ef4d247e47198
-D:less so:libc.musl-aarch64.so.1
-p:cmd:gunzip cmd:gzexe cmd:gzip cmd:uncompress cmd:zcat cmd:zcmp cmd:zdiff cmd:zegrep cmd:zfgrep cmd:zforce cmd:zgrep cmd:zless cmd:zmore cmd:znew
 
 C:Q1R2xVrtVuRbDZhphEvB+xkTy3Slk=
 P:ifupdown-ng-ethtool
@@ -35258,6 +35226,21 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1620802864
 c:93a0d6b6bc60bbc14d1ef0ddba696e1b91782884
 D:perl so:libc.musl-aarch64.so.1
+
+C:Q1Fqi6HO2tUPgAdUADp9MLlg0TjKU=
+P:gzip-doc
+V:1.12-r0
+A:aarch64
+S:31696
+I:122880
+T:Popular data compression program (documentation)
+U:https://www.gnu.org/software/gzip/
+L:GPL-3.0-or-later
+o:gzip
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1649430412
+c:cb0b051acc47bcb503b73aba85817ec629352f71
+i:docs gzip=1.12-r0
 
 C:Q15+/Nm8fv+++tZVudBafN+EzsZHc=
 P:libnetfilter_log-dev
@@ -48715,22 +48698,6 @@ t:1621055058
 c:b2865c7ef6c9ef557e5ee2a0b7f412c937452cab
 D:acf-core awall
 
-C:Q1qAT345xtbGtZn9y+PzeIeILZ69s=
-P:xz-libs
-V:5.2.5-r0
-A:aarch64
-S:73311
-I:151552
-T:Library and CLI tools for XZ and LZMA compressed files (libraries)
-U:https://tukaani.org/xz
-L:GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
-o:xz
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1584483911
-c:9d8a8521f972a1ee34a26d9a654a01528c3bf0a4
-D:so:libc.musl-aarch64.so.1
-p:so:liblzma.so.5=5.2.5
-
 C:Q1ibCj8fy39KIjl5LR/dl7Kxd5TGA=
 P:libxml2-doc
 V:2.9.13-r0
@@ -51801,6 +51768,22 @@ m:Carlo Landmeter <clandmeter@alpinelinux.org>
 t:1610661631
 c:f8d500fddcd7432ba711fea82ba0e55cb626592c
 i:gettext=0.21-r0 lang
+
+C:Q1xdn0aGu5t1sNoUOgIN28AoruC6w=
+P:xz
+V:5.2.5-r1
+A:aarch64
+S:47474
+I:155648
+T:Library and CLI tools for XZ and LZMA compressed files
+U:https://tukaani.org/xz
+L:GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
+o:xz
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1649447365
+c:137ac4b8fa7b857334e5dab7408bde623b70891d
+D:so:libc.musl-aarch64.so.1 so:liblzma.so.5
+p:cmd:lzcat cmd:lzcmp cmd:lzdiff cmd:lzegrep cmd:lzfgrep cmd:lzgrep cmd:lzless cmd:lzma cmd:lzmadec cmd:lzmainfo cmd:lzmore cmd:unlzma cmd:unxz cmd:xz cmd:xzcat cmd:xzcmp cmd:xzdec cmd:xzdiff cmd:xzegrep cmd:xzfgrep cmd:xzgrep cmd:xzless cmd:xzmore
 
 C:Q1Bhyl4Nyc3b/PnRe/7ndrXktodsE=
 P:snappy-dev
@@ -56903,21 +56886,6 @@ t:1612674793
 c:d64e99dbf1055aceab58e70b85fb64f89fb24242
 i:docs gawk=5.1.0-r0
 
-C:Q1d5pj/x+loXZvBOqmWXXgGQR+/ko=
-P:xz-doc
-V:5.2.5-r0
-A:aarch64
-S:28424
-I:69632
-T:Library and CLI tools for XZ and LZMA compressed files (documentation)
-U:https://tukaani.org/xz
-L:GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
-o:xz
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1584483911
-c:9d8a8521f972a1ee34a26d9a654a01528c3bf0a4
-i:docs xz=5.2.5-r0
-
 C:Q1qxp9BGNY3X+cUCx3TI5ysmFtEAE=
 P:boost1.75-date_time
 V:1.75.0-r8
@@ -60002,6 +59970,22 @@ o:perl-dbd-sqlite
 m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1600709958
 c:fbe6ed74ba6ab775216d5464ba9469c84a4a3e87
+
+C:Q1laFDihHAhdNWNvzem7NE6DYEh4U=
+P:gzip
+V:1.12-r0
+A:aarch64
+S:51523
+I:159744
+T:Popular data compression program
+U:https://www.gnu.org/software/gzip/
+L:GPL-3.0-or-later
+o:gzip
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1649430412
+c:cb0b051acc47bcb503b73aba85817ec629352f71
+D:less so:libc.musl-aarch64.so.1
+p:cmd:gunzip cmd:gzexe cmd:gzip cmd:uncompress cmd:zcat cmd:zcmp cmd:zdiff cmd:zegrep cmd:zfgrep cmd:zforce cmd:zgrep cmd:zless cmd:zmore cmd:znew
 
 C:Q1JpVmNE7hSetd2nAet6fp9zpSy5s=
 P:nagios-plugins-nagios
@@ -67045,6 +67029,22 @@ t:1620864447
 c:78b130a98f1134e9936e6729ea8e18f2fdc178cd
 D:nfdump so:libc.musl-aarch64.so.1 so:libnfdump-1.6.23.so so:librrd.so.8
 p:cmd:nfprofile
+
+C:Q1GD3AaNYGyXFkeTIah/HqGe5glqk=
+P:xz-dev
+V:5.2.5-r1
+A:aarch64
+S:136064
+I:528384
+T:Library and CLI tools for XZ and LZMA compressed files (development files)
+U:https://tukaani.org/xz
+L:GPL-2.0-or-later AND Public-Domain AND LGPL-2.1-or-later
+o:xz
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1649447365
+c:137ac4b8fa7b857334e5dab7408bde623b70891d
+D:pkgconfig xz-libs=5.2.5-r1
+p:pc:liblzma=5.2.5
 
 C:Q1uvhcZo322nv+J0mn8xQobl7gdpM=
 P:perl-cache-cache-doc
