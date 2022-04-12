@@ -4833,14 +4833,15 @@
       "versions": {
         "2.7.4-r2": 1634209377,
         "3.0.2-r0": 1634575484,
-        "3.0.3-r0": 1637845697
+        "3.0.3-r0": 1637845697,
+        "3.0.4-r0": 1649802272
       },
       "dependencies": [
         "ruby"
       ],
       "provides": [
-        "cmd:rdoc=3.0.3-r0",
-        "cmd:ri=3.0.3-r0"
+        "cmd:rdoc=3.0.4-r0",
+        "cmd:ri=3.0.4-r0"
       ]
     },
     "libatomic_ops": {
@@ -20436,15 +20437,16 @@
       "versions": {
         "2.7.4-r2": 1634209377,
         "3.0.2-r0": 1634575484,
-        "3.0.3-r0": 1637845697
+        "3.0.3-r0": 1637845697,
+        "3.0.4-r0": 1649802272
       },
       "dependencies": [
-        "ruby=3.0.3-r0",
-        "ruby-rdoc=3.0.3-r0",
+        "ruby=3.0.4-r0",
+        "ruby-rdoc=3.0.4-r0",
         "gmp-dev",
         "libucontext-dev",
         "pkgconfig",
-        "ruby-libs=3.0.3-r0"
+        "ruby-libs=3.0.4-r0"
       ],
       "provides": [
         "pc:ruby-3.0=3.0.0"
@@ -24925,7 +24927,8 @@
       "versions": {
         "2.7.4-r2": 1634209377,
         "3.0.2-r0": 1634575484,
-        "3.0.3-r0": 1637845697
+        "3.0.3-r0": 1637845697,
+        "3.0.4-r0": 1649802272
       },
       "dependencies": [
         "ca-certificates"
@@ -25476,7 +25479,8 @@
       "versions": {
         "2.7.4-r2": 1634209377,
         "3.0.2-r0": 1634575484,
-        "3.0.3-r0": 1637845697
+        "3.0.3-r0": 1637845697,
+        "3.0.4-r0": 1649802272
       }
     },
     "aspell-doc": {
@@ -36316,7 +36320,8 @@
       "versions": {
         "2.7.4-r2": 1634209377,
         "3.0.2-r0": 1634575484,
-        "3.0.3-r0": 1637845697
+        "3.0.3-r0": 1637845697,
+        "3.0.4-r0": 1649802272
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1",
@@ -36325,6 +36330,7 @@
         "so:libgdbm.so.6",
         "so:libgdbm_compat.so.4",
         "so:libgmp.so.10",
+        "so:libncursesw.so.6",
         "so:libreadline.so.8",
         "so:libssl.so.1.1",
         "so:libucontext.so.1",
@@ -36332,7 +36338,7 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "so:libruby.so.3.0=3.0.3"
+        "so:libruby.so.3.0=3.0.4"
       ]
     },
     "ferm-doc": {
@@ -45957,27 +45963,31 @@
       "versions": {
         "2.7.4-r2": 1634209377,
         "3.0.2-r0": 1634575484,
-        "3.0.3-r0": 1637845697
+        "3.0.3-r0": 1637845697,
+        "3.0.4-r0": 1649802272
       },
       "dependencies": [
         "ca-certificates",
         "/bin/sh",
         "so:libc.musl-s390x.so.1",
-        "so:libruby.so.3.0"
+        "so:libgmp.so.10",
+        "so:libruby.so.3.0",
+        "so:libucontext.so.1",
+        "so:libz.so.1"
       ],
       "provides": [
-        "ruby-bigdecimal=3.0.3-r0",
-        "ruby-etc=3.0.3-r0",
-        "ruby-fiddle=3.0.3-r0",
-        "ruby-gdbm=3.0.3-r0",
-        "ruby-io-console=3.0.3-r0",
-        "ruby-irb=3.0.3-r0",
-        "ruby-json=3.0.3-r0",
-        "cmd:erb=3.0.3-r0",
-        "cmd:gem=3.0.3-r0",
-        "cmd:irb=3.0.3-r0",
-        "cmd:racc=3.0.3-r0",
-        "cmd:ruby=3.0.3-r0"
+        "ruby-bigdecimal=3.0.4-r0",
+        "ruby-etc=3.0.4-r0",
+        "ruby-fiddle=3.0.4-r0",
+        "ruby-gdbm=3.0.4-r0",
+        "ruby-io-console=3.0.4-r0",
+        "ruby-irb=3.0.4-r0",
+        "ruby-json=3.0.4-r0",
+        "cmd:erb=3.0.4-r0",
+        "cmd:gem=3.0.4-r0",
+        "cmd:irb=3.0.4-r0",
+        "cmd:racc=3.0.4-r0",
+        "cmd:ruby=3.0.4-r0"
       ]
     },
     "cairo-dbg": {
@@ -52357,20 +52367,13 @@
       "versions": {
         "2.7.4-r2": 1634209377,
         "3.0.2-r0": 1634575484,
-        "3.0.3-r0": 1637845697
+        "3.0.3-r0": 1637845697,
+        "3.0.4-r0": 1649802272
       },
       "dependencies": [
         "ruby",
         "ruby-rdoc",
-        "ruby-bundler",
-        "ruby-minitest>=5.14.2",
-        "ruby-power_assert>=1.2.0",
-        "ruby-rake>=13.0.3",
-        "ruby-test-unit>=3.3.7",
-        "ruby-rexml>=3.2.5",
-        "ruby-rss>=0.2.9",
-        "ruby-typeprof>=0.15.2",
-        "ruby-rbs>=1.4.0"
+        "ruby-bundler"
       ]
     },
     "pixman": {
@@ -65079,7 +65082,7 @@
       },
       "libruby.so.3.0": {
         "package": "ruby-libs",
-        "version": "3.0.3"
+        "version": "3.0.4"
       },
       "libzpool.so.5": {
         "package": "zfs-libs",
@@ -66197,31 +66200,31 @@
       },
       "ruby-bigdecimal": {
         "package": "ruby",
-        "version": "3.0.3-r0"
+        "version": "3.0.4-r0"
       },
       "ruby-etc": {
         "package": "ruby",
-        "version": "3.0.3-r0"
+        "version": "3.0.4-r0"
       },
       "ruby-fiddle": {
         "package": "ruby",
-        "version": "3.0.3-r0"
+        "version": "3.0.4-r0"
       },
       "ruby-gdbm": {
         "package": "ruby",
-        "version": "3.0.3-r0"
+        "version": "3.0.4-r0"
       },
       "ruby-io-console": {
         "package": "ruby",
-        "version": "3.0.3-r0"
+        "version": "3.0.4-r0"
       },
       "ruby-irb": {
         "package": "ruby",
-        "version": "3.0.3-r0"
+        "version": "3.0.4-r0"
       },
       "ruby-json": {
         "package": "ruby",
-        "version": "3.0.3-r0"
+        "version": "3.0.4-r0"
       },
       "openldap-back-monitor": {
         "package": "openldap",
