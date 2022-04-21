@@ -90612,14 +90612,15 @@
     "consul": {
       "origin": "consul",
       "versions": {
-        "1.11.4-r2": 1649862564
+        "1.11.4-r2": 1649862564,
+        "1.12.0-r0": 1650568090
       },
       "dependencies": [
         "/bin/sh",
         "so:libc.musl-x86_64.so.1"
       ],
       "provides": [
-        "cmd:consul=1.11.4-r2"
+        "cmd:consul=1.12.0-r0"
       ]
     },
     "tlp-doc": {
@@ -99737,7 +99738,8 @@
     "consul-openrc": {
       "origin": "consul",
       "versions": {
-        "1.11.4-r2": 1649862564
+        "1.11.4-r2": 1649862564,
+        "1.12.0-r0": 1650568090
       }
     },
     "php7-pecl-igbinary": {
@@ -157177,6 +157179,60 @@
       "versions": {
         "2.5-r1": 1650534122
       }
+    },
+    "afl++-doc": {
+      "origin": "afl++",
+      "versions": {
+        "4.00c-r0": 1650569190
+      }
+    },
+    "afl++": {
+      "origin": "afl++",
+      "versions": {
+        "4.00c-r0": 1650569190
+      },
+      "dependencies": [
+        "clang",
+        "cmd:stat",
+        "lld",
+        "llvm",
+        "python3",
+        "so:libc.musl-x86_64.so.1",
+        "so:libgcc_s.so.1",
+        "so:libpython3.10.so.1.0",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "afl=4.00c-r0",
+        "afl-clang=4.00c-r0",
+        "afl-gcc=4.00c-r0",
+        "cmd:afl-analyze=4.00c-r0",
+        "cmd:afl-c++=4.00c-r0",
+        "cmd:afl-cc=4.00c-r0",
+        "cmd:afl-clang++=4.00c-r0",
+        "cmd:afl-clang-fast++=4.00c-r0",
+        "cmd:afl-clang-fast=4.00c-r0",
+        "cmd:afl-clang-lto++=4.00c-r0",
+        "cmd:afl-clang-lto=4.00c-r0",
+        "cmd:afl-clang=4.00c-r0",
+        "cmd:afl-cmin.bash=4.00c-r0",
+        "cmd:afl-cmin=4.00c-r0",
+        "cmd:afl-fuzz=4.00c-r0",
+        "cmd:afl-g++-fast=4.00c-r0",
+        "cmd:afl-g++=4.00c-r0",
+        "cmd:afl-gcc-fast=4.00c-r0",
+        "cmd:afl-gcc=4.00c-r0",
+        "cmd:afl-gotcpu=4.00c-r0",
+        "cmd:afl-ld-lto=4.00c-r0",
+        "cmd:afl-lto++=4.00c-r0",
+        "cmd:afl-lto=4.00c-r0",
+        "cmd:afl-persistent-config=4.00c-r0",
+        "cmd:afl-plot=4.00c-r0",
+        "cmd:afl-showmap=4.00c-r0",
+        "cmd:afl-system-config=4.00c-r0",
+        "cmd:afl-tmin=4.00c-r0",
+        "cmd:afl-whatsup=4.00c-r0"
+      ]
     }
   },
   "provide": {
@@ -171510,6 +171566,18 @@
       "py-xxhash": {
         "package": "py3-xxhash",
         "version": "0.8.1-r0"
+      },
+      "afl": {
+        "package": "afl++",
+        "version": "4.00c-r0"
+      },
+      "afl-clang": {
+        "package": "afl++",
+        "version": "4.00c-r0"
+      },
+      "afl-gcc": {
+        "package": "afl++",
+        "version": "4.00c-r0"
       }
     }
   }
