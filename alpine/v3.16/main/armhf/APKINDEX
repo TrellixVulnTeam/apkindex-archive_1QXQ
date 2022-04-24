@@ -1,3 +1,18 @@
+C:Q10Q3vVejQGuzgDLd9U9yf7wAPFRQ=
+P:dovecot-gssapi
+V:2.3.18-r2
+A:armhf
+S:7741
+I:36864
+T:GSSAPI auth plugin for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
+D:dovecot=2.3.18-r2 so:libc.musl-armhf.so.1 so:libgssapi.so.3 so:libkrb5.so.26
+
 C:Q1ZX+on7zBgcokTctj4tLSmx7q5O4=
 P:git-zsh-completion
 V:5.8.1-r4
@@ -73,22 +88,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-encode-locale=1.05-r3
-
-C:Q12/FUKqAGXOu2rrsxNLmVVkMnbPk=
-P:dovecot-ldap
-V:2.3.18-r1
-A:armhf
-S:39610
-I:135168
-T:LDAP auth plugin for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:3e8dcaa64ac077634f214293a38ebb9beb038ad6
-D:dovecot=2.3.18-r1 so:libc.musl-armhf.so.1 so:libdovecot.so.0 so:liblber.so.2 so:libldap.so.2
-p:so:libdovecot-ldap.so.0=0.0.0
 
 C:Q1Xn2EYjZW/9FXh8J9Johivu4mfes=
 P:perl-crypt-openssl-rsa-doc
@@ -196,22 +195,6 @@ t:1632605485
 c:0c8cbbf48903eb7700845d71b88982d0d26422f5
 D:perl-mail-spamassassin curl
 p:cmd:sa-awl=3.4.6-r3 cmd:sa-check_spamd=3.4.6-r3 cmd:sa-learn=3.4.6-r3 cmd:sa-update=3.4.6-r3 cmd:spamassassin=3.4.6-r3 cmd:spamd=3.4.6-r3
-
-C:Q19mLjMzF/Ag3P6WkPD+nCtwmw3DA=
-P:boost1.77-filesystem
-V:1.77.0-r4
-A:armhf
-S:50911
-I:131072
-T:Boost filesystem shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
-p:boost-filesystem=1.77.0-r4 so:libboost_filesystem.so.1.77.0=1.77.0
 
 C:Q1q1XJ0psTajT75xgViTASL1xJHvk=
 P:pcre
@@ -426,22 +409,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-class-tiny=1.008-r1
-
-C:Q155eEycyei/A0vj/9+g2XVfz6VQg=
-P:ell
-V:0.49-r0
-A:armhf
-S:173271
-I:368640
-T:Linux library for embedded development
-U:https://01.org/ell
-L:GPL-2.0-only
-o:ell
-m:Milan P. Stanić <mps@arvanta.net>
-t:1645788992
-c:d9941d6d2a93232eaf214b209abb90b2b5a37372
-D:so:libc.musl-armhf.so.1
-p:so:libell.so.0=0.0.2
 
 C:Q1yiIxEgCl5M0VHQIT0scjntMlGW4=
 P:openntpd-doc
@@ -1363,6 +1330,23 @@ t:1644141749
 c:0742ef4d082d07d9d76c4722bafaab1ee40c21a9
 i:docs pstree=2.39-r1
 
+C:Q1Vv9r5bXWhAMYhFRWt04VMk72elU=
+P:libpq-dev
+V:14.2-r3
+A:armhf
+S:431999
+I:1163264
+T:PostgreSQL client library (development files)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql14
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:1b0114dd10ab2d9a973d0e45d1307d425430515a
+k:14
+D:libpq=14.2-r3 pc:libcrypto pc:libssl pkgconfig so:libc.musl-armhf.so.1
+p:pc:libpq=14.2 cmd:pg_config=14.2-r3
+
 C:Q1ie5rSdmWDfh/bl0fzghlDCtNY6M=
 P:help2man
 V:1.49.2-r0
@@ -1471,6 +1455,24 @@ t:1559230128
 c:b7dd3d754286b5ce1900ea9d1e29a3d9d8d449d2
 D:expect
 p:cmd:runtest=1.6.2-r0
+
+C:Q1iEx0/BZ3bv2PW0C2nq4VHiXYQVA=
+P:postgresql14-plperl-contrib
+V:14.2-r3
+A:armhf
+S:5769
+I:57344
+T:PL/Perl extension modules distributed with PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql14
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:1b0114dd10ab2d9a973d0e45d1307d425430515a
+k:14
+D:postgresql14-plperl=14.2-r3 so:libc.musl-armhf.so.1 so:libperl.so
+p:postgresql-plperl-contrib
+i:postgresql14-plperl=14.2-r3 postgresql14-contrib=14.2-r3
 
 C:Q1+SyxZYcarEI+OUn+vdMop2RYvjw=
 P:py3-tappy
@@ -1685,6 +1687,23 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-datetime-format-mail=0.403-r2
 
+C:Q1weyEBK4OrTsuYX6f0VPMtx5aVDM=
+P:postgresql13-plpython3
+V:13.6-r3
+A:armhf
+S:44772
+I:143360
+T:PL/Python3 procedural language for PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql13
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:56e4b0b4586e4abb4b9f099aa423fea711a7ba96
+k:13
+D:postgresql13=13.6-r3 python3 so:libc.musl-armhf.so.1 so:libpython3.10.so.1.0
+p:postgresql-plpython3
+
 C:Q1gnvVWtV6uPIBUMqHS61Jubk0HQk=
 P:openjpeg-tools
 V:2.4.0-r4
@@ -1848,6 +1867,22 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-mime-lite=3.033-r0
+
+C:Q161L+/kzq7ehpC8WgId/xE1PO0e4=
+P:boost1.77-unit_test_framework
+V:1.77.0-r5
+A:armhf
+S:255580
+I:618496
+T:Boost unit_test_framework shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
+p:boost-unit_test_framework=1.77.0-r5 so:libboost_unit_test_framework.so.1.77.0=1.77.0
 
 C:Q1vOgaqjEAruTF9ar9cYCm/JMxf44=
 P:perl-cps-doc
@@ -2414,6 +2449,20 @@ c:988c4057d60ade6a214b14741f3e0950b3105c3a
 D:so:libc.musl-armhf.so.1 so:libpopt.so.0 so:libvanessa_logger.so.0
 p:so:libvanessa_socket.so.2=2.1.0 cmd:vanessa_socket_pipe=0.0.13-r0
 
+C:Q136QTnX+wu/WF2hH9isKeidkjip0=
+P:harfbuzz-static
+V:4.2.0-r1
+A:armhf
+S:1099903
+I:3891200
+T:Text shaping library (static libraries)
+U:https://freedesktop.org/wiki/Software/HarfBuzz
+L:MIT
+o:harfbuzz
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:b6e54b59a02a9b057d6c6ec144e2d6e9c5ce6fd8
+
 C:Q1YWM/tXdlkih7ZCqGhqybAHs8yMs=
 P:gengetopt-dev
 V:2.23-r0
@@ -2459,6 +2508,22 @@ t:1620837485
 c:e63036f550295a63837835b9c4f5c7cc49351a09
 D:/bin/sh so:libc.musl-armhf.so.1 so:libtirpc.so.3
 p:cmd:rpcbind=1.2.6-r0 cmd:rpcinfo=1.2.6-r0
+
+C:Q1ZdrHYJ+C0hqcSa0ZON3gbKEvwZc=
+P:dovecot-ldap
+V:2.3.18-r2
+A:armhf
+S:39611
+I:135168
+T:LDAP auth plugin for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
+D:dovecot=2.3.18-r2 so:libc.musl-armhf.so.1 so:libdovecot.so.0 so:liblber.so.2 so:libldap.so.2
+p:so:libdovecot-ldap.so.0=0.0.0
 
 C:Q1xSMg+sU6Y7ihxKAkJHOH229+1Uo=
 P:sqlite-tcl
@@ -2749,6 +2814,21 @@ t:1640092805
 c:ed4e519e5c2e7e4b635534cc0e17e232a6815f2d
 D:uwsgi uwsgi-corerouter so:libc.musl-armhf.so.1
 
+C:Q10kMDMB898tMXYS29Q6LbWFFxBgk=
+P:harfbuzz-doc
+V:4.2.0-r1
+A:armhf
+S:267766
+I:2920448
+T:Text shaping library (documentation)
+U:https://freedesktop.org/wiki/Software/HarfBuzz
+L:MIT
+o:harfbuzz
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:b6e54b59a02a9b057d6c6ec144e2d6e9c5ce6fd8
+i:docs harfbuzz=4.2.0-r1
+
 C:Q11c+CjXqZXHG3x66iKEjAA3uB4DQ=
 P:numactl-doc
 V:2.0.14-r0
@@ -2794,6 +2874,21 @@ t:1582748658
 c:ef60d97d7a5ad066a792869d26ff3179b2961848
 D:so:libc.musl-armhf.so.1
 p:cmd:ar86=0.16.21-r1 cmd:as86=0.16.21-r1 cmd:bcc=0.16.21-r1 cmd:ld86=0.16.21-r1 cmd:nm86=0.16.21-r1 cmd:objdump86=0.16.21-r1 cmd:size86=0.16.21-r1
+
+C:Q1h4OpXZU1nHanT0cJJ6tJF2k+vP0=
+P:perl-future-doc
+V:0.48-r0
+A:armhf
+S:45514
+I:73728
+T:represent an operation awaiting completion (documentation)
+U:https://metacpan.org/release/Future
+L:GPL-1.0-or-later OR Artistic-1.0-Perl
+o:perl-future
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650660891
+c:208b830955a2f5c13a1c2e4a63e76be2187dfe7a
+i:docs perl-future=0.48-r0
 
 C:Q1WXtIPcMioaCAbku5XM9enFraRdw=
 P:perl-net-smtp-tls-butmaintained-doc
@@ -3439,6 +3534,22 @@ c:9c15e0596ae3254d1b3f011c63d8d8a966ddc385
 D:so:libc.musl-armhf.so.1 so:libmnl.so.0
 p:so:libnetfilter_cttimeout.so.1=1.0.0
 
+C:Q1/IzHEYMtI7necZojTmh20lI5EvQ=
+P:py3-hypothesis
+V:6.45.0-r0
+A:armhf
+S:700700
+I:2641920
+T:Advanced property-based (QuickCheck-like) testing for Python
+U:https://hypothesis.works/
+L:MPL-2.0
+o:py3-hypothesis
+m:Michał Polański <michal@polanski.me>
+t:1650712610
+c:46963a17ae08548a07177ec2ef2b631eec204872
+D:py3-attrs py3-sortedcontainers
+p:py-hypothesis=6.45.0-r0 cmd:hypothesis=6.45.0-r0 py3.10:hypothesis=6.45.0-r0
+
 C:Q1Ye+dAK0Z2QY/Hm5dtoou3rS8KlA=
 P:jwhois-doc
 V:4.0-r6
@@ -3682,6 +3793,21 @@ c:ee13d43a53938d8a04ba787b9423f3270a3c14a7
 D:scanelf so:libc.musl-armhf.so.1
 p:cmd:getconf=1.2.3-r0 cmd:getent=1.2.3-r0 cmd:iconv=1.2.3-r0 cmd:ldconfig=1.2.3-r0 cmd:ldd=1.2.3-r0
 
+C:Q1K9d+prJhG673Qszv1baKTyICXtc=
+P:perl-future
+V:0.48-r0
+A:armhf
+S:37961
+I:192512
+T:represent an operation awaiting completion
+U:https://metacpan.org/release/Future
+L:GPL-1.0-or-later OR Artistic-1.0-Perl
+o:perl-future
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650660891
+c:208b830955a2f5c13a1c2e4a63e76be2187dfe7a
+D:perl
+
 C:Q13BZx8a4LOgni+v96JTm1TW4ab5E=
 P:mbedtls-static
 V:2.16.12-r1
@@ -3893,6 +4019,22 @@ t:1649403761
 c:689a78e19df5e5088f0b0a47cd0b51c293bced11
 D:linux-headers libmnl=1.0.5-r0 pkgconfig
 p:pc:libmnl=1.0.5
+
+C:Q1ZY5FzMzxTKrxa5yNjiCZ8FgXzn8=
+P:boost1.77-atomic
+V:1.77.0-r5
+A:armhf
+S:5250
+I:24576
+T:Boost atomic shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:so:libc.musl-armhf.so.1
+p:boost-atomic=1.77.0-r5 so:libboost_atomic.so.1.77.0=1.77.0
 
 C:Q1p/H0pl3QcrTnDbvNmqi2zB2Ur94=
 P:perl-locale-maketext-lexicon-doc
@@ -4235,6 +4377,23 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:so:libc.musl-armhf.so.1 so:librc.so.1
 i:lua5.2 lua-openrc=0.2-r4
 
+C:Q1V59uMlZitMFr5V6YUTIhwxPiNmg=
+P:libpq
+V:14.2-r3
+A:armhf
+S:121735
+I:278528
+T:PostgreSQL client library
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql14
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:1b0114dd10ab2d9a973d0e45d1307d425430515a
+k:14
+D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
+p:so:libpq.so.5=5.14
+
 C:Q1yGZ5Y0Ezel7Iat/+pfjTOoitl3k=
 P:openldap
 V:2.6.0-r0
@@ -4359,22 +4518,6 @@ t:1645212763
 c:ed852580a63d3a274a84bec3cffefec4611cee05
 D:tcl-dev libx11-dev libxft-dev fontconfig-dev tk=8.6.12-r0 pc:tcl>=8.6 pkgconfig
 p:pc:tk=8.6.12
-
-C:Q19hO6604bt0d/Z6ux6o+IaEuyIgs=
-P:boost1.77-unit_test_framework
-V:1.77.0-r4
-A:armhf
-S:255574
-I:618496
-T:Boost unit_test_framework shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
-p:boost-unit_test_framework=1.77.0-r4 so:libboost_unit_test_framework.so.1.77.0=1.77.0
 
 C:Q1FnC2FIVrNzY4J/FuZDvJjE908r4=
 P:acf-tinydns
@@ -5004,6 +5147,21 @@ c:04e771118a093b28933eb9ee95dbe7766e903e16
 D:luajit=2.1_p20210510-r0 pkgconfig
 p:pc:luajit=2.1.0_beta3
 
+C:Q124ESuIK5trLiEvgsZPLsOl6onoY=
+P:git-gitweb
+V:2.36.0-r0
+A:armhf
+S:96150
+I:380928
+T:Simple web interface to git repositories
+U:https://www.git-scm.com/
+L:GPL-2.0-or-later
+o:git
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650626438
+c:4b52c52d4d966006a98591504e2f43c4a3b7d151
+D:git=2.36.0-r0 perl
+
 C:Q1MV7D1bllFpU+hAeSU2oBZx4X9Oo=
 P:sysfsutils-static
 V:2.1.1-r0
@@ -5173,22 +5331,6 @@ t:1639595863
 c:1d77c2ebb7fca5a7541488e6d4cffc72bfd8c8f6
 D:python3
 
-C:Q1NxSXSFkUyvV/O3fbzyP/NR97QE0=
-P:dovecot-mysql
-V:2.3.18-r1
-A:armhf
-S:9221
-I:45056
-T:MySQL driver for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:3e8dcaa64ac077634f214293a38ebb9beb038ad6
-D:dovecot-sql=2.3.18-r1 so:libc.musl-armhf.so.1 so:libmariadb.so.3
-p:so:libdriver_mysql.so=0
-
 C:Q1yS/JnHGvWW71ZpPegICO+9G0KKU=
 P:mosquitto-openrc
 V:2.0.14-r0
@@ -5296,22 +5438,6 @@ c:478b91ea799a7d6e81fceb1fb49fe9cfd8e439c8
 k:100
 D:!gnupg1 so:libbz2.so.1 so:libc.musl-armhf.so.1 so:libgcrypt.so.20 so:libgpg-error.so.0 so:libksba.so.8 so:libz.so.1
 p:cmd:addgnupghome=2.2.34-r0 cmd:applygnupgdefaults=2.2.34-r0 cmd:gpg-zip=2.2.34-r0 cmd:gpgparsemail=2.2.34-r0 cmd:gpgsplit=2.2.34-r0 cmd:gpgtar=2.2.34-r0 cmd:kbxutil=2.2.34-r0 cmd:watchgnupg=2.2.34-r0
-
-C:Q1qs+SHejT28wwj2F6kJWG9yHfqPo=
-P:git-daemon-openrc
-V:2.35.2-r0
-A:armhf
-S:2351
-I:24576
-T:Git protocol daemon (OpenRC init scripts)
-U:https://www.git-scm.com/
-L:GPL-2.0-or-later
-o:git
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649794230
-c:2d0c9138690fceb21270c01041b3e6d09abd3fd2
-D:git-daemon=2.35.2-r0
-i:openrc git-daemon=2.35.2-r0
 
 C:Q1DFz1MvIxJTpDLBSZKytohsQ5ZDY=
 P:chrony-doc
@@ -5607,6 +5733,22 @@ c:2cf3fe063b1b9e308372af7e2c2348e9e494a135
 D:lua5.4 so:libc.musl-armhf.so.1 so:libsqlite3.so.0
 i:lua-sql-sqlite3=2.6.0-r1 lua5.4
 
+C:Q17PW+eFmXaNMYNPclM+Aa4tNHQB4=
+P:boost1.77-contract
+V:1.77.0-r5
+A:armhf
+S:30493
+I:102400
+T:Boost contract shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
+p:boost-contract=1.77.0-r5 so:libboost_contract.so.1.77.0=1.77.0
+
 C:Q1zaZxNVe3Vw0tWMl8tswzudenAbw=
 P:perl-boolean-doc
 V:0.46-r2
@@ -5652,6 +5794,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1640092805
 c:ed4e519e5c2e7e4b635534cc0e17e232a6815f2d
 D:uwsgi so:libc.musl-armhf.so.1
+
+C:Q1FXZyuwtgYzLihL+cpmjU8C8ZwDM=
+P:vala-dbg
+V:0.56.1-r0
+A:armhf
+S:8464058
+I:20377600
+T:Compiler for the GObject type system (debug symbols)
+U:https://wiki.gnome.org/Projects/Vala
+L:LGPL-2.0-or-later
+o:vala
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1650749614
+c:25db6391f0b29d0192719d96bad7bebf37a2e9e9
+D:glib-dev
 
 C:Q1NvCQHIochso0yThTPN7uvQNmC6M=
 P:cifs-utils
@@ -5716,23 +5873,6 @@ t:1639595860
 c:42cba987f340efdf9d47b26d2f44cdabee334081
 D:freeradius-sql=3.0.25-r2
 p:freeradius3-mssql=3.0.25-r2
-
-C:Q1Ii2L5hwAT8raSAreVxX0lBH4vro=
-P:postgresql13-doc
-V:13.6-r2
-A:armhf
-S:474550
-I:2580480
-T:A sophisticated object-relational DBMS, version 13 (documentation)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql13
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:14dbb2a4ef89306af9ac28cb8ed04a1171a47cb7
-k:13
-p:postgresql-doc
-i:docs postgresql13=13.6-r2
 
 C:Q1wgBdnBYISKQp9gLz3vubmyfVqws=
 P:rtpproxy
@@ -5902,23 +6042,6 @@ t:1649093063
 c:471a938b297ad2e7145ef2e2177fe5db0d1b35f2
 D:ruby
 
-C:Q1z83LdaD046anRLC8kWiKhNhvJzU=
-P:libpq-dev
-V:14.2-r2
-A:armhf
-S:432011
-I:1163264
-T:PostgreSQL client library (development files)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:7c2e36558422cbba99fc2e2ec4cf322df44ce9c9
-k:14
-D:libpq=14.2-r2 pc:libcrypto pc:libssl pkgconfig so:libc.musl-armhf.so.1
-p:pc:libpq=14.2 cmd:pg_config=14.2-r2
-
 C:Q1oya+QVMYu/+dyYjOz3JTbUKLCFw=
 P:freeradius-ldap
 V:3.0.25-r2
@@ -6010,6 +6133,22 @@ t:1605101186
 c:147a658dd405b1e9cc59c08ac209c3495964e062
 D:so:libc.musl-armhf.so.1 so:libjpeg.so.8 so:libtiff.so.5
 p:so:libspandsp.so.3=3.0.0
+
+C:Q1aBvHa7sKtoc6jO+OuL3zoJm/UQk=
+P:boost1.77-iostreams
+V:1.77.0-r5
+A:armhf
+S:24009
+I:81920
+T:Boost iostreams shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:so:libbz2.so.1 so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:liblzma.so.5 so:libz.so.1
+p:boost-iostreams=1.77.0-r5 so:libboost_iostreams.so.1.77.0=1.77.0
 
 C:Q1Whu6OHNjLsfqNqNn0X3MBFFIa9U=
 P:strongswan-doc
@@ -6165,22 +6304,6 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1649093063
 c:aa948be812abf0b9ee5043b6b99131eafe516ccb
 D:ruby
-
-C:Q1jwz4jqXYc4G4wsgjh/v0Y9skN/4=
-P:boost1.77-chrono
-V:1.77.0-r4
-A:armhf
-S:11338
-I:40960
-T:Boost chrono shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
-p:boost-chrono=1.77.0-r4 so:libboost_chrono.so.1.77.0=1.77.0
 
 C:Q1oeWOeKMhXEm4961KAnk1oyidPyo=
 P:iniparser-dev
@@ -6747,23 +6870,6 @@ k:900
 D:wireguard-tools-wg-quick
 i:ifupdown-ng wireguard-tools-wg-quick
 
-C:Q1mwztTZ0N9W0fVoPhpqeW2PZLox8=
-P:postgresql13-client
-V:13.6-r2
-A:armhf
-S:971444
-I:2252800
-T:PostgreSQL client
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql13
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:14dbb2a4ef89306af9ac28cb8ed04a1171a47cb7
-k:13
-D:postgresql-common so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libpq.so.5 so:libreadline.so.8 so:libz.so.1
-p:postgresql-client cmd:clusterdb cmd:createdb cmd:createuser cmd:dropdb cmd:dropuser cmd:pg_basebackup cmd:pg_dump cmd:pg_dumpall cmd:pg_isready cmd:pg_receivewal cmd:pg_recvlogical cmd:pg_restore cmd:pg_verifybackup cmd:pgbench cmd:psql cmd:reindexdb cmd:vacuumdb
-
 C:Q1nDLYCmCfIJhSDeec1U1fQXEH4lE=
 P:busybox-ifupdown
 V:1.35.0-r10
@@ -6839,24 +6945,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1629905362
 c:8018cdc529f052cd64be0a22446dc31aef53e28d
 D:perl
-
-C:Q1tUHYXjwvQqzEdIf7gip2NuXGCvg=
-P:postgresql13-plpython3-contrib
-V:13.6-r2
-A:armhf
-S:6731
-I:65536
-T:PL/Python 3 extension modules distributed with PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql13
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:14dbb2a4ef89306af9ac28cb8ed04a1171a47cb7
-k:13
-D:postgresql13-plpython3=13.6-r2 so:libc.musl-armhf.so.1 so:libpython3.10.so.1.0
-p:postgresql-plpython3-contrib
-i:postgresql13-plpython3=13.6-r2 postgresql13-contrib=13.6-r2
 
 C:Q1Zh+UkjtHVZ5ldZy1GagqeCFst2s=
 P:freeradius-python3
@@ -6979,6 +7067,24 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-text-password-pronounceable=0.30-r3
+
+C:Q1XBbAqJwiUf2gm2sLGXbhmKYOPwk=
+P:postgresql14-plpython3-contrib
+V:14.2-r3
+A:armhf
+S:6744
+I:65536
+T:PL/Python 3 extension modules distributed with PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql14
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:1b0114dd10ab2d9a973d0e45d1307d425430515a
+k:14
+D:postgresql14-plpython3=14.2-r3 so:libc.musl-armhf.so.1 so:libpython3.10.so.1.0
+p:postgresql-plpython3-contrib
+i:postgresql14-plpython3=14.2-r3 postgresql14-contrib=14.2-r3
 
 C:Q135a3fqNKgy1xHDA6cM35GQLRZoQ=
 P:perl-net-ssleay
@@ -7470,6 +7576,21 @@ c:33b18f9a92ca49522fc4cc2e05841f48826f3ae6
 D:py3-libxml2 python3
 p:cmd:itstool=2.0.7-r0
 
+C:Q1vf7Pc3k31KjIgu9SuC4B/blS8wY=
+P:dovecot-submissiond
+V:2.3.18-r2
+A:armhf
+S:38994
+I:135168
+T:IMAP and POP3 server (mail submission agent)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
+D:dovecot=2.3.18-r2 so:libc.musl-armhf.so.1 so:libdovecot-storage.so.0 so:libdovecot.so.0
+
 C:Q1/g7ro99Et4RmsahZVrqKNhyHaqU=
 P:libexecinfo-dev
 V:1.1-r1
@@ -7626,6 +7747,21 @@ c:670bf5a8cc5bc605eede8ca2fd55b50a5c9f8660
 D:so:libc.musl-armhf.so.1
 p:cmd:flash_erase=2.1.3-r2 cmd:flash_eraseall=2.1.3-r2 cmd:flash_lock=2.1.3-r2 cmd:flash_otp_dump=2.1.3-r2 cmd:flash_otp_erase=2.1.3-r2 cmd:flash_otp_info=2.1.3-r2 cmd:flash_otp_lock=2.1.3-r2 cmd:flash_otp_write=2.1.3-r2 cmd:flash_unlock=2.1.3-r2 cmd:flashcp=2.1.3-r2
 
+C:Q1ILrOPJa/fd440mk+iM9BSbfNI6M=
+P:perl-git
+V:2.36.0-r0
+A:armhf
+S:33286
+I:155648
+T:Perl interface to Git
+U:https://www.git-scm.com/
+L:GPL-2.0-or-later
+o:git
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650626438
+c:4b52c52d4d966006a98591504e2f43c4a3b7d151
+D:git=2.36.0-r0 perl-error
+
 C:Q1kQWO88zp8FSyO5V7mVyzbSknues=
 P:bzip2-static
 V:1.0.8-r1
@@ -7702,6 +7838,22 @@ t:1637188206
 c:c944fdad28bc919fddac93701d46cd6d5e0dcc1a
 D:so:libgcc_s.so.1 so:libmosquitto.so.1 so:libstdc++.so.6
 p:so:libmosquittopp.so.1=1
+
+C:Q1nscyeSow9bFuqH6rKpd2GbLIRs4=
+P:git-gitk
+V:2.36.0-r0
+A:armhf
+S:170000
+I:888832
+T:Gitk interface for git
+U:https://www.git-scm.com/
+L:GPL-2.0-or-later
+o:git
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650626438
+c:4b52c52d4d966006a98591504e2f43c4a3b7d151
+D:git=2.36.0-r0 tcl tk
+p:cmd:gitk=2.36.0-r0
 
 C:Q1z1P6rrn4dECoaQbT5bhV9YflMBQ=
 P:rsyslog-elasticsearch
@@ -7991,21 +8143,6 @@ m:Sören Tempel <soeren+alpine@soeren-tempel.net>
 t:1614323720
 c:71a8ac443e012f0f4681d01097aeef1cf0f2c6a5
 i:docs debian-archive-keyring=2021.1.1-r0
-
-C:Q1G5bBJobS/7xQLLvCxpCMIKzIeh8=
-P:postfix-openrc
-V:3.7.1-r0
-A:armhf
-S:2516
-I:16384
-T:Secure and fast drop-in replacement for Sendmail (MTA) (OpenRC init scripts)
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1650535864
-c:49f64ba734a6ad9bd5ed1fe37537678400d217cf
-i:openrc postfix=3.7.1-r0
 
 C:Q1j1zrf0GIzhygvhhVKJXsunY9Qy0=
 P:libsrtp-dev
@@ -8310,6 +8447,21 @@ t:1631360531
 c:a9426470addbe04adf7f49447c208ce762894783
 i:openrc icecast=2.4.4-r7
 
+C:Q1FfTUWCvnIDAybdU1vaQzyTaIJfM=
+P:boost1.77-stacktrace_noop
+V:1.77.0-r5
+A:armhf
+S:3107
+I:20480
+T:Boost stacktrace_noop shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+p:boost-stacktrace_noop=1.77.0-r5 so:libboost_stacktrace_noop.so.1.77.0=1.77.0
+
 C:Q1vJu0fO6WAKj37G87XpzcBecYsu0=
 P:apk-tools-zsh-completion
 V:2.12.9-r2
@@ -8573,21 +8725,6 @@ t:1640092805
 c:ed4e519e5c2e7e4b635534cc0e17e232a6815f2d
 D:uwsgi so:libc.musl-armhf.so.1
 
-C:Q1ZhYjs90KYR/3x4fHxe6H26xNcFk=
-P:boost1.77-dev
-V:1.77.0-r4
-A:armhf
-S:15930770
-I:183259136
-T:Free peer-reviewed portable C++ source libraries (development files)
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:boost1.77 linux-headers bzip2-dev icu-dev xz-dev zlib-dev boost1.77-atomic=1.77.0-r4 boost1.77-chrono=1.77.0-r4 boost1.77-container=1.77.0-r4 boost1.77-context=1.77.0-r4 boost1.77-contract=1.77.0-r4 boost1.77-coroutine=1.77.0-r4 boost1.77-date_time=1.77.0-r4 boost1.77-fiber=1.77.0-r4 boost1.77-filesystem=1.77.0-r4 boost1.77-graph=1.77.0-r4 boost1.77-iostreams=1.77.0-r4 boost1.77-json=1.77.0-r4 boost1.77-locale=1.77.0-r4 boost1.77-log=1.77.0-r4 boost1.77-log_setup=1.77.0-r4 boost1.77-math=1.77.0-r4 boost1.77-nowide=1.77.0-r4 boost1.77-prg_exec_monitor=1.77.0-r4 boost1.77-program_options=1.77.0-r4 boost1.77-python3=1.77.0-r4 boost1.77-random=1.77.0-r4 boost1.77-regex=1.77.0-r4 boost1.77-serialization=1.77.0-r4 boost1.77-stacktrace_basic=1.77.0-r4 boost1.77-stacktrace_noop=1.77.0-r4 boost1.77-system=1.77.0-r4 boost1.77-thread=1.77.0-r4 boost1.77-timer=1.77.0-r4 boost1.77-type_erasure=1.77.0-r4 boost1.77-unit_test_framework=1.77.0-r4 boost1.77-wave=1.77.0-r4 boost1.77-wserialization=1.77.0-r4
-
 C:Q1RyxL77Wnf6zmIvvpu2NW0rJvzSU=
 P:aspell-doc
 V:0.60.8-r1
@@ -8648,6 +8785,22 @@ t:1644426960
 c:92cfaff9f107e9b6632dc335f0670a7dd6b8dbf3
 D:pkgconfig
 p:pc:xkeyboard-config=2.35.1
+
+C:Q1thOzlZYJVmDRNKUIcHjeN/gKs4k=
+P:postfix-mysql
+V:3.7.1-r1
+A:armhf
+S:7774
+I:49152
+T:mysql map support for postfix
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:86a13b4b354dd2a7390a023839cefa629975b7e8
+D:so:libc.musl-armhf.so.1 so:libmariadb.so.3
+p:so:postfix-mysql.so=0
 
 C:Q12hTxs7NH1KPaIu6madur4KiYDoA=
 P:lksctp-tools-dev
@@ -8771,6 +8924,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1640092805
 c:ed4e519e5c2e7e4b635534cc0e17e232a6815f2d
 D:uwsgi uwsgi-corerouter so:libc.musl-armhf.so.1
+
+C:Q1LUNfgrZe3PEwC+CVWCZoxWCASd4=
+P:boost1.77-math
+V:1.77.0-r5
+A:armhf
+S:362628
+I:917504
+T:Boost math shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
+p:boost-math=1.77.0-r5 so:libboost_math_c99.so.1.77.0=1.77.0 so:libboost_math_c99f.so.1.77.0=1.77.0 so:libboost_math_c99l.so.1.77.0=1.77.0 so:libboost_math_tr1.so.1.77.0=1.77.0 so:libboost_math_tr1f.so.1.77.0=1.77.0 so:libboost_math_tr1l.so.1.77.0=1.77.0
 
 C:Q1sLmJNJSFV0j45KMyScwe6tg59uI=
 P:squid-lang-sv
@@ -9417,6 +9586,23 @@ t:1635896152
 c:6ac674fdee1bb2ad77162f5cdd523a160c9db8f1
 D:nagios-plugins so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
 
+C:Q1u4s6Ag9Bin9g6qLNYb/mgJ9QN0I=
+P:postgresql14-dev
+V:14.2-r3
+A:armhf
+S:1775583
+I:8646656
+T:A sophisticated object-relational DBMS, version 14 (development files)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql14
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:1b0114dd10ab2d9a973d0e45d1307d425430515a
+k:14
+D:libpq-dev libecpg-dev clang icu-dev llvm13 openssl1.1-compat-dev so:libc.musl-armhf.so.1 so:libpq.so.5
+p:postgresql-dev
+
 C:Q1PcQ9VQCaSf5tv1RVoLJUtCkiqMQ=
 P:lvm2-openrc
 V:2.02.187-r2
@@ -9525,22 +9711,6 @@ t:1650176466
 c:1d8e8027c04cc66ca4e9724049eab41419126ae4
 D:so:libc.musl-armhf.so.1
 p:so:libzstd.so.1=1.5.2
-
-C:Q12x6mAupV4a24zkmkqYhX0u5a1+8=
-P:dovecot-sqlite
-V:2.3.18-r1
-A:armhf
-S:7039
-I:40960
-T:SQLite driver for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:3e8dcaa64ac077634f214293a38ebb9beb038ad6
-D:dovecot-sql=2.3.18-r1 so:libc.musl-armhf.so.1 so:libsqlite3.so.0
-p:so:libdriver_sqlite.so=0
 
 C:Q1bmqSiv3w2IbupLHblfOVqV69P4s=
 P:mlmmj-doc
@@ -10211,22 +10381,6 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua lua-filesystem
 p:lua-penlight-shared=1.7.0-r2
 
-C:Q1SMNyK6kL05WR5EfEIe0SX4CpRsc=
-P:boost1.77-log_setup
-V:1.77.0-r4
-A:armhf
-S:291334
-I:815104
-T:Boost log_setup shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:so:libboost_filesystem.so.1.77.0 so:libboost_log.so.1.77.0 so:libboost_thread.so.1.77.0 so:libc.musl-armhf.so.1 so:libgcc_s.so.1
-p:boost-log_setup=1.77.0-r4 so:libboost_log_setup.so.1.77.0=1.77.0
-
 C:Q1nggBgIyIyJZrRWUnwlJxmm8QhGU=
 P:dropbear
 V:2022.82-r0
@@ -10272,22 +10426,6 @@ t:1646686261
 c:986ce5f7f1135c75c2728d80d0749ac6388153f8
 D:so:libc.musl-armhf.so.1
 p:so:libjitterentropy.so.3=3.3.1
-
-C:Q14U7Ue7AhpkoSTUhYMS4WvQEU71w=
-P:postfix-stone
-V:3.7.1-r0
-A:armhf
-S:28948
-I:102400
-T:Postfix simulation and testing tools
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1650535864
-c:49f64ba734a6ad9bd5ed1fe37537678400d217cf
-D:musl>=1.1.24-r7 so:libc.musl-armhf.so.1 so:libpostfix-global.so so:libpostfix-util.so
-p:cmd:fsstone=3.7.1-r0 cmd:qmqp-sink=3.7.1-r0 cmd:qmqp-source=3.7.1-r0 cmd:smtp-sink=3.7.1-r0 cmd:smtp-source=3.7.1-r0
 
 C:Q1NcJm1Wm+C/2yngKuHXI31qjSRGI=
 P:ruby-rr-doc
@@ -10441,21 +10579,6 @@ t:1559751752
 c:5572823477a1387d56d05e9b47df3ccfcbd79787
 D:libsodium=1.0.18-r0 pkgconfig
 p:pc:libsodium=1.0.18
-
-C:Q1ZgIJb5c6vmMsnPbeqfS331RvymM=
-P:perl-future
-V:0.47-r0
-A:armhf
-S:37953
-I:192512
-T:represent an operation awaiting completion
-U:https://metacpan.org/release/Future
-L:GPL-1.0-or-later OR Artistic-1.0-Perl
-o:perl-future
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1630780508
-c:a3739a07d478bc4f1f6e0c17612a1c83dffa9ecd
-D:perl
 
 C:Q1rGCEePjYidtvrYRFZiITUB+s0BA=
 P:byobu
@@ -11174,21 +11297,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-html-formatter=2.16-r2
 
-C:Q1UVbKrFLGmk48pF2w5gr0SOo/jCU=
-P:dovecot-lmtpd
-V:2.3.18-r1
-A:armhf
-S:23972
-I:98304
-T:IMAP and POP3 server (LMTP server)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:3e8dcaa64ac077634f214293a38ebb9beb038ad6
-D:dovecot=2.3.18-r1 so:libc.musl-armhf.so.1 so:libdovecot-lda.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
-
 C:Q1koZv0yAJBI532ynFRtCvDWdTOS8=
 P:lua-expat
 V:1.3.0-r4
@@ -11383,6 +11491,21 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-set-intspan=1.19-r3
+
+C:Q1s37Od/jtL++b0mq4eGkOL1zPO0s=
+P:boost1.77-system
+V:1.77.0-r5
+A:armhf
+S:2881
+I:20480
+T:Boost system shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+p:boost-system=1.77.0-r5 so:libboost_system.so.1.77.0=1.77.0
 
 C:Q1lnViU4fkjsYL+aOLy6IbLuv3rtY=
 P:perl-boolean
@@ -11794,22 +11917,6 @@ m:Timo Teras <timo.teras@iki.fi>
 t:1635117238
 c:2cf3fe063b1b9e308372af7e2c2348e9e494a135
 
-C:Q1A34YHonwzIkX0Rb3vRrwKvEI5FA=
-P:boost1.77-log
-V:1.77.0-r4
-A:armhf
-S:251945
-I:720896
-T:Boost log shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:so:libboost_filesystem.so.1.77.0 so:libboost_thread.so.1.77.0 so:libc.musl-armhf.so.1 so:libgcc_s.so.1
-p:boost-log=1.77.0-r4 so:libboost_log.so.1.77.0=1.77.0
-
 C:Q1hAc/IF2SRd1Zpsb5RE6WZwFJw6c=
 P:indent
 V:2.2.12-r1
@@ -12122,21 +12229,6 @@ t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.1-pc
 
-C:Q1lnDu5DhaLarY5QBehyMOsVCGevo=
-P:vala-doc
-V:0.56.0-r0
-A:armhf
-S:8008
-I:36864
-T:Compiler for the GObject type system (documentation)
-U:https://wiki.gnome.org/Projects/Vala
-L:LGPL-2.0-or-later
-o:vala
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1649664697
-c:174ee14dca042b775bd650acfde8ea9a8e664f65
-i:docs vala=0.56.0-r0
-
 C:Q1q0abwImTAYXUlEDb+q2HqyGjjjw=
 P:gpsd-dev
 V:3.23.1-r0
@@ -12293,22 +12385,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl perl-http-message
-
-C:Q1uQlM/Gtrjjo2FVNOWZJeVezGbWE=
-P:boost1.77-contract
-V:1.77.0-r4
-A:armhf
-S:30490
-I:102400
-T:Boost contract shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
-p:boost-contract=1.77.0-r4 so:libboost_contract.so.1.77.0=1.77.0
 
 C:Q1qg0T7Dc3ROlN+PsjwpOh8uUg+kA=
 P:llvm11
@@ -12525,6 +12601,22 @@ c:464875d8f8a6b383572c7c5121a795af8312a7f2
 D:so:libc.musl-armhf.so.1
 p:cmd:cmp=3.8-r0 cmd:diff3=3.8-r0 cmd:diff=3.8-r0 cmd:sdiff=3.8-r0
 
+C:Q17IeP5GY5nQ/LqM/mK+qrJ6yefzw=
+P:boost1.77-filesystem
+V:1.77.0-r5
+A:armhf
+S:50914
+I:131072
+T:Boost filesystem shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
+p:boost-filesystem=1.77.0-r5 so:libboost_filesystem.so.1.77.0=1.77.0
+
 C:Q1PEoOlUlEOyrtKs5LMDSr91hvOH0=
 P:fcgiwrap-openrc
 V:1.1.0-r5
@@ -12661,22 +12753,6 @@ m:Nathan Angelacos <nangel@alpinelinux.org>
 t:1649863497
 c:df17c90126c0e7c889bccce3b94ab594dd8e253f
 i:openrc gpsd=3.23.1-r0
-
-C:Q1r63n/FdMj2V+B1RxLd6LJtvFWxE=
-P:boost1.77-fiber
-V:1.77.0-r4
-A:armhf
-S:27746
-I:77824
-T:Boost fiber shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:so:libboost_context.so.1.77.0 so:libc.musl-armhf.so.1 so:libgcc_s.so.1
-p:boost-fiber=1.77.0-r4 so:libboost_fiber.so.1.77.0=1.77.0
 
 C:Q1YpboBNNOoAMGaEvOgW+lTXIpK7c=
 P:gsm-doc
@@ -13024,23 +13100,6 @@ c:ac7591aaf0a047983b2bce83de419180e2d22b12
 D:gc=8.2.0-r0 libgc++=8.2.0-r0 pkgconfig
 p:pc:bdw-gc=8.2.0
 
-C:Q1uRqHe8VB7oou5XZ/8ylJRX+feR4=
-P:postgresql14-plperl
-V:14.2-r2
-A:armhf
-S:36549
-I:122880
-T:PL/Perl procedural language for PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:7c2e36558422cbba99fc2e2ec4cf322df44ce9c9
-k:14
-D:postgresql14=14.2-r2 so:libc.musl-armhf.so.1 so:libperl.so
-p:postgresql-plperl
-
 C:Q1ipIGvr+oV0bb3/kcjKaSdl16r5E=
 P:openssh-keysign
 V:9.0_p1-r0
@@ -13240,6 +13299,22 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1610522533
 c:ca55a15b461fcc921fd8b6d33e613b586a76f434
 
+C:Q1Dbm8gGVnxTzHOcBAN2w9vIajJBM=
+P:dovecot-pigeonhole-plugin
+V:2.3.18-r2
+A:armhf
+S:413491
+I:1101824
+T:Sieve and managesieve plugin for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
+D:dovecot=2.3.18-r2 so:libc.musl-armhf.so.1 so:libdovecot-login.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
+p:so:lib90_sieve_plugin.so=0 so:lib95_imap_filter_sieve_plugin.so=0 so:lib95_imap_sieve_plugin.so=0 so:libdovecot-sieve.so.0=0.0.0 cmd:sieve-dump=2.3.18-r2 cmd:sieve-filter=2.3.18-r2 cmd:sieve-test=2.3.18-r2 cmd:sievec=2.3.18-r2
+
 C:Q1LWQ1YO6RvJArrTQxncNqVFAg56A=
 P:e2fsprogs-dev
 V:1.46.5-r0
@@ -13316,22 +13391,6 @@ t:1616015145
 c:3912567f75368c9ba09ca0e7b34d0c74c3aa6b50
 D:pkgconfig
 p:pc:xkbcomp=1.4.5
-
-C:Q1GGHnIWps6fl8X/pplPVodD9iCQQ=
-P:boost1.77-serialization
-V:1.77.0-r4
-A:armhf
-S:71611
-I:245760
-T:Boost serialization shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
-p:boost-serialization=1.77.0-r4 so:libboost_serialization.so.1.77.0=1.77.0
 
 C:Q1OYdfmi+fMidhIBbh29CLXwzpx2E=
 P:cramfs
@@ -13442,6 +13501,22 @@ c:27c9807f5265db6251a32173c06e318efae699b3
 D:libestr=0.1.11-r1 pkgconfig
 p:pc:libestr=0.1.11
 
+C:Q1AwP1LRTrFUTtL59/+NLYJWeccQI=
+P:ell
+V:0.50-r0
+A:armhf
+S:176768
+I:376832
+T:Linux library for embedded development
+U:https://01.org/ell
+L:GPL-2.0-only
+o:ell
+m:Milan P. Stanić <mps@arvanta.net>
+t:1650625933
+c:7398a530e5e2ab8fedba0df46da706502a631c1d
+D:so:libc.musl-armhf.so.1
+p:so:libell.so.0=0.0.2
+
 C:Q19XILdowWGYA2cxT3oJ1QT3LHe80=
 P:skalibs-doc
 V:2.11.2.0-r0
@@ -13504,22 +13579,6 @@ t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:so:libc.musl-armhf.so.1
 i:lua5.3 lua-posixtz=0.5-r3
-
-C:Q1Ft9qRfZMY1N7+hWC4fhwgnqx81E=
-P:postfix-mysql
-V:3.7.1-r0
-A:armhf
-S:7775
-I:49152
-T:mysql map support for postfix
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1650535864
-c:49f64ba734a6ad9bd5ed1fe37537678400d217cf
-D:so:libc.musl-armhf.so.1 so:libmariadb.so.3
-p:so:postfix-mysql.so=0
 
 C:Q1OPGSQOexjPaVm56T8CCR/0fsci0=
 P:sendpage-doc
@@ -13765,6 +13824,22 @@ c:670bf5a8cc5bc605eede8ca2fd55b50a5c9f8660
 D:so:libc.musl-armhf.so.1 so:libcares.so.2 so:libcrypto.so.1.1
 p:cmd:sipsak=0.9.7-r2
 
+C:Q1T1pjRIJg+B26PwGZcPbgXljHj5A=
+P:postfix
+V:3.7.1-r1
+A:armhf
+S:855556
+I:2486272
+T:Secure and fast drop-in replacement for Sendmail (MTA)
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:86a13b4b354dd2a7390a023839cefa629975b7e8
+D:musl>=1.1.24-r7 /bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libicuuc.so.71 so:liblmdb.so.0 so:libsasl2.so.3 so:libssl.so.1.1
+p:so:libpostfix-dns.so=0 so:libpostfix-global.so=0 so:libpostfix-master.so=0 so:libpostfix-tls.so=0 so:libpostfix-util.so=0 so:postfix-lmdb.so=0 cmd:mailq=3.7.1-r1 cmd:newaliases=3.7.1-r1 cmd:postalias=3.7.1-r1 cmd:postcat=3.7.1-r1 cmd:postconf=3.7.1-r1 cmd:postdrop=3.7.1-r1 cmd:postfix=3.7.1-r1 cmd:postkick=3.7.1-r1 cmd:postlock=3.7.1-r1 cmd:postlog=3.7.1-r1 cmd:postmap=3.7.1-r1 cmd:postmulti=3.7.1-r1 cmd:postqueue=3.7.1-r1 cmd:postsuper=3.7.1-r1 cmd:qshape.pl=3.7.1-r1 cmd:sendmail=3.7.1-r1
+
 C:Q1wVjNddSwV/nGDCicj1zulLWyw9I=
 P:openldap-back-ldap
 V:2.6.0-r0
@@ -13825,6 +13900,21 @@ t:1634492012
 c:9e7bacf55cf717626bcb7afaa5dcc08db59a5a66
 D:so:libc.musl-armhf.so.1
 p:so:libgsm.so.1=1.0.12
+
+C:Q1FSZkOplk0k/9q84GtymFupz0Jyc=
+P:postfix-openrc
+V:3.7.1-r1
+A:armhf
+S:2517
+I:16384
+T:Secure and fast drop-in replacement for Sendmail (MTA) (OpenRC init scripts)
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:86a13b4b354dd2a7390a023839cefa629975b7e8
+i:openrc postfix=3.7.1-r1
 
 C:Q1dQZJtQfEA9KsgowwnU9Y83HM4l8=
 P:procps
@@ -14028,6 +14118,22 @@ c:8b6a0b3295d1cd852fed5d156abea41b22373c83
 D:lz4-libs=1.9.3-r1 pkgconfig
 p:pc:liblz4=1.9.3
 
+C:Q1FX5yOlldAQcS3t52nsE/Z11V0WQ=
+P:boost1.77-serialization
+V:1.77.0-r5
+A:armhf
+S:71615
+I:245760
+T:Boost serialization shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
+p:boost-serialization=1.77.0-r5 so:libboost_serialization.so.1.77.0=1.77.0
+
 C:Q1xsTURWdR3oglyJYu4sRgSo3pW5U=
 P:lm-sensors-dev
 V:3.6.0-r1
@@ -14057,6 +14163,22 @@ m:Timothy Legge <timlegge@gmail.com>
 t:1627487156
 c:15e00edd7e41474f3a115d55a4970bf2c945c893
 i:docs perl-b-cow=0.004-r1
+
+C:Q1jkgGnkaMS1/gXMZaYPy63rL5dLk=
+P:postfix-pgsql
+V:3.7.1-r1
+A:armhf
+S:7288
+I:49152
+T:pgsql map support for postfix
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:86a13b4b354dd2a7390a023839cefa629975b7e8
+D:so:libc.musl-armhf.so.1 so:libpq.so.5
+p:so:postfix-pgsql.so=0
 
 C:Q1/mrDWFLb3QY4vYiF1v9zmSsAEjI=
 P:perl-module-util-doc
@@ -14461,21 +14583,6 @@ c:988c4057d60ade6a214b14741f3e0950b3105c3a
 D:so:libc.musl-armhf.so.1
 p:cmd:chrpath=0.16-r2
 
-C:Q1rZ9qdQVNTgVYG9W/jq2uXe1LKdM=
-P:dovecot-openrc
-V:2.3.18-r1
-A:armhf
-S:2116
-I:16384
-T:IMAP and POP3 server (OpenRC init scripts)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:3e8dcaa64ac077634f214293a38ebb9beb038ad6
-i:openrc dovecot=2.3.18-r1
-
 C:Q1fks/XPgytD3H7p17GauowrlorT4=
 P:perl-file-copy-recursive-doc
 V:0.45-r2
@@ -14567,6 +14674,22 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1627487151
 c:e764498006dc8d9ccc6c67467bed840577105eb0
 D:perl perl-set-intspan
+
+C:Q1EBZBzpUTlaii5PbxoKWKh8OAtns=
+P:git-cvs
+V:2.36.0-r0
+A:armhf
+S:59414
+I:233472
+T:Git tools for importing CVS repositories
+U:https://www.git-scm.com/
+L:GPL-2.0-or-later
+o:git
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650626438
+c:4b52c52d4d966006a98591504e2f43c4a3b7d151
+D:perl perl-git=2.36.0-r0 cvs perl-dbd-sqlite
+p:cmd:git-cvsserver=2.36.0-r0
 
 C:Q1VhJkHzPDaJV9pW4l8uMxuTNZJMU=
 P:lzip
@@ -15161,6 +15284,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl perl-params-util perl-sub-install
+
+C:Q1+fYABBM5Qs6SBzXFl4sMtr7izxc=
+P:boost1.77-locale
+V:1.77.0-r5
+A:armhf
+S:187852
+I:561152
+T:Boost locale shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
+p:boost-locale=1.77.0-r5 so:libboost_locale.so.1.77.0=1.77.0
 
 C:Q1OlnMwqi3YYvcLnn4VkbwSeKyWZk=
 P:poppler-utils
@@ -15949,6 +16088,22 @@ t:1640092805
 c:ed4e519e5c2e7e4b635534cc0e17e232a6815f2d
 D:uwsgi
 
+C:Q1G7LNUiNwp0Hqi40tbBOKI16CcuY=
+P:harfbuzz-utils
+V:4.2.0-r1
+A:armhf
+S:54793
+I:163840
+T:Text shaping library (utilities)
+U:https://freedesktop.org/wiki/Software/HarfBuzz
+L:MIT
+o:harfbuzz
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:b6e54b59a02a9b057d6c6ec144e2d6e9c5ce6fd8
+D:so:libc.musl-armhf.so.1 so:libcairo.so.2 so:libfreetype.so.6 so:libgcc_s.so.1 so:libglib-2.0.so.0 so:libharfbuzz-subset.so.0 so:libharfbuzz.so.0 so:libstdc++.so.6
+p:cmd:hb-ot-shape-closure=4.2.0-r1 cmd:hb-shape=4.2.0-r1 cmd:hb-subset=4.2.0-r1 cmd:hb-view=4.2.0-r1
+
 C:Q1DSJ6gtl9m2aWLXYXXwA3f/cpNTA=
 P:syslog-ng-graphite
 V:3.36.1-r0
@@ -16271,24 +16426,6 @@ t:1650171767
 c:eef1d0d2457b111aa2ff44586be3f2eb0c7a5404
 i:docs openvpn=2.5.6-r1
 
-C:Q1HsyyoLG83hVssYQ5X+4cIihi/+w=
-P:postgresql14-plperl-contrib
-V:14.2-r2
-A:armhf
-S:5768
-I:57344
-T:PL/Perl extension modules distributed with PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:7c2e36558422cbba99fc2e2ec4cf322df44ce9c9
-k:14
-D:postgresql14-plperl=14.2-r2 so:libc.musl-armhf.so.1 so:libperl.so
-p:postgresql-plperl-contrib
-i:postgresql14-plperl=14.2-r2 postgresql14-contrib=14.2-r2
-
 C:Q1k3vAaXIhJFH/qQcbulreRvSxSic=
 P:subversion-bash-completion
 V:1.14.2-r0
@@ -16303,22 +16440,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1649787605
 c:beca9617787ae2617bb079ae503f04eb3505d18a
 i:subversion=1.14.2-r0 bash-completion
-
-C:Q11vhOqpWUpTpQcPZ8VIi7MqqSLCg=
-P:boost1.77-doc
-V:1.77.0-r4
-A:armhf
-S:2462
-I:24576
-T:Free peer-reviewed portable C++ source libraries (documentation)
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-p:boost-doc=1.77.0-r4
-i:docs boost1.77=1.77.0-r4
 
 C:Q1p+09H9/JD7RMiKaLBjQpA5tHi68=
 P:glib-doc
@@ -16817,21 +16938,6 @@ t:1644716875
 c:a1d7666d19081cc46e9233b1e05b1884f91522ca
 D:memcached=1.6.14-r0
 
-C:Q1ZaEL/zvNHyrctIX9+nOLJlqzq4k=
-P:harfbuzz-doc
-V:4.2.0-r0
-A:armhf
-S:267761
-I:2920448
-T:Text shaping library (documentation)
-U:https://freedesktop.org/wiki/Software/HarfBuzz
-L:MIT
-o:harfbuzz
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649036890
-c:3e70aa2da418b170f21a38ee9f269eea20275dbc
-i:docs harfbuzz=4.2.0-r0
-
 C:Q12EbQEZEKmW4tjQYKJySziBys/SI=
 P:kamailio-lua
 V:5.5.2-r2
@@ -17215,22 +17321,6 @@ t:1627487153
 c:f2e510ef44d718ba290e12b2c9240fabe14f07df
 i:docs perl-module-implementation=0.09-r3
 
-C:Q1D8z0bA5I7fsxcjz47xayZuSPQa8=
-P:boost1.77-atomic
-V:1.77.0-r4
-A:armhf
-S:5249
-I:24576
-T:Boost atomic shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:so:libc.musl-armhf.so.1
-p:boost-atomic=1.77.0-r4 so:libboost_atomic.so.1.77.0=1.77.0
-
 C:Q1IMHr3h50ElogGR08CoM2Rf7eJR0=
 P:rp-pppoe-openrc
 V:3.15-r0
@@ -17509,22 +17599,6 @@ c:a22e850510941a054d210c63aa62f73da0c0c74b
 D:so:libc.musl-armhf.so.1 so:libstdc++.so.6
 p:so:libcppunit_subunit.so.0=0.0.0 so:libsubunit.so.0=0.0.0
 
-C:Q19sBJBHGHxwRFxL2uSpFcUpg30XU=
-P:boost1.77-iostreams
-V:1.77.0-r4
-A:armhf
-S:24004
-I:81920
-T:Boost iostreams shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:so:libbz2.so.1 so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:liblzma.so.5 so:libz.so.1
-p:boost-iostreams=1.77.0-r4 so:libboost_iostreams.so.1.77.0=1.77.0
-
 C:Q1SgZ8FGehuaqaCB9FibIOLbq1Ym8=
 P:perl-test-requires-doc
 V:0.11-r1
@@ -17556,6 +17630,24 @@ c:2cf3fe063b1b9e308372af7e2c2348e9e494a135
 D:lua5.2 so:libc.musl-armhf.so.1 so:libsqlite3.so.0
 i:lua-sql-sqlite3=2.6.0-r1 lua5.2
 
+C:Q13GyFDzMgIp8UasatzDmVmGoo/I8=
+P:postgresql13-plpython3-contrib
+V:13.6-r3
+A:armhf
+S:6727
+I:65536
+T:PL/Python 3 extension modules distributed with PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql13
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:56e4b0b4586e4abb4b9f099aa423fea711a7ba96
+k:13
+D:postgresql13-plpython3=13.6-r3 so:libc.musl-armhf.so.1 so:libpython3.10.so.1.0
+p:postgresql-plpython3-contrib
+i:postgresql13-plpython3=13.6-r3 postgresql13-contrib=13.6-r3
+
 C:Q1TZO3ZK+e2m+tR/accNsgCTJPekY=
 P:lua-subprocess
 V:0.0.20141229-r4
@@ -17584,21 +17676,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1650171767
 c:eef1d0d2457b111aa2ff44586be3f2eb0c7a5404
 D:iproute2-minimal so:libc.musl-armhf.so.1 so:libpam.so.0
-
-C:Q1kpdkAMPnemuf4e+Vw+slATrh2I8=
-P:boost1.77-date_time
-V:1.77.0-r4
-A:armhf
-S:2889
-I:20480
-T:Boost date_time shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-p:boost-date_time=1.77.0-r4 so:libboost_date_time.so.1.77.0=1.77.0
 
 C:Q1c+3w7IMrektsB5baAV4j2Co+a2k=
 P:lua-b64
@@ -17693,6 +17770,22 @@ t:1579511585
 c:c93375f7e8eb197e2a99c603d9308ab589740d85
 D:so:libc.musl-armhf.so.1
 p:cmd:make=4.3-r0
+
+C:Q1z+E8NataUHN3Ezufgc7u8fEGs5M=
+P:harfbuzz-dev
+V:4.2.0-r1
+A:armhf
+S:161877
+I:1601536
+T:Text shaping library (development files)
+U:https://freedesktop.org/wiki/Software/HarfBuzz
+L:MIT
+o:harfbuzz
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:b6e54b59a02a9b057d6c6ec144e2d6e9c5ce6fd8
+D:harfbuzz-icu=4.2.0-r1 harfbuzz=4.2.0-r1 pc:freetype2 pc:glib-2.0 pc:gobject-2.0 pc:graphite2 pc:icu-uc pkgconfig
+p:pc:harfbuzz-gobject=4.2.0 pc:harfbuzz-icu=4.2.0 pc:harfbuzz-subset=4.2.0 pc:harfbuzz=4.2.0
 
 C:Q19UrWOiE/EpGdRgTaNPvPUzFBt00=
 P:db
@@ -18282,23 +18375,6 @@ c:885fbddf02f7ed1a4cd5b4d5423b1f04fd14c6ec
 D:so:libacl.so.1 so:libbz2.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libexpat.so.1 so:liblz4.so.1 so:liblzma.so.5 so:libz.so.1 so:libzstd.so.1
 p:so:libarchive.so.13=13.6.1
 
-C:Q1LsFByJgFUr4UZlwEH0UnPDK9zZA=
-P:postgresql14-openrc
-V:14.2-r2
-A:armhf
-S:1558
-I:4096
-T:A sophisticated object-relational DBMS, version 14 (OpenRC init scripts)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:7c2e36558422cbba99fc2e2ec4cf322df44ce9c9
-k:14
-D:postgresql-common-openrc
-i:openrc postgresql14=14.2-r2
-
 C:Q1sLgY9wYwnUAtFGnVX5OQ/xyH7E8=
 P:kmod-openrc
 V:29-r2
@@ -18449,6 +18525,22 @@ m:Łukasz Jendrysik <scadu@yandex.com>
 t:1619114314
 c:9d65e7a0f45655d322cad7d70613442195a2f89f
 D:git perl /bin/sh
+
+C:Q1tYAvC5PqIvQOy/hPI8Z1vgjVdmg=
+P:boost1.77-python3
+V:1.77.0-r5
+A:armhf
+S:80100
+I:229376
+T:Boost python3 shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libpython3.10.so.1.0
+p:boost-python3=1.77.0-r5 so:libboost_python310.so.1.77.0=1.77.0
 
 C:Q11TamqbiCoD+/ZD4dt/FYqcTg1Ws=
 P:gtk+2.0-dbg
@@ -18650,22 +18742,6 @@ c:ff463cf26f84df01286b4a842b0ddfb4b44bfd6d
 D:ifupdown-ng iproute2-minimal tiny-cloud=2.0.0-r0
 p:cmd:assemble-interfaces=2.0.0-r0 cmd:imds-net-sync=2.0.0-r0
 
-C:Q1y376BTzHYGlVMPAw8OM3XmTDQTY=
-P:git-cvs
-V:2.35.2-r0
-A:armhf
-S:59403
-I:233472
-T:Git tools for importing CVS repositories
-U:https://www.git-scm.com/
-L:GPL-2.0-or-later
-o:git
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649794230
-c:2d0c9138690fceb21270c01041b3e6d09abd3fd2
-D:perl perl-git=2.35.2-r0 cvs perl-dbd-sqlite
-p:cmd:git-cvsserver=2.35.2-r0
-
 C:Q1L1ruj58A9fsP03JG2qnSBp1NGXw=
 P:squid-lang-pt
 V:5.5-r0
@@ -18696,6 +18772,21 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1630780508
 c:a3739a07d478bc4f1f6e0c17612a1c83dffa9ecd
 i:docs perl-list-utilsby=0.11-r2
+
+C:Q1VLI6il6EOe3/KLH0iGPH683qzIM=
+P:git-subtree-doc
+V:2.36.0-r0
+A:armhf
+S:7193
+I:28672
+T:Split git repository into subtrees (documentation)
+U:https://www.git-scm.com/
+L:GPL-2.0-or-later
+o:git
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650626438
+c:4b52c52d4d966006a98591504e2f43c4a3b7d151
+i:docs git-subtree=2.36.0-r0
 
 C:Q1xewXP+YAXjCZ8dCdf2dYBc39gqY=
 P:lua5.4-augeas
@@ -19006,6 +19097,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 
+C:Q1DY4ILpfjRV09QBRqsBTFWoxCwXw=
+P:postfix-pcre
+V:3.7.1-r1
+A:armhf
+S:7176
+I:49152
+T:pcre map support for postfix
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:86a13b4b354dd2a7390a023839cefa629975b7e8
+D:so:libc.musl-armhf.so.1 so:libpcre2-8.so.0
+p:so:postfix-pcre.so=0
+
 C:Q1PUuQVJvBUhn4/2M8B8/YViSSIC0=
 P:gnupg-lang
 V:2.2.34-r0
@@ -19145,6 +19252,20 @@ t:1632599292
 c:7434d71f9e832efba9c5524c3d5cf3a47c2439d0
 i:docs mandoc=1.14.6-r1
 
+C:Q1/nLRVL0UHsQvM5nsybhNLBoUep0=
+P:zlib-static
+V:1.2.12-r1
+A:armhf
+S:48677
+I:110592
+T:A compression/decompression Library (static library)
+U:https://zlib.net/
+L:Zlib
+o:zlib
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650682690
+c:6754a9005594de4243aad9b2744546971078c6c7
+
 C:Q1YPsAv9uxMdgbEP/ysng24YnmVsc=
 P:wireguard-tools-bash-completion
 V:1.0.20210914-r0
@@ -19236,21 +19357,6 @@ t:1618872616
 c:4d91c2c50829684162b2b5036e77aa5a75f74cef
 D:so:libc.musl-armhf.so.1
 p:so:libonig.so.5=5.2.0
-
-C:Q1bOz0OaOpzXCnxqn4PG+PsxMUzVc=
-P:git-email
-V:2.35.2-r0
-A:armhf
-S:858610
-I:1724416
-T:Git tools for sending email
-U:https://www.git-scm.com/
-L:GPL-2.0-or-later
-o:git
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649794230
-c:2d0c9138690fceb21270c01041b3e6d09abd3fd2
-D:perl perl-git=2.35.2-r0 perl-net-smtp-ssl perl-authen-sasl so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libpcre2-8.so.0 so:libssl.so.1.1 so:libz.so.1
 
 C:Q1AD9T1ZuLAvzd9jB8Dg9KdJfQzNc=
 P:perl-http-cookies
@@ -19385,6 +19491,23 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1621190867
 c:e8a5f0de85a0cb268e26bc46494084e6d8515e9a
 i:docs quagga=1.2.4-r5
+
+C:Q1hJZDyBLFAP8CgZkUol6x9wkYrdE=
+P:postgresql14-client
+V:14.2-r3
+A:armhf
+S:1048470
+I:2420736
+T:PostgreSQL client
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql14
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:1b0114dd10ab2d9a973d0e45d1307d425430515a
+k:14
+D:postgresql-common so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libpq.so.5 so:libreadline.so.8 so:libz.so.1
+p:postgresql-client cmd:clusterdb cmd:createdb cmd:createuser cmd:dropdb cmd:dropuser cmd:pg_amcheck cmd:pg_basebackup cmd:pg_dump cmd:pg_dumpall cmd:pg_isready cmd:pg_receivewal cmd:pg_recvlogical cmd:pg_restore cmd:pg_verifybackup cmd:pgbench cmd:psql cmd:reindexdb cmd:vacuumdb
 
 C:Q1u5Oj5SrgIEV6dUJet2g5BTbBnB4=
 P:alpine-git-mirror-syncd
@@ -19542,22 +19665,6 @@ c:3912567f75368c9ba09ca0e7b34d0c74c3aa6b50
 D:so:libX11.so.6 so:libc.musl-armhf.so.1 so:libxkbfile.so.1
 p:cmd:xkbcomp=1.4.5-r0
 
-C:Q1S5/VYDdaKRC3vb2ggzng8fTYYJ4=
-P:ell-dev
-V:0.49-r0
-A:armhf
-S:28209
-I:270336
-T:Linux library for embedded development (development files)
-U:https://01.org/ell
-L:GPL-2.0-only
-o:ell
-m:Milan P. Stanić <mps@arvanta.net>
-t:1645788992
-c:d9941d6d2a93232eaf214b209abb90b2b5a37372
-D:ell=0.49-r0 pkgconfig
-p:pc:ell=0.49
-
 C:Q1v6gZXQbjtSQerj70wWVZGkaeZT8=
 P:uwsgi-router_expires
 V:2.0.20-r0
@@ -19663,24 +19770,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1649673052
 c:acf0a998a1cfd136c71ad95679938c036be1de9f
 i:docs m4=1.4.19-r1
-
-C:Q1OZgRl/ojlfuROdQoC323L9XlZ4c=
-P:postgresql14-plpython3-contrib
-V:14.2-r2
-A:armhf
-S:6744
-I:65536
-T:PL/Python 3 extension modules distributed with PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:7c2e36558422cbba99fc2e2ec4cf322df44ce9c9
-k:14
-D:postgresql14-plpython3=14.2-r2 so:libc.musl-armhf.so.1 so:libpython3.10.so.1.0
-p:postgresql-plpython3-contrib
-i:postgresql14-plpython3=14.2-r2 postgresql14-contrib=14.2-r2
 
 C:Q1O5eWMTFFOrvKj9AoN9ZqaZcCkV8=
 P:libnfsidmap
@@ -19957,6 +20046,22 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1600709957
 c:f45e6f07f0513021033d0f3065dddf171699ca1a
 D:perl-data-page perl-test-exception perl-class-accessor
+
+C:Q1dM4uNCmklwyve60k4N4sFzZeiRg=
+P:boost1.77-doc
+V:1.77.0-r5
+A:armhf
+S:2460
+I:24576
+T:Free peer-reviewed portable C++ source libraries (documentation)
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+p:boost-doc=1.77.0-r5
+i:docs boost1.77=1.77.0-r5
 
 C:Q1VKUsmAa3NIf28TSHjwuurVFqBww=
 P:perl-dbi
@@ -20378,22 +20483,6 @@ c:3fc101f63494d310ec0ee7af5cdc742ccb8c72d5
 D:logrotate
 i:squid=5.5-r0 lang-de
 
-C:Q14YENewqwlahDG7fB+BUtQpxw5mo=
-P:harfbuzz-dev
-V:4.2.0-r0
-A:armhf
-S:161866
-I:1601536
-T:Text shaping library (development files)
-U:https://freedesktop.org/wiki/Software/HarfBuzz
-L:MIT
-o:harfbuzz
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649036890
-c:3e70aa2da418b170f21a38ee9f269eea20275dbc
-D:harfbuzz-icu=4.2.0-r0 harfbuzz=4.2.0-r0 pc:freetype2 pc:glib-2.0 pc:gobject-2.0 pc:graphite2 pc:icu-uc pkgconfig
-p:pc:harfbuzz-gobject=4.2.0 pc:harfbuzz-icu=4.2.0 pc:harfbuzz-subset=4.2.0 pc:harfbuzz=4.2.0
-
 C:Q1kYtqjBhGPwB9NIFvMZ9oFlo6uCA=
 P:brotli-dev
 V:1.0.9-r6
@@ -20621,21 +20710,6 @@ t:1630247043
 c:d6e9eb94df3d1b123a4a1c5203a148196115f0ec
 i:docs perl-crypt-openssl-guess=0.13-r0
 
-C:Q11wWWIHmO0e+Fc2rEayzOwejYVDA=
-P:perl-git-svn
-V:2.35.2-r0
-A:armhf
-S:51053
-I:217088
-T:Perl interface to Git::SVN
-U:https://www.git-scm.com/
-L:GPL-2.0-or-later
-o:git
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649794230
-c:2d0c9138690fceb21270c01041b3e6d09abd3fd2
-D:git=2.35.2-r0 perl-git=2.35.2-r0
-
 C:Q1OXC4EG2AGPlMRcKwyqmUJ+VLnbw=
 P:ghostscript-dev
 V:9.56.1-r0
@@ -20833,6 +20907,24 @@ t:1630780508
 c:a3739a07d478bc4f1f6e0c17612a1c83dffa9ecd
 i:docs perl-test-fork=0.02-r1
 
+C:Q19kLyx9Ht8FrmLKr47uhtVxlxnyg=
+P:postgresql13-plperl-contrib
+V:13.6-r3
+A:armhf
+S:5776
+I:57344
+T:PL/Perl extension modules distributed with PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql13
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:56e4b0b4586e4abb4b9f099aa423fea711a7ba96
+k:13
+D:postgresql13-plperl=13.6-r3 so:libc.musl-armhf.so.1 so:libperl.so
+p:postgresql-plperl-contrib
+i:postgresql13-plperl=13.6-r3 postgresql13-contrib=13.6-r3
+
 C:Q1y3DtLlB/EaEtNSQTKvvbvy3J+3A=
 P:perl-config-grammar-doc
 V:1.13-r2
@@ -20863,21 +20955,6 @@ t:1627548134
 c:d92f6571163cadb724fae3bedba66b3fd04ddf25
 D:aspell-utils aspell-libs=0.60.8-r1
 p:cmd:pspell-config=0.60.8-r1
-
-C:Q1q0oPRJ+ajBJPp/39V0/RZooY+n4=
-P:git-subtree-doc
-V:2.35.2-r0
-A:armhf
-S:7194
-I:28672
-T:Split git repository into subtrees (documentation)
-U:https://www.git-scm.com/
-L:GPL-2.0-or-later
-o:git
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649794230
-c:2d0c9138690fceb21270c01041b3e6d09abd3fd2
-i:docs git-subtree=2.35.2-r0
 
 C:Q1nqoHyYGl16STdejaVzXPWdRkvOs=
 P:lua5.3-mqtt-publish
@@ -21032,23 +21109,6 @@ t:1644392746
 c:182462ea682d718938692f933dd681b7189bf814
 i:openrc drbd-utils=9.20.2-r0
 
-C:Q14UgCeQGIkM9I9W20oWN74dQUVwI=
-P:postgresql13-openrc
-V:13.6-r2
-A:armhf
-S:1558
-I:4096
-T:A sophisticated object-relational DBMS, version 13 (OpenRC init scripts)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql13
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:14dbb2a4ef89306af9ac28cb8ed04a1171a47cb7
-k:13
-D:postgresql-common-openrc
-i:openrc postgresql13=13.6-r2
-
 C:Q1QijLFkKEIuIpBm4b9zLrVBzQvIw=
 P:memcached-doc
 V:1.6.14-r0
@@ -21063,21 +21123,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1644716875
 c:a1d7666d19081cc46e9233b1e05b1884f91522ca
 i:docs memcached=1.6.14-r0
-
-C:Q1IkUG3jpnvK3bhvqV/SavJmMjFVQ=
-P:boost1.77-system
-V:1.77.0-r4
-A:armhf
-S:2884
-I:20480
-T:Boost system shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-p:boost-system=1.77.0-r4 so:libboost_system.so.1.77.0=1.77.0
 
 C:Q1Ndzgf9OJLEtR/3YQWvlau+k6QLY=
 P:jpeg
@@ -21244,22 +21289,6 @@ m:Valery Kartel <valery.kartel@gmail.com>
 t:1627487158
 c:46980cebdbcd1e2730f7c02d0e4f6c4c4c03776c
 D:perl so:libc.musl-armhf.so.1
-
-C:Q1T4uv/DfRhkyd2203HM8q4cTGWq8=
-P:git-perl
-V:2.35.2-r0
-A:armhf
-S:28247
-I:135168
-T:Additional Git commands that requires perl
-U:https://www.git-scm.com/
-L:GPL-2.0-or-later
-o:git
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649794230
-c:2d0c9138690fceb21270c01041b3e6d09abd3fd2
-D:git=2.35.2-r0 perl-git=2.35.2-r0 perl
-i:git=2.35.2-r0 perl
 
 C:Q1MfNTrIJDqAACDzJtM8QC00Njqv8=
 P:sngtc_client-dev
@@ -21458,6 +21487,22 @@ t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.1 so:libc.musl-armhf.so.1
 i:lua-cjson=2.1.0-r10 lua5.1
+
+C:Q1eZD/dZQH2O7yEQnTVNOabXc/yVk=
+P:dovecot-fts-lucene
+V:2.3.18-r2
+A:armhf
+S:25208
+I:81920
+T:FTS-Lucene plugin for dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
+D:dovecot=2.3.18-r2 so:libc.musl-armhf.so.1 so:libclucene-core.so.1 so:libclucene-shared.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
+p:so:lib21_fts_lucene_plugin.so=0
 
 C:Q1mmABEerIk2t51hM6WzgMjgg8Seo=
 P:xkbcli
@@ -21779,6 +21824,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1561734758
 c:08824c6305acc2bac05566a86a554060495b5c5d
 i:docs giflib=5.2.1-r0
+
+C:Q1ZwOrEHfGbWk3wz0Y0H7qu+LdeqE=
+P:dovecot-sql
+V:2.3.18-r2
+A:armhf
+S:18787
+I:77824
+T:SQL plugin for dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
+D:dovecot=2.3.18-r2 so:libc.musl-armhf.so.1 so:libdovecot.so.0
+p:so:libdovecot-sql.so.0=0.0.0
 
 C:Q155evgxtFg9MqIuM7U9JETTae26s=
 P:font-bitstream-100dpi
@@ -22130,6 +22191,23 @@ t:1627487158
 c:3073a697c49fc717145c933495baec3a956e0e5a
 D:perl so:libc.musl-armhf.so.1
 
+C:Q1FUyiqo1Ag0jOCtelJNETtXU4k+Y=
+P:postgresql13-dev
+V:13.6-r3
+A:armhf
+S:1610763
+I:7954432
+T:A sophisticated object-relational DBMS, version 13 (development files)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql13
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:56e4b0b4586e4abb4b9f099aa423fea711a7ba96
+k:13
+D:libpq-dev libecpg-dev clang icu-dev llvm13 openssl1.1-compat-dev so:libc.musl-armhf.so.1
+p:postgresql-dev
+
 C:Q1KQLvC8DA8LEcSkbk7fZBbCJVxeA=
 P:dropbear-scp
 V:2022.82-r0
@@ -22161,6 +22239,21 @@ t:1616887408
 c:3190cdb708bfd1c92f01988cf52a13882cbaf39d
 D:dbus-glib=0.112-r0 pc:dbus-1 pc:glib-2.0 pc:gobject-2.0 pkgconfig
 p:pc:dbus-glib-1=0.112
+
+C:Q1nCp7Sy7EE3UP6Znjioy3MmtKZRQ=
+P:dovecot-openrc
+V:2.3.18-r2
+A:armhf
+S:2116
+I:16384
+T:IMAP and POP3 server (OpenRC init scripts)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
+i:openrc dovecot=2.3.18-r2
 
 C:Q17OoN0FTIlmX4/7DkXdrKnblTXns=
 P:mailx
@@ -22423,22 +22516,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 
-C:Q1rBU16JVnNzfvx+9ubLZXuxaY9eo=
-P:boost1.77-wserialization
-V:1.77.0-r4
-A:armhf
-S:50926
-I:172032
-T:Boost wserialization shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:so:libboost_serialization.so.1.77.0 so:libc.musl-armhf.so.1 so:libgcc_s.so.1
-p:boost-wserialization=1.77.0-r4 so:libboost_wserialization.so.1.77.0=1.77.0
-
 C:Q1P8kaGsq1varImw4X2ZZVHsHwk7g=
 P:zfs-rpi-dev
 V:5.15.32-r1
@@ -22528,23 +22605,6 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1639283536
 c:3a5a93057abdaa929cdcc31bd1bdff84510b9194
 i:docs perl-io-socket-inet6=2.73-r0
-
-C:Q1JSrShUN6pJ3+qSMbr1MuTv/Rn4k=
-P:postgresql14-dev
-V:14.2-r2
-A:armhf
-S:1775589
-I:8646656
-T:A sophisticated object-relational DBMS, version 14 (development files)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:7c2e36558422cbba99fc2e2ec4cf322df44ce9c9
-k:14
-D:libpq-dev libecpg-dev clang icu-dev llvm13 openssl1.1-compat-dev so:libc.musl-armhf.so.1 so:libpq.so.5
-p:postgresql-dev
 
 C:Q15suN2ywRZDJ2hiT1gMvoztB+2jU=
 P:uwsgi-tuntap
@@ -22909,6 +22969,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1649633347
 c:3f54a530fcc91b9ac2f990abb0e4952d7a93c0ec
 
+C:Q1w9NhLvNZvBt69WLvuWv/LgrM2zc=
+P:harfbuzz-icu
+V:4.2.0-r1
+A:armhf
+S:4426
+I:24576
+T:Harfbuzz ICU support library
+U:https://freedesktop.org/wiki/Software/HarfBuzz
+L:MIT
+o:harfbuzz
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:b6e54b59a02a9b057d6c6ec144e2d6e9c5ce6fd8
+D:so:libc.musl-armhf.so.1 so:libharfbuzz.so.0 so:libicuuc.so.71
+p:so:libharfbuzz-icu.so.0=0.40200.0
+
 C:Q1NKAhWgi7TdcVwDRC1kYlB+4+97g=
 P:linenoise
 V:1.0-r1
@@ -23110,6 +23186,22 @@ t:1646371439
 c:a0ee89ea4b700cc74371e007476af8a6f54b4e11
 D:linux-headers iptables=1.8.7-r2 pkgconfig
 p:pc:libip4tc=1.8.7 pc:libip6tc=1.8.7 pc:libipq=1.8.7 pc:libiptc=1.8.7 pc:xtables=1.8.7
+
+C:Q1j0fFdeHRLWPEi+sZRLS06HblDas=
+P:harfbuzz
+V:4.2.0-r1
+A:armhf
+S:622960
+I:1490944
+T:Text shaping library
+U:https://freedesktop.org/wiki/Software/HarfBuzz
+L:MIT
+o:harfbuzz
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:b6e54b59a02a9b057d6c6ec144e2d6e9c5ce6fd8
+D:so:libc.musl-armhf.so.1 so:libfreetype.so.6 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgraphite2.so.3
+p:so:libharfbuzz-gobject.so.0=0.40200.0 so:libharfbuzz-subset.so.0=0.40200.0 so:libharfbuzz.so.0=0.40200.0
 
 C:Q1Y4Q9ZC/JaCAp+DVctJcfuN/hxTI=
 P:rp-pppoe-doc
@@ -23371,6 +23463,36 @@ t:1630799868
 c:9c15e0596ae3254d1b3f011c63d8d8a966ddc385
 D:libnetfilter_conntrack=1.0.8-r1 pc:libnfnetlink pkgconfig
 p:pc:libnetfilter_conntrack=1.0.8
+
+C:Q1qjrym2JDwfnKnaYUoAccnhoWMJg=
+P:icu-static
+V:71.1-r0
+A:armhf
+S:14888773
+I:40718336
+T:icu static libraries
+U:https://icu.unicode.org/
+L:MIT ICU Unicode-TOU
+o:icu
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:a4c5336cfbdcd9f6427659e648c673fdff374691
+
+C:Q1LF6PjayVrqpfBmkjaK9MTI+YIl4=
+P:boost1.77
+V:1.77.0-r5
+A:armhf
+S:441575
+I:1003520
+T:Free peer-reviewed portable C++ source libraries
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:boost1.77-libs so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
+p:boost=1.77.0-r5 cmd:b2=1.77.0-r5 cmd:bcp=1.77.0-r5 cmd:bjam=1.77.0-r5
 
 C:Q1HFF4IYl8MtU1UZRCnzBCUEzpV8Q=
 P:gnutls
@@ -23896,6 +24018,22 @@ t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua-rex-pcre lua-rex-posix
 
+C:Q14mYz7z9HAwByS8NIrD0h20Ugf6E=
+P:boost1.77-type_erasure
+V:1.77.0-r5
+A:armhf
+S:16223
+I:57344
+T:Boost type_erasure shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:so:libboost_thread.so.1.77.0 so:libc.musl-armhf.so.1 so:libgcc_s.so.1
+p:boost-type_erasure=1.77.0-r5 so:libboost_type_erasure.so.1.77.0=1.77.0
+
 C:Q1tBRiwBueeAC1lv1Xjxwfsm6+uA4=
 P:flac
 V:1.3.4-r0
@@ -24315,22 +24453,6 @@ t:1620864447
 c:78b130a98f1134e9936e6729ea8e18f2fdc178cd
 i:openrc nfdump=1.6.23-r0
 
-C:Q1+jfUcaQpLZnF7xvo+yvn4ufT7+g=
-P:postfix-ldap
-V:3.7.1-r0
-A:armhf
-S:13560
-I:61440
-T:ldap map support for postfix
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1650535864
-c:49f64ba734a6ad9bd5ed1fe37537678400d217cf
-D:so:libc.musl-armhf.so.1 so:liblber.so.2 so:libldap.so.2
-p:so:postfix-ldap.so=0
-
 C:Q1i8QEIOGc2eD62RrqPAgAcXEZTq8=
 P:perl-html-scrubber-doc
 V:0.19-r1
@@ -24468,21 +24590,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1648025390
 c:dceafa6a55825f27615a108b0b478020ffe30ce7
 i:docs parallel=20220322-r0
-
-C:Q1Jn7Z1I0PMKP/6+MNMQe3oKCQTqU=
-P:boost1.77-static
-V:1.77.0-r4
-A:armhf
-S:5537415
-I:25784320
-T:Boost static libraries
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-p:boost-static=1.77.0-r4
 
 C:Q1p0lOYI0VY3yjzXTkqWzukv1O0gs=
 P:awstats
@@ -24748,6 +24855,21 @@ c:63aee4e67ad677f96927d7da8fe73b99943da3aa
 D:bash
 p:cmd:bats=1.6.0-r0
 
+C:Q1Bmj/Rhlx85yPYpuHCH9bJeA4F+c=
+P:boost-dev
+V:1.77.0-r5
+A:armhf
+S:1498
+I:4096
+T:Free peer-reviewed portable C++ source libraries
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:boost1.77-dev=1.77.0-r5
+
 C:Q12QvtrVcbocnb/uNLAVseyezubIQ=
 P:irssi-doc
 V:1.2.3-r3
@@ -24872,23 +24994,6 @@ c:1d1127fb1b7e7173bb89e113768f3134d46273ae
 D:shared-mime-info gtk-update-icon-cache /bin/sh so:libX11.so.6 so:libXcomposite.so.1 so:libXcursor.so.1 so:libXdamage.so.1 so:libXext.so.6 so:libXfixes.so.3 so:libXi.so.6 so:libXinerama.so.1 so:libXrandr.so.2 so:libatk-1.0.so.0 so:libatk-bridge-2.0.so.0 so:libc.musl-armhf.so.1 so:libcairo-gobject.so.2 so:libcairo.so.2 so:libcups.so.2 so:libepoxy.so.0 so:libfontconfig.so.1 so:libfribidi.so.0 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libharfbuzz.so.0 so:libintl.so.8 so:libpango-1.0.so.0 so:libpangocairo-1.0.so.0 so:libpangoft2-1.0.so.0 so:libwayland-client.so.0 so:libwayland-cursor.so.0 so:libwayland-egl.so.1 so:libxkbcommon.so.0
 p:so:libgailutil-3.so.0=0.0.0 so:libgdk-3.so.0=0.2404.29 so:libgtk-3.so.0=0.2404.29 cmd:broadwayd=3.24.33-r0 cmd:gtk-builder-tool=3.24.33-r0 cmd:gtk-encode-symbolic-svg=3.24.33-r0 cmd:gtk-launch=3.24.33-r0 cmd:gtk-query-immodules-3.0=3.24.33-r0 cmd:gtk-query-settings=3.24.33-r0 cmd:gtk3-icon-browser=3.24.33-r0
 
-C:Q1xfoUOnNj7tJr/Sesb9cpYKwTLcI=
-P:postgresql14-doc
-V:14.2-r2
-A:armhf
-S:488438
-I:2650112
-T:A sophisticated object-relational DBMS, version 14 (documentation)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:7c2e36558422cbba99fc2e2ec4cf322df44ce9c9
-k:14
-p:postgresql-doc
-i:docs postgresql14=14.2-r2
-
 C:Q1lmMrwtT/J+dLMEVp0WXEcVAMO0c=
 P:rdnssd-openrc
 V:1.0.5-r0
@@ -24903,6 +25008,22 @@ m:Kevin Daudt <kdaudt@alpinelinux.org>
 t:1643607543
 c:defa6733bf0a8fbb174e3195a27ef5ba9139657b
 i:openrc rdnssd=1.0.5-r0
+
+C:Q1B0xX9xkMnTCUn9XaBy43uIDDRcQ=
+P:boost1.77-program_options
+V:1.77.0-r5
+A:armhf
+S:138466
+I:385024
+T:Boost program_options shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
+p:boost-program_options=1.77.0-r5 so:libboost_program_options.so.1.77.0=1.77.0
 
 C:Q1V2LHvDSUy+Y5HJw7xHzeJ7bks9s=
 P:libnetfilter_cthelper
@@ -25141,6 +25262,22 @@ t:1538845804
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:libxinerama=1.1.4-r1 pc:x11 pc:xext pc:xineramaproto pkgconfig
 p:pc:xinerama=1.1.4
+
+C:Q1e+OYbv6m5H9yNxfSpLSRqyaZJAs=
+P:postfix-ldap
+V:3.7.1-r1
+A:armhf
+S:13554
+I:61440
+T:ldap map support for postfix
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:86a13b4b354dd2a7390a023839cefa629975b7e8
+D:so:libc.musl-armhf.so.1 so:liblber.so.2 so:libldap.so.2
+p:so:postfix-ldap.so=0
 
 C:Q1iz67WdN1fp3UgAcEBj1ykNKki3M=
 P:iso-codes-lang
@@ -25430,21 +25567,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1644439688
 c:478b91ea799a7d6e81fceb1fb49fe9cfd8e439c8
 D:gpg-agent=2.2.34-r0 /bin/sh so:libassuan.so.0 so:libc.musl-armhf.so.1 so:libgcrypt.so.20 so:libgpg-error.so.0 so:libksba.so.8 so:libnpth.so.0 so:libusb-1.0.so.0
-
-C:Q1oxHN6Fpv0mQ0G2R4qZJWSKGOJ4s=
-P:zlib-doc
-V:1.2.12-r0
-A:armhf
-S:3846
-I:24576
-T:A compression/decompression Library (documentation)
-U:https://zlib.net/
-L:Zlib
-o:zlib
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1648462482
-c:37ada1e77a67b1c27b5d3a1880ae08d475770988
-i:docs zlib=1.2.12-r0
 
 C:Q1lsEF8sHZMTF4r9UxcH5jrjf4Oag=
 P:acf-snort
@@ -25753,21 +25875,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
-
-C:Q1hhh+hTKdOwdDGz/OiNwPWkrPYMQ=
-P:dovecot-doc
-V:2.3.18-r1
-A:armhf
-S:606264
-I:2560000
-T:IMAP and POP3 server (documentation)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:3e8dcaa64ac077634f214293a38ebb9beb038ad6
-i:docs dovecot=2.3.18-r1
 
 C:Q1OURqHYwq8FirryIUdIuCpeunz/Q=
 P:fakeroot-dbg
@@ -26154,6 +26261,22 @@ t:1635896152
 c:6ac674fdee1bb2ad77162f5cdd523a160c9db8f1
 D:nagios-plugins perl
 
+C:Q1s7RPAGzOR11jQz0Qgm3y/xSN1BU=
+P:boost1.77-graph
+V:1.77.0-r5
+A:armhf
+S:143331
+I:352256
+T:Boost graph shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
+p:boost-graph=1.77.0-r5 so:libboost_graph.so.1.77.0=1.77.0
+
 C:Q1JNa1SQX74ajGbs8aZ8peU64167E=
 P:newt-lang
 V:0.52.21-r2
@@ -26168,22 +26291,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1639595896
 c:9675c441515ee05e0f1ea1b23970204c0994e002
 i:newt=0.52.21-r2 lang
-
-C:Q1dBav8fEMlT8hCLdIIMYlAaxOklY=
-P:postfix
-V:3.7.1-r0
-A:armhf
-S:855545
-I:2486272
-T:Secure and fast drop-in replacement for Sendmail (MTA)
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1650535864
-c:49f64ba734a6ad9bd5ed1fe37537678400d217cf
-D:musl>=1.1.24-r7 /bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libicuuc.so.70 so:liblmdb.so.0 so:libsasl2.so.3 so:libssl.so.1.1
-p:so:libpostfix-dns.so=0 so:libpostfix-global.so=0 so:libpostfix-master.so=0 so:libpostfix-tls.so=0 so:libpostfix-util.so=0 so:postfix-lmdb.so=0 cmd:mailq=3.7.1-r0 cmd:newaliases=3.7.1-r0 cmd:postalias=3.7.1-r0 cmd:postcat=3.7.1-r0 cmd:postconf=3.7.1-r0 cmd:postdrop=3.7.1-r0 cmd:postfix=3.7.1-r0 cmd:postkick=3.7.1-r0 cmd:postlock=3.7.1-r0 cmd:postlog=3.7.1-r0 cmd:postmap=3.7.1-r0 cmd:postmulti=3.7.1-r0 cmd:postqueue=3.7.1-r0 cmd:postsuper=3.7.1-r0 cmd:qshape.pl=3.7.1-r0 cmd:sendmail=3.7.1-r0
 
 C:Q1TQTrxaxE30M6U2Cc0usP92jfRBM=
 P:freeswitch-python3
@@ -26230,21 +26337,6 @@ m:Jeremy Thomerson <jeremy@thomersonfamily.com>
 t:1639595861
 c:b04a4a71b579893ab2ed40f098ae81a3c5ac1b67
 i:rdiff-backup=2.0.5-r4 bash-completion
-
-C:Q11DsAXphj51XZ2UqKFNMJlrMMXqQ=
-P:git-gitweb
-V:2.35.2-r0
-A:armhf
-S:96189
-I:380928
-T:Simple web interface to git repositories
-U:https://www.git-scm.com/
-L:GPL-2.0-or-later
-o:git
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649794230
-c:2d0c9138690fceb21270c01041b3e6d09abd3fd2
-D:git=2.35.2-r0 perl
 
 C:Q1ZUzC/2eJbekUOcfIw9p8xG8iNbE=
 P:fuse-static
@@ -26580,6 +26672,22 @@ t:1627487159
 c:533234584087bcc80e54326e07a353fa3ba8f22d
 D:so:libc.musl-armhf.so.1
 
+C:Q1ltoPjmBIXRjhEFPJ6D2jn0KM/qA=
+P:boost1.77-json
+V:1.77.0-r5
+A:armhf
+S:105838
+I:253952
+T:Boost json shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
+p:boost-json=1.77.0-r5 so:libboost_json.so.1.77.0=1.77.0
+
 C:Q1dy00hxuEV/L2YrRYdNRBFKKlpWo=
 P:one-context
 V:0.5.5-r0
@@ -26745,6 +26853,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1650054943
 c:3f28965a3ed74837435bd0d488463d10afe72f3f
 i:util-linux=2.38-r1 bash-completion
+
+C:Q1mKK0rqr1bVJAyIS9p0gyZNJ8ta8=
+P:boost1.77-dev
+V:1.77.0-r5
+A:armhf
+S:15930152
+I:183259136
+T:Free peer-reviewed portable C++ source libraries (development files)
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:boost1.77 linux-headers bzip2-dev icu-dev xz-dev zlib-dev boost1.77-atomic=1.77.0-r5 boost1.77-chrono=1.77.0-r5 boost1.77-container=1.77.0-r5 boost1.77-context=1.77.0-r5 boost1.77-contract=1.77.0-r5 boost1.77-coroutine=1.77.0-r5 boost1.77-date_time=1.77.0-r5 boost1.77-fiber=1.77.0-r5 boost1.77-filesystem=1.77.0-r5 boost1.77-graph=1.77.0-r5 boost1.77-iostreams=1.77.0-r5 boost1.77-json=1.77.0-r5 boost1.77-locale=1.77.0-r5 boost1.77-log=1.77.0-r5 boost1.77-log_setup=1.77.0-r5 boost1.77-math=1.77.0-r5 boost1.77-nowide=1.77.0-r5 boost1.77-prg_exec_monitor=1.77.0-r5 boost1.77-program_options=1.77.0-r5 boost1.77-python3=1.77.0-r5 boost1.77-random=1.77.0-r5 boost1.77-regex=1.77.0-r5 boost1.77-serialization=1.77.0-r5 boost1.77-stacktrace_basic=1.77.0-r5 boost1.77-stacktrace_noop=1.77.0-r5 boost1.77-system=1.77.0-r5 boost1.77-thread=1.77.0-r5 boost1.77-timer=1.77.0-r5 boost1.77-type_erasure=1.77.0-r5 boost1.77-unit_test_framework=1.77.0-r5 boost1.77-wave=1.77.0-r5 boost1.77-wserialization=1.77.0-r5
 
 C:Q161uVg/XA5aWLA8nMhIT/419wplw=
 P:lvm2-extra
@@ -27131,38 +27254,6 @@ c:1e263579cd918a2b19b06a4c2509aa7cfd9ef114
 D:so:libc.musl-armhf.so.1
 p:so:libhistory.so.8=8.1
 
-C:Q1Y/QF8waUNysCSokgiEwHqsEpNZ8=
-P:icu-dev
-V:70.1-r0
-A:armhf
-S:963597
-I:5160960
-T:International Components for Unicode library (development files)
-U:https://icu.unicode.org/
-L:MIT ICU Unicode-TOU
-o:icu
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:e83703e32b867bc32f59fd11822869ab0c0771a9
-D:icu=70.1-r0 icu-libs=70.1-r0 pkgconfig
-p:pc:icu-i18n=70.1 pc:icu-io=70.1 pc:icu-uc=70.1 cmd:icu-config=70.1-r0
-
-C:Q1KjcqE0B9gbgTLxS7wmqNpwSgbWE=
-P:boost1.77-timer
-V:1.77.0-r4
-A:armhf
-S:8753
-I:32768
-T:Boost timer shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:so:libboost_chrono.so.1.77.0 so:libc.musl-armhf.so.1 so:libgcc_s.so.1
-p:boost-timer=1.77.0-r4 so:libboost_timer.so.1.77.0=1.77.0
-
 C:Q1m1yXOBWxMAGwf8yLzRuD1dM+NHM=
 P:net-tools
 V:2.10-r0
@@ -27225,6 +27316,21 @@ t:1649633330
 c:536df2bf6694ee4a43fa5e7cdcf47da6cc9935f2
 D:/bin/sh so:libc.musl-armhf.so.1 so:libcbor.so.0.9 so:libcrypto.so.1.1 so:libudev.so.1 so:libz.so.1
 p:so:libfido2.so.1=1.10.0
+
+C:Q19WY8NEZK2Bug/hjDdG7VwbEjEIY=
+P:dovecot-lmtpd
+V:2.3.18-r2
+A:armhf
+S:23969
+I:98304
+T:IMAP and POP3 server (LMTP server)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
+D:dovecot=2.3.18-r2 so:libc.musl-armhf.so.1 so:libdovecot-lda.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
 
 C:Q1V5eD1N6vdf9wu0npf6lYcvDaCiw=
 P:lua-sql
@@ -27423,20 +27529,21 @@ t:1621236845
 c:a96ec21fc79f2ec15d7a3fc66a5d58cc18ae55b9
 i:docs perl-test-script=1.29-r0
 
-C:Q1fS++JK9wQcsqEUtICfWYb7hpZyc=
-P:git-subtree
-V:2.35.2-r0
+C:Q13TelZkEBgCEDJfl1QCp2bQfUHa0=
+P:git
+V:2.36.0-r0
 A:armhf
-S:8427
-I:40960
-T:Split git repository into subtrees
+S:5551412
+I:11112448
+T:Distributed version control system
 U:https://www.git-scm.com/
 L:GPL-2.0-or-later
 o:git
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649794230
-c:2d0c9138690fceb21270c01041b3e6d09abd3fd2
-D:git=2.35.2-r0
+t:1650626438
+c:4b52c52d4d966006a98591504e2f43c4a3b7d151
+D:so:libc.musl-armhf.so.1 so:libcurl.so.4 so:libexpat.so.1 so:libpcre2-8.so.0 so:libz.so.1
+p:cmd:git-receive-pack=2.36.0-r0 cmd:git-shell=2.36.0-r0 cmd:git-upload-archive=2.36.0-r0 cmd:git-upload-pack=2.36.0-r0 cmd:git=2.36.0-r0
 
 C:Q1/oSGRSSL5Es3u6pd/9D5pC5ZnrE=
 P:redis-openrc
@@ -27882,23 +27989,6 @@ t:1650548640
 c:95dc392284775f6616ebe669b2e398d8761e951d
 D:ca-certificates so:libbrotlidec.so.1 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libnghttp2.so.14 so:libssl.so.1.1 so:libz.so.1
 p:so:libcurl.so.4=4.7.0
-
-C:Q1hiywgmMfGKb3jJ9ESF/+PxQWdiY=
-P:postgresql13-dev
-V:13.6-r2
-A:armhf
-S:1610763
-I:7954432
-T:A sophisticated object-relational DBMS, version 13 (development files)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql13
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:14dbb2a4ef89306af9ac28cb8ed04a1171a47cb7
-k:13
-D:libpq-dev libecpg-dev clang icu-dev llvm13 openssl1.1-compat-dev so:libc.musl-armhf.so.1
-p:postgresql-dev
 
 C:Q1SjAmXYrziP9decjOCzpO9V48yas=
 P:libnetfilter_log
@@ -28355,6 +28445,22 @@ m:Corey Oliver <coreyjonoliver@gmail.com>
 t:1573923749
 c:8bb5586fea347052fe0debde4c2ba06fbf3e61ba
 
+C:Q1r+Owmmo4K01fcL5NZroP2ql2tqk=
+P:boost1.77-libs
+V:1.77.0-r5
+A:armhf
+S:1694
+I:4096
+T:Boost shared libraries
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:boost1.77-atomic boost1.77-chrono boost1.77-container boost1.77-context boost1.77-contract boost1.77-coroutine boost1.77-date_time boost1.77-fiber boost1.77-filesystem boost1.77-graph boost1.77-iostreams boost1.77-locale boost1.77-log_setup boost1.77-log boost1.77-math boost1.77-prg_exec_monitor boost1.77-program_options boost1.77-python3 boost1.77-random boost1.77-regex boost1.77-serialization boost1.77-stacktrace_basic boost1.77-stacktrace_noop boost1.77-system boost1.77-thread boost1.77-timer boost1.77-type_erasure boost1.77-unit_test_framework boost1.77-wave boost1.77-wserialization boost1.77-json boost1.77-nowide
+p:boost-libs=1.77.0-r5
+
 C:Q1EowDJyBRHNzCM2WBTo+eI6OeTYI=
 P:libidn2-doc
 V:2.3.2-r1
@@ -28417,22 +28523,6 @@ c:bae1bcc27f95feaa38ab6a1970f7bf91c4722a5c
 D:pc:cairo pkgconfig
 p:pc:py3cairo=1.20.1
 
-C:Q1YfLe/nx7fXoewxowBGKdmT2qxyU=
-P:boost1.77-coroutine
-V:1.77.0-r4
-A:armhf
-S:15294
-I:53248
-T:Boost coroutine shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:so:libboost_context.so.1.77.0 so:libboost_thread.so.1.77.0 so:libc.musl-armhf.so.1 so:libgcc_s.so.1
-p:boost-coroutine=1.77.0-r4 so:libboost_coroutine.so.1.77.0=1.77.0
-
 C:Q1Ya7rXieFiAwDw+4krU2ep+XQRqM=
 P:nginx-debug
 V:1.20.2-r0
@@ -28464,6 +28554,22 @@ t:1622914361
 c:988c4057d60ade6a214b14741f3e0950b3105c3a
 D:libxxf86vm=1.1.4-r2 pc:x11 pc:xext pc:xf86vidmodeproto pkgconfig
 p:pc:xxf86vm=1.1.4
+
+C:Q1M8nbsP9Cz9r34NBcKJH+a1+Jxb4=
+P:boost1.77-fiber
+V:1.77.0-r5
+A:armhf
+S:27750
+I:77824
+T:Boost fiber shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:so:libboost_context.so.1.77.0 so:libc.musl-armhf.so.1 so:libgcc_s.so.1
+p:boost-fiber=1.77.0-r5 so:libboost_fiber.so.1.77.0=1.77.0
 
 C:Q1RGc/dxTCqAaBRqapcT/P9vRk7vI=
 P:etckeeper
@@ -29267,6 +29373,22 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:encodings font-alias mkfontscale mkfontdir fontconfig
 
+C:Q1oxsLZpxS6kIzzo7pLrDlIQc5HPA=
+P:boost1.77-nowide
+V:1.77.0-r5
+A:armhf
+S:6833
+I:28672
+T:Boost nowide shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
+p:boost-nowide=1.77.0-r5 so:libboost_nowide.so.1.77.0=1.77.0
+
 C:Q1OadjeUK58qMJ62Vwi8txFN6366w=
 P:openldap-overlay-mqtt
 V:2.6.0-r0
@@ -29390,6 +29512,23 @@ m:Jeff Bilyk <jbilyk@gmail.com>
 t:1635896152
 c:6ac674fdee1bb2ad77162f5cdd523a160c9db8f1
 D:nagios-plugins so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
+
+C:Q15/1LvXO9qLNvb7dfRq+u7ALx1Wo=
+P:libecpg
+V:14.2-r3
+A:armhf
+S:75530
+I:167936
+T:ECPG - Embedded SQL in C
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql14
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:1b0114dd10ab2d9a973d0e45d1307d425430515a
+k:14
+D:so:libc.musl-armhf.so.1 so:libpq.so.5
+p:postgresql-libs so:libecpg.so.6=6.14 so:libpgtypes.so.3=3.14
 
 C:Q16qmmxRhZmym3q9FgZB9dw9/MJ08=
 P:zstd-frugal
@@ -30099,6 +30238,22 @@ c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl perl-xml-parser
 p:cmd:xpath=1.44-r2
 
+C:Q1cL5ol4C2P/POuPVBtnL5WcB2vMw=
+P:dovecot-fts-solr
+V:2.3.18-r2
+A:armhf
+S:18758
+I:57344
+T:FTS-Solr plugin for dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
+D:dovecot=2.3.18-r2 so:lib20_fts_plugin.so so:libc.musl-armhf.so.1 so:libexpat.so.1
+p:so:lib21_fts_solr_plugin.so=0
+
 C:Q1wUookknzsN6jWtPUpBddVodT1Zs=
 P:perl-net-smtp-ssl
 V:1.04-r2
@@ -30173,6 +30328,22 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1649093063
 c:3679307172d226faa0e4265eb3c1ede46318b6f4
 D:ruby
+
+C:Q1zBlYerJh1b/j0z1iwqYZF+hI7wc=
+P:libical-dev
+V:3.0.13-r2
+A:armhf
+S:280243
+I:3203072
+T:Reference implementation of the iCalendar format (development files)
+U:https://libical.github.io/libical/
+L:LGPL-2.1-only OR MPL-2.0
+o:libical
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:a33d690e769308546a2362ce968e18ddaee2110e
+D:libxml2-dev gobject-introspection-dev libical=3.0.13-r2 pc:glib-2.0 pc:gobject-2.0 pc:icu-i18n pkgconfig
+p:pc:libical-glib=3.0.13 pc:libical=3.0.13
 
 C:Q10E3GgpluNbKO8iKy6C3/QvRVPto=
 P:fuse3-libs
@@ -30555,23 +30726,6 @@ t:1610489771
 c:1118fff73bb8f3a967c12d42de2d8c4a0a7ed162
 D:perl
 
-C:Q16eE4kbkZ9JsHD/FZd/Z6IuJTGdo=
-P:postgresql13-jit
-V:13.6-r2
-A:armhf
-S:11020416
-I:20582400
-T:Just-in-time compilation support for PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql13
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:14dbb2a4ef89306af9ac28cb8ed04a1171a47cb7
-k:13
-D:postgresql13=13.6-r2 so:libLLVM-13.so so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
-p:postgresql-jit
-
 C:Q1al/AmAFBWmmc+RBjetpDeOK0AZo=
 P:uwsgi-forkptyrouter
 V:2.0.20-r0
@@ -30586,6 +30740,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1640092805
 c:ed4e519e5c2e7e4b635534cc0e17e232a6815f2d
 D:uwsgi uwsgi-corerouter so:libc.musl-armhf.so.1
+
+C:Q1O8EEI0NQ21/V4G5tKu1K7xsJLuk=
+P:boost1.77-container
+V:1.77.0-r5
+A:armhf
+S:32491
+I:81920
+T:Boost container shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
+p:boost-container=1.77.0-r5 so:libboost_container.so.1.77.0=1.77.0
 
 C:Q1a+NweDnWZ+eWj8IYBxZ8amsglb4=
 P:libconfig++
@@ -30664,6 +30834,23 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1627487157
 c:6f91cc60595d660d3213f1f554925258dead4d72
 i:docs perl-list-moreutils-xs=0.430-r1
+
+C:Q1pUm1tuuiIxPDETz7EoK2ExhBG4E=
+P:postgresql13-contrib
+V:13.6-r3
+A:armhf
+S:579830
+I:2412544
+T:Extension modules distributed with PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql13
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:56e4b0b4586e4abb4b9f099aa423fea711a7ba96
+k:13
+D:postgresql13=13.6-r3 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libpq.so.5 so:libssl.so.1.1 so:libuuid.so.1 so:libxml2.so.2 so:libz.so.1
+p:postgresql-contrib cmd:oid2name cmd:pg_standby cmd:vacuumlo
 
 C:Q1Jw3QbKPxQDOeqtQFH6HtF8zNZOE=
 P:bats-doc
@@ -30893,22 +31080,6 @@ t:1649633420
 c:967db264445d5cc9694d4d6cd8ef05c0911d8345
 D:mbedtls=2.16.12-r1
 
-C:Q1KUbiRpFTZJAT5Jgii+rZANbfrYg=
-P:boost1.77-json
-V:1.77.0-r4
-A:armhf
-S:105841
-I:253952
-T:Boost json shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
-p:boost-json=1.77.0-r4 so:libboost_json.so.1.77.0=1.77.0
-
 C:Q1/M40VSGOvdXVoGGhz1kKV8NbMVI=
 P:iproute2-rdma
 V:5.17.0-r0
@@ -31015,6 +31186,20 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1628499034
 c:b0c24cfb27b63e9b11321e73f8447b6752f41f44
 i:docs expect=5.45.4-r2
+
+C:Q1LMEung133bZYj1t3jw14aqGujqw=
+P:icu-data
+V:71.1-r0
+A:armhf
+S:11905637
+I:30441472
+T:ICU data in a .dat package file
+U:https://icu.unicode.org/
+L:MIT ICU Unicode-TOU
+o:icu
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:a4c5336cfbdcd9f6427659e648c673fdff374691
 
 C:Q1LVkv+ya3d8JHFtk49n+AoOtjwXY=
 P:lua5.1-md5
@@ -31154,21 +31339,6 @@ m:Michael Mason <ms13sp@gmail.com>
 t:1635117238
 c:2cf3fe063b1b9e308372af7e2c2348e9e494a135
 
-C:Q1SnTYdz2wOGyb/NkW/JSKZitL030=
-P:git-doc
-V:2.35.2-r0
-A:armhf
-S:1014522
-I:1409024
-T:Distributed version control system (documentation)
-U:https://www.git-scm.com/
-L:GPL-2.0-or-later
-o:git
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649794230
-c:2d0c9138690fceb21270c01041b3e6d09abd3fd2
-i:docs git=2.35.2-r0
-
 C:Q1WyVyMZ/ijtGgbrVdeCWv5tp2M4c=
 P:libusb
 V:1.0.26-r0
@@ -31293,21 +31463,6 @@ o:libxkbcommon
 t:1644067643
 c:4f85cdf532aca2b6caec4f7684db9566de03343b
 
-C:Q1XPyDsrND4usEGNmH1dVhluq1Pi8=
-P:git-p4
-V:2.35.2-r0
-A:armhf
-S:45463
-I:192512
-T:Git tools for working with Perforce depots
-U:https://www.git-scm.com/
-L:GPL-2.0-or-later
-o:git
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649794230
-c:2d0c9138690fceb21270c01041b3e6d09abd3fd2
-D:git=2.35.2-r0 git-fast-import=2.35.2-r0
-
 C:Q1EcIB8YENaWVzwSyqW3S3k+KxAWo=
 P:gst-plugins-base-lang
 V:1.20.1-r0
@@ -31385,19 +31540,21 @@ t:1643582201
 c:ff463cf26f84df01286b4a842b0ddfb4b44bfd6d
 i:openrc tiny-cloud=2.0.0-r0
 
-C:Q1vZeAmDuSQBAv6xJSBWu6uZ873Hg=
-P:git-dbg
-V:2.35.2-r0
+C:Q1PTO51UEMWzHNjDOy6i0WQRHnxSs=
+P:boost1.77-thread
+V:1.77.0-r5
 A:armhf
-S:29081178
-I:60112896
-T:Distributed version control system (debug symbols)
-U:https://www.git-scm.com/
-L:GPL-2.0-or-later
-o:git
+S:35855
+I:102400
+T:Boost thread shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649794230
-c:2d0c9138690fceb21270c01041b3e6d09abd3fd2
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
+p:boost-thread=1.77.0-r5 so:libboost_thread.so.1.77.0=1.77.0
 
 C:Q1/ufkwYBYGdNpjVV5dvwVoO8Bvgo=
 P:libucontext
@@ -31476,6 +31633,22 @@ t:1642624385
 c:ef340b4bce950e6bc5373e2dabdb3f4dfaea6636
 D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
 p:so:librabbitmq.so.4=4.5.0
+
+C:Q1iJBh22lrx9xvfCi0cCaaVYvMyXw=
+P:dovecot
+V:2.3.18-r2
+A:armhf
+S:3142658
+I:7577600
+T:IMAP and POP3 server
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
+D:openssl /bin/sh so:libbz2.so.1 so:libc.musl-armhf.so.1 so:libcap.so.2 so:libcrypto.so.1.1 so:libicui18n.so.71 so:libicuuc.so.71 so:liblzma.so.5 so:libsodium.so.23 so:libssl.so.1.1 so:libz.so.1
+p:so:lib01_acl_plugin.so=0 so:lib02_imap_acl_plugin.so=0 so:lib02_lazy_expunge_plugin.so=0 so:lib05_mail_crypt_acl_plugin.so=0 so:lib05_pop3_migration_plugin.so=0 so:lib10_last_login_plugin.so=0 so:lib10_mail_crypt_plugin.so=0 so:lib10_quota_plugin.so=0 so:lib11_imap_quota_plugin.so=0 so:lib11_trash_plugin.so=0 so:lib15_notify_plugin.so=0 so:lib20_charset_alias_plugin.so=0 so:lib20_fts_plugin.so=0 so:lib20_listescape_plugin.so=0 so:lib20_mail_log_plugin.so=0 so:lib20_mailbox_alias_plugin.so=0 so:lib20_notify_status_plugin.so=0 so:lib20_push_notification_plugin.so=0 so:lib20_quota_clone_plugin.so=0 so:lib20_replication_plugin.so=0 so:lib20_var_expand_crypt.so=0 so:lib20_virtual_plugin.so=0 so:lib20_zlib_plugin.so=0 so:lib21_fts_squat_plugin.so=0 so:lib30_imap_zlib_plugin.so=0 so:lib90_old_stats_plugin.so=0 so:lib95_imap_old_stats_plugin.so=0 so:lib99_welcome_plugin.so=0 so:libdcrypt_openssl.so=0 so:libdovecot-compression.so.0=0.0.0 so:libdovecot-dsync.so.0=0.0.0 so:libdovecot-fts.so.0=0.0.0 so:libdovecot-lda.so.0=0.0.0 so:libdovecot-login.so.0=0.0.0 so:libdovecot-storage.so.0=0.0.0 so:libdovecot.so.0=0.0.0 so:libfs_compress.so=0 so:libfs_crypt.so=0 so:libfs_mail_crypt.so=0 so:libold_stats_mail.so=0 so:libssl_iostream_openssl.so=0 so:libstats_auth.so=0 cmd:doveadm=2.3.18-r2 cmd:doveconf=2.3.18-r2 cmd:dovecot-sysreport=2.3.18-r2 cmd:dovecot=2.3.18-r2 cmd:dsync=2.3.18-r2
 
 C:Q1eh0LKVZISonVJrS0NQTfZhEMqH4=
 P:inotify-tools-doc
@@ -31797,21 +31970,6 @@ t:1627487159
 c:3dd4a79fc549f87ef7920422887e12794ad61537
 D:so:libc.musl-armhf.so.1
 
-C:Q19rnRhWWgw405GuzcJIul8qhh7Ls=
-P:vala-dbg
-V:0.56.0-r0
-A:armhf
-S:8460473
-I:20373504
-T:Compiler for the GObject type system (debug symbols)
-U:https://wiki.gnome.org/Projects/Vala
-L:LGPL-2.0-or-later
-o:vala
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1649664697
-c:174ee14dca042b775bd650acfde8ea9a8e664f65
-D:glib-dev
-
 C:Q1ONAvgSk6/YXRGpywl2lITqHpoo4=
 P:esh-doc
 V:0.3.2-r0
@@ -31826,22 +31984,6 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1649533622
 c:3f2cf95288ab284807f85836bb4f501b478174db
 i:docs esh=0.3.2-r0
-
-C:Q1WG35Re3vF2G1Ft38w+opYn74/VE=
-P:harfbuzz-icu
-V:4.2.0-r0
-A:armhf
-S:4426
-I:24576
-T:Harfbuzz ICU support library
-U:https://freedesktop.org/wiki/Software/HarfBuzz
-L:MIT
-o:harfbuzz
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649036890
-c:3e70aa2da418b170f21a38ee9f269eea20275dbc
-D:so:libc.musl-armhf.so.1 so:libharfbuzz.so.0 so:libicuuc.so.70
-p:so:libharfbuzz-icu.so.0=0.40200.0
 
 C:Q1mWBY5cBFkTsOUz3vysFBHKgMumA=
 P:wireguard-tools
@@ -32011,6 +32153,22 @@ t:1643389128
 c:eb6215daba5a024b0f0eea71aea95c7ed59b6ce3
 D:so:libc.musl-armhf.so.1 so:libz.so.1
 p:cmd:cairo-trace=1.17.4-r0
+
+C:Q1qKkt8CFDZElcvC3KunQpLudSWAQ=
+P:boost1.77-timer
+V:1.77.0-r5
+A:armhf
+S:8757
+I:32768
+T:Boost timer shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:so:libboost_chrono.so.1.77.0 so:libc.musl-armhf.so.1 so:libgcc_s.so.1
+p:boost-timer=1.77.0-r5 so:libboost_timer.so.1.77.0=1.77.0
 
 C:Q1LMDTExmVvTTMNM0gVAQiZRw05mM=
 P:sysfsutils
@@ -32393,21 +32551,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1639010817
 c:389626a00d1d89940408bbfd8b53bdc29e309991
 i:openrc alsa-utils=1.2.6-r0
-
-C:Q1mAKihiGZNftbN1r+jNqT0OkNpXw=
-P:perl-future-doc
-V:0.47-r0
-A:armhf
-S:45506
-I:73728
-T:represent an operation awaiting completion (documentation)
-U:https://metacpan.org/release/Future
-L:GPL-1.0-or-later OR Artistic-1.0-Perl
-o:perl-future
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1630780508
-c:a3739a07d478bc4f1f6e0c17612a1c83dffa9ecd
-i:docs perl-future=0.47-r0
 
 C:Q1uXvjtSiZcfofD5OFCOCzhk9PSIY=
 P:perl-astro-suntime
@@ -33060,21 +33203,6 @@ t:1650118919
 c:70bc0ead15ef86e573fae993be31c08bcbd687e4
 p:linux-firmware-any
 
-C:Q1cRyB2o59stZHfr7Q4N5LuS0rXz8=
-P:git-credential-libsecret
-V:2.35.2-r0
-A:armhf
-S:5418
-I:28672
-T:libsecret-based credential helper
-U:https://www.git-scm.com/
-L:GPL-2.0-or-later
-o:git
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649794230
-c:2d0c9138690fceb21270c01041b3e6d09abd3fd2
-D:git=2.35.2-r0 so:libc.musl-armhf.so.1 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libsecret-1.so.0
-
 C:Q1hxbEHwAtXLY8kVR78HD8W/ie128=
 P:bacula
 V:11.0.6-r1
@@ -33412,6 +33540,21 @@ c:1ae9b6a3f63dbd7f150f74e5fd1e76947c061de4
 D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libodbc.so.2 so:libodbcinst.so.2 so:libreadline.so.8 so:libssl.so.1.1
 p:so:libct.so.4=4.0.0 so:libsybdb.so.5=5.1.0 so:libtdsodbc.so.0=0.0.0 cmd:bsqldb=1.3.9-r0 cmd:bsqlodbc=1.3.9-r0 cmd:datacopy=1.3.9-r0 cmd:defncopy=1.3.9-r0 cmd:fisql=1.3.9-r0 cmd:freebcp=1.3.9-r0 cmd:osql=1.3.9-r0 cmd:tdspool=1.3.9-r0 cmd:tsql=1.3.9-r0
 
+C:Q1RcJ+UPUyTaCDENBPXWiHcSuRrpw=
+P:git-fast-import
+V:2.36.0-r0
+A:armhf
+S:1430842
+I:2826240
+T:Git backend for fast Git data importers
+U:https://www.git-scm.com/
+L:GPL-2.0-or-later
+o:git
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650626438
+c:4b52c52d4d966006a98591504e2f43c4a3b7d151
+D:git=2.36.0-r0 so:libc.musl-armhf.so.1 so:libpcre2-8.so.0 so:libz.so.1
+
 C:Q1+QvSU26ygJY8aM3qiCNKePPpJLg=
 P:xcb-util-dev
 V:0.4.0-r3
@@ -33523,6 +33666,22 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:so:libc.musl-armhf.so.1
 i:lua5.1 lua-pc=1.0.0-r11
 
+C:Q1AdR10yU9MUUDfQ99TzPn05ZvsFA=
+P:boost1.77-prg_exec_monitor
+V:1.77.0-r5
+A:armhf
+S:28930
+I:77824
+T:Boost prg_exec_monitor shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
+p:boost-prg_exec_monitor=1.77.0-r5 so:libboost_prg_exec_monitor.so.1.77.0=1.77.0
+
 C:Q19YnBMrFwZFugAJtDyI5OXNzJAmQ=
 P:statserial
 V:1.1-r4
@@ -33586,6 +33745,21 @@ k:100
 D:runuser=2.38-r1 so:libc.musl-armhf.so.1 so:libeconf.so.0 so:libpam.so.0 so:libpam_misc.so.0 so:libsmartcols.so.1
 p:login-utils cmd:last=2.38-r1 cmd:lastb=2.38-r1 cmd:login=2.38-r1 cmd:lslogins=2.38-r1 cmd:newgrp=2.38-r1 cmd:nologin=2.38-r1 cmd:su=2.38-r1 cmd:sulogin=2.38-r1
 
+C:Q1SSz0NY5hdJpkEQuUzI/ewKVY4ig=
+P:git-credential-libsecret
+V:2.36.0-r0
+A:armhf
+S:5421
+I:28672
+T:libsecret-based credential helper
+U:https://www.git-scm.com/
+L:GPL-2.0-or-later
+o:git
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650626438
+c:4b52c52d4d966006a98591504e2f43c4a3b7d151
+D:git=2.36.0-r0 so:libc.musl-armhf.so.1 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libsecret-1.so.0
+
 C:Q1ej6Vz9SuZlSkAKuQ45ksi3Sy3yU=
 P:lcms2-utils
 V:2.13.1-r0
@@ -33646,6 +33820,23 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1631240820
 c:f23492b3982255d0e97b58afd369d9ce9d392c1c
 i:docs perl-test-nowarnings=1.06-r0
+
+C:Q12WIxM6h8TkOdOs+Gi6Dxl7D81iw=
+P:postgresql13-plperl
+V:13.6-r3
+A:armhf
+S:36656
+I:122880
+T:PL/Perl procedural language for PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql13
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:56e4b0b4586e4abb4b9f099aa423fea711a7ba96
+k:13
+D:postgresql13=13.6-r3 so:libc.musl-armhf.so.1 so:libperl.so
+p:postgresql-plperl
 
 C:Q13J3n0gonKbhxhr6gGiPP4fLOW0E=
 P:vanessa_adt-dev
@@ -34340,6 +34531,22 @@ c:3d31508ba6a7d02feaa44ef175d25c60e81e89e5
 D:rsync perl
 p:cmd:rrsync=3.2.4-r0
 
+C:Q19qI2+kMs9DuOC3oSSGkmmTKHj1g=
+P:icu
+V:71.1-r0
+A:armhf
+S:201957
+I:602112
+T:International Components for Unicode library
+U:https://icu.unicode.org/
+L:MIT ICU Unicode-TOU
+o:icu
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:a4c5336cfbdcd9f6427659e648c673fdff374691
+D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libicui18n.so.71 so:libicuio.so.71 so:libicutu.so.71 so:libicuuc.so.71 so:libstdc++.so.6
+p:cmd:derb=71.1-r0 cmd:escapesrc=71.1-r0 cmd:genbrk=71.1-r0 cmd:genccode=71.1-r0 cmd:gencfu=71.1-r0 cmd:gencmn=71.1-r0 cmd:gencnval=71.1-r0 cmd:gendict=71.1-r0 cmd:gennorm2=71.1-r0 cmd:genrb=71.1-r0 cmd:gensprep=71.1-r0 cmd:icuexportdata=71.1-r0 cmd:icuinfo=71.1-r0 cmd:icupkg=71.1-r0 cmd:makeconv=71.1-r0 cmd:pkgdata=71.1-r0 cmd:uconv=71.1-r0
+
 C:Q15155B9BElzlkSpqTjVc/CS2ARmg=
 P:libusb-dev
 V:1.0.26-r0
@@ -34370,6 +34577,23 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1599162207
 c:76077dfdd8d77220a469c5743b7b7fd3484300a1
 i:docs lame=3.100-r0
+
+C:Q1+oMKX2w62DqqC6y7RY8E4AjVN0Q=
+P:postgresql14-doc
+V:14.2-r3
+A:armhf
+S:488453
+I:2650112
+T:A sophisticated object-relational DBMS, version 14 (documentation)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql14
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:1b0114dd10ab2d9a973d0e45d1307d425430515a
+k:14
+p:postgresql-doc
+i:docs postgresql14=14.2-r3
 
 C:Q1++fkKnnMqDD8bvWyeT1SIr9S3II=
 P:perl-universal-can-doc
@@ -34738,23 +34962,6 @@ t:1649093063
 c:3679307172d226faa0e4265eb3c1ede46318b6f4
 D:kamailio so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
 
-C:Q19DMCeqn5oK8JSSv0anWq124RNsM=
-P:postgresql14
-V:14.2-r2
-A:armhf
-S:5265034
-I:12947456
-T:A sophisticated object-relational DBMS, version 14
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:7c2e36558422cbba99fc2e2ec4cf322df44ce9c9
-k:14
-D:postgresql14-client postgresql-common tzdata /bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libicui18n.so.70 so:libicuuc.so.70 so:libldap.so.2 so:libpq.so.5 so:libssl.so.1.1 so:libxml2.so.2
-p:postgresql cmd:pg_ctl cmd:pg_checksums cmd:pg_upgrade cmd:pg_test_timing cmd:pg_resetwal cmd:initdb cmd:postgres cmd:postmaster cmd:pg_controldata cmd:pg_test_fsync cmd:pg_rewind cmd:pg_archivecleanup cmd:pg_waldump
-
 C:Q1ZtHxhoARiifxxKboN53YC+Rx1UY=
 P:socat
 V:1.7.4.3-r0
@@ -35107,22 +35314,6 @@ c:988c4057d60ade6a214b14741f3e0950b3105c3a
 D:so:libX11.so.6 so:libXext.so.6 so:libc.musl-armhf.so.1
 p:so:libXtst.so.6=6.1.0
 
-C:Q1VaUZmSHz5vUBz7TJ4mhIMpgGVgc=
-P:boost1.77-libs
-V:1.77.0-r4
-A:armhf
-S:1690
-I:4096
-T:Boost shared libraries
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:boost1.77-atomic boost1.77-chrono boost1.77-container boost1.77-context boost1.77-contract boost1.77-coroutine boost1.77-date_time boost1.77-fiber boost1.77-filesystem boost1.77-graph boost1.77-iostreams boost1.77-locale boost1.77-log_setup boost1.77-log boost1.77-math boost1.77-prg_exec_monitor boost1.77-program_options boost1.77-python3 boost1.77-random boost1.77-regex boost1.77-serialization boost1.77-stacktrace_basic boost1.77-stacktrace_noop boost1.77-system boost1.77-thread boost1.77-timer boost1.77-type_erasure boost1.77-unit_test_framework boost1.77-wave boost1.77-wserialization boost1.77-json boost1.77-nowide
-p:boost-libs=1.77.0-r4
-
 C:Q1yMCysHpQT/B8eyKKOTPzHhH1lEA=
 P:libburn
 V:1.5.4-r1
@@ -35412,22 +35603,6 @@ c:add278d1c81954958a9bb041f3c2c4e5568ddf61
 D:/bin/sh so:libc.musl-armhf.so.1 so:libestr.so.0 so:libfastjson.so.4 so:libuuid.so.1 so:libz.so.1
 p:cmd:rsyslogd=8.2108.0-r1
 
-C:Q1v8FSmse9ytpXm/RN308f8TIpuqQ=
-P:git-gitk
-V:2.35.2-r0
-A:armhf
-S:169998
-I:888832
-T:Gitk interface for git
-U:https://www.git-scm.com/
-L:GPL-2.0-or-later
-o:git
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649794230
-c:2d0c9138690fceb21270c01041b3e6d09abd3fd2
-D:git=2.35.2-r0 tcl tk
-p:cmd:gitk=2.35.2-r0
-
 C:Q1oiQdaowCsB3NulHVIjZXIhm9ACQ=
 P:kamailio-cpl
 V:5.5.2-r2
@@ -35457,6 +35632,22 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1632605485
 c:0c8cbbf48903eb7700845d71b88982d0d26422f5
 D:perl-html-parser perl-digest-sha1 perl-netaddr-ip perl-net-dns perl-mail-dkim perl-mime-base64 perl-time-hires perl-libwww perl gpg
+
+C:Q1xMvvSH1IiCD14UsIxNrBZbbsq98=
+P:icu-dev
+V:71.1-r0
+A:armhf
+S:966652
+I:5177344
+T:International Components for Unicode library (development files)
+U:https://icu.unicode.org/
+L:MIT ICU Unicode-TOU
+o:icu
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:a4c5336cfbdcd9f6427659e648c673fdff374691
+D:icu=71.1-r0 icu-libs=71.1-r0 pkgconfig
+p:pc:icu-i18n=71.1 pc:icu-io=71.1 pc:icu-uc=71.1 cmd:icu-config=71.1-r0
 
 C:Q1JV3LYt8vP72D5nITaWhCREfoLgU=
 P:ncurses-terminfo
@@ -35807,6 +35998,23 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1649617312
 c:6d58f7252334ad6e38be259be0e1421e144906e6
 i:docs ethtool=5.17-r0
+
+C:Q17xo+3fW3yQANk/0LnAKfPPpLC4E=
+P:postgresql14-pltcl
+V:14.2-r3
+A:armhf
+S:24506
+I:102400
+T:PL/Tcl procedural language for PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql14
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:1b0114dd10ab2d9a973d0e45d1307d425430515a
+k:14
+D:postgresql14=14.2-r3 pgtcl so:libc.musl-armhf.so.1 so:libtcl8.6.so
+p:postgresql-pltcl
 
 C:Q1wcBsysClVZKpdWZ23VF6WSNJUTc=
 P:aconf-doc
@@ -36345,6 +36553,21 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:encodings font-alias mkfontscale mkfontdir fontconfig
 
+C:Q1zNzGqLmd37t+YIFnekSiY9S3CYk=
+P:git-svn
+V:2.36.0-r0
+A:armhf
+S:22153
+I:81920
+T:Subversion support for git
+U:https://www.git-scm.com/
+L:GPL-2.0-or-later
+o:git
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650626438
+c:4b52c52d4d966006a98591504e2f43c4a3b7d151
+D:perl perl-git-svn=2.36.0-r0 perl-subversion perl-term-readkey
+
 C:Q1zsP4j9qewrThQ0Fj/yS6Z3OB34U=
 P:lua5.2-unit
 V:3.4-r0
@@ -36453,22 +36676,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1650319708
 c:a03873e0c510be2efaa24972295fc5cbea791922
 i:openrc radvd=2.19-r2
-
-C:Q1qX9389wCbuqVS9wHBImhBYq5CoQ=
-P:icu
-V:70.1-r0
-A:armhf
-S:196267
-I:593920
-T:International Components for Unicode library
-U:https://icu.unicode.org/
-L:MIT ICU Unicode-TOU
-o:icu
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:e83703e32b867bc32f59fd11822869ab0c0771a9
-D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libicui18n.so.70 so:libicuio.so.70 so:libicutu.so.70 so:libicuuc.so.70 so:libstdc++.so.6
-p:cmd:derb=70.1-r0 cmd:escapesrc=70.1-r0 cmd:genbrk=70.1-r0 cmd:genccode=70.1-r0 cmd:gencfu=70.1-r0 cmd:gencmn=70.1-r0 cmd:gencnval=70.1-r0 cmd:gendict=70.1-r0 cmd:gennorm2=70.1-r0 cmd:genrb=70.1-r0 cmd:gensprep=70.1-r0 cmd:icuexportdata=70.1-r0 cmd:icuinfo=70.1-r0 cmd:icupkg=70.1-r0 cmd:makeconv=70.1-r0 cmd:pkgdata=70.1-r0 cmd:uconv=70.1-r0
 
 C:Q16fe2q1lpsfFgZwKiBrff5hTGS0g=
 P:libarchive-dev
@@ -36624,21 +36831,21 @@ t:1649093063
 c:3679307172d226faa0e4265eb3c1ede46318b6f4
 D:kamailio so:libc.musl-armhf.so.1 so:libcurl.so.4 so:libevent-2.1.so.7
 
-C:Q1mEEdytVoTIIyaQ6wt/ZXPO3Rv2c=
-P:harfbuzz-utils
-V:4.2.0-r0
+C:Q1Ok6mF4iPg3VmKR1W5Tj6fsH4RlE=
+P:git-daemon-openrc
+V:2.36.0-r0
 A:armhf
-S:54785
-I:163840
-T:Text shaping library (utilities)
-U:https://freedesktop.org/wiki/Software/HarfBuzz
-L:MIT
-o:harfbuzz
+S:2358
+I:24576
+T:Git protocol daemon (OpenRC init scripts)
+U:https://www.git-scm.com/
+L:GPL-2.0-or-later
+o:git
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649036890
-c:3e70aa2da418b170f21a38ee9f269eea20275dbc
-D:so:libc.musl-armhf.so.1 so:libcairo.so.2 so:libfreetype.so.6 so:libgcc_s.so.1 so:libglib-2.0.so.0 so:libharfbuzz-subset.so.0 so:libharfbuzz.so.0 so:libstdc++.so.6
-p:cmd:hb-ot-shape-closure=4.2.0-r0 cmd:hb-shape=4.2.0-r0 cmd:hb-subset=4.2.0-r0 cmd:hb-view=4.2.0-r0
+t:1650626438
+c:4b52c52d4d966006a98591504e2f43c4a3b7d151
+D:git-daemon=2.36.0-r0
+i:openrc git-daemon=2.36.0-r0
 
 C:Q1Ub9iQ9ydSwd4Zk1uzDS87k0zwxk=
 P:dnsmasq-common
@@ -37505,6 +37712,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1584211375
 c:81633f00dd52212d62c630bbf6f6c8a9bc1f29cd
 
+C:Q12r+IKtuttVorVrt2dCKnAo6du+8=
+P:git-diff-highlight
+V:2.36.0-r0
+A:armhf
+S:4606
+I:20480
+T:diff highlight for git
+U:https://www.git-scm.com/
+L:GPL-2.0-or-later
+o:git
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650626438
+c:4b52c52d4d966006a98591504e2f43c4a3b7d151
+D:git=2.36.0-r0 perl
+p:cmd:diff-highlight=2.36.0-r0
+
 C:Q163AfoIehgdmXvQ7aetltIWa26nw=
 P:mariadb-dev
 V:10.6.7-r0
@@ -37626,22 +37849,6 @@ m:psykose <alice@ayaya.dev>
 t:1650176466
 c:1d8e8027c04cc66ca4e9724049eab41419126ae4
 i:docs zstd=1.5.2-r1
-
-C:Q1Ox/0kfcjQJzfUJXUR6R5tGJDGkQ=
-P:git
-V:2.35.2-r0
-A:armhf
-S:5480466
-I:10973184
-T:Distributed version control system
-U:https://www.git-scm.com/
-L:GPL-2.0-or-later
-o:git
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649794230
-c:2d0c9138690fceb21270c01041b3e6d09abd3fd2
-D:so:libc.musl-armhf.so.1 so:libcurl.so.4 so:libexpat.so.1 so:libpcre2-8.so.0 so:libz.so.1
-p:cmd:git-receive-pack=2.35.2-r0 cmd:git-shell=2.35.2-r0 cmd:git-upload-archive=2.35.2-r0 cmd:git-upload-pack=2.35.2-r0 cmd:git=2.35.2-r0
 
 C:Q1H/yoB6uNLFz3eoJb/D1b6MmGdpA=
 P:gtk+2.0-dev
@@ -37966,6 +38173,22 @@ c:ef26078ba9b6b7faa8ea8ac97be03c37b71aa35a
 D:so:libc.musl-armhf.so.1
 p:so:libintl.so.8=8.2.0
 
+C:Q1JhK37sMIO2N+HeM03glAolNVNHI=
+P:dovecot-pgsql
+V:2.3.18-r2
+A:armhf
+S:12879
+I:53248
+T:PostgreSQL driver for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
+D:dovecot-sql=2.3.18-r2 so:libc.musl-armhf.so.1 so:libpq.so.5
+p:so:libdriver_pgsql.so=0
+
 C:Q1GZrgTU7clPO+Qdt5WVRDj6l6CY0=
 P:spandsp3-dev
 V:0_git20201102-r0
@@ -37981,6 +38204,21 @@ t:1605101186
 c:147a658dd405b1e9cc59c08ac209c3495964e062
 D:pkgconfig spandsp3=0_git20201102-r0
 p:pc:spandsp=3.0.0
+
+C:Q16xp0BQeaFB37wfmCLxy1vl5nAnk=
+P:boost1.77-date_time
+V:1.77.0-r5
+A:armhf
+S:2889
+I:20480
+T:Boost date_time shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+p:boost-date_time=1.77.0-r5 so:libboost_date_time.so.1.77.0=1.77.0
 
 C:Q1WxF/yq4iskXl/eBZQgcWBZlSwEk=
 P:libhunspell
@@ -38212,6 +38450,20 @@ t:1649901142
 c:7d2e1a24b82a682858f9e8fff2ca67cbf54192a4
 D:guile gc-dev guile-libs=3.0.8-r0 pkgconfig
 p:pc:guile-3.0=3.0.8 cmd:guile-config=3.0.8-r0
+
+C:Q1bEwyZWWkMYabChdsis0Eh7/FUX4=
+P:dovecot-dev
+V:2.3.18-r2
+A:armhf
+S:548272
+I:3727360
+T:IMAP and POP3 server (development files)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
 
 C:Q1zF4iweiPT4f3fhW1SKvMZFy+4s4=
 P:rng-tools-extra
@@ -38997,6 +39249,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1646288857
 c:cfef5066eb1429d5fcc0fca075b9c7490b62b0cd
 
+C:Q1nH/mbNAN9YKgFWAu5Mn85RkRf4s=
+P:boost1.77-stacktrace_basic
+V:1.77.0-r5
+A:armhf
+S:6022
+I:24576
+T:Boost stacktrace_basic shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
+p:boost-stacktrace_basic=1.77.0-r5 so:libboost_stacktrace_basic.so.1.77.0=1.77.0
+
 C:Q1HG+NQsCEcXGDHTEXgLHkzUmZNqY=
 P:djbdns-doc
 V:1.05-r47
@@ -39319,6 +39587,22 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
 
+C:Q1ecqP8NLHHMqS1lNA8k9djeD3VU0=
+P:postfix-stone
+V:3.7.1-r1
+A:armhf
+S:28946
+I:102400
+T:Postfix simulation and testing tools
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:86a13b4b354dd2a7390a023839cefa629975b7e8
+D:musl>=1.1.24-r7 so:libc.musl-armhf.so.1 so:libpostfix-global.so so:libpostfix-util.so
+p:cmd:fsstone=3.7.1-r1 cmd:qmqp-sink=3.7.1-r1 cmd:qmqp-source=3.7.1-r1 cmd:smtp-sink=3.7.1-r1 cmd:smtp-source=3.7.1-r1
+
 C:Q1vxULBOtcAHOF1h22oeqdWujmQ5c=
 P:su-exec
 V:0.2-r1
@@ -39349,6 +39633,21 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
+
+C:Q1aQpuz9Q//lF29g75S2dxIME76GM=
+P:git-doc
+V:2.36.0-r0
+A:armhf
+S:1025306
+I:1429504
+T:Distributed version control system (documentation)
+U:https://www.git-scm.com/
+L:GPL-2.0-or-later
+o:git
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650626438
+c:4b52c52d4d966006a98591504e2f43c4a3b7d151
+i:docs git=2.36.0-r0
 
 C:Q1Wrb8MRyz5jiV732REXHTA5Sbi5c=
 P:debootstrap
@@ -39458,6 +39757,23 @@ t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.4 so:libc.musl-armhf.so.1
 i:lua-cjson=2.1.0-r10 lua5.4
+
+C:Q1I3sn9WS5s+V+G7wJoKj+iTMgvlA=
+P:postgresql13-doc
+V:13.6-r3
+A:armhf
+S:474542
+I:2580480
+T:A sophisticated object-relational DBMS, version 13 (documentation)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql13
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:56e4b0b4586e4abb4b9f099aa423fea711a7ba96
+k:13
+p:postgresql-doc
+i:docs postgresql13=13.6-r3
 
 C:Q1RnTpnHzB7hSx3qNVxqbRRSRdzuM=
 P:cdparanoia
@@ -39658,6 +39974,23 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1649635921
 c:ad2d41f6d38d92a2ee0a0e86759884a4d0797a42
 i:openrc unfs3=0.9.22-r6
+
+C:Q1LfIMhhdzOJQ5h8GO/h127c/XYEw=
+P:libecpg-dev
+V:14.2-r3
+A:armhf
+S:287508
+I:1245184
+T:ECPG - Embedded SQL in C (development files)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql14
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:1b0114dd10ab2d9a973d0e45d1307d425430515a
+k:14
+D:libpq-dev=14.2-r3 libecpg=14.2-r3 pkgconfig so:libc.musl-armhf.so.1
+p:pc:libecpg=14.2 pc:libpgtypes=14.2 cmd:ecpg=14.2-r3
 
 C:Q1MA3d6lJfpke0fk20/Uwb7M5EDkw=
 P:shorewall-core-doc
@@ -40124,23 +40457,6 @@ c:c0b3bcef6de7d3ae5b326994c3282d8b4f524451
 D:libattr=2.5.1-r1 pkgconfig
 p:pc:libattr=2.5.1
 
-C:Q1IPK+ZBlX/xhLe/rw7LEQoiFoULA=
-P:postgresql13-pltcl
-V:13.6-r2
-A:armhf
-S:24569
-I:102400
-T:PL/Tcl procedural language for PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql13
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:14dbb2a4ef89306af9ac28cb8ed04a1171a47cb7
-k:13
-D:postgresql13=13.6-r2 pgtcl so:libc.musl-armhf.so.1 so:libtcl8.6.so
-p:postgresql-pltcl
-
 C:Q14btqB+2HJAar3HNQlJfiLZu5vgY=
 P:font-util-dev
 V:1.3.2-r0
@@ -40481,6 +40797,23 @@ t:1650118919
 c:70bc0ead15ef86e573fae993be31c08bcbd687e4
 p:linux-firmware-any
 
+C:Q1c5Td+g/eydwRXHJ/xzx70G8MCbg=
+P:postgresql14-openrc
+V:14.2-r3
+A:armhf
+S:1557
+I:4096
+T:A sophisticated object-relational DBMS, version 14 (OpenRC init scripts)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql14
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:1b0114dd10ab2d9a973d0e45d1307d425430515a
+k:14
+D:postgresql-common-openrc
+i:openrc postgresql14=14.2-r3
+
 C:Q15xkTgD2nRPcWra61Xyn1NxPuQ3o=
 P:mini_httpd-openrc
 V:1.30-r3
@@ -40558,6 +40891,22 @@ t:1631781104
 c:625e9ed751b2c0c97556561171f12f879ea5baff
 D:pkgconfig
 p:bigreqsproto=2021.5-r0 compositeproto=2021.5-r0 damageproto=2021.5-r0 dri2proto=2021.5-r0 dri3proto=2021.5-r0 fixesproto=2021.5-r0 fontsproto=2021.5-r0 glproto=2021.5-r0 inputproto=2021.5-r0 kbproto=2021.5-r0 presentproto=2021.5-r0 printproto=2021.5-r0 randrproto=2021.5-r0 recordproto=2021.5-r0 renderproto=2021.5-r0 resourceproto=2021.5-r0 scrnsaverproto=2021.5-r0 videoproto=2021.5-r0 xcmiscproto=2021.5-r0 xextproto=2021.5-r0 xf86bigfontproto=2021.5-r0 xf86dgaproto=2021.5-r0 xf86driproto=2021.5-r0 xf86miscproto=2021.5-r0 xf86vidmodeproto=2021.5-r0 xineramaproto=2021.5-r0 xproto=2021.5-r0 pc:bigreqsproto=1.1.2 pc:compositeproto=0.4.2 pc:damageproto=1.2.1 pc:dmxproto=2.3.1 pc:dpmsproto=1.2 pc:dri2proto=2.8 pc:dri3proto=1.2 pc:evieproto=1.1.1 pc:fixesproto=6.0 pc:fontcacheproto=0.1.3 pc:fontsproto=2.1.3 pc:glproto=1.4.17 pc:inputproto=2.3.99.2 pc:kbproto=1.0.7 pc:lg3dproto=5.0 pc:presentproto=1.2 pc:printproto=1.0.5 pc:randrproto=1.6.0 pc:recordproto=1.14.2 pc:renderproto=0.11.1 pc:resourceproto=1.2.0 pc:scrnsaverproto=1.2.3 pc:trapproto=3.4.3 pc:videoproto=2.3.3 pc:xcalibrateproto=0.1.0 pc:xcmiscproto=1.2.2 pc:xextproto=7.3.0 pc:xf86bigfontproto=1.2.0 pc:xf86dgaproto=2.1 pc:xf86driproto=2.1.1 pc:xf86miscproto=0.9.3 pc:xf86rushproto=1.1.2 pc:xf86vidmodeproto=2.3.1 pc:xineramaproto=1.2.1 pc:xproto=7.0.33 pc:xproxymngproto=1.0.3
+
+C:Q1/EcpTz5qQu0XB3Y8JVF9eGXnU4Y=
+P:boost1.77-regex
+V:1.77.0-r5
+A:armhf
+S:121329
+I:270336
+T:Boost regex shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
+p:boost-regex=1.77.0-r5 so:libboost_regex.so.1.77.0=1.77.0
 
 C:Q1PUcQ2Ii2zdTTUUSSYXPqBSpQ1iM=
 P:py3-mock
@@ -40667,22 +41016,6 @@ t:1650140213
 c:3fc101f63494d310ec0ee7af5cdc742ccb8c72d5
 D:logrotate
 i:squid=5.5-r0 lang-lt
-
-C:Q14b1Q+jHMfvrT6yEaGrWUAk1B/9M=
-P:zlib-dev
-V:1.2.12-r0
-A:armhf
-S:32652
-I:143360
-T:A compression/decompression Library (development files)
-U:https://zlib.net/
-L:Zlib
-o:zlib
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1648462482
-c:37ada1e77a67b1c27b5d3a1880ae08d475770988
-D:pkgconfig zlib=1.2.12-r0
-p:pc:zlib=1.2.12
 
 C:Q1UXsinJQzTIwMHRm3MyCECwIKw48=
 P:speex-dev
@@ -41198,23 +41531,6 @@ t:1650548640
 c:95dc392284775f6616ebe669b2e398d8761e951d
 D:ca-certificates
 
-C:Q1ORYnSkQ32a782bE1xyYTWTSiz5g=
-P:postgresql13-plperl
-V:13.6-r2
-A:armhf
-S:36658
-I:122880
-T:PL/Perl procedural language for PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql13
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:14dbb2a4ef89306af9ac28cb8ed04a1171a47cb7
-k:13
-D:postgresql13=13.6-r2 so:libc.musl-armhf.so.1 so:libperl.so
-p:postgresql-plperl
-
 C:Q1DOWYwPi3GNmpT6hG9MYBN8qAP/s=
 P:mrtg
 V:2.17.8-r0
@@ -41646,22 +41962,6 @@ t:1630106372
 c:5d05e3c4e128a0eef06595973a9e1b80cff4a280
 i:docs libxft=2.3.4-r0
 
-C:Q118jHIw67FCLe/XuPYFGXJzlAlqk=
-P:nodejs-dev
-V:16.14.2-r0
-A:armhf
-S:194785
-I:1003520
-T:JavaScript runtime built on V8 engine - LTS version (development files)
-U:https://nodejs.org/
-L:MIT
-o:nodejs
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1648165069
-c:84a7bdbd0b62b8bb66c2064aec70433b02b0f89c
-k:100
-p:nodejs-lts-dev=16.14.2
-
 C:Q1ug1dUDaw0hGuSYGO6adQZW1JBME=
 P:amavisd-milter-openrc
 V:1.7.1-r2
@@ -41817,21 +42117,6 @@ c:7810d0abbb8be5efc876eaf851e813d8636d1298
 D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libsnappy.so.1 so:libstdc++.so.6
 p:so:libleveldb.so.1=1.22.0
 
-C:Q1pmZM2KkUV47jqDY92cSURkhT0Ig=
-P:git-daemon
-V:2.35.2-r0
-A:armhf
-S:2265351
-I:4456448
-T:Git protocol daemon
-U:https://www.git-scm.com/
-L:GPL-2.0-or-later
-o:git
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649794230
-c:2d0c9138690fceb21270c01041b3e6d09abd3fd2
-D:git=2.35.2-r0 so:libc.musl-armhf.so.1 so:libpcre2-8.so.0 so:libz.so.1
-
 C:Q1KUZk6Ho6rKBwFsr9Wzo7z8E0MNg=
 P:perl-ipc-sharelite
 V:0.17-r7
@@ -41951,6 +42236,24 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.4-filesystem lua-penlight=1.7.0-r2
+
+C:Q1laz+0ob0I5wl/+/qZMKbr3NFn78=
+P:postgresql14-contrib-jit
+V:14.2-r3
+A:armhf
+S:1570734
+I:3522560
+T:Extension modules distributed with PostgreSQL (JIT support)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql14
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:1b0114dd10ab2d9a973d0e45d1307d425430515a
+k:14
+D:postgresql14-contrib=14.2-r3
+p:postgresql-contrib-jit
+i:postgresql14-jit postgresql14-contrib=14.2-r3
 
 C:Q1mMB4zHTxzoQq6r2MlM9OzHW0neI=
 P:perl-metrics-any-doc
@@ -42102,6 +42405,22 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
+
+C:Q1p2sjYz5NCFJnx0Mhv4pObrb7Hjk=
+P:nodejs-dev
+V:16.14.2-r1
+A:armhf
+S:194772
+I:1003520
+T:JavaScript runtime built on V8 engine - LTS version (development files)
+U:https://nodejs.org/
+L:MIT
+o:nodejs
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:c3fe3444a4aaecbae115fc42ab463d35196acf58
+k:100
+p:nodejs-lts-dev=16.14.2
 
 C:Q1CJp0OF/W0V7DXOfvvzW9cokm8pA=
 P:lua5.1-mosquitto
@@ -42258,23 +42577,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1642086355
 c:f8f614dd5b5031e2b8465433f45fd5c76609426e
 i:docs haserl=0.9.36-r1
-
-C:Q1zZAX6T7sAz6XX4NtRtq6sSCWhW0=
-P:postgresql14-plpython3
-V:14.2-r2
-A:armhf
-S:44895
-I:143360
-T:PL/Python3 procedural language for PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:7c2e36558422cbba99fc2e2ec4cf322df44ce9c9
-k:14
-D:postgresql14=14.2-r2 python3 so:libc.musl-armhf.so.1 so:libpython3.10.so.1.0
-p:postgresql-plpython3
 
 C:Q1Da83f9DOT2OFX+QJ3sp29kkW7nI=
 P:pzstd
@@ -42493,23 +42795,6 @@ t:1635896151
 c:29215d3d16c30071d7829bee89effc86c4aff033
 D:so:libc.musl-armhf.so.1 so:libsqlite3.so.0
 
-C:Q18briSdNjU+I+ks5IqqgfYPLGzSQ=
-P:nodejs
-V:16.14.2-r0
-A:armhf
-S:13844652
-I:35688448
-T:JavaScript runtime built on V8 engine - LTS version
-U:https://nodejs.org/
-L:MIT
-o:nodejs
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1648165069
-c:84a7bdbd0b62b8bb66c2064aec70433b02b0f89c
-k:100
-D:ca-certificates nghttp2-libs>=1.41 /bin/sh so:libbrotlidec.so.1 so:libbrotlienc.so.1 so:libc.musl-armhf.so.1 so:libcares.so.2 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libnghttp2.so.14 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
-p:nodejs-lts=16.14.2 cmd:node=16.14.2-r0
-
 C:Q1YpmyXVdoG7qbUiQJ/nsAKOvVfpY=
 P:ulogd-openrc
 V:2.0.7-r8
@@ -42599,21 +42884,6 @@ t:1639595861
 c:76a633826dcdb5ad9efd870de55f13914779c4be
 D:python3
 p:py-funcsigs=1.0.2-r6 py3.10:funcsigs=1.0.2-r6
-
-C:Q1fd4zHk4HarJAvbD5PvcIYIiOgJk=
-P:git-fast-import
-V:2.35.2-r0
-A:armhf
-S:1413028
-I:2789376
-T:Git backend for fast Git data importers
-U:https://www.git-scm.com/
-L:GPL-2.0-or-later
-o:git
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649794230
-c:2d0c9138690fceb21270c01041b3e6d09abd3fd2
-D:git=2.35.2-r0 so:libc.musl-armhf.so.1 so:libpcre2-8.so.0 so:libz.so.1
 
 C:Q1rneW3ZVf6lw4F/j1keHrairRINs=
 P:freeradius-doc
@@ -42771,21 +43041,6 @@ c:beca9617787ae2617bb079ae503f04eb3505d18a
 D:so:libapr-1.so.0 so:libc.musl-armhf.so.1 so:libsvn_client-1.so.0 so:libsvn_delta-1.so.0 so:libsvn_diff-1.so.0 so:libsvn_fs-1.so.0 so:libsvn_ra-1.so.0 so:libsvn_repos-1.so.0 so:libsvn_subr-1.so.0 so:libsvn_wc-1.so.0
 p:so:libsvn_swig_py-1.so.0=0.0.0
 
-C:Q1wP5Mczg2RN1+aeAT/OLKClxyYsI=
-P:git-bash-completion
-V:2.35.2-r0
-A:armhf
-S:22184
-I:102400
-T:Bash completions for git
-U:https://www.git-scm.com/
-L:GPL-2.0-or-later
-o:git
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649794230
-c:2d0c9138690fceb21270c01041b3e6d09abd3fd2
-i:git=2.35.2-r0 bash-completion
-
 C:Q1IvOZbYG3xYd3oHp1izqUa/JsHoU=
 P:s6-networking-doc
 V:2.5.1.0-r0
@@ -42831,6 +43086,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1635514792
 c:a65d28c5af54d715fc25c13341d32e2991c11fa3
 i:docs perl-uri=5.10-r0
+
+C:Q1Lw0B58xHYzV/WS5tMhQCphW3KNE=
+P:boost1.77-random
+V:1.77.0-r5
+A:armhf
+S:9551
+I:36864
+T:Boost random shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
+p:boost-random=1.77.0-r5 so:libboost_random.so.1.77.0=1.77.0
 
 C:Q1QgZxKJNiDICovSVpUOuLjMA4f9E=
 P:xfsprogs-extra
@@ -42908,40 +43179,6 @@ t:1650140213
 c:3fc101f63494d310ec0ee7af5cdc742ccb8c72d5
 D:logrotate
 i:squid=5.5-r0 lang-el
-
-C:Q17VYY9BSJ91nt5mBAXWD2rH6SPpg=
-P:postgresql13-contrib-jit
-V:13.6-r2
-A:armhf
-S:1461511
-I:3309568
-T:Extension modules distributed with PostgreSQL (JIT support)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql13
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:14dbb2a4ef89306af9ac28cb8ed04a1171a47cb7
-k:13
-D:postgresql13-contrib=13.6-r2
-p:postgresql-contrib-jit
-i:postgresql13-jit postgresql13-contrib=13.6-r2
-
-C:Q1IfmaqTxU0J2yaIXYHM/wlvDBw40=
-P:dovecot-pgsql
-V:2.3.18-r1
-A:armhf
-S:12877
-I:53248
-T:PostgreSQL driver for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:3e8dcaa64ac077634f214293a38ebb9beb038ad6
-D:dovecot-sql=2.3.18-r1 so:libc.musl-armhf.so.1 so:libpq.so.5
-p:so:libdriver_pgsql.so=0
 
 C:Q1U9VIcksBeWJ3ODoN0t7q+wMeCOc=
 P:dconf-bash-completion
@@ -43156,6 +43393,21 @@ t:1640717357
 c:c427ca71185e51d2d9446e97b839c3604cd51180
 D:lua5.4 lua5.4-lub so:libc.musl-armhf.so.1
 i:lua-yaml=1.1.2-r4 lua5.4
+
+C:Q1LmmCHXCbyPD5rKJYzVOYOg6uVds=
+P:zlib-doc
+V:1.2.12-r1
+A:armhf
+S:3848
+I:24576
+T:A compression/decompression Library (documentation)
+U:https://zlib.net/
+L:Zlib
+o:zlib
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650682690
+c:6754a9005594de4243aad9b2744546971078c6c7
+i:docs zlib=1.2.12-r1
 
 C:Q1P3Zdk1ZUzriXjknfxe0I2BcxaIk=
 P:sfcapd-openrc
@@ -43462,6 +43714,22 @@ t:1640442741
 c:16e7174fb96202d91101a8f15090473132c3a43d
 i:docs sysklogd=1.5.1-r3
 
+C:Q1NOAiK26ejBkiB9myqbbFhtv1PL0=
+P:postfix-sqlite
+V:3.7.1-r1
+A:armhf
+S:5376
+I:45056
+T:sqlite map support for postfix
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:86a13b4b354dd2a7390a023839cefa629975b7e8
+D:so:libc.musl-armhf.so.1 so:libsqlite3.so.0
+p:so:postfix-sqlite.so=0
+
 C:Q1WXPClr6/G1f2cNGzqE1AP/93jqI=
 P:nagios-plugins-radius
 V:2.3.3-r1
@@ -43764,21 +44032,6 @@ c:f10a87e4f4e38df70d59e699a19924bc0cd8566c
 D:libgcrypt-dev gnutls-dev zlib-dev cups-libs=2.4.1-r1 pc:avahi-client pc:gnutls pkgconfig
 p:pc:cups=2.4.1 cmd:cups-config=2.4.1-r1
 
-C:Q1diwIK4S1//5zu6crc4mJjIR3Fvc=
-P:icu-doc
-V:70.1-r0
-A:armhf
-S:29287
-I:98304
-T:International Components for Unicode library (documentation)
-U:https://icu.unicode.org/
-L:MIT ICU Unicode-TOU
-o:icu
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:e83703e32b867bc32f59fd11822869ab0c0771a9
-i:docs icu=70.1-r0
-
 C:Q1WMDQNO55r4ITdM3emtklcePQOAk=
 P:static-routing
 V:1.0-r2
@@ -43792,22 +44045,6 @@ o:static-routing
 m:Kaarle Ritvanen <kunkku@alpinelinux.org>
 t:1637852358
 c:8bb7eaaba5eee903480d8ec84008a62a4000bc96
-
-C:Q126vqbehQ4JpwX03c9E2ZNC7UbYc=
-P:zlib
-V:1.2.12-r0
-A:armhf
-S:45331
-I:90112
-T:A compression/decompression Library
-U:https://zlib.net/
-L:Zlib
-o:zlib
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1648462482
-c:37ada1e77a67b1c27b5d3a1880ae08d475770988
-D:so:libc.musl-armhf.so.1
-p:so:libz.so.1=1.2.12
 
 C:Q1o89Y/eKGqQfv7SLcnmEt3GbT/80=
 P:libnl
@@ -44007,22 +44244,6 @@ t:1623833961
 c:9d607326771daab50defa2cc6a660d9989c8cb3c
 D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:libtinyxml2.so.9=9.0.0
-
-C:Q1nSRrdez+rhj/Dv/Us2xQ7c3Ph6I=
-P:dovecot-sql
-V:2.3.18-r1
-A:armhf
-S:18790
-I:77824
-T:SQL plugin for dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:3e8dcaa64ac077634f214293a38ebb9beb038ad6
-D:dovecot=2.3.18-r1 so:libc.musl-armhf.so.1 so:libdovecot.so.0
-p:so:libdovecot-sql.so.0=0.0.0
 
 C:Q1gaw1/PTEc9tgJWSjcaeDoiUGmkI=
 P:libfastjson-dev
@@ -44659,6 +44880,20 @@ c:f2fb0551a0f28f91123e24db5989d594ae431544
 D:bluez-libs=5.64-r0 pkgconfig
 p:pc:bluez=5.64
 
+C:Q1tO1sn+eq0V8kGSXRvPSlyYI0ONs=
+P:git-dbg
+V:2.36.0-r0
+A:armhf
+S:29537673
+I:61042688
+T:Distributed version control system (debug symbols)
+U:https://www.git-scm.com/
+L:GPL-2.0-or-later
+o:git
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650626438
+c:4b52c52d4d966006a98591504e2f43c4a3b7d151
+
 C:Q1JV04WU/w0W/SbyC/BjIhdLusPIQ=
 P:mpg123-dev
 V:1.29.3-r0
@@ -44781,23 +45016,6 @@ t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:so:libc.musl-armhf.so.1
 i:lua5.4 lua-posixtz=0.5-r3
-
-C:Q1YmBVgdCPQGraENdzCl6n78We5as=
-P:libecpg-dev
-V:14.2-r2
-A:armhf
-S:287502
-I:1245184
-T:ECPG - Embedded SQL in C (development files)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:7c2e36558422cbba99fc2e2ec4cf322df44ce9c9
-k:14
-D:libpq-dev=14.2-r2 libecpg=14.2-r2 pkgconfig so:libc.musl-armhf.so.1
-p:pc:libecpg=14.2 pc:libpgtypes=14.2 cmd:ecpg=14.2-r2
 
 C:Q188U/W7lLVCCgAiWu3Xp9fN+WM48=
 P:arpwatch-doc
@@ -45397,23 +45615,6 @@ c:ef8acca4e90eddacc718fc98a8a674a661fbbb5a
 D:so:libc.musl-armhf.so.1 so:libusb-1.0.so.0
 p:so:libopenobex.so.2=1.7.2 cmd:obex-check-device=1.7.2-r3
 
-C:Q1DSGei48XHaHhmge+Q2aMGmw9ngU=
-P:postgresql13-contrib
-V:13.6-r2
-A:armhf
-S:579853
-I:2412544
-T:Extension modules distributed with PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql13
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:14dbb2a4ef89306af9ac28cb8ed04a1171a47cb7
-k:13
-D:postgresql13=13.6-r2 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libpq.so.5 so:libssl.so.1.1 so:libuuid.so.1 so:libxml2.so.2 so:libz.so.1
-p:postgresql-contrib cmd:oid2name cmd:pg_standby cmd:vacuumlo
-
 C:Q1vmMeoLPTHmAfRa0RKWBqyAdYXyo=
 P:perl-data-page-pageset-doc
 V:1.02-r3
@@ -45459,21 +45660,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1635896151
 c:0b3a50c008537261a5102ffabfaf6301284b7272
 D:so:libc.musl-armhf.so.1 so:liblber.so.2 so:libldap.so.2
-
-C:Q15Q2GMjuG/jXmfilVZXs8/XRVvY4=
-P:dovecot-submissiond
-V:2.3.18-r1
-A:armhf
-S:38988
-I:135168
-T:IMAP and POP3 server (mail submission agent)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:3e8dcaa64ac077634f214293a38ebb9beb038ad6
-D:dovecot=2.3.18-r1 so:libc.musl-armhf.so.1 so:libdovecot-storage.so.0 so:libdovecot.so.0
 
 C:Q1Ft1bivwiTfDQ6Kq6A7YLvXPtYMc=
 P:font-sun-misc
@@ -45916,6 +46102,21 @@ t:1649051030
 c:1098e0991fec54686301f3a80585895caacfd435
 i:openrc snort=2.9.18-r0
 
+C:Q1CnC8+bHicjYX5otZEfJUP3JJy50=
+P:dovecot-pigeonhole-plugin-ldap
+V:2.3.18-r2
+A:armhf
+S:17803
+I:61440
+T:Sieve and managesieve plugin for Dovecot (LDAP support)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
+D:dovecot-pigeonhole-plugin=2.3.18-r2 dovecot-ldap=2.3.18-r2 so:libc.musl-armhf.so.1 so:liblber.so.2 so:libldap.so.2
+
 C:Q1+tPhMD2tRKZI5ox2pbxBeLklJhE=
 P:highlight-doc
 V:4.2-r0
@@ -46149,6 +46350,22 @@ t:1643554323
 c:869226f37490260941fc10509ec886e94001ddfc
 D:perl so:libc.musl-armhf.so.1 so:libgd.so.3
 p:cmd:bdf2gdfont.pl=2.75-r0
+
+C:Q16pou3k7+c1NpLFz8anz+3OLwMPY=
+P:boost1.77-wave
+V:1.77.0-r5
+A:armhf
+S:304988
+I:901120
+T:Boost wave shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:so:libboost_thread.so.1.77.0 so:libc.musl-armhf.so.1 so:libgcc_s.so.1
+p:boost-wave=1.77.0-r5 so:libboost_wave.so.1.77.0=1.77.0
 
 C:Q1OrmOYNzS5qLE+fmhXP4NEDYc8RE=
 P:perl-test-requiresinternet-doc
@@ -46550,6 +46767,23 @@ c:3f54a530fcc91b9ac2f990abb0e4952d7a93c0ec
 D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libgnutls.so.30 so:libstdc++.so.6
 p:so:libgnutlsxx.so.30=30.0.0
 
+C:Q1fiYiD9OZDaPaFfkri+PA5EnQ4Yk=
+P:postgresql14-plpython3
+V:14.2-r3
+A:armhf
+S:44885
+I:143360
+T:PL/Python3 procedural language for PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql14
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:1b0114dd10ab2d9a973d0e45d1307d425430515a
+k:14
+D:postgresql14=14.2-r3 python3 so:libc.musl-armhf.so.1 so:libpython3.10.so.1.0
+p:postgresql-plpython3
+
 C:Q1ULajUKcoGYf2gffcKaIFBMSgvGs=
 P:rabbitmq-c-doc
 V:0.11.0-r3
@@ -46943,22 +47177,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1595404768
 c:c69e3a86b4b604b287b7539c32a6aac5a072ea27
 
-C:Q10uBKL/uwq7H3c0DXZABhiZY0FG0=
-P:libical-dev
-V:3.0.13-r1
-A:armhf
-S:280244
-I:3203072
-T:Reference implementation of the iCalendar format (development files)
-U:https://libical.github.io/libical/
-L:LGPL-2.1-only OR MPL-2.0
-o:libical
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:4ba60b5caa8b640554a44fc9a9f88587a3ec1589
-D:libxml2-dev gobject-introspection-dev libical=3.0.13-r1 pc:glib-2.0 pc:gobject-2.0 pc:icu-i18n pkgconfig
-p:pc:libical-glib=3.0.13 pc:libical=3.0.13
-
 C:Q1kq2WFbDZdsGKTognr95PEwsGdHE=
 P:mosquitto-doc
 V:2.0.14-r0
@@ -46989,6 +47207,22 @@ t:1636528256
 c:34b142f4b02dc2927a2675761a8a03ba563815d4
 D:so:libc.musl-armhf.so.1
 p:so:libtasn1.so.6=6.6.2
+
+C:Q19jj+/anQvrvfF2R2OwTJW2sbXek=
+P:nodejs-doc
+V:16.14.2-r1
+A:armhf
+S:14118
+I:53248
+T:JavaScript runtime built on V8 engine - LTS version (documentation)
+U:https://nodejs.org/
+L:MIT
+o:nodejs
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:c3fe3444a4aaecbae115fc42ab463d35196acf58
+k:100
+i:docs nodejs=16.14.2-r1
 
 C:Q1KQc+OUoBvPm9TfJ2sI2DPMFxvis=
 P:apache2-dev
@@ -47295,6 +47529,21 @@ t:1622914361
 c:988c4057d60ade6a214b14741f3e0950b3105c3a
 D:libxv=1.0.11-r2 pc:videoproto pc:x11 pc:xext pc:xproto pkgconfig
 p:pc:xv=1.0.11
+
+C:Q1qS97tg4AxLf0aaKYizOeuLPR9gQ=
+P:dovecot-doc
+V:2.3.18-r2
+A:armhf
+S:606265
+I:2560000
+T:IMAP and POP3 server (documentation)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
+i:docs dovecot=2.3.18-r2
 
 C:Q1y0Bo6OsxOW1wSaGsdgTu6r7Pruo=
 P:encodings
@@ -47906,22 +48155,6 @@ t:1644976510
 c:0a47219c10df119ef4899ac6e6bb141c91f00cfc
 i:docs ldb=2.4.2-r0
 
-C:Q1tMBQxE2e+k6IpbvLp4inrLZcEVI=
-P:boost1.77-prg_exec_monitor
-V:1.77.0-r4
-A:armhf
-S:28929
-I:77824
-T:Boost prg_exec_monitor shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
-p:boost-prg_exec_monitor=1.77.0-r4 so:libboost_prg_exec_monitor.so.1.77.0=1.77.0
-
 C:Q17I7QmzfIR6TITuf1KH/RobGkqhg=
 P:perl-unix-syslog
 V:1.1-r16
@@ -48197,6 +48430,21 @@ c:6b9b9e86409e52fa37aa5e5ba6c7d80d8fd888e2
 D:zlib-dev libjpeg-turbo-dev libwebp-dev xz-dev zstd-dev libtiffxx=4.3.0-r1 pkgconfig tiff=4.3.0-r1
 p:pc:libtiff-4=4.3.0
 
+C:Q122aipAWgplkNJQU6LNcuHWh6Dwc=
+P:git-email
+V:2.36.0-r0
+A:armhf
+S:870031
+I:1744896
+T:Git tools for sending email
+U:https://www.git-scm.com/
+L:GPL-2.0-or-later
+o:git
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650626438
+c:4b52c52d4d966006a98591504e2f43c4a3b7d151
+D:perl perl-git=2.36.0-r0 perl-net-smtp-ssl perl-authen-sasl so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libcurl.so.4 so:libpcre2-8.so.0 so:libssl.so.1.1 so:libz.so.1
+
 C:Q1jUxMQlD8PP0gWVL+sDke2cl2TZk=
 P:libcap-ng
 V:0.8.2-r1
@@ -48335,22 +48583,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1613662791
 c:bc8eebfe9c4508dd77d938a43e9c57957ca8e1f7
 
-C:Q1emYfFrayvuvoFMVqgSPiE7l3yGs=
-P:py3-hypothesis
-V:6.43.3-r0
-A:armhf
-S:700375
-I:2637824
-T:Advanced property-based (QuickCheck-like) testing for Python
-U:https://hypothesis.works/
-L:MPL-2.0
-o:py3-hypothesis
-m:Michał Polański <michal@polanski.me>
-t:1650282665
-c:ac0467fe6b068fe834c7b81d6a7714374451d0ff
-D:py3-attrs py3-sortedcontainers
-p:py-hypothesis=6.43.3-r0 cmd:hypothesis=6.43.3-r0 py3.10:hypothesis=6.43.3-r0
-
 C:Q1LG92ah1Urn/EugtKPW62972rqww=
 P:readline-doc
 V:8.1.2-r0
@@ -48396,23 +48628,6 @@ t:1634364270
 c:670bf5a8cc5bc605eede8ca2fd55b50a5c9f8660
 D:gzip so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libintl.so.8 so:libncursesw.so.6 so:libssl.so.1.1 so:libz.so.1
 p:cmd:lynx=2.8.9_p1-r7
-
-C:Q1iHdi8xZAPwMW4kpnJ9vEh2MeuEg=
-P:postgresql14-client
-V:14.2-r2
-A:armhf
-S:1048443
-I:2420736
-T:PostgreSQL client
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:7c2e36558422cbba99fc2e2ec4cf322df44ce9c9
-k:14
-D:postgresql-common so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libpq.so.5 so:libreadline.so.8 so:libz.so.1
-p:postgresql-client cmd:clusterdb cmd:createdb cmd:createuser cmd:dropdb cmd:dropuser cmd:pg_amcheck cmd:pg_basebackup cmd:pg_dump cmd:pg_dumpall cmd:pg_isready cmd:pg_receivewal cmd:pg_recvlogical cmd:pg_restore cmd:pg_verifybackup cmd:pgbench cmd:psql cmd:reindexdb cmd:vacuumdb
 
 C:Q1WMoWi4y2tlj0R0nVkatPjIxSgHk=
 P:s6-networking-static
@@ -48472,6 +48687,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1644439688
 c:478b91ea799a7d6e81fceb1fb49fe9cfd8e439c8
 i:docs gnupg=2.2.34-r0
+
+C:Q1spRiZn8QXHr9RKF5J7AT2ZWiV6E=
+P:zlib-dev
+V:1.2.12-r1
+A:armhf
+S:32650
+I:143360
+T:A compression/decompression Library (development files)
+U:https://zlib.net/
+L:Zlib
+o:zlib
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650682690
+c:6754a9005594de4243aad9b2744546971078c6c7
+D:pkgconfig zlib=1.2.12-r1
+p:pc:zlib=1.2.12
 
 C:Q1BXpi/huRBFtPhwfhG5so+abBhmE=
 P:libva
@@ -49292,6 +49523,22 @@ c:08788e47c1dc58d60368255cf374110f60af09bb
 D:awall
 p:cmd:setup-firewall=1.11.1-r0
 
+C:Q1n0J9aV91Ql91ISHPbfjnAeK5dv0=
+P:git-perl
+V:2.36.0-r0
+A:armhf
+S:28251
+I:135168
+T:Additional Git commands that requires perl
+U:https://www.git-scm.com/
+L:GPL-2.0-or-later
+o:git
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650626438
+c:4b52c52d4d966006a98591504e2f43c4a3b7d151
+D:git=2.36.0-r0 perl-git=2.36.0-r0 perl
+i:git=2.36.0-r0 perl
+
 C:Q1kP1/Fj/BElK3kQPnSGHOcIaK3vo=
 P:gvpe-doc
 V:3.1-r2
@@ -49306,6 +49553,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1634364270
 c:670bf5a8cc5bc605eede8ca2fd55b50a5c9f8660
 i:docs gvpe=3.1-r2
+
+C:Q1JOaw84/4ljjII/zGIEf4Chujdxc=
+P:icu-doc
+V:71.1-r0
+A:armhf
+S:29315
+I:98304
+T:International Components for Unicode library (documentation)
+U:https://icu.unicode.org/
+L:MIT ICU Unicode-TOU
+o:icu
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:a4c5336cfbdcd9f6427659e648c673fdff374691
+i:docs icu=71.1-r0
 
 C:Q1+uixsfRKvqHOKdNLMLvGAw0HtAg=
 P:squid-lang-cs
@@ -49338,6 +49600,21 @@ t:1635117238
 c:2cf3fe063b1b9e308372af7e2c2348e9e494a135
 D:lua5.1 so:libc.musl-armhf.so.1 so:libodbc.so.2
 i:lua-sql-odbc=2.6.0-r1 lua5.1
+
+C:Q1vf5Q2A5x6jyFWCpjfljiU1O4b5c=
+P:perl-git-svn
+V:2.36.0-r0
+A:armhf
+S:51058
+I:217088
+T:Perl interface to Git::SVN
+U:https://www.git-scm.com/
+L:GPL-2.0-or-later
+o:git
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650626438
+c:4b52c52d4d966006a98591504e2f43c4a3b7d151
+D:git=2.36.0-r0 perl-git=2.36.0-r0
 
 C:Q1UIAmkppcRrem3Po2CBifK9PhahI=
 P:uwsgi-dumbloop
@@ -49494,6 +49771,22 @@ t:1645440846
 c:345b5254f9246acce48c58b84e164b2eb815bf5a
 D:perl perl-sub-exporter-progressive perl-module-runtime perl-module-implementation perl-variable-magic
 
+C:Q1gEK+RQgVQCxXThc30A3hyobA/Nc=
+P:dovecot-sqlite
+V:2.3.18-r2
+A:armhf
+S:7038
+I:40960
+T:SQLite driver for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
+D:dovecot-sql=2.3.18-r2 so:libc.musl-armhf.so.1 so:libsqlite3.so.0
+p:so:libdriver_sqlite.so=0
+
 C:Q1IBOabIQhbksKT+4wzH51DiIHd4o=
 P:ucarp
 V:1.5.2-r9
@@ -49509,23 +49802,6 @@ t:1617121253
 c:54fcfc69ffdeb11d2779ea4c64f9b48ae122383a
 D:so:libc.musl-armhf.so.1 so:libpcap.so.1
 p:cmd:ucarp=1.5.2-r9
-
-C:Q1UvOKB4DBo7ngWYtlMRTIG7tXQbE=
-P:postgresql14-contrib
-V:14.2-r2
-A:armhf
-S:589559
-I:2506752
-T:Extension modules distributed with PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:7c2e36558422cbba99fc2e2ec4cf322df44ce9c9
-k:14
-D:postgresql14=14.2-r2 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libpq.so.5 so:libuuid.so.1 so:libxml2.so.2 so:libz.so.1
-p:postgresql-contrib cmd:oid2name cmd:vacuumlo
 
 C:Q1iJcPCd+j3oYGV5v2vvAESAuc2n0=
 P:powertop
@@ -49773,22 +50049,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1647513089
 c:ececc6b34ca46f6efad005da9ab4f17ea4bac3f2
 
-C:Q1a+iAd6duDX8+GvzLyckd994h5iU=
-P:boost1.77-regex
-V:1.77.0-r4
-A:armhf
-S:121327
-I:270336
-T:Boost regex shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
-p:boost-regex=1.77.0-r4 so:libboost_regex.so.1.77.0=1.77.0
-
 C:Q1LKSIj/xklGO+5fMTmko6Sjo0Q5E=
 P:libdaemon
 V:0.14-r3
@@ -49819,22 +50079,6 @@ m:Fabian Affolter <fabian@affolter-engineering.ch>
 t:1648526245
 c:039d4f343743c256429b8933f017ddcc1c29596b
 i:docs ctags=5.9.20220327.0-r0
-
-C:Q10MV0+nGTY8QCXilz0QBLL0QxgQ0=
-P:boost1.77-math
-V:1.77.0-r4
-A:armhf
-S:362624
-I:917504
-T:Boost math shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
-p:boost-math=1.77.0-r4 so:libboost_math_c99.so.1.77.0=1.77.0 so:libboost_math_c99f.so.1.77.0=1.77.0 so:libboost_math_c99l.so.1.77.0=1.77.0 so:libboost_math_tr1.so.1.77.0=1.77.0 so:libboost_math_tr1f.so.1.77.0=1.77.0 so:libboost_math_tr1l.so.1.77.0=1.77.0
 
 C:Q1YjmuBA2gSKILR+ZWJbSSltFpluU=
 P:daq-static
@@ -50047,6 +50291,22 @@ c:670bf5a8cc5bc605eede8ca2fd55b50a5c9f8660
 D:openssh-client perl-io-tty so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libncursesw.so.6 so:libprotobuf.so.29 so:libstdc++.so.6 so:libz.so.1
 p:cmd:mosh-client=1.3.2-r22
 
+C:Q1parAjLkk5J80Cl//Kj6Kfnh1Kt8=
+P:boost1.77-log
+V:1.77.0-r5
+A:armhf
+S:251943
+I:720896
+T:Boost log shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:so:libboost_filesystem.so.1.77.0 so:libboost_thread.so.1.77.0 so:libc.musl-armhf.so.1 so:libgcc_s.so.1
+p:boost-log=1.77.0-r5 so:libboost_log.so.1.77.0=1.77.0
+
 C:Q1pXYdeIYk6aaFOlNO9e69VCWfCiY=
 P:check-doc
 V:0.15.2-r0
@@ -50153,21 +50413,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1610489771
 c:1118fff73bb8f3a967c12d42de2d8c4a0a7ed162
 D:libjpeg-turbo-dev
-
-C:Q1f45K9HH9wCTFP0ERdoYj3njpU/4=
-P:dovecot-pop3d
-V:2.3.18-r1
-A:armhf
-S:23562
-I:94208
-T:IMAP and POP3 server (POP3 daemon)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:3e8dcaa64ac077634f214293a38ebb9beb038ad6
-D:dovecot=2.3.18-r1 so:libc.musl-armhf.so.1 so:libdovecot-storage.so.0 so:libdovecot.so.0
 
 C:Q1wQMPTi20/bie/QsOmpQUDUM3Has=
 P:djbdns
@@ -50871,22 +51116,6 @@ D:perl
 p:cmd:dnssort=1.0.5-r0
 i:ndisc6 perl
 
-C:Q1JZPGeTobCgGJowiXcYgIToqhRUw=
-P:postfix-sqlite
-V:3.7.1-r0
-A:armhf
-S:5379
-I:45056
-T:sqlite map support for postfix
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1650535864
-c:49f64ba734a6ad9bd5ed1fe37537678400d217cf
-D:so:libc.musl-armhf.so.1 so:libsqlite3.so.0
-p:so:postfix-sqlite.so=0
-
 C:Q1ZubteGvwR6iP+6/Fkw7Lbq47iwM=
 P:perl-io-stringy
 V:2.113-r1
@@ -51149,6 +51378,24 @@ t:1646247633
 c:9ecba8a514827daf64521008306fb137b498ebf5
 D:alpine-baselayout-data=3.2.0-r20
 
+C:Q18iRQ7zYE9Wfly7G4dqQvTMVD12A=
+P:postgresql13-contrib-jit
+V:13.6-r3
+A:armhf
+S:1461524
+I:3309568
+T:Extension modules distributed with PostgreSQL (JIT support)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql13
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:56e4b0b4586e4abb4b9f099aa423fea711a7ba96
+k:13
+D:postgresql13-contrib=13.6-r3
+p:postgresql-contrib-jit
+i:postgresql13-jit postgresql13-contrib=13.6-r3
+
 C:Q1FuWnDSo8HDxZAHGfIeu/p0WIhu8=
 P:samurai
 V:1.2-r1
@@ -51275,22 +51522,6 @@ c:f10a87e4f4e38df70d59e699a19924bc0cd8566c
 D:so:libc.musl-armhf.so.1 so:libcups.so.2
 p:cmd:ipptool=2.4.1-r1
 
-C:Q15sUsYEq6D/3o9dA25M18XJeORa4=
-P:harfbuzz
-V:4.2.0-r0
-A:armhf
-S:622955
-I:1490944
-T:Text shaping library
-U:https://freedesktop.org/wiki/Software/HarfBuzz
-L:MIT
-o:harfbuzz
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649036890
-c:3e70aa2da418b170f21a38ee9f269eea20275dbc
-D:so:libc.musl-armhf.so.1 so:libfreetype.so.6 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libgraphite2.so.3
-p:so:libharfbuzz-gobject.so.0=0.40200.0 so:libharfbuzz-subset.so.0=0.40200.0 so:libharfbuzz.so.0=0.40200.0
-
 C:Q1uc+j13PPWA00+3t5DNGBkm6UIDY=
 P:raspberrypi-bootloader-cutdown
 V:1.20220308-r0
@@ -51398,22 +51629,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl perl-html-formattext-withlinks
-
-C:Q1+OfWnWVnb3PtZTpZ1BGVtjHRLS4=
-P:boost1.77-wave
-V:1.77.0-r4
-A:armhf
-S:304990
-I:901120
-T:Boost wave shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:so:libboost_thread.so.1.77.0 so:libc.musl-armhf.so.1 so:libgcc_s.so.1
-p:boost-wave=1.77.0-r4 so:libboost_wave.so.1.77.0=1.77.0
 
 C:Q1iT9nt8oXhROb0cqcMVocuabw4VE=
 P:linux-firmware-sb16
@@ -52523,22 +52738,6 @@ t:1611784183
 c:3152802f76b79d2ced2a79ecf1dffb680fd354c0
 D:abuild build-base git
 
-C:Q1++LFm87otu1BI8LmL6w9tgduR5A=
-P:boost1.77-thread
-V:1.77.0-r4
-A:armhf
-S:35853
-I:102400
-T:Boost thread shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
-p:boost-thread=1.77.0-r4 so:libboost_thread.so.1.77.0=1.77.0
-
 C:Q1uy9vaAOaTvPzsScfLEMdwlo/SDI=
 P:graphicsmagick-zsh-completion
 V:5.8.1-r4
@@ -52586,21 +52785,6 @@ t:1632215752
 c:6a2aa7f605c6d6e8e06f29e3cad391ee9da7b9ad
 D:so:libasound.so.2 so:libc.musl-armhf.so.1 so:libjack.so.0
 p:so:libportaudio.so.2=2.0.0
-
-C:Q1nRNsdSFrOze/5zNWiEZxtvjMWQA=
-P:boost-dev
-V:1.77.0-r4
-A:armhf
-S:1498
-I:4096
-T:Free peer-reviewed portable C++ source libraries
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:boost1.77-dev=1.77.0-r4
 
 C:Q1T0woowoF0wloVswMiG3RMmumiLs=
 P:snort-dev
@@ -52758,21 +52942,6 @@ t:1538845804
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:perl perl-xml-parser gettext file
 p:cmd:intltool-extract=0.51.0-r4 cmd:intltool-merge=0.51.0-r4 cmd:intltool-prepare=0.51.0-r4 cmd:intltool-update=0.51.0-r4 cmd:intltoolize=0.51.0-r4
-
-C:Q1nE9Qq+DaqH0IKtD0BE3DtuNOcS8=
-P:git-svn
-V:2.35.2-r0
-A:armhf
-S:22161
-I:81920
-T:Subversion support for git
-U:https://www.git-scm.com/
-L:GPL-2.0-or-later
-o:git
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649794230
-c:2d0c9138690fceb21270c01041b3e6d09abd3fd2
-D:perl perl-git-svn=2.35.2-r0 perl-subversion perl-term-readkey
 
 C:Q1vMEv7idFY1g5r7yADBB/3gH3GRA=
 P:ulogd
@@ -53038,22 +53207,6 @@ t:1634364270
 c:670bf5a8cc5bc605eede8ca2fd55b50a5c9f8660
 D:/bin/sh so:libc.musl-armhf.so.1 so:libconfig.so.11 so:libcrypto.so.1.1 so:libprotobuf-c.so.1 so:libssl.so.1.1
 p:cmd:umurmurd=0.2.20-r2
-
-C:Q1uNvymtH6ue0K/MC44SuSwxOo6sA=
-P:boost1.77-container
-V:1.77.0-r4
-A:armhf
-S:32491
-I:81920
-T:Boost container shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
-p:boost-container=1.77.0-r4 so:libboost_container.so.1.77.0=1.77.0
 
 C:Q1KPNpH57j2vA6ECo+K1WElwSW6c0=
 P:alsa-lib-dev
@@ -53449,6 +53602,23 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1650118919
 c:70bc0ead15ef86e573fae993be31c08bcbd687e4
 p:linux-firmware-any
+
+C:Q124B7VaYXcxUrJUwEicS1w4Jnnlw=
+P:postgresql13-client
+V:13.6-r3
+A:armhf
+S:971457
+I:2252800
+T:PostgreSQL client
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql13
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:56e4b0b4586e4abb4b9f099aa423fea711a7ba96
+k:13
+D:postgresql-common so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libpq.so.5 so:libreadline.so.8 so:libz.so.1
+p:postgresql-client cmd:clusterdb cmd:createdb cmd:createuser cmd:dropdb cmd:dropuser cmd:pg_basebackup cmd:pg_dump cmd:pg_dumpall cmd:pg_isready cmd:pg_receivewal cmd:pg_recvlogical cmd:pg_restore cmd:pg_verifybackup cmd:pgbench cmd:psql cmd:reindexdb cmd:vacuumdb
 
 C:Q1fKgW91AC5JNsTq4copV/eOEnsRc=
 P:py3-pygments-doc
@@ -54402,23 +54572,6 @@ t:1650039645
 c:42ed3c1a83d360efd7528e137e7cae5f5e180032
 D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libperl.so so:libstdc++.so.6
 
-C:Q1N3hiOKfuEpc3qig2L44vX5mKYmU=
-P:libpq
-V:14.2-r2
-A:armhf
-S:121740
-I:278528
-T:PostgreSQL client library
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:7c2e36558422cbba99fc2e2ec4cf322df44ce9c9
-k:14
-D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
-p:so:libpq.so.5=5.14
-
 C:Q1+hvUvIuv34BecGTpnb2JABOKjOo=
 P:kyua
 V:0.13-r4
@@ -54832,22 +54985,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-file-sharedir=1.118-r0
-
-C:Q1Rtv1WLyx2PaY+PeIgmvz7KETMRs=
-P:boost1.77-program_options
-V:1.77.0-r4
-A:armhf
-S:138458
-I:385024
-T:Boost program_options shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
-p:boost-program_options=1.77.0-r4 so:libboost_program_options.so.1.77.0=1.77.0
 
 C:Q19uzhS71czxPtqmQWLaVwI1o8G/o=
 P:sfic-doc
@@ -55424,21 +55561,6 @@ t:1627487157
 c:35f6d73478925c807a785f684ce54cb4045ab4eb
 i:docs perl-params-util=1.102-r1
 
-C:Q10ppTTJuyISXQKrtJb9qa1EonS5A=
-P:dovecot-gssapi
-V:2.3.18-r1
-A:armhf
-S:7741
-I:36864
-T:GSSAPI auth plugin for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:3e8dcaa64ac077634f214293a38ebb9beb038ad6
-D:dovecot=2.3.18-r1 so:libc.musl-armhf.so.1 so:libgssapi.so.3 so:libkrb5.so.26
-
 C:Q1hA7gbrOGl67gInm202dcr+7vTMk=
 P:rtl-sdr
 V:0.6.0-r3
@@ -55963,22 +56085,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1610489771
 c:1118fff73bb8f3a967c12d42de2d8c4a0a7ed162
 
-C:Q1bKfcmN2k1hrhPAzE8HW7SHLcrkY=
-P:postfix-pcre
-V:3.7.1-r0
-A:armhf
-S:7178
-I:49152
-T:pcre map support for postfix
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1650535864
-c:49f64ba734a6ad9bd5ed1fe37537678400d217cf
-D:so:libc.musl-armhf.so.1 so:libpcre2-8.so.0
-p:so:postfix-pcre.so=0
-
 C:Q1btiDJarfVp1NV4mAxv/DS6tQgBg=
 P:perl-control-x10
 V:2.09-r4
@@ -56196,6 +56302,21 @@ t:1637154272
 c:36d8e13fe6078a163f4cf2f37fe0e3961045001e
 D:nginx so:libGeoIP.so.1 so:libc.musl-armhf.so.1
 
+C:Q1O53I7fPPqiSyJX5nbaLlPMthJq4=
+P:git-p4
+V:2.36.0-r0
+A:armhf
+S:44868
+I:192512
+T:Git tools for working with Perforce depots
+U:https://www.git-scm.com/
+L:GPL-2.0-or-later
+o:git
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650626438
+c:4b52c52d4d966006a98591504e2f43c4a3b7d151
+D:git=2.36.0-r0 git-fast-import=2.36.0-r0
+
 C:Q1fBrd7pEaH2zfV4sDt2YJbl7RIVI=
 P:cdparanoia-dev
 V:10.2-r9
@@ -56305,23 +56426,6 @@ t:1640442741
 c:16e7174fb96202d91101a8f15090473132c3a43d
 D:so:libc.musl-armhf.so.1
 p:cmd:klogd=1.5.1-r3 cmd:syslogd=1.5.1-r3
-
-C:Q1K8ROTW1qboRaMOqua/lqkwV3phU=
-P:postgresql14-pltcl
-V:14.2-r2
-A:armhf
-S:24511
-I:102400
-T:PL/Tcl procedural language for PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:7c2e36558422cbba99fc2e2ec4cf322df44ce9c9
-k:14
-D:postgresql14=14.2-r2 pgtcl so:libc.musl-armhf.so.1 so:libtcl8.6.so
-p:postgresql-pltcl
 
 C:Q1DMXiBT+0bTdu72mfxVZopuOppOM=
 P:open-lldp-doc
@@ -56459,6 +56563,23 @@ t:1635117238
 c:2cf3fe063b1b9e308372af7e2c2348e9e494a135
 i:gnokii=0.6.31-r12 lang
 
+C:Q12DsDO0RDhKxYUtUaGJyfSjUZEN8=
+P:postgresql13-openrc
+V:13.6-r3
+A:armhf
+S:1557
+I:4096
+T:A sophisticated object-relational DBMS, version 13 (OpenRC init scripts)
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql13
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:56e4b0b4586e4abb4b9f099aa423fea711a7ba96
+k:13
+D:postgresql-common-openrc
+i:openrc postgresql13=13.6-r3
+
 C:Q1G1xjZiXFvHsJP/2W7BWqe9sZOA8=
 P:aspell-lang
 V:0.60.8-r1
@@ -56536,23 +56657,6 @@ t:1642947236
 c:367655e48167e396ca48dd878d52a111c4a0a803
 D:python3
 p:cmd:normalizer=2.0.10-r0 py3.10:charset_normalizer=2.0.10-r0
-
-C:Q1PufjQGU4/44SY9thb1h3bUp7Hgs=
-P:postgresql13-plpython3
-V:13.6-r2
-A:armhf
-S:44768
-I:143360
-T:PL/Python3 procedural language for PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql13
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:14dbb2a4ef89306af9ac28cb8ed04a1171a47cb7
-k:13
-D:postgresql13=13.6-r2 python3 so:libc.musl-armhf.so.1 so:libpython3.10.so.1.0
-p:postgresql-plpython3
 
 C:Q1kW2VfIHrNqnfiT1WDHfzOtvqlp0=
 P:uwsgi-router_radius
@@ -56969,22 +57073,6 @@ c:1e947e9896ac4d2cffa1c66a3bca1a02f19a0e54
 D:busybox so:libc.musl-armhf.so.1
 p:cmd:bbsuid=1.35.0-r10
 
-C:Q1Jo4bj+Mu3WcgFC7F56fNXf0vCuE=
-P:libical
-V:3.0.13-r1
-A:armhf
-S:376495
-I:1212416
-T:Reference implementation of the iCalendar format
-U:https://libical.github.io/libical/
-L:LGPL-2.1-only OR MPL-2.0
-o:libical
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:4ba60b5caa8b640554a44fc9a9f88587a3ec1589
-D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libicui18n.so.70 so:libicuuc.so.70 so:libstdc++.so.6 so:libxml2.so.2
-p:so:libical-glib.so.3=3.0.13 so:libical.so.3=3.0.13 so:libical_cxx.so.3=3.0.13 so:libicalss.so.3=3.0.13 so:libicalss_cxx.so.3=3.0.13 so:libicalvcal.so.3=3.0.13
-
 C:Q11uAl0uFKmMMOsNXZe0Z1BpbkFY4=
 P:libobjc
 V:11.2.1_git20220219-r2
@@ -57000,23 +57088,6 @@ t:1649697129
 c:6f07567ef59c9410aa58de67269a4067d9375fd6
 D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
 p:so:libobjc.so.4=4.0.0
-
-C:Q1iFQ2YuetXF5JurRbt9gNJviKvr8=
-P:postgresql14-jit
-V:14.2-r2
-A:armhf
-S:11691549
-I:21868544
-T:Just-in-time compilation support for PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:7c2e36558422cbba99fc2e2ec4cf322df44ce9c9
-k:14
-D:postgresql14=14.2-r2 so:libLLVM-13.so so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
-p:postgresql-jit
 
 C:Q1CK1put++mb/MYi2OK6XniHzJqqc=
 P:leveldb-doc
@@ -57110,21 +57181,6 @@ t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.3 so:libc.musl-armhf.so.1
 i:lua-pty=1.2.2-r1 lua5.3
-
-C:Q1Kh6psijOq9epTCp9AAveHpz0/j8=
-P:postfix-doc
-V:3.7.1-r0
-A:armhf
-S:759975
-I:2015232
-T:Secure and fast drop-in replacement for Sendmail (MTA) (documentation)
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1650535864
-c:49f64ba734a6ad9bd5ed1fe37537678400d217cf
-i:docs postfix=3.7.1-r0
 
 C:Q1XIcGEoaEDTafnah5A3V4NN4Vj4o=
 P:jitterentropy-library-doc
@@ -57595,6 +57651,22 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-inline-c=0.81-r2
 
+C:Q1JgTvgI6f7r5HpfUaWB/LX5LXUY8=
+P:boost1.77-wserialization
+V:1.77.0-r5
+A:armhf
+S:50931
+I:172032
+T:Boost wserialization shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:so:libboost_serialization.so.1.77.0 so:libc.musl-armhf.so.1 so:libgcc_s.so.1
+p:boost-wserialization=1.77.0-r5 so:libboost_wserialization.so.1.77.0=1.77.0
+
 C:Q1trJDrLi87H0Kn5LsWzKb6iNX00M=
 P:perl-crypt-eksblowfish-doc
 V:0.009-r9
@@ -57640,24 +57712,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1615957378
 c:fd7fe54b66c466c7a616ec1e703cf284ffc01844
 i:openrc sshguard=2.4.2-r0
-
-C:Q1SvgpUHVB2Q5+h1HS2TtFFh82fpQ=
-P:postgresql13-plperl-contrib
-V:13.6-r2
-A:armhf
-S:5776
-I:57344
-T:PL/Perl extension modules distributed with PostgreSQL
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql13
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:14dbb2a4ef89306af9ac28cb8ed04a1171a47cb7
-k:13
-D:postgresql13-plperl=13.6-r2 so:libc.musl-armhf.so.1 so:libperl.so
-p:postgresql-plperl-contrib
-i:postgresql13-plperl=13.6-r2 postgresql13-contrib=13.6-r2
 
 C:Q162LD7Oe03xOz8Hci/J1mcgffsxg=
 P:apr-util-ldap
@@ -57812,21 +57866,21 @@ t:1637154272
 c:36d8e13fe6078a163f4cf2f37fe0e3961045001e
 D:nginx so:libc.musl-armhf.so.1
 
-C:Q1KOfHJXTnzsFUg1gTGjjMxWqGKzU=
-P:boost1.77-stacktrace_basic
-V:1.77.0-r4
+C:Q16hksGtT3FefjT0VpkT3I1V/Baqg=
+P:boost1.77-coroutine
+V:1.77.0-r5
 A:armhf
-S:6017
-I:24576
-T:Boost stacktrace_basic shared library
+S:15294
+I:53248
+T:Boost coroutine shared library
 U:https://www.boost.org/
 L:BSL-1.0
 o:boost1.77
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
-p:boost-stacktrace_basic=1.77.0-r4 so:libboost_stacktrace_basic.so.1.77.0=1.77.0
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:so:libboost_context.so.1.77.0 so:libboost_thread.so.1.77.0 so:libc.musl-armhf.so.1 so:libgcc_s.so.1
+p:boost-coroutine=1.77.0-r5 so:libboost_coroutine.so.1.77.0=1.77.0
 
 C:Q1WzhsX5rM3laeBeTt2ky7eLbzxTI=
 P:liblksctp
@@ -58182,21 +58236,6 @@ c:a732f17fb428b12e9de942395758b9224b9556ae
 D:gettext perl perl-pod-parser
 p:cmd:msguntypot=0.66-r0 cmd:po4a-display-man=0.66-r0 cmd:po4a-display-pod=0.66-r0 cmd:po4a-gettextize=0.66-r0 cmd:po4a-normalize=0.66-r0 cmd:po4a-translate=0.66-r0 cmd:po4a-updatepo=0.66-r0 cmd:po4a=0.66-r0
 
-C:Q1GrxMos5U7HCGcj97kD2JrImIJG8=
-P:boost1.77-stacktrace_noop
-V:1.77.0-r4
-A:armhf
-S:3106
-I:20480
-T:Boost stacktrace_noop shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-p:boost-stacktrace_noop=1.77.0-r4 so:libboost_stacktrace_noop.so.1.77.0=1.77.0
-
 C:Q1cEIIDIJ6yWwyoeBbBr06fW8s00M=
 P:cppunit-doc
 V:1.15.1-r0
@@ -58334,22 +58373,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-devel-checklib=1.14-r1
-
-C:Q1Resdw8yNWX6iesq2ram4BQqnZoU=
-P:boost1.77-nowide
-V:1.77.0-r4
-A:armhf
-S:6831
-I:28672
-T:Boost nowide shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
-p:boost-nowide=1.77.0-r4 so:libboost_nowide.so.1.77.0=1.77.0
 
 C:Q158MqNNTjzSJR86/Rrt81Ms8N8is=
 P:lua-stdlib-doc
@@ -58965,22 +58988,6 @@ c:3679307172d226faa0e4265eb3c1ede46318b6f4
 D:gawk /bin/sh so:libc.musl-armhf.so.1 so:libpcre.so.1 so:libz.so.1
 p:so:libkamailio_ims.so.0=0.1 so:libprint.so.1=1.2 so:libsrdb1.so.1=1.0 so:libsrdb2.so.1=1.0 so:libtrie.so.1=1.0 cmd:kamailio=5.5.2-r2 cmd:kamcmd=5.5.2-r2 cmd:kamctl=5.5.2-r2 cmd:kamdbctl=5.5.2-r2
 
-C:Q17PArD4iMD8hD6HgFcO8jLIWCCzw=
-P:boost1.77-context
-V:1.77.0-r4
-A:armhf
-S:3664
-I:20480
-T:Boost context shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:so:libc.musl-armhf.so.1
-p:boost-context=1.77.0-r4 so:libboost_context.so.1.77.0=1.77.0
-
 C:Q1ja61miMVsI17QpNVBkRsIUNnC54=
 P:libjpeg-turbo-dev
 V:2.1.3-r1
@@ -59011,22 +59018,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1650021957
 c:13f2f1770b74484a7515b420c09aaf353b0b4b69
 D:mesa-dri-classic=21.3.8-r1 mesa-dri-gallium=21.3.8-r1 mesa-va-gallium mesa-vdpau-gallium
-
-C:Q1kQ719UZJGTIOwhii1VAm5qKVGgM=
-P:icu-libs
-V:70.1-r0
-A:armhf
-S:13451538
-I:33726464
-T:International Components for Unicode library (libraries)
-U:https://icu.unicode.org/
-L:MIT ICU Unicode-TOU
-o:icu
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:e83703e32b867bc32f59fd11822869ab0c0771a9
-D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
-p:so:libicudata.so.70=70.1 so:libicui18n.so.70=70.1 so:libicuio.so.70=70.1 so:libicutest.so.70=70.1 so:libicutu.so.70=70.1 so:libicuuc.so.70=70.1
 
 C:Q183751VMPBM5eZMFl6SLy2QmfS18=
 P:libffi
@@ -59239,22 +59230,6 @@ t:1632158278
 c:c7cd7aa6d5e6ab0b0c771f9ec3c28a9dcf7dfc64
 D:luajit lua-resty-lrucache
 
-C:Q1qIcV1eeED8SWDEp8h7kCJBPQ5U8=
-P:dovecot
-V:2.3.18-r1
-A:armhf
-S:3142645
-I:7577600
-T:IMAP and POP3 server
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:3e8dcaa64ac077634f214293a38ebb9beb038ad6
-D:openssl /bin/sh so:libbz2.so.1 so:libc.musl-armhf.so.1 so:libcap.so.2 so:libcrypto.so.1.1 so:libicui18n.so.70 so:libicuuc.so.70 so:liblzma.so.5 so:libsodium.so.23 so:libssl.so.1.1 so:libz.so.1
-p:so:lib01_acl_plugin.so=0 so:lib02_imap_acl_plugin.so=0 so:lib02_lazy_expunge_plugin.so=0 so:lib05_mail_crypt_acl_plugin.so=0 so:lib05_pop3_migration_plugin.so=0 so:lib10_last_login_plugin.so=0 so:lib10_mail_crypt_plugin.so=0 so:lib10_quota_plugin.so=0 so:lib11_imap_quota_plugin.so=0 so:lib11_trash_plugin.so=0 so:lib15_notify_plugin.so=0 so:lib20_charset_alias_plugin.so=0 so:lib20_fts_plugin.so=0 so:lib20_listescape_plugin.so=0 so:lib20_mail_log_plugin.so=0 so:lib20_mailbox_alias_plugin.so=0 so:lib20_notify_status_plugin.so=0 so:lib20_push_notification_plugin.so=0 so:lib20_quota_clone_plugin.so=0 so:lib20_replication_plugin.so=0 so:lib20_var_expand_crypt.so=0 so:lib20_virtual_plugin.so=0 so:lib20_zlib_plugin.so=0 so:lib21_fts_squat_plugin.so=0 so:lib30_imap_zlib_plugin.so=0 so:lib90_old_stats_plugin.so=0 so:lib95_imap_old_stats_plugin.so=0 so:lib99_welcome_plugin.so=0 so:libdcrypt_openssl.so=0 so:libdovecot-compression.so.0=0.0.0 so:libdovecot-dsync.so.0=0.0.0 so:libdovecot-fts.so.0=0.0.0 so:libdovecot-lda.so.0=0.0.0 so:libdovecot-login.so.0=0.0.0 so:libdovecot-storage.so.0=0.0.0 so:libdovecot.so.0=0.0.0 so:libfs_compress.so=0 so:libfs_crypt.so=0 so:libfs_mail_crypt.so=0 so:libold_stats_mail.so=0 so:libssl_iostream_openssl.so=0 so:libstats_auth.so=0 cmd:doveadm=2.3.18-r1 cmd:doveconf=2.3.18-r1 cmd:dovecot-sysreport=2.3.18-r1 cmd:dovecot=2.3.18-r1 cmd:dsync=2.3.18-r1
-
 C:Q1WZqUL8+hsy+NEC0BLPbEtDoUXSQ=
 P:asterisk-sounds-en
 V:18.2.2-r5
@@ -59347,22 +59322,6 @@ t:1635896152
 c:6ac674fdee1bb2ad77162f5cdd523a160c9db8f1
 D:nagios-plugins so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
 
-C:Q1AYm+XZbwDtv0Wa2ZdgaDOMb+/E0=
-P:boost1.77-type_erasure
-V:1.77.0-r4
-A:armhf
-S:16220
-I:57344
-T:Boost type_erasure shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:so:libboost_thread.so.1.77.0 so:libc.musl-armhf.so.1 so:libgcc_s.so.1
-p:boost-type_erasure=1.77.0-r4 so:libboost_type_erasure.so.1.77.0=1.77.0
-
 C:Q1Q10rBTKZBKOOlhzDu0if4Rf56mI=
 P:perl-test-leaktrace-doc
 V:0.17-r1
@@ -59392,20 +59351,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1620837485
 c:132cc3ff00dd538ed4a5d68d92a8a0e0fd0c683b
 D:libtirpc-conf
-
-C:Q19TZIIo3WJHPEyGFXwp2v6E239Xg=
-P:harfbuzz-static
-V:4.2.0-r0
-A:armhf
-S:1099914
-I:3891200
-T:Text shaping library (static libraries)
-U:https://freedesktop.org/wiki/Software/HarfBuzz
-L:MIT
-o:harfbuzz
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649036890
-c:3e70aa2da418b170f21a38ee9f269eea20275dbc
 
 C:Q1ZpLy4lRdFNQc3kbiBQWWmtFftdM=
 P:perl-http-date
@@ -60866,6 +60811,22 @@ c:3f28965a3ed74837435bd0d488463d10afe72f3f
 D:so:libc.musl-armhf.so.1
 p:so:libsmartcols.so.1=1.1.0
 
+C:Q1H//+SV/7vE+88Qa/nS6+e/cBnrY=
+P:boost1.77-context
+V:1.77.0-r5
+A:armhf
+S:3666
+I:20480
+T:Boost context shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:so:libc.musl-armhf.so.1
+p:boost-context=1.77.0-r5 so:libboost_context.so.1.77.0=1.77.0
+
 C:Q1OOODy0pVvzSJqrlxRS6Q5VSS0Ns=
 P:apr
 V:1.7.0-r1
@@ -60913,22 +60874,6 @@ t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:so:libc.musl-armhf.so.1
 i:lua5.2 lua-pc=1.0.0-r11
-
-C:Q1SlCkJGAdgIKidbhQp2fOumJA/sI=
-P:boost1.77-random
-V:1.77.0-r4
-A:armhf
-S:9545
-I:36864
-T:Boost random shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
-p:boost-random=1.77.0-r4 so:libboost_random.so.1.77.0=1.77.0
 
 C:Q1u2H15xBIj6KR+/hel9hAmEmDgrA=
 P:nfprofile
@@ -61131,6 +61076,39 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:so:libc.musl-armhf.so.1
 i:lua5.3 lua-struct=0.2-r3
 
+C:Q19JeMFNQEmeg+ppzjviLjhEY9rbk=
+P:postgresql13-pltcl
+V:13.6-r3
+A:armhf
+S:24565
+I:102400
+T:PL/Tcl procedural language for PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql13
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:56e4b0b4586e4abb4b9f099aa423fea711a7ba96
+k:13
+D:postgresql13=13.6-r3 pgtcl so:libc.musl-armhf.so.1 so:libtcl8.6.so
+p:postgresql-pltcl
+
+C:Q1JmmQh7VN9thirWzyjLXWMW8LiDA=
+P:zlib
+V:1.2.12-r1
+A:armhf
+S:45339
+I:90112
+T:A compression/decompression Library
+U:https://zlib.net/
+L:Zlib
+o:zlib
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650682690
+c:6754a9005594de4243aad9b2744546971078c6c7
+D:so:libc.musl-armhf.so.1
+p:so:libz.so.1=1.2.12
+
 C:Q1l+LzWBxCb+gkQv8StfMqa/LI6t8=
 P:xmlrpc-c-client
 V:1.51.07-r0
@@ -61253,22 +61231,38 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-extutils-helpers=0.026-r2
 
-C:Q1zNPArD1j8c6j9NQITxfvavD7Fsc=
+C:Q1CsJECkb6uAThnyINdCHtf19kbv8=
 P:postgresql13
-V:13.6-r2
+V:13.6-r3
 A:armhf
-S:5006046
+S:5006121
 I:12218368
 T:A sophisticated object-relational DBMS, version 13
 U:https://www.postgresql.org/
 L:PostgreSQL
 o:postgresql13
 m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:14dbb2a4ef89306af9ac28cb8ed04a1171a47cb7
+t:1650750896
+c:56e4b0b4586e4abb4b9f099aa423fea711a7ba96
 k:13
-D:postgresql13-client postgresql-common tzdata /bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libicui18n.so.70 so:libicuuc.so.70 so:libldap.so.2 so:libpq.so.5 so:libssl.so.1.1 so:libxml2.so.2
-p:postgresql cmd:pg_test_fsync cmd:pg_checksums cmd:pg_resetwal cmd:pg_controldata cmd:pg_waldump cmd:pg_test_timing cmd:initdb cmd:postmaster cmd:postgres cmd:pg_archivecleanup cmd:pg_rewind cmd:pg_upgrade cmd:pg_ctl
+D:postgresql13-client postgresql-common tzdata /bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libicui18n.so.71 so:libicuuc.so.71 so:libldap.so.2 so:libpq.so.5 so:libssl.so.1.1 so:libxml2.so.2
+p:postgresql cmd:postgres cmd:pg_checksums cmd:pg_archivecleanup cmd:pg_rewind cmd:pg_resetwal cmd:pg_ctl cmd:postmaster cmd:pg_upgrade cmd:initdb cmd:pg_test_fsync cmd:pg_waldump cmd:pg_test_timing cmd:pg_controldata
+
+C:Q1XD40skzCPbBN5IGJF2Nt1g7b2GA=
+P:ell-dev
+V:0.50-r0
+A:armhf
+S:29043
+I:274432
+T:Linux library for embedded development (development files)
+U:https://01.org/ell
+L:GPL-2.0-only
+o:ell
+m:Milan P. Stanić <mps@arvanta.net>
+t:1650625933
+c:7398a530e5e2ab8fedba0df46da706502a631c1d
+D:ell=0.50-r0 pkgconfig
+p:pc:ell=0.50
 
 C:Q1Dc/K1eCN71ipYhn6QiQeHknoDJU=
 P:perl-socket-getaddrinfo
@@ -61450,6 +61444,21 @@ m:Nathan Angelacos <nangel@alpinelinux.org>
 t:1649093063
 c:3679307172d226faa0e4265eb3c1ede46318b6f4
 i:openrc kamailio=5.5.2-r2
+
+C:Q17vHWs2m94GTNZBxnSoxA5TpaCOU=
+P:git-gui
+V:2.36.0-r0
+A:armhf
+S:320346
+I:1568768
+T:GUI interface for git
+U:https://www.git-scm.com/
+L:GPL-2.0-or-later
+o:git
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650626438
+c:4b52c52d4d966006a98591504e2f43c4a3b7d151
+D:git=2.36.0-r0 tcl tk
 
 C:Q1cMguR+wvFt0pwbmsbAe4lPge9So=
 P:perl-sub-install
@@ -61845,24 +61854,6 @@ t:1637458715
 c:9eb58e5720f8b31c64bb08f937bdcbb508f26326
 i:docs c-ares=1.18.1-r0
 
-C:Q1ON689IMyQXF2Nrlovu9dnBfYbII=
-P:postgresql14-contrib-jit
-V:14.2-r2
-A:armhf
-S:1570739
-I:3522560
-T:Extension modules distributed with PostgreSQL (JIT support)
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:7c2e36558422cbba99fc2e2ec4cf322df44ce9c9
-k:14
-D:postgresql14-contrib=14.2-r2
-p:postgresql-contrib-jit
-i:postgresql14-jit postgresql14-contrib=14.2-r2
-
 C:Q1WHEoRZlYyc2lFIrERO6hgmyJzKw=
 P:fail2ban-openrc
 V:0.11.2-r2
@@ -62247,23 +62238,6 @@ t:1649633678
 c:2ac9b2328c7eb32a1c07a37f0715f578796af356
 D:so:libc.musl-armhf.so.1 so:libncursesw.so.6 so:libz.so.1
 p:cmd:atop-2.7.1=2.7.1-r1 cmd:atop=2.7.1-r1 cmd:atopacctd=2.7.1-r1 cmd:atopcat=2.7.1-r1 cmd:atopconvert=2.7.1-r1 cmd:atopgpud=2.7.1-r1 cmd:atopsar-2.7.1=2.7.1-r1 cmd:atopsar=2.7.1-r1
-
-C:Q1s+57MFXV3a52h0gwavZf2MZ8IJI=
-P:libecpg
-V:14.2-r2
-A:armhf
-S:75527
-I:167936
-T:ECPG - Embedded SQL in C
-U:https://www.postgresql.org/
-L:PostgreSQL
-o:postgresql14
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1647341764
-c:7c2e36558422cbba99fc2e2ec4cf322df44ce9c9
-k:14
-D:so:libc.musl-armhf.so.1 so:libpq.so.5
-p:postgresql-libs so:libecpg.so.6=6.14 so:libpgtypes.so.3=3.14
 
 C:Q1pLS9KaJKlAVrEB64gfgZ0VwjjTw=
 P:syslog-ng-openrc
@@ -62694,22 +62668,6 @@ c:a891cce696c59c10b6272eac835349d1a08294bf
 D:/bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:liblua-5.4.so.0 so:libpcre.so.1 so:libssl.so.1.1 so:libz.so.1
 p:cmd:haproxy=2.4.15-r0
 
-C:Q1KAfpSarNgvGT4YVFv4JMkEJ6VzQ=
-P:dovecot-fts-lucene
-V:2.3.18-r1
-A:armhf
-S:25212
-I:81920
-T:FTS-Lucene plugin for dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:3e8dcaa64ac077634f214293a38ebb9beb038ad6
-D:dovecot=2.3.18-r1 so:libc.musl-armhf.so.1 so:libclucene-core.so.1 so:libclucene-shared.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
-p:so:lib21_fts_lucene_plugin.so=0
-
 C:Q1G09qJ9FaLQUd2bO4wNWUZFUkPQ4=
 P:xmlto-doc
 V:0.0.28-r2
@@ -62997,22 +62955,6 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:encodings font-alias mkfontscale mkfontdir fontconfig
 
-C:Q1M6OqTeIoMiUztwte/UO6AY5qNlE=
-P:postfix-pgsql
-V:3.7.1-r0
-A:armhf
-S:7289
-I:49152
-T:pgsql map support for postfix
-U:http://www.postfix.org/
-L:IPL-1.0 EPL-2.0
-o:postfix
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1650535864
-c:49f64ba734a6ad9bd5ed1fe37537678400d217cf
-D:so:libc.musl-armhf.so.1 so:libpq.so.5
-p:so:postfix-pgsql.so=0
-
 C:Q1dEArSpsVplKWWe1YXCJyqzeOlnY=
 P:mariadb-client
 V:10.6.7-r0
@@ -63059,6 +63001,22 @@ t:1633057608
 c:6aadb24f3b0bd123b0bcb61a49026ca6cd2dd52c
 D:so:libc.musl-armhf.so.1
 p:cmd:iasl=20210930-r0
+
+C:Q1RjlvCxAN2QE2cXeFOxoQFtLKVSQ=
+P:boost1.77-chrono
+V:1.77.0-r5
+A:armhf
+S:11335
+I:40960
+T:Boost chrono shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
+p:boost-chrono=1.77.0-r5 so:libboost_chrono.so.1.77.0=1.77.0
 
 C:Q1FnjW2hqbrpvNr/Mevk0WGyc5BzI=
 P:audit-doc
@@ -64461,6 +64419,23 @@ t:1646601629
 c:ca08cbd8e06ecab172868b35a75384609a2434e5
 D:glslang glslang=1.3.204-r0
 
+C:Q1dglmAzYJMTR5wuE+DezhMmWauOI=
+P:postgresql14-jit
+V:14.2-r3
+A:armhf
+S:11691601
+I:21868544
+T:Just-in-time compilation support for PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql14
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:1b0114dd10ab2d9a973d0e45d1307d425430515a
+k:14
+D:postgresql14=14.2-r3 so:libLLVM-13.so so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
+p:postgresql-jit
+
 C:Q16WnjufRDyF3AeACgVSXQTp4QlVI=
 P:linux-firmware-ti-keystone
 V:20220411-r0
@@ -64691,21 +64666,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1627487152
 c:9d395da834036d608caa172a8ee6a05c26d19c68
 i:docs perl-cpan-meta-check=0.014-r2
-
-C:Q1pGtPXNZFsnicOhBdc7AxpKzr5tY=
-P:git-gui
-V:2.35.2-r0
-A:armhf
-S:320345
-I:1568768
-T:GUI interface for git
-U:https://www.git-scm.com/
-L:GPL-2.0-or-later
-o:git
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649794230
-c:2d0c9138690fceb21270c01041b3e6d09abd3fd2
-D:git=2.35.2-r0 tcl tk
 
 C:Q1FgEfN77fCeZDiHW/t/mByyc0J9s=
 P:knock
@@ -65172,22 +65132,6 @@ c:c07e3505fd70f1d5fa7d86f1320d30529cc5faf1
 D:lua5.2
 i:lua-optarg=0.3-r0 lua5.2
 
-C:Q1hqtd/6XKb1pqkf9HwogJKZ04WrE=
-P:boost1.77-locale
-V:1.77.0-r4
-A:armhf
-S:187851
-I:561152
-T:Boost locale shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
-p:boost-locale=1.77.0-r4 so:libboost_locale.so.1.77.0=1.77.0
-
 C:Q1KmstqIl95dvk0A81nkWPMPv2auY=
 P:perl-html-scrubber
 V:0.19-r1
@@ -65432,6 +65376,23 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1630249786
 c:8a0f40b67880d33248063fe63cf23cefc8d98d41
 D:perl
+
+C:Q10KX2oLarkPHVQeL637DzBa6e4fY=
+P:postgresql13-jit
+V:13.6-r3
+A:armhf
+S:11020356
+I:20582400
+T:Just-in-time compilation support for PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql13
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:56e4b0b4586e4abb4b9f099aa423fea711a7ba96
+k:13
+D:postgresql13=13.6-r3 so:libLLVM-13.so so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
+p:postgresql-jit
 
 C:Q1Ydkq9DJWFP8vU8s43J1n0YQx0gI=
 P:f2fs-tools-doc
@@ -65707,6 +65668,21 @@ m:Jeff Bilyk <jbilyk@gmail.com>
 t:1635896152
 c:6ac674fdee1bb2ad77162f5cdd523a160c9db8f1
 D:nagios-plugins perl
+
+C:Q1tPuLuXjH8tpIFnqoFUcmIpZlQ0k=
+P:git-subtree
+V:2.36.0-r0
+A:armhf
+S:8501
+I:40960
+T:Split git repository into subtrees
+U:https://www.git-scm.com/
+L:GPL-2.0-or-later
+o:git
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650626438
+c:4b52c52d4d966006a98591504e2f43c4a3b7d151
+D:git=2.36.0-r0
 
 C:Q1zFpJFW8Q1jqvOEu5riwJ/9Ma+Xc=
 P:udns
@@ -66388,22 +66364,6 @@ c:79579347f520e355920f73468aaf9386b87b62cb
 D:so:libc.musl-armhf.so.1
 p:cmd:macifrename=0.1.2-r0
 
-C:Q1jD0JpBhY8mMGGsnjJ8kn6suRWsA=
-P:boost1.77-python3
-V:1.77.0-r4
-A:armhf
-S:80102
-I:229376
-T:Boost python3 shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libpython3.10.so.1.0
-p:boost-python3=1.77.0-r4 so:libboost_python310.so.1.77.0=1.77.0
-
 C:Q1DCEmPYnfwI30BT+6cLcesQcdslw=
 P:libpcre2-32
 V:10.39-r0
@@ -66882,20 +66842,6 @@ t:1557084699
 c:db57cae5307a0136207de1c510c6b78eb13988bb
 i:docs libxcomposite=0.4.5-r0
 
-C:Q1XJZvBbsEJRMgM3ZCP2VyKCmZEQk=
-P:icu-data
-V:70.1-r0
-A:armhf
-S:11689359
-I:29487104
-T:ICU data in a .dat package file
-U:https://icu.unicode.org/
-L:MIT ICU Unicode-TOU
-o:icu
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:e83703e32b867bc32f59fd11822869ab0c0771a9
-
 C:Q1PARiEPHv3ujA6R7K7WCVkf/DMEk=
 P:font-liberation
 V:2.1.5-r1
@@ -67062,22 +67008,6 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
-
-C:Q1GieVJuDBndvS5VjGBfW0vs4bx6c=
-P:vala
-V:0.56.0-r0
-A:armhf
-S:2829896
-I:14893056
-T:Compiler for the GObject type system
-U:https://wiki.gnome.org/Projects/Vala
-L:LGPL-2.0-or-later
-o:vala
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1649664697
-c:174ee14dca042b775bd650acfde8ea9a8e664f65
-D:glib-dev pc:glib-2.0 pc:gmodule-2.0 pc:gobject-2.0 pc:libgvc pkgconfig so:libc.musl-armhf.so.1 so:libcgraph.so.6 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libgvc.so.6
-p:so:libvala-0.56.so.0=0.0.0 so:libvalaccodegen.so=0 so:libvaladoc-0.56.so.0=0.0.0 pc:libvala-0.56=0.56.0 pc:valadoc-0.56=0.56.0 pc:vapigen-0.56=0.56.0 pc:vapigen=0.56.0 cmd:vala-0.56=0.56.0-r0 cmd:vala-gen-introspect-0.56=0.56.0-r0 cmd:vala-gen-introspect=0.56.0-r0 cmd:vala=0.56.0-r0 cmd:valac-0.56=0.56.0-r0 cmd:valac=0.56.0-r0 cmd:valadoc-0.56=0.56.0-r0 cmd:valadoc=0.56.0-r0 cmd:vapigen-0.56=0.56.0-r0 cmd:vapigen=0.56.0-r0
 
 C:Q1zNA5/1PTItaBysQJdpmNSt8VpTk=
 P:perl-parallel-forkmanager
@@ -67912,6 +67842,22 @@ t:1650534415
 c:3644ed5d21be6001355e764fd68a1fb9d994e22f
 D:so:libc.musl-armhf.so.1 so:libevtlog-3.36.so.0 so:libglib-2.0.so.0 so:libsyslog-ng-3.36.so.0
 
+C:Q1FPw+J69PoNg0tLSXiOhtKL3RxPA=
+P:libical
+V:3.0.13-r2
+A:armhf
+S:376483
+I:1212416
+T:Reference implementation of the iCalendar format
+U:https://libical.github.io/libical/
+L:LGPL-2.1-only OR MPL-2.0
+o:libical
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:a33d690e769308546a2362ce968e18ddaee2110e
+D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libicui18n.so.71 so:libicuuc.so.71 so:libstdc++.so.6 so:libxml2.so.2
+p:so:libical-glib.so.3=3.0.13 so:libical.so.3=3.0.13 so:libical_cxx.so.3=3.0.13 so:libicalss.so.3=3.0.13 so:libicalss_cxx.so.3=3.0.13 so:libicalvcal.so.3=3.0.13
+
 C:Q1ZWECGGC+RLRyzWeHl0l5JmZnUlg=
 P:lua5.4-microlight
 V:1.1.1-r4
@@ -68190,6 +68136,22 @@ t:1586114186
 c:596cd15e692776222d49da2700c6041b39ffbea9
 i:docs bzip2=1.0.8-r1
 
+C:Q19dAF45Q6ccMNN+fLCmZA4Y8ExYg=
+P:icu-libs
+V:71.1-r0
+A:armhf
+S:13671986
+I:34689024
+T:International Components for Unicode library (libraries)
+U:https://icu.unicode.org/
+L:MIT ICU Unicode-TOU
+o:icu
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:a4c5336cfbdcd9f6427659e648c673fdff374691
+D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
+p:so:libicudata.so.71=71.1 so:libicui18n.so.71=71.1 so:libicuio.so.71=71.1 so:libicutest.so.71=71.1 so:libicutu.so.71=71.1 so:libicuuc.so.71=71.1
+
 C:Q1ZlpnKfFR7UFaRHrLkseTZXtXavs=
 P:at-spi2-core
 V:2.44.0-r0
@@ -68359,6 +68321,23 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-html-tagset=3.20-r3
+
+C:Q1Y89sD6m6hmF0tj/x0V/U8cPqC1g=
+P:nodejs
+V:16.14.2-r1
+A:armhf
+S:13844651
+I:35688448
+T:JavaScript runtime built on V8 engine - LTS version
+U:https://nodejs.org/
+L:MIT
+o:nodejs
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:c3fe3444a4aaecbae115fc42ab463d35196acf58
+k:100
+D:ca-certificates nghttp2-libs>=1.41 /bin/sh so:libbrotlidec.so.1 so:libbrotlienc.so.1 so:libc.musl-armhf.so.1 so:libcares.so.2 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libnghttp2.so.14 so:libssl.so.1.1 so:libstdc++.so.6 so:libz.so.1
+p:nodejs-lts=16.14.2 cmd:node=16.14.2-r1
 
 C:Q1FSa34FWQuZcKmakz757lXVZw0MM=
 P:perl-yaml-syck-doc
@@ -68776,20 +68755,6 @@ c:3fc101f63494d310ec0ee7af5cdc742ccb8c72d5
 D:logrotate
 i:squid=5.5-r0 lang-he
 
-C:Q1MGD8+HG7o0FY3aZu6b0OSQo74bc=
-P:icu-static
-V:70.1-r0
-A:armhf
-S:14659871
-I:39731200
-T:icu static libraries
-U:https://icu.unicode.org/
-L:MIT ICU Unicode-TOU
-o:icu
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:e83703e32b867bc32f59fd11822869ab0c0771a9
-
 C:Q1YrfT1olTkas6mbiBJFzl8zdemsk=
 P:perl-file-sharedir
 V:1.118-r0
@@ -68880,6 +68845,23 @@ m:Cameron Banta <cbanta@gmail.com>
 t:1626377284
 c:d3d503093e99ff3a1d7c65af8ca79f32c2275632
 i:docs less=590-r0
+
+C:Q1Se0ODi9m5h75i3Q+G+rof44z4pw=
+P:postgresql14
+V:14.2-r3
+A:armhf
+S:5265030
+I:12947456
+T:A sophisticated object-relational DBMS, version 14
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql14
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:1b0114dd10ab2d9a973d0e45d1307d425430515a
+k:14
+D:postgresql14-client postgresql-common tzdata /bin/sh so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libicui18n.so.71 so:libicuuc.so.71 so:libldap.so.2 so:libpq.so.5 so:libssl.so.1.1 so:libxml2.so.2
+p:postgresql cmd:pg_test_fsync cmd:pg_ctl cmd:pg_rewind cmd:pg_archivecleanup cmd:pg_checksums cmd:pg_upgrade cmd:initdb cmd:postmaster cmd:postgres cmd:pg_resetwal cmd:pg_test_timing cmd:pg_waldump cmd:pg_controldata
 
 C:Q1CgtGU3RpERV6DKjiWxoBuBnH1hA=
 P:openssh-client-common
@@ -69078,6 +69060,23 @@ o:fftw
 t:1631770272
 c:396c6fcf0e9b56ce811a197285ef140f4ad672f1
 i:docs fftw=3.3.10-r0
+
+C:Q1LmAeiZO0ycoff2RJaDliqMeSuDk=
+P:postgresql14-plperl
+V:14.2-r3
+A:armhf
+S:36547
+I:122880
+T:PL/Perl procedural language for PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql14
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:1b0114dd10ab2d9a973d0e45d1307d425430515a
+k:14
+D:postgresql14=14.2-r3 so:libc.musl-armhf.so.1 so:libperl.so
+p:postgresql-plperl
 
 C:Q1P2jBhzKZ34bwpr77RljZbvAgzr8=
 P:mkinitfs-doc
@@ -69293,20 +69292,6 @@ t:1642460043
 c:dd043597a9c947959cb63c4ea7be059dd721ae35
 i:docs tig=2.5.5-r0
 
-C:Q10Tla8lYbwrA0tNBXwJae535bA5M=
-P:zlib-static
-V:1.2.12-r0
-A:armhf
-S:48671
-I:110592
-T:A compression/decompression Library (static library)
-U:https://zlib.net/
-L:Zlib
-o:zlib
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1648462482
-c:37ada1e77a67b1c27b5d3a1880ae08d475770988
-
 C:Q1E0PYMC5VfA5/yrAqN73U62B1l9A=
 P:vlan
 V:2.3-r0
@@ -69517,6 +69502,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1635896151
 c:0b3a50c008537261a5102ffabfaf6301284b7272
 D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:liblber.so.2 so:libldap.so.2
+
+C:Q1SZPYKXQFPQRKf+OlRMO1l7kFptQ=
+P:git-daemon
+V:2.36.0-r0
+A:armhf
+S:2297441
+I:4526080
+T:Git protocol daemon
+U:https://www.git-scm.com/
+L:GPL-2.0-or-later
+o:git
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650626438
+c:4b52c52d4d966006a98591504e2f43c4a3b7d151
+D:git=2.36.0-r0 so:libc.musl-armhf.so.1 so:libpcre2-8.so.0 so:libz.so.1
 
 C:Q1Cy4GxF0jvrrlCUKsksj6BFBaFA4=
 P:linux-firmware-matrox
@@ -69874,20 +69874,6 @@ t:1627542605
 c:6d0c2f5377821b1afb1c4b03fe47ce4887006316
 i:docs perl-convert-uulib=1.71-r0
 
-C:Q1axLNJCBXz7PRQIGomOq4DeTwIIs=
-P:dovecot-dev
-V:2.3.18-r1
-A:armhf
-S:548264
-I:3723264
-T:IMAP and POP3 server (development files)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:3e8dcaa64ac077634f214293a38ebb9beb038ad6
-
 C:Q17RcsNtOFHUBt4jtnVKNIyBivTWA=
 P:shorewall-doc
 V:5.2.8-r1
@@ -69966,21 +69952,6 @@ t:1639595863
 c:787787792533f24ebb38189b52c845d80c4d961b
 D:python3
 p:py3.10:ply=3.11-r5
-
-C:Q1uQWbc1Njvzak/4A4ULQM+NYbKY4=
-P:dovecot-pigeonhole-plugin-ldap
-V:2.3.18-r1
-A:armhf
-S:17798
-I:61440
-T:Sieve and managesieve plugin for Dovecot (LDAP support)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:3e8dcaa64ac077634f214293a38ebb9beb038ad6
-D:dovecot-pigeonhole-plugin=2.3.18-r1 dovecot-ldap=2.3.18-r1 so:libc.musl-armhf.so.1 so:liblber.so.2 so:libldap.so.2
 
 C:Q1bsBV+OKvmTeHVYLMT3QpKr4cFpY=
 P:lua5.4-sec
@@ -70243,6 +70214,37 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1640092805
 c:ed4e519e5c2e7e4b635534cc0e17e232a6815f2d
 D:uwsgi so:libc.musl-armhf.so.1
+
+C:Q1kfBFKaj0Q12qgbC7gSsASE4Sg5g=
+P:vala
+V:0.56.1-r0
+A:armhf
+S:2831977
+I:14913536
+T:Compiler for the GObject type system
+U:https://wiki.gnome.org/Projects/Vala
+L:LGPL-2.0-or-later
+o:vala
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1650749614
+c:25db6391f0b29d0192719d96bad7bebf37a2e9e9
+D:glib-dev pc:glib-2.0 pc:gmodule-2.0 pc:gobject-2.0 pc:libgvc pkgconfig so:libc.musl-armhf.so.1 so:libcgraph.so.6 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libgvc.so.6
+p:so:libvala-0.56.so.0=0.0.0 so:libvalaccodegen.so=0 so:libvaladoc-0.56.so.0=0.0.0 pc:libvala-0.56=0.56.1 pc:valadoc-0.56=0.56.1 pc:vapigen-0.56=0.56.1 pc:vapigen=0.56.1 cmd:vala-0.56=0.56.1-r0 cmd:vala-gen-introspect-0.56=0.56.1-r0 cmd:vala-gen-introspect=0.56.1-r0 cmd:vala=0.56.1-r0 cmd:valac-0.56=0.56.1-r0 cmd:valac=0.56.1-r0 cmd:valadoc-0.56=0.56.1-r0 cmd:valadoc=0.56.1-r0 cmd:vapigen-0.56=0.56.1-r0 cmd:vapigen=0.56.1-r0
+
+C:Q1JDF7eHipeC9uZ6vlF2W/QR/OyLY=
+P:boost1.77-static
+V:1.77.0-r5
+A:armhf
+S:5537396
+I:25784320
+T:Boost static libraries
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+p:boost-static=1.77.0-r5
 
 C:Q15KxHax9vNe+SJN5DWIHKThsioxM=
 P:lighttpd-doc
@@ -71024,22 +71026,6 @@ c:ececc6b34ca46f6efad005da9ab4f17ea4bac3f2
 D:so:libauthkrb5-samba4.so so:libc.musl-armhf.so.1 so:libcliauth-samba4.so so:libcmdline-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libgnutls.so.30 so:libgse-samba4.so so:libpopt.so.0 so:libreplace-samba4.so so:libsamba-credentials.so.1 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-security-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsecrets3-samba4.so so:libsmbconf.so.0 so:libtalloc.so.2 so:libtevent-util.so.0 so:libtevent.so.0 so:libwbclient.so.0 so:libwinbind-client-samba4.so
 p:cmd:ntlm_auth=4.15.6-r0 cmd:wbinfo=4.15.6-r0
 
-C:Q17zTnYnzCmyvzTjsTxn1CzqUh9GA=
-P:git-diff-highlight
-V:2.35.2-r0
-A:armhf
-S:4603
-I:20480
-T:diff highlight for git
-U:https://www.git-scm.com/
-L:GPL-2.0-or-later
-o:git
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649794230
-c:2d0c9138690fceb21270c01041b3e6d09abd3fd2
-D:git=2.35.2-r0 perl
-p:cmd:diff-highlight=2.35.2-r0
-
 C:Q1f2M4mfrVghAEOvBqURg7MFrg4FA=
 P:py3-syslog-ng
 V:3.36.1-r0
@@ -71131,22 +71117,6 @@ o:mesa
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1650021957
 c:13f2f1770b74484a7515b420c09aaf353b0b4b69
-
-C:Q1vBMwxnGPD7rRD7yX1+PEXyc/o/A=
-P:dovecot-fts-solr
-V:2.3.18-r1
-A:armhf
-S:18757
-I:57344
-T:FTS-Solr plugin for dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:3e8dcaa64ac077634f214293a38ebb9beb038ad6
-D:dovecot=2.3.18-r1 so:lib20_fts_plugin.so so:libc.musl-armhf.so.1 so:libexpat.so.1
-p:so:lib21_fts_solr_plugin.so=0
 
 C:Q1jTMdijP+uFkN1KdLff1knA2/Aio=
 P:nginx-mod-http-array-var
@@ -71592,6 +71562,21 @@ c:4542157d668732f2dda48c2d63a4153e09caea30
 D:libogg-dev opus-dev libsndfile=1.1.0-r0 pc:flac pc:ogg pc:opus pc:vorbis pc:vorbisenc pkgconfig
 p:pc:sndfile=1.1.0
 
+C:Q1Wls6RuEa2UbldyKpiOTWxjS2xj4=
+P:vala-doc
+V:0.56.1-r0
+A:armhf
+S:8006
+I:36864
+T:Compiler for the GObject type system (documentation)
+U:https://wiki.gnome.org/Projects/Vala
+L:LGPL-2.0-or-later
+o:vala
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1650749614
+c:25db6391f0b29d0192719d96bad7bebf37a2e9e9
+i:docs vala=0.56.1-r0
+
 C:Q1WmCoagkSD1B2ecjXm/NONNYYzFQ=
 P:freetds-dev
 V:1.3.9-r0
@@ -71636,21 +71621,6 @@ t:1596270454
 c:fc4bddf2b59bad43601c5ab271a6d20da476be74
 D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:liblua-5.3.so.0 so:libstdc++.so.6
 p:so:liblutok.so.3=3.0.0
-
-C:Q1WJxzPJJ8IrCi0zBRXD+bh7RL2zU=
-P:perl-git
-V:2.35.2-r0
-A:armhf
-S:33129
-I:155648
-T:Perl interface to Git
-U:https://www.git-scm.com/
-L:GPL-2.0-or-later
-o:git
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649794230
-c:2d0c9138690fceb21270c01041b3e6d09abd3fd2
-D:git=2.35.2-r0 perl-error
 
 C:Q1SUdTj3hufXTnxoLA0hJP4+5Kfsw=
 P:spirv-tools-dbg
@@ -71940,6 +71910,22 @@ t:1650458851
 c:450d78cbc41fb3c7186d9c4264297eecff043df6
 i:docs bind=9.16.28-r0
 
+C:Q1jcQ2GbRCxtZdZaT//9r150OshWY=
+P:boost1.77-log_setup
+V:1.77.0-r5
+A:armhf
+S:291336
+I:815104
+T:Boost log_setup shared library
+U:https://www.boost.org/
+L:BSL-1.0
+o:boost1.77
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:af060d45a8e260fb1ee89c622a52717da60afc92
+D:so:libboost_filesystem.so.1.77.0 so:libboost_log.so.1.77.0 so:libboost_thread.so.1.77.0 so:libc.musl-armhf.so.1 so:libgcc_s.so.1
+p:boost-log_setup=1.77.0-r5 so:libboost_log_setup.so.1.77.0=1.77.0
+
 C:Q1/iGOy1+Eqq/jgy93Ubf10pCYB1s=
 P:lua5.3-penlight
 V:1.7.0-r2
@@ -72121,22 +72107,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1635896151
 c:0b3a50c008537261a5102ffabfaf6301284b7272
 D:so:libc.musl-armhf.so.1 so:liblber.so.2 so:libldap.so.2
-
-C:Q1Ib8QuocKvZdaLcBrA/OqAPape/o=
-P:nodejs-doc
-V:16.14.2-r0
-A:armhf
-S:14121
-I:53248
-T:JavaScript runtime built on V8 engine - LTS version (documentation)
-U:https://nodejs.org/
-L:MIT
-o:nodejs
-m:Jakub Jirutka <jakub@jirutka.cz>
-t:1648165069
-c:84a7bdbd0b62b8bb66c2064aec70433b02b0f89c
-k:100
-i:docs nodejs=16.14.2-r0
 
 C:Q11T4Hy/IlDyjxS4rnCLgSywNXoH4=
 P:libmaxminddb
@@ -72618,22 +72588,6 @@ c:67d97e80a52cf8090cf1faacc2251bc25c14933d
 D:shared-mime-info gtk-update-icon-cache
 i:gtk+2.0=2.24.33-r2 lang
 
-C:Q14WBKg4UavkgxxlTWejp6Luq7YQ0=
-P:boost1.77
-V:1.77.0-r4
-A:armhf
-S:441579
-I:1003520
-T:Free peer-reviewed portable C++ source libraries
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:boost1.77-libs so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
-p:boost=1.77.0-r4 cmd:b2=1.77.0-r4 cmd:bcp=1.77.0-r4 cmd:bjam=1.77.0-r4
-
 C:Q18/iIefYaTnvjjfXm2sBE+VuMYDc=
 P:ruby-net-imap
 V:0.2.3-r0
@@ -72879,6 +72833,23 @@ c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:so:libc.musl-armhf.so.1 so:libncursesw.so.6
 p:cmd:umix=1.0.2-r7
 
+C:Q1Eut2MCOEo/LyL5tH2M2q6j2sGgA=
+P:postgresql14-contrib
+V:14.2-r3
+A:armhf
+S:589552
+I:2506752
+T:Extension modules distributed with PostgreSQL
+U:https://www.postgresql.org/
+L:PostgreSQL
+o:postgresql14
+m:Jakub Jirutka <jakub@jirutka.cz>
+t:1650750896
+c:1b0114dd10ab2d9a973d0e45d1307d425430515a
+k:14
+D:postgresql14=14.2-r3 so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libpq.so.5 so:libuuid.so.1 so:libxml2.so.2 so:libz.so.1
+p:postgresql-contrib cmd:oid2name cmd:vacuumlo
+
 C:Q1pOuXksLOQAlbPp6HdmZucePfHkQ=
 P:linux-firmware-cavium
 V:20220411-r0
@@ -73015,22 +72986,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl perl-net-dns
-
-C:Q1lCCYAElkXacIA5qZJS6xPSTaYds=
-P:dovecot-pigeonhole-plugin
-V:2.3.18-r1
-A:armhf
-S:413486
-I:1101824
-T:Sieve and managesieve plugin for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:3e8dcaa64ac077634f214293a38ebb9beb038ad6
-D:dovecot=2.3.18-r1 so:libc.musl-armhf.so.1 so:libdovecot-login.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
-p:so:lib90_sieve_plugin.so=0 so:lib95_imap_filter_sieve_plugin.so=0 so:lib95_imap_sieve_plugin.so=0 so:libdovecot-sieve.so.0=0.0.0 cmd:sieve-dump=2.3.18-r1 cmd:sieve-filter=2.3.18-r1 cmd:sieve-test=2.3.18-r1 cmd:sievec=2.3.18-r1
 
 C:Q1Vqq7b/NZw7s6l7rFDfsM9W8Pe3c=
 P:squid-lang-pl
@@ -73574,22 +73529,6 @@ c:0742ef4d082d07d9d76c4722bafaab1ee40c21a9
 D:!psmisc so:libc.musl-armhf.so.1
 p:cmd:pstree=2.39-r1
 
-C:Q1YQPHn5CI8ePH5BOUqDHR4ndX0/Q=
-P:boost1.77-graph
-V:1.77.0-r4
-A:armhf
-S:143326
-I:352256
-T:Boost graph shared library
-U:https://www.boost.org/
-L:BSL-1.0
-o:boost1.77
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644704275
-c:375c6ba00382cf009dd579e3fd9f7ba9bc9e7fd7
-D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1
-p:boost-graph=1.77.0-r4 so:libboost_graph.so.1.77.0=1.77.0
-
 C:Q18mPg1u9ZLKwYbLzS4ruGxRIb0OE=
 P:ivykis-doc
 V:0.42.4-r0
@@ -73680,6 +73619,22 @@ m:Sheila Aman <sheila@vulpine.house>
 t:1630780508
 c:a3739a07d478bc4f1f6e0c17612a1c83dffa9ecd
 i:docs perl-async-mergepoint=0.04-r3
+
+C:Q1H8LzCZqE/nfeKqCTp4s9mNS/snI=
+P:dovecot-mysql
+V:2.3.18-r2
+A:armhf
+S:9223
+I:45056
+T:MySQL driver for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
+D:dovecot-sql=2.3.18-r2 so:libc.musl-armhf.so.1 so:libmariadb.so.3
+p:so:libdriver_mysql.so=0
 
 C:Q1QWuloqxQxsg7D4CyzaCJzpe/C8k=
 P:idn2-utils
@@ -74188,6 +74143,21 @@ c:300f0655196effd8695955e378d8a052b3f69f09
 D:so:libc.musl-armhf.so.1
 p:so:libtalloc.so.2=2.3.3
 
+C:Q1ID7FQ9+r+U5RGJY3KBc1aleJpqI=
+P:postfix-doc
+V:3.7.1-r1
+A:armhf
+S:759969
+I:2015232
+T:Secure and fast drop-in replacement for Sendmail (MTA) (documentation)
+U:http://www.postfix.org/
+L:IPL-1.0 EPL-2.0
+o:postfix
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:86a13b4b354dd2a7390a023839cefa629975b7e8
+i:docs postfix=3.7.1-r1
+
 C:Q15DMD/wTFQ+KN6LLlDiOQS0eC33Y=
 P:perl-sys-mmap-doc
 V:0.20-r2
@@ -74251,6 +74221,21 @@ c:d170bf677627fd4f6ddc06055c081e46f6c0dace
 D:perl so:libc.musl-armhf.so.1
 p:cmd:enc2xs=3.16-r0 cmd:encguess=3.16-r0 cmd:piconv=3.16-r0
 
+C:Q15wY4cG7bjHMo4Ia+Mff0kK4pYjY=
+P:git-bash-completion
+V:2.36.0-r0
+A:armhf
+S:22771
+I:102400
+T:Bash completions for git
+U:https://www.git-scm.com/
+L:GPL-2.0-or-later
+o:git
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650626438
+c:4b52c52d4d966006a98591504e2f43c4a3b7d151
+i:git=2.36.0-r0 bash-completion
+
 C:Q1iO9KooZlSjZJKGgu4bWYpmCoIac=
 P:perl-devel-checkbin-doc
 V:0.04-r1
@@ -74265,6 +74250,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-devel-checkbin=0.04-r1
+
+C:Q1GcbWoP7os8MmOnUhZuwRli4cU2o=
+P:dovecot-pop3d
+V:2.3.18-r2
+A:armhf
+S:23564
+I:94208
+T:IMAP and POP3 server (POP3 daemon)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1650750896
+c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
+D:dovecot=2.3.18-r2 so:libc.musl-armhf.so.1 so:libdovecot-storage.so.0 so:libdovecot.so.0
 
 C:Q1Pg1OfOH2Mp7ulVuboIgsvynmaiI=
 P:lua5.3-libs
