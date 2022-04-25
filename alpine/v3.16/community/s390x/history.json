@@ -52341,14 +52341,15 @@
     "caddy": {
       "origin": "caddy",
       "versions": {
-        "2.4.6-r5": 1650121827
+        "2.4.6-r5": 1650121827,
+        "2.5.0-r0": 1650917703
       },
       "dependencies": [
         "ca-certificates",
         "/bin/sh"
       ],
       "provides": [
-        "cmd:caddy=2.4.6-r5"
+        "cmd:caddy=2.5.0-r0"
       ]
     },
     "py3-ruamel.std.pathlib": {
@@ -57596,7 +57597,8 @@
     "sdl2-dev": {
       "origin": "sdl2",
       "versions": {
-        "2.0.20-r6": 1650198539
+        "2.0.20-r6": 1650198539,
+        "2.0.22-r0": 1650920712
       },
       "dependencies": [
         "sdl2",
@@ -57605,8 +57607,8 @@
         "pkgconfig"
       ],
       "provides": [
-        "pc:sdl2=2.0.20",
-        "cmd:sdl2-config=2.0.20-r6"
+        "pc:sdl2=2.0.22",
+        "cmd:sdl2-config=2.0.22-r0"
       ]
     },
     "py3-zope-interface": {
@@ -85090,7 +85092,8 @@
     "caddy-openrc": {
       "origin": "caddy",
       "versions": {
-        "2.4.6-r5": 1650121827
+        "2.4.6-r5": 1650121827,
+        "2.5.0-r0": 1650917703
       }
     },
     "akonadi-notes-lang": {
@@ -87975,7 +87978,8 @@
     "sdl2-dbg": {
       "origin": "sdl2",
       "versions": {
-        "2.0.20-r6": 1650198539
+        "2.0.20-r6": 1650198539,
+        "2.0.22-r0": 1650920712
       }
     },
     "mce": {
@@ -95191,7 +95195,8 @@
     "krita-lang": {
       "origin": "krita",
       "versions": {
-        "5.0.2-r3": 1650297534
+        "5.0.2-r3": 1650297534,
+        "5.0.5-r0": 1650917562
       },
       "dependencies": [
         "qt5-qtbase-sqlite"
@@ -96032,13 +96037,14 @@
     "sdl2": {
       "origin": "sdl2",
       "versions": {
-        "2.0.20-r6": 1650198539
+        "2.0.20-r6": 1650198539,
+        "2.0.22-r0": 1650920712
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1"
       ],
       "provides": [
-        "so:libSDL2-2.0.so.0=0.18.2"
+        "so:libSDL2-2.0.so.0=0.22.0"
       ]
     },
     "govendor": {
@@ -107089,7 +107095,8 @@
     "krita": {
       "origin": "krita",
       "versions": {
-        "5.0.2-r3": 1650297534
+        "5.0.2-r3": 1650297534,
+        "5.0.5-r0": 1650917562
       },
       "dependencies": [
         "qt5-qtbase-sqlite",
@@ -107104,8 +107111,8 @@
         "so:libKF5ItemViews.so.5",
         "so:libKF5WidgetsAddons.so.5",
         "so:libKF5WindowSystem.so.5",
+        "so:libOpenColorIO.so.2.1",
         "so:libOpenEXR-3_1.so.30",
-        "so:libQt5Concurrent.so.5",
         "so:libQt5Core.so.5",
         "so:libQt5DBus.so.5",
         "so:libQt5Gui.so.5",
@@ -107131,6 +107138,7 @@
         "so:libheif.so.1",
         "so:libjpeg.so.8",
         "so:liblcms2.so.2",
+        "so:libmypaint.so.0",
         "so:libopenjp2.so.7",
         "so:libpng16.so.16",
         "so:libpoppler-qt5.so.1",
@@ -107167,8 +107175,8 @@
         "so:libkritaversion.so.17=17.0.0",
         "so:libkritawidgets.so.17=17.0.0",
         "so:libkritawidgetutils.so.17=17.0.0",
-        "cmd:krita=5.0.2-r3",
-        "cmd:krita_version=5.0.2-r3"
+        "cmd:krita=5.0.5-r0",
+        "cmd:krita_version=5.0.5-r0"
       ]
     },
     "libxxhash": {
@@ -112762,6 +112770,35 @@
       "versions": {
         "1.2.32-r0": 1648919870
       }
+    },
+    "krita-python": {
+      "origin": "krita",
+      "versions": {
+        "5.0.5-r0": 1650917562
+      },
+      "dependencies": [
+        "python3",
+        "py3-qt5",
+        "so:libKF5ConfigCore.so.5",
+        "so:libKF5CoreAddons.so.5",
+        "so:libKF5I18n.so.5",
+        "so:libQt5Core.so.5",
+        "so:libQt5Gui.so.5",
+        "so:libQt5Widgets.so.5",
+        "so:libc.musl-s390x.so.1",
+        "so:libgcc_s.so.1",
+        "so:libkritaglobal.so.17",
+        "so:libkritaimage.so.17",
+        "so:libkritalibkis.so.17",
+        "so:libkritaresources.so.17",
+        "so:libkritaui.so.17",
+        "so:libkritawidgetutils.so.17",
+        "so:libpython3.10.so.1.0",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "cmd:kritarunner=5.0.5-r0"
+      ]
     }
   },
   "provide": {
@@ -119584,7 +119621,7 @@
       },
       "libSDL2-2.0.so.0": {
         "package": "sdl2",
-        "version": "0.18.2"
+        "version": "0.22.0"
       },
       "libngf-qt5.so.1": {
         "package": "libngf-qt",
