@@ -6195,14 +6195,17 @@
     "efivar": {
       "origin": "efivar",
       "versions": {
-        "37-r2": 1610489771
+        "37-r2": 1610489771,
+        "38-r0": 1650890088
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
+        "so:libefisec.so.1",
         "so:libefivar.so.1"
       ],
       "provides": [
-        "cmd:efivar=37-r2"
+        "cmd:efisecdb=38-r0",
+        "cmd:efivar=38-r0"
       ]
     },
     "pcmciautils-doc": {
@@ -11594,15 +11597,17 @@
     "efivar-dev": {
       "origin": "efivar",
       "versions": {
-        "37-r2": 1610489771
+        "37-r2": 1610489771,
+        "38-r0": 1650890088
       },
       "dependencies": [
-        "efivar-libs=37-r2",
+        "efivar-libs=38-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:efiboot=37",
-        "pc:efivar=37"
+        "pc:efiboot=38",
+        "pc:efisec=38",
+        "pc:efivar=38"
       ]
     },
     "perl-data-optlist": {
@@ -32421,7 +32426,8 @@
     "efivar-doc": {
       "origin": "efivar",
       "versions": {
-        "37-r2": 1610489771
+        "37-r2": 1610489771,
+        "38-r0": 1650890088
       }
     },
     "haserl-doc": {
@@ -39513,14 +39519,16 @@
     "efivar-libs": {
       "origin": "efivar",
       "versions": {
-        "37-r2": 1610489771
+        "37-r2": 1610489771,
+        "38-r0": 1650890088
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1"
       ],
       "provides": [
-        "so:libefiboot.so.1=1.37",
-        "so:libefivar.so.1=1.37"
+        "so:libefiboot.so.1=1.38",
+        "so:libefisec.so.1=1.38",
+        "so:libefivar.so.1=1.38"
       ]
     },
     "imap": {
@@ -61808,11 +61816,11 @@
       },
       "libefiboot.so.1": {
         "package": "efivar-libs",
-        "version": "1.37"
+        "version": "1.38"
       },
       "libefivar.so.1": {
         "package": "efivar-libs",
-        "version": "1.37"
+        "version": "1.38"
       },
       "libharfbuzz-gobject.so.0": {
         "package": "harfbuzz",
@@ -64061,6 +64069,10 @@
       "libicuuc.so.71": {
         "package": "icu-libs",
         "version": "71.1"
+      },
+      "libefisec.so.1": {
+        "package": "efivar-libs",
+        "version": "1.38"
       }
     }
   }

@@ -2449,6 +2449,22 @@ c:988c4057d60ade6a214b14741f3e0950b3105c3a
 D:so:libc.musl-armhf.so.1 so:libpopt.so.0 so:libvanessa_logger.so.0
 p:so:libvanessa_socket.so.2=2.1.0 cmd:vanessa_socket_pipe=0.0.13-r0
 
+C:Q1v9bqwnfH0tPMGMecHd6o+3zmnFY=
+P:efivar
+V:38-r0
+A:armhf
+S:27664
+I:139264
+T:Tools and library to manipulate EFI variables
+U:https://github.com/rhboot/efivar
+L:LGPL-2.1
+o:efivar
+m:Lucas Ramage <ramage.lucas@protonmail.com>
+t:1650890088
+c:eb4f58ab90a7a4fba53a21c117fae5eee5e62be9
+D:so:libc.musl-armhf.so.1 so:libefisec.so.1 so:libefivar.so.1
+p:cmd:efisecdb=38-r0 cmd:efivar=38-r0
+
 C:Q1YWM/tXdlkih7ZCqGhqybAHs8yMs=
 P:gengetopt-dev
 V:2.23-r0
@@ -8539,22 +8555,6 @@ c:547d821acde4c667c3fd08f226cb2176f9696da7
 D:openssl1.1-compat-dev opusfile=0.12-r2 pc:ogg>=1.3 pc:opus>=1.0.1 pkgconfig
 p:pc:opusfile=0.12 pc:opusurl=0.12
 
-C:Q1JK0d8r/39NYGEM91yPok1q4JaVA=
-P:efivar
-V:37-r2
-A:armhf
-S:7672
-I:32768
-T:Tools and library to manipulate EFI variables
-U:https://github.com/rhboot/efivar
-L:LGPL-2.1
-o:efivar
-m:Lucas Ramage <ramage.lucas@protonmail.com>
-t:1610489771
-c:1118fff73bb8f3a967c12d42de2d8c4a0a7ed162
-D:so:libc.musl-armhf.so.1 so:libefivar.so.1
-p:cmd:efivar=37-r2
-
 C:Q1ZmSlfcxQhQ4r7ltwd6yDrQ8M3+4=
 P:pcmciautils-doc
 V:018-r1
@@ -14225,6 +14225,22 @@ t:1610489771
 c:1118fff73bb8f3a967c12d42de2d8c4a0a7ed162
 i:docs zip=3.0-r9
 
+C:Q1s5gdqIYeEBzITMb0OkiINZUk+no=
+P:efivar-dev
+V:38-r0
+A:armhf
+S:17545
+I:131072
+T:Tools and library to manipulate EFI variables (development files)
+U:https://github.com/rhboot/efivar
+L:LGPL-2.1
+o:efivar
+m:Lucas Ramage <ramage.lucas@protonmail.com>
+t:1650890088
+c:eb4f58ab90a7a4fba53a21c117fae5eee5e62be9
+D:efivar-libs=38-r0 pkgconfig
+p:pc:efiboot=38 pc:efisec=38 pc:efivar=38
+
 C:Q1BM4IakJKpnFT9RUyqYYrk8PcyBM=
 P:smartmontools-doc
 V:7.3-r0
@@ -15224,22 +15240,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1634364270
 c:670bf5a8cc5bc605eede8ca2fd55b50a5c9f8660
 i:docs nmap=7.92-r2
-
-C:Q1Bfs2tMRoowZ5Lg3wgWPCC/4eR4E=
-P:efivar-dev
-V:37-r2
-A:armhf
-S:13822
-I:98304
-T:Tools and library to manipulate EFI variables (development files)
-U:https://github.com/rhboot/efivar
-L:LGPL-2.1
-o:efivar
-m:Lucas Ramage <ramage.lucas@protonmail.com>
-t:1610489771
-c:1118fff73bb8f3a967c12d42de2d8c4a0a7ed162
-D:efivar-libs=37-r2 pkgconfig
-p:pc:efiboot=37 pc:efivar=37
 
 C:Q1payeyO0VRtc0y2SoWkPzxPbdJzY=
 P:perl-data-optlist
@@ -19464,6 +19464,21 @@ c:1b0114dd10ab2d9a973d0e45d1307d425430515a
 k:14
 D:postgresql-common so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libpq.so.5 so:libreadline.so.8 so:libz.so.1
 p:postgresql-client cmd:clusterdb cmd:createdb cmd:createuser cmd:dropdb cmd:dropuser cmd:pg_amcheck cmd:pg_basebackup cmd:pg_dump cmd:pg_dumpall cmd:pg_isready cmd:pg_receivewal cmd:pg_recvlogical cmd:pg_restore cmd:pg_verifybackup cmd:pgbench cmd:psql cmd:reindexdb cmd:vacuumdb
+
+C:Q15WACSf3+3/l0ASASd7OYqIaQj68=
+P:efivar-doc
+V:38-r0
+A:armhf
+S:10805
+I:151552
+T:Tools and library to manipulate EFI variables (documentation)
+U:https://github.com/rhboot/efivar
+L:LGPL-2.1
+o:efivar
+m:Lucas Ramage <ramage.lucas@protonmail.com>
+t:1650890088
+c:eb4f58ab90a7a4fba53a21c117fae5eee5e62be9
+i:docs efivar=38-r0
 
 C:Q1u5Oj5SrgIEV6dUJet2g5BTbBnB4=
 P:alpine-git-mirror-syncd
@@ -42563,21 +42578,6 @@ c:6e2cb5cf78ec502dd985c469ccc6ac0b0e8778bc
 D:pkgconfig
 p:wayland-protocols-dev pc:wayland-protocols=1.25
 
-C:Q15g0bwW8bX3buwvy+BvU2Q6qQjjM=
-P:efivar-doc
-V:37-r2
-A:armhf
-S:7632
-I:147456
-T:Tools and library to manipulate EFI variables (documentation)
-U:https://github.com/rhboot/efivar
-L:LGPL-2.1
-o:efivar
-m:Lucas Ramage <ramage.lucas@protonmail.com>
-t:1610489771
-c:1118fff73bb8f3a967c12d42de2d8c4a0a7ed162
-i:docs efivar=37-r2
-
 C:Q1CVwJR0E96B19PHbOiQYoLt6q/R0=
 P:harfbuzz
 V:4.2.1-r0
@@ -51445,22 +51445,6 @@ t:1649979968
 c:fde13ea12cd6c6846501e6e3344c58442ee6d1c1
 i:openrc lsyncd=2.2.3-r4
 
-C:Q13hWtgPFb6FfuBIllasTEkKWRAZI=
-P:efivar-libs
-V:37-r2
-A:armhf
-S:86447
-I:241664
-T:Tools and library to manipulate EFI variables (libraries)
-U:https://github.com/rhboot/efivar
-L:LGPL-2.1
-o:efivar
-m:Lucas Ramage <ramage.lucas@protonmail.com>
-t:1610489771
-c:1118fff73bb8f3a967c12d42de2d8c4a0a7ed162
-D:so:libc.musl-armhf.so.1
-p:so:libefiboot.so.1=1.37 so:libefivar.so.1=1.37
-
 C:Q1jr+p9+rWJNsF6y/LRsXqoV02W7Q=
 P:imap
 V:2007f-r13
@@ -55868,6 +55852,22 @@ t:1622914361
 c:988c4057d60ade6a214b14741f3e0950b3105c3a
 D:so:libc.musl-armhf.so.1 so:libxcb.so.1
 p:so:libxcb-util.so.1=1.0.0
+
+C:Q1od+TbeXvhnPTiT0QX6pgPDwexXc=
+P:efivar-libs
+V:38-r0
+A:armhf
+S:110211
+I:319488
+T:Tools and library to manipulate EFI variables (libraries)
+U:https://github.com/rhboot/efivar
+L:LGPL-2.1
+o:efivar
+m:Lucas Ramage <ramage.lucas@protonmail.com>
+t:1650890088
+c:eb4f58ab90a7a4fba53a21c117fae5eee5e62be9
+D:so:libc.musl-armhf.so.1
+p:so:libefiboot.so.1=1.38 so:libefisec.so.1=1.38 so:libefivar.so.1=1.38
 
 C:Q1EuW7z04s9MY5QLYnKGJakuM+PeQ=
 P:parted-dev
