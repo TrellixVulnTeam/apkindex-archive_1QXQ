@@ -60421,10 +60421,11 @@
     "libbpf-dev": {
       "origin": "libbpf",
       "versions": {
-        "0.7.0-r1": 1646483670
+        "0.7.0-r1": 1646483670,
+        "0.7.0-r2": 1651125156
       },
       "dependencies": [
-        "libbpf=0.7.0-r1",
+        "libbpf=0.7.0-r2",
         "pc:libelf",
         "pc:zlib",
         "pkgconfig"
@@ -77536,7 +77537,8 @@
     "libbpf": {
       "origin": "libbpf",
       "versions": {
-        "0.7.0-r1": 1646483670
+        "0.7.0-r1": 1646483670,
+        "0.7.0-r2": 1651125156
       },
       "dependencies": [
         "elfutils",
@@ -112918,6 +112920,43 @@
       "provides": [
         "cmd:kritarunner=5.0.5-r0"
       ]
+    },
+    "pahole-doc": {
+      "origin": "pahole",
+      "versions": {
+        "1.23-r0": 1651125215
+      }
+    },
+    "pahole": {
+      "origin": "pahole",
+      "versions": {
+        "1.23-r0": 1651125215
+      },
+      "dependencies": [
+        "so:libbpf.so.0",
+        "so:libc.musl-s390x.so.1",
+        "so:libdw.so.1",
+        "so:libelf.so.1",
+        "so:libobstack.so.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "so:libdwarves.so.1=1.0.0",
+        "so:libdwarves_emit.so.1=1.0.0",
+        "so:libdwarves_reorganize.so.1=1.0.0",
+        "cmd:btfdiff=1.23-r0",
+        "cmd:codiff=1.23-r0",
+        "cmd:ctracer=1.23-r0",
+        "cmd:dtagnames=1.23-r0",
+        "cmd:fullcircle=1.23-r0",
+        "cmd:pahole=1.23-r0",
+        "cmd:pdwtags=1.23-r0",
+        "cmd:pfunct=1.23-r0",
+        "cmd:pglobal=1.23-r0",
+        "cmd:prefcnt=1.23-r0",
+        "cmd:scncopy=1.23-r0",
+        "cmd:syscse=1.23-r0"
+      ]
     }
   },
   "provide": {
@@ -122953,6 +122992,18 @@
       "libgviewv4l2core-2.1.so.2": {
         "package": "guvcview-libs",
         "version": "2.0.1"
+      },
+      "libdwarves.so.1": {
+        "package": "pahole",
+        "version": "1.0.0"
+      },
+      "libdwarves_emit.so.1": {
+        "package": "pahole",
+        "version": "1.0.0"
+      },
+      "libdwarves_reorganize.so.1": {
+        "package": "pahole",
+        "version": "1.0.0"
       }
     },
     "package": {
