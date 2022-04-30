@@ -1531,17 +1531,18 @@
     "libressl": {
       "origin": "libressl",
       "versions": {
-        "3.4.3-r0": 1647367565
+        "3.4.3-r0": 1647367565,
+        "3.5.2-r0": 1651312756
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1",
-        "so:libressl:libcrypto.so.47",
-        "so:libressl:libssl.so.50",
-        "so:libressl:libtls.so.22"
+        "so:libressl:libcrypto.so.49",
+        "so:libressl:libssl.so.52",
+        "so:libressl:libtls.so.25"
       ],
       "provides": [
-        "cmd:libressl=3.4.3-r0",
-        "cmd:ocspcheck=3.4.3-r0"
+        "cmd:libressl=3.5.2-r0",
+        "cmd:ocspcheck=3.5.2-r0"
       ]
     },
     "xapian-bindings-perl": {
@@ -45630,7 +45631,8 @@
     "libressl-doc": {
       "origin": "libressl",
       "versions": {
-        "3.4.3-r0": 1647367565
+        "3.4.3-r0": 1647367565,
+        "3.5.2-r0": 1651312756
       }
     },
     "py3-bluez": {
@@ -76679,19 +76681,20 @@
     "libressl-dev": {
       "origin": "libressl",
       "versions": {
-        "3.4.3-r0": 1647367565
+        "3.4.3-r0": 1647367565,
+        "3.5.2-r0": 1651312756
       },
       "dependencies": [
-        "libressl3.4-libcrypto=3.4.3-r0",
-        "libressl3.4-libssl=3.4.3-r0",
-        "libressl3.4-libtls=3.4.3-r0",
+        "libressl3.5-libcrypto=3.5.2-r0",
+        "libressl3.5-libssl=3.5.2-r0",
+        "libressl3.5-libtls=3.5.2-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libressl:libcrypto=3.4.3",
-        "pc:libressl:libssl=3.4.3",
-        "pc:libressl:libtls=3.4.3",
-        "pc:libressl:openssl=3.4.3"
+        "pc:libressl:libcrypto=3.5.2",
+        "pc:libressl:libssl=3.5.2",
+        "pc:libressl:libtls=3.5.2",
+        "pc:libressl:openssl=3.5.2"
       ]
     },
     "sane-backend-magicolor": {
@@ -98951,7 +98954,8 @@
     "libressl-dbg": {
       "origin": "libressl",
       "versions": {
-        "3.4.3-r0": 1647367565
+        "3.4.3-r0": 1647367565,
+        "3.5.2-r0": 1651312756
       }
     },
     "feh-doc": {
@@ -113385,6 +113389,43 @@
       "provides": [
         "cmd:lxc=4.0.9-r2"
       ]
+    },
+    "libressl3.5-libcrypto": {
+      "origin": "libressl",
+      "versions": {
+        "3.5.2-r0": 1651312756
+      },
+      "dependencies": [
+        "so:libc.musl-s390x.so.1"
+      ],
+      "provides": [
+        "so:libressl:libcrypto.so.49=49.0.0"
+      ]
+    },
+    "libressl3.5-libssl": {
+      "origin": "libressl",
+      "versions": {
+        "3.5.2-r0": 1651312756
+      },
+      "dependencies": [
+        "so:libc.musl-s390x.so.1",
+        "so:libressl:libcrypto.so.49"
+      ],
+      "provides": [
+        "so:libressl:libssl.so.52=52.0.0"
+      ]
+    },
+    "libressl3.5-libtls": {
+      "origin": "libressl",
+      "versions": {
+        "3.5.2-r0": 1651312756
+      },
+      "dependencies": [
+        "so:libc.musl-s390x.so.1"
+      ],
+      "provides": [
+        "so:libressl:libtls.so.25=25.0.0"
+      ]
     }
   },
   "provide": {
@@ -123436,6 +123477,18 @@
       "libnsl.so.3": {
         "package": "libnsl",
         "version": "3.0.0"
+      },
+      "libressl:libcrypto.so.49": {
+        "package": "libressl3.5-libcrypto",
+        "version": "49.0.0"
+      },
+      "libressl:libssl.so.52": {
+        "package": "libressl3.5-libssl",
+        "version": "52.0.0"
+      },
+      "libressl:libtls.so.25": {
+        "package": "libressl3.5-libtls",
+        "version": "25.0.0"
       }
     },
     "package": {
