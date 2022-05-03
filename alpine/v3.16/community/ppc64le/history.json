@@ -149358,6 +149358,87 @@
       "provides": [
         "so:libnm-device-plugin-adsl.so=0"
       ]
+    },
+    "slop-dev": {
+      "origin": "slop",
+      "versions": {
+        "7.6-r3": 1651603683
+      },
+      "dependencies": [
+        "slop-libs=7.6-r3"
+      ]
+    },
+    "slop": {
+      "origin": "slop",
+      "versions": {
+        "7.6-r3": 1651603683
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1",
+        "so:libgcc_s.so.1",
+        "so:libicuuc.so.71",
+        "so:libslopy.so.7.6",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "cmd:slop=7.6-r3"
+      ]
+    },
+    "maim-doc": {
+      "origin": "maim",
+      "versions": {
+        "5.7.4-r5": 1651603683
+      }
+    },
+    "maim": {
+      "origin": "maim",
+      "versions": {
+        "5.7.4-r5": 1651603683
+      },
+      "dependencies": [
+        "so:libX11.so.6",
+        "so:libXcomposite.so.1",
+        "so:libXext.so.6",
+        "so:libXfixes.so.3",
+        "so:libXrandr.so.2",
+        "so:libXrender.so.1",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libgcc_s.so.1",
+        "so:libicuuc.so.71",
+        "so:libjpeg.so.8",
+        "so:libpng16.so.16",
+        "so:libslopy.so.7.6",
+        "so:libstdc++.so.6",
+        "so:libwebp.so.7"
+      ],
+      "provides": [
+        "cmd:maim=5.7.4-r5"
+      ]
+    },
+    "slop-libs": {
+      "origin": "slop",
+      "versions": {
+        "7.6-r3": 1651603683
+      },
+      "dependencies": [
+        "so:libGL.so.1",
+        "so:libGLEW.so.2.2",
+        "so:libX11.so.6",
+        "so:libXext.so.6",
+        "so:libXrender.so.1",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:libslopy.so.7.6=7.6"
+      ]
+    },
+    "slop-doc": {
+      "origin": "slop",
+      "versions": {
+        "7.6-r3": 1651603683
+      }
     }
   },
   "provide": {
@@ -164659,6 +164740,10 @@
       "libavif.so.14": {
         "package": "libavif",
         "version": "14.0.1"
+      },
+      "libslopy.so.7.6": {
+        "package": "slop-libs",
+        "version": "7.6"
       }
     }
   }
