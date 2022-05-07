@@ -7750,7 +7750,8 @@
     "skopeo-bash-completion": {
       "origin": "skopeo",
       "versions": {
-        "1.7.0-r0": 1648164167
+        "1.7.0-r0": 1648164167,
+        "1.8.0-r0": 1651953983
       }
     },
     "jool-tools-doc": {
@@ -22396,7 +22397,8 @@
     "skopeo": {
       "origin": "skopeo",
       "versions": {
-        "1.7.0-r0": 1648164167
+        "1.7.0-r0": 1648164167,
+        "1.8.0-r0": 1651953983
       },
       "dependencies": [
         "containers-common",
@@ -22405,7 +22407,7 @@
         "so:libgpgme.so.11"
       ],
       "provides": [
-        "cmd:skopeo=1.7.0-r0"
+        "cmd:skopeo=1.8.0-r0"
       ]
     },
     "opensmtpd-table-ldap": {
@@ -35433,7 +35435,8 @@
     "skopeo-doc": {
       "origin": "skopeo",
       "versions": {
-        "1.7.0-r0": 1648164167
+        "1.7.0-r0": 1648164167,
+        "1.8.0-r0": 1651953983
       }
     },
     "py3-paramiko": {
@@ -49289,7 +49292,8 @@
     "xterm": {
       "origin": "xterm",
       "versions": {
-        "371-r0": 1648166115
+        "371-r0": 1648166115,
+        "372-r0": 1651954327
       },
       "dependencies": [
         "ncurses-terminfo-base",
@@ -49307,10 +49311,10 @@
         "so:libncursesw.so.6"
       ],
       "provides": [
-        "cmd:koi8rxterm=371-r0",
-        "cmd:resize=371-r0",
-        "cmd:uxterm=371-r0",
-        "cmd:xterm=371-r0"
+        "cmd:koi8rxterm=372-r0",
+        "cmd:resize=372-r0",
+        "cmd:uxterm=372-r0",
+        "cmd:xterm=372-r0"
       ]
     },
     "py3-deprecated": {
@@ -54428,7 +54432,8 @@
     "nethogs": {
       "origin": "nethogs",
       "versions": {
-        "0.8.6-r0": 1585988278
+        "0.8.6-r0": 1585988278,
+        "0.8.7-r0": 1651955153
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -54438,7 +54443,7 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:nethogs=0.8.6-r0"
+        "cmd:nethogs=0.8.7-r0"
       ]
     },
     "boca-dev": {
@@ -58479,7 +58484,8 @@
     "spot": {
       "origin": "spot",
       "versions": {
-        "0.3.2-r0": 1648919870
+        "0.3.2-r0": 1648919870,
+        "0.3.3-r0": 1651953027
       },
       "dependencies": [
         "so:libadwaita-1.so.0",
@@ -58498,7 +58504,7 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:spot=0.3.2-r0"
+        "cmd:spot=0.3.3-r0"
       ]
     },
     "mdds-doc": {
@@ -62882,7 +62888,8 @@
     "xterm-doc": {
       "origin": "xterm",
       "versions": {
-        "371-r0": 1648166115
+        "371-r0": 1648166115,
+        "372-r0": 1651954327
       }
     },
     "libcaca-doc": {
@@ -99886,7 +99893,8 @@
     "nethogs-doc": {
       "origin": "nethogs",
       "versions": {
-        "0.8.6-r0": 1585988278
+        "0.8.6-r0": 1585988278,
+        "0.8.7-r0": 1651955153
       }
     },
     "zabbix-sqlite": {
@@ -114474,15 +114482,16 @@
     "swayr": {
       "origin": "swayr",
       "versions": {
-        "0.16.1-r0": 1648994758
+        "0.16.1-r0": 1648994758,
+        "0.18.0-r0": 1651952845
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libgcc_s.so.1"
       ],
       "provides": [
-        "cmd:swayr=0.16.1-r0",
-        "cmd:swayrd=0.16.1-r0"
+        "cmd:swayr=0.18.0-r0",
+        "cmd:swayrd=0.18.0-r0"
       ]
     },
     "editorconfig-dev": {
@@ -122937,7 +122946,8 @@
     "spot-lang": {
       "origin": "spot",
       "versions": {
-        "0.3.2-r0": 1648919870
+        "0.3.2-r0": 1648919870,
+        "0.3.3-r0": 1651953027
       }
     },
     "perl-text-quoted": {
@@ -131396,6 +131406,31 @@
       "versions": {
         "3.1.0-r0": 1651951556
       }
+    },
+    "nghttp3": {
+      "origin": "nghttp3",
+      "versions": {
+        "0.4.0-r0": 1651954757
+      },
+      "dependencies": [
+        "so:libc.musl-armhf.so.1"
+      ],
+      "provides": [
+        "so:libnghttp3.so.2=2.0.0"
+      ]
+    },
+    "nghttp3-dev": {
+      "origin": "nghttp3",
+      "versions": {
+        "0.4.0-r0": 1651954757
+      },
+      "dependencies": [
+        "nghttp3=0.4.0-r0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:libnghttp3=0.4.0"
+      ]
     }
   },
   "provide": {
@@ -144329,6 +144364,10 @@
       "libgstx264.so": {
         "package": "gst-plugins-ugly",
         "version": "0"
+      },
+      "libnghttp3.so.2": {
+        "package": "nghttp3",
+        "version": "2.0.0"
       }
     }
   }
