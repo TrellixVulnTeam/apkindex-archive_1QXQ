@@ -131585,6 +131585,29 @@
         "py-colorlog=6.6.0-r0",
         "py3.10:colorlog=6.6.0-r0"
       ]
+    },
+    "connman-resolvconf-openrc": {
+      "origin": "connman-resolvconf",
+      "versions": {
+        "0.1.0-r0": 1652035816
+      }
+    },
+    "connman-resolvconf": {
+      "origin": "connman-resolvconf",
+      "versions": {
+        "0.1.0-r0": 1652035816
+      },
+      "dependencies": [
+        "cmd:resolvconf",
+        "connman",
+        "dbus",
+        "so:libc.musl-armhf.so.1",
+        "so:libdbus-1.so.3",
+        "so:libgcc_s.so.1"
+      ],
+      "provides": [
+        "cmd:connman-resolvconfd=0.1.0-r0"
+      ]
     }
   },
   "provide": {
