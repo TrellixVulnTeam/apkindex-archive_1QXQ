@@ -25642,14 +25642,15 @@
     "py3-xlib": {
       "origin": "py3-xlib",
       "versions": {
-        "0.31-r1": 1650059730
+        "0.31-r1": 1650059730,
+        "0.31-r2": 1652092845
       },
       "dependencies": [
         "py3-six"
       ],
       "provides": [
-        "py-xlib=0.31-r1",
-        "py3.10:Xlib=0.31-r1"
+        "py-xlib=0.31-r2",
+        "py3.10:Xlib=0.31-r2"
       ]
     },
     "fennel5.4": {
@@ -50944,7 +50945,8 @@
     "goobook-doc": {
       "origin": "goobook",
       "versions": {
-        "3.5-r3": 1639595867
+        "3.5-r3": 1639595867,
+        "3.5.1-r0": 1652092845
       }
     },
     "py3-mpi4py": {
@@ -97908,18 +97910,21 @@
     "goobook": {
       "origin": "goobook",
       "versions": {
-        "3.5-r3": 1639595867
+        "3.5-r3": 1639595867,
+        "3.5.1-r0": 1652092845
       },
       "dependencies": [
-        "py3-httplib2",
-        "py3-google-auth-httplib2",
         "py3-google-api-python-client",
+        "py3-google-auth-httplib2",
+        "py3-httplib2",
+        "py3-oauth2client",
         "py3-simplejson",
-        "py3-oauth2client"
+        "py3-xdg",
+        "python3"
       ],
       "provides": [
-        "cmd:goobook=3.5-r3",
-        "py3.10:goobook=3.5-r3"
+        "cmd:goobook=3.5.1-r0",
+        "py3.10:goobook=3.5.1-r0"
       ]
     },
     "supertuxkart-data": {
@@ -131672,6 +131677,25 @@
         "so:libc.musl-armhf.so.1",
         "so:libvdpau.so.1"
       ]
+    },
+    "prometheus-wireguard-exporter-openrc": {
+      "origin": "prometheus-wireguard-exporter",
+      "versions": {
+        "3.6.3-r0": 1652090190
+      }
+    },
+    "prometheus-wireguard-exporter": {
+      "origin": "prometheus-wireguard-exporter",
+      "versions": {
+        "3.6.3-r0": 1652090190
+      },
+      "dependencies": [
+        "so:libc.musl-armhf.so.1",
+        "so:libgcc_s.so.1"
+      ],
+      "provides": [
+        "cmd:prometheus_wireguard_exporter=3.6.3-r0"
+      ]
     }
   },
   "provide": {
@@ -132146,7 +132170,7 @@
       },
       "py-xlib": {
         "package": "py3-xlib",
-        "version": "0.31-r1"
+        "version": "0.31-r2"
       },
       "py3-pass-git-helper": {
         "package": "pass-git-helper",

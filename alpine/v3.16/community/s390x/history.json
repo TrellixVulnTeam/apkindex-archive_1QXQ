@@ -776,18 +776,21 @@
     "goobook": {
       "origin": "goobook",
       "versions": {
-        "3.5-r3": 1639595867
+        "3.5-r3": 1639595867,
+        "3.5.1-r0": 1652092845
       },
       "dependencies": [
-        "py3-httplib2",
-        "py3-google-auth-httplib2",
         "py3-google-api-python-client",
+        "py3-google-auth-httplib2",
+        "py3-httplib2",
+        "py3-oauth2client",
         "py3-simplejson",
-        "py3-oauth2client"
+        "py3-xdg",
+        "python3"
       ],
       "provides": [
-        "cmd:goobook=3.5-r3",
-        "py3.10:goobook=3.5-r3"
+        "cmd:goobook=3.5.1-r0",
+        "py3.10:goobook=3.5.1-r0"
       ]
     },
     "ticcutils-doc": {
@@ -28899,7 +28902,8 @@
     "goobook-doc": {
       "origin": "goobook",
       "versions": {
-        "3.5-r3": 1639595867
+        "3.5-r3": 1639595867,
+        "3.5.1-r0": 1652092845
       }
     },
     "bitcoin-qt": {
@@ -62562,14 +62566,15 @@
     "py3-xlib": {
       "origin": "py3-xlib",
       "versions": {
-        "0.31-r1": 1650059730
+        "0.31-r1": 1650059730,
+        "0.31-r2": 1652092845
       },
       "dependencies": [
         "py3-six"
       ],
       "provides": [
-        "py-xlib=0.31-r1",
-        "py3.10:Xlib=0.31-r1"
+        "py-xlib=0.31-r2",
+        "py3.10:Xlib=0.31-r2"
       ]
     },
     "kpackage-doc": {
@@ -114502,6 +114507,106 @@
         "so:libc.musl-s390x.so.1",
         "so:libvdpau.so.1"
       ]
+    },
+    "lipstick-nemo-dbg": {
+      "origin": "lipstick-nemo",
+      "versions": {
+        "0.44_git20220319-r2": 1652091685
+      }
+    },
+    "lipstick-nemo": {
+      "origin": "lipstick-nemo",
+      "versions": {
+        "0.44_git20220319-r2": 1652091685
+      },
+      "dependencies": [
+        "so:libKF5BluezQt.so.6",
+        "so:libQt5Core.so.5",
+        "so:libQt5DBus.so.5",
+        "so:libQt5Gui.so.5",
+        "so:libQt5Qml.so.5",
+        "so:libQt5Quick.so.5",
+        "so:libQt5Sensors.so.5",
+        "so:libQt5Sql.so.5",
+        "so:libQt5WaylandCompositor.so.5",
+        "so:libc.musl-s390x.so.1",
+        "so:libdbus-1.so.3",
+        "so:libdsme_dbus_if.so.0",
+        "so:libelogind.so.0",
+        "so:libgcc_s.so.1",
+        "so:libgio-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libkeepalive.so.1",
+        "so:libmce-qt5.so.1",
+        "so:libmlite5.so.0",
+        "so:libnemodevicelock.so.1",
+        "so:libngf-qt5.so.1",
+        "so:libpulse-mainloop-glib.so.0",
+        "so:libpulse.so.0",
+        "so:libstdc++.so.6",
+        "so:libsystemsettings.so.1",
+        "so:libthermalmanager_dbus_if.so.0",
+        "so:libtimed-qt5.so.0",
+        "so:libusb-moded-qt5.so.1"
+      ],
+      "provides": [
+        "lipstick=0.44_git20220319-r2",
+        "so:liblipstick-qt5.so.1=1.0.0"
+      ]
+    },
+    "lipstick-nemo-tools": {
+      "origin": "lipstick-nemo",
+      "versions": {
+        "0.44_git20220319-r2": 1652091685
+      },
+      "dependencies": [
+        "so:libQt5Core.so.5",
+        "so:libQt5DBus.so.5",
+        "so:libc.musl-s390x.so.1",
+        "so:libgcc_s.so.1",
+        "so:liblipstick-qt5.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "cmd:notificationtool=0.44_git20220319-r2",
+        "cmd:screenshottool=0.44_git20220319-r2"
+      ]
+    },
+    "lipstick-nemo-dev": {
+      "origin": "lipstick-nemo",
+      "versions": {
+        "0.44_git20220319-r2": 1652091685
+      },
+      "dependencies": [
+        "bluez-qt-dev",
+        "elogind-dev",
+        "libdsme-dev",
+        "libmce-qt-dev",
+        "libngf-qt-dev",
+        "libresourceqt-dev",
+        "libusb-moded-qt-dev",
+        "libxkbcommon-dev",
+        "mlite-dev",
+        "nemo-keepalive-dev",
+        "nemo-qml-plugin-devicelock-dev",
+        "nemo-qml-plugin-systemsettings-dev",
+        "pulseaudio-dev",
+        "qt5-qtbase-dev",
+        "qt5-qtdeclarative-dev",
+        "qt5-qtsensors-dev",
+        "qt5-qtsystems-dev",
+        "qt5-qttools-dev",
+        "qt5-qtwayland-dev",
+        "ssu-sysinfo-dev",
+        "user-managerd-dev",
+        "wayland-dev",
+        "lipstick-nemo=0.44_git20220319-r2",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:lipstick-qt5=1.0.0"
+      ]
     }
   },
   "provide": {
@@ -117231,7 +117336,7 @@
         "version": "0.14.0"
       },
       "liblipstick-qt5.so.1": {
-        "package": "lipstick",
+        "package": "lipstick-nemo",
         "version": "1.0.0"
       },
       "libQt5SerialPort.so.5": {
@@ -125774,7 +125879,7 @@
       },
       "py-xlib": {
         "package": "py3-xlib",
-        "version": "0.31-r1"
+        "version": "0.31-r2"
       },
       "st": {
         "package": "sxmo-st",
@@ -126555,6 +126660,10 @@
       "py-asn1crypto": {
         "package": "py3-asn1crypto",
         "version": "1.5.1-r0"
+      },
+      "lipstick": {
+        "package": "lipstick-nemo",
+        "version": "0.44_git20220319-r2"
       }
     }
   }
