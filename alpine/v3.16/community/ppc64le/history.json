@@ -1397,13 +1397,14 @@
       "origin": "chezmoi",
       "versions": {
         "2.15.1-r1": 1649862564,
-        "2.15.2-r0": 1651432458
+        "2.15.2-r0": 1651432458,
+        "2.15.4-r0": 1652224130
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1"
       ],
       "provides": [
-        "cmd:chezmoi=2.15.2-r0"
+        "cmd:chezmoi=2.15.4-r0"
       ]
     },
     "cmus-doc": {
@@ -21092,7 +21093,8 @@
       "origin": "chezmoi",
       "versions": {
         "2.15.1-r1": 1649862564,
-        "2.15.2-r0": 1651432458
+        "2.15.2-r0": 1651432458,
+        "2.15.4-r0": 1652224130
       }
     },
     "py3-pytest-mpi": {
@@ -40327,13 +40329,14 @@
         "0.0.45-r0": 1651080312,
         "0.0.46-r0": 1651084965,
         "1.0.0-r0": 1651786391,
-        "1.0.3-r0": 1652210878
+        "1.0.3-r0": 1652210878,
+        "1.0.5-r0": 1652223874
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1"
       ],
       "provides": [
-        "cmd:tut=1.0.3-r0"
+        "cmd:tut=1.0.5-r0"
       ]
     },
     "uptimed-openrc": {
@@ -60919,7 +60922,8 @@
       "origin": "chezmoi",
       "versions": {
         "2.15.1-r1": 1649862564,
-        "2.15.2-r0": 1651432458
+        "2.15.2-r0": 1651432458,
+        "2.15.4-r0": 1652224130
       }
     },
     "perl-text-quoted-doc": {
@@ -121377,7 +121381,8 @@
       "origin": "chezmoi",
       "versions": {
         "2.15.1-r1": 1649862564,
-        "2.15.2-r0": 1651432458
+        "2.15.2-r0": 1651432458,
+        "2.15.4-r0": 1652224130
       }
     },
     "pushgateway-openrc": {
@@ -152153,6 +152158,78 @@
         "so:libc.musl-ppc64le.so.1",
         "so:libz.so.1"
       ]
+    },
+    "nut-dev": {
+      "origin": "nut",
+      "versions": {
+        "2.8.0-r0": 1652225735
+      },
+      "dependencies": [
+        "openssl1.1-compat-dev",
+        "libusb-dev",
+        "net-snmp-dev",
+        "neon-dev",
+        "nss-dev",
+        "nut=2.8.0-r0"
+      ]
+    },
+    "nut": {
+      "origin": "nut",
+      "versions": {
+        "2.8.0-r0": 1652225735
+      },
+      "dependencies": [
+        "hidapi",
+        "eudev",
+        "udev-init-scripts-openrc",
+        "/bin/sh",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libgcc_s.so.1",
+        "so:libltdl.so.7",
+        "so:libneon.so.27",
+        "so:libnetsnmp.so.40",
+        "so:libnspr4.so",
+        "so:libnss3.so",
+        "so:libplc4.so",
+        "so:libplds4.so",
+        "so:libssl3.so",
+        "so:libstdc++.so.6",
+        "so:libusb-1.0.so.0"
+      ],
+      "provides": [
+        "so:libnutclient.so.2=2.0.0",
+        "so:libnutclientstub.so.1=1.0.0",
+        "so:libnutscan.so.2=2.0.0",
+        "so:libupsclient.so.6=6.0.0",
+        "cmd:nut-scanner=2.8.0-r0",
+        "cmd:upsc=2.8.0-r0",
+        "cmd:upscmd=2.8.0-r0",
+        "cmd:upsd=2.8.0-r0",
+        "cmd:upsdrvctl=2.8.0-r0",
+        "cmd:upslog=2.8.0-r0",
+        "cmd:upsmon=2.8.0-r0",
+        "cmd:upsrw=2.8.0-r0",
+        "cmd:upssched-cmd=2.8.0-r0",
+        "cmd:upssched=2.8.0-r0"
+      ]
+    },
+    "nut-bash-completion": {
+      "origin": "nut",
+      "versions": {
+        "2.8.0-r0": 1652225735
+      }
+    },
+    "nut-doc": {
+      "origin": "nut",
+      "versions": {
+        "2.8.0-r0": 1652225735
+      }
+    },
+    "nut-openrc": {
+      "origin": "nut",
+      "versions": {
+        "2.8.0-r0": 1652225735
+      }
     }
   },
   "provide": {
@@ -167610,6 +167687,22 @@
       "libJudy.so.1": {
         "package": "judy",
         "version": "1.0.3"
+      },
+      "libnutclient.so.2": {
+        "package": "nut",
+        "version": "2.0.0"
+      },
+      "libnutclientstub.so.1": {
+        "package": "nut",
+        "version": "1.0.0"
+      },
+      "libnutscan.so.2": {
+        "package": "nut",
+        "version": "2.0.0"
+      },
+      "libupsclient.so.6": {
+        "package": "nut",
+        "version": "6.0.0"
       }
     }
   }
