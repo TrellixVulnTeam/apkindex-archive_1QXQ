@@ -33597,10 +33597,11 @@
     "feedbackd-dev": {
       "origin": "feedbackd",
       "versions": {
-        "0_git20211018-r0": 1634694225
+        "0_git20211018-r0": 1634694225,
+        "0_git20220208-r0": 1652208359
       },
       "dependencies": [
-        "feedbackd=0_git20211018-r0",
+        "feedbackd=0_git20220208-r0",
         "pc:gio-2.0>=2.50.0",
         "pc:gio-unix-2.0>=2.50.0",
         "pc:glib-2.0>=2.50.0",
@@ -49325,7 +49326,8 @@
     "stress-ng-bash-completion": {
       "origin": "stress-ng",
       "versions": {
-        "0.13.08-r1": 1644856195
+        "0.13.08-r1": 1644856195,
+        "0.14.00-r0": 1652209207
       }
     },
     "py3-pycodestyle": {
@@ -66851,7 +66853,8 @@
     "feedbackd-doc": {
       "origin": "feedbackd",
       "versions": {
-        "0_git20211018-r0": 1634694225
+        "0_git20211018-r0": 1634694225,
+        "0_git20220208-r0": 1652208359
       }
     },
     "pdns-recursor-openrc": {
@@ -80201,7 +80204,8 @@
     "stress-ng-doc": {
       "origin": "stress-ng",
       "versions": {
-        "0.13.08-r1": 1644856195
+        "0.13.08-r1": 1644856195,
+        "0.14.00-r0": 1652209207
       }
     },
     "perl-graphviz-doc": {
@@ -89905,7 +89909,8 @@
     "feedbackd": {
       "origin": "feedbackd",
       "versions": {
-        "0_git20211018-r0": 1634694225
+        "0_git20211018-r0": 1634694225,
+        "0_git20220208-r0": 1652208359
       },
       "dependencies": [
         "dbus",
@@ -89921,7 +89926,7 @@
       ],
       "provides": [
         "so:libfeedback-0.0.so.0=0",
-        "cmd:fbcli=0_git20211018-r0"
+        "cmd:fbcli=0_git20220208-r0"
       ]
     },
     "kdf-doc": {
@@ -131945,16 +131950,18 @@
     "stress-ng": {
       "origin": "stress-ng",
       "versions": {
-        "0.13.08-r1": 1644856195
+        "0.13.08-r1": 1644856195,
+        "0.14.00-r0": 1652209207
       },
       "dependencies": [
+        "so:libJudy.so.1",
         "so:libbsd.so.0",
         "so:libc.musl-ppc64le.so.1",
         "so:libsctp.so.1",
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:stress-ng=0.13.08-r1"
+        "cmd:stress-ng=0.14.00-r0"
       ]
     },
     "fdk-aac-doc": {
@@ -150783,6 +150790,33 @@
       "versions": {
         "1.2.1-r0": 1652202553
       }
+    },
+    "judy-doc": {
+      "origin": "judy",
+      "versions": {
+        "1.0.5-r0": 1652209207
+      }
+    },
+    "judy-dev": {
+      "origin": "judy",
+      "versions": {
+        "1.0.5-r0": 1652209207
+      },
+      "dependencies": [
+        "judy=1.0.5-r0"
+      ]
+    },
+    "judy": {
+      "origin": "judy",
+      "versions": {
+        "1.0.5-r0": 1652209207
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1"
+      ],
+      "provides": [
+        "so:libJudy.so.1=1.0.3"
+      ]
     }
   },
   "provide": {
@@ -166200,6 +166234,10 @@
       "libQt6Quick3DParticleEffects.so.6": {
         "package": "qt6-qtquick3d",
         "version": "6.3.0"
+      },
+      "libJudy.so.1": {
+        "package": "judy",
+        "version": "1.0.3"
       }
     }
   }

@@ -1647,7 +1647,8 @@
     "libmaxminddb-static": {
       "origin": "libmaxminddb",
       "versions": {
-        "1.6.0-r0": 1630771359
+        "1.6.0-r0": 1630771359,
+        "1.6.0-r1": 1652210930
       }
     },
     "conky-doc": {
@@ -4392,10 +4393,11 @@
     "py3-elementpath": {
       "origin": "py3-elementpath",
       "versions": {
-        "2.5.0-r0": 1646639252
+        "2.5.0-r0": 1646639252,
+        "2.5.1-r0": 1652210867
       },
       "provides": [
-        "py3.10:elementpath=2.5.0-r0"
+        "py3.10:elementpath=2.5.1-r0"
       ]
     },
     "pcsc-lite-spy-libs": {
@@ -12832,15 +12834,16 @@
     "libmaxminddb": {
       "origin": "libmaxminddb",
       "versions": {
-        "1.6.0-r0": 1630771359
+        "1.6.0-r0": 1630771359,
+        "1.6.0-r1": 1652210930
       },
       "dependencies": [
         "curl",
-        "so:libc.musl-s390x.so.1"
+        "so:libc.musl-s390x.so.1",
+        "so:libmaxminddb.so.0"
       ],
       "provides": [
-        "so:libmaxminddb.so.0=0.0.7",
-        "cmd:mmdblookup=1.6.0-r0"
+        "cmd:mmdblookup=1.6.0-r1"
       ]
     },
     "dhcp-server-vanilla": {
@@ -20166,10 +20169,11 @@
     "libmaxminddb-dev": {
       "origin": "libmaxminddb",
       "versions": {
-        "1.6.0-r0": 1630771359
+        "1.6.0-r0": 1630771359,
+        "1.6.0-r1": 1652210930
       },
       "dependencies": [
-        "libmaxminddb=1.6.0-r0",
+        "libmaxminddb-libs=1.6.0-r1",
         "pkgconfig"
       ],
       "provides": [
@@ -50357,7 +50361,8 @@
     "libmaxminddb-doc": {
       "origin": "libmaxminddb",
       "versions": {
-        "1.6.0-r0": 1630771359
+        "1.6.0-r0": 1630771359,
+        "1.6.0-r1": 1652210930
       }
     },
     "libogg-doc": {
@@ -57483,6 +57488,18 @@
       "versions": {
         "4.2.4-r0": 1651318017
       }
+    },
+    "libmaxminddb-libs": {
+      "origin": "libmaxminddb",
+      "versions": {
+        "1.6.0-r1": 1652210930
+      },
+      "dependencies": [
+        "so:libc.musl-s390x.so.1"
+      ],
+      "provides": [
+        "so:libmaxminddb.so.0=0.0.7"
+      ]
     }
   },
   "provide": {
@@ -60066,7 +60083,7 @@
         "version": "1.77.0"
       },
       "libmaxminddb.so.0": {
-        "package": "libmaxminddb",
+        "package": "libmaxminddb-libs",
         "version": "0.0.7"
       },
       "libtk8.6.so": {

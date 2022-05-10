@@ -42519,7 +42519,8 @@
     "stress-ng-bash-completion": {
       "origin": "stress-ng",
       "versions": {
-        "0.13.08-r1": 1644856195
+        "0.13.08-r1": 1644856195,
+        "0.14.00-r0": 1652209207
       }
     },
     "py3-pyside6-dev": {
@@ -42773,14 +42774,15 @@
     "py3-regex": {
       "origin": "py3-regex",
       "versions": {
-        "2021.11.1-r1": 1639595882
+        "2021.11.1-r1": 1639595882,
+        "2022.4.24-r0": 1652210904
       },
       "dependencies": [
         "python3",
         "so:libc.musl-armhf.so.1"
       ],
       "provides": [
-        "py3.10:regex=2021.11.1-r1"
+        "py3.10:regex=2022.4.24-r0"
       ]
     },
     "dante-doc": {
@@ -45427,7 +45429,8 @@
     "feedbackd-doc": {
       "origin": "feedbackd",
       "versions": {
-        "0_git20211018-r0": 1634694225
+        "0_git20211018-r0": 1634694225,
+        "0_git20220208-r0": 1652208359
       }
     },
     "gnome-session": {
@@ -49142,7 +49145,8 @@
     "feedbackd": {
       "origin": "feedbackd",
       "versions": {
-        "0_git20211018-r0": 1634694225
+        "0_git20211018-r0": 1634694225,
+        "0_git20220208-r0": 1652208359
       },
       "dependencies": [
         "dbus",
@@ -49158,7 +49162,7 @@
       ],
       "provides": [
         "so:libfeedback-0.0.so.0=0",
-        "cmd:fbcli=0_git20211018-r0"
+        "cmd:fbcli=0_git20220208-r0"
       ]
     },
     "qt6-qtshadertools-dev": {
@@ -61733,13 +61737,14 @@
         "0.0.44-r0": 1650749733,
         "0.0.45-r0": 1651080312,
         "0.0.46-r0": 1651084965,
-        "1.0.0-r0": 1651786391
+        "1.0.0-r0": 1651786391,
+        "1.0.3-r0": 1652210878
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1"
       ],
       "provides": [
-        "cmd:tut=1.0.0-r0"
+        "cmd:tut=1.0.3-r0"
       ]
     },
     "perl-xml-easy-doc": {
@@ -64559,16 +64564,18 @@
     "stress-ng": {
       "origin": "stress-ng",
       "versions": {
-        "0.13.08-r1": 1644856195
+        "0.13.08-r1": 1644856195,
+        "0.14.00-r0": 1652209207
       },
       "dependencies": [
+        "so:libJudy.so.1",
         "so:libbsd.so.0",
         "so:libc.musl-armhf.so.1",
         "so:libsctp.so.1",
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:stress-ng=0.13.08-r1"
+        "cmd:stress-ng=0.14.00-r0"
       ]
     },
     "glib-networking": {
@@ -70431,7 +70438,8 @@
     "stress-ng-doc": {
       "origin": "stress-ng",
       "versions": {
-        "0.13.08-r1": 1644856195
+        "0.13.08-r1": 1644856195,
+        "0.14.00-r0": 1652209207
       }
     },
     "perl-graphviz-doc": {
@@ -96781,7 +96789,8 @@
     "ebusd": {
       "origin": "ebusd",
       "versions": {
-        "22.2-r0": 1646000547
+        "22.2-r0": 1646000547,
+        "22.3-r0": 1652208510
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -96792,9 +96801,9 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:ebusctl=22.2-r0",
-        "cmd:ebusd=22.2-r0",
-        "cmd:ebuspicloader=22.2-r0"
+        "cmd:ebusctl=22.3-r0",
+        "cmd:ebusd=22.3-r0",
+        "cmd:ebuspicloader=22.3-r0"
       ]
     },
     "gdm-dev": {
@@ -101247,10 +101256,11 @@
     "feedbackd-dev": {
       "origin": "feedbackd",
       "versions": {
-        "0_git20211018-r0": 1634694225
+        "0_git20211018-r0": 1634694225,
+        "0_git20220208-r0": 1652208359
       },
       "dependencies": [
-        "feedbackd=0_git20211018-r0",
+        "feedbackd=0_git20220208-r0",
         "pc:gio-2.0>=2.50.0",
         "pc:gio-unix-2.0>=2.50.0",
         "pc:glib-2.0>=2.50.0",
@@ -131880,6 +131890,33 @@
       "versions": {
         "1.2.1-r0": 1652202553
       }
+    },
+    "judy-dev": {
+      "origin": "judy",
+      "versions": {
+        "1.0.5-r0": 1652209207
+      },
+      "dependencies": [
+        "judy=1.0.5-r0"
+      ]
+    },
+    "judy": {
+      "origin": "judy",
+      "versions": {
+        "1.0.5-r0": 1652209207
+      },
+      "dependencies": [
+        "so:libc.musl-armhf.so.1"
+      ],
+      "provides": [
+        "so:libJudy.so.1=1.0.3"
+      ]
+    },
+    "judy-doc": {
+      "origin": "judy",
+      "versions": {
+        "1.0.5-r0": 1652209207
+      }
     }
   },
   "provide": {
@@ -144853,6 +144890,10 @@
       "libQt6DataVisualizationQml.so.6": {
         "package": "qt6-qtdatavis3d",
         "version": "6.3.0"
+      },
+      "libJudy.so.1": {
+        "package": "judy",
+        "version": "1.0.3"
       }
     }
   }

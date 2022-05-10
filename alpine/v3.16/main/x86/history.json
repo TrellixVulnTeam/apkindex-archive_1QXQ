@@ -2101,10 +2101,11 @@
     "libmaxminddb-dev": {
       "origin": "libmaxminddb",
       "versions": {
-        "1.6.0-r0": 1630771359
+        "1.6.0-r0": 1630771359,
+        "1.6.0-r1": 1652210930
       },
       "dependencies": [
-        "libmaxminddb=1.6.0-r0",
+        "libmaxminddb-libs=1.6.0-r1",
         "pkgconfig"
       ],
       "provides": [
@@ -5488,15 +5489,16 @@
     "libmaxminddb": {
       "origin": "libmaxminddb",
       "versions": {
-        "1.6.0-r0": 1630771359
+        "1.6.0-r0": 1630771359,
+        "1.6.0-r1": 1652210930
       },
       "dependencies": [
         "curl",
-        "so:libc.musl-x86.so.1"
+        "so:libc.musl-x86.so.1",
+        "so:libmaxminddb.so.0"
       ],
       "provides": [
-        "so:libmaxminddb.so.0=0.0.7",
-        "cmd:mmdblookup=1.6.0-r0"
+        "cmd:mmdblookup=1.6.0-r1"
       ]
     },
     "mosquitto-dev": {
@@ -6126,7 +6128,8 @@
     "libmaxminddb-doc": {
       "origin": "libmaxminddb",
       "versions": {
-        "1.6.0-r0": 1630771359
+        "1.6.0-r0": 1630771359,
+        "1.6.0-r1": 1652210930
       }
     },
     "openldap-overlay-retcode": {
@@ -18429,10 +18432,11 @@
     "py3-elementpath": {
       "origin": "py3-elementpath",
       "versions": {
-        "2.5.0-r0": 1646639252
+        "2.5.0-r0": 1646639252,
+        "2.5.1-r0": 1652210867
       },
       "provides": [
-        "py3.10:elementpath=2.5.0-r0"
+        "py3.10:elementpath=2.5.1-r0"
       ]
     },
     "perl-xml-namespacesupport": {
@@ -36038,7 +36042,8 @@
     "libmaxminddb-static": {
       "origin": "libmaxminddb",
       "versions": {
-        "1.6.0-r0": 1630771359
+        "1.6.0-r0": 1630771359,
+        "1.6.0-r1": 1652210930
       }
     },
     "cramfs": {
@@ -58436,6 +58441,18 @@
         "1.14.0-r0": 1650930581,
         "1.14.0-r1": 1650969102
       }
+    },
+    "libmaxminddb-libs": {
+      "origin": "libmaxminddb",
+      "versions": {
+        "1.6.0-r1": 1652210930
+      },
+      "dependencies": [
+        "so:libc.musl-x86.so.1"
+      ],
+      "provides": [
+        "so:libmaxminddb.so.0=0.0.7"
+      ]
     }
   },
   "provide": {
@@ -58789,7 +58806,7 @@
         "version": "1.9.5"
       },
       "libmaxminddb.so.0": {
-        "package": "libmaxminddb",
+        "package": "libmaxminddb-libs",
         "version": "0.0.7"
       },
       "libboost_prg_exec_monitor.so.1.77.0": {
