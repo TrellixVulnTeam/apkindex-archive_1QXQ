@@ -1,18 +1,3 @@
-C:Q10Q3vVejQGuzgDLd9U9yf7wAPFRQ=
-P:dovecot-gssapi
-V:2.3.18-r2
-A:armhf
-S:7741
-I:36864
-T:GSSAPI auth plugin for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1650750896
-c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
-D:dovecot=2.3.18-r2 so:libc.musl-armhf.so.1 so:libgssapi.so.3 so:libkrb5.so.26
-
 C:Q1ZCH4OrbUiYa2Ka4FmO763lGYgEA=
 P:gnupg-doc
 V:2.2.35-r0
@@ -58,6 +43,21 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-timedate=2.33-r1
+
+C:Q1yitQeEJ7rvjXToGIbTOujBB9jes=
+P:dovecot-pop3d
+V:2.3.19-r2
+A:armhf
+S:23586
+I:94208
+T:IMAP and POP3 server (POP3 daemon)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652179651
+c:5649839312b334dd83bc292fa47ed6357f66762b
+D:dovecot=2.3.19-r2 so:libc.musl-armhf.so.1 so:libdovecot-storage.so.0 so:libdovecot.so.0
 
 C:Q1u3Og7/WFpbmKnKPcoKRKV9tU1Wo=
 P:xkeyboard-config-doc
@@ -700,6 +700,20 @@ c:c25fd8e15ba7a9885159c1d54daf04309fd9339a
 D:rsync so:libc.musl-armhf.so.1 so:liblua-5.4.so.0
 p:cmd:lsyncd=2.2.4-r0
 
+C:Q1faWjIqlmLE65CrX228Yuvckjk6k=
+P:dovecot-dev
+V:2.3.19-r2
+A:armhf
+S:550009
+I:3739648
+T:IMAP and POP3 server (development files)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652179651
+c:5649839312b334dd83bc292fa47ed6357f66762b
+
 C:Q1T4ktijVm9URkIbt70Z7QHCOAJ28=
 P:perl-net-ip
 V:1.26-r3
@@ -1087,6 +1101,21 @@ c:d729bd0ab2766364dbb9d29eb2f205834c935bf6
 D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
 p:cmd:openssl=1.1.1n-r0
 
+C:Q1EH9ip2tNVjs0nSv9PRC9U2fbo20=
+P:linux-rpi
+V:5.15.38-r0
+A:armhf
+S:23860881
+I:35082240
+T:Linux kernel with Raspberry Pi patches
+U:https://github.com/raspberrypi/linux
+L:GPL-2.0
+o:linux-rpi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1651939686
+c:cc0db363e5957baddaa2134b4ff87e91454edd79
+D:mkinitfs linux-firmware-brcm linux-firmware-cypress
+
 C:Q1Bw60TyRqk7VBsB1XuRTsi8NIbHw=
 P:libfido2-dev
 V:1.10.0-r1
@@ -1300,6 +1329,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl perl-test-requires
+
+C:Q1lPShQp3ALiwkVjBSzs7P11V2ABM=
+P:lua5.4-dev
+V:5.4.4-r5
+A:armhf
+S:632463
+I:1470464
+T:Powerful light-weight programming language (development files)
+U:https://www.lua.org/
+L:MIT
+o:lua5.4
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652172551
+c:03200ecf6c3990949a1c22027f900993c5bcabd8
+D:lua5.4 lua5.4-libs=5.4.4-r5 pkgconfig
+p:pc:lua5.4-c++=5.4.4 pc:lua5.4=5.4.4
 
 C:Q1tYMmBVvasNVtG+d2bOpH+dXAmmI=
 P:ethtool
@@ -2652,22 +2697,6 @@ c:e63036f550295a63837835b9c4f5c7cc49351a09
 D:/bin/sh so:libc.musl-armhf.so.1 so:libtirpc.so.3
 p:cmd:rpcbind=1.2.6-r0 cmd:rpcinfo=1.2.6-r0
 
-C:Q1ZdrHYJ+C0hqcSa0ZON3gbKEvwZc=
-P:dovecot-ldap
-V:2.3.18-r2
-A:armhf
-S:39611
-I:135168
-T:LDAP auth plugin for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1650750896
-c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
-D:dovecot=2.3.18-r2 so:libc.musl-armhf.so.1 so:libdovecot.so.0 so:liblber.so.2 so:libldap.so.2
-p:so:libdovecot-ldap.so.0=0.0.0
-
 C:Q1Z4eGvaBsinjgiyK/BGfzMFwLlEE=
 P:snappy-dbg
 V:1.1.9-r4
@@ -3508,21 +3537,6 @@ m:Laurent Bercot <ska-devel@skarnet.org>
 t:1646775731
 c:9756e4e5eb7d03c322d23624156d9152c7c26cb4
 i:docs execline=2.8.3.0-r1
-
-C:Q1wnKdj3jJrB7+QRwlKWLZlHs1otQ=
-P:lua5.4-doc
-V:5.4.4-r4
-A:armhf
-S:121260
-I:471040
-T:Powerful light-weight programming language (documentation)
-U:https://www.lua.org/
-L:MIT
-o:lua5.4
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1652106070
-c:99c6c4ce71b60cdd0b174584c71e0a6b1a9ec952
-i:docs lua5.4=5.4.4-r4
 
 C:Q1hPjzxfih+XlTZTorPA/cLZhSxuE=
 P:zfs
@@ -4428,22 +4442,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
 
-C:Q1RR87eP75a/3lZ/G79jUyzUImoEc=
-P:libxcursor-dev
-V:1.2.0-r0
-A:armhf
-S:22231
-I:90112
-T:X cursor management library (development files)
-U:http://xorg.freedesktop.org/
-L:MIT
-o:libxcursor
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557246460
-c:37b6e467cdbd7eea2f2f9cf50ca51866bbcdac77
-D:libxcursor=1.2.0-r0 pc:x11 pc:xfixes pc:xproto pc:xrender pkgconfig
-p:pc:xcursor=1.2.0
-
 C:Q1lrnMHwY5pc4ywxIWpJ1TDfQ/M8E=
 P:nginx-mod-http-log-zmq
 V:1.20.2-r2
@@ -5178,6 +5176,21 @@ t:1646454917
 c:acc110c98c7fe6ac495078ef1212e85711cb75f3
 D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libz.so.1
 p:cmd:ld.gold=2.38-r1
+
+C:Q1lvsfP2CLZKGh9Vlay6aDd3O4ZwM=
+P:libxcb-doc
+V:1.15-r0
+A:armhf
+S:791575
+I:9764864
+T:X11 client-side library (documentation)
+U:https://xcb.freedesktop.org
+L:MIT
+o:libxcb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652183916
+c:6a6c34ad1edfa794a0a82703d2d13eca1fd67ab6
+i:docs libxcb=1.15-r0
 
 C:Q1WU+3sVFQtibNzJEh4WfAWdxlxwc=
 P:openvpn-dev
@@ -6102,6 +6115,21 @@ t:1567526663
 c:792fb875f317d992027428297ea0103d82b98373
 i:docs libnl3=3.5.0-r0
 
+C:Q1eFA95cCgC7CrDHXrJfMveP6hvEk=
+P:zfs-rpi-dev
+V:5.15.38-r1
+A:armhf
+S:491052
+I:3874816
+T:ZFS Linux kernel modules (development files)
+U:https://openzfs.org
+L:CDDL-1.0
+o:zfs-rpi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1651939686
+c:ae9f3124d941bd9b5f5f2d28c96f8d64c7539471
+D:glib-dev e2fsprogs-dev util-linux-dev libtirpc-dev linux-rpi-dev=5.15.38-r0
+
 C:Q1GbEs8INjNDoStWw+DtxYeVpqfKk=
 P:device-mapper-static
 V:2.02.187-r2
@@ -6638,6 +6666,22 @@ t:1642624385
 c:ef340b4bce950e6bc5373e2dabdb3f4dfaea6636
 D:popt-dev pc:openssl pkgconfig rabbitmq-c=0.11.0-r3
 p:pc:librabbitmq=0.11.0
+
+C:Q1oREmF2lkLZegBku3ObmWKGIbWa8=
+P:zfs-rpi2
+V:5.15.38-r1
+A:armhf
+S:1229098
+I:1302528
+T:ZFS Linux kernel modules for rpi2
+U:https://openzfs.org
+L:CDDL-1.0
+o:zfs-rpi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1651939686
+c:ae9f3124d941bd9b5f5f2d28c96f8d64c7539471
+D:linux-rpi2=5.15.38-r0
+i:zfs linux-rpi2=5.15.38-r0
 
 C:Q10jcDYRQR33ngxF2Qb5McVR/hBwA=
 P:libfdisk
@@ -7480,6 +7524,22 @@ t:1649860939
 c:40c4c8a971f1671685ae7632fd33cdf366fbcf46
 i:docs mtools=4.0.39-r0
 
+C:Q1/xzFPLylyL2rdfIHbCWqvbtDB+E=
+P:libxvmc-dev
+V:1.0.13-r0
+A:armhf
+S:5564
+I:53248
+T:X11 Video Motion Compensation extension library (development files)
+U:http://xorg.freedesktop.org/
+L:MIT
+o:libxvmc
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652178842
+c:4e7a73e02f55e0033e27a8500337b5cefa2efd81
+D:libxext-dev libxvmc=1.0.13-r0 pc:videoproto pc:x11>=1.6 pc:xext pc:xextproto pc:xv pkgconfig
+p:pc:xvmc-wrapper=1.0.13 pc:xvmc=1.0.13
+
 C:Q1kxvUK/W5gjNcOrG6vaRZYFLOsD8=
 P:uwsgi-logsocket
 V:2.0.20-r0
@@ -7694,21 +7754,6 @@ t:1632721919
 c:33b18f9a92ca49522fc4cc2e05841f48826f3ae6
 D:py3-libxml2 python3
 p:cmd:itstool=2.0.7-r0
-
-C:Q1vf7Pc3k31KjIgu9SuC4B/blS8wY=
-P:dovecot-submissiond
-V:2.3.18-r2
-A:armhf
-S:38994
-I:135168
-T:IMAP and POP3 server (mail submission agent)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1650750896
-c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
-D:dovecot=2.3.18-r2 so:libc.musl-armhf.so.1 so:libdovecot-storage.so.0 so:libdovecot.so.0
 
 C:Q1/g7ro99Et4RmsahZVrqKNhyHaqU=
 P:libexecinfo-dev
@@ -8292,6 +8337,22 @@ t:1631242372
 c:0d8bf88a57a123aac34cf6477f42c7ad08dd8e76
 D:so:libc.musl-armhf.so.1
 p:so:libjansson.so.4=4.14.0
+
+C:Q1fYzHQ32KhlZobloARNoSVdOJCYc=
+P:libxcursor-dev
+V:1.2.1-r0
+A:armhf
+S:22425
+I:90112
+T:X cursor management library (development files)
+U:http://xorg.freedesktop.org/
+L:MIT
+o:libxcursor
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652183516
+c:af97fc59f169b84d728f9e0ee371f8379767217f
+D:libxcursor=1.2.1-r0 pc:x11 pc:xfixes pc:xproto pc:xrender pkgconfig
+p:pc:xcursor=1.2.1
 
 C:Q1DxN27AJtgUNS58KCThCK4UjjP4Y=
 P:bdftopcf-doc
@@ -11300,21 +11361,6 @@ c:8083e012e6b776501961cc53e256ec3d207aece5
 D:rtnppd so:libc.musl-armhf.so.1 so:libpq.so.5
 p:cmd:rtapd=1.7-r6 cmd:vsnppd=1.7-r6
 
-C:Q1Evdr2TBy1fmwk3lNuupYzq193UM=
-P:linux-rpi-dev
-V:5.15.37-r0
-A:armhf
-S:18508748
-I:125702144
-T:Headers and script for third party modules for rpi kernel
-U:https://github.com/raspberrypi/linux
-L:GPL-2.0
-o:linux-rpi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1651566567
-c:31b810873704d3cdcf0335e51e90eb06daaa3a41
-D:perl gmp-dev elfutils-dev bash mpc1-dev mpfr-dev so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
-
 C:Q1MrxxCAf0YfKBbQze64hlTF0M0C4=
 P:pango-doc
 V:1.50.7-r0
@@ -11940,6 +11986,21 @@ t:1650118919
 c:70bc0ead15ef86e573fae993be31c08bcbd687e4
 p:linux-firmware-any
 
+C:Q1X5qxuvKV40EKfyUmYdDHUGn5NNs=
+P:libxvmc-doc
+V:1.0.13-r0
+A:armhf
+S:11193
+I:61440
+T:X11 Video Motion Compensation extension library (documentation)
+U:http://xorg.freedesktop.org/
+L:MIT
+o:libxvmc
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652178842
+c:4e7a73e02f55e0033e27a8500337b5cefa2efd81
+i:docs libxvmc=1.0.13-r0
+
 C:Q1ZXgC5r+8W93liBBnnyj41jt/7hE=
 P:igmpproxy-doc
 V:0.3-r0
@@ -12229,6 +12290,21 @@ t:1626183496
 c:a3ba001e350a17d272154f7c58c264e8d08bddea
 D:so:libc.musl-armhf.so.1 so:libintl.so.8
 p:cmd:indent=2.2.12-r1
+
+C:Q1tMdvx5OpnDO5lzrqGAXjCK4q0SI=
+P:dovecot-pigeonhole-plugin-ldap
+V:2.3.19-r2
+A:armhf
+S:17799
+I:61440
+T:Sieve and managesieve plugin for Dovecot (LDAP support)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652179651
+c:5649839312b334dd83bc292fa47ed6357f66762b
+D:dovecot-pigeonhole-plugin=2.3.19-r2 dovecot-ldap=2.3.19-r2 so:libc.musl-armhf.so.1 so:liblber.so.2 so:libldap.so.2
 
 C:Q1iF5PT/6fKXgv8Ggoh5ELkHkbMhM=
 P:ciwiki
@@ -12850,22 +12926,6 @@ t:1647278629
 c:a8d72a50d7175c264e9694b613226632adc3b1f0
 i:docs acct=6.6.4-r1
 
-C:Q1e2n+6sNjZ+VSOBE/JmWzZbo9uQw=
-P:libxcursor
-V:1.2.0-r0
-A:armhf
-S:16827
-I:49152
-T:X cursor management library
-U:http://xorg.freedesktop.org/
-L:MIT
-o:libxcursor
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557246460
-c:37b6e467cdbd7eea2f2f9cf50ca51866bbcdac77
-D:so:libX11.so.6 so:libXfixes.so.3 so:libXrender.so.1 so:libc.musl-armhf.so.1
-p:so:libXcursor.so.1=1.0.2
-
 C:Q16/7pbc6UIp4zWre0m4KAps6Jj2A=
 P:diffutils
 V:3.8-r0
@@ -13441,22 +13501,6 @@ m:Carlo Landmeter <clandmeter@alpinelinux.org>
 t:1640868984
 c:e244c32c828c9f66c696660c728954e90297d8dd
 
-C:Q1e9qHmx5bIOv5brXPpLHx+4V0HHU=
-P:libxvmc
-V:1.0.12-r0
-A:armhf
-S:11726
-I:49152
-T:X11 Video Motion Compensation extension library
-U:http://xorg.freedesktop.org/
-L:MIT
-o:libxvmc
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1569664948
-c:096561f45b0bc2051a711174d92280e03bd53538
-D:so:libX11.so.6 so:libXext.so.6 so:libc.musl-armhf.so.1
-p:so:libXvMC.so.1=1.0.0 so:libXvMCW.so.1=1.0.0
-
 C:Q1kkbChTjGeee9xb+g/Y4sxAqdIlY=
 P:nagios-plugins
 V:2.3.3-r1
@@ -13594,22 +13638,6 @@ o:argp-standalone
 m:Francesco Colista <fcolista@alpinelinux.org>
 t:1610522533
 c:ca55a15b461fcc921fd8b6d33e613b586a76f434
-
-C:Q1Dbm8gGVnxTzHOcBAN2w9vIajJBM=
-P:dovecot-pigeonhole-plugin
-V:2.3.18-r2
-A:armhf
-S:413491
-I:1101824
-T:Sieve and managesieve plugin for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1650750896
-c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
-D:dovecot=2.3.18-r2 so:libc.musl-armhf.so.1 so:libdovecot-login.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
-p:so:lib90_sieve_plugin.so=0 so:lib95_imap_filter_sieve_plugin.so=0 so:lib95_imap_sieve_plugin.so=0 so:libdovecot-sieve.so.0=0.0.0 cmd:sieve-dump=2.3.18-r2 cmd:sieve-filter=2.3.18-r2 cmd:sieve-test=2.3.18-r2 cmd:sievec=2.3.18-r2
 
 C:Q1LWQ1YO6RvJArrTQxncNqVFAg56A=
 P:e2fsprogs-dev
@@ -15107,6 +15135,22 @@ t:1651798485
 c:0631a085b6e3c50c06f5330ead0527b960b7645f
 D:nginx so:libc.musl-armhf.so.1
 
+C:Q1TEnzMyNrTdsj0VYrk5DE0CTDlRM=
+P:dovecot
+V:2.3.19-r2
+A:armhf
+S:3152591
+I:7593984
+T:IMAP and POP3 server
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652179651
+c:5649839312b334dd83bc292fa47ed6357f66762b
+D:openssl /bin/sh so:libbz2.so.1 so:libc.musl-armhf.so.1 so:libcap.so.2 so:libcrypto.so.1.1 so:libicui18n.so.71 so:libicuuc.so.71 so:liblzma.so.5 so:libsodium.so.23 so:libssl.so.1.1 so:libz.so.1
+p:so:lib01_acl_plugin.so=0 so:lib02_imap_acl_plugin.so=0 so:lib02_lazy_expunge_plugin.so=0 so:lib05_mail_crypt_acl_plugin.so=0 so:lib05_pop3_migration_plugin.so=0 so:lib10_last_login_plugin.so=0 so:lib10_mail_crypt_plugin.so=0 so:lib10_quota_plugin.so=0 so:lib11_imap_quota_plugin.so=0 so:lib11_trash_plugin.so=0 so:lib15_notify_plugin.so=0 so:lib20_charset_alias_plugin.so=0 so:lib20_fts_plugin.so=0 so:lib20_listescape_plugin.so=0 so:lib20_mail_log_plugin.so=0 so:lib20_mailbox_alias_plugin.so=0 so:lib20_notify_status_plugin.so=0 so:lib20_push_notification_plugin.so=0 so:lib20_quota_clone_plugin.so=0 so:lib20_replication_plugin.so=0 so:lib20_var_expand_crypt.so=0 so:lib20_virtual_plugin.so=0 so:lib20_zlib_plugin.so=0 so:lib21_fts_squat_plugin.so=0 so:lib30_imap_zlib_plugin.so=0 so:lib90_old_stats_plugin.so=0 so:lib95_imap_old_stats_plugin.so=0 so:lib99_welcome_plugin.so=0 so:libdcrypt_openssl.so=0 so:libdovecot-compression.so.0=0.0.0 so:libdovecot-dsync.so.0=0.0.0 so:libdovecot-fts.so.0=0.0.0 so:libdovecot-lda.so.0=0.0.0 so:libdovecot-login.so.0=0.0.0 so:libdovecot-storage.so.0=0.0.0 so:libdovecot.so.0=0.0.0 so:libfs_compress.so=0 so:libfs_crypt.so=0 so:libfs_mail_crypt.so=0 so:libold_stats_mail.so=0 so:libssl_iostream_openssl.so=0 so:libstats_auth.so=0 cmd:doveadm=2.3.19-r2 cmd:doveconf=2.3.19-r2 cmd:dovecot-sysreport=2.3.19-r2 cmd:dovecot=2.3.19-r2 cmd:dsync=2.3.19-r2
+
 C:Q1LgM88XP4z6XOai2OPYMwC/eebZg=
 P:perl-datetime-format-w3cdtf-doc
 V:0.08-r0
@@ -15812,6 +15856,22 @@ c:3fc101f63494d310ec0ee7af5cdc742ccb8c72d5
 D:logrotate
 i:squid=5.5-r0 lang-ka
 
+C:Q1yjDTFbw31xpMkwA7/ahlRq0HxEg=
+P:dovecot-fts-solr
+V:2.3.19-r2
+A:armhf
+S:18764
+I:57344
+T:FTS-Solr plugin for dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652179651
+c:5649839312b334dd83bc292fa47ed6357f66762b
+D:dovecot=2.3.19-r2 so:lib20_fts_plugin.so so:libc.musl-armhf.so.1 so:libexpat.so.1
+p:so:lib21_fts_solr_plugin.so=0
+
 C:Q1m6jqkuIXNIhPeCj+TnXjWVMIxyg=
 P:libisoburn-dev
 V:1.5.4-r2
@@ -16321,21 +16381,6 @@ t:1610928542
 c:211932f6e55643cd5b8be06197876727615eea78
 D:so:libc.musl-armhf.so.1
 i:lua5.4 lua-sircbot=0.4-r3
-
-C:Q19NDwTxZco1YzG4uZT/+x3ywgo9A=
-P:libxvmc-doc
-V:1.0.12-r0
-A:armhf
-S:11195
-I:61440
-T:X11 Video Motion Compensation extension library (documentation)
-U:http://xorg.freedesktop.org/
-L:MIT
-o:libxvmc
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1569664948
-c:096561f45b0bc2051a711174d92280e03bd53538
-i:docs libxvmc=1.0.12-r0
 
 C:Q1de6Wk1ep58jvCkhA5IDh62wS2Yw=
 P:syslog-ng-json
@@ -17292,21 +17337,6 @@ c:ca39435320bd1e35ccad117b4b6aedd608854a35
 D:so:libc.musl-armhf.so.1
 p:so:libfribidi.so.0=0.4.0 cmd:fribidi=1.0.12-r0
 
-C:Q1fOsyNH6C+7sgUnBSf9PIEzGB9Fs=
-P:libx11-doc
-V:1.7.5-r0
-A:armhf
-S:1662229
-I:10805248
-T:X11 client-side library (documentation)
-U:http://xorg.freedesktop.org/
-L:custom:XFREE86
-o:libx11
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649624740
-c:bccc37009d0fe615a37bffa9cac94df769e1db84
-i:docs libx11=1.7.5-r0
-
 C:Q13bd0KmiORh+cbU2cIJE0idu0A6I=
 P:lua5.3-sql-mysql
 V:2.6.0-r1
@@ -17475,22 +17505,6 @@ t:1589272901
 c:32b2da4be44cc5c1a8e0872247225838c3badc5a
 D:curl
 p:cmd:dpaste-de=0.7-r1
-
-C:Q1NDWSaBRVb0mhzrnF/HTqZDSA1Go=
-P:lua5.4-dev
-V:5.4.4-r4
-A:armhf
-S:632260
-I:1470464
-T:Powerful light-weight programming language (development files)
-U:https://www.lua.org/
-L:MIT
-o:lua5.4
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1652106070
-c:99c6c4ce71b60cdd0b174584c71e0a6b1a9ec952
-D:lua5.4 lua5.4-libs=5.4.4-r4 pkgconfig
-p:pc:lua5.4=5.4.4
 
 C:Q1FQWY+FMoGWF905WnsytQZfoNHD4=
 P:font-xfree86-type1
@@ -17864,6 +17878,21 @@ k:13
 D:postgresql13-plpython3=13.6-r3 so:libc.musl-armhf.so.1 so:libpython3.10.so.1.0
 p:postgresql-plpython3-contrib
 i:postgresql13-plpython3=13.6-r3 postgresql13-contrib=13.6-r3
+
+C:Q1LGMX5k3KcErNclIqX2vLG/PHNtg=
+P:ferm-doc
+V:2.7-r0
+A:armhf
+S:69196
+I:196608
+T:firewall configuration tool (documentation)
+U:http://ferm.foo-projects.org/
+L:GPL
+o:ferm
+m:Michael Mason <ms13sp@gmail.com>
+t:1652174314
+c:16a41a7e8b1a8e82155bcab7d99f228f28f4e6bd
+i:docs ferm=2.7-r0
 
 C:Q1TZO3ZK+e2m+tR/accNsgCTJPekY=
 P:lua-subprocess
@@ -18417,6 +18446,22 @@ m:Carlo Landmeter <clandmeter@alpinelinux.org>
 t:1610900063
 c:e03007a40ea24f212260b886acb7424722d1d6c7
 D:ncftp=3.2.6-r4
+
+C:Q1JwiJ3h29WVAvcCz2AuolSRghnSk=
+P:libxcb
+V:1.15-r0
+A:armhf
+S:199697
+I:811008
+T:X11 client-side library
+U:https://xcb.freedesktop.org
+L:MIT
+o:libxcb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652183916
+c:6a6c34ad1edfa794a0a82703d2d13eca1fd67ab6
+D:so:libXau.so.6 so:libXdmcp.so.6 so:libc.musl-armhf.so.1
+p:so:libxcb-composite.so.0=0.0.0 so:libxcb-damage.so.0=0.0.0 so:libxcb-dpms.so.0=0.0.0 so:libxcb-dri2.so.0=0.0.0 so:libxcb-dri3.so.0=0.1.0 so:libxcb-glx.so.0=0.0.0 so:libxcb-present.so.0=0.0.0 so:libxcb-randr.so.0=0.1.0 so:libxcb-record.so.0=0.0.0 so:libxcb-render.so.0=0.0.0 so:libxcb-res.so.0=0.0.0 so:libxcb-screensaver.so.0=0.0.0 so:libxcb-shape.so.0=0.0.0 so:libxcb-shm.so.0=0.0.0 so:libxcb-sync.so.1=1.0.0 so:libxcb-xf86dri.so.0=0.0.0 so:libxcb-xfixes.so.0=0.0.0 so:libxcb-xinerama.so.0=0.0.0 so:libxcb-xinput.so.0=0.1.0 so:libxcb-xkb.so.1=1.0.0 so:libxcb-xtest.so.0=0.0.0 so:libxcb-xv.so.0=0.0.0 so:libxcb-xvmc.so.0=0.0.0 so:libxcb.so.1=1.1.0
 
 C:Q1KTEr8L3sl4OO7/N0pCllIeJyyHU=
 P:libtiffxx
@@ -19161,6 +19206,21 @@ t:1646978053
 c:cc90e50b08ad89dbb1b5a5fcd953cbf4dc512346
 i:docs softhsm=2.6.1-r3
 
+C:Q1JQsHby5WtjD9TNARgEIGmjQw/UQ=
+P:multipath-tools-doc
+V:0.8.9-r0
+A:armhf
+S:51939
+I:217088
+T:Device Mapper Multipathing Driver (documentation)
+U:http://christophe.varoqui.free.fr/
+L:LGPL-2.0-only
+o:multipath-tools
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1652178610
+c:287a486abfbeaf79555d5892596910a285c783ac
+i:docs multipath-tools=0.8.9-r0
+
 C:Q11UiY5dh68XqcLT7bvpcgEiKUjUY=
 P:uwsgi-redislog
 V:2.0.20-r0
@@ -19235,6 +19295,21 @@ o:lua-stringy
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
+
+C:Q17BEyS8KPLia7nYnm0FKMD3Tpn3w=
+P:multipath-tools-openrc
+V:0.8.9-r0
+A:armhf
+S:1975
+I:20480
+T:Device Mapper Multipathing Driver (OpenRC init scripts)
+U:http://christophe.varoqui.free.fr/
+L:LGPL-2.0-only
+o:multipath-tools
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1652178610
+c:287a486abfbeaf79555d5892596910a285c783ac
+i:openrc multipath-tools=0.8.9-r0
 
 C:Q1H1hLG/v8qWBvTcusAp5+kErp73U=
 P:npm-doc
@@ -19863,22 +19938,6 @@ m:Carlo Landmeter <clandmeter@alpinelinux.org>
 t:1648918446
 c:d567441d61d8cea94fdc111129ccf486d7547fc5
 i:docs expat=2.4.8-r0
-
-C:Q1xLQEdUvoFDpjZoyZbjlrGpZx7EE=
-P:mkfontscale
-V:1.2.1-r1
-A:armhf
-S:15296
-I:49152
-T:Scalable font index generator for X
-U:http://xorg.freedesktop.org
-L:MIT
-o:mkfontscale
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1559227711
-c:6b69e5f877de225f66bb01d12f1c4f3bf261afe2
-D:/bin/sh so:libc.musl-armhf.so.1 so:libfontenc.so.1 so:libfreetype.so.6 so:libz.so.1
-p:mkfontdir cmd:mkfontdir=1.2.1-r1 cmd:mkfontscale=1.2.1-r1
 
 C:Q1xi6+tLngKAaGT9EdmT48mZcrwEo=
 P:s6-linux-init-dev
@@ -21722,22 +21781,6 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.1 so:libc.musl-armhf.so.1
 i:lua-cjson=2.1.0-r10 lua5.1
 
-C:Q1eZD/dZQH2O7yEQnTVNOabXc/yVk=
-P:dovecot-fts-lucene
-V:2.3.18-r2
-A:armhf
-S:25208
-I:81920
-T:FTS-Lucene plugin for dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1650750896
-c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
-D:dovecot=2.3.18-r2 so:libc.musl-armhf.so.1 so:libclucene-core.so.1 so:libclucene-shared.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
-p:so:lib21_fts_lucene_plugin.so=0
-
 C:Q1mmABEerIk2t51hM6WzgMjgg8Seo=
 P:xkbcli
 V:1.4.0-r0
@@ -21799,6 +21842,20 @@ t:1649633395
 c:7216ef5a04528a867f606e2b84f1d28ebee0754e
 D:so:libc.musl-armhf.so.1
 p:so:libcbor.so.0.9=0.9.0
+
+C:Q1IgnxfwAzpaioGGLTpVMVEn3UerY=
+P:libxcb-static
+V:1.15-r0
+A:armhf
+S:197642
+I:958464
+T:X11 client-side library (static library)
+U:https://xcb.freedesktop.org
+L:MIT
+o:libxcb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652183916
+c:6a6c34ad1edfa794a0a82703d2d13eca1fd67ab6
 
 C:Q1lxzLQEqIDfNT+ZxfHdmBGJZt2Dk=
 P:ser2net-doc
@@ -22104,22 +22161,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1561734758
 c:08824c6305acc2bac05566a86a554060495b5c5d
 i:docs giflib=5.2.1-r0
-
-C:Q1ZwOrEHfGbWk3wz0Y0H7qu+LdeqE=
-P:dovecot-sql
-V:2.3.18-r2
-A:armhf
-S:18787
-I:77824
-T:SQL plugin for dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1650750896
-c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
-D:dovecot=2.3.18-r2 so:libc.musl-armhf.so.1 so:libdovecot.so.0
-p:so:libdovecot-sql.so.0=0.0.0
 
 C:Q155evgxtFg9MqIuM7U9JETTae26s=
 P:font-bitstream-100dpi
@@ -22443,6 +22484,22 @@ c:e7f3fdcdf7354a39ca3848a10cdd584039f96ef2
 D:so:libc.musl-armhf.so.1 so:libntfs-3g.so.89
 p:cmd:lowntfs-3g=2021.8.22-r0 cmd:ntfs-3g=2021.8.22-r0
 
+C:Q1rQXxPnkMwyOreqqMW+TNtSsZc4Y=
+P:zfs-rpi
+V:5.15.38-r1
+A:armhf
+S:1207487
+I:1282048
+T:ZFS Linux kernel modules
+U:https://openzfs.org
+L:CDDL-1.0
+o:zfs-rpi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1651939686
+c:ae9f3124d941bd9b5f5f2d28c96f8d64c7539471
+D:linux-rpi=5.15.38-r0
+i:zfs linux-rpi=5.15.38-r0
+
 C:Q10OFJXbqg4c5c2gbLauqUmWqJ3Qk=
 P:perl-class-accessor-doc
 V:0.51-r2
@@ -22566,21 +22623,6 @@ t:1616887408
 c:3190cdb708bfd1c92f01988cf52a13882cbaf39d
 D:dbus-glib=0.112-r0 pc:dbus-1 pc:glib-2.0 pc:gobject-2.0 pkgconfig
 p:pc:dbus-glib-1=0.112
-
-C:Q1nCp7Sy7EE3UP6Znjioy3MmtKZRQ=
-P:dovecot-openrc
-V:2.3.18-r2
-A:armhf
-S:2116
-I:16384
-T:IMAP and POP3 server (OpenRC init scripts)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1650750896
-c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
-i:openrc dovecot=2.3.18-r2
 
 C:Q17OoN0FTIlmX4/7DkXdrKnblTXns=
 P:mailx
@@ -22950,6 +22992,22 @@ c:ca4725f013066ab5bac4a4d08d682a9090032ff8
 D:samba-common=4.15.7-r0 samba-server=4.15.7-r0 samba-winbind=4.15.7-r0 py3-samba=4.15.7-r0 py3-dnspython py3-markdown tdb so:libMESSAGING-SEND-samba4.so so:libMESSAGING-samba4.so so:libasn1util-samba4.so so:libauth-samba4.so so:libauth4-samba4.so so:libauthkrb5-samba4.so so:libc.musl-armhf.so.1 so:libcli-cldap-samba4.so so:libcli-ldap-common-samba4.so so:libcli-ldap-samba4.so so:libcliauth-samba4.so so:libcluster-samba4.so so:libcmdline-samba4.so so:libcom_err-samba4.so.0 so:libcommon-auth-samba4.so so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libdsdb-module-samba4.so so:libevents-samba4.so so:libflag-mapping-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libgnutls.so.30 so:libkrb5-samba4.so.26 so:libkrb5samba-samba4.so so:libldb.so.2 so:libldbsamba-samba4.so so:libndr-samba-samba4.so so:libndr-samba4.so so:libndr.so.2 so:libnetif-samba4.so so:libpopt.so.0 so:libposix-eadb-samba4.so so:libprocess-model-samba4.so so:libreplace-samba4.so so:libsamba-credentials.so.1 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-modules-samba4.so so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamdb-common-samba4.so so:libsamdb.so.0 so:libsecrets3-samba4.so so:libservice-samba4.so so:libsmbconf.so.0 so:libsmbd-base-samba4.so so:libsmbd-shim-samba4.so so:libsocket-blocking-samba4.so so:libtalloc.so.2 so:libtdb-wrap-samba4.so so:libtdb.so.1 so:libtevent-util.so.0 so:libtevent.so.0 so:libtime-basic-samba4.so
 p:so:libsmbpasswdparser-samba4.so=0 cmd:samba-gpupdate=4.15.7-r0 cmd:samba-tool=4.15.7-r0 cmd:samba=4.15.7-r0 cmd:samba_dnsupdate=4.15.7-r0 cmd:samba_downgrade_db=4.15.7-r0 cmd:samba_kcc=4.15.7-r0 cmd:samba_spnupdate=4.15.7-r0 cmd:samba_upgradedns=4.15.7-r0
 
+C:Q1bT/+9DBO3+Ih7nrZqIgFYZhyn2w=
+P:ferm
+V:2.7-r0
+A:armhf
+S:31915
+I:139264
+T:firewall configuration tool
+U:http://ferm.foo-projects.org/
+L:GPL
+o:ferm
+m:Michael Mason <ms13sp@gmail.com>
+t:1652174314
+c:16a41a7e8b1a8e82155bcab7d99f228f28f4e6bd
+D:perl iptables
+p:cmd:ferm=2.7-r0 cmd:import-ferm=2.7-r0
+
 C:Q1NlQgY/UifaQ7Jql0PkhjUF+uo3Y=
 P:cmocka
 V:1.1.5-r2
@@ -23284,6 +23342,22 @@ c:83b9596697d4d22d2be3ec8256cfb999911ab7f6
 D:open-iscsi-libs=2.1.6-r0 pkgconfig
 p:pc:libopeniscsiusr=0
 
+C:Q1T7GEJY4ozxioQxo2IFyZ92p/wkc=
+P:dovecot-fts-lucene
+V:2.3.19-r2
+A:armhf
+S:25217
+I:81920
+T:FTS-Lucene plugin for dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652179651
+c:5649839312b334dd83bc292fa47ed6357f66762b
+D:dovecot=2.3.19-r2 so:libc.musl-armhf.so.1 so:libclucene-core.so.1 so:libclucene-shared.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
+p:so:lib21_fts_lucene_plugin.so=0
+
 C:Q1oaNsVQnmKn+9TWVNIjZUpcy7Z4o=
 P:gnutls-dbg
 V:3.7.4-r0
@@ -23498,22 +23572,6 @@ c:68f94b81ff74bced7af5caf517e3c10d1c95e0ee
 D:lua5.1
 i:lua-unit=3.4-r0 lua5.1
 
-C:Q1ppyj9J2tGaoVdn2PbINzjP1+k8U=
-P:ferm-openrc
-V:2.6-r0
-A:armhf
-S:2026
-I:24576
-T:firewall configuration tool
-U:http://ferm.foo-projects.org/
-L:GPL
-o:ferm
-m:Michael Mason <ms13sp@gmail.com>
-t:1613215058
-c:d2e47c2266c7fed87e177cff3e2e34abe4475b4f
-D:perl iptables
-i:openrc ferm=2.6-r0
-
 C:Q11l1HtQlEGigYMXuG0OxO7j9FYqU=
 P:nginx-mod-http-geoip
 V:1.20.2-r2
@@ -23606,6 +23664,22 @@ t:1649093063
 c:3679307172d226faa0e4265eb3c1ede46318b6f4
 D:zlib-dev protoc=3.18.1-r2 libprotobuf-lite=3.18.1-r2 libprotobuf=3.18.1-r2 libprotoc=3.18.1-r2 pkgconfig
 p:pc:protobuf-lite=3.18.1 pc:protobuf=3.18.1
+
+C:Q1hT9+u+5WW9BzBa7Y4iTGaJY4Aqc=
+P:dovecot-sql
+V:2.3.19-r2
+A:armhf
+S:18782
+I:77824
+T:SQL plugin for dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652179651
+c:5649839312b334dd83bc292fa47ed6357f66762b
+D:dovecot=2.3.19-r2 so:libc.musl-armhf.so.1 so:libdovecot.so.0
+p:so:libdovecot-sql.so.0=0.0.0
 
 C:Q1Vxy+OHqjtqPG4SJuAv/PQlxENH8=
 P:lxc-lvm
@@ -24132,21 +24206,6 @@ t:1622914361
 c:988c4057d60ade6a214b14741f3e0950b3105c3a
 i:docs libxv=1.0.11-r2
 
-C:Q1qgpXtELsyvg7NHEpsfvBN9V1AVA=
-P:libxcb-doc
-V:1.14-r2
-A:armhf
-S:788023
-I:9732096
-T:X11 client-side library (documentation)
-U:https://xcb.freedesktop.org
-L:MIT
-o:libxcb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1617646679
-c:cd2d9fe07f299ce733b756d658c34ba089ddbbfd
-i:docs libxcb=1.14-r2
-
 C:Q1/Ofvk+pe9ks4En09guwGSfD4nN4=
 P:uvncrepeater
 V:014-r8
@@ -24316,6 +24375,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
+
+C:Q1KNClbTcVjnq3OEqFEZhdjYX7bqM=
+P:mkfontscale
+V:1.2.2-r0
+A:armhf
+S:15323
+I:49152
+T:Scalable font index generator for X
+U:http://xorg.freedesktop.org
+L:MIT
+o:mkfontscale
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652183158
+c:365acb25fab78449e74c701f4e116f11337a938e
+D:/bin/sh so:libc.musl-armhf.so.1 so:libfontenc.so.1 so:libfreetype.so.6 so:libz.so.1
+p:mkfontdir cmd:mkfontdir=1.2.2-r0 cmd:mkfontscale=1.2.2-r0
 
 C:Q14Uym7/DD5lSMdKBPKufhWNuFpKY=
 P:dbus
@@ -25852,6 +25927,22 @@ t:1649093063
 c:3679307172d226faa0e4265eb3c1ede46318b6f4
 D:kamailio so:libc.musl-armhf.so.1 so:libfreeradius-client.so.2
 
+C:Q1/Dp5Ok4XXpSawQEIJAAO+dAJegA=
+P:dovecot-pgsql
+V:2.3.19-r2
+A:armhf
+S:12874
+I:53248
+T:PostgreSQL driver for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652179651
+c:5649839312b334dd83bc292fa47ed6357f66762b
+D:dovecot-sql=2.3.19-r2 so:libc.musl-armhf.so.1 so:libpq.so.5
+p:so:libdriver_pgsql.so=0
+
 C:Q1kg1RZCPylPPhsQMZPKHAD1Y3WQ4=
 P:s6-rc-static
 V:0.5.3.0-r0
@@ -26404,6 +26495,22 @@ c:34890d75a92d075ff99858ebcc31aeedb843b4c4
 D:so:libc.musl-armhf.so.1 so:libusb-1.0.so.0
 p:cmd:bmd-extractfw=1.0.2-r2 cmd:bmd-streamer=1.0.2-r2
 
+C:Q1ruB9mRG88WL2/He8jHvagjBa95c=
+P:xcb-proto
+V:1.15-r0
+A:armhf
+S:163672
+I:1097728
+T:XML-XCB protocol descriptions
+U:https://xcb.freedesktop.org
+L:MIT
+o:xcb-proto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652183916
+c:f25ac42eae60164c489dcc0440fbbc9c2e784404
+D:pkgconfig
+p:pc:xcb-proto=1.15 py3.10:xcbgen=1.15-r0
+
 C:Q1bkEgNg+r2IuRNQfrThx77zCeMR8=
 P:apg
 V:2.2.3-r5
@@ -26635,6 +26742,21 @@ m:Jeff Bilyk <jbilyk@gmail.com>
 t:1635896152
 c:6ac674fdee1bb2ad77162f5cdd523a160c9db8f1
 D:nagios-plugins perl
+
+C:Q1zqokVtAl7tUGrHrrkfohrQC6gLY=
+P:dovecot-lmtpd
+V:2.3.19-r2
+A:armhf
+S:23971
+I:98304
+T:IMAP and POP3 server (LMTP server)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652179651
+c:5649839312b334dd83bc292fa47ed6357f66762b
+D:dovecot=2.3.19-r2 so:libc.musl-armhf.so.1 so:libdovecot-lda.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
 
 C:Q1s7RPAGzOR11jQz0Qgm3y/xSN1BU=
 P:boost1.77-graph
@@ -27757,21 +27879,6 @@ c:536df2bf6694ee4a43fa5e7cdcf47da6cc9935f2
 D:/bin/sh so:libc.musl-armhf.so.1 so:libcbor.so.0.9 so:libcrypto.so.1.1 so:libudev.so.1 so:libz.so.1
 p:so:libfido2.so.1=1.10.0
 
-C:Q19WY8NEZK2Bug/hjDdG7VwbEjEIY=
-P:dovecot-lmtpd
-V:2.3.18-r2
-A:armhf
-S:23969
-I:98304
-T:IMAP and POP3 server (LMTP server)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1650750896
-c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
-D:dovecot=2.3.18-r2 so:libc.musl-armhf.so.1 so:libdovecot-lda.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
-
 C:Q1V5eD1N6vdf9wu0npf6lYcvDaCiw=
 P:lua-sql
 V:2.6.0-r1
@@ -27847,21 +27954,6 @@ t:1639595862
 c:75bab40eb0a2ea42b365d6d30075c6c832ebc769
 D:python3
 p:py-sortedcontainers=2.4.0-r1 py3.10:sortedcontainers=2.4.0-r1
-
-C:Q1MGnXDCPzF8+dG/X9ojUbUTO6JJg=
-P:mkfontscale-doc
-V:1.2.1-r1
-A:armhf
-S:6296
-I:28672
-T:Scalable font index generator for X (documentation)
-U:http://xorg.freedesktop.org
-L:MIT
-o:mkfontscale
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1559227711
-c:6b69e5f877de225f66bb01d12f1c4f3bf261afe2
-i:docs mkfontscale=1.2.1-r1
 
 C:Q1YoRpiRzsPgKWl0tNK1/uvJEoNSw=
 P:rpcbind-dbg
@@ -28305,6 +28397,21 @@ t:1623829779
 c:f56fef8c674bde0e2c1578e1483e36e9988a3791
 D:so:libc.musl-armhf.so.1 so:libgpg-error.so.0
 p:so:libksba.so.8=8.14.0
+
+C:Q1kOdEgk2oomIao8TlbLX0SJDjoj8=
+P:libxcursor-doc
+V:1.2.1-r0
+A:armhf
+S:11348
+I:270336
+T:X cursor management library (documentation)
+U:http://xorg.freedesktop.org/
+L:MIT
+o:libxcursor
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652183516
+c:af97fc59f169b84d728f9e0ee371f8379767217f
+i:docs libxcursor=1.2.1-r0
 
 C:Q1wL+j90Pl5f0DltPiYdHyVhfKQaA=
 P:apk-tools-doc
@@ -30166,21 +30273,6 @@ t:1626281430
 c:e97390743e76f52a1f7ad220901040229145892e
 i:docs xmlindent=0.2.17-r1
 
-C:Q1va4XfZBDN2ZEE/FIWC4pzGy+s2w=
-P:libxcursor-doc
-V:1.2.0-r0
-A:armhf
-S:7214
-I:155648
-T:X cursor management library (documentation)
-U:http://xorg.freedesktop.org/
-L:MIT
-o:libxcursor
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1557246460
-c:37b6e467cdbd7eea2f2f9cf50ca51866bbcdac77
-i:docs libxcursor=1.2.0-r0
-
 C:Q1oq039samsYfOfFmGi/hPPKffjXw=
 P:iptables-openrc
 V:1.8.7-r2
@@ -30272,6 +30364,22 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-inline=0.86-r1
+
+C:Q1HWXpXsBdmGaVQUy/neyDNDxLO8o=
+P:dovecot-sqlite
+V:2.3.19-r2
+A:armhf
+S:7040
+I:40960
+T:SQLite driver for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652179651
+c:5649839312b334dd83bc292fa47ed6357f66762b
+D:dovecot-sql=2.3.19-r2 so:libc.musl-armhf.so.1 so:libsqlite3.so.0
+p:so:libdriver_sqlite.so=0
 
 C:Q175z/WcPAUDSPGcZtAgNhekJ/5X8=
 P:openrc-zsh-completion
@@ -30381,22 +30489,6 @@ t:1629925557
 c:7b75830fe79e5c7b142e7ed4aaedad117897e81b
 D:perl perl-devel-stacktrace perl-class-data-inheritable
 
-C:Q1MI/vxFXevUGSSMlzP5t8MQi7LoA=
-P:libx11
-V:1.7.5-r0
-A:armhf
-S:852764
-I:3170304
-T:X11 client-side library
-U:http://xorg.freedesktop.org/
-L:custom:XFREE86
-o:libx11
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649624740
-c:bccc37009d0fe615a37bffa9cac94df769e1db84
-D:so:libc.musl-armhf.so.1 so:libxcb.so.1
-p:so:libX11-xcb.so.1=1.0.0 so:libX11.so.6=6.4.0
-
 C:Q1A15wAA4w6s6ZorxNZQRznjVpisk=
 P:lua5.2-stringy
 V:0.5.1-r2
@@ -30477,20 +30569,6 @@ c:a2c4b3694ade4de4a9974e2c371777dd5201e2dc
 D:so:libc.musl-armhf.so.1
 p:cmd:cciss_vol_status=1.12a-r0
 
-C:Q1RBO7q6NCwwjqWTfFjyy8pos7bRU=
-P:libx11-static
-V:1.7.5-r0
-A:armhf
-S:787812
-I:1744896
-T:X11 client-side library (static library)
-U:http://xorg.freedesktop.org/
-L:custom:XFREE86
-o:libx11
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649624740
-c:bccc37009d0fe615a37bffa9cac94df769e1db84
-
 C:Q1KYgfypvp0HD41EQ8Hhifk7uK290=
 P:libattr
 V:2.5.1-r1
@@ -30537,22 +30615,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl perl-xml-parser
 p:cmd:xpath=1.44-r2
-
-C:Q1cL5ol4C2P/POuPVBtnL5WcB2vMw=
-P:dovecot-fts-solr
-V:2.3.18-r2
-A:armhf
-S:18758
-I:57344
-T:FTS-Solr plugin for dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1650750896
-c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
-D:dovecot=2.3.18-r2 so:lib20_fts_plugin.so so:libc.musl-armhf.so.1 so:libexpat.so.1
-p:so:lib21_fts_solr_plugin.so=0
 
 C:Q1wUookknzsN6jWtPUpBddVodT1Zs=
 P:perl-net-smtp-ssl
@@ -30674,6 +30736,21 @@ m:Sheila Aman <sheila@vulpine.house>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
+
+C:Q1RDS9svEMGEHrp7fePNNM6k7qeb0=
+P:linux-rpi2
+V:5.15.38-r0
+A:armhf
+S:24206380
+I:35508224
+T:Linux kernel with Raspberry Pi patches
+U:https://github.com/raspberrypi/linux
+L:GPL-2.0
+o:linux-rpi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1651939686
+c:cc0db363e5957baddaa2134b4ff87e91454edd79
+D:mkinitfs linux-firmware-brcm linux-firmware-cypress
 
 C:Q15jUCHbNAmYX5glr6rz9JHgiAFPI=
 P:py3-appdirs
@@ -31872,22 +31949,6 @@ c:ef340b4bce950e6bc5373e2dabdb3f4dfaea6636
 D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
 p:so:librabbitmq.so.4=4.5.0
 
-C:Q1iJBh22lrx9xvfCi0cCaaVYvMyXw=
-P:dovecot
-V:2.3.18-r2
-A:armhf
-S:3142658
-I:7577600
-T:IMAP and POP3 server
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1650750896
-c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
-D:openssl /bin/sh so:libbz2.so.1 so:libc.musl-armhf.so.1 so:libcap.so.2 so:libcrypto.so.1.1 so:libicui18n.so.71 so:libicuuc.so.71 so:liblzma.so.5 so:libsodium.so.23 so:libssl.so.1.1 so:libz.so.1
-p:so:lib01_acl_plugin.so=0 so:lib02_imap_acl_plugin.so=0 so:lib02_lazy_expunge_plugin.so=0 so:lib05_mail_crypt_acl_plugin.so=0 so:lib05_pop3_migration_plugin.so=0 so:lib10_last_login_plugin.so=0 so:lib10_mail_crypt_plugin.so=0 so:lib10_quota_plugin.so=0 so:lib11_imap_quota_plugin.so=0 so:lib11_trash_plugin.so=0 so:lib15_notify_plugin.so=0 so:lib20_charset_alias_plugin.so=0 so:lib20_fts_plugin.so=0 so:lib20_listescape_plugin.so=0 so:lib20_mail_log_plugin.so=0 so:lib20_mailbox_alias_plugin.so=0 so:lib20_notify_status_plugin.so=0 so:lib20_push_notification_plugin.so=0 so:lib20_quota_clone_plugin.so=0 so:lib20_replication_plugin.so=0 so:lib20_var_expand_crypt.so=0 so:lib20_virtual_plugin.so=0 so:lib20_zlib_plugin.so=0 so:lib21_fts_squat_plugin.so=0 so:lib30_imap_zlib_plugin.so=0 so:lib90_old_stats_plugin.so=0 so:lib95_imap_old_stats_plugin.so=0 so:lib99_welcome_plugin.so=0 so:libdcrypt_openssl.so=0 so:libdovecot-compression.so.0=0.0.0 so:libdovecot-dsync.so.0=0.0.0 so:libdovecot-fts.so.0=0.0.0 so:libdovecot-lda.so.0=0.0.0 so:libdovecot-login.so.0=0.0.0 so:libdovecot-storage.so.0=0.0.0 so:libdovecot.so.0=0.0.0 so:libfs_compress.so=0 so:libfs_crypt.so=0 so:libfs_mail_crypt.so=0 so:libold_stats_mail.so=0 so:libssl_iostream_openssl.so=0 so:libstats_auth.so=0 cmd:doveadm=2.3.18-r2 cmd:doveconf=2.3.18-r2 cmd:dovecot-sysreport=2.3.18-r2 cmd:dovecot=2.3.18-r2 cmd:dsync=2.3.18-r2
-
 C:Q1eh0LKVZISonVJrS0NQTfZhEMqH4=
 P:inotify-tools-doc
 V:3.20.11.0-r0
@@ -31961,22 +32022,6 @@ o:freeswitch-sounds-en-us-callie-8000
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
-
-C:Q1lGNs0NLAc36S3EFGlebexypbRvk=
-P:ferm
-V:2.6-r0
-A:armhf
-S:31702
-I:139264
-T:firewall configuration tool
-U:http://ferm.foo-projects.org/
-L:GPL
-o:ferm
-m:Michael Mason <ms13sp@gmail.com>
-t:1613215058
-c:d2e47c2266c7fed87e177cff3e2e34abe4475b4f
-D:perl iptables
-p:cmd:ferm=2.6-r0 cmd:import-ferm=2.6-r0
 
 C:Q1dM4T8vGYu1sqalUoXkhADS6rI0Y=
 P:krb5-conf
@@ -32590,6 +32635,22 @@ o:lua-lzlib
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
+
+C:Q1x0tMdbwdRXoFo9bMOpB35pvecvg=
+P:libxcursor
+V:1.2.1-r0
+A:armhf
+S:16956
+I:49152
+T:X cursor management library
+U:http://xorg.freedesktop.org/
+L:MIT
+o:libxcursor
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652183516
+c:af97fc59f169b84d728f9e0ee371f8379767217f
+D:so:libX11.so.6 so:libXfixes.so.3 so:libXrender.so.1 so:libc.musl-armhf.so.1
+p:so:libXcursor.so.1=1.0.2
 
 C:Q1NyvT5IJYD+PyW8yaDKHQHWTkaLY=
 P:s6-rc-dev
@@ -33983,6 +34044,22 @@ k:13
 D:postgresql13=13.6-r3 so:libc.musl-armhf.so.1 so:libperl.so
 p:postgresql-plperl
 
+C:Q1DK+BTcNfPw6fX8utkrPSQnV4v7Q=
+P:libx11
+V:1.8-r0
+A:armhf
+S:852574
+I:3174400
+T:X11 client-side library
+U:http://xorg.freedesktop.org/
+L:custom:XFREE86
+o:libx11
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652184725
+c:be255dd075096ef07e27ab46961993bc7a30162a
+D:so:libc.musl-armhf.so.1 so:libxcb.so.1
+p:so:libX11-xcb.so.1=1.0.0 so:libX11.so.6=6.4.0
+
 C:Q13J3n0gonKbhxhr6gGiPP4fLOW0E=
 P:vanessa_adt-dev
 V:0.0.9-r1
@@ -34305,21 +34382,6 @@ t:1602784850
 c:edb5939afb3c41aa5cde164a9d46d7f9f3d1cedb
 i:docs perl-xml-rss=1.62-r0
 
-C:Q1EeDayasTroRIEPPF75GZHCymYrg=
-P:linux-rpi2
-V:5.15.37-r0
-A:armhf
-S:24157863
-I:35426304
-T:Linux kernel with Raspberry Pi patches
-U:https://github.com/raspberrypi/linux
-L:GPL-2.0
-o:linux-rpi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1651566567
-c:31b810873704d3cdcf0335e51e90eb06daaa3a41
-D:mkinitfs linux-firmware-brcm linux-firmware-cypress
-
 C:Q14/69Kk2ZF46VpPR83EDx59FPhMw=
 P:perl-log-dispatch
 V:2.70-r1
@@ -34533,6 +34595,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1649785518
 c:28e846e4dfd8478f47d396898684c9d6ada925ef
 i:docs cmake=3.23.1-r0
+
+C:Q1+eAnrL/Z5mKzzN6enfwmnEp6w1w=
+P:multipath-tools
+V:0.8.9-r0
+A:armhf
+S:302761
+I:966656
+T:Device Mapper Multipathing Driver
+U:http://christophe.varoqui.free.fr/
+L:LGPL-2.0-only
+o:multipath-tools
+m:Leonardo Arena <rnalrd@alpinelinux.org>
+t:1652178610
+c:287a486abfbeaf79555d5892596910a285c783ac
+D:eudev device-mapper so:libaio.so.1 so:libc.musl-armhf.so.1 so:libdevmapper.so.1.02 so:libjson-c.so.5 so:libreadline.so.8 so:libudev.so.1 so:liburcu.so.6
+p:so:libdmmp.so.0.2.0=0.2.0 so:libmpathcmd.so.0=0 so:libmpathpersist.so.0=0 so:libmpathvalid.so.0=0 so:libmultipath.so.0=0 cmd:kpartx=0.8.9-r0 cmd:mpathpersist=0.8.9-r0 cmd:multipath=0.8.9-r0 cmd:multipathd=0.8.9-r0
 
 C:Q1GViDN7Nqw0bSRg900u+z2AuVjB4=
 P:ivykis
@@ -34769,21 +34847,6 @@ t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.4 so:libc.musl-armhf.so.1
 i:lua-b64=0.1-r4 lua5.4
-
-C:Q14/ZAYlKeuiIYBybWpa94RfaIanA=
-P:linux-rpi2-dev
-V:5.15.37-r0
-A:armhf
-S:18753270
-I:126337024
-T:Headers and script for third party modules for rpi2 kernel
-U:https://github.com/raspberrypi/linux
-L:GPL-2.0
-o:linux-rpi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1651566567
-c:31b810873704d3cdcf0335e51e90eb06daaa3a41
-D:perl gmp-dev elfutils-dev bash mpc1-dev mpfr-dev so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libstdc++.so.6
 
 C:Q1VOzMG6ilmOe6ITm73Y+I97GPWgA=
 P:uwsgi-xslt
@@ -35212,6 +35275,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1647446722
 c:b29eb51bb6af13d4ce6aac8514a8954fdba10273
 i:docs wpa_supplicant=2.10-r1
+
+C:Q16Dz0rT3c5fa8cwcuUYdTgZSn1lM=
+P:linux-rpi-dev
+V:5.15.38-r0
+A:armhf
+S:18509429
+I:125714432
+T:Headers and script for third party modules for rpi kernel
+U:https://github.com/raspberrypi/linux
+L:GPL-2.0
+o:linux-rpi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1651939686
+c:cc0db363e5957baddaa2134b4ff87e91454edd79
+D:perl gmp-dev elfutils-dev bash mpc1-dev mpfr-dev so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
 
 C:Q1SZspMz6JXI+g3BQTd56kGeN4YOM=
 P:libnftnl
@@ -35685,6 +35763,21 @@ m:Valery Kartel <valery.kartel@gmail.com>
 t:1649857788
 c:7fcc8b762f9de7bfea4ca97bdd569defe4d2185b
 i:docs perl-gdgraph=1.54-r3
+
+C:Q1yyOGDS8XMRW7KEgPqzhk11kM+m0=
+P:mkfontscale-doc
+V:1.2.2-r0
+A:armhf
+S:6293
+I:28672
+T:Scalable font index generator for X (documentation)
+U:http://xorg.freedesktop.org
+L:MIT
+o:mkfontscale
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652183158
+c:365acb25fab78449e74c701f4e116f11337a938e
+i:docs mkfontscale=1.2.2-r0
 
 C:Q1UbnXw+Qx5+JxKIB18lN4Yg8oeCs=
 P:perl-javascript-minifier-xs-doc
@@ -36465,21 +36558,6 @@ c:670bf5a8cc5bc605eede8ca2fd55b50a5c9f8660
 D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:liblzma.so.5 so:libz.so.1 so:libzstd.so.1
 p:so:libkmod.so.2=2.3.7
 
-C:Q1HtvYi3wCsm8EH5kPmqsNguzlm68=
-P:linux-rpi
-V:5.15.37-r0
-A:armhf
-S:23797130
-I:34983936
-T:Linux kernel with Raspberry Pi patches
-U:https://github.com/raspberrypi/linux
-L:GPL-2.0
-o:linux-rpi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1651566567
-c:31b810873704d3cdcf0335e51e90eb06daaa3a41
-D:mkinitfs linux-firmware-brcm linux-firmware-cypress
-
 C:Q11NJ2admDblBTUNrBpogPuf2h8zw=
 P:libpcrecpp
 V:8.45-r2
@@ -36726,6 +36804,22 @@ t:1649093063
 c:3679307172d226faa0e4265eb3c1ede46318b6f4
 D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libprotobuf.so.29 so:libstdc++.so.6
 p:so:libprotoc.so.29=29.0.1
+
+C:Q12KeJktHDUSrMmUxx20OblDFfhvI=
+P:ferm-openrc
+V:2.7-r0
+A:armhf
+S:2022
+I:24576
+T:firewall configuration tool
+U:http://ferm.foo-projects.org/
+L:GPL
+o:ferm
+m:Michael Mason <ms13sp@gmail.com>
+t:1652174314
+c:16a41a7e8b1a8e82155bcab7d99f228f28f4e6bd
+D:perl iptables
+i:openrc ferm=2.7-r0
 
 C:Q1Ke/ChY0Umlfg05hC4GZ0Oh8Z7lc=
 P:font-micro-misc
@@ -37722,22 +37816,6 @@ t:1649617312
 c:6d58f7252334ad6e38be259be0e1421e144906e6
 i:ethtool=5.17-r0 bash-completion
 
-C:Q1duJ+SFt/FANhzdbOKdq23lMN/mk=
-P:zfs-rpi
-V:5.15.37-r1
-A:armhf
-S:1208418
-I:1282048
-T:ZFS Linux kernel modules
-U:https://openzfs.org
-L:CDDL-1.0
-o:zfs-rpi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1651566910
-c:265d81b790a2195ea5bf79cb132a76e471889e78
-D:linux-rpi=5.15.37-r0
-i:zfs linux-rpi=5.15.37-r0
-
 C:Q153ayfuVQ6TDKlph8sX4YblSw75g=
 P:openvpn-ad-check
 V:1.1-r2
@@ -38336,22 +38414,6 @@ c:ef26078ba9b6b7faa8ea8ac97be03c37b71aa35a
 D:so:libc.musl-armhf.so.1
 p:so:libintl.so.8=8.2.0
 
-C:Q1JhK37sMIO2N+HeM03glAolNVNHI=
-P:dovecot-pgsql
-V:2.3.18-r2
-A:armhf
-S:12879
-I:53248
-T:PostgreSQL driver for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1650750896
-c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
-D:dovecot-sql=2.3.18-r2 so:libc.musl-armhf.so.1 so:libpq.so.5
-p:so:libdriver_pgsql.so=0
-
 C:Q1GZrgTU7clPO+Qdt5WVRDj6l6CY0=
 P:spandsp3-dev
 V:0_git20201102-r0
@@ -38642,20 +38704,6 @@ t:1649901142
 c:7d2e1a24b82a682858f9e8fff2ca67cbf54192a4
 D:guile gc-dev guile-libs=3.0.8-r0 pkgconfig
 p:pc:guile-3.0=3.0.8 cmd:guile-config=3.0.8-r0
-
-C:Q1bEwyZWWkMYabChdsis0Eh7/FUX4=
-P:dovecot-dev
-V:2.3.18-r2
-A:armhf
-S:548272
-I:3727360
-T:IMAP and POP3 server (development files)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1650750896
-c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
 
 C:Q1zF4iweiPT4f3fhW1SKvMZFy+4s4=
 P:rng-tools-extra
@@ -38962,22 +39010,6 @@ m:Jeff Bilyk <jbilyk@gmail.com>
 t:1635896152
 c:6ac674fdee1bb2ad77162f5cdd523a160c9db8f1
 D:nagios-plugins so:libc.musl-armhf.so.1 so:libcrypto.so.1.1
-
-C:Q14NC7zkmQnYV23a4SriQgGa4RV6Y=
-P:libxcb
-V:1.14-r2
-A:armhf
-S:199228
-I:811008
-T:X11 client-side library
-U:https://xcb.freedesktop.org
-L:MIT
-o:libxcb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1617646679
-c:cd2d9fe07f299ce733b756d658c34ba089ddbbfd
-D:so:libXau.so.6 so:libXdmcp.so.6 so:libc.musl-armhf.so.1
-p:so:libxcb-composite.so.0=0.0.0 so:libxcb-damage.so.0=0.0.0 so:libxcb-dpms.so.0=0.0.0 so:libxcb-dri2.so.0=0.0.0 so:libxcb-dri3.so.0=0.0.0 so:libxcb-glx.so.0=0.0.0 so:libxcb-present.so.0=0.0.0 so:libxcb-randr.so.0=0.1.0 so:libxcb-record.so.0=0.0.0 so:libxcb-render.so.0=0.0.0 so:libxcb-res.so.0=0.0.0 so:libxcb-screensaver.so.0=0.0.0 so:libxcb-shape.so.0=0.0.0 so:libxcb-shm.so.0=0.0.0 so:libxcb-sync.so.1=1.0.0 so:libxcb-xf86dri.so.0=0.0.0 so:libxcb-xfixes.so.0=0.0.0 so:libxcb-xinerama.so.0=0.0.0 so:libxcb-xinput.so.0=0.1.0 so:libxcb-xkb.so.1=1.0.0 so:libxcb-xtest.so.0=0.0.0 so:libxcb-xv.so.0=0.0.0 so:libxcb-xvmc.so.0=0.0.0 so:libxcb.so.1=1.1.0
 
 C:Q1c3NIdCaJbCHwnAv7EiNNnAnY+1M=
 P:policyd-spf-fs
@@ -40527,22 +40559,6 @@ t:1650118919
 c:70bc0ead15ef86e573fae993be31c08bcbd687e4
 p:linux-firmware-any
 
-C:Q1ORx6r8gyL15BEEo8argLkTUNhNY=
-P:libxvmc-dev
-V:1.0.12-r0
-A:armhf
-S:5545
-I:53248
-T:X11 Video Motion Compensation extension library (development files)
-U:http://xorg.freedesktop.org/
-L:MIT
-o:libxvmc
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1569664948
-c:096561f45b0bc2051a711174d92280e03bd53538
-D:libxext-dev libxvmc=1.0.12-r0 pc:videoproto pc:x11 pc:xext pc:xproto pkgconfig
-p:pc:xvmc-wrapper=1.0.12 pc:xvmc=1.0.12
-
 C:Q1Ps6D7oSa5IPccdCbMfyBTUe46bo=
 P:attr-dev
 V:2.5.1-r1
@@ -40899,6 +40915,22 @@ c:1b0114dd10ab2d9a973d0e45d1307d425430515a
 k:14
 D:postgresql-common-openrc
 i:openrc postgresql14=14.2-r3
+
+C:Q1I7FVSPzl97+II/oWRpEDPlGcQVo=
+P:dovecot-pigeonhole-plugin
+V:2.3.19-r2
+A:armhf
+S:413478
+I:1101824
+T:Sieve and managesieve plugin for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652179651
+c:5649839312b334dd83bc292fa47ed6357f66762b
+D:dovecot=2.3.19-r2 so:libc.musl-armhf.so.1 so:libdovecot-login.so.0 so:libdovecot-storage.so.0 so:libdovecot.so.0
+p:so:lib90_sieve_plugin.so=0 so:lib95_imap_filter_sieve_plugin.so=0 so:lib95_imap_sieve_plugin.so=0 so:libdovecot-sieve.so.0=0.0.0 cmd:sieve-dump=2.3.19-r2 cmd:sieve-filter=2.3.19-r2 cmd:sieve-test=2.3.19-r2 cmd:sievec=2.3.19-r2
 
 C:Q1ddxnZeLF2iTUxhjaFA6XGq7vX6k=
 P:rsyslog-mmsnmptrapd
@@ -41679,6 +41711,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1650118919
 c:70bc0ead15ef86e573fae993be31c08bcbd687e4
 p:linux-firmware-any
+
+C:Q1IsrTO6C4SACOoUegifYtGvLiCRM=
+P:dovecot-ldap
+V:2.3.19-r2
+A:armhf
+S:39694
+I:135168
+T:LDAP auth plugin for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652179651
+c:5649839312b334dd83bc292fa47ed6357f66762b
+D:dovecot=2.3.19-r2 so:libc.musl-armhf.so.1 so:libdovecot.so.0 so:liblber.so.2 so:libldap.so.2
+p:so:libdovecot-ldap.so.0=0.0.0
 
 C:Q1NfDpJtS6z3ATWQ1Pg1V6DgbZXGM=
 P:font-bh-ttf
@@ -42589,6 +42637,21 @@ c:6e2cb5cf78ec502dd985c469ccc6ac0b0e8778bc
 D:pkgconfig
 p:wayland-protocols-dev pc:wayland-protocols=1.25
 
+C:Q117XsESKhxddutDKvhiGDP1HLyAw=
+P:libx11-doc
+V:1.8-r0
+A:armhf
+S:1660188
+I:10805248
+T:X11 client-side library (documentation)
+U:http://xorg.freedesktop.org/
+L:custom:XFREE86
+o:libx11
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652184725
+c:be255dd075096ef07e27ab46961993bc7a30162a
+i:docs libx11=1.8-r0
+
 C:Q1CVwJR0E96B19PHbOiQYoLt6q/R0=
 P:harfbuzz
 V:4.2.1-r0
@@ -43036,6 +43099,21 @@ t:1639595896
 c:7424ab5ebb34934ef205d5a74eeb1648b0cf240f
 D:so:libc.musl-armhf.so.1 so:libtalloc.so.2
 p:so:libtevent.so.0=0.11.0
+
+C:Q1myuwK27hBMzskFVsyDzNobpTuhY=
+P:linux-rpi2-dev
+V:5.15.38-r0
+A:armhf
+S:18754114
+I:126341120
+T:Headers and script for third party modules for rpi2 kernel
+U:https://github.com/raspberrypi/linux
+L:GPL-2.0
+o:linux-rpi
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1651939686
+c:cc0db363e5957baddaa2134b4ff87e91454edd79
+D:perl gmp-dev elfutils-dev bash mpc1-dev mpfr-dev so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libgcc_s.so.1 so:libstdc++.so.6
 
 C:Q1QNje161Z0NcQxP6wG0Ot3A4HRQw=
 P:ldb-dev
@@ -45031,22 +45109,6 @@ t:1648990306
 c:9e0da10cedca71e949b534a676cb65f6382e6b45
 i:docs arpwatch=3.3-r0
 
-C:Q19TtBIHS3IHpOOC1sMJWdwQJVLGI=
-P:xcb-proto
-V:1.14.1-r3
-A:armhf
-S:149297
-I:1019904
-T:XML-XCB protocol descriptions
-U:https://xcb.freedesktop.org
-L:MIT
-o:xcb-proto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1639595860
-c:cb7cdd8f07a3d65d5e943e52161248a2452bf90e
-D:pkgconfig
-p:pc:xcb-proto=1.14.1 py3.10:xcbgen=1.14.1-r3
-
 C:Q1Jx+YW25NxNMDcEiY8FWmQ2WHKvk=
 P:ruby-rexml-doc
 V:3.2.5-r2
@@ -45184,22 +45246,6 @@ t:1635117238
 c:2cf3fe063b1b9e308372af7e2c2348e9e494a135
 D:lua5.2 so:libc.musl-armhf.so.1 so:libmariadb.so.3
 i:lua-dbi=0.7.2-r1 lua5.2
-
-C:Q1+uzmuvAeT3offO3OUji6oHUp2+4=
-P:zfs-rpi2
-V:5.15.37-r1
-A:armhf
-S:1229841
-I:1302528
-T:ZFS Linux kernel modules for rpi2
-U:https://openzfs.org
-L:CDDL-1.0
-o:zfs-rpi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1651566910
-c:265d81b790a2195ea5bf79cb132a76e471889e78
-D:linux-rpi2=5.15.37-r0
-i:zfs linux-rpi2=5.15.37-r0
 
 C:Q1DllpHJEpCXWDmWXRLUCWHSIqt4Y=
 P:perl-cgi-session
@@ -46103,21 +46149,6 @@ c:ca4725f013066ab5bac4a4d08d682a9090032ff8
 D:samba-common=4.15.7-r0 so:libCHARSET3-samba4.so so:libaddns-samba4.so so:libarchive.so.13 so:libc.musl-armhf.so.1 so:libcli-cldap-samba4.so so:libcli-ldap-samba4.so so:libcli-smb-common-samba4.so so:libcli-spoolss-samba4.so so:libcliauth-samba4.so so:libcmdline-contexts-samba4.so so:libcmdline-samba4.so so:libcom_err-samba4.so.0 so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libdcerpc-samba-samba4.so so:libevents-samba4.so so:libformw.so.6 so:libgenrand-samba4.so so:libgensec-samba4.so so:libgnutls.so.30 so:libkrb5-samba4.so.26 so:libkrb5samba-samba4.so so:libldb.so.2 so:libldbsamba-samba4.so so:liblibcli-lsa3-samba4.so so:liblibcli-netlogon3-samba4.so so:liblibsmb-samba4.so so:libmscat-samba4.so so:libmsrpc3-samba4.so so:libncursesw.so.6 so:libndr-nbt.so.0 so:libndr-samba-samba4.so so:libndr-samba4.so so:libndr-standard.so.0 so:libndr.so.2 so:libpanelw.so.6 so:libpopt.so.0 so:libregistry-samba4.so so:libreplace-samba4.so so:libsamba-credentials.so.1 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-passdb.so.0 so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsamdb-common-samba4.so so:libsecrets3-samba4.so so:libserver-role-samba4.so so:libsmbclient-raw-samba4.so so:libsmbclient.so.0 so:libsmbconf.so.0 so:libsocket-blocking-samba4.so so:libtalloc.so.2 so:libtevent-util.so.0 so:libtevent.so.0 so:libtrusts-util-samba4.so so:libutil-reg-samba4.so so:libutil-tdb-samba4.so
 p:cmd:cifsdd=4.15.7-r0 cmd:dbwrap_tool=4.15.7-r0 cmd:dumpmscat=4.15.7-r0 cmd:mdsearch=4.15.7-r0 cmd:mvxattr=4.15.7-r0 cmd:nmblookup=4.15.7-r0 cmd:oLschema2ldif=4.15.7-r0 cmd:regdiff=4.15.7-r0 cmd:regpatch=4.15.7-r0 cmd:regshell=4.15.7-r0 cmd:regtree=4.15.7-r0 cmd:rpcclient=4.15.7-r0 cmd:samba-regedit=4.15.7-r0 cmd:sharesec=4.15.7-r0 cmd:smbcacls=4.15.7-r0 cmd:smbclient=4.15.7-r0 cmd:smbcquotas=4.15.7-r0 cmd:smbget=4.15.7-r0 cmd:smbprint=4.15.7-r0 cmd:smbspool=4.15.7-r0 cmd:smbtar=4.15.7-r0 cmd:smbtree=4.15.7-r0
 
-C:Q1CnC8+bHicjYX5otZEfJUP3JJy50=
-P:dovecot-pigeonhole-plugin-ldap
-V:2.3.18-r2
-A:armhf
-S:17803
-I:61440
-T:Sieve and managesieve plugin for Dovecot (LDAP support)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1650750896
-c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
-D:dovecot-pigeonhole-plugin=2.3.18-r2 dovecot-ldap=2.3.18-r2 so:libc.musl-armhf.so.1 so:liblber.so.2 so:libldap.so.2
-
 C:Q1+tPhMD2tRKZI5ox2pbxBeLklJhE=
 P:highlight-doc
 V:4.2-r0
@@ -46225,22 +46256,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1651086758
 c:3a1a6c29fd6f7365aaaf0d6ac4c24129e464d51a
 i:btrfs-progs=5.17-r0 bash-completion
-
-C:Q1HRIKQnSxx9vc1u2vXy+7scDpvd0=
-P:libxcb-dev
-V:1.14-r2
-A:armhf
-S:188020
-I:2244608
-T:X11 client-side library (development files)
-U:https://xcb.freedesktop.org
-L:MIT
-o:libxcb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1617646679
-c:cd2d9fe07f299ce733b756d658c34ba089ddbbfd
-D:libxau-dev xcb-proto libxcb=1.14-r2 pc:xau>=0.99.2 pc:xdmcp pkgconfig
-p:pc:xcb-composite=1.14 pc:xcb-damage=1.14 pc:xcb-dpms=1.14 pc:xcb-dri2=1.14 pc:xcb-dri3=1.14 pc:xcb-glx=1.14 pc:xcb-present=1.14 pc:xcb-randr=1.14 pc:xcb-record=1.14 pc:xcb-render=1.14 pc:xcb-res=1.14 pc:xcb-screensaver=1.14 pc:xcb-shape=1.14 pc:xcb-shm=1.14 pc:xcb-sync=1.14 pc:xcb-xf86dri=1.14 pc:xcb-xfixes=1.14 pc:xcb-xinerama=1.14 pc:xcb-xinput=1.14 pc:xcb-xkb=1.14 pc:xcb-xtest=1.14 pc:xcb-xv=1.14 pc:xcb-xvmc=1.14 pc:xcb=1.14
 
 C:Q1nvrPVPQ2dU/rVZO1pEhQYkfcT6I=
 P:linux-firmware-mwlwifi
@@ -46413,6 +46428,22 @@ t:1634364270
 c:670bf5a8cc5bc605eede8ca2fd55b50a5c9f8660
 D:so:libc.musl-armhf.so.1 so:librhash.so.0
 p:cmd:ed2k-link=1.4.2-r2 cmd:edonr256-hash=1.4.2-r2 cmd:edonr512-hash=1.4.2-r2 cmd:gost12-256-hash=1.4.2-r2 cmd:gost12-512-hash=1.4.2-r2 cmd:has160-hash=1.4.2-r2 cmd:magnet-link=1.4.2-r2 cmd:rhash=1.4.2-r2 cmd:sfv-hash=1.4.2-r2 cmd:tiger-hash=1.4.2-r2 cmd:tth-hash=1.4.2-r2 cmd:whirlpool-hash=1.4.2-r2
+
+C:Q1cWtWEUq2klKhoEr68gx0PpTdsdU=
+P:libxcb-dev
+V:1.15-r0
+A:armhf
+S:189006
+I:2256896
+T:X11 client-side library (development files)
+U:https://xcb.freedesktop.org
+L:MIT
+o:libxcb
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652183916
+c:6a6c34ad1edfa794a0a82703d2d13eca1fd67ab6
+D:libxau-dev xcb-proto libxcb=1.15-r0 pc:xau>=0.99.2 pc:xdmcp pkgconfig
+p:pc:xcb-composite=1.15 pc:xcb-damage=1.15 pc:xcb-dpms=1.15 pc:xcb-dri2=1.15 pc:xcb-dri3=1.15 pc:xcb-glx=1.15 pc:xcb-present=1.15 pc:xcb-randr=1.15 pc:xcb-record=1.15 pc:xcb-render=1.15 pc:xcb-res=1.15 pc:xcb-screensaver=1.15 pc:xcb-shape=1.15 pc:xcb-shm=1.15 pc:xcb-sync=1.15 pc:xcb-xf86dri=1.15 pc:xcb-xfixes=1.15 pc:xcb-xinerama=1.15 pc:xcb-xinput=1.15 pc:xcb-xkb=1.15 pc:xcb-xtest=1.15 pc:xcb-xv=1.15 pc:xcb-xvmc=1.15 pc:xcb=1.15
 
 C:Q1EtmbcnlNg5DDqCUfu1LUyuqr/WE=
 P:amavisd-milter
@@ -47545,21 +47576,6 @@ c:988c4057d60ade6a214b14741f3e0950b3105c3a
 D:libxv=1.0.11-r2 pc:videoproto pc:x11 pc:xext pc:xproto pkgconfig
 p:pc:xv=1.0.11
 
-C:Q1qS97tg4AxLf0aaKYizOeuLPR9gQ=
-P:dovecot-doc
-V:2.3.18-r2
-A:armhf
-S:606265
-I:2560000
-T:IMAP and POP3 server (documentation)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1650750896
-c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
-i:docs dovecot=2.3.18-r2
-
 C:Q1y0Bo6OsxOW1wSaGsdgTu6r7Pruo=
 P:encodings
 V:1.0.5-r0
@@ -48016,6 +48032,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1634364784
 c:78e15fb84e2e93c9ed25845f767cdf94955b6301
 i:docs libssh2=1.10.0-r2
+
+C:Q16vQ5vxGJL3FtM/w6ZyYISPzU8g4=
+P:lua5.4-libs
+V:5.4.4-r5
+A:armhf
+S:97067
+I:221184
+T:Lua dynamic library runtime
+U:https://www.lua.org/
+L:MIT
+o:lua5.4
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652172551
+c:03200ecf6c3990949a1c22027f900993c5bcabd8
+D:so:libc.musl-armhf.so.1
+p:so:liblua-5.4.so.0=0.0.0
 
 C:Q18Xwo2gbc2WNfioLmpO0uX/5f2kg=
 P:perl-tk-doc
@@ -48844,22 +48876,6 @@ c:d7a2afc24933149308b0e0cb2a884c0a10d4bb24
 D:so:libc.musl-armhf.so.1 so:openssl3:so:libcrypto.so.3 so:openssl3:so:libssl.so.3
 p:cmd:openssl3=3.0.2-r0
 
-C:Q1nYRasli0fDZgdhXlg9cNaxMdVD0=
-P:lua5.4
-V:5.4.4-r4
-A:armhf
-S:75905
-I:172032
-T:Powerful light-weight programming language
-U:https://www.lua.org/
-L:MIT
-o:lua5.4
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1652106070
-c:99c6c4ce71b60cdd0b174584c71e0a6b1a9ec952
-D:so:libc.musl-armhf.so.1 so:liblua-5.4.so.0 so:libreadline.so.8
-p:lua cmd:lua5.4=5.4.4-r4 cmd:luac5.4=5.4.4-r4
-
 C:Q1DpL/e34ic6pTekvBgu5nRWnd/0E=
 P:gnupg-gpgconf
 V:2.2.35-r0
@@ -49309,6 +49325,21 @@ t:1625525066
 c:d1ed0de50467f8a899f1dbc3ca24380eb941242e
 D:so:libc.musl-armhf.so.1
 p:cmd:nslinkadmin=7.34-r1 cmd:nslinkd=7.34-r1 cmd:nslinkrelease=7.34-r1 cmd:nslinktool=7.34-r1
+
+C:Q1WLvjzNFLjiRLawEPbXeYm9uP0mQ=
+P:dovecot-openrc
+V:2.3.19-r2
+A:armhf
+S:2117
+I:16384
+T:IMAP and POP3 server (OpenRC init scripts)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652179651
+c:5649839312b334dd83bc292fa47ed6357f66762b
+i:openrc dovecot=2.3.19-r2
 
 C:Q1SkpMhix5TZSuPEzIrtWT+zpf1Pg=
 P:audit-static
@@ -49940,22 +49971,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1645440846
 c:345b5254f9246acce48c58b84e164b2eb815bf5a
 D:perl perl-sub-exporter-progressive perl-module-runtime perl-module-implementation perl-variable-magic
-
-C:Q1gEK+RQgVQCxXThc30A3hyobA/Nc=
-P:dovecot-sqlite
-V:2.3.18-r2
-A:armhf
-S:7038
-I:40960
-T:SQLite driver for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1650750896
-c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
-D:dovecot-sql=2.3.18-r2 so:libc.musl-armhf.so.1 so:libsqlite3.so.0
-p:so:libdriver_sqlite.so=0
 
 C:Q1IBOabIQhbksKT+4wzH51DiIHd4o=
 P:ucarp
@@ -51080,6 +51095,20 @@ t:1651086758
 c:3a1a6c29fd6f7365aaaf0d6ac4c24129e464d51a
 D:so:libc.musl-armhf.so.1
 p:so:libbtrfs.so.0=0.1 so:libbtrfsutil.so.1=1.2.0
+
+C:Q1CyK0Up5iT1me8+6fuyV83aJQBIw=
+P:lua5.4-dbg
+V:5.4.4-r5
+A:armhf
+S:656459
+I:1441792
+T:Powerful light-weight programming language (debug symbols)
+U:https://www.lua.org/
+L:MIT
+o:lua5.4
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652172551
+c:03200ecf6c3990949a1c22027f900993c5bcabd8
 
 C:Q1IGkioc7kSrU4obdUyCmVDKRIRB8=
 P:rrdtool-utils
@@ -53492,6 +53521,20 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 i:docs fprobe-ulog=1.2-r4
 
+C:Q1n+eTh+NjZYcFZxhCNk7omm7+npM=
+P:libx11-static
+V:1.8-r0
+A:armhf
+S:787900
+I:1744896
+T:X11 client-side library (static library)
+U:http://xorg.freedesktop.org/
+L:custom:XFREE86
+o:libx11
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652184725
+c:be255dd075096ef07e27ab46961993bc7a30162a
+
 C:Q1z3Cf0UcnfUk6BAPAkb9FcFb3/hc=
 P:file-dev
 V:5.41-r0
@@ -53722,20 +53765,6 @@ m:Matt Smith <mcs@darkregion.net>
 t:1649781634
 c:8902aa39bf2ac6d5a7f90962b521ec8cc621ad8a
 i:docs py3-pygments=2.11.2-r0
-
-C:Q1DvYxi4BdquvVakgkKM9GS/d0rT8=
-P:libxcb-static
-V:1.14-r2
-A:armhf
-S:197047
-I:954368
-T:X11 client-side library (static library)
-U:https://xcb.freedesktop.org
-L:MIT
-o:libxcb
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1617646679
-c:cd2d9fe07f299ce733b756d658c34ba089ddbbfd
 
 C:Q17pDwFRYA3Nx5+5szTJK5b6GEpVk=
 P:libssh2-dev
@@ -53989,22 +54018,6 @@ t:1643745932
 c:1f24e94027b8a4c6885fdea7ecd007fc9bb2c1f4
 D:!bison so:libc.musl-armhf.so.1
 p:cmd:yacc=20220128-r0
-
-C:Q1LEiZQD0Nz6Ae7LW+JZUX98XpLlk=
-P:libx11-dev
-V:1.7.5-r0
-A:armhf
-S:54227
-I:319488
-T:X11 client-side library (development files)
-U:http://xorg.freedesktop.org/
-L:custom:XFREE86
-o:libx11
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649624740
-c:bccc37009d0fe615a37bffa9cac94df769e1db84
-D:libxcb-dev xtrans libx11=1.7.5-r0 pc:kbproto pc:xcb pc:xcb>=1.11.1 pc:xproto pkgconfig
-p:pc:x11-xcb=1.7.5 pc:x11=1.7.5
 
 C:Q1fttk3FNW2ygBpGbcCgR7vUlTQ4U=
 P:gnupg-utils
@@ -55636,20 +55649,6 @@ c:1118fff73bb8f3a967c12d42de2d8c4a0a7ed162
 D:so:libc.musl-armhf.so.1 so:libpcap.so.1
 p:cmd:fprobe=1.1-r9
 
-C:Q1DXxJAzDaJGM4uIbPtvGxLL82Tcg=
-P:lua5.4-dbg
-V:5.4.4-r4
-A:armhf
-S:656463
-I:1441792
-T:Powerful light-weight programming language (debug symbols)
-U:https://www.lua.org/
-L:MIT
-o:lua5.4
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1652106070
-c:99c6c4ce71b60cdd0b174584c71e0a6b1a9ec952
-
 C:Q1kPPCS+hH0NMC46zdHMFgzYyD+1A=
 P:skytraq-datalogger
 V:0.5.1-r1
@@ -56517,6 +56516,22 @@ t:1640442741
 c:16e7174fb96202d91101a8f15090473132c3a43d
 D:so:libc.musl-armhf.so.1
 p:cmd:klogd=1.5.1-r3 cmd:syslogd=1.5.1-r3
+
+C:Q1VqzgQ59SHTaWybovWYMz49KvpsU=
+P:libx11-dev
+V:1.8-r0
+A:armhf
+S:53934
+I:319488
+T:X11 client-side library (development files)
+U:http://xorg.freedesktop.org/
+L:custom:XFREE86
+o:libx11
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652184725
+c:be255dd075096ef07e27ab46961993bc7a30162a
+D:libxcb-dev xtrans libx11=1.8-r0 pc:kbproto pc:xcb pc:xcb>=1.11.1 pc:xproto pkgconfig
+p:pc:x11-xcb=1.8 pc:x11=1.8
 
 C:Q1DMXiBT+0bTdu72mfxVZopuOppOM=
 P:open-lldp-doc
@@ -58030,21 +58045,6 @@ t:1640092805
 c:ed4e519e5c2e7e4b635534cc0e17e232a6815f2d
 D:uwsgi so:libc.musl-armhf.so.1
 
-C:Q14HhEaPeo55wIgYYbipRFhPSExd4=
-P:zfs-rpi-dev
-V:5.15.37-r1
-A:armhf
-S:491072
-I:3874816
-T:ZFS Linux kernel modules (development files)
-U:https://openzfs.org
-L:CDDL-1.0
-o:zfs-rpi
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1651566910
-c:265d81b790a2195ea5bf79cb132a76e471889e78
-D:glib-dev e2fsprogs-dev util-linux-dev libtirpc-dev linux-rpi-dev=5.15.37-r0
-
 C:Q19K3smMmuIbeHR89x/ay3Q1InQcA=
 P:ifupdown-ng-batman
 V:0.12.1-r0
@@ -58675,21 +58675,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1627487160
 c:d3e426acd83ed90967cc4de30fd7c8487b55d339
 D:perl-libwww so:libc.musl-armhf.so.1 so:libexpat.so.1
-
-C:Q1LU4zrj2uWUrYOEhxu/jZ+9UhN88=
-P:ferm-doc
-V:2.6-r0
-A:armhf
-S:68952
-I:196608
-T:firewall configuration tool (documentation)
-U:http://ferm.foo-projects.org/
-L:GPL
-o:ferm
-m:Michael Mason <ms13sp@gmail.com>
-t:1613215058
-c:d2e47c2266c7fed87e177cff3e2e34abe4475b4f
-i:docs ferm=2.6-r0
 
 C:Q13UmAyX1VBJ9f6zoIXU/VxAVbQzk=
 P:kamailio-dbtext
@@ -60918,21 +60903,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl perl-convert-asn1
 
-C:Q19/7HORy/qBWqHh9VONyP7Q7bSFQ=
-P:multipath-tools-doc
-V:0.8.8-r0
-A:armhf
-S:50453
-I:212992
-T:Device Mapper Multipathing Driver (documentation)
-U:http://christophe.varoqui.free.fr
-L:LGPL-2.0-only
-o:multipath-tools
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1643331644
-c:2173099885f6e24392d5b512e88a32603f10b3c2
-i:docs multipath-tools=0.8.8-r0
-
 C:Q1JxRKpPtQzzQYDiyKzimxE+pGZgQ=
 P:pam-winbind
 V:4.15.7-r0
@@ -61410,6 +61380,37 @@ t:1642255678
 c:5454fba0855268976881875fe9f539e139d997ab
 D:perl
 
+C:Q1MSQXUuNbo9Zsfej/dzJuwkMnEpQ=
+P:libxvmc
+V:1.0.13-r0
+A:armhf
+S:11725
+I:49152
+T:X11 Video Motion Compensation extension library
+U:http://xorg.freedesktop.org/
+L:MIT
+o:libxvmc
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652178842
+c:4e7a73e02f55e0033e27a8500337b5cefa2efd81
+D:so:libX11.so.6 so:libXext.so.6 so:libc.musl-armhf.so.1
+p:so:libXvMC.so.1=1.0.0 so:libXvMCW.so.1=1.0.0
+
+C:Q1pEiDUWvgZs++bk1d52p+exJnfOQ=
+P:dovecot-gssapi
+V:2.3.19-r2
+A:armhf
+S:7746
+I:36864
+T:GSSAPI auth plugin for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652179651
+c:5649839312b334dd83bc292fa47ed6357f66762b
+D:dovecot=2.3.19-r2 so:libc.musl-armhf.so.1 so:libgssapi.so.3 so:libkrb5.so.26
+
 C:Q1VjhGMOLLcYd5NS6hrzhXGqI7C1k=
 P:linux-firmware-sun
 V:20220411-r0
@@ -61668,6 +61669,21 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1651220051
 c:b60d787f9447709996cffdb69bb3ac9178f8186f
 D:perl
+
+C:Q1UxqdNVtuDvMKNJk5BJI/lrYx8HY=
+P:lua5.4-doc
+V:5.4.4-r5
+A:armhf
+S:121261
+I:471040
+T:Powerful light-weight programming language (documentation)
+U:https://www.lua.org/
+L:MIT
+o:lua5.4
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652172551
+c:03200ecf6c3990949a1c22027f900993c5bcabd8
+i:docs lua5.4=5.4.4-r5
 
 C:Q1Prd0HQfNudNYLwv0QsiKQIPZ+uY=
 P:py3-six
@@ -67381,6 +67397,22 @@ m:Rasmus Thomsen <oss@cogitri.dev>
 t:1617969049
 c:d21d5a3469dd0616649c6ef3931d86ae99476e68
 
+C:Q1hYjfNrYT3pO+r5/38WsJec/KVFE=
+P:lua5.4
+V:5.4.4-r5
+A:armhf
+S:75903
+I:172032
+T:Powerful light-weight programming language
+U:https://www.lua.org/
+L:MIT
+o:lua5.4
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652172551
+c:03200ecf6c3990949a1c22027f900993c5bcabd8
+D:so:libc.musl-armhf.so.1 so:liblua-5.4.so.0 so:libreadline.so.8
+p:lua cmd:lua5.4=5.4.4-r5 cmd:luac5.4=5.4.4-r5
+
 C:Q1dkgxbNLvGPbvAoZiSagC2KHihKA=
 P:libarchive-static
 V:3.6.1-r0
@@ -68932,6 +68964,21 @@ c:9c0baee37c3433f5f86c3530806541f594e2d276
 D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libedit.so.0 so:libz.so.1
 p:cmd:findssl.sh=9.0_p1-r0 cmd:scp=9.0_p1-r0 cmd:sftp=9.0_p1-r0 cmd:ssh-add=9.0_p1-r0 cmd:ssh-agent=9.0_p1-r0 cmd:ssh-copy-id=9.0_p1-r0 cmd:ssh-keyscan=9.0_p1-r0 cmd:ssh-pkcs11-helper=9.0_p1-r0
 
+C:Q1nB2Ornp3yvhhCgDvuxBjOprK0wQ=
+P:dovecot-doc
+V:2.3.19-r2
+A:armhf
+S:606265
+I:2560000
+T:IMAP and POP3 server (documentation)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652179651
+c:5649839312b334dd83bc292fa47ed6357f66762b
+i:docs dovecot=2.3.19-r2
+
 C:Q1/jipkNnBOV2rxpVlHHGkYYAlCNQ=
 P:mailx-doc
 V:8.1.1-r2
@@ -70421,22 +70468,6 @@ c:4a73b206b2677d82738cb2334c6865a4cbb32964
 D:py3-cffi py3-six so:libc.musl-armhf.so.1
 p:py-pynacl=1.5.0-r0 py3.10:nacl=1.5.0-r0
 
-C:Q1KvKoPnk6c1GoIbjNdZAdZJ/JJpc=
-P:multipath-tools
-V:0.8.8-r0
-A:armhf
-S:298028
-I:950272
-T:Device Mapper Multipathing Driver
-U:http://christophe.varoqui.free.fr
-L:LGPL-2.0-only
-o:multipath-tools
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1643331644
-c:2173099885f6e24392d5b512e88a32603f10b3c2
-D:eudev device-mapper so:libaio.so.1 so:libc.musl-armhf.so.1 so:libdevmapper.so.1.02 so:libjson-c.so.5 so:libreadline.so.8 so:libudev.so.1 so:liburcu.so.6
-p:so:libdmmp.so.0.2.0=0.2.0 so:libmpathcmd.so.0=0 so:libmpathpersist.so.0=0 so:libmpathvalid.so.0=0 so:libmultipath.so.0=0 cmd:kpartx=0.8.8-r0 cmd:mpathpersist=0.8.8-r0 cmd:multipath=0.8.8-r0 cmd:multipathd=0.8.8-r0
-
 C:Q1vK/eEC7igBJmlYIl6s9xH0zVnhY=
 P:lua5.3-cjson
 V:2.1.0-r10
@@ -71810,6 +71841,21 @@ c:f7e419d7443e2c7c0c04b550c0043742250f941d
 D:so:libc.musl-armhf.so.1 so:libpcre.so.1 so:libpcre16.so.0 so:libpcre32.so.0 so:libpcreposix.so.0
 p:cmd:pcregrep=8.45-r2 cmd:pcretest=8.45-r2
 
+C:Q1K7rtYR3HvuV2bSKxM7dxzbYK6Oc=
+P:dovecot-submissiond
+V:2.3.19-r2
+A:armhf
+S:39089
+I:135168
+T:IMAP and POP3 server (mail submission agent)
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652179651
+c:5649839312b334dd83bc292fa47ed6357f66762b
+D:dovecot=2.3.19-r2 so:libc.musl-armhf.so.1 so:libdovecot-storage.so.0 so:libdovecot.so.0
+
 C:Q1/IOBUnVT0Zsb51hofBrszMauRb0=
 P:lxc-libs
 V:4.0.12-r1
@@ -72515,21 +72561,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1641809803
 c:bbfdd8420904044375aff2e3cc8ab8114f5fa3f4
 i:docs perl-io-socket-ssl=2.074-r0
-
-C:Q1ijGUuH7mEeFpntUxXRxK+SH/QPw=
-P:multipath-tools-openrc
-V:0.8.8-r0
-A:armhf
-S:1970
-I:20480
-T:Device Mapper Multipathing Driver (OpenRC init scripts)
-U:http://christophe.varoqui.free.fr
-L:LGPL-2.0-only
-o:multipath-tools
-m:Leonardo Arena <rnalrd@alpinelinux.org>
-t:1643331644
-c:2173099885f6e24392d5b512e88a32603f10b3c2
-i:openrc multipath-tools=0.8.8-r0
 
 C:Q1Gl1hUzt1RK1aFgcLzyQZQtrwcdY=
 P:samba-winbind-clients
@@ -73613,22 +73644,6 @@ t:1630780508
 c:a3739a07d478bc4f1f6e0c17612a1c83dffa9ecd
 i:docs perl-async-mergepoint=0.04-r3
 
-C:Q1H8LzCZqE/nfeKqCTp4s9mNS/snI=
-P:dovecot-mysql
-V:2.3.18-r2
-A:armhf
-S:9223
-I:45056
-T:MySQL driver for Dovecot
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1650750896
-c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
-D:dovecot-sql=2.3.18-r2 so:libc.musl-armhf.so.1 so:libmariadb.so.3
-p:so:libdriver_mysql.so=0
-
 C:Q1QWuloqxQxsg7D4CyzaCJzpe/C8k=
 P:idn2-utils
 V:2.3.2-r1
@@ -73782,6 +73797,22 @@ t:1631867901
 c:8e1f6d0b0f4cca3d659519153071083ca92e3594
 D:pixman=0.40.0-r3 pkgconfig
 p:pc:pixman-1=0.40.0
+
+C:Q1HV0G/vOZYWPoG+SVWPL0M2EcdGg=
+P:dovecot-mysql
+V:2.3.19-r2
+A:armhf
+S:9221
+I:45056
+T:MySQL driver for Dovecot
+U:https://www.dovecot.org/
+L:LGPL-2.0-or-later
+o:dovecot
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652179651
+c:5649839312b334dd83bc292fa47ed6357f66762b
+D:dovecot-sql=2.3.19-r2 so:libc.musl-armhf.so.1 so:libmariadb.so.3
+p:so:libdriver_mysql.so=0
 
 C:Q13wFe8RP9n5Zy+xDSARkLaSV42X4=
 P:jfsutils
@@ -74201,21 +74232,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-devel-checkbin=0.04-r1
 
-C:Q1GcbWoP7os8MmOnUhZuwRli4cU2o=
-P:dovecot-pop3d
-V:2.3.18-r2
-A:armhf
-S:23564
-I:94208
-T:IMAP and POP3 server (POP3 daemon)
-U:https://www.dovecot.org/
-L:LGPL-2.0-or-later
-o:dovecot
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1650750896
-c:58a6d25fc88d96958de49b63f1aeb10465cb02b6
-D:dovecot=2.3.18-r2 so:libc.musl-armhf.so.1 so:libdovecot-storage.so.0 so:libdovecot.so.0
-
 C:Q1Pg1OfOH2Mp7ulVuboIgsvynmaiI=
 P:lua5.3-libs
 V:5.3.6-r3
@@ -74308,22 +74324,6 @@ t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.1 so:libc.musl-armhf.so.1
 i:lua-pty=1.2.2-r1 lua5.1
-
-C:Q1VBYQnMG/tYxp6pRLXrdqvwaNxRo=
-P:lua5.4-libs
-V:5.4.4-r4
-A:armhf
-S:97078
-I:221184
-T:Lua dynamic library runtime
-U:https://www.lua.org/
-L:MIT
-o:lua5.4
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1652106070
-c:99c6c4ce71b60cdd0b174584c71e0a6b1a9ec952
-D:so:libc.musl-armhf.so.1
-p:so:liblua-5.4.so.0=0.0.0
 
 C:Q1pjlQ9+0RsrsM10LO24f9IpLlhVQ=
 P:libprotobuf
