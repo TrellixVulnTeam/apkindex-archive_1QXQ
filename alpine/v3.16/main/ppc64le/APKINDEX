@@ -5350,20 +5350,6 @@ c:ee36e0dba30424c2962bd597e786dfef40cf7ca0
 D:bubblewrap cmd:depmod kernel-hooks /bin/sh
 p:cmd:akms=0.2.0-r0
 
-C:Q1VnjIwf1ZPWvLiIi4tFSj1EbTiv0=
-P:fuse-common
-V:3.10.5-r1
-A:ppc64le
-S:1669
-I:12288
-T:Common files for fuse2 and fuse3
-U:https://github.com/libfuse/libfuse
-L:GPL-2.0-only LGPL-2.1-only
-o:fuse3
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649628370
-c:708d9a45703f2e71174a1dd2adb21aeaa1593903
-
 C:Q1R6NbRhX+TqWxc+8RMBTlihiZ/i4=
 P:lua5.4-hashids
 V:1.0.6-r3
@@ -6632,6 +6618,22 @@ t:1606301510
 c:42e72214f876cb87b13950b53062e4347c88f602
 i:openrc sntpc=0.9-r7
 
+C:Q1uJc9xHnJWkVx2pjRjzcc/wRkRBY=
+P:fuse3
+V:3.11.0-r0
+A:ppc64le
+S:20688
+I:180224
+T:The reference implementation of the Linux FUSE (Filesystem in Userspace) interface
+U:https://github.com/libfuse/libfuse
+L:GPL-2.0-only LGPL-2.1-only
+o:fuse3
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652215787
+c:0d8bf78ac83994f4944d9cd3403ae6f40b624d81
+D:fuse-common so:libc.musl-ppc64le.so.1 so:libfuse3.so.3
+p:cmd:fusermount3=3.11.0-r0 cmd:mount.fuse3=3.11.0-r0
+
 C:Q1aTc7TzeKevIAVM3UKvX42XJuAzI=
 P:autoconf
 V:2.71-r0
@@ -7724,21 +7726,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1627487153
 c:e6b394d8636113203a0614f32cce6722d56be1c0
 i:docs perl-module-refresh=0.17-r3
-
-C:Q14+qnMB2C/P9reHPmJ7Q/29prpxo=
-P:fuse-openrc
-V:3.10.5-r1
-A:ppc64le
-S:1992
-I:16384
-T:The reference implementation of the Linux FUSE (Filesystem in Userspace) interface (OpenRC init scripts)
-U:https://github.com/libfuse/libfuse
-L:GPL-2.0-only LGPL-2.1-only
-o:fuse3
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649628370
-c:708d9a45703f2e71174a1dd2adb21aeaa1593903
-i:openrc fuse-common=3.10.5-r1
 
 C:Q1x7AzpIzEn6W5yyqyw9osPpZnFDY=
 P:libevent-static
@@ -9887,21 +9874,6 @@ c:3f28965a3ed74837435bd0d488463d10afe72f3f
 D:so:libc.musl-ppc64le.so.1 so:libeconf.so.0 so:libpam.so.0 so:libpam_misc.so.0
 p:cmd:runuser=2.38-r1
 i:util-linux=2.38-r1
-
-C:Q1vvSCouWk0A/AxL5Cz5C6hYqHS10=
-P:fuse3-doc
-V:3.10.5-r1
-A:ppc64le
-S:7101
-I:36864
-T:The reference implementation of the Linux FUSE (Filesystem in Userspace) interface (documentation)
-U:https://github.com/libfuse/libfuse
-L:GPL-2.0-only LGPL-2.1-only
-o:fuse3
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649628370
-c:708d9a45703f2e71174a1dd2adb21aeaa1593903
-i:docs fuse3=3.10.5-r1
 
 C:Q17zqDDny+LnWfbOc0HWU4hPOjC64=
 P:mesa-dri-gallium
@@ -13936,6 +13908,22 @@ c:3679307172d226faa0e4265eb3c1ede46318b6f4
 D:gawk /bin/sh so:libc.musl-ppc64le.so.1 so:libpcre.so.1 so:libz.so.1
 p:so:libkamailio_ims.so.0=0.1 so:libprint.so.1=1.2 so:libsrdb1.so.1=1.0 so:libsrdb2.so.1=1.0 so:libtrie.so.1=1.0 cmd:kamailio=5.5.2-r2 cmd:kamcmd=5.5.2-r2 cmd:kamctl=5.5.2-r2 cmd:kamdbctl=5.5.2-r2
 
+C:Q1LKazrfsL35EiUmEdfFuq4c4fM3w=
+P:fuse3-dev
+V:3.11.0-r0
+A:ppc64le
+S:42580
+I:192512
+T:The reference implementation of the Linux FUSE (Filesystem in Userspace) interface (development files)
+U:https://github.com/libfuse/libfuse
+L:GPL-2.0-only LGPL-2.1-only
+o:fuse3
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652215787
+c:0d8bf78ac83994f4944d9cd3403ae6f40b624d81
+D:fuse3-libs=3.11.0-r0 pkgconfig
+p:pc:fuse3=3.11.0
+
 C:Q1YN6He+sLI9A24dk0g+paFrhRRv0=
 P:at-spi2-core-dbg
 V:2.44.1-r0
@@ -15014,20 +15002,6 @@ t:1650054943
 c:3f28965a3ed74837435bd0d488463d10afe72f3f
 D:so:libc.musl-ppc64le.so.1
 p:so:libblkid.so.1=1.1.0
-
-C:Q1srlJeg2sit7eS67Id8rICslywGw=
-P:fuse3-static
-V:3.10.5-r1
-A:ppc64le
-S:92780
-I:430080
-T:The reference implementation of the Linux FUSE (Filesystem in Userspace) interface (static library)
-U:https://github.com/libfuse/libfuse
-L:GPL-2.0-only LGPL-2.1-only
-o:fuse3
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649628370
-c:708d9a45703f2e71174a1dd2adb21aeaa1593903
 
 C:Q1ianqyP8xRte3QCCGjBsFwrOATsg=
 P:cppunit
@@ -16352,6 +16326,20 @@ c:0223978f59ca38e314bafb0fb61a2fc369f190d4
 D:so:libc.musl-ppc64le.so.1 so:libcairo.so.2 so:libfreetype.so.6 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libpoppler.so.119 so:libstdc++.so.6
 p:so:libpoppler-glib.so.8=8.23.0
 
+C:Q1wtg+Q6jNNrciN1deRwjsM3jg8WQ=
+P:fuse3-static
+V:3.11.0-r0
+A:ppc64le
+S:93141
+I:430080
+T:The reference implementation of the Linux FUSE (Filesystem in Userspace) interface (static library)
+U:https://github.com/libfuse/libfuse
+L:GPL-2.0-only LGPL-2.1-only
+o:fuse3
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652215787
+c:0d8bf78ac83994f4944d9cd3403ae6f40b624d81
+
 C:Q1k6Pl00371E9SThyfJXt9dHi3ocU=
 P:brotli-dev
 V:1.0.9-r6
@@ -16939,6 +16927,20 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1640092805
 c:ed4e519e5c2e7e4b635534cc0e17e232a6815f2d
 D:uwsgi so:libc.musl-ppc64le.so.1 so:libzmq.so.5
+
+C:Q13SGNi4gfAmK0H5xtKuUWXm91a/k=
+P:fuse-common
+V:3.11.0-r0
+A:ppc64le
+S:1664
+I:12288
+T:Common files for fuse2 and fuse3
+U:https://github.com/libfuse/libfuse
+L:GPL-2.0-only LGPL-2.1-only
+o:fuse3
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652215787
+c:0d8bf78ac83994f4944d9cd3403ae6f40b624d81
 
 C:Q1HgOaU/XXN3D74QXor6sAUs73Weo=
 P:diffutils
@@ -18314,6 +18316,21 @@ t:1538845804
 c:d2bfb22c8e8f67ad7d8d02704f35ec4d2a19f9b9
 D:/bin/sh so:libc.musl-ppc64le.so.1
 p:cmd:tinydns-conf=1.05-r47 cmd:tinydns-data=1.05-r47 cmd:tinydns-edit=1.05-r47 cmd:tinydns-get=1.05-r47 cmd:tinydns=1.05-r47
+
+C:Q1Ukpz+erz85ywPqmF3f/+7evENpU=
+P:perl-http-daemon-doc
+V:6.14-r0
+A:ppc64le
+S:8600
+I:28672
+T:HTTP::Daemon perl module (documentation)
+U:https://metacpan.org/release/HTTP-Daemon
+L:GPL-1.0-or-later OR Artistic-1.0-Perl
+o:perl-http-daemon
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652215775
+c:51257081bf8587be5922645587a5b4b6d315c739
+i:docs perl-http-daemon=6.14-r0
 
 C:Q1xGhaPuwkNa/QRjGdDFPSmjrp1ws=
 P:cracklib-dev
@@ -29316,6 +29333,21 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
 
+C:Q1vvu9GDsL1araZKB+/Y2myUbqrIg=
+P:perl-http-daemon
+V:6.14-r0
+A:ppc64le
+S:11451
+I:86016
+T:HTTP::Daemon perl module
+U:https://metacpan.org/release/HTTP-Daemon
+L:GPL-1.0-or-later OR Artistic-1.0-Perl
+o:perl-http-daemon
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652215775
+c:51257081bf8587be5922645587a5b4b6d315c739
+D:perl perl-http-date perl-http-message
+
 C:Q1oOM7QfkajeNNFOBhiIVtfYrNBg0=
 P:perl-cgi-fast-doc
 V:2.16-r0
@@ -32187,21 +32219,6 @@ c:ba87d58ecee3df07aa05204ce7ba6157c53f35b0
 D:so:libblkid.so.1 so:libc.musl-ppc64le.so.1 so:libuuid.so.1
 p:so:libf2fs.so.8=8.0.0 so:libf2fs_format.so.7=7.0.0
 
-C:Q1P/CFDGazUFgveSA3JJ1cJJVz1I0=
-P:perl-http-daemon
-V:6.13-r0
-A:ppc64le
-S:11422
-I:86016
-T:HTTP::Daemon perl module
-U:https://metacpan.org/release/HTTP-Daemon
-L:GPL-1.0-or-later OR Artistic-1.0-Perl
-o:perl-http-daemon
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644491700
-c:52739c28efe2c6fc62505a7c519b20b079fa6553
-D:perl perl-http-date perl-http-message
-
 C:Q1gaQr1lWJxROYTCYkQnKJJ9mFU5s=
 P:policyd-spf-fs
 V:23-r3
@@ -32657,22 +32674,6 @@ t:1644684625
 c:630659e714597beb5c18eeaa5326ea6653eb4d34
 i:openrc unbound=1.15.0-r0
 
-C:Q1mJD7RV1C4EGffjyIImdjaLFCPtk=
-P:fuse3-dev
-V:3.10.5-r1
-A:ppc64le
-S:42313
-I:188416
-T:The reference implementation of the Linux FUSE (Filesystem in Userspace) interface (development files)
-U:https://github.com/libfuse/libfuse
-L:GPL-2.0-only LGPL-2.1-only
-o:fuse3
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649628370
-c:708d9a45703f2e71174a1dd2adb21aeaa1593903
-D:fuse3-libs=3.10.5-r1 pkgconfig
-p:pc:fuse3=3.10.5
-
 C:Q1KLFBHb6sQNIsmVP3NICrrxtaVIg=
 P:tdb-libs
 V:1.4.6-r0
@@ -33035,22 +33036,6 @@ t:1649624883
 c:336f1c44db120a6cf4cd2649b95984787fa55305
 D:libltdl
 p:cmd:libtool=2.4.7-r0 cmd:libtoolize=2.4.7-r0
-
-C:Q172q0pRbdhYml+pJ1KgwyY0In8DU=
-P:fuse3
-V:3.10.5-r1
-A:ppc64le
-S:20679
-I:180224
-T:The reference implementation of the Linux FUSE (Filesystem in Userspace) interface
-U:https://github.com/libfuse/libfuse
-L:GPL-2.0-only LGPL-2.1-only
-o:fuse3
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649628370
-c:708d9a45703f2e71174a1dd2adb21aeaa1593903
-D:fuse-common so:libc.musl-ppc64le.so.1 so:libfuse3.so.3
-p:cmd:fusermount3=3.10.5-r1 cmd:mount.fuse3=3.10.5-r1
 
 C:Q1cFNoPu61E25bMRQwGeGHBtmuIeg=
 P:lua5.2-yaml
@@ -41202,22 +41187,6 @@ c:6044241d6756393d370fa5337762a6ae79ec8f12
 D:pkgconfig sysfsutils=2.1.1-r0
 p:pc:libsysfs=2.1.1
 
-C:Q1i37v//QDK2kLg+uTzXAsi/vEhn0=
-P:fuse3-libs
-V:3.10.5-r1
-A:ppc64le
-S:72279
-I:278528
-T:The reference implementation of the Linux FUSE (Filesystem in Userspace) interface (libraries)
-U:https://github.com/libfuse/libfuse
-L:GPL-2.0-only LGPL-2.1-only
-o:fuse3
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1649628370
-c:708d9a45703f2e71174a1dd2adb21aeaa1593903
-D:so:libc.musl-ppc64le.so.1
-p:so:libfuse3.so.3=3.10.5
-
 C:Q1v7l0KaN8goMaC2mnbpEGtbcA4Gw=
 P:open-iscsi
 V:2.1.6-r0
@@ -46795,6 +46764,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1649812004
 c:fefd94271a54a18ead01264972b008d136683c55
 i:docs graphviz=3.0.0-r0
+
+C:Q17rQ++SgQxU96oXUY2hFcY5pmHvs=
+P:fuse3-doc
+V:3.11.0-r0
+A:ppc64le
+S:7094
+I:36864
+T:The reference implementation of the Linux FUSE (Filesystem in Userspace) interface (documentation)
+U:https://github.com/libfuse/libfuse
+L:GPL-2.0-only LGPL-2.1-only
+o:fuse3
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652215787
+c:0d8bf78ac83994f4944d9cd3403ae6f40b624d81
+i:docs fuse3=3.11.0-r0
 
 C:Q1AZDMns+4tHuz2g07Qw2PguxCQSA=
 P:libconfig-doc
@@ -55889,6 +55873,22 @@ c:a3739a07d478bc4f1f6e0c17612a1c83dffa9ecd
 D:perl
 p:cmd:pm_which=1.09-r2
 
+C:Q1p7BvRevrWJMdcu/T1PoYds4vHoc=
+P:fuse3-libs
+V:3.11.0-r0
+A:ppc64le
+S:72479
+I:278528
+T:The reference implementation of the Linux FUSE (Filesystem in Userspace) interface (libraries)
+U:https://github.com/libfuse/libfuse
+L:GPL-2.0-only LGPL-2.1-only
+o:fuse3
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652215787
+c:0d8bf78ac83994f4944d9cd3403ae6f40b624d81
+D:so:libc.musl-ppc64le.so.1
+p:so:libfuse3.so.3=3.11.0
+
 C:Q1q4XUJOFqPhOR3Tq3obWwoKrMHHw=
 P:asciidoctor
 V:2.0.17-r1
@@ -59479,21 +59479,6 @@ t:1639075734
 c:038b6b0b8a1c730e143d7da412d9d3883f590ba6
 D:libffi-dev expat-dev pc:libffi pkgconfig so:libc.musl-ppc64le.so.1 so:libexpat.so.1 so:libxml2.so.2 wayland-libs-client=1.20.0-r0 wayland-libs-cursor=1.20.0-r0 wayland-libs-egl=1.20.0-r0 wayland-libs-server=1.20.0-r0
 p:pc:wayland-client=1.20.0 pc:wayland-cursor=1.20.0 pc:wayland-egl-backend=3 pc:wayland-egl=18.1.0 pc:wayland-scanner=1.20.0 pc:wayland-server=1.20.0 cmd:wayland-scanner=1.20.0-r0
-
-C:Q1np12UdgRChGYgFhlvAP9yt7DElg=
-P:perl-http-daemon-doc
-V:6.13-r0
-A:ppc64le
-S:8568
-I:28672
-T:HTTP::Daemon perl module (documentation)
-U:https://metacpan.org/release/HTTP-Daemon
-L:GPL-1.0-or-later OR Artistic-1.0-Perl
-o:perl-http-daemon
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1644491700
-c:52739c28efe2c6fc62505a7c519b20b079fa6553
-i:docs perl-http-daemon=6.13-r0
 
 C:Q1PhPKaol0yhIzLw+yQY9ZNb6okzM=
 P:lua5.3-lyaml
@@ -66042,6 +66027,21 @@ t:1626982430
 c:8f108c067cd0bc70d7707e5476693e60e535b60d
 D:so:libc.musl-ppc64le.so.1
 p:so:libidn.so.12=12.6.3 cmd:idn=1.38-r0
+
+C:Q1V/An15M4OKs/TA0+/U2064/88a8=
+P:fuse-openrc
+V:3.11.0-r0
+A:ppc64le
+S:1990
+I:16384
+T:The reference implementation of the Linux FUSE (Filesystem in Userspace) interface (OpenRC init scripts)
+U:https://github.com/libfuse/libfuse
+L:GPL-2.0-only LGPL-2.1-only
+o:fuse3
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1652215787
+c:0d8bf78ac83994f4944d9cd3403ae6f40b624d81
+i:openrc fuse-common=3.11.0-r0
 
 C:Q1WmFELDel5MlnGQGzXnTkPUJkKLQ=
 P:xmlrpc-c-doc
