@@ -3236,10 +3236,11 @@
       "origin": "kiln",
       "versions": {
         "0.2.1-r4": 1649862564,
-        "0.3.0-r0": 1651594713
+        "0.3.0-r0": 1651594713,
+        "0.3.0-r1": 1652286737
       },
       "provides": [
-        "cmd:kiln=0.3.0-r0"
+        "cmd:kiln=0.3.0-r1"
       ]
     },
     "cadaver-doc": {
@@ -13343,7 +13344,8 @@
     "autofs-openrc": {
       "origin": "autofs",
       "versions": {
-        "5.1.6-r1": 1623939930
+        "5.1.6-r1": 1623939930,
+        "5.1.8-r0": 1652288043
       }
     },
     "py3-skywriter-hat": {
@@ -47202,7 +47204,8 @@
       "origin": "kiln",
       "versions": {
         "0.2.1-r4": 1649862564,
-        "0.3.0-r0": 1651594713
+        "0.3.0-r0": 1651594713,
+        "0.3.0-r1": 1652286737
       }
     },
     "libgit2-1.1": {
@@ -60842,14 +60845,16 @@
     "autofs": {
       "origin": "autofs",
       "versions": {
-        "5.1.6-r1": 1623939930
+        "5.1.6-r1": 1623939930,
+        "5.1.8-r0": 1652288043
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1",
         "so:libtirpc.so.3"
       ],
       "provides": [
-        "cmd:automount=5.1.6-r1"
+        "so:libautofs.so=0",
+        "cmd:automount=5.1.8-r0"
       ]
     },
     "libsoup3-lang": {
@@ -77709,7 +77714,8 @@
     "yarn": {
       "origin": "yarn",
       "versions": {
-        "1.22.18-r0": 1647524937
+        "1.22.18-r0": 1647524937,
+        "1.22.19-r0": 1652288090
       },
       "dependencies": [
         "nodejs"
@@ -84235,7 +84241,8 @@
     "autofs-doc": {
       "origin": "autofs",
       "versions": {
-        "5.1.6-r1": 1623939930
+        "5.1.6-r1": 1623939930,
+        "5.1.8-r0": 1652288043
       }
     },
     "libtorrent-dev": {
@@ -116212,6 +116219,21 @@
       "versions": {
         "2.8.0-r0": 1652225735
       }
+    },
+    "py3-openpyxl": {
+      "origin": "py3-openpyxl",
+      "versions": {
+        "3.0.9-r1": 1652287886
+      },
+      "dependencies": [
+        "python3",
+        "py3-lxml",
+        "py3-pandas",
+        "py3-pillow"
+      ],
+      "provides": [
+        "py3.10:openpyxl=3.0.9-r1"
+      ]
     }
   },
   "provide": {
@@ -126375,6 +126397,10 @@
       "libupsclient.so.6": {
         "package": "nut",
         "version": "6.0.0"
+      },
+      "libautofs.so": {
+        "package": "autofs",
+        "version": "0"
       }
     },
     "package": {
