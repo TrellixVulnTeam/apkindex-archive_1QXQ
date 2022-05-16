@@ -43328,28 +43328,24 @@
     "cloud-utils": {
       "origin": "cloud-utils",
       "versions": {
-        "0.32-r5": 1644856195
+        "0.32-r5": 1644856195,
+        "0.33-r0": 1652683955
       },
       "dependencies": [
         "bash",
-        "cdrkit",
         "coreutils",
         "e2fsprogs",
         "e2fsprogs-extra",
-        "eudev",
-        "mtools",
-        "python3",
+        "file",
+        "gzip",
         "qemu-img",
+        "sfdisk",
         "tar",
-        "util-linux"
+        "util-linux-misc"
       ],
       "provides": [
-        "cmd:cloud-localds=0.32-r5",
-        "cmd:growpart.orig=0.32-r5",
-        "cmd:mount-image-callback=0.32-r5",
-        "cmd:resize-part-image=0.32-r5",
-        "cmd:ubuntu-cloudimg-query=0.32-r5",
-        "cmd:write-mime-multipart=0.32-r5"
+        "cmd:mount-image-callback=0.33-r0",
+        "cmd:resize-part-image=0.33-r0"
       ]
     },
     "davfs2": {
@@ -55895,13 +55891,15 @@
     "cloud-utils-ec2metadata": {
       "origin": "cloud-utils",
       "versions": {
-        "0.32-r5": 1644856195
+        "0.32-r5": 1644856195,
+        "0.33-r0": 1652683955
       },
       "dependencies": [
-        "python3"
+        "python3",
+        "py3-urllib3"
       ],
       "provides": [
-        "cmd:ec2metadata=0.32-r5"
+        "cmd:ec2metadata=0.33-r0"
       ]
     },
     "py3-zeitgeist": {
@@ -92873,7 +92871,8 @@
     "cloud-utils-doc": {
       "origin": "cloud-utils",
       "versions": {
-        "0.32-r5": 1644856195
+        "0.32-r5": 1644856195,
+        "0.33-r0": 1652683955
       }
     },
     "jimtcl-dev": {
@@ -120721,15 +120720,15 @@
     "cloud-utils-growpart": {
       "origin": "cloud-utils",
       "versions": {
-        "0.32-r5": 1644856195
+        "0.32-r5": 1644856195,
+        "0.33-r0": 1652683955
       },
       "dependencies": [
-        "blkid",
         "partx",
         "sfdisk"
       ],
       "provides": [
-        "cmd:growpart=0.32-r5"
+        "cmd:growpart=0.33-r0"
       ]
     },
     "libmce-qt-dev": {
@@ -132840,19 +132839,21 @@
     "libtree": {
       "origin": "libtree",
       "versions": {
-        "3.1.0-r0": 1651951556
+        "3.1.0-r0": 1651951556,
+        "3.1.1-r0": 1652684198
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1"
       ],
       "provides": [
-        "cmd:libtree=3.1.0-r0"
+        "cmd:libtree=3.1.1-r0"
       ]
     },
     "libtree-doc": {
       "origin": "libtree",
       "versions": {
-        "3.1.0-r0": 1651951556
+        "3.1.0-r0": 1651951556,
+        "3.1.1-r0": 1652684198
       }
     },
     "nghttp3": {
@@ -135584,6 +135585,35 @@
       ],
       "provides": [
         "cmd:wl-mirror=0.11.2-r0"
+      ]
+    },
+    "cloud-utils-localds": {
+      "origin": "cloud-utils",
+      "versions": {
+        "0.33-r0": 1652683955
+      },
+      "dependencies": [
+        "bash",
+        "cdrkit",
+        "dosfstools",
+        "mtools",
+        "qemu-img",
+        "tar"
+      ],
+      "provides": [
+        "cmd:cloud-localds=0.33-r0"
+      ]
+    },
+    "cloud-utils-multipart": {
+      "origin": "cloud-utils",
+      "versions": {
+        "0.33-r0": 1652683955
+      },
+      "dependencies": [
+        "python3"
+      ],
+      "provides": [
+        "cmd:write-mime-multipart=0.33-r0"
       ]
     }
   },
