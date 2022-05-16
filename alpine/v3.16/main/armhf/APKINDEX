@@ -3553,6 +3553,22 @@ c:48cca9d6371b3dd723014307a99cdf28f2facf29
 D:so:libblkid.so.1 so:libc.musl-armhf.so.1 so:libintl.so.8 so:libnvpair.so.3 so:libuuid.so.1 so:libuutil.so.3 so:libzfs.so.4 so:libzfs_core.so.3 so:libzpool.so.5
 p:spl cmd:fsck.zfs=2.1.4-r0 cmd:mount.zfs=2.1.4-r0 cmd:raidz_test=2.1.4-r0 cmd:zdb=2.1.4-r0 cmd:zed=2.1.4-r0 cmd:zfs=2.1.4-r0 cmd:zfs_ids_to_path=2.1.4-r0 cmd:zgenhostid=2.1.4-r0 cmd:zhack=2.1.4-r0 cmd:zinject=2.1.4-r0 cmd:zpool=2.1.4-r0 cmd:zstream=2.1.4-r0 cmd:zstreamdump=2.1.4-r0 cmd:ztest=2.1.4-r0 cmd:zvol_wait=2.1.4-r0
 
+C:Q1Jqp51elw8OA/3L8zEcXBZ7Er4ns=
+P:liburing
+V:2.1-r1
+A:armhf
+S:7088
+I:28672
+T:Linux kernel io_uring access library
+U:https://git.kernel.dk/cgit/liburing/
+L:LGPL-2.1-or-later
+o:liburing
+m:Milan P. Stanić <mps@arvanta.net>
+t:1652694547
+c:c2d2cf9d2aa3d1dffbb3f33923c6f0ba3462be60
+D:so:libc.musl-armhf.so.1
+p:so:liburing.so.2=2.1.0
+
 C:Q19wkF7R4AwhWVNWppBzqpur9MwPk=
 P:dhcp-openrc
 V:4.4.3-r0
@@ -8843,21 +8859,6 @@ c:c3375b64c6b500aed7eb8668babadcd5ca39ec62
 D:so:libbz2.so.1 so:libc.musl-armhf.so.1 so:liblzma.so.5 so:libz.so.1
 p:so:libtty.so.1=1.0.0 cmd:termcat=0.19-r0 cmd:termplay=0.19-r0 cmd:termrec=0.19-r0 cmd:termtime=0.19-r0
 
-C:Q1TzknVg68mzfa0RfWs+O+1lq13ok=
-P:liburing-doc
-V:2.1-r0
-A:armhf
-S:32799
-I:77824
-T:Linux kernel io_uring access library (documentation)
-U:https://git.kernel.dk/cgit/liburing/
-L:LGPL-2.1-or-later
-o:liburing
-m:Milan P. Stanić <mps@arvanta.net>
-t:1631516359
-c:86ce0b316696911797b7aa43590108cfc04f3a47
-i:docs liburing=2.1-r0
-
 C:Q1EVA6+KXAZHI1AvVNArJTJmPX5pw=
 P:popt
 V:1.18-r0
@@ -10677,6 +10678,22 @@ o:perl-term-table
 t:1641459931
 c:c4ae5b458daa30c13e7c0900544adcc13c744740
 D:perl perl-importer
+
+C:Q1UPhrwDXoQ4YVTPyFTr6Ow2oAfbs=
+P:liburing-dev
+V:2.1-r1
+A:armhf
+S:16477
+I:90112
+T:Linux kernel io_uring access library (development files)
+U:https://git.kernel.dk/cgit/liburing/
+L:LGPL-2.1-or-later
+o:liburing
+m:Milan P. Stanić <mps@arvanta.net>
+t:1652694547
+c:c2d2cf9d2aa3d1dffbb3f33923c6f0ba3462be60
+D:liburing=2.1-r1 pkgconfig
+p:pc:liburing=2.0
 
 C:Q1gZGoONx4ve7Iv5nTLzdZ6niDQzI=
 P:jitterentropy-library
@@ -12504,22 +12521,6 @@ t:1639595860
 c:42cba987f340efdf9d47b26d2f44cdabee334081
 D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libfreeradius-radius.so so:libfreeradius-server.so so:libgdbm.so.6 so:libpcap.so.1 so:libtalloc.so.2
 p:freeradius-radclient=3.0.25-r2 freeradius3-radclient=3.0.25-r2 cmd:rad_counter=3.0.25-r2 cmd:radclient=3.0.25-r2 cmd:radcrypt=3.0.25-r2 cmd:radlast=3.0.25-r2 cmd:radsniff=3.0.25-r2 cmd:radsqlrelay=3.0.25-r2 cmd:radtest=3.0.25-r2 cmd:radwho=3.0.25-r2 cmd:radzap=3.0.25-r2 cmd:rlm_ippool_tool=3.0.25-r2 cmd:rlm_sqlippool_tool=3.0.25-r2 cmd:smbencrypt=3.0.25-r2
-
-C:Q12+9AeB1i96aLn6GNw7jo/c0rVvs=
-P:liburing-dev
-V:2.1-r0
-A:armhf
-S:16514
-I:90112
-T:Linux kernel io_uring access library (development files)
-U:https://git.kernel.dk/cgit/liburing/
-L:LGPL-2.1-or-later
-o:liburing
-m:Milan P. Stanić <mps@arvanta.net>
-t:1631516359
-c:86ce0b316696911797b7aa43590108cfc04f3a47
-D:liburing=2.1-r0 pkgconfig
-p:pc:liburing=2.0
 
 C:Q1nCB+Ox3bif/GjHwPaYDAI5cnGyI=
 P:linux-firmware-e100
@@ -40593,22 +40594,6 @@ t:1601650369
 c:28190295aeed8d16298cfc941b2737843fb8e94a
 i:docs shorewall-core=5.2.8-r0
 
-C:Q1wnBrh7olJueZYZBp6fSjkg0gu5w=
-P:liburing
-V:2.1-r0
-A:armhf
-S:7089
-I:28672
-T:Linux kernel io_uring access library
-U:https://git.kernel.dk/cgit/liburing/
-L:LGPL-2.1-or-later
-o:liburing
-m:Milan P. Stanić <mps@arvanta.net>
-t:1631516359
-c:86ce0b316696911797b7aa43590108cfc04f3a47
-D:so:libc.musl-armhf.so.1
-p:so:liburing.so.2=2.1.0
-
 C:Q10zAmhMj7nQAMMKgxgAScZTKxEvo=
 P:uwsgi-curl_cron
 V:2.0.20-r0
@@ -66753,6 +66738,21 @@ m:Sheila Aman <sheila@vulpine.house>
 t:1630780508
 c:a3739a07d478bc4f1f6e0c17612a1c83dffa9ecd
 D:perl perl-io-async perl-future perl-uri perl-http-message perl-struct-dumb perl-metrics-any
+
+C:Q1aSKczh4oHikZEVoReUxN/WkpaYk=
+P:liburing-doc
+V:2.1-r1
+A:armhf
+S:32801
+I:77824
+T:Linux kernel io_uring access library (documentation)
+U:https://git.kernel.dk/cgit/liburing/
+L:LGPL-2.1-or-later
+o:liburing
+m:Milan P. Stanić <mps@arvanta.net>
+t:1652694547
+c:c2d2cf9d2aa3d1dffbb3f33923c6f0ba3462be60
+i:docs liburing=2.1-r1
 
 C:Q1/T2aByL5Gfu8sl92iNrnf6F8k30=
 P:readline
