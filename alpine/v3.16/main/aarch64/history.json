@@ -8076,11 +8076,13 @@
     "busybox-initscripts": {
       "origin": "busybox-initscripts",
       "versions": {
-        "4.0-r7": 1649627102
+        "4.0-r7": 1649627102,
+        "4.1-r0": 1652718798
       },
       "dependencies": [
         "busybox",
-        "openrc>=0.24.1-r6"
+        "openrc>=0.24.1-r6",
+        "mdev-conf=4.1-r0"
       ]
     },
     "datefudge-doc": {
@@ -60315,6 +60317,47 @@
       "provides": [
         "icu-data=71.1-r2"
       ]
+    },
+    "mdev-conf": {
+      "origin": "busybox-initscripts",
+      "versions": {
+        "4.1-r0": 1652718798
+      },
+      "dependencies": [
+        "busybox",
+        "openrc>=0.24.1-r6",
+        "mdev-conf=4.1-r0"
+      ]
+    },
+    "mdevd-openrc": {
+      "origin": "mdevd",
+      "versions": {
+        "0.1.5.1-r2": 1652716543
+      },
+      "dependencies": [
+        "mdevd",
+        "mdev-conf"
+      ]
+    },
+    "mdevd": {
+      "origin": "mdevd",
+      "versions": {
+        "0.1.5.1-r2": 1652716543
+      },
+      "dependencies": [
+        "so:libc.musl-aarch64.so.1",
+        "so:libskarnet.so.2.11"
+      ],
+      "provides": [
+        "cmd:mdevd-coldplug=0.1.5.1-r2",
+        "cmd:mdevd=0.1.5.1-r2"
+      ]
+    },
+    "mdevd-doc": {
+      "origin": "mdevd",
+      "versions": {
+        "0.1.5.1-r2": 1652716543
+      }
     }
   },
   "provide": {
