@@ -101380,7 +101380,8 @@
         "3.9.5-r0": 1650434313,
         "3.10.0-r0": 1651420111,
         "3.11.0-r0": 1651937350,
-        "3.11.1-r0": 1652630778
+        "3.11.1-r0": 1652630778,
+        "3.11.2-r0": 1652775028
       },
       "dependencies": [
         "py3-beautifulsoup4",
@@ -101391,8 +101392,8 @@
         "py3-yaml"
       ],
       "provides": [
-        "cmd:lexicon=3.11.1-r0",
-        "py3.10:lexicon=3.11.1-r0"
+        "cmd:lexicon=3.11.2-r0",
+        "py3.10:lexicon=3.11.2-r0"
       ]
     },
     "py3-authlib": {
@@ -104424,7 +104425,8 @@
       "origin": "py3-ansible-compat",
       "versions": {
         "2.0.0-r1": 1648188557,
-        "2.0.3-r0": 1652398426
+        "2.0.3-r0": 1652398426,
+        "2.0.4-r0": 1652778199
       },
       "dependencies": [
         "python3",
@@ -104432,7 +104434,7 @@
         "py3-yaml"
       ],
       "provides": [
-        "py3.10:ansible_compat=2.0.3-r0"
+        "py3.10:ansible_compat=2.0.4-r0"
       ]
     },
     "xrdesktop": {
@@ -135749,6 +135751,32 @@
       "provides": [
         "py3.10:dotmap=1.3.27-r0"
       ]
+    },
+    "libspecbleach-dev": {
+      "origin": "libspecbleach",
+      "versions": {
+        "0.1.5-r0": 1652775229
+      },
+      "dependencies": [
+        "pc:fftw3f",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:libspecbleach=0.1.5"
+      ]
+    },
+    "libspecbleach": {
+      "origin": "libspecbleach",
+      "versions": {
+        "0.1.5-r0": 1652775229
+      },
+      "dependencies": [
+        "so:libc.musl-armhf.so.1",
+        "so:libfftw3f.so.3"
+      ],
+      "provides": [
+        "so:libspecbleach.so=0"
+      ]
     }
   },
   "provide": {
@@ -148998,6 +149026,10 @@
       "libqmenumodel.so.1": {
         "package": "qmenumodel",
         "version": "1.0.0"
+      },
+      "libspecbleach.so": {
+        "package": "libspecbleach",
+        "version": "0"
       }
     }
   }
