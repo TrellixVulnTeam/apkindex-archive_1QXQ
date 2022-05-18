@@ -1902,13 +1902,14 @@
       "origin": "babeld",
       "versions": {
         "1.11-r0": 1648742591,
-        "1.12-r0": 1651839909
+        "1.12-r0": 1651839909,
+        "1.12.1-r0": 1652917284
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1"
       ],
       "provides": [
-        "cmd:babeld=1.12-r0"
+        "cmd:babeld=1.12.1-r0"
       ]
     },
     "qscintilla-dev": {
@@ -3505,7 +3506,8 @@
       "origin": "babeld",
       "versions": {
         "1.11-r0": 1648742591,
-        "1.12-r0": 1651839909
+        "1.12-r0": 1651839909,
+        "1.12.1-r0": 1652917284
       }
     },
     "sdl12-compat-dev": {
@@ -24080,7 +24082,8 @@
       "origin": "py3-paramiko",
       "versions": {
         "2.10.3-r0": 1649791279,
-        "2.10.4-r0": 1652057176
+        "2.10.4-r0": 1652057176,
+        "2.11.0-r0": 1652917396
       }
     },
     "libcsys": {
@@ -27068,7 +27071,8 @@
       "origin": "babeld",
       "versions": {
         "1.11-r0": 1648742591,
-        "1.12-r0": 1651839909
+        "1.12-r0": 1651839909,
+        "1.12.1-r0": 1652917284
       }
     },
     "libgepub-dev": {
@@ -28957,10 +28961,11 @@
       "origin": "py3-paramiko",
       "versions": {
         "2.10.3-r0": 1649791279,
-        "2.10.4-r0": 1652057176
+        "2.10.4-r0": 1652057176,
+        "2.11.0-r0": 1652917396
       },
       "dependencies": [
-        "py3-paramiko=2.10.4-r0"
+        "py3-paramiko=2.11.0-r0"
       ]
     },
     "mercurial": {
@@ -35877,7 +35882,8 @@
       "origin": "py3-paramiko",
       "versions": {
         "2.10.3-r0": 1649791279,
-        "2.10.4-r0": 1652057176
+        "2.10.4-r0": 1652057176,
+        "2.11.0-r0": 1652917396
       },
       "dependencies": [
         "python3",
@@ -35888,8 +35894,8 @@
         "py3-six"
       ],
       "provides": [
-        "py-paramiko=2.10.4-r0",
-        "py3.10:paramiko=2.10.4-r0"
+        "py-paramiko=2.11.0-r0",
+        "py3.10:paramiko=2.11.0-r0"
       ]
     },
     "setconf-doc": {
@@ -42749,7 +42755,8 @@
     "py3-ipyparallel": {
       "origin": "py3-ipyparallel",
       "versions": {
-        "8.2.1-r0": 1650168510
+        "8.2.1-r0": 1650168510,
+        "8.3.0-r0": 1652917208
       },
       "dependencies": [
         "py3-traitlets",
@@ -42760,13 +42767,16 @@
         "py3-jupyter_client",
         "py3-entrypoints",
         "py3-psutil",
-        "py3-tqdm"
+        "py3-tqdm",
+        "py3-jedi",
+        "py3-matplotlib-inline",
+        "py3-ipykernel"
       ],
       "provides": [
-        "cmd:ipcluster=8.2.1-r0",
-        "cmd:ipcontroller=8.2.1-r0",
-        "cmd:ipengine=8.2.1-r0",
-        "py3.10:ipyparallel=8.2.1-r0"
+        "cmd:ipcluster=8.3.0-r0",
+        "cmd:ipcontroller=8.3.0-r0",
+        "cmd:ipengine=8.3.0-r0",
+        "py3.10:ipyparallel=8.3.0-r0"
       ]
     },
     "gthumb-lang": {
@@ -107886,14 +107896,15 @@
     "py3-terminado": {
       "origin": "py3-terminado",
       "versions": {
-        "0.13.3-r0": 1650168510
+        "0.13.3-r0": 1650168510,
+        "0.15.0-r0": 1652917234
       },
       "dependencies": [
         "py3-ptyprocess",
         "py3-tornado"
       ],
       "provides": [
-        "py3.10:terminado=0.13.3-r0"
+        "py3.10:terminado=0.15.0-r0"
       ]
     },
     "py3-websockets": {
@@ -125670,7 +125681,8 @@
     "py3-dulwich": {
       "origin": "py3-dulwich",
       "versions": {
-        "0.20.35-r0": 1649862617
+        "0.20.35-r0": 1649862617,
+        "0.20.38-r0": 1652917313
       },
       "dependencies": [
         "py3-certifi",
@@ -125678,11 +125690,11 @@
         "so:libc.musl-armhf.so.1"
       ],
       "provides": [
-        "py-dulwich=0.20.35-r0",
-        "cmd:dul-receive-pack=0.20.35-r0",
-        "cmd:dul-upload-pack=0.20.35-r0",
-        "cmd:dulwich=0.20.35-r0",
-        "py3.10:dulwich=0.20.35-r0"
+        "py-dulwich=0.20.38-r0",
+        "cmd:dul-receive-pack=0.20.38-r0",
+        "cmd:dul-upload-pack=0.20.38-r0",
+        "cmd:dulwich=0.20.38-r0",
+        "py3.10:dulwich=0.20.38-r0"
       ]
     },
     "nextcloud22-comments": {
@@ -135873,6 +135885,23 @@
       "provides": [
         "py3.10:cytoolz=0.11.2-r1"
       ]
+    },
+    "py3-influxdb": {
+      "origin": "py3-influxdb",
+      "versions": {
+        "5.3.0-r0": 1652917357
+      },
+      "dependencies": [
+        "python3",
+        "py3-tz",
+        "py3-six",
+        "py3-requests",
+        "py3-dateutil"
+      ],
+      "provides": [
+        "py-influxdb=5.3.0-r0",
+        "py3.10:influxdb=5.3.0-r0"
+      ]
     }
   },
   "provide": {
@@ -136547,7 +136576,7 @@
       },
       "py-paramiko": {
         "package": "py3-paramiko",
-        "version": "2.10.4-r0"
+        "version": "2.11.0-r0"
       },
       "php7-mongodb": {
         "package": "php7-pecl-mongodb",
@@ -137915,7 +137944,7 @@
       },
       "py-dulwich": {
         "package": "py3-dulwich",
-        "version": "0.20.35-r0"
+        "version": "0.20.38-r0"
       },
       "py-apipkg": {
         "package": "py3-apipkg",
@@ -138120,6 +138149,10 @@
       "py-nbxmpp": {
         "package": "py3-nbxmpp",
         "version": "3.0.1-r0"
+      },
+      "py-influxdb": {
+        "package": "py3-influxdb",
+        "version": "5.3.0-r0"
       }
     },
     "so": {
