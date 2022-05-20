@@ -136235,6 +136235,30 @@
         "gst-plugins-bad",
         "gst-plugins-good"
       ]
+    },
+    "openmp-dev": {
+      "origin": "openmp",
+      "versions": {
+        "13.0.1-r0": 1653073696
+      },
+      "dependencies": [
+        "openmp"
+      ]
+    },
+    "openmp": {
+      "origin": "openmp",
+      "versions": {
+        "13.0.1-r0": 1653073696
+      },
+      "dependencies": [
+        "so:libc.musl-armhf.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:libomp.so=0",
+        "so:libomptarget.so=0"
+      ]
     }
   },
   "provide": {
@@ -149495,6 +149519,14 @@
       },
       "libspecbleach.so": {
         "package": "libspecbleach",
+        "version": "0"
+      },
+      "libomp.so": {
+        "package": "openmp",
+        "version": "0"
+      },
+      "libomptarget.so": {
+        "package": "openmp",
         "version": "0"
       }
     }
