@@ -59450,7 +59450,8 @@
       "origin": "libressl",
       "versions": {
         "3.4.3-r0": 1647367565,
-        "3.5.2-r0": 1651312756
+        "3.5.2-r0": 1651312756,
+        "3.5.3-r0": 1653092106
       }
     },
     "libsrt-dev": {
@@ -65323,18 +65324,20 @@
       "origin": "glib-networking",
       "versions": {
         "2.70.1-r0": 1647279217,
-        "2.72.0-r0": 1650461554
+        "2.72.0-r0": 1650461554,
+        "2.72.0-r1": 1653090481
       },
       "dependencies": [
         "ca-certificates",
         "gsettings-desktop-schemas",
         "so:libc.musl-armhf.so.1",
+        "so:libcrypto.so.1.1",
         "so:libgio-2.0.so.0",
         "so:libglib-2.0.so.0",
-        "so:libgnutls.so.30",
         "so:libgobject-2.0.so.0",
         "so:libintl.so.8",
-        "so:libproxy.so.1"
+        "so:libproxy.so.1",
+        "so:libssl.so.1.1"
       ]
     },
     "gnome-bluetooth-dev": {
@@ -69093,7 +69096,8 @@
       "origin": "glib-networking",
       "versions": {
         "2.70.1-r0": 1647279217,
-        "2.72.0-r0": 1650461554
+        "2.72.0-r0": 1650461554,
+        "2.72.0-r1": 1653090481
       },
       "dependencies": [
         "ca-certificates",
@@ -93912,7 +93916,8 @@
     "py3-ujson": {
       "origin": "py3-ujson",
       "versions": {
-        "5.2.0-r0": 1649349694
+        "5.2.0-r0": 1649349694,
+        "5.3.0-r0": 1653090859
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -95151,7 +95156,8 @@
       "origin": "libressl",
       "versions": {
         "3.4.3-r0": 1647367565,
-        "3.5.2-r0": 1651312756
+        "3.5.2-r0": 1651312756,
+        "3.5.3-r0": 1653092106
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -95160,8 +95166,8 @@
         "so:libressl:libtls.so.25"
       ],
       "provides": [
-        "cmd:libressl=3.5.2-r0",
-        "cmd:ocspcheck=3.5.2-r0"
+        "cmd:libressl=3.5.3-r0",
+        "cmd:ocspcheck=3.5.3-r0"
       ]
     },
     "libvirt-libs": {
@@ -108226,19 +108232,20 @@
       "origin": "libressl",
       "versions": {
         "3.4.3-r0": 1647367565,
-        "3.5.2-r0": 1651312756
+        "3.5.2-r0": 1651312756,
+        "3.5.3-r0": 1653092106
       },
       "dependencies": [
-        "libressl3.5-libcrypto=3.5.2-r0",
-        "libressl3.5-libssl=3.5.2-r0",
-        "libressl3.5-libtls=3.5.2-r0",
+        "libressl3.5-libcrypto=3.5.3-r0",
+        "libressl3.5-libssl=3.5.3-r0",
+        "libressl3.5-libtls=3.5.3-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:libressl:libcrypto=3.5.2",
-        "pc:libressl:libssl=3.5.2",
-        "pc:libressl:libtls=3.5.2",
-        "pc:libressl:openssl=3.5.2"
+        "pc:libressl:libcrypto=3.5.3",
+        "pc:libressl:libssl=3.5.3",
+        "pc:libressl:libtls=3.5.3",
+        "pc:libressl:openssl=3.5.3"
       ]
     },
     "jool-modules-rpi": {
@@ -112096,7 +112103,8 @@
       "origin": "libressl",
       "versions": {
         "3.4.3-r0": 1647367565,
-        "3.5.2-r0": 1651312756
+        "3.5.2-r0": 1651312756,
+        "3.5.3-r0": 1653092106
       }
     },
     "libtermkey": {
@@ -132519,7 +132527,8 @@
     "libressl3.5-libssl": {
       "origin": "libressl",
       "versions": {
-        "3.5.2-r0": 1651312756
+        "3.5.2-r0": 1651312756,
+        "3.5.3-r0": 1653092106
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -132532,7 +132541,8 @@
     "libressl3.5-libtls": {
       "origin": "libressl",
       "versions": {
-        "3.5.2-r0": 1651312756
+        "3.5.2-r0": 1651312756,
+        "3.5.3-r0": 1653092106
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1"
@@ -132544,7 +132554,8 @@
     "libressl3.5-libcrypto": {
       "origin": "libressl",
       "versions": {
-        "3.5.2-r0": 1651312756
+        "3.5.2-r0": 1651312756,
+        "3.5.3-r0": 1653092106
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1"
@@ -136279,6 +136290,33 @@
         "so:libomp.so=0",
         "so:libomptarget.so=0"
       ]
+    },
+    "mokutil": {
+      "origin": "mokutil",
+      "versions": {
+        "0.6.0-r0": 1653090903
+      },
+      "dependencies": [
+        "so:libc.musl-armhf.so.1",
+        "so:libcrypto.so.1.1",
+        "so:libefivar.so.1",
+        "so:libkeyutils.so.1"
+      ],
+      "provides": [
+        "cmd:mokutil=0.6.0-r0"
+      ]
+    },
+    "mokutil-doc": {
+      "origin": "mokutil",
+      "versions": {
+        "0.6.0-r0": 1653090903
+      }
+    },
+    "mokutil-bash-completion": {
+      "origin": "mokutil",
+      "versions": {
+        "0.6.0-r0": 1653090903
+      }
     }
   },
   "provide": {

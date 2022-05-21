@@ -6598,21 +6598,6 @@ c:ef95ee585dffebc151284c37fe11e199d9f02d01
 D:so:libQt5Core.so.5 so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:libQt5ExtSerialPort.so.1=1.2.0
 
-C:Q1XAfVCw6cn4KFO2cEr08pljT5P3M=
-P:glib-networking
-V:2.72.0-r0
-A:armhf
-S:58402
-I:204800
-T:Networking support for GLib
-U:https://gitlab.gnome.org/GNOME/glib-networking
-L:LGPL-2.0-or-later
-o:glib-networking
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1650461554
-c:f4d03a7ca40a19ccfae035ff519aa9bb1720ea40
-D:ca-certificates gsettings-desktop-schemas so:libc.musl-armhf.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgnutls.so.30 so:libgobject-2.0.so.0 so:libintl.so.8 so:libproxy.so.1
-
 C:Q17IuazNUZhtJYTP+0Ipv7HB9WJ4I=
 P:miniupnpd-ip6tables
 V:2.3.0-r0
@@ -25065,22 +25050,6 @@ c:3142eab98fb353930fbf05bf0fae17d62f93ca86
 D:py3-flask py3-webassets
 p:py-flask-assets=2.0-r3
 
-C:Q1DAP/30zGu3wxpzgRQPqO9G+MqAY=
-P:libressl3.5-libssl
-V:3.5.2-r0
-A:armhf
-S:129816
-I:303104
-T:libressl libssl library
-U:https://www.libressl.org/
-L:custom
-o:libressl
-m:Orion <systmkor@gmail.com>
-t:1651312756
-c:fbe09a42ebb439b16c6271bc316ddb5b2256313d
-D:so:libc.musl-armhf.so.1 so:libressl:libcrypto.so.49
-p:so:libressl:libssl.so.52=52.0.0
-
 C:Q1jP68nNAIjty/t9IfeC6rQ7s9I/w=
 P:x265-libs
 V:3.5-r3
@@ -32077,6 +32046,22 @@ t:1647959556
 c:22a0ed5fe6746d9b9575a0415eac4afa5b7b4f2b
 i:docs gtkmm4=4.6.1-r0
 
+C:Q1eRjtbhBnfqcUrj3q9WStwek6PcM=
+P:libressl
+V:3.5.3-r0
+A:armhf
+S:196369
+I:483328
+T:Version of the TLS/crypto stack forked from OpenSSL
+U:https://www.libressl.org/
+L:custom
+o:libressl
+m:Orion <systmkor@gmail.com>
+t:1653092106
+c:cb1092b8c957bb19458dc16b49fe2d19291532c0
+D:so:libc.musl-armhf.so.1 so:libressl:libcrypto.so.49 so:libressl:libssl.so.52 so:libressl:libtls.so.25
+p:cmd:libressl=3.5.3-r0 cmd:ocspcheck=3.5.3-r0
+
 C:Q1WgSp0knMDh45rg8nG+k/N94nUmU=
 P:sane-backend-hp5400
 V:1.0.31-r1
@@ -33109,22 +33094,6 @@ m:Nathan Johnson <nathan@nathanjohnson.info>
 t:1626299249
 c:f60261a8b40d10ebedd83f0319bb8924565c67f2
 i:docs perl-dir-self=0.11-r3
-
-C:Q1c0uWljjOnVtfVSu594EBFPJ8/GE=
-P:libressl3.5-libtls
-V:3.5.2-r0
-A:armhf
-S:746206
-I:1556480
-T:libressl libtls library
-U:https://www.libressl.org/
-L:custom
-o:libressl
-m:Orion <systmkor@gmail.com>
-t:1651312756
-c:fbe09a42ebb439b16c6271bc316ddb5b2256313d
-D:so:libc.musl-armhf.so.1
-p:so:libressl:libtls.so.25=25.0.0
 
 C:Q1s4dXO0+zZtRhBhrb03nKdipxFCY=
 P:thunar-dev
@@ -41264,6 +41233,22 @@ c:fe1aa8d69a612c055e56d32da602911a312ce6ad
 D:py3-beautifulsoup4 py3-click py3-gtts-token python3
 p:cmd:gtts-cli=2.2.3-r1 py3.10:gtts=2.2.3-r1
 
+C:Q1ENf8Ixz1ehhZtF5Rs/Ccq7x13vw=
+P:libressl-dev
+V:3.5.3-r0
+A:armhf
+S:10507146
+I:27295744
+T:Version of the TLS/crypto stack forked from OpenSSL (development files)
+U:https://www.libressl.org/
+L:custom
+o:libressl
+m:Orion <systmkor@gmail.com>
+t:1653092106
+c:cb1092b8c957bb19458dc16b49fe2d19291532c0
+D:libressl3.5-libcrypto=3.5.3-r0 libressl3.5-libssl=3.5.3-r0 libressl3.5-libtls=3.5.3-r0 pkgconfig
+p:pc:libressl:libcrypto=3.5.3 pc:libressl:libssl=3.5.3 pc:libressl:libtls=3.5.3 pc:libressl:openssl=3.5.3
+
 C:Q19PlvJoBNOsaVK4KFmz+9gHyxBP4=
 P:pacman-doc
 V:6.0.1-r1
@@ -44007,6 +43992,21 @@ t:1650401200
 c:c9bd1af2d5734ac6c3ef41c03cb69c9a21d86ae5
 D:hdf5-dev superlu-dev armadillo=11.0.1-r0 pkgconfig
 p:pc:armadillo=11.0.1
+
+C:Q1Sd1diMYS48hf8+AcGxDdQl/kUS0=
+P:libressl-doc
+V:3.5.3-r0
+A:armhf
+S:1532512
+I:2732032
+T:Version of the TLS/crypto stack forked from OpenSSL (documentation)
+U:https://www.libressl.org/
+L:custom
+o:libressl
+m:Orion <systmkor@gmail.com>
+t:1653092106
+c:cb1092b8c957bb19458dc16b49fe2d19291532c0
+i:docs libressl=3.5.3-r0
 
 C:Q13JfzFs8WFB4EiCnDSWKZthYbyB0=
 P:freeciv-common-client
@@ -51716,22 +51716,6 @@ c:0504d57bea8c27a388aeab21e27454f936873c6c
 D:py3-traitlets py3-pyzmq py3-jupyter_core py3-entrypoints py3-tornado py3-nest_asyncio py3-dateutil
 p:cmd:jupyter-kernel=7.3.1-r0 cmd:jupyter-kernelspec=7.3.1-r0 cmd:jupyter-run=7.3.1-r0 py3.10:jupyter_client=7.3.1-r0
 
-C:Q1TmmzwPdvRQ/rSR4zwZxd7NaczjE=
-P:libressl
-V:3.5.2-r0
-A:armhf
-S:196363
-I:483328
-T:Version of the TLS/crypto stack forked from OpenSSL
-U:https://www.libressl.org/
-L:custom
-o:libressl
-m:Orion <systmkor@gmail.com>
-t:1651312756
-c:fbe09a42ebb439b16c6271bc316ddb5b2256313d
-D:so:libc.musl-armhf.so.1 so:libressl:libcrypto.so.49 so:libressl:libssl.so.52 so:libressl:libtls.so.25
-p:cmd:libressl=3.5.2-r0 cmd:ocspcheck=3.5.2-r0
-
 C:Q1HwyAs7zp4GRWLXl+ht2xx1a4ie4=
 P:weston-doc
 V:10.0.0-r0
@@ -57740,21 +57724,6 @@ t:1651524322
 c:6a79d43b72dc4870c2b78af20a6a405a34ec2ae6
 D:so:libc.musl-armhf.so.1 so:libcap-ng.so.0 so:libcurl.so.4 so:libgcc_s.so.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgnutls.so.30 so:libgobject-2.0.so.0 so:libintl.so.8 so:libnl-3.so.200 so:libsasl2.so.3 so:libtirpc.so.3 so:libxml2.so.2 so:libyajl.so.2
 p:so:libvirt-admin.so.0=0.8003.0 so:libvirt-lxc.so.0=0.8003.0 so:libvirt-qemu.so.0=0.8003.0 so:libvirt.so.0=0.8003.0
-
-C:Q1WIJesOTRlVpOCk/tnhm8C9s4tdM=
-P:libressl-doc
-V:3.5.2-r0
-A:armhf
-S:1532483
-I:2732032
-T:Version of the TLS/crypto stack forked from OpenSSL (documentation)
-U:https://www.libressl.org/
-L:custom
-o:libressl
-m:Orion <systmkor@gmail.com>
-t:1651312756
-c:fbe09a42ebb439b16c6271bc316ddb5b2256313d
-i:docs libressl=3.5.2-r0
 
 C:Q1ODoABI/k+/H/Qj+BntZXbPaG6QY=
 P:genext2fs-doc
@@ -66613,6 +66582,22 @@ c:37d18d1373f2beb2e450c55d109d42b7bacb8221
 D:gst-plugins-bad=1.20.2-r0 pc:gstreamer-1.0>=1.20.0 pc:gstreamer-audio-1.0>=1.20.0 pc:gstreamer-base-1.0>=1.20.0 pc:gstreamer-pbutils-1.0>=1.20.0 pc:gstreamer-sdp-1.0>=1.20.0 pc:gstreamer-tag-1.0>=1.20.0 pc:gstreamer-video-1.0>=1.20.0 pc:wayland-client>=1.4 pkgconfig
 p:pc:gstreamer-bad-audio-1.0=1.20.2 pc:gstreamer-codecparsers-1.0=1.20.2 pc:gstreamer-insertbin-1.0=1.20.2 pc:gstreamer-mpegts-1.0=1.20.2 pc:gstreamer-photography-1.0=1.20.2 pc:gstreamer-play-1.0=1.20.2 pc:gstreamer-player-1.0=1.20.2 pc:gstreamer-plugins-bad-1.0=1.20.2 pc:gstreamer-sctp-1.0=1.20.2 pc:gstreamer-transcoder-1.0=1.20.2 pc:gstreamer-wayland-1.0=1.20.2 pc:gstreamer-webrtc-1.0=1.20.2
 
+C:Q1tXG5XV5Q/1qK99Un+vFI8iurT8Y=
+P:libressl3.5-libtls
+V:3.5.3-r0
+A:armhf
+S:746220
+I:1556480
+T:libressl libtls library
+U:https://www.libressl.org/
+L:custom
+o:libressl
+m:Orion <systmkor@gmail.com>
+t:1653092106
+c:cb1092b8c957bb19458dc16b49fe2d19291532c0
+D:so:libc.musl-armhf.so.1
+p:so:libressl:libtls.so.25=25.0.0
+
 C:Q1xtkBKmZsxlKB63pcFbMHgZg0baA=
 P:poppler-qt5
 V:22.05.0-r0
@@ -67968,22 +67953,6 @@ c:ac15b8036a8f1863fe07c2455e2ddfcdeaf8f9f1
 D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:so:libaudiofile.so.1=1.0.0
 
-C:Q1KY76me+bvMUc+zKi/MFeLT+leiA=
-P:glib-networking-lang
-V:2.72.0-r0
-A:armhf
-S:111880
-I:1159168
-T:Languages for package glib-networking
-U:https://gitlab.gnome.org/GNOME/glib-networking
-L:LGPL-2.0-or-later
-o:glib-networking
-m:Rasmus Thomsen <oss@cogitri.dev>
-t:1650461554
-c:f4d03a7ca40a19ccfae035ff519aa9bb1720ea40
-D:ca-certificates gsettings-desktop-schemas
-i:glib-networking=2.72.0-r0 lang
-
 C:Q12c+jBNFWjVQDwXb7eMeg9/kI58w=
 P:phosh-dbg
 V:0.17.0-r2
@@ -68262,6 +68231,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1635880363
 c:d1b113166b1d3b134556624b73949df2ecf887b9
 i:docs davfs2=1.6.1-r0
+
+C:Q1aZXErFvkqtOkDvjcxbFU+qKQIHs=
+P:libressl3.5-libcrypto
+V:3.5.3-r0
+A:armhf
+S:707545
+I:1511424
+T:libressl libcrypto library
+U:https://www.libressl.org/
+L:custom
+o:libressl
+m:Orion <systmkor@gmail.com>
+t:1653092106
+c:cb1092b8c957bb19458dc16b49fe2d19291532c0
+D:so:libc.musl-armhf.so.1
+p:so:libressl:libcrypto.so.49=49.0.0
 
 C:Q1Gnatzu2g/C9PSkmO4FVmBfPVT54=
 P:inadyn
@@ -69288,6 +69273,21 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1636279261
 c:22d4fbd7087932f541aa6292afeaee3acb7bf10e
 i:openrc minissdpd=1.5.20211105-r0
+
+C:Q1HeXXTWy66IcPAwTU8RvN0iUK3jI=
+P:py3-ujson
+V:5.3.0-r0
+A:armhf
+S:40019
+I:126976
+T:Fast Python JSON encoder and decoder
+U:https://github.com/ultrajson/ultrajson
+L:BSD-3-Clause
+o:py3-ujson
+m:Fabian Affolter <fabian@affolter-engineering.ch>
+t:1653090859
+c:0bc1d216f63ad11161ef0d1b92b680e10431220d
+D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 
 C:Q1/tUhdJLr32GodfV1OVnAUEM5fts=
 P:libsigc++-doc
@@ -70586,6 +70586,22 @@ t:1652313655
 c:23d7efa4428373b179c338831db35020de4051ec
 D:so:libbrotlidec.so.1 so:libbrotlienc.so.1 so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:liblz4.so.1 so:libprotobuf.so.29 so:libstdc++.so.6 so:libusb-1.0.so.0 so:libz.so.1 so:libzstd.so.1
 p:cmd:adb=31.0.3p1-r4 cmd:append2simg=31.0.3p1-r4 cmd:fastboot=31.0.3p1-r4 cmd:img2simg=31.0.3p1-r4 cmd:lpadd=31.0.3p1-r4 cmd:lpdump=31.0.3p1-r4 cmd:lpflash=31.0.3p1-r4 cmd:lpmake=31.0.3p1-r4 cmd:lpunpack=31.0.3p1-r4 cmd:mkbootimg=31.0.3p1-r4 cmd:mke2fs.android=31.0.3p1-r4 cmd:repack_bootimg=31.0.3p1-r4 cmd:simg2img=31.0.3p1-r4 cmd:unpack_bootimg=31.0.3p1-r4
+
+C:Q1/hhQIvSf5qJwR4B40qT9gFik744=
+P:mokutil
+V:0.6.0-r0
+A:armhf
+S:24716
+I:65536
+T:Utility to manipulate the machine owner keys (MOK) stored in the database of shim
+U:https://github.com/lcp/mokutil
+L:GPL-3.0-or-later
+o:mokutil
+m:Matthew T Hoare <matthew.t.hoare@gmai.com>
+t:1653090903
+c:c0bd98ade0a7df658d6d2c03d8fe9ce79033834b
+D:so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libefivar.so.1 so:libkeyutils.so.1
+p:cmd:mokutil=0.6.0-r0
 
 C:Q1k2cPp33IT1+EzQDnFj91XDxyNb4=
 P:perl-email-messageid
@@ -74589,6 +74605,20 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1652313655
 c:23d7efa4428373b179c338831db35020de4051ec
 i:openrc vouch-proxy=0.36.0-r3
+
+C:Q1aYToW2lYhRfvXrbmubSaq2OYL0I=
+P:libressl-dbg
+V:3.5.3-r0
+A:armhf
+S:5814425
+I:13963264
+T:Version of the TLS/crypto stack forked from OpenSSL (debug symbols)
+U:https://www.libressl.org/
+L:custom
+o:libressl
+m:Orion <systmkor@gmail.com>
+t:1653092106
+c:cb1092b8c957bb19458dc16b49fe2d19291532c0
 
 C:Q1WtCLzOZAbaBPdt32tAAiN7E33jU=
 P:xfce4-weather-plugin
@@ -92594,22 +92624,6 @@ c:6b2c174822197b700aab17372cef90e99a254fed
 D:zlib-dev boost-dev libstaroffice=0.0.7-r3 pc:librevenge-0.0 pkgconfig
 p:pc:libstaroffice-0.0=0.0.7
 
-C:Q14HYTaCIfGCF7XOLvRHC+Nh1Hy8A=
-P:libressl3.5-libcrypto
-V:3.5.2-r0
-A:armhf
-S:707538
-I:1511424
-T:libressl libcrypto library
-U:https://www.libressl.org/
-L:custom
-o:libressl
-m:Orion <systmkor@gmail.com>
-t:1651312756
-c:fbe09a42ebb439b16c6271bc316ddb5b2256313d
-D:so:libc.musl-armhf.so.1
-p:so:libressl:libcrypto.so.49=49.0.0
-
 C:Q1gjW9Bb1Ss+HUBE+qrUAgvpAIptA=
 P:libomemo
 V:0.7.1-r0
@@ -96945,20 +96959,6 @@ c:bffe45d4fdbd37732051ee1f39d33c40b9920747
 D:so:libc.musl-armhf.so.1 so:libepoxy.so.0 so:libgdk-3.so.0 so:libgdk_pixbuf-2.0.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libgtk-3.so.0 so:libpulse-simple.so.0 so:libpulse.so.0 so:libsamplerate.so.0
 p:so:libretro-gtk-1.so.0=0 cmd:retro-demo=1.0.2-r1
 
-C:Q1XIKvh3tocdKfyJcome/TX5SSsoA=
-P:libressl-dbg
-V:3.5.2-r0
-A:armhf
-S:5814528
-I:13963264
-T:Version of the TLS/crypto stack forked from OpenSSL (debug symbols)
-U:https://www.libressl.org/
-L:custom
-o:libressl
-m:Orion <systmkor@gmail.com>
-t:1651312756
-c:fbe09a42ebb439b16c6271bc316ddb5b2256313d
-
 C:Q13jLgZ1NJt9pnh5zdCmICzf9GnvM=
 P:nemo-qml-plugin-models
 V:0.2.3-r0
@@ -99650,22 +99650,6 @@ c:23d7efa4428373b179c338831db35020de4051ec
 D:so:libc.musl-armhf.so.1
 p:cmd:easypki=1.1.0-r12
 
-C:Q1S2IX+qC1rMg5sV9mAjUKeT1Gcqo=
-P:libressl-dev
-V:3.5.2-r0
-A:armhf
-S:10507784
-I:27295744
-T:Version of the TLS/crypto stack forked from OpenSSL (development files)
-U:https://www.libressl.org/
-L:custom
-o:libressl
-m:Orion <systmkor@gmail.com>
-t:1651312756
-c:fbe09a42ebb439b16c6271bc316ddb5b2256313d
-D:libressl3.5-libcrypto=3.5.2-r0 libressl3.5-libssl=3.5.2-r0 libressl3.5-libtls=3.5.2-r0 pkgconfig
-p:pc:libressl:libcrypto=3.5.2 pc:libressl:libssl=3.5.2 pc:libressl:libtls=3.5.2 pc:libressl:openssl=3.5.2
-
 C:Q1e9FNDKFDOUycIS9llfNcfw/eCLg=
 P:lua-dbus_proxy-doc
 V:0.10.2-r0
@@ -102350,6 +102334,21 @@ t:1652994057
 c:b1628256d8cd42bc1123b09a6f0b858c9b56f0a2
 D:ceph-user=16.2.9-r0 so:libc.musl-armhf.so.1 so:libceph-common.so.2 so:libgcc_s.so.1 so:libleveldb.so.1 so:liblz4.so.1 so:libsnappy.so.1 so:libstdc++.so.6 so:libz.so.1
 p:cmd:ceph-mon=16.2.9-r0
+
+C:Q1i49jQFYnxnLqbKo6dnpF31rPVIA=
+P:mokutil-doc
+V:0.6.0-r0
+A:armhf
+S:3431
+I:24576
+T:Utility to manipulate the machine owner keys (MOK) stored in the database of shim (documentation)
+U:https://github.com/lcp/mokutil
+L:GPL-3.0-or-later
+o:mokutil
+m:Matthew T Hoare <matthew.t.hoare@gmai.com>
+t:1653090903
+c:c0bd98ade0a7df658d6d2c03d8fe9ce79033834b
+i:docs mokutil=0.6.0-r0
 
 C:Q1LND7De1K1ppjTOEQtSr5NnCh4KA=
 P:waypipe
@@ -109113,21 +109112,6 @@ c:7276a80fd314fd8f359f397fe1034dfdf9df684d
 D:so:libappstream.so.4 so:libc.musl-armhf.so.1 so:libflatpak.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgnomesoftware.so.16 so:libgobject-2.0.so.0 so:libintl.so.8 so:libostree-1.so.1 so:libxmlb.so.2
 i:gnome-software=41.5-r0 flatpak
 
-C:Q1r2v2yhmekZxKcbXw3vxzMdCpkSQ=
-P:py3-ujson
-V:5.2.0-r0
-A:armhf
-S:39991
-I:126976
-T:Fast Python JSON encoder and decoder
-U:https://github.com/ultrajson/ultrajson
-L:BSD-3-Clause
-o:py3-ujson
-m:Fabian Affolter <fabian@affolter-engineering.ch>
-t:1649349694
-c:1d722ff85dee259b93a202bbb02281638424b3ee
-D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
-
 C:Q1gE7+4pArsHh+LKLWXoS9+vbEAYs=
 P:perl-time-duration
 V:1.21-r2
@@ -111393,6 +111377,22 @@ m:Holger Jaekel <holger.jaekel@gmx.de>
 t:1652441839
 c:6b2c174822197b700aab17372cef90e99a254fed
 D:so:libc.musl-armhf.so.1 so:libgcc_s.so.1 so:libkmlbase.so.1 so:libkmldom.so.1 so:libkmlengine.so.1 so:libstdc++.so.6
+
+C:Q1HSaDWQcrBOOFBqSuVtNgJl88NJU=
+P:glib-networking-lang
+V:2.72.0-r1
+A:armhf
+S:111890
+I:1159168
+T:Languages for package glib-networking
+U:https://gitlab.gnome.org/GNOME/glib-networking
+L:LGPL-2.0-or-later
+o:glib-networking
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1653090481
+c:c9263f72949769f0c1d6c679bc4317a14aac4f0b
+D:ca-certificates gsettings-desktop-schemas
+i:glib-networking=2.72.0-r1 lang
 
 C:Q1/lLoZK60WfulTaNOKFWBxVNwa+A=
 P:geary-doc
@@ -125459,6 +125459,21 @@ c:366ef3678d134c6fb2e4316f21431c13e96bdae8
 D:gexiv2=0.14.0-r1 pc:exiv2>=0.26 pc:gio-2.0>=2.46.0 pc:glib-2.0 pc:gobject-2.0>=2.46.0 pkgconfig
 p:pc:gexiv2=0.14.0
 
+C:Q12M4OaZ/HF7470vLxz6EjiesDtiM=
+P:mokutil-bash-completion
+V:0.6.0-r0
+A:armhf
+S:2144
+I:24576
+T:Bash completions for mokutil
+U:https://github.com/lcp/mokutil
+L:GPL-3.0-or-later
+o:mokutil
+m:Matthew T Hoare <matthew.t.hoare@gmai.com>
+t:1653090903
+c:c0bd98ade0a7df658d6d2c03d8fe9ce79033834b
+i:mokutil=0.6.0-r0 bash-completion
+
 C:Q12q+l5jespUTKuJTby3hmvzk1elo=
 P:colord-bash-completion
 V:1.4.6-r1
@@ -125906,6 +125921,22 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1645801587
 c:6002247cc9b6f85c2d844d7d063f9f29b906d6e5
 i:docs gvmd=21.4.5-r2
+
+C:Q1fybHW8F11MiEhkNzYyS9d/OTPEo=
+P:libressl3.5-libssl
+V:3.5.3-r0
+A:armhf
+S:129828
+I:303104
+T:libressl libssl library
+U:https://www.libressl.org/
+L:custom
+o:libressl
+m:Orion <systmkor@gmail.com>
+t:1653092106
+c:cb1092b8c957bb19458dc16b49fe2d19291532c0
+D:so:libc.musl-armhf.so.1 so:libressl:libcrypto.so.49
+p:so:libressl:libssl.so.52=52.0.0
 
 C:Q1UO1P/2gr2zmNpbvqbySS528x/Ew=
 P:geany-plugins-lineoperations
@@ -131482,6 +131513,21 @@ m:Timothy Legge <timlegge@gmail.com>
 t:1629067768
 c:87be77cfd5cc09a5fd9a3fb0dab551494a364223
 D:perl perl-io-socket-ssl perl-libwww
+
+C:Q1n3uVHBeRRpXGGMkOslLljjQnVB4=
+P:glib-networking
+V:2.72.0-r1
+A:armhf
+S:57718
+I:204800
+T:Networking support for GLib
+U:https://gitlab.gnome.org/GNOME/glib-networking
+L:LGPL-2.0-or-later
+o:glib-networking
+m:Rasmus Thomsen <oss@cogitri.dev>
+t:1653090481
+c:c9263f72949769f0c1d6c679bc4317a14aac4f0b
+D:ca-certificates gsettings-desktop-schemas so:libc.musl-armhf.so.1 so:libcrypto.so.1.1 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgobject-2.0.so.0 so:libintl.so.8 so:libproxy.so.1 so:libssl.so.1.1
 
 C:Q1IEANPZLl5T3jpHRfH5maKZKd81U=
 P:lua5.2-dromozoa-utf8
