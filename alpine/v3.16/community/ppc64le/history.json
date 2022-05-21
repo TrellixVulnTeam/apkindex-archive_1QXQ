@@ -74883,7 +74883,8 @@
     "jpegoptim-doc": {
       "origin": "jpegoptim",
       "versions": {
-        "1.4.6-r1": 1645044730
+        "1.4.6-r1": 1645044730,
+        "1.4.7-r0": 1653148147
       }
     },
     "lua-mmdb": {
@@ -87976,14 +87977,15 @@
     "jpegoptim": {
       "origin": "jpegoptim",
       "versions": {
-        "1.4.6-r1": 1645044730
+        "1.4.6-r1": 1645044730,
+        "1.4.7-r0": 1653148147
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
         "so:libjpeg.so.8"
       ],
       "provides": [
-        "cmd:jpegoptim=1.4.6-r1"
+        "cmd:jpegoptim=1.4.7-r0"
       ]
     },
     "krita-lang": {
@@ -155844,6 +155846,139 @@
       "versions": {
         "21.12-r0": 1653146967
       }
+    },
+    "gemget": {
+      "origin": "gemget",
+      "versions": {
+        "1.8.0-r5": 1653147847
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1"
+      ],
+      "provides": [
+        "cmd:gemget=1.8.0-r5"
+      ]
+    },
+    "viu": {
+      "origin": "viu",
+      "versions": {
+        "1.4.0-r0": 1653148277
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1",
+        "so:libgcc_s.so.1"
+      ],
+      "provides": [
+        "cmd:viu=1.4.0-r0"
+      ]
+    },
+    "havoc-doc": {
+      "origin": "havoc",
+      "versions": {
+        "0.4.0-r0": 1653147527
+      }
+    },
+    "evolution-ews-lang": {
+      "origin": "evolution-ews",
+      "versions": {
+        "3.44.1-r0": 1653147941
+      }
+    },
+    "onefetch": {
+      "origin": "onefetch",
+      "versions": {
+        "2.12.0-r0": 1653149153
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1",
+        "so:libgcc_s.so.1",
+        "so:libgit2.so.1.4"
+      ],
+      "provides": [
+        "cmd:onefetch=2.12.0-r0"
+      ]
+    },
+    "dog": {
+      "origin": "dog",
+      "versions": {
+        "0.1.0-r0": 1653147821
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcrypto.so.1.1",
+        "so:libgcc_s.so.1",
+        "so:libssl.so.1.1"
+      ],
+      "provides": [
+        "cmd:dog=0.1.0-r0"
+      ]
+    },
+    "havoc": {
+      "origin": "havoc",
+      "versions": {
+        "0.4.0-r0": 1653147527
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1",
+        "so:libwayland-client.so.0",
+        "so:libwayland-cursor.so.0",
+        "so:libxkbcommon.so.0"
+      ],
+      "provides": [
+        "cmd:havoc=0.4.0-r0"
+      ]
+    },
+    "dog-doc": {
+      "origin": "dog",
+      "versions": {
+        "0.1.0-r0": 1653147821
+      }
+    },
+    "evolution-ews": {
+      "origin": "evolution-ews",
+      "versions": {
+        "3.44.1-r0": 1653147941
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcamel-1.2.so.63",
+        "so:libebackend-1.2.so.10",
+        "so:libebook-1.2.so.20",
+        "so:libebook-contacts-1.2.so.3",
+        "so:libecal-2.0.so.1",
+        "so:libedata-book-1.2.so.26",
+        "so:libedata-cal-2.0.so.1",
+        "so:libedataserver-1.2.so.26",
+        "so:libedataserverui-1.2.so.3",
+        "so:libemail-engine.so",
+        "so:libevolution-calendar.so",
+        "so:libevolution-mail-formatter.so",
+        "so:libevolution-mail.so",
+        "so:libevolution-shell.so",
+        "so:libevolution-util.so",
+        "so:libgio-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libgtk-3.so.0",
+        "so:libical-glib.so.3",
+        "so:libintl.so.8",
+        "so:libjson-glib-1.0.so.0",
+        "so:libmspack.so.0",
+        "so:libpango-1.0.so.0",
+        "so:libsoup-2.4.so.1",
+        "so:libxml2.so.2"
+      ],
+      "provides": [
+        "so:libcamelews-priv.so=0",
+        "so:libevolution-ews.so=0",
+        "so:libevolution-microsoft365.so=0"
+      ]
+    },
+    "viu-doc": {
+      "origin": "viu",
+      "versions": {
+        "1.4.0-r0": 1653148277
+      }
     }
   },
   "provide": {
@@ -171616,6 +171751,18 @@
       },
       "thunderbird:libxul.so": {
         "package": "thunderbird",
+        "version": "0"
+      },
+      "libcamelews-priv.so": {
+        "package": "evolution-ews",
+        "version": "0"
+      },
+      "libevolution-ews.so": {
+        "package": "evolution-ews",
+        "version": "0"
+      },
+      "libevolution-microsoft365.so": {
+        "package": "evolution-ews",
         "version": "0"
       }
     }
