@@ -7212,7 +7212,8 @@
       "versions": {
         "1.14.0-r1": 1649862564,
         "1.14.1-r0": 1651601929,
-        "1.14.1-r1": 1652313655
+        "1.14.1-r1": 1652313655,
+        "1.14.2-r0": 1653234656
       }
     },
     "alpine-dbg": {
@@ -27150,13 +27151,18 @@
     "moarvm-dev": {
       "origin": "moarvm",
       "versions": {
-        "2021.12-r1": 1645729636
+        "2021.12-r1": 1645729636,
+        "2022.04-r0": 1653236137
       },
       "dependencies": [
+        "perl",
+        "zstd-dev",
+        "libffi-dev",
+        "libuv-dev",
         "pkgconfig"
       ],
       "provides": [
-        "pc:moar=2021.12"
+        "pc:moar=2022.04"
       ]
     },
     "cfengine-doc": {
@@ -44690,7 +44696,8 @@
       "versions": {
         "1.14.0-r1": 1649862564,
         "1.14.1-r0": 1651601929,
-        "1.14.1-r1": 1652313655
+        "1.14.1-r1": 1652313655,
+        "1.14.2-r0": 1653234656
       }
     },
     "siglo": {
@@ -53390,7 +53397,8 @@
       "versions": {
         "1.14.0-r1": 1649862564,
         "1.14.1-r0": 1651601929,
-        "1.14.1-r1": 1652313655
+        "1.14.1-r1": 1652313655,
+        "1.14.2-r0": 1653234656
       }
     },
     "ksmbd-tools": {
@@ -74399,14 +74407,15 @@
       "versions": {
         "1.14.0-r1": 1649862564,
         "1.14.1-r0": 1651601929,
-        "1.14.1-r1": 1652313655
+        "1.14.1-r1": 1652313655,
+        "1.14.2-r0": 1653234656
       },
       "dependencies": [
         "gnupg",
         "git"
       ],
       "provides": [
-        "cmd:gopass=1.14.1-r1"
+        "cmd:gopass=1.14.2-r0"
       ]
     },
     "pdsh-rcmd-ssh": {
@@ -98741,7 +98750,8 @@
     "moarvm-doc": {
       "origin": "moarvm",
       "versions": {
-        "2021.12-r1": 1645729636
+        "2021.12-r1": 1645729636,
+        "2022.04-r0": 1653236137
       }
     },
     "riemann-c-client-libs": {
@@ -102135,7 +102145,8 @@
       "versions": {
         "1.14.0-r1": 1649862564,
         "1.14.1-r0": 1651601929,
-        "1.14.1-r1": 1652313655
+        "1.14.1-r1": 1652313655,
+        "1.14.2-r0": 1653234656
       }
     },
     "docker-doc": {
@@ -131282,15 +131293,18 @@
     "moarvm": {
       "origin": "moarvm",
       "versions": {
-        "2021.12-r1": 1645729636
+        "2021.12-r1": 1645729636,
+        "2022.04-r0": 1653236137
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
-        "so:libffi.so.8"
+        "so:libffi.so.8",
+        "so:libuv.so.1",
+        "so:libzstd.so.1"
       ],
       "provides": [
         "so:libmoar.so=0",
-        "cmd:moar=2021.12-r1"
+        "cmd:moar=2022.04-r0"
       ]
     },
     "libfprint": {
@@ -136993,6 +137007,94 @@
       "versions": {
         "0.5-r0": 1653225527
       }
+    },
+    "nqp": {
+      "origin": "nqp",
+      "versions": {
+        "2022.04-r0": 1653236137
+      },
+      "dependencies": [
+        "so:libc.musl-armhf.so.1",
+        "so:libmoar.so"
+      ],
+      "provides": [
+        "cmd:nqp-m=2022.04-r0",
+        "cmd:nqp=2022.04-r0"
+      ]
+    },
+    "zef": {
+      "origin": "zef",
+      "versions": {
+        "0.13.8-r0": 1653236137
+      },
+      "dependencies": [
+        "rakudo",
+        "git",
+        "wget",
+        "curl",
+        "tar",
+        "unzip",
+        "perl-utils"
+      ]
+    },
+    "rakudo-doc": {
+      "origin": "rakudo",
+      "versions": {
+        "2022.04-r0": 1653236137
+      }
+    },
+    "zef-doc": {
+      "origin": "zef",
+      "versions": {
+        "0.13.8-r0": 1653236137
+      }
+    },
+    "nqp-doc": {
+      "origin": "nqp",
+      "versions": {
+        "2022.04-r0": 1653236137
+      }
+    },
+    "rakudo": {
+      "origin": "rakudo",
+      "versions": {
+        "2022.04-r0": 1653236137
+      },
+      "dependencies": [
+        "nqp",
+        "so:libc.musl-armhf.so.1",
+        "so:libmoar.so"
+      ],
+      "provides": [
+        "cmd:perl6-m=2022.04-r0",
+        "cmd:perl6=2022.04-r0",
+        "cmd:raku=2022.04-r0",
+        "cmd:rakudo-m=2022.04-r0",
+        "cmd:rakudo=2022.04-r0"
+      ]
+    },
+    "rakudo-dev": {
+      "origin": "rakudo",
+      "versions": {
+        "2022.04-r0": 1653236137
+      },
+      "dependencies": [
+        "so:libc.musl-armhf.so.1",
+        "so:libmoar.so"
+      ],
+      "provides": [
+        "cmd:perl6-debug-m=2022.04-r0",
+        "cmd:perl6-debug=2022.04-r0",
+        "cmd:perl6-gdb-m=2022.04-r0",
+        "cmd:perl6-lldb-m=2022.04-r0",
+        "cmd:perl6-valgrind-m=2022.04-r0",
+        "cmd:raku-debug=2022.04-r0",
+        "cmd:rakudo-debug-m=2022.04-r0",
+        "cmd:rakudo-debug=2022.04-r0",
+        "cmd:rakudo-gdb-m=2022.04-r0",
+        "cmd:rakudo-lldb-m=2022.04-r0",
+        "cmd:rakudo-valgrind-m=2022.04-r0"
+      ]
     }
   },
   "provide": {
