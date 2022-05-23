@@ -40511,7 +40511,8 @@
       "versions": {
         "7.2.0-r1": 1647748239,
         "7.2.0-r2": 1650750902,
-        "7.2.1-r0": 1651948547
+        "7.2.1-r0": 1651948547,
+        "7.2.2-r0": 1653267345
       }
     },
     "openbox-lang": {
@@ -61480,10 +61481,11 @@
       "versions": {
         "7.2.0-r1": 1647748239,
         "7.2.0-r2": 1650750902,
-        "7.2.1-r0": 1651948547
+        "7.2.1-r0": 1651948547,
+        "7.2.2-r0": 1653267345
       },
       "dependencies": [
-        "libzim=7.2.1-r0",
+        "libzim=7.2.2-r0",
         "pc:icu-i18n",
         "pc:liblzma",
         "pc:libzstd",
@@ -61491,7 +61493,7 @@
         "pkgconfig"
       ],
       "provides": [
-        "pc:libzim=7.2.1"
+        "pc:libzim=7.2.2"
       ]
     },
     "remmina-lang": {
@@ -101170,7 +101172,8 @@
       "versions": {
         "7.2.0-r1": 1647748239,
         "7.2.0-r2": 1650750902,
-        "7.2.1-r0": 1651948547
+        "7.2.1-r0": 1651948547,
+        "7.2.2-r0": 1653267345
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -101183,7 +101186,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "so:libzim.so.7=7.2.1"
+        "so:libzim.so.7=7.2.2"
       ]
     },
     "thunar-archive-plugin-lang": {
@@ -137224,6 +137227,60 @@
         "so:libgcc_s.so.1",
         "so:libstdc++.so.6"
       ]
+    },
+    "rnp-doc": {
+      "origin": "rnp",
+      "versions": {
+        "0.15.2-r3": 1653267595
+      }
+    },
+    "rnp-dev": {
+      "origin": "rnp",
+      "versions": {
+        "0.15.2-r3": 1653267595
+      },
+      "dependencies": [
+        "librnp=0.15.2-r3",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:librnp=0.15.2"
+      ]
+    },
+    "rnp": {
+      "origin": "rnp",
+      "versions": {
+        "0.15.2-r3": 1653267595
+      },
+      "dependencies": [
+        "so:libc.musl-armhf.so.1",
+        "so:libgcc_s.so.1",
+        "so:libjson-c.so.5",
+        "so:librnp.so.0",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "cmd:rnp=0.15.2-r3",
+        "cmd:rnpkeys=0.15.2-r3"
+      ]
+    },
+    "librnp": {
+      "origin": "rnp",
+      "versions": {
+        "0.15.2-r3": 1653267595
+      },
+      "dependencies": [
+        "so:libbotan-2.so.19",
+        "so:libbz2.so.1",
+        "so:libc.musl-armhf.so.1",
+        "so:libgcc_s.so.1",
+        "so:libjson-c.so.5",
+        "so:libstdc++.so.6",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "so:librnp.so.0=0.15.2"
+      ]
     }
   },
   "provide": {
@@ -146656,7 +146713,7 @@
       },
       "libzim.so.7": {
         "package": "libzim",
-        "version": "7.2.1"
+        "version": "7.2.2"
       },
       "libteam.so.5": {
         "package": "libteam",
@@ -150585,6 +150642,10 @@
       "libsliplu.so.1": {
         "package": "suitesparse",
         "version": "1.0.2"
+      },
+      "librnp.so.0": {
+        "package": "librnp",
+        "version": "0.15.2"
       }
     }
   }
