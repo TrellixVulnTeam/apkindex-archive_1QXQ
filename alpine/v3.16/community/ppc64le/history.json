@@ -46917,7 +46917,8 @@
       "versions": {
         "7.2.0-r1": 1647748239,
         "7.2.0-r2": 1650750902,
-        "7.2.1-r0": 1651948547
+        "7.2.1-r0": 1651948547,
+        "7.2.2-r0": 1653267345
       }
     },
     "assimp-dev": {
@@ -76731,7 +76732,8 @@
       "origin": "ausweisapp2",
       "versions": {
         "1.22.5-r0": 1649935498,
-        "1.22.6-r0": 1652970299
+        "1.22.6-r0": 1652970299,
+        "1.22.7-r0": 1653294433
       }
     },
     "qemu-sh4": {
@@ -104967,7 +104969,8 @@
       "versions": {
         "7.2.0-r1": 1647748239,
         "7.2.0-r2": 1650750902,
-        "7.2.1-r0": 1651948547
+        "7.2.1-r0": 1651948547,
+        "7.2.2-r0": 1653267345
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -104980,7 +104983,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "so:libzim.so.7=7.2.1"
+        "so:libzim.so.7=7.2.2"
       ]
     },
     "kcodecs-dev": {
@@ -139383,7 +139386,8 @@
       "origin": "ausweisapp2",
       "versions": {
         "1.22.5-r0": 1649935498,
-        "1.22.6-r0": 1652970299
+        "1.22.6-r0": 1652970299,
+        "1.22.7-r0": 1653294433
       },
       "dependencies": [
         "pcsc-lite",
@@ -139406,7 +139410,7 @@
         "so:libudev.so.1"
       ],
       "provides": [
-        "cmd:AusweisApp2=1.22.6-r0"
+        "cmd:AusweisApp2=1.22.7-r0"
       ]
     },
     "ntpsec-doc": {
@@ -143634,10 +143638,11 @@
       "versions": {
         "7.2.0-r1": 1647748239,
         "7.2.0-r2": 1650750902,
-        "7.2.1-r0": 1651948547
+        "7.2.1-r0": 1651948547,
+        "7.2.2-r0": 1653267345
       },
       "dependencies": [
-        "libzim=7.2.1-r0",
+        "libzim=7.2.2-r0",
         "pc:icu-i18n",
         "pc:liblzma",
         "pc:libzstd",
@@ -143645,7 +143650,7 @@
         "pkgconfig"
       ],
       "provides": [
-        "pc:libzim=7.2.1"
+        "pc:libzim=7.2.2"
       ]
     },
     "cmus-zsh-completion": {
@@ -156306,6 +156311,60 @@
         "so:libgcc_s.so.1",
         "so:libstdc++.so.6"
       ]
+    },
+    "rnp-doc": {
+      "origin": "rnp",
+      "versions": {
+        "0.15.2-r3": 1653267595
+      }
+    },
+    "rnp": {
+      "origin": "rnp",
+      "versions": {
+        "0.15.2-r3": 1653267595
+      },
+      "dependencies": [
+        "so:libc.musl-ppc64le.so.1",
+        "so:libgcc_s.so.1",
+        "so:libjson-c.so.5",
+        "so:librnp.so.0",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "cmd:rnp=0.15.2-r3",
+        "cmd:rnpkeys=0.15.2-r3"
+      ]
+    },
+    "rnp-dev": {
+      "origin": "rnp",
+      "versions": {
+        "0.15.2-r3": 1653267595
+      },
+      "dependencies": [
+        "librnp=0.15.2-r3",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:librnp=0.15.2"
+      ]
+    },
+    "librnp": {
+      "origin": "rnp",
+      "versions": {
+        "0.15.2-r3": 1653267595
+      },
+      "dependencies": [
+        "so:libbotan-2.so.19",
+        "so:libbz2.so.1",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libgcc_s.so.1",
+        "so:libjson-c.so.5",
+        "so:libstdc++.so.6",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "so:librnp.so.0=0.15.2"
+      ]
     }
   },
   "provide": {
@@ -166118,7 +166177,7 @@
       },
       "libzim.so.7": {
         "package": "libzim",
-        "version": "7.2.1"
+        "version": "7.2.2"
       },
       "libchromaprint.so.1": {
         "package": "chromaprint",
@@ -172135,6 +172194,10 @@
       "libgsoapssl-2.8.122.so": {
         "package": "gsoap",
         "version": "0"
+      },
+      "librnp.so.0": {
+        "package": "librnp",
+        "version": "0.15.2"
       }
     }
   }
