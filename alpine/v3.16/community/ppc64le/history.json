@@ -125536,11 +125536,13 @@
     "gnome-remote-desktop": {
       "origin": "gnome-remote-desktop",
       "versions": {
-        "41.0-r0": 1644856195
+        "41.0-r0": 1644856195,
+        "42.2-r0": 1654088057
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
         "so:libcairo.so.2",
+        "so:libepoxy.so.0",
         "so:libfreerdp-client2.so.2",
         "so:libfreerdp-server2.so.2",
         "so:libfreerdp2.so.2",
@@ -125555,6 +125557,9 @@
         "so:libvncserver.so.1",
         "so:libwinpr2.so.2",
         "so:libxkbcommon.so.0"
+      ],
+      "provides": [
+        "cmd:grdctl=42.2-r0"
       ]
     },
     "libhangul": {
@@ -157242,6 +157247,24 @@
       "versions": {
         "0_git20130420-r1": 1653552394
       }
+    },
+    "gnome-remote-desktop-lang": {
+      "origin": "gnome-remote-desktop",
+      "versions": {
+        "42.2-r0": 1654088057
+      }
+    },
+    "ffnvcodec-headers": {
+      "origin": "ffnvcodec-headers",
+      "versions": {
+        "11.1.5.1-r0": 1654088081
+      },
+      "dependencies": [
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:ffnvcodec=11.1.5.1"
+      ]
     }
   },
   "provide": {
