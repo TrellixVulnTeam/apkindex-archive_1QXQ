@@ -617,6 +617,22 @@ t:1608935064
 c:52ea931d3610d6ed59bb4f157a0b7e5ff6732bda
 i:docs atop=2.6.0-r0
 
+C:Q186X37d/r4SgRgCJ4dHuFIQ9oy/k=
+P:libldap
+V:2.6.2-r0
+A:aarch64
+S:167398
+I:421888
+T:OpenLDAP libraries
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libsasl2.so.3 so:libssl.so.1.1
+p:so:liblber.so.2=2.0.200 so:libldap.so.2=2.0.200
+
 C:Q1xcmRnLQikzc7tQiLfIJKmGvAEwk=
 P:perl-file-temp
 V:0.2311-r0
@@ -2614,21 +2630,6 @@ t:1629608458
 c:259b31a331a5208c7af8120146c6ef799c4071d9
 i:docs xfsprogs=5.13.0-r0
 
-C:Q1h1TkzgAuaiM5Lc0nQkWjEIRNnA8=
-P:openldap-back-dnssrv
-V:2.6.0-r0
-A:aarch64
-S:6792
-I:36864
-T:OpenLDAP dnssrv backend
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
-
 C:Q12cCkKhFdqKdfdIympaG3+LbgxGs=
 P:python3-dbg
 V:3.9.7-r4
@@ -3002,6 +3003,21 @@ t:1648053282
 c:73f3278a3927d2c7c73cab43900ff3e3c4b79a4b
 D:so:libc.musl-aarch64.so.1 so:libgdbm.so.6
 p:so:libsasl2.so.3=3.0.0
+
+C:Q1doUdnFR1CS1KSKJK6I6narlweno=
+P:openldap-backend-all
+V:2.6.2-r0
+A:aarch64
+S:1539
+I:4096
+T:Virtual package that installs all OpenLDAP backends
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:openldap-back-asyncmeta openldap-back-dnssrv openldap-back-ldap openldap-back-lload openldap-back-mdb openldap-back-meta openldap-back-null openldap-back-passwd openldap-back-relay openldap-back-sock openldap-back-sql
 
 C:Q1BySzjA5bK5LXgM+BdhGDosuuPPs=
 P:gc
@@ -3832,6 +3848,21 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.3 so:libc.musl-aarch64.so.1 so:libsqlite3.so.0
 i:lua-sqlite=0.9.5-r4 lua5.3
 
+C:Q1Z1/XKbl16bIYhnL86438FCbcsss=
+P:openldap-overlay-refint
+V:2.6.2-r0
+A:aarch64
+S:9375
+I:40960
+T:OpenLDAP refint overlay
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
+
 C:Q1SAZi4IjJP9RazdXHCe/Y6Etuw6g=
 P:openssl
 V:1.1.1o-r0
@@ -4405,21 +4436,6 @@ t:1630488083
 c:66b43a61ccff1b01b28dc46c4ddd17b62d88f9f1
 D:so:libbrotlidec.so.1 so:libbrotlienc.so.1 so:libc.musl-aarch64.so.1
 p:cmd:brotli=1.0.9-r5
-
-C:Q1INwpUP1AYF60dj8lDcNepQq/a8g=
-P:openldap-backend-all
-V:2.6.0-r0
-A:aarch64
-S:1549
-I:4096
-T:Virtual package that installs all OpenLDAP backends
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:openldap-back-asyncmeta openldap-back-dnssrv openldap-back-ldap openldap-back-lload openldap-back-mdb openldap-back-meta openldap-back-null openldap-back-passwd openldap-back-relay openldap-back-sock openldap-back-sql
 
 C:Q1wVX+hLO6IovXQsKVrVBPjz7JHOM=
 P:mariadb-common
@@ -5407,21 +5423,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-test-without-module=0.20-r2
 
-C:Q1NPnboMSGxC0QUd/yna6LLRgqJbY=
-P:openldap-back-sql
-V:2.6.0-r0
-A:aarch64
-S:57629
-I:167936
-T:OpenLDAP sql backend
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2 so:libodbc.so.2
-
 C:Q114jxFc/u6c1NTsAt4HuRiUehLi0=
 P:py3-sortedcontainers
 V:2.4.0-r0
@@ -6016,6 +6017,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1610804332
 c:0bd0527214fd11b9316c097d5dac1907c7c4b13f
 
+C:Q13C7VNn7kN7H2JpKf53NujV0B9dg=
+P:openldap-overlay-autoca
+V:2.6.2-r0
+A:aarch64
+S:11115
+I:49152
+T:OpenLDAP autoca overlay
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:liblber.so.2 so:libldap.so.2
+
 C:Q1Qbbn0q09XtRu+I3YULKylzWxtOE=
 P:lame-dev
 V:3.100-r0
@@ -6250,21 +6266,6 @@ t:1613875390
 c:7893a66b914dd950ab536c686f622ef75f5e19b0
 D:libxml2-dev pkgconfig xmlrpc-c++=1.51.07-r0 xmlrpc-c-abyss=1.51.07-r0 xmlrpc-c-client++=1.51.07-r0 xmlrpc-c-client=1.51.07-r0 xmlrpc-c=1.51.07-r0
 p:pc:xmlrpc++=1.51.7 pc:xmlrpc=1.51.7 pc:xmlrpc_abyss++=1.51.7 pc:xmlrpc_abyss=1.51.7 pc:xmlrpc_client++=1.51.7 pc:xmlrpc_client=1.51.7 pc:xmlrpc_expat=1.51.7 pc:xmlrpc_server++=1.51.7 pc:xmlrpc_server=1.51.7 pc:xmlrpc_server_abyss=1.51.7 pc:xmlrpc_server_cgi=1.51.7 pc:xmlrpc_server_pstream++=1.51.7 pc:xmlrpc_util++=1.51.7 pc:xmlrpc_util=1.51.7 cmd:xmlrpc-c-config=1.51.07-r0
-
-C:Q1hax6OSQrwcWLBQOnnTn99X7H0R0=
-P:openldap-passwd-pbkdf2
-V:2.6.0-r0
-A:aarch64
-S:4724
-I:32768
-T:PBKDF2 OpenLDAP support
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:openldap so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1
 
 C:Q1lw8HIbOCfrR2LuwrqDNtYb8Wf3M=
 P:avahi-compat-howl
@@ -7227,6 +7228,21 @@ m:Will Sinatra <wpsinatra@gmail.com>
 t:1631357829
 c:a6fbb8861cee2d8cb889b397589d9008061d648c
 i:docs libfido2=1.8.0-r2
+
+C:Q1jPpY5rVY7god0+/9XSjm5GSp71I=
+P:openldap-overlay-retcode
+V:2.6.2-r0
+A:aarch64
+S:11651
+I:49152
+T:OpenLDAP retcode overlay
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
 
 C:Q1/bVrHLoM4g7fSPM5VUGSj5OrtYs=
 P:fish-tools
@@ -8352,6 +8368,21 @@ c:fefb681ed44ac51cb3fe27e4bc26953306571759
 D:pkgconfig
 p:pc:spice-protocol=0.14.3
 
+C:Q1OFcnnZDKjdEhueGafV7Iem9OkxU=
+P:openldap-overlay-syncprov
+V:2.6.2-r0
+A:aarch64
+S:29734
+I:86016
+T:OpenLDAP syncprov overlay
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
+
 C:Q1Svs5mn6NJZm1+Cq3xH/RXlpMmMs=
 P:perl-getopt-long-doc
 V:2.52-r1
@@ -8472,22 +8503,6 @@ t:1621041691
 c:355220154dbd0e21af45d578ad53aac70046feb0
 D:acf-jquery acf-lib acf-skins haserl-lua5.2 lua5.2 lua5.2-posix lua5.2-md5 lua-json4 lua5.2-subprocess /bin/sh
 p:cmd:acf-cli=0.22.0-r2 cmd:acfpasswd=0.22.0-r2
-
-C:Q1xrq808+1zShTHn76Ggr4Dtme9vI=
-P:openldap-lloadd
-V:2.6.0-r0
-A:aarch64
-S:90607
-I:253952
-T:Standalone LDAP Load Balancer Daemon
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:/bin/sh so:libc.musl-aarch64.so.1 so:libevent-2.1.so.7 so:liblber.so.2 so:libldap.so.2 so:libsasl2.so.3
-p:cmd:lloadd=2.6.0-r0
 
 C:Q1Nz84uTenaYgqou5AG4w9KcNMNAA=
 P:u-boot-thunderx
@@ -9178,21 +9193,6 @@ t:1609150791
 c:4185bdc00ef42443f85ff19a5a449a2904bec285
 i:docs libtheora=1.1.1-r16
 
-C:Q112/ZOSI4PzsBiZKiJL6BmxrqtH8=
-P:openldap-overlay-proxycache
-V:2.6.0-r0
-A:aarch64
-S:34998
-I:98304
-T:OpenLDAP proxycache overlay
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
-
 C:Q1m0/Qu7PfsY8Ks/P9SaZIvTyGvww=
 P:openrc-doc
 V:0.44.7-r5
@@ -9207,6 +9207,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1648485610
 c:10dab8bfb705f4e70cf7f1cd6b23121fcbeb8ece
 i:docs openrc=0.44.7-r5
+
+C:Q1G8u/j2+Y8Y9JY7vgBpR7mqI9FRo=
+P:openldap-clients
+V:2.6.2-r0
+A:aarch64
+S:253017
+I:618496
+T:LDAP client utilities
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2 so:libsasl2.so.3 so:libuuid.so.1
+p:cmd:ldapadd=2.6.2-r0 cmd:ldapcompare=2.6.2-r0 cmd:ldapdelete=2.6.2-r0 cmd:ldapexop=2.6.2-r0 cmd:ldapmodify=2.6.2-r0 cmd:ldapmodrdn=2.6.2-r0 cmd:ldappasswd=2.6.2-r0 cmd:ldapsearch=2.6.2-r0 cmd:ldapurl=2.6.2-r0 cmd:ldapvc=2.6.2-r0 cmd:ldapwhoami=2.6.2-r0
 
 C:Q1XB5a5Og7sD+rkWQFZgrrmRQFD1A=
 P:gnokii
@@ -9543,21 +9559,6 @@ c:f56fef8c674bde0e2c1578e1483e36e9988a3791
 D:so:libc.musl-aarch64.so.1 so:libgpg-error.so.0
 p:so:libksba.so.8=8.14.0
 
-C:Q1JQzVQaMHk4Ns5vKZkq97zJ+Gh6k=
-P:openldap-overlay-all
-V:2.6.0-r0
-A:aarch64
-S:1651
-I:4096
-T:Virtual package that installs all OpenLDAP overlays
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:openldap-overlay-accesslog openldap-overlay-auditlog openldap-overlay-autoca openldap-overlay-collect openldap-overlay-constraint openldap-overlay-dds openldap-overlay-deref openldap-overlay-dyngroup openldap-overlay-dynlist openldap-overlay-homedir openldap-overlay-lastbind openldap-overlay-memberof openldap-overlay-mqtt openldap-overlay-otp openldap-overlay-ppolicy openldap-overlay-proxycache openldap-overlay-refint openldap-overlay-remoteauth openldap-overlay-retcode openldap-overlay-rwm openldap-overlay-seqmod openldap-overlay-sssvlv openldap-overlay-syncprov openldap-overlay-translucent openldap-overlay-unique openldap-overlay-valsort
-
 C:Q1Nj2rojQdibGUNnrowmQgFOMfJAk=
 P:liblockfile
 V:1.17-r0
@@ -9743,36 +9744,6 @@ t:1617646683
 c:084c454e8b909b443ba56e183c6037faebbaa72c
 D:uwsgi so:libc.musl-aarch64.so.1
 p:uwsgi-gevent=2.0.19.1-r2
-
-C:Q1inpUCZweNxt5t6BASffBeYjWEQM=
-P:openldap-overlay-rwm
-V:2.6.0-r0
-A:aarch64
-S:25171
-I:77824
-T:OpenLDAP rwm overlay
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
-
-C:Q1i/0MAKDcKXdTwABcUAk8e2o92Pg=
-P:openldap-doc
-V:2.6.0-r0
-A:aarch64
-S:361757
-I:651264
-T:LDAP Server (documentation)
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-i:docs openldap=2.6.0-r0
 
 C:Q1/cTttNeD7hIXvuZcFeZHheApQl4=
 P:perl-xml-namespacesupport-doc
@@ -10061,6 +10032,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1636616189
 c:1f2fe44a4d4e27e4bd8d844a8e56550a49d80777
 i:openrc rsync=3.2.3-r5
+
+C:Q1Ko08KmBSkL4QwdykJwvKJAiO6B8=
+P:openldap-back-passwd
+V:2.6.2-r0
+A:aarch64
+S:6638
+I:36864
+T:OpenLDAP passwd backend
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
 
 C:Q1m3tV3+cVyBp2qn+1XpxxF8uT2dA=
 P:lua5.3-apk
@@ -10877,21 +10863,6 @@ t:1600709968
 c:cd3da8d82f9459a600d8f0267568c40b6c83abac
 D:perl
 p:cmd:config_data=0.4231-r1
-
-C:Q1lce69EPY03Q4ikMQ0vbtww3pRrw=
-P:openldap-overlay-memberof
-V:2.6.0-r0
-A:aarch64
-S:13604
-I:53248
-T:OpenLDAP memberof overlay
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2
 
 C:Q1qv7foY4yni6xA7vTuTGSEmtutzY=
 P:libverto-libevent
@@ -11823,21 +11794,6 @@ t:1652315978
 c:a85ef407d055366a1d7c8ce08c39ebe91114ee7d
 D:so:libc.musl-aarch64.so.1
 p:so:liblua-5.4.so.0=0.0.0
-
-C:Q11YyHcBcqze50Dvlyqgg+k7UB8Lg=
-P:openldap-overlay-auditlog
-V:2.6.0-r0
-A:aarch64
-S:4967
-I:32768
-T:OpenLDAP auditlog overlay
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
 
 C:Q1tgubt5/OEA8aELQjnrXUbbnKhYY=
 P:perl-carp-doc
@@ -12826,22 +12782,6 @@ c:5fafa5dd0ee14f16f7479ebf3c25152121c7d696
 D:perl so:libc.musl-aarch64.so.1
 p:perl-yaml-xs=0.83-r0
 
-C:Q1AXdjyGzjClj83YZlB20ePHzShuU=
-P:openldap-dev
-V:2.6.0-r0
-A:aarch64
-S:361910
-I:1380352
-T:LDAP Server (development files)
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:cyrus-sasl-dev libevent-dev libsodium-dev openssl1.1-compat-dev util-linux-dev libldap=2.6.0-r0 pkgconfig
-p:pc:lber=2.6.0 pc:ldap=2.6.0
-
 C:Q1wsFBqCw4QCUS8/zCwM3GX4g9TQA=
 P:cvechecker-doc
 V:4.0-r1
@@ -13362,21 +13302,6 @@ t:1627487157
 c:35f6d73478925c807a785f684ce54cb4045ab4eb
 i:docs perl-params-util=1.102-r1
 
-C:Q1VGTDvJ8kdhcHE1uln5YnzclefzQ=
-P:openldap-overlay-dyngroup
-V:2.6.0-r0
-A:aarch64
-S:4696
-I:32768
-T:OpenLDAP dyngroup overlay
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2
-
 C:Q1Nr17NTxyzCpLFu8njpcmwzbK50k=
 P:cryptsetup-doc
 V:2.4.3-r0
@@ -13685,6 +13610,21 @@ c:6ec24ef662dbc47e0298e5ac9df8bd44b8ee35c7
 D:pkgconfig
 p:pc:xkeyboard-config=2.34
 
+C:Q1OOUEDquM7b7tePLERgo6AAydDLY=
+P:openldap-overlay-sssvlv
+V:2.6.2-r0
+A:aarch64
+S:11569
+I:45056
+T:OpenLDAP sssvlv overlay
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
+
 C:Q1y/VhLnHWbQC/DrEDN5jT/Rz3LCw=
 P:u-boot-libretech
 V:2021.10-r5
@@ -13869,21 +13809,6 @@ t:1649793159
 c:b8465a8cc6281159e33226ef018d5dfaf0e62f4e
 D:git-daemon=2.34.2-r0
 i:openrc git-daemon=2.34.2-r0
-
-C:Q142z6AInZ1PQciEseVGzMXkqwaME=
-P:openldap-overlay-dynlist
-V:2.6.0-r0
-A:aarch64
-S:17436
-I:57344
-T:OpenLDAP dynlist overlay
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
 
 C:Q1xTLAFwlyPlB7+Udbc6I2ErBh5e8=
 P:py3-alabaster
@@ -15071,6 +14996,21 @@ t:1610362096
 c:7ddf898803ccddcb29847ee1742ab398450def12
 i:minicom=2.8-r0 lang
 
+C:Q1QuaP15OUgWPyCBwkF8rysXl08xQ=
+P:openldap-overlay-unique
+V:2.6.2-r0
+A:aarch64
+S:12495
+I:49152
+T:OpenLDAP unique overlay
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
+
 C:Q1ZlFMaKJAInyCDBBxgRrNDXeFkf0=
 P:py3-libfdt
 V:1.6.1-r0
@@ -15346,21 +15286,6 @@ t:1636829352
 c:ee36e0dba30424c2962bd597e786dfef40cf7ca0
 D:bubblewrap cmd:depmod kernel-hooks /bin/sh
 p:cmd:akms=0.2.0-r0
-
-C:Q1mHlridixmC1N6ZZzoi9G9zEupwQ=
-P:openldap-passwd-sha2
-V:2.6.0-r0
-A:aarch64
-S:9552
-I:40960
-T:SHA2 OpenLDAP support
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:openldap so:libc.musl-aarch64.so.1 so:liblber.so.2
 
 C:Q1iCHJk39MnASLmEQRbTE0rE8fVx8=
 P:meson-bash-completion
@@ -17103,6 +17028,21 @@ c:6a2aa7f605c6d6e8e06f29e3cad391ee9da7b9ad
 D:so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libportaudio.so.2 so:libstdc++.so.6
 p:so:libportaudiocpp.so.0=0.0.12
 
+C:Q1Qor7PrpinXvt1lIRDDM/+DSg8GM=
+P:openldap-openrc
+V:2.6.2-r0
+A:aarch64
+S:2344
+I:24576
+T:LDAP Server (OpenRC init scripts)
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+i:openrc openldap=2.6.2-r0
+
 C:Q1FRpNC83d+2/G3v3lsPNRt8BxeEE=
 P:byacc-doc
 V:20210808-r0
@@ -17965,6 +17905,22 @@ t:1635494978
 c:87f6509d7aee77e5c5f5b2753690e039be33d359
 p:linux-firmware-any
 
+C:Q1HrbvYKD9XmRNwijkTH2JBYCt4qU=
+P:openldap
+V:2.6.2-r0
+A:aarch64
+S:611062
+I:1830912
+T:LDAP Server
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:/bin/sh so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2 so:libltdl.so.7 so:libsasl2.so.3 so:libuuid.so.1
+p:openldap-back-monitor=2.6.2-r0 cmd:slapacl=2.6.2-r0 cmd:slapadd=2.6.2-r0 cmd:slapauth=2.6.2-r0 cmd:slapcat=2.6.2-r0 cmd:slapd=2.6.2-r0 cmd:slapdn=2.6.2-r0 cmd:slapindex=2.6.2-r0 cmd:slapmodify=2.6.2-r0 cmd:slappasswd=2.6.2-r0 cmd:slapschema=2.6.2-r0 cmd:slaptest=2.6.2-r0
+
 C:Q14NDipgmgBOIAv26/2mQ9Mtab0Ws=
 P:mesa-dri-nouveau
 V:21.2.6-r0
@@ -18175,6 +18131,21 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1601073939
 c:f440be3583532d0d0102703e9e60ea9c5d1bdbc5
 D:so:libc.musl-aarch64.so.1 so:libdtovl.so so:libvchiq_arm.so so:libvcos.so
+
+C:Q1NHRe9xyILIpdoD2k8Nb0RnsS6iE=
+P:openldap-passwd-sha2
+V:2.6.2-r0
+A:aarch64
+S:9545
+I:40960
+T:SHA2 OpenLDAP support
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:openldap so:libc.musl-aarch64.so.1 so:liblber.so.2
 
 C:Q1pp12tHlS3v+mqYfbBpOXzG9u25k=
 P:e2fsprogs
@@ -18882,6 +18853,21 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
 
+C:Q1pgJ22OY1JXatahjtlGY90u97MTk=
+P:openldap-overlay-homedir
+V:2.6.2-r0
+A:aarch64
+S:16047
+I:57344
+T:OpenLDAP homedir overlay
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
+
 C:Q16Xq8ehtCAnFMKJm4K10KQUgL6io=
 P:perl-module-build-tiny-doc
 V:0.039-r2
@@ -18988,21 +18974,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1637655251
 c:7820a5bea51431750ba2795cf2b1a6fbbd4209d4
 i:openrc hylafaxplus=7.0.4-r4
-
-C:Q1nawsGxMCuObz+/6vsKVp9evTTl8=
-P:openldap-overlay-dds
-V:2.6.0-r0
-A:aarch64
-S:15066
-I:57344
-T:OpenLDAP dds overlay
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
 
 C:Q1noaSEpT1sjR/slRDxJWeOJ/nuN0=
 P:shorewall-core-doc
@@ -23741,21 +23712,6 @@ t:1634486665
 c:48367644027d98b2a0c7a6f6f5577a30807713d4
 D:so:libasound.so.2 so:libc.musl-aarch64.so.1
 
-C:Q1qNak2+j3pI6zVlFzHBh45mnxZE8=
-P:openldap-back-null
-V:2.6.0-r0
-A:aarch64
-S:6490
-I:36864
-T:OpenLDAP null backend
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2
-
 C:Q1GTet6agSU6nRR+fPtZKBns9D5zc=
 P:s6-rc-doc
 V:0.5.2.3-r0
@@ -24447,6 +24403,21 @@ c:63732ef8ab13eb789eb6ce768b0eba8d3fd3182c
 D:logrotate
 i:squid=5.2-r0 lang-fr
 
+C:Q1DBMj7zaw+ufWRLx8ai3Jzk5HWsM=
+P:openldap-back-sql
+V:2.6.2-r0
+A:aarch64
+S:58024
+I:167936
+T:OpenLDAP sql backend
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2 so:libodbc.so.2
+
 C:Q1rur902vvxhFylR+8KaWuwjL/T0I=
 P:logrotate
 V:3.18.1-r2
@@ -25088,21 +25059,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
-
-C:Q1wHoHyD+yHt8gdnudO7QVPgsXJ/w=
-P:openldap-lloadd-openrc
-V:2.6.0-r0
-A:aarch64
-S:2532
-I:24576
-T:Standalone LDAP Load Balancer Daemon (OpenRC init scripts)
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-i:openrc openldap-lloadd=2.6.0-r0
 
 C:Q1EvTfMKS722IMrgOh83iLjouM6hs=
 P:bind
@@ -26868,6 +26824,21 @@ t:1627487152
 c:3ce1b1089b5c29187ec88efa8818d0e82565bf87
 i:docs perl-stream-buffered=0.03-r2
 
+C:Q1+Hf9qHQNZY1qNHTT0/DDOCbIgSY=
+P:openldap-back-relay
+V:2.6.2-r0
+A:aarch64
+S:6903
+I:36864
+T:OpenLDAP relay backend
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2
+
 C:Q1OTaNL6OnYOH6oX2Xpmr9sSn2Yw8=
 P:crconf
 V:0_pre2-r1
@@ -27479,21 +27450,6 @@ t:1503920421
 c:03a75153438f6a04fbe36b16930c16bf19b3d9f3
 i:docs lzo=2.10-r2
 
-C:Q1Z3M73Fdnw5zx+dYgtjJk8Lp436k=
-P:openldap-back-passwd
-V:2.6.0-r0
-A:aarch64
-S:6645
-I:36864
-T:OpenLDAP passwd backend
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
-
 C:Q16KKcrRa8H8D5rNoz/ZqLqhLkBcQ=
 P:ghostscript-doc
 V:9.55.0-r0
@@ -27759,21 +27715,6 @@ t:1610959636
 c:9eeb3749e2dbceaca434b6ddf5ea82d0b6cc8d81
 D:so:libc.musl-aarch64.so.1
 i:lua5.3 lua-socket=3.0_rc1_git20160306-r3
-
-C:Q17fUF2qQDWtz1s0PfD5ly6UIxy1s=
-P:openldap-overlay-ppolicy
-V:2.6.0-r0
-A:aarch64
-S:20912
-I:73728
-T:OpenLDAP ppolicy overlay
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2 so:libltdl.so.7
 
 C:Q13+9QWjt/Xf9y5Q6zFvO2wjursf4=
 P:lua-rex-posix
@@ -28787,6 +28728,21 @@ t:1612647047
 c:d152a161bd05246ae63cf39d737ff3e31128c2a8
 i:docs pigz=2.6-r0
 
+C:Q1zQ1FrbttH4tFqvLWTZmMvLkHVm4=
+P:openldap-overlay-accesslog
+V:2.6.2-r0
+A:aarch64
+S:21453
+I:73728
+T:OpenLDAP accesslog overlay
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
+
 C:Q1kO6lC35QnktlfWkY0Huv4yI9P74=
 P:font-winitzki-cyrillic
 V:1.0.3-r0
@@ -29308,6 +29264,21 @@ t:1558970044
 c:634532ebf59b297a8a03e0afbfbde11489fec9e6
 D:so:libc.musl-aarch64.so.1
 p:so:libfl.so.2=2.0.0
+
+C:Q1emxQtrjNSHHvA62XDqT1MmgTE4A=
+P:openldap-overlay-rwm
+V:2.6.2-r0
+A:aarch64
+S:25165
+I:77824
+T:OpenLDAP rwm overlay
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
 
 C:Q1UUd7fPSbPb8ObWf1Hu06qizrNNg=
 P:libsndfile
@@ -30471,6 +30442,21 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
 
+C:Q1G+db+0BiM/ykQdexY3RGCFGmTUM=
+P:openldap-back-meta
+V:2.6.2-r0
+A:aarch64
+S:57279
+I:155648
+T:OpenLDAP meta backend
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
+
 C:Q1fv2c/cQrnQnL0ASjNV76xWdskaI=
 P:py3-more-itertools
 V:8.11.2-r0
@@ -30870,21 +30856,6 @@ t:1644955729
 c:40049605a0df5dae7005f4274efd4b5053e17190
 D:so:libblkid.so.1 so:libc.musl-aarch64.so.1
 p:so:libmount.so.1=1.1.0
-
-C:Q10sEdmQcJv6sdAJKZO3ojQprzbu8=
-P:openldap-overlay-lastbind
-V:2.6.0-r0
-A:aarch64
-S:5291
-I:32768
-T:OpenLDAP lastbind overlay
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2
 
 C:Q1YhUWhsIcOHQiCCXmrKMwKyMrEDw=
 P:samba-pidl
@@ -33605,6 +33576,21 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-gdtextutil=0.86-r2
 
+C:Q1jSZPPpZaveaj9xSArgJmY+Tt7MQ=
+P:openldap-overlay-dynlist
+V:2.6.2-r0
+A:aarch64
+S:17445
+I:57344
+T:OpenLDAP dynlist overlay
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
+
 C:Q1kG3+yftu9ATrZBS/FnZtj64AvEQ=
 P:apr-util-dbd_mysql
 V:1.6.1-r11
@@ -33784,6 +33770,21 @@ o:lua-sql
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1610959646
 c:cc57b1fa27a4ddc19d930ef27a766ce90f999486
+
+C:Q1FwI3l3ad7tIZ2eC5FZSDC8zJhNg=
+P:openldap-back-lload
+V:2.6.2-r0
+A:aarch64
+S:89563
+I:249856
+T:OpenLDAP load balancer backend (module)
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:libevent-2.1.so.7
 
 C:Q1m68zn5XoLlFMfjRqAwnucDPfYjs=
 P:perl-www-robotrules
@@ -34810,37 +34811,6 @@ c:0ae551ee8ee6e95f86420f9aadf11e55cc0d1bc2
 D:/bin/sh so:libc.musl-aarch64.so.1
 p:cmd:mlmmj-bounce=1.3.0-r0 cmd:mlmmj-list=1.3.0-r0 cmd:mlmmj-maintd=1.3.0-r0 cmd:mlmmj-make-ml.sh=1.3.0-r0 cmd:mlmmj-make-ml=1.3.0-r0 cmd:mlmmj-process=1.3.0-r0 cmd:mlmmj-receive=1.3.0-r0 cmd:mlmmj-recieve=1.3.0-r0 cmd:mlmmj-send=1.3.0-r0 cmd:mlmmj-sub=1.3.0-r0 cmd:mlmmj-unsub=1.3.0-r0
 
-C:Q1HBjd9uGFeLmxVRF+dLT9zOjlp6o=
-P:openldap-overlay-remoteauth
-V:2.6.0-r0
-A:aarch64
-S:10015
-I:45056
-T:OpenLDAP remoteauth overlay
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
-
-C:Q1MoDsEF2j+ThalN+9NBINNLVfEzA=
-P:openldap-clients
-V:2.6.0-r0
-A:aarch64
-S:252991
-I:618496
-T:LDAP client utilities
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2 so:libsasl2.so.3 so:libuuid.so.1
-p:cmd:ldapadd=2.6.0-r0 cmd:ldapcompare=2.6.0-r0 cmd:ldapdelete=2.6.0-r0 cmd:ldapexop=2.6.0-r0 cmd:ldapmodify=2.6.0-r0 cmd:ldapmodrdn=2.6.0-r0 cmd:ldappasswd=2.6.0-r0 cmd:ldapsearch=2.6.0-r0 cmd:ldapurl=2.6.0-r0 cmd:ldapvc=2.6.0-r0 cmd:ldapwhoami=2.6.0-r0
-
 C:Q1pLDwIJUxpIfdIvGL5qXbaUAVoDE=
 P:linux-firmware-mwl8k
 V:20211027-r0
@@ -35857,21 +35827,6 @@ t:1635633682
 c:04b37fdd66a8d0611e1df0be439674401536cdb9
 i:docs pcre2=10.39-r0
 
-C:Q1XPFrk9Z54OCLmjQZXIjm6V2/Tto=
-P:openldap-back-mdb
-V:2.6.0-r0
-A:aarch64
-S:109383
-I:249856
-T:OpenLDAP mdb backend
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
-
 C:Q1HfsRzvxIw+pu7N6z59O6Hz9p7vk=
 P:gcr-base
 V:3.40.0-r0
@@ -36193,6 +36148,22 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
 
+C:Q1xZV6S4rTsx41shZq1qpit3SCpyA=
+P:openldap-dev
+V:2.6.2-r0
+A:aarch64
+S:361754
+I:1376256
+T:LDAP Server (development files)
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:cyrus-sasl-dev libevent-dev libsodium-dev openssl1.1-compat-dev util-linux-dev libldap=2.6.2-r0 pkgconfig
+p:pc:lber=2.6.2 pc:ldap=2.6.2
+
 C:Q1tvK25Ohlg6akf830avQcaXuRRRY=
 P:perl-log-any
 V:1.710-r0
@@ -36270,6 +36241,21 @@ t:1637479302
 c:0ec30229cc5d4254dc433b2873cc956fc1f215d9
 D:ncurses-terminfo-base=6.3_p20211120-r0 so:libc.musl-aarch64.so.1
 p:ncurses-widec-libs=6.3_p20211120-r0 so:libformw.so.6=6.3 so:libmenuw.so.6=6.3 so:libncursesw.so.6=6.3 so:libpanelw.so.6=6.3
+
+C:Q1+olTnsAaikvgB3ZiXHe3Pl2NhGs=
+P:openldap-passwd-pbkdf2
+V:2.6.2-r0
+A:aarch64
+S:4714
+I:32768
+T:PBKDF2 OpenLDAP support
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:openldap so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1
 
 C:Q1i5DFnxc5dJ2xzFV74tEMznUYcv4=
 P:lxc-lvm
@@ -37468,20 +37454,20 @@ t:1518805431
 c:8d4313589065fbc86b808ed96434f1c7c5faf8e6
 i:docs libsamplerate=0.1.9-r1
 
-C:Q1mpJYGWdKxwst+dukQmADiOPdlec=
-P:openldap-overlay-otp
-V:2.6.0-r0
+C:Q1jXPEaIVkYhtFZ8axzd1yeuHXneA=
+P:openldap-passwd-argon2
+V:2.6.2-r0
 A:aarch64
-S:9713
-I:49152
-T:OpenLDAP otp overlay
+S:4297
+I:32768
+T:Argon2 OpenLDAP support
 U:https://www.openldap.org/
 L:OLDAP-2.8
 o:openldap
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:liblber.so.2
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:openldap so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libsodium.so.23
 
 C:Q1Llak9nHp1MYSgYQatK91xpH5oXc=
 P:samba-dev
@@ -37940,21 +37926,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1630780508
 c:a3739a07d478bc4f1f6e0c17612a1c83dffa9ecd
 i:docs perl-role-basic=0.13-r2
-
-C:Q1q3pgqMqD2k+AbPw++Uwt52TldKI=
-P:openldap-overlay-syncprov
-V:2.6.0-r0
-A:aarch64
-S:29046
-I:81920
-T:OpenLDAP syncprov overlay
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
 
 C:Q1HWyipS5sjcuSSf+7lKJlnN0PeAc=
 P:rsyslog-mmutf8fix
@@ -39076,6 +39047,21 @@ t:1634321403
 c:87fbbd17b5ae73d934c8872c12f3e7563ce6b483
 D:so:libboost_chrono.so.1.77.0 so:libc.musl-aarch64.so.1 so:libgcc_s.so.1
 p:boost-timer=1.77.0-r1 so:libboost_timer.so.1.77.0=1.77.0
+
+C:Q12340CR21pPnhHN+XaXIJu2AuIYk=
+P:openldap-back-mdb
+V:2.6.2-r0
+A:aarch64
+S:109425
+I:249856
+T:OpenLDAP mdb backend
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
 
 C:Q1Dv9qGCHiF1J21psI0mUTySjY+xM=
 P:perl-lwp-useragent-determined
@@ -40647,21 +40633,6 @@ t:1617646686
 c:fb75cebdbf977845cbb5fbec6a8d76f04c5fb358
 D:python3 cmd:ssh
 p:cmd:pnuke=2.3.4-r1 cmd:prsync=2.3.4-r1 cmd:pscp=2.3.4-r1 cmd:pslurp=2.3.4-r1 cmd:pssh=2.3.4-r1 py3.9:psshlib=2.3.4-r1
-
-C:Q1ecwc0eEQc8haT9l62gCpxnTOvlg=
-P:openldap-overlay-seqmod
-V:2.6.0-r0
-A:aarch64
-S:4327
-I:32768
-T:OpenLDAP seqmod overlay
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:libldap.so.2
 
 C:Q1GnDxclzPVY9/UHlM22uyPbLt6bM=
 P:gettext-static
@@ -42373,6 +42344,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1634364270
 c:670bf5a8cc5bc605eede8ca2fd55b50a5c9f8660
 
+C:Q18JJAvW7+/0ENEDiiDYvSWLo8HTs=
+P:openldap-lloadd-openrc
+V:2.6.2-r0
+A:aarch64
+S:2532
+I:24576
+T:Standalone LDAP Load Balancer Daemon (OpenRC init scripts)
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+i:openrc openldap-lloadd=2.6.2-r0
+
 C:Q1sdtamn79QDzHzr3bKDtUIOvZTTI=
 P:perl-future-doc
 V:0.47-r0
@@ -42545,6 +42531,21 @@ c:07b24a1af666200053ac6be89579ce6a4e579350
 D:so:libc.musl-aarch64.so.1
 p:so:libucontext.so.0=0
 
+C:Q1GvFRTQ2LVgxNKerOqB9/8GuGaIU=
+P:openldap-overlay-otp
+V:2.6.2-r0
+A:aarch64
+S:9702
+I:49152
+T:OpenLDAP otp overlay
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:liblber.so.2
+
 C:Q1azlZrXI+RPhwj4Recb+4DkBS3u0=
 P:perl-ipc-sharelite
 V:0.17-r7
@@ -42589,6 +42590,21 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1627487153
 c:069b3ad3b2f6c88b7b683c4b716d460228110c29
 D:perl
+
+C:Q1FgAjfRemTOu5jp/WdyEHm44pKho=
+P:openldap-overlay-all
+V:2.6.2-r0
+A:aarch64
+S:1648
+I:4096
+T:Virtual package that installs all OpenLDAP overlays
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:openldap-overlay-accesslog openldap-overlay-auditlog openldap-overlay-autoca openldap-overlay-collect openldap-overlay-constraint openldap-overlay-dds openldap-overlay-deref openldap-overlay-dyngroup openldap-overlay-dynlist openldap-overlay-homedir openldap-overlay-lastbind openldap-overlay-memberof openldap-overlay-mqtt openldap-overlay-otp openldap-overlay-ppolicy openldap-overlay-proxycache openldap-overlay-refint openldap-overlay-remoteauth openldap-overlay-retcode openldap-overlay-rwm openldap-overlay-seqmod openldap-overlay-sssvlv openldap-overlay-syncprov openldap-overlay-translucent openldap-overlay-unique openldap-overlay-valsort
 
 C:Q1xz4idkw6w5yZrObWTlcNXHBe+Ek=
 P:perl-sub-exporter-doc
@@ -45078,6 +45094,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1637826229
 c:357f2d860e3c746b71028197854ad88cf046bf4d
 
+C:Q1NV5eZGsOVzxX/EBXqdZb7EhJios=
+P:openldap-overlay-lastbind
+V:2.6.2-r0
+A:aarch64
+S:5126
+I:32768
+T:OpenLDAP lastbind overlay
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2
+
 C:Q1CiOZnnM7bAQhs6l/q0ZCWgnaV1M=
 P:kamailio-rabbitmq
 V:5.5.2-r0
@@ -45662,21 +45693,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1634751154
 c:fbb09a33cac8e4828c7766a494bbb58ce4311eb9
 
-C:Q1LEIICa4byVZ+gwQ6iXojF3wkJfY=
-P:openldap-overlay-constraint
-V:2.6.0-r0
-A:aarch64
-S:10706
-I:45056
-T:OpenLDAP constraint overlay
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
-
 C:Q1Xq7f1SFCOjQYz05g+D4w0HoeodM=
 P:lua-filesize
 V:0.1.1-r2
@@ -46181,6 +46197,21 @@ m:Nathan Angelacos <nangel@alpinelinux.org>
 t:1635896151
 c:64761a2c023a7e2325d5528cccbe1a260d1d0a4d
 D:kamailio so:libc.musl-aarch64.so.1 so:liblua.so.5
+
+C:Q1T3ojrOnr+jE10Wsss5tXDPd1Bu8=
+P:openldap-overlay-memberof
+V:2.6.2-r0
+A:aarch64
+S:13596
+I:53248
+T:OpenLDAP memberof overlay
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2
 
 C:Q1IOI2uzSmmovDqyHKQivviw1KPHE=
 P:libcbor-dev
@@ -47043,6 +47074,21 @@ t:1600716535
 c:cefc1c51cb05858db8570ece9b8d51a638f9a82a
 D:bash kbd so:libc.musl-aarch64.so.1
 p:cmd:on_ac_power=1.4.1-r3 cmd:pm-is-supported=1.4.1-r3 cmd:pm-powersave=1.4.1-r3
+
+C:Q1GFAkbYpqfr/ud2Ixx7jBXGQ9MYI=
+P:openldap-overlay-proxycache
+V:2.6.2-r0
+A:aarch64
+S:35016
+I:98304
+T:OpenLDAP proxycache overlay
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
 
 C:Q1mk/dhP5hfu7Vp//J2Cysw9t2WSw=
 P:libsodium-dev
@@ -48338,6 +48384,21 @@ c:8d914822d65c66e2c9b22d120568b7f58bb5160e
 D:lvm2-libs=2.02.187-r2 so:libc.musl-aarch64.so.1 so:libdevmapper.so.1.02
 p:cmd:dmeventd.static=2.02.187-r2 cmd:dmsetup.static=2.02.187-r2 cmd:dmsetup=2.02.187-r2 cmd:dmstats=2.02.187-r2
 
+C:Q1CFolKLTlmDed1pi2P43psSgqnkw=
+P:openldap-overlay-dyngroup
+V:2.6.2-r0
+A:aarch64
+S:4709
+I:32768
+T:OpenLDAP dyngroup overlay
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2
+
 C:Q1aT6wox0ODyE8eSF47z3aLXZvfpA=
 P:gnu-efi-dev
 V:3.0.14-r0
@@ -49524,21 +49585,6 @@ t:1632679830
 c:a90f86899cf346e458a33af5d1068dfd888854cf
 D:s6=2.11.0.0-r0
 
-C:Q1owV5cTqWeI9mELUC1PkcO6+lKAA=
-P:openldap-back-lload
-V:2.6.0-r0
-A:aarch64
-S:89552
-I:249856
-T:OpenLDAP load balancer backend (module)
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:libevent-2.1.so.7
-
 C:Q1BR+0qITXeGJ5R+PmSZsLWfBhcXs=
 P:dconf-bash-completion
 V:0.40.0-r0
@@ -49767,21 +49813,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1637434529
 c:3214a6723aa1b67c0dc7ee019eebf116e955cf75
 i:docs libjpeg-turbo=2.1.2-r0
-
-C:Q1YVu6gPy+GYxJvi0CUyZ9XzVR6BQ=
-P:openldap-back-ldap
-V:2.6.0-r0
-A:aarch64
-S:57866
-I:159744
-T:OpenLDAP ldap backend
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
 
 C:Q1MtpdZuk6WmpDy7diwXrcj5WBgf4=
 P:zfs-dev
@@ -51184,21 +51215,6 @@ c:9e9cf26ccf692ea41d52e1ff47b57387eb6200c7
 D:freeradius=3.0.25-r1 so:libc.musl-aarch64.so.1
 p:so:libfreeradius-dhcp.so=0 so:proto_dhcp.so=0 so:rlm_dhcp.so=0
 
-C:Q1SLn8ArrzdEFUa2ovKmvoUkikeG8=
-P:openldap-overlay-sssvlv
-V:2.6.0-r0
-A:aarch64
-S:11577
-I:45056
-T:OpenLDAP sssvlv overlay
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
-
 C:Q1iuOKLc5GQDlYxEwfdHVV8EXnRtU=
 P:acpica
 V:20210930-r0
@@ -51365,21 +51381,6 @@ o:scstadmin
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 i:docs scstadmin=2.2.0-r2
-
-C:Q1xviMDwvCydLyN1zfGJGJ/Mm4YrQ=
-P:openldap-overlay-unique
-V:2.6.0-r0
-A:aarch64
-S:12366
-I:49152
-T:OpenLDAP unique overlay
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
 
 C:Q1l09n4M4CsvFJb3ZFUXDYZJR6fMw=
 P:perl-mime-tools-doc
@@ -51829,21 +51830,6 @@ o:icu
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1636227276
 c:03070d3e057a629c2325069cfe6966476aa9550e
-
-C:Q1vsLNqL9OxjWQxXel+SOaZILvrFw=
-P:openldap-back-sock
-V:2.6.0-r0
-A:aarch64
-S:10884
-I:49152
-T:OpenLDAP sock backend
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
 
 C:Q1IM7Ym6Oso2yZsnBlAAwKBbMvRis=
 P:arpwatch
@@ -52387,22 +52373,6 @@ c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
 p:cmd:scandeps.pl=1.31-r0
 
-C:Q1PtCbnMt15fdclhPXEbYtgxzVHKo=
-P:openldap
-V:2.6.0-r0
-A:aarch64
-S:608777
-I:1826816
-T:LDAP Server
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:/bin/sh so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2 so:libltdl.so.7 so:libsasl2.so.3 so:libuuid.so.1
-p:openldap-back-monitor=2.6.0-r0 cmd:slapacl=2.6.0-r0 cmd:slapadd=2.6.0-r0 cmd:slapauth=2.6.0-r0 cmd:slapcat=2.6.0-r0 cmd:slapd=2.6.0-r0 cmd:slapdn=2.6.0-r0 cmd:slapindex=2.6.0-r0 cmd:slapmodify=2.6.0-r0 cmd:slappasswd=2.6.0-r0 cmd:slapschema=2.6.0-r0 cmd:slaptest=2.6.0-r0
-
 C:Q17+IcSlnShaYGAuoKe20XhMIyPZM=
 P:sipp
 V:3.6.0-r2
@@ -52884,6 +52854,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1617646679
 c:cd2d9fe07f299ce733b756d658c34ba089ddbbfd
 i:docs libxcb=1.14-r2
+
+C:Q1CbtBWrOFsfzLjypU+tdwUm5RBqo=
+P:openldap-back-ldap
+V:2.6.2-r0
+A:aarch64
+S:57874
+I:159744
+T:OpenLDAP ldap backend
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
 
 C:Q1y2N0Wk/GJ3vW4TU1ttt5YP+jQKE=
 P:syslog-ng-openrc
@@ -54344,21 +54329,6 @@ c:ef60d97d7a5ad066a792869d26ff3179b2961848
 D:so:libc.musl-aarch64.so.1
 p:cmd:ar86=0.16.21-r1 cmd:as86=0.16.21-r1 cmd:bcc=0.16.21-r1 cmd:ld86=0.16.21-r1 cmd:nm86=0.16.21-r1 cmd:objdump86=0.16.21-r1 cmd:size86=0.16.21-r1
 
-C:Q13fRS9HLwD5vhAOtnBb9AdXt13Ik=
-P:openldap-openrc
-V:2.6.0-r0
-A:aarch64
-S:2349
-I:24576
-T:LDAP Server (OpenRC init scripts)
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-i:openrc openldap=2.6.0-r0
-
 C:Q1HpYLMwqZvIPEUdu0feowhkbqZW8=
 P:cksfv-doc
 V:1.3.15-r1
@@ -55526,21 +55496,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl perl-http-message perl-http-date
 
-C:Q13fCAAQbZGaUrc+FpsZ45VIlXtNM=
-P:openldap-overlay-collect
-V:2.6.0-r0
-A:aarch64
-S:5902
-I:32768
-T:OpenLDAP collect overlay
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2
-
 C:Q1PhuMwIBfMivBlAHT9gDWT5MnxnU=
 P:cdparanoia
 V:10.2-r9
@@ -56098,6 +56053,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1648471470
 c:78ad2de10e4e93ec8be69332ee1195058cb2c3cf
 D:perl gmp-dev elfutils-dev bash mpc1-dev mpfr-dev so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1
+
+C:Q1hC8Z1VE+A7Spw6oCKw9YPQD/fgA=
+P:openldap-overlay-deref
+V:2.6.2-r0
+A:aarch64
+S:6614
+I:36864
+T:OpenLDAP deref overlay
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2
 
 C:Q1dedUBuZtsATWRU1/QQQlm9PsydM=
 P:libxcb-dev
@@ -57430,21 +57400,6 @@ c:a4539939bedf88dff8e4db431125893d7e845421
 D:samba-server=4.15.5-r0 samba-client=4.15.5-r0 samba-common-tools=4.15.5-r0 so:libMESSAGING-SEND-samba4.so so:libMESSAGING-samba4.so so:libasn1-samba4.so.8 so:libasn1util-samba4.so so:libauthkrb5-samba4.so so:libc.musl-aarch64.so.1 so:libcli-cldap-samba4.so so:libcli-ldap-common-samba4.so so:libcli-ldap-samba4.so so:libcli-nbt-samba4.so so:libcliauth-samba4.so so:libclidns-samba4.so so:libcom_err-samba4.so.0 so:libcommon-auth-samba4.so so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libdcerpc-samba-samba4.so so:libdcerpc-samba4.so so:libdcerpc-server-core.so.0 so:libdcerpc.so.0 so:libdsdb-garbage-collect-tombstones-samba4.so so:libevents-samba4.so so:libflag-mapping-samba4.so so:libgenrand-samba4.so so:libgensec-samba4.so so:libgnutls.so.30 so:libhcrypto-samba4.so.5 so:libhx509-samba4.so.5 so:libkrb5-samba4.so.26 so:libkrb5samba-samba4.so so:libldb.so.2 so:libldbsamba-samba4.so so:libmessages-dgm-samba4.so so:libndr-krb5pac.so.0 so:libndr-nbt.so.0 so:libndr-samba-samba4.so so:libndr-samba4.so so:libndr-standard.so.0 so:libndr.so.2 so:libnetif-samba4.so so:libnpa-tstream-samba4.so so:libpopt.so.0 so:libreplace-samba4.so so:libroken-samba4.so.19 so:libsamba-credentials.so.1 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-modules-samba4.so so:libsamba-net.cpython-39-aarch64-linux-musl-samba4.so so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamdb-common-samba4.so so:libsamdb.so.0 so:libsmb-transport-samba4.so so:libsmbclient-raw-samba4.so so:libsocket-blocking-samba4.so so:libtalloc.so.2 so:libtdb.so.1 so:libtevent-util.so.0 so:libtevent.so.0 so:libtime-basic-samba4.so so:libwbclient.so.0
 p:so:libHDB-SAMBA4-samba4.so=0 so:libLIBWBCLIENT-OLD-samba4.so=0 so:libauth-unix-token-samba4.so=0 so:libauth4-samba4.so=0 so:libcluster-samba4.so=0 so:libdb-glue-samba4.so=0 so:libdcerpc-samr.so.0=0.0.1 so:libdcerpc-server.so.0=0.0.1 so:libdnsserver-common-samba4.so=0 so:libdsdb-module-samba4.so=0 so:libhdb-samba4.so.11=11.0.2 so:libkdc-samba4.so.2=2.0.0 so:libpac-samba4.so=0 so:libposix-eadb-samba4.so=0 so:libprocess-model-samba4.so=0 so:libsamba-policy.cpython-39-aarch64-linux-musl.so.0=0.0.1 so:libscavenge-dns-records-samba4.so=0 so:libservice-samba4.so=0 so:libshares-samba4.so=0
 
-C:Q1NwIH/P+i0nivYeZ++AVg0/5ifIw=
-P:openldap-overlay-accesslog
-V:2.6.0-r0
-A:aarch64
-S:21435
-I:73728
-T:OpenLDAP accesslog overlay
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
-
 C:Q1uVJQHzG4MXBPgdFxJe6QvZd0DXQ=
 P:openvpn
 V:2.5.6-r0
@@ -57629,22 +57584,6 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1635896151
 c:3533ec1c9aabcec1f245d0e14444fc79f40a57d9
 i:docs dhcp=4.4.2_p1-r1
-
-C:Q1qb01ijlosVEN3Og50LymaB7iuXQ=
-P:libldap
-V:2.6.0-r0
-A:aarch64
-S:167338
-I:421888
-T:OpenLDAP libraries
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:libsasl2.so.3 so:libssl.so.1.1
-p:so:liblber.so.2=2.0.200 so:libldap.so.2=2.0.200
 
 C:Q1HLwcP876WoLz9LgN0FEYA8j6qNE=
 P:b43-fwcutter
@@ -58964,21 +58903,6 @@ t:1606097840
 c:e7ff9936274a26068c1ff0dcd03e814ac3594ae4
 i:docs ciwiki=2.0.5-r2
 
-C:Q1cKGLw+F1ATkvz2on97crqMIzBTM=
-P:openldap-overlay-valsort
-V:2.6.0-r0
-A:aarch64
-S:7971
-I:40960
-T:OpenLDAP valsort overlay
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2
-
 C:Q1YYWTsIffe4KI5YUIc7em8DTbVqA=
 P:zsh-calendar
 V:5.8.1-r0
@@ -59178,21 +59102,6 @@ t:1632938106
 c:b3777b14c2ab9d100f91c0573bdd8e3481e91588
 i:docs memcached=1.6.12-r0
 
-C:Q12+htCXMTLB/CUMVxjMZxRU4IzU8=
-P:openldap-overlay-deref
-V:2.6.0-r0
-A:aarch64
-S:6624
-I:36864
-T:OpenLDAP deref overlay
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2
-
 C:Q1rpIhuOf8h2Ea9HvqwDT6ZGZ+WEE=
 P:perl-test-warnings
 V:0.031-r0
@@ -59271,19 +59180,19 @@ k:900
 D:ethtool
 i:ifupdown-ng ethtool
 
-C:Q1UcexEz5mlkzLKnkVSbIFdADFnZY=
-P:openldap-overlay-refint
-V:2.6.0-r0
+C:Q1ITgkxH2lS6B11ET1ep/Dc81qExo=
+P:openldap-back-asyncmeta
+V:2.6.2-r0
 A:aarch64
-S:9265
-I:40960
-T:OpenLDAP refint overlay
+S:57716
+I:163840
+T:OpenLDAP asyncmeta backend
 U:https://www.openldap.org/
 L:OLDAP-2.8
 o:openldap
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
 D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
 
 C:Q1wk0FydFVboZyNGDzo0m6VJwmUA8=
@@ -59702,6 +59611,21 @@ m:Timo Teräs <timo.teras@iki.fi>
 t:1601073939
 c:f440be3583532d0d0102703e9e60ea9c5d1bdbc5
 D:linux-headers raspberrypi-static raspberrypi-libs
+
+C:Q1VIqUth9UcLtZT8JfjdbmuW24xCE=
+P:openldap-overlay-auditlog
+V:2.6.2-r0
+A:aarch64
+S:4954
+I:32768
+T:OpenLDAP auditlog overlay
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
 
 C:Q19c/quyXuJ3nMConQGErMSgsUB34=
 P:pciutils-libs
@@ -60478,21 +60402,6 @@ t:1632605485
 c:0c8cbbf48903eb7700845d71b88982d0d26422f5
 i:openrc spamassassin=3.4.6-r3
 
-C:Q1bprfOGR/SOq0d5rrDNFq4C4BgvE=
-P:openldap-overlay-translucent
-V:2.6.0-r0
-A:aarch64
-S:12092
-I:49152
-T:OpenLDAP translucent overlay
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
-
 C:Q1X8LmRtSAcRIO0KKEuhMNBDF3sgE=
 P:chrony-doc
 V:4.1-r0
@@ -60690,21 +60599,6 @@ c:357f2d860e3c746b71028197854ad88cf046bf4d
 D:mesa=21.2.6-r0 so:libX11-xcb.so.1 so:libX11.so.6 so:libXext.so.6 so:libXfixes.so.3 so:libXxf86vm.so.1 so:libc.musl-aarch64.so.1 so:libdrm.so.2 so:libexpat.so.1 so:libglapi.so.0 so:libxcb-dri2.so.0 so:libxcb-dri3.so.0 so:libxcb-glx.so.0 so:libxcb-present.so.0 so:libxcb-shm.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb.so.1 so:libxshmfence.so.1
 p:so:libGL.so.1=1.2.0
 
-C:Q1JnfFE8VBuRK3H2NwE6WCjyIBdJ4=
-P:openldap-passwd-argon2
-V:2.6.0-r0
-A:aarch64
-S:4307
-I:32768
-T:Argon2 OpenLDAP support
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:openldap so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libsodium.so.23
-
 C:Q12QLxBpINHII0igaW/crBxzKp0Dk=
 P:bluez-doc
 V:5.64-r0
@@ -60809,21 +60703,6 @@ m:Drew DeVault <sir@cmpwn.com>
 t:1632757027
 c:0042b9a366bb1139115d18bfdb29d995038798e6
 i:docs libbsd=0.11.3-r1
-
-C:Q1gxWHIrZ7l/rmOc21AuDqg2bIq6Q=
-P:openldap-back-relay
-V:2.6.0-r0
-A:aarch64
-S:6910
-I:36864
-T:OpenLDAP relay backend
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2
 
 C:Q1BQhvszlnY2mxh3nWoB6d/oVgroE=
 P:perl-file-slurp-tiny-doc
@@ -61715,21 +61594,20 @@ t:1637481630
 c:d69dc1a17026ff1844636db10fa77c7b546ac45a
 i:openrc nftables=1.0.1-r0
 
-C:Q1xYRERWI7TaZcsABre2EcLcQAh08=
-P:openldap-overlay-mqtt
-V:2.6.0-r0
+C:Q1EqvyG47IdZeYKmKK8fZoocQQ8Vw=
+P:openldap-back-dnssrv
+V:2.6.2-r0
 A:aarch64
-S:7266
+S:6786
 I:36864
-T:OpenLDAP mqtt overlay
+T:OpenLDAP dnssrv backend
 U:https://www.openldap.org/
 L:OLDAP-2.8
 o:openldap
 m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libmosquitto.so.1
-p:openldap-mqtt=2.6.0-r0
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
 
 C:Q1Zw1vyayFWsGK36k6tSautWRLW0o=
 P:u-boot
@@ -64598,6 +64476,21 @@ c:d26b9b0b9da70da63bcb53f68ea1650f44760d1f
 D:pkgconfig speexdsp=1.2.0-r0
 p:pc:speexdsp=1.2.0
 
+C:Q1R5GgO3sS7G7PSO57PGy54YxHD2A=
+P:openldap-overlay-remoteauth
+V:2.6.2-r0
+A:aarch64
+S:10003
+I:45056
+T:OpenLDAP remoteauth overlay
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
+
 C:Q1mt+i74eSvUOSGTwOVqc6inK70rM=
 P:perl-scope-guard-doc
 V:0.21-r2
@@ -64958,6 +64851,21 @@ t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.3-mosquitto
 i:lua5.3 lua-mqtt-publish=0.3-r2
+
+C:Q1JtcWj0KYv42/DD5U+OcDYyjN8I4=
+P:openldap-overlay-translucent
+V:2.6.2-r0
+A:aarch64
+S:12341
+I:49152
+T:OpenLDAP translucent overlay
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
 
 C:Q1GiFcby8cMNr3Bg1n++KzhVeo1fU=
 P:apr-util-dev
@@ -65482,21 +65390,6 @@ t:1648132049
 c:7cbcdee99932e88c06f67e361c6c30c04e85ef0f
 D:iproute2 so:libc.musl-aarch64.so.1 so:libpam.so.0
 
-C:Q1CfBb4ZJ7ZqJnbUGZmMhdWQ2ZTaw=
-P:openldap-overlay-homedir
-V:2.6.0-r0
-A:aarch64
-S:16054
-I:57344
-T:OpenLDAP homedir overlay
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
-
 C:Q10CDqWH8/RHvSbQKH0Y1a1OnL86I=
 P:ldns-dev
 V:1.7.2_git20210911-r1
@@ -65709,6 +65602,22 @@ m:Noel Kuntze <noel.kuntze@thermi.consulting>
 t:1632746956
 c:324b85f7b4c6e84ff1a8413d444dc1a65e335c4e
 i:openrc amavisd-milter=1.7.1-r2
+
+C:Q1kXST5Gu34BGH1ykaXni7WDx9cAc=
+P:openldap-lloadd
+V:2.6.2-r0
+A:aarch64
+S:91177
+I:258048
+T:Standalone LDAP Load Balancer Daemon
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:/bin/sh so:libc.musl-aarch64.so.1 so:libevent-2.1.so.7 so:liblber.so.2 so:libldap.so.2 so:libsasl2.so.3
+p:cmd:lloadd=2.6.2-r0
 
 C:Q1goxBKseiDF/fdxZAX0UzXtTX08E=
 P:perl-devel-symdump-doc
@@ -66673,21 +66582,6 @@ c:4af4232dca02af61af372aa34f65e9dcfd4e95aa
 D:so:libc.musl-aarch64.so.1
 p:so:libyajl.so.2=2.1.0
 
-C:Q1UWWcWmQMivwA0hJIHpk0hxDg+yM=
-P:openldap-overlay-retcode
-V:2.6.0-r0
-A:aarch64
-S:11658
-I:49152
-T:OpenLDAP retcode overlay
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
-
 C:Q1Qso3YCRdisJ+10eRmyHwM3ioo8c=
 P:iperf3-doc
 V:3.10.1-r0
@@ -66897,6 +66791,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1582748662
 c:da5957b8db9b560948d8549f3d0919ad57c9634a
 i:docs b43-fwcutter=019-r1
+
+C:Q1Afkym6+4KGL5zYfW3dwuDWSyc40=
+P:openldap-overlay-collect
+V:2.6.2-r0
+A:aarch64
+S:5888
+I:32768
+T:OpenLDAP collect overlay
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2
 
 C:Q10/Q0m7W7QdyLHRkzbdUZTNw8PrE=
 P:uwsgi-router_uwsgi
@@ -67415,6 +67324,21 @@ c:cd2b1ad6c5517c27a7a6c1367ff3918a99b276f0
 D:py3-dbus pc:dbus-1>=1.0 pkgconfig
 p:pc:dbus-python=1.2.18
 
+C:Q1rrmXTTv+1krBWsWgE/wOJCLSQr0=
+P:openldap-overlay-seqmod
+V:2.6.2-r0
+A:aarch64
+S:4318
+I:32768
+T:OpenLDAP seqmod overlay
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:libldap.so.2
+
 C:Q1T+MwlbQVFOpunwH23EsHQh+cSso=
 P:isl-dev
 V:0.22-r0
@@ -67692,21 +67616,6 @@ t:1632999621
 c:f70eacd3f37a22ed1bc6c135467c54db3efdd315
 D:gc=8.0.6-r0 libgc++=8.0.6-r0 pkgconfig
 p:pc:bdw-gc=8.0.6
-
-C:Q1WfFmwTVJI9F7+q5ulPH7rUopK2Y=
-P:openldap-overlay-autoca
-V:2.6.0-r0
-A:aarch64
-S:11115
-I:49152
-T:OpenLDAP autoca overlay
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:libcrypto.so.1.1 so:liblber.so.2 so:libldap.so.2
 
 C:Q1uivR0OnzGW55cx9dwwethELQVOg=
 P:py3-iniconfig
@@ -68036,21 +67945,6 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.4 lua5.4-stdlib-normalize so:libc.musl-aarch64.so.1 so:libyaml-0.so.2
 i:lua-lyaml=6.2.7-r1 lua5.4
 
-C:Q1QpOYsD2G6rr+YSKLtNVhG2D/Oos=
-P:openldap-back-asyncmeta
-V:2.6.0-r0
-A:aarch64
-S:57634
-I:163840
-T:OpenLDAP asyncmeta backend
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
-
 C:Q16Ks8i01xvgZy+AlD1SaAcD69gTw=
 P:portaudio-dev
 V:19.7.0-r0
@@ -68354,6 +68248,21 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1606837030
 c:5c5c7caa186678936af436412f4b59ded884c52e
 i:open-lldp=0.9.46-r5 bash-completion
+
+C:Q1+ftu6/6fzmK6WNViCmf94Sn/5bQ=
+P:openldap-overlay-valsort
+V:2.6.2-r0
+A:aarch64
+S:7971
+I:40960
+T:OpenLDAP valsort overlay
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2
 
 C:Q1no8lyr7vl4YOJN3mTkdOq47daHE=
 P:rpcgen
@@ -70108,6 +70017,21 @@ t:1627530726
 c:e5b0ec42b55012fbe2c27c5bed2734e5b6a46df0
 i:docs tcl=8.6.11-r0
 
+C:Q1ZX2bzbjmcWiTr3SoT4KQJzL+TVw=
+P:openldap-overlay-ppolicy
+V:2.6.2-r0
+A:aarch64
+S:20821
+I:69632
+T:OpenLDAP ppolicy overlay
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2 so:libltdl.so.7
+
 C:Q1hmm2ak3su+Y9YpjTmZrh+gJmnEQ=
 P:perl-file-tail-doc
 V:1.3-r3
@@ -70685,6 +70609,21 @@ c:eddc2a9cf7d6f0a8adb1978c06bd946f53e3e235
 D:so:libLLVM-12.so so:libc.musl-aarch64.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libz.so.1
 p:llvm=12.0.1-r0 cmd:bugpoint=12.0.1-r0 cmd:dsymutil=12.0.1-r0 cmd:llc=12.0.1-r0 cmd:lli=12.0.1-r0 cmd:llvm-addr2line=12.0.1-r0 cmd:llvm-ar=12.0.1-r0 cmd:llvm-as=12.0.1-r0 cmd:llvm-bcanalyzer=12.0.1-r0 cmd:llvm-bitcode-strip=12.0.1-r0 cmd:llvm-c-test=12.0.1-r0 cmd:llvm-cat=12.0.1-r0 cmd:llvm-cfi-verify=12.0.1-r0 cmd:llvm-cov=12.0.1-r0 cmd:llvm-cvtres=12.0.1-r0 cmd:llvm-cxxdump=12.0.1-r0 cmd:llvm-cxxfilt=12.0.1-r0 cmd:llvm-cxxmap=12.0.1-r0 cmd:llvm-diff=12.0.1-r0 cmd:llvm-dis=12.0.1-r0 cmd:llvm-dlltool=12.0.1-r0 cmd:llvm-dwarfdump=12.0.1-r0 cmd:llvm-dwp=12.0.1-r0 cmd:llvm-elfabi=12.0.1-r0 cmd:llvm-exegesis=12.0.1-r0 cmd:llvm-extract=12.0.1-r0 cmd:llvm-gsymutil=12.0.1-r0 cmd:llvm-ifs=12.0.1-r0 cmd:llvm-install-name-tool=12.0.1-r0 cmd:llvm-jitlink=12.0.1-r0 cmd:llvm-lib=12.0.1-r0 cmd:llvm-libtool-darwin=12.0.1-r0 cmd:llvm-link=12.0.1-r0 cmd:llvm-lipo=12.0.1-r0 cmd:llvm-lto2=12.0.1-r0 cmd:llvm-lto=12.0.1-r0 cmd:llvm-mc=12.0.1-r0 cmd:llvm-mca=12.0.1-r0 cmd:llvm-ml=12.0.1-r0 cmd:llvm-modextract=12.0.1-r0 cmd:llvm-mt=12.0.1-r0 cmd:llvm-nm=12.0.1-r0 cmd:llvm-objcopy=12.0.1-r0 cmd:llvm-objdump=12.0.1-r0 cmd:llvm-opt-report=12.0.1-r0 cmd:llvm-pdbutil=12.0.1-r0 cmd:llvm-profdata=12.0.1-r0 cmd:llvm-profgen=12.0.1-r0 cmd:llvm-ranlib=12.0.1-r0 cmd:llvm-rc=12.0.1-r0 cmd:llvm-readelf=12.0.1-r0 cmd:llvm-readobj=12.0.1-r0 cmd:llvm-reduce=12.0.1-r0 cmd:llvm-rtdyld=12.0.1-r0 cmd:llvm-size=12.0.1-r0 cmd:llvm-split=12.0.1-r0 cmd:llvm-stress=12.0.1-r0 cmd:llvm-strings=12.0.1-r0 cmd:llvm-strip=12.0.1-r0 cmd:llvm-symbolizer=12.0.1-r0 cmd:llvm-tblgen=12.0.1-r0 cmd:llvm-undname=12.0.1-r0 cmd:llvm-xray=12.0.1-r0 cmd:opt=12.0.1-r0 cmd:sancov=12.0.1-r0 cmd:sanstats=12.0.1-r0 cmd:split-file=12.0.1-r0 cmd:verify-uselistorder=12.0.1-r0
 
+C:Q1LBeSImTA80mzKB+oxSi0Nmbek5E=
+P:openldap-back-sock
+V:2.6.2-r0
+A:aarch64
+S:10944
+I:49152
+T:OpenLDAP sock backend
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
+
 C:Q1HqCSK5PBj3dGMEskCVzpLTUO8BE=
 P:perl-devel-stacktrace-ashtml-doc
 V:0.15-r2
@@ -70820,21 +70759,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 i:docs dansguardian=2.12.0.3-r4
-
-C:Q1l+/zPFeSJftjwjDc0Rdc0o/C9kU=
-P:openldap-back-meta
-V:2.6.0-r0
-A:aarch64
-S:57219
-I:155648
-T:OpenLDAP meta backend
-U:https://www.openldap.org/
-L:OLDAP-2.8
-o:openldap
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1635896151
-c:0b3a50c008537261a5102ffabfaf6301284b7272
-D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
 
 C:Q12LOQkeuA4QH9kZTBVZFXUAihYrw=
 P:binutils-doc
@@ -71002,6 +70926,21 @@ t:1627299054
 c:543a89348e0674e1e29a9d46380c11de205cd0f2
 D:libusb=1.0.24-r3 pkgconfig
 p:pc:libusb-1.0=1.0.24
+
+C:Q1WmfTWPdx488ShJAcEamnubNZWQA=
+P:openldap-doc
+V:2.6.2-r0
+A:aarch64
+S:362904
+I:655360
+T:LDAP Server (documentation)
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+i:docs openldap=2.6.2-r0
 
 C:Q1/z/NXv/DIBfLUULU8TlJgtwsy+c=
 P:musl-obstack
@@ -71902,6 +71841,22 @@ m:Timo Teras <timo.teras@iki.fi>
 t:1634486665
 c:48367644027d98b2a0c7a6f6f5577a30807713d4
 
+C:Q1VF7+uxk9CxPyXtOvuXMheLIn1gQ=
+P:openldap-overlay-mqtt
+V:2.6.2-r0
+A:aarch64
+S:7252
+I:36864
+T:OpenLDAP mqtt overlay
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libmosquitto.so.1
+p:openldap-mqtt=2.6.2-r0
+
 C:Q19hiKbP8C/qNBk09WGWJGCu4SzyA=
 P:perl-devel-symdump
 V:2.18-r2
@@ -72090,6 +72045,21 @@ t:1634321403
 c:aedfe60e91af878f60614b2f325abf7e464bb427
 D:zlib-dev boost-dev clucene-contribs=2.3.3.4-r10 clucene=2.3.3.4-r10 pkgconfig
 p:pc:libclucene-core=2.3.3.4
+
+C:Q1VNDHLQjiCVw6kqrkIvvFSX+ktj4=
+P:openldap-overlay-constraint
+V:2.6.2-r0
+A:aarch64
+S:10708
+I:45056
+T:OpenLDAP constraint overlay
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
 
 C:Q1vwD4vHzRPvQsc5GU5uLCkAQiE5E=
 P:compiler-rt-static
@@ -72412,6 +72382,21 @@ t:1643782577
 c:a4539939bedf88dff8e4db431125893d7e845421
 D:samba-common=4.15.5-r0 so:libCHARSET3-samba4.so so:libauth-samba4.so so:libc.musl-aarch64.so.1 so:libcli-cldap-samba4.so so:libcli-nbt-samba4.so so:libcli-smb-common-samba4.so so:libcliauth-samba4.so so:libcmdline-contexts-samba4.so so:libcmdline-samba4.so so:libdbus-1.so.3 so:libdbwrap-samba4.so so:libdcerpc-binding.so.0 so:libdcerpc-server-core.so.0 so:libgenrand-samba4.so so:libgnutls.so.30 so:libgse-samba4.so so:libiov-buf-samba4.so so:liblibsmb-samba4.so so:libmessages-dgm-samba4.so so:libmsghdr-samba4.so so:libndr-nbt.so.0 so:libndr-samba-samba4.so so:libndr.so.2 so:libpopt.so.0 so:libreplace-samba4.so so:libsamba-cluster-support-samba4.so so:libsamba-credentials.so.1 so:libsamba-debug-samba4.so so:libsamba-errors.so.1 so:libsamba-hostconfig.so.0 so:libsamba-passdb.so.0 so:libsamba-security-samba4.so so:libsamba-sockets-samba4.so so:libsamba-util.so.0 so:libsamba3-util-samba4.so so:libsecrets3-samba4.so so:libserver-id-db-samba4.so so:libsmbconf.so.0 so:libsmbd-base-samba4.so so:libsmbd-shim-samba4.so so:libsocket-blocking-samba4.so so:libsys-rw-samba4.so so:libtalloc.so.2 so:libtdb.so.1 so:libtevent-util.so.0 so:libtevent.so.0 so:liburing.so.2 so:libutil-reg-samba4.so so:libutil-tdb-samba4.so
 p:so:libxattr-tdb-samba4.so=0 cmd:eventlogadm=4.15.5-r0 cmd:nmbd=4.15.5-r0 cmd:smbd=4.15.5-r0 cmd:smbstatus=4.15.5-r0
+
+C:Q1KFNfI+r5CaJiK71rIXadvb+FfP8=
+P:openldap-back-null
+V:2.6.2-r0
+A:aarch64
+S:6486
+I:36864
+T:OpenLDAP null backend
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2
 
 C:Q1SWMx2o+stVq5MU6zYaRV4k6kwkQ=
 P:s6-openrc
@@ -73468,6 +73453,21 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1633937276
 c:0991bc51a1c289accde3d653bbbab93fcf28d48d
 D:so:libc.musl-aarch64.so.1
+
+C:Q1hYmyzaHaXve42XGeaKYe3KfKrSg=
+P:openldap-overlay-dds
+V:2.6.2-r0
+A:aarch64
+S:15055
+I:57344
+T:OpenLDAP dds overlay
+U:https://www.openldap.org/
+L:OLDAP-2.8
+o:openldap
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1654719271
+c:714619e1d8333f78def668dc12ab3ba9fe246d51
+D:so:libc.musl-aarch64.so.1 so:liblber.so.2 so:libldap.so.2
 
 C:Q1nr+4We6IVxHPZyHZF3bYq1w3UIU=
 P:lynx-doc
