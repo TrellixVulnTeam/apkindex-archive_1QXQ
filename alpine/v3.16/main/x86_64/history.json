@@ -3464,7 +3464,8 @@
     "mosquitto-openrc": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.14-r0": 1637188206
+        "2.0.14-r0": 1637188206,
+        "2.0.14-r1": 1658823808
       }
     },
     "lua5.1-sql-postgres": {
@@ -10524,19 +10525,22 @@
         "6.2.7-r0": 1651176072,
         "7.0.0-r0": 1652099668,
         "7.0.2-r0": 1655403479,
-        "7.0.4-r0": 1658201860
+        "7.0.4-r0": 1658201860,
+        "7.0.4-r1": 1658824246
       },
       "dependencies": [
         "/bin/sh",
-        "so:libc.musl-x86_64.so.1"
+        "so:libc.musl-x86_64.so.1",
+        "so:libcrypto.so.1.1",
+        "so:libssl.so.1.1"
       ],
       "provides": [
-        "cmd:redis-benchmark=7.0.4-r0",
-        "cmd:redis-check-aof=7.0.4-r0",
-        "cmd:redis-check-rdb=7.0.4-r0",
-        "cmd:redis-cli=7.0.4-r0",
-        "cmd:redis-sentinel=7.0.4-r0",
-        "cmd:redis-server=7.0.4-r0"
+        "cmd:redis-benchmark=7.0.4-r1",
+        "cmd:redis-check-aof=7.0.4-r1",
+        "cmd:redis-check-rdb=7.0.4-r1",
+        "cmd:redis-cli=7.0.4-r1",
+        "cmd:redis-sentinel=7.0.4-r1",
+        "cmd:redis-server=7.0.4-r1"
       ]
     },
     "fuse": {
@@ -11424,15 +11428,17 @@
     "mosquitto-clients": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.14-r0": 1637188206
+        "2.0.14-r0": 1637188206,
+        "2.0.14-r1": 1658823808
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
+        "so:libcjson.so.1",
         "so:libmosquitto.so.1"
       ],
       "provides": [
-        "cmd:mosquitto_pub=2.0.14-r0",
-        "cmd:mosquitto_sub=2.0.14-r0"
+        "cmd:mosquitto_pub=2.0.14-r1",
+        "cmd:mosquitto_sub=2.0.14-r1"
       ]
     },
     "freeswitch-perlesl": {
@@ -19002,7 +19008,8 @@
     "mosquitto-libs++": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.14-r0": 1637188206
+        "2.0.14-r0": 1637188206,
+        "2.0.14-r1": 1658823808
       },
       "dependencies": [
         "so:libmosquitto.so.1",
@@ -22524,7 +22531,8 @@
         "6.2.7-r0": 1651176072,
         "7.0.0-r0": 1652099668,
         "7.0.2-r0": 1655403479,
-        "7.0.4-r0": 1658201860
+        "7.0.4-r0": 1658201860,
+        "7.0.4-r1": 1658824246
       }
     },
     "lua5.4-dbg": {
@@ -34435,7 +34443,8 @@
     "mosquitto-libs": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.14-r0": 1637188206
+        "2.0.14-r0": 1637188206,
+        "2.0.14-r1": 1658823808
       },
       "dependencies": [
         "so:libc.musl-x86_64.so.1",
@@ -38342,7 +38351,8 @@
     "mosquitto-doc": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.14-r0": 1637188206
+        "2.0.14-r0": 1637188206,
+        "2.0.14-r1": 1658823808
       }
     },
     "lua-sircbot": {
@@ -39962,11 +39972,12 @@
     "mosquitto-dev": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.14-r0": 1637188206
+        "2.0.14-r0": 1637188206,
+        "2.0.14-r1": 1658823808
       },
       "dependencies": [
-        "mosquitto-libs++=2.0.14-r0",
-        "mosquitto-libs=2.0.14-r0",
+        "mosquitto-libs++=2.0.14-r1",
+        "mosquitto-libs=2.0.14-r1",
         "pkgconfig"
       ],
       "provides": [
@@ -43821,19 +43832,24 @@
     "mosquitto": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.14-r0": 1637188206
+        "2.0.14-r0": 1637188206,
+        "2.0.14-r1": 1658823808
       },
       "dependencies": [
         "/bin/sh",
         "so:libc.musl-x86_64.so.1",
+        "so:libcjson.so.1",
         "so:libcrypto.so.1.1",
         "so:libmosquitto.so.1",
-        "so:libssl.so.1.1"
+        "so:libssl.so.1.1",
+        "so:libwebsockets.so.19"
       ],
       "provides": [
-        "cmd:mosquitto=2.0.14-r0",
-        "cmd:mosquitto_passwd=2.0.14-r0",
-        "cmd:mosquitto_rr=2.0.14-r0"
+        "so:mosquitto_dynamic_security.so=0",
+        "cmd:mosquitto=2.0.14-r1",
+        "cmd:mosquitto_ctrl=2.0.14-r1",
+        "cmd:mosquitto_passwd=2.0.14-r1",
+        "cmd:mosquitto_rr=2.0.14-r1"
       ]
     },
     "py3-pygments-doc": {
@@ -58183,7 +58199,8 @@
     "mosquitto-dbg": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.14-r0": 1637188206
+        "2.0.14-r0": 1637188206,
+        "2.0.14-r1": 1658823808
       }
     },
     "ngrep-doc": {
@@ -67010,6 +67027,10 @@
       "libid3tag.so.0.16.2": {
         "package": "libid3tag",
         "version": "0.16.2"
+      },
+      "mosquitto_dynamic_security.so": {
+        "package": "mosquitto",
+        "version": "0"
       }
     },
     "package": {
