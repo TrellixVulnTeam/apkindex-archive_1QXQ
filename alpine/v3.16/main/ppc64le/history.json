@@ -1724,7 +1724,8 @@
     "bluez-zsh-completion": {
       "origin": "bluez",
       "versions": {
-        "5.64-r0": 1649325597
+        "5.64-r0": 1649325597,
+        "5.65-r0": 1658911896
       }
     },
     "tftp-hpa-doc": {
@@ -2016,15 +2017,16 @@
         "1.35.0-r12": 1651826631,
         "1.35.0-r13": 1652117232,
         "1.35.0-r14": 1654966762,
-        "1.35.0-r15": 1658146982
+        "1.35.0-r15": 1658146982,
+        "1.35.0-r16": 1658764985
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1"
       ],
       "provides": [
         "/bin/sh",
-        "cmd:busybox=1.35.0-r15",
-        "cmd:sh=1.35.0-r15"
+        "cmd:busybox=1.35.0-r16",
+        "cmd:sh=1.35.0-r16"
       ]
     },
     "libdrm": {
@@ -2069,7 +2071,8 @@
     "bluez-deprecated-openrc": {
       "origin": "bluez",
       "versions": {
-        "5.64-r0": 1649325597
+        "5.64-r0": 1649325597,
+        "5.65-r0": 1658911896
       }
     },
     "squid-lang-tr": {
@@ -2626,7 +2629,8 @@
     "bluez-openrc": {
       "origin": "bluez",
       "versions": {
-        "5.64-r0": 1649325597
+        "5.64-r0": 1649325597,
+        "5.65-r0": 1658911896
       }
     },
     "talloc-static": {
@@ -3267,15 +3271,17 @@
     "bluez-btmon": {
       "origin": "bluez",
       "versions": {
-        "5.64-r0": 1649325597
+        "5.64-r0": 1649325597,
+        "5.65-r0": 1658911896
       },
       "dependencies": [
         "dbus",
         "so:libc.musl-ppc64le.so.1",
+        "so:libglib-2.0.so.0",
         "so:libudev.so.1"
       ],
       "provides": [
-        "cmd:btmon=5.64-r0"
+        "cmd:btmon=5.65-r0"
       ]
     },
     "lua5.3-dbi-mysql": {
@@ -3646,7 +3652,8 @@
     "mosquitto-openrc": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.14-r0": 1637188206
+        "2.0.14-r0": 1637188206,
+        "2.0.14-r1": 1658823808
       }
     },
     "lua-curl": {
@@ -3684,13 +3691,14 @@
     "dropbear-convert": {
       "origin": "dropbear",
       "versions": {
-        "2022.82-r0": 1649794856
+        "2022.82-r0": 1649794856,
+        "2022.82-r1": 1658765122
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1"
       ],
       "provides": [
-        "cmd:dropbearconvert=2022.82-r0"
+        "cmd:dropbearconvert=2022.82-r1"
       ]
     },
     "icu-static": {
@@ -3840,7 +3848,8 @@
         "1.35.0-r12": 1651826631,
         "1.35.0-r13": 1652117232,
         "1.35.0-r14": 1654966762,
-        "1.35.0-r15": 1658146982
+        "1.35.0-r15": 1658146982,
+        "1.35.0-r16": 1658764985
       }
     },
     "akms": {
@@ -5661,9 +5670,11 @@
     "lua5.4-mqtt-publish": {
       "origin": "lua-mqtt-publish",
       "versions": {
-        "0.3-r2": 1610655264
+        "0.3-r2": 1610655264,
+        "0.3-r3": 1658781346
       },
       "dependencies": [
+        "lua5.4-posix",
         "lua5.4-mosquitto"
       ]
     },
@@ -6441,7 +6452,8 @@
     "bluez-obexd": {
       "origin": "bluez",
       "versions": {
-        "5.64-r0": 1649325597
+        "5.64-r0": 1649325597,
+        "5.65-r0": 1658911896
       },
       "dependencies": [
         "dbus",
@@ -6467,13 +6479,14 @@
     "bluez-libs": {
       "origin": "bluez",
       "versions": {
-        "5.64-r0": 1649325597
+        "5.64-r0": 1649325597,
+        "5.65-r0": 1658911896
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1"
       ],
       "provides": [
-        "so:libbluetooth.so.3=3.19.6"
+        "so:libbluetooth.so.3=3.19.7"
       ]
     },
     "liburing-doc": {
@@ -6517,10 +6530,11 @@
       "origin": "openssh",
       "versions": {
         "9.0_p1-r0": 1649779547,
-        "9.0_p1-r1": 1652763997
+        "9.0_p1-r1": 1652763997,
+        "9.0_p1-r2": 1658765068
       },
       "dependencies": [
-        "openssh-client=9.0_p1-r1",
+        "openssh-client=9.0_p1-r2",
         "so:libc.musl-ppc64le.so.1",
         "so:libcrypto.so.1.1",
         "so:libz.so.1"
@@ -8105,19 +8119,20 @@
       "origin": "openssh",
       "versions": {
         "9.0_p1-r0": 1649779547,
-        "9.0_p1-r1": 1652763997
+        "9.0_p1-r1": 1652763997,
+        "9.0_p1-r2": 1658765068
       },
       "dependencies": [
-        "openssh-keygen=9.0_p1-r1",
-        "openssh-client-common=9.0_p1-r1",
+        "openssh-keygen=9.0_p1-r2",
+        "openssh-client-common=9.0_p1-r2",
         "!openssh-client-krb5",
         "so:libc.musl-ppc64le.so.1",
         "so:libcrypto.so.1.1",
         "so:libz.so.1"
       ],
       "provides": [
-        "openssh-client=9.0_p1-r1",
-        "cmd:ssh=9.0_p1-r1"
+        "openssh-client=9.0_p1-r2",
+        "cmd:ssh=9.0_p1-r2"
       ]
     },
     "graphviz-dev": {
@@ -9338,7 +9353,8 @@
     "dropbear-openrc": {
       "origin": "dropbear",
       "versions": {
-        "2022.82-r0": 1649794856
+        "2022.82-r0": 1649794856,
+        "2022.82-r1": 1658765122
       }
     },
     "perl-class-mix": {
@@ -9409,7 +9425,8 @@
     "mosquitto-libs++": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.14-r0": 1637188206
+        "2.0.14-r0": 1637188206,
+        "2.0.14-r1": 1658823808
       },
       "dependencies": [
         "so:libmosquitto.so.1",
@@ -10642,14 +10659,15 @@
     "bluez-dev": {
       "origin": "bluez",
       "versions": {
-        "5.64-r0": 1649325597
+        "5.64-r0": 1649325597,
+        "5.65-r0": 1658911896
       },
       "dependencies": [
-        "bluez-libs=5.64-r0",
+        "bluez-libs=5.65-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:bluez=5.64"
+        "pc:bluez=5.65"
       ]
     },
     "libedit-dev": {
@@ -11169,14 +11187,15 @@
         "1.35.0-r12": 1651826631,
         "1.35.0-r13": 1652117232,
         "1.35.0-r14": 1654966762,
-        "1.35.0-r15": 1658146982
+        "1.35.0-r15": 1658146982,
+        "1.35.0-r16": 1658764985
       },
       "dependencies": [
         "busybox",
         "so:libc.musl-ppc64le.so.1"
       ],
       "provides": [
-        "cmd:bbsuid=1.35.0-r15"
+        "cmd:bbsuid=1.35.0-r16"
       ]
     },
     "lua5.4-optarg": {
@@ -12711,7 +12730,8 @@
       "origin": "openssh",
       "versions": {
         "9.0_p1-r0": 1649779547,
-        "9.0_p1-r1": 1652763997
+        "9.0_p1-r1": 1652763997,
+        "9.0_p1-r2": 1658765068
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -12720,14 +12740,14 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:findssl.sh=9.0_p1-r1",
-        "cmd:scp=9.0_p1-r1",
-        "cmd:sftp=9.0_p1-r1",
-        "cmd:ssh-add=9.0_p1-r1",
-        "cmd:ssh-agent=9.0_p1-r1",
-        "cmd:ssh-copy-id=9.0_p1-r1",
-        "cmd:ssh-keyscan=9.0_p1-r1",
-        "cmd:ssh-pkcs11-helper=9.0_p1-r1"
+        "cmd:findssl.sh=9.0_p1-r2",
+        "cmd:scp=9.0_p1-r2",
+        "cmd:sftp=9.0_p1-r2",
+        "cmd:ssh-add=9.0_p1-r2",
+        "cmd:ssh-agent=9.0_p1-r2",
+        "cmd:ssh-copy-id=9.0_p1-r2",
+        "cmd:ssh-keyscan=9.0_p1-r2",
+        "cmd:ssh-pkcs11-helper=9.0_p1-r2"
       ]
     },
     "syslog-ng-http": {
@@ -13758,7 +13778,8 @@
       "origin": "openssh",
       "versions": {
         "9.0_p1-r0": 1649779547,
-        "9.0_p1-r1": 1652763997
+        "9.0_p1-r1": 1652763997,
+        "9.0_p1-r2": 1658765068
       }
     },
     "wayland-libs-client": {
@@ -15340,7 +15361,8 @@
         "1.35.0-r12": 1651826631,
         "1.35.0-r13": 1652117232,
         "1.35.0-r14": 1654966762,
-        "1.35.0-r15": 1658146982
+        "1.35.0-r15": 1658146982,
+        "1.35.0-r16": 1658764985
       },
       "provides": [
         "ifupdown-any"
@@ -18016,11 +18038,12 @@
     "mosquitto-dev": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.14-r0": 1637188206
+        "2.0.14-r0": 1637188206,
+        "2.0.14-r1": 1658823808
       },
       "dependencies": [
-        "mosquitto-libs++=2.0.14-r0",
-        "mosquitto-libs=2.0.14-r0",
+        "mosquitto-libs++=2.0.14-r1",
+        "mosquitto-libs=2.0.14-r1",
         "pkgconfig"
       ],
       "provides": [
@@ -18163,7 +18186,8 @@
     "lua-mqtt-publish": {
       "origin": "lua-mqtt-publish",
       "versions": {
-        "0.3-r2": 1610655264
+        "0.3-r2": 1610655264,
+        "0.3-r3": 1658781346
       }
     },
     "acf-dhcp": {
@@ -18204,7 +18228,8 @@
       "origin": "openssh",
       "versions": {
         "9.0_p1-r0": 1649779547,
-        "9.0_p1-r1": 1652763997
+        "9.0_p1-r1": 1652763997,
+        "9.0_p1-r2": 1658765068
       },
       "dependencies": [
         "openssh-client",
@@ -20308,7 +20333,8 @@
       "origin": "python3",
       "versions": {
         "3.10.3-r1": 1650170616,
-        "3.10.4-r0": 1651337356
+        "3.10.4-r0": 1651337356,
+        "3.10.5-r0": 1658764328
       }
     },
     "postgresql14-doc": {
@@ -21997,7 +22023,8 @@
       "origin": "python3",
       "versions": {
         "3.10.3-r1": 1650170616,
-        "3.10.4-r0": 1651337356
+        "3.10.4-r0": 1651337356,
+        "3.10.5-r0": 1658764328
       }
     },
     "perl-scalar-list-utils": {
@@ -22452,7 +22479,8 @@
         "6.2.7-r0": 1651176072,
         "7.0.0-r0": 1652099668,
         "7.0.2-r0": 1655403479,
-        "7.0.4-r0": 1658201860
+        "7.0.4-r0": 1658201860,
+        "7.0.4-r1": 1658824246
       }
     },
     "gd": {
@@ -23299,15 +23327,17 @@
     "mosquitto-clients": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.14-r0": 1637188206
+        "2.0.14-r0": 1637188206,
+        "2.0.14-r1": 1658823808
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
+        "so:libcjson.so.1",
         "so:libmosquitto.so.1"
       ],
       "provides": [
-        "cmd:mosquitto_pub=2.0.14-r0",
-        "cmd:mosquitto_sub=2.0.14-r0"
+        "cmd:mosquitto_pub=2.0.14-r1",
+        "cmd:mosquitto_sub=2.0.14-r1"
       ]
     },
     "nginx-mod-http-cookie-flag": {
@@ -23381,7 +23411,8 @@
     "bluez-plugins": {
       "origin": "bluez",
       "versions": {
-        "5.64-r0": 1649325597
+        "5.64-r0": 1649325597,
+        "5.65-r0": 1658911896
       },
       "dependencies": [
         "dbus",
@@ -24279,7 +24310,8 @@
         "1.35.0-r12": 1651826631,
         "1.35.0-r13": 1652117232,
         "1.35.0-r14": 1654966762,
-        "1.35.0-r15": 1658146982
+        "1.35.0-r15": 1658146982,
+        "1.35.0-r16": 1658764985
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -24287,7 +24319,7 @@
         "so:libssl.so.1.1"
       ],
       "provides": [
-        "cmd:ssl_client=1.35.0-r15"
+        "cmd:ssl_client=1.35.0-r16"
       ]
     },
     "perl-mail-imapclient-doc": {
@@ -31281,7 +31313,8 @@
     "mosquitto-libs": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.14-r0": 1637188206
+        "2.0.14-r0": 1637188206,
+        "2.0.14-r1": 1658823808
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -32961,11 +32994,12 @@
       "origin": "python3",
       "versions": {
         "3.10.3-r1": 1650170616,
-        "3.10.4-r0": 1651337356
+        "3.10.4-r0": 1651337356,
+        "3.10.5-r0": 1658764328
       },
       "dependencies": [
         "python3",
-        "python3=3.10.4-r0"
+        "python3=3.10.5-r0"
       ]
     },
     "freeradius-krb5": {
@@ -35301,19 +35335,22 @@
         "6.2.7-r0": 1651176072,
         "7.0.0-r0": 1652099668,
         "7.0.2-r0": 1655403479,
-        "7.0.4-r0": 1658201860
+        "7.0.4-r0": 1658201860,
+        "7.0.4-r1": 1658824246
       },
       "dependencies": [
         "/bin/sh",
-        "so:libc.musl-ppc64le.so.1"
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcrypto.so.1.1",
+        "so:libssl.so.1.1"
       ],
       "provides": [
-        "cmd:redis-benchmark=7.0.4-r0",
-        "cmd:redis-check-aof=7.0.4-r0",
-        "cmd:redis-check-rdb=7.0.4-r0",
-        "cmd:redis-cli=7.0.4-r0",
-        "cmd:redis-sentinel=7.0.4-r0",
-        "cmd:redis-server=7.0.4-r0"
+        "cmd:redis-benchmark=7.0.4-r1",
+        "cmd:redis-check-aof=7.0.4-r1",
+        "cmd:redis-check-rdb=7.0.4-r1",
+        "cmd:redis-cli=7.0.4-r1",
+        "cmd:redis-sentinel=7.0.4-r1",
+        "cmd:redis-server=7.0.4-r1"
       ]
     },
     "tar": {
@@ -37852,9 +37889,11 @@
     "lua5.3-mqtt-publish": {
       "origin": "lua-mqtt-publish",
       "versions": {
-        "0.3-r2": 1610655264
+        "0.3-r2": 1610655264,
+        "0.3-r3": 1658781346
       },
       "dependencies": [
+        "lua5.3-posix",
         "lua5.3-mosquitto"
       ]
     },
@@ -38560,7 +38599,8 @@
     "mosquitto-doc": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.14-r0": 1637188206
+        "2.0.14-r0": 1637188206,
+        "2.0.14-r1": 1658823808
       }
     },
     "popt-dev": {
@@ -39541,7 +39581,8 @@
     "dropbear-doc": {
       "origin": "dropbear",
       "versions": {
-        "2022.82-r0": 1649794856
+        "2022.82-r0": 1649794856,
+        "2022.82-r1": 1658765122
       }
     },
     "liblognorm-dev": {
@@ -39577,7 +39618,8 @@
     "bluez-hid2hci": {
       "origin": "bluez",
       "versions": {
-        "5.64-r0": 1649325597
+        "5.64-r0": 1649325597,
+        "5.65-r0": 1658911896
       },
       "dependencies": [
         "dbus",
@@ -40392,19 +40434,24 @@
     "mosquitto": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.14-r0": 1637188206
+        "2.0.14-r0": 1637188206,
+        "2.0.14-r1": 1658823808
       },
       "dependencies": [
         "/bin/sh",
         "so:libc.musl-ppc64le.so.1",
+        "so:libcjson.so.1",
         "so:libcrypto.so.1.1",
         "so:libmosquitto.so.1",
-        "so:libssl.so.1.1"
+        "so:libssl.so.1.1",
+        "so:libwebsockets.so.19"
       ],
       "provides": [
-        "cmd:mosquitto=2.0.14-r0",
-        "cmd:mosquitto_passwd=2.0.14-r0",
-        "cmd:mosquitto_rr=2.0.14-r0"
+        "so:mosquitto_dynamic_security.so=0",
+        "cmd:mosquitto=2.0.14-r1",
+        "cmd:mosquitto_ctrl=2.0.14-r1",
+        "cmd:mosquitto_passwd=2.0.14-r1",
+        "cmd:mosquitto_rr=2.0.14-r1"
       ]
     },
     "ser2net-openrc": {
@@ -40879,9 +40926,11 @@
     "lua5.1-mqtt-publish": {
       "origin": "lua-mqtt-publish",
       "versions": {
-        "0.3-r2": 1610655264
+        "0.3-r2": 1610655264,
+        "0.3-r3": 1658781346
       },
       "dependencies": [
+        "lua5.1-posix",
         "lua5.1-mosquitto"
       ]
     },
@@ -41541,14 +41590,15 @@
       "origin": "openssh",
       "versions": {
         "9.0_p1-r0": 1649779547,
-        "9.0_p1-r1": 1652763997
+        "9.0_p1-r1": 1652763997,
+        "9.0_p1-r2": 1658765068
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
         "so:libcrypto.so.1.1"
       ],
       "provides": [
-        "cmd:ssh-keygen=9.0_p1-r1"
+        "cmd:ssh-keygen=9.0_p1-r2"
       ]
     },
     "gzip": {
@@ -42994,10 +43044,11 @@
         "1.35.0-r12": 1651826631,
         "1.35.0-r13": 1652117232,
         "1.35.0-r14": 1654966762,
-        "1.35.0-r15": 1658146982
+        "1.35.0-r15": 1658146982,
+        "1.35.0-r16": 1658764985
       },
       "provides": [
-        "cmd:busybox.static=1.35.0-r15"
+        "cmd:busybox.static=1.35.0-r16"
       ]
     },
     "readline-dev": {
@@ -45096,15 +45147,16 @@
     "dropbear": {
       "origin": "dropbear",
       "versions": {
-        "2022.82-r0": 1649794856
+        "2022.82-r0": 1649794856,
+        "2022.82-r1": 1658765122
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:dropbear=2022.82-r0",
-        "cmd:dropbearkey=2022.82-r0"
+        "cmd:dropbear=2022.82-r1",
+        "cmd:dropbearkey=2022.82-r1"
       ]
     },
     "augeas-doc": {
@@ -45757,17 +45809,18 @@
       "origin": "openssh",
       "versions": {
         "9.0_p1-r0": 1649779547,
-        "9.0_p1-r1": 1652763997
+        "9.0_p1-r1": 1652763997,
+        "9.0_p1-r2": 1658765068
       },
       "dependencies": [
-        "openssh-keygen=9.0_p1-r1",
-        "openssh-server-common=9.0_p1-r1",
+        "openssh-keygen=9.0_p1-r2",
+        "openssh-server-common=9.0_p1-r2",
         "so:libc.musl-ppc64le.so.1",
         "so:libcrypto.so.1.1",
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:sshd=9.0_p1-r1"
+        "cmd:sshd=9.0_p1-r2"
       ]
     },
     "perl-async-mergepoint": {
@@ -45906,7 +45959,8 @@
     "bluez-btmgmt": {
       "origin": "bluez",
       "versions": {
-        "5.64-r0": 1649325597
+        "5.64-r0": 1649325597,
+        "5.65-r0": 1658911896
       },
       "dependencies": [
         "dbus",
@@ -45914,7 +45968,7 @@
         "so:libreadline.so.8"
       ],
       "provides": [
-        "cmd:btmgmt=5.64-r0"
+        "cmd:btmgmt=5.65-r0"
       ]
     },
     "apr-util-dbd_sqlite3": {
@@ -48080,7 +48134,8 @@
     "bluez-meshctl": {
       "origin": "bluez",
       "versions": {
-        "5.64-r0": 1649325597
+        "5.64-r0": 1649325597,
+        "5.65-r0": 1658911896
       },
       "dependencies": [
         "dbus",
@@ -48091,7 +48146,7 @@
         "so:libreadline.so.8"
       ],
       "provides": [
-        "cmd:meshctl=5.64-r0"
+        "cmd:meshctl=5.65-r0"
       ]
     },
     "nagios-plugins-file_age": {
@@ -48811,7 +48866,8 @@
     "bluez-deprecated": {
       "origin": "bluez",
       "versions": {
-        "5.64-r0": 1649325597
+        "5.64-r0": 1649325597,
+        "5.65-r0": 1658911896
       },
       "dependencies": [
         "dbus",
@@ -48821,14 +48877,14 @@
         "so:libudev.so.1"
       ],
       "provides": [
-        "cmd:ciptool=5.64-r0",
-        "cmd:gatttool=5.64-r0",
-        "cmd:hciattach=5.64-r0",
-        "cmd:hciconfig=5.64-r0",
-        "cmd:hcidump=5.64-r0",
-        "cmd:hcitool=5.64-r0",
-        "cmd:rfcomm=5.64-r0",
-        "cmd:sdptool=5.64-r0"
+        "cmd:ciptool=5.65-r0",
+        "cmd:gatttool=5.65-r0",
+        "cmd:hciattach=5.65-r0",
+        "cmd:hciconfig=5.65-r0",
+        "cmd:hcidump=5.65-r0",
+        "cmd:hcitool=5.65-r0",
+        "cmd:rfcomm=5.65-r0",
+        "cmd:sdptool=5.65-r0"
       ]
     },
     "cifs-utils-dev": {
@@ -49102,12 +49158,13 @@
     "dropbear-ssh": {
       "origin": "dropbear",
       "versions": {
-        "2022.82-r0": 1649794856
+        "2022.82-r0": 1649794856,
+        "2022.82-r1": 1658765122
       },
       "dependencies": [
         "dropbear-dbclient",
         "!openssh-client",
-        "dropbear-dbclient=2022.82-r0"
+        "dropbear-dbclient=2022.82-r1"
       ]
     },
     "perl-switch-doc": {
@@ -51365,7 +51422,8 @@
     "mosquitto-dbg": {
       "origin": "mosquitto",
       "versions": {
-        "2.0.14-r0": 1637188206
+        "2.0.14-r0": 1637188206,
+        "2.0.14-r1": 1658823808
       }
     },
     "syslog-ng-doc": {
@@ -51399,7 +51457,8 @@
       "origin": "openssh",
       "versions": {
         "9.0_p1-r0": 1649779547,
-        "9.0_p1-r1": 1652763997
+        "9.0_p1-r1": 1652763997,
+        "9.0_p1-r2": 1658765068
       }
     },
     "aumix": {
@@ -52201,7 +52260,8 @@
     "bluez-cups": {
       "origin": "bluez",
       "versions": {
-        "5.64-r0": 1649325597
+        "5.64-r0": 1649325597,
+        "5.65-r0": 1658911896
       },
       "dependencies": [
         "dbus",
@@ -53286,11 +53346,12 @@
       "origin": "openssh",
       "versions": {
         "9.0_p1-r0": 1649779547,
-        "9.0_p1-r1": 1652763997
+        "9.0_p1-r1": 1652763997,
+        "9.0_p1-r2": 1658765068
       },
       "dependencies": [
-        "openssh-keygen=9.0_p1-r1",
-        "openssh-server-common=9.0_p1-r1",
+        "openssh-keygen=9.0_p1-r2",
+        "openssh-server-common=9.0_p1-r2",
         "so:libc.musl-ppc64le.so.1",
         "so:libcrypto.so.1.1",
         "so:libfido2.so.1"
@@ -53426,7 +53487,8 @@
       "origin": "python3",
       "versions": {
         "3.10.3-r1": 1650170616,
-        "3.10.4-r0": 1651337356
+        "3.10.4-r0": 1651337356,
+        "3.10.5-r0": 1658764328
       }
     },
     "linux-firmware-none": {
@@ -53922,19 +53984,20 @@
       "origin": "python3",
       "versions": {
         "3.10.3-r1": 1650170616,
-        "3.10.4-r0": 1651337356
+        "3.10.4-r0": 1651337356,
+        "3.10.5-r0": 1658764328
       },
       "dependencies": [
         "pkgconfig",
-        "python3=3.10.4-r0"
+        "python3=3.10.5-r0"
       ],
       "provides": [
         "pc:python-3.10-embed=3.10",
         "pc:python-3.10=3.10",
         "pc:python3-embed=3.10",
         "pc:python3=3.10",
-        "cmd:python3-config=3.10.4-r0",
-        "cmd:python3.10-config=3.10.4-r0"
+        "cmd:python3-config=3.10.5-r0",
+        "cmd:python3.10-config=3.10.5-r0"
       ]
     },
     "lua5.3-sec": {
@@ -54050,11 +54113,12 @@
       "origin": "openssh",
       "versions": {
         "9.0_p1-r0": 1649779547,
-        "9.0_p1-r1": 1652763997
+        "9.0_p1-r1": 1652763997,
+        "9.0_p1-r2": 1658765068
       },
       "dependencies": [
-        "openssh-keygen=9.0_p1-r1",
-        "openssh-client-common=9.0_p1-r1",
+        "openssh-keygen=9.0_p1-r2",
+        "openssh-client-common=9.0_p1-r2",
         "!openssh-client-default",
         "so:libc.musl-ppc64le.so.1",
         "so:libcrypto.so.1.1",
@@ -54062,8 +54126,8 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "openssh-client=9.0_p1-r1",
-        "cmd:ssh=9.0_p1-r1"
+        "openssh-client=9.0_p1-r2",
+        "cmd:ssh=9.0_p1-r2"
       ]
     },
     "tftp-hpa": {
@@ -55425,14 +55489,15 @@
     "dropbear-dbclient": {
       "origin": "dropbear",
       "versions": {
-        "2022.82-r0": 1649794856
+        "2022.82-r0": 1649794856,
+        "2022.82-r1": 1658765122
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:dbclient=2022.82-r0"
+        "cmd:dbclient=2022.82-r1"
       ]
     },
     "mini_httpd-doc": {
@@ -55589,9 +55654,11 @@
     "lua5.2-mqtt-publish": {
       "origin": "lua-mqtt-publish",
       "versions": {
-        "0.3-r2": 1610655264
+        "0.3-r2": 1610655264,
+        "0.3-r3": 1658781346
       },
       "dependencies": [
+        "lua5.2-posix",
         "lua5.2-mosquitto"
       ]
     },
@@ -55834,7 +55901,8 @@
     "bluez-doc": {
       "origin": "bluez",
       "versions": {
-        "5.64-r0": 1649325597
+        "5.64-r0": 1649325597,
+        "5.65-r0": 1658911896
       }
     },
     "atop-openrc": {
@@ -56343,18 +56411,19 @@
       "origin": "openssh",
       "versions": {
         "9.0_p1-r0": 1649779547,
-        "9.0_p1-r1": 1652763997
+        "9.0_p1-r1": 1652763997,
+        "9.0_p1-r2": 1658765068
       },
       "dependencies": [
-        "openssh-keygen=9.0_p1-r1",
-        "openssh-server-common=9.0_p1-r1",
+        "openssh-keygen=9.0_p1-r2",
+        "openssh-server-common=9.0_p1-r2",
         "so:libc.musl-ppc64le.so.1",
         "so:libcrypto.so.1.1",
         "so:libpam.so.0",
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:sshd.pam=9.0_p1-r1"
+        "cmd:sshd.pam=9.0_p1-r2"
       ]
     },
     "perl-mime-tools": {
@@ -56933,7 +57002,8 @@
       "origin": "openssh",
       "versions": {
         "9.0_p1-r0": 1649779547,
-        "9.0_p1-r1": 1652763997
+        "9.0_p1-r1": 1652763997,
+        "9.0_p1-r2": 1658765068
       },
       "dependencies": [
         "openssh-client",
@@ -57030,7 +57100,8 @@
       "origin": "openssh",
       "versions": {
         "9.0_p1-r0": 1649779547,
-        "9.0_p1-r1": 1652763997
+        "9.0_p1-r1": 1652763997,
+        "9.0_p1-r2": 1658765068
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -57041,11 +57112,12 @@
       "origin": "openssh",
       "versions": {
         "9.0_p1-r0": 1649779547,
-        "9.0_p1-r1": 1652763997
+        "9.0_p1-r1": 1652763997,
+        "9.0_p1-r2": 1658765068
       },
       "dependencies": [
-        "openssh-keygen=9.0_p1-r1",
-        "openssh-server-common=9.0_p1-r1",
+        "openssh-keygen=9.0_p1-r2",
+        "openssh-server-common=9.0_p1-r2",
         "so:libc.musl-ppc64le.so.1",
         "so:libcrypto.so.1.1",
         "so:libgssapi_krb5.so.2",
@@ -57054,7 +57126,7 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:sshd.krb5=9.0_p1-r1"
+        "cmd:sshd.krb5=9.0_p1-r2"
       ]
     },
     "lua5.3-hashids": {
@@ -57077,14 +57149,15 @@
     "dropbear-scp": {
       "origin": "dropbear",
       "versions": {
-        "2022.82-r0": 1649794856
+        "2022.82-r0": 1649794856,
+        "2022.82-r1": 1658765122
       },
       "dependencies": [
         "!openssh-client",
         "so:libc.musl-ppc64le.so.1"
       ],
       "provides": [
-        "cmd:scp=2022.82-r0"
+        "cmd:scp=2022.82-r1"
       ]
     },
     "ip6tables-openrc": {
@@ -57491,14 +57564,15 @@
         "1.35.0-r12": 1651826631,
         "1.35.0-r13": 1652117232,
         "1.35.0-r14": 1654966762,
-        "1.35.0-r15": 1658146982
+        "1.35.0-r15": 1658146982,
+        "1.35.0-r16": 1658764985
       },
       "dependencies": [
         "busybox",
         "so:libc.musl-ppc64le.so.1"
       ],
       "provides": [
-        "cmd:busybox-extras=1.35.0-r15"
+        "cmd:busybox-extras=1.35.0-r16"
       ]
     },
     "daq-static": {
@@ -57886,7 +57960,8 @@
       "origin": "python3",
       "versions": {
         "3.10.3-r1": 1650170616,
-        "3.10.4-r0": 1651337356
+        "3.10.4-r0": 1651337356,
+        "3.10.5-r0": 1658764328
       },
       "dependencies": [
         "so:libbz2.so.1",
@@ -57908,12 +57983,12 @@
       "provides": [
         "so:libpython3.10.so.1.0=1.0",
         "so:libpython3.so=0",
-        "cmd:2to3-3.10=3.10.4-r0",
-        "cmd:2to3=3.10.4-r0",
-        "cmd:pydoc3.10=3.10.4-r0",
-        "cmd:pydoc3=3.10.4-r0",
-        "cmd:python3.10=3.10.4-r0",
-        "cmd:python3=3.10.4-r0"
+        "cmd:2to3-3.10=3.10.5-r0",
+        "cmd:2to3=3.10.5-r0",
+        "cmd:pydoc3.10=3.10.5-r0",
+        "cmd:pydoc3=3.10.5-r0",
+        "cmd:python3.10=3.10.5-r0",
+        "cmd:python3=3.10.5-r0"
       ]
     },
     "harfbuzz-icu": {
@@ -59304,7 +59379,8 @@
     "bluez": {
       "origin": "bluez",
       "versions": {
-        "5.64-r0": 1649325597
+        "5.64-r0": 1649325597,
+        "5.65-r0": 1658911896
       },
       "dependencies": [
         "dbus",
@@ -59316,17 +59392,18 @@
         "so:libudev.so.1"
       ],
       "provides": [
-        "cmd:bluemoon=5.64-r0",
-        "cmd:bluetoothctl=5.64-r0",
-        "cmd:bluez-simple-agent=5.64-r0",
-        "cmd:btattach=5.64-r0",
-        "cmd:hex2hcd=5.64-r0",
-        "cmd:l2ping=5.64-r0",
-        "cmd:l2test=5.64-r0",
-        "cmd:mesh-cfgclient=5.64-r0",
-        "cmd:mesh-cfgtest=5.64-r0",
-        "cmd:mpris-proxy=5.64-r0",
-        "cmd:rctest=5.64-r0"
+        "cmd:bluemoon=5.65-r0",
+        "cmd:bluetoothctl=5.65-r0",
+        "cmd:bluez-simple-agent=5.65-r0",
+        "cmd:btattach=5.65-r0",
+        "cmd:hex2hcd=5.65-r0",
+        "cmd:isotest=5.65-r0",
+        "cmd:l2ping=5.65-r0",
+        "cmd:l2test=5.65-r0",
+        "cmd:mesh-cfgclient=5.65-r0",
+        "cmd:mesh-cfgtest=5.65-r0",
+        "cmd:mpris-proxy=5.65-r0",
+        "cmd:rctest=5.65-r0"
       ]
     },
     "font-ibm-type1": {
@@ -60722,7 +60799,7 @@
       },
       "libbluetooth.so.3": {
         "package": "bluez-libs",
-        "version": "3.19.6"
+        "version": "3.19.7"
       },
       "libpcre.so.1": {
         "package": "pcre",
@@ -65779,6 +65856,10 @@
       "libid3tag.so.0.16.2": {
         "package": "libid3tag",
         "version": "0.16.2"
+      },
+      "mosquitto_dynamic_security.so": {
+        "package": "mosquitto",
+        "version": "0"
       }
     },
     "package": {
@@ -65904,7 +65985,7 @@
       },
       "openssh-client": {
         "package": "openssh-client-default",
-        "version": "9.0_p1-r1"
+        "version": "9.0_p1-r2"
       },
       "quagga-nhrp": {
         "package": "quagga",
