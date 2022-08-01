@@ -61352,20 +61352,22 @@
       "versions": {
         "91.8.0-r0": 1649857241,
         "91.8.0-r1": 1650750899,
-        "91.10.0-r0": 1655840209
+        "91.10.0-r0": 1655840209,
+        "91.12.0-r0": 1659372405
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libgcc_s.so.1",
         "so:libicui18n.so.71",
         "so:libicuuc.so.71",
+        "so:libnspr4.so",
         "so:libreadline.so.8",
         "so:libstdc++.so.6",
         "so:libz.so.1"
       ],
       "provides": [
         "so:libmozjs-91.so=0",
-        "cmd:js91=91.10.0-r0"
+        "cmd:js91=91.12.0-r0"
       ]
     },
     "gnome-control-center": {
@@ -123438,7 +123440,8 @@
       "versions": {
         "91.8.0-r0": 1649857241,
         "91.8.0-r1": 1650750899,
-        "91.10.0-r0": 1655840209
+        "91.10.0-r0": 1655840209,
+        "91.12.0-r0": 1659372405
       },
       "dependencies": [
         "mozjs91",
@@ -123446,11 +123449,12 @@
         "libffi-dev",
         "nspr-dev",
         "readline-dev",
+        "pc:nspr>=4.10",
         "pkgconfig"
       ],
       "provides": [
-        "pc:mozjs-91=91.10.0",
-        "cmd:js91-config=91.10.0-r0"
+        "pc:mozjs-91=91.12.0",
+        "cmd:js91-config=91.12.0-r0"
       ]
     },
     "binutils-aarch64-none-elf": {
