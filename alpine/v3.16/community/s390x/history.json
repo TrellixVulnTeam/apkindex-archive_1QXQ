@@ -22488,8 +22488,12 @@
         "22.04.0-r0": 1650731601,
         "22.04.0-r1": 1651386389,
         "22.04.1-r0": 1653372955,
-        "22.04.2-r0": 1654860265
-      }
+        "22.04.2-r0": 1654860265,
+        "22.04.2-r1": 1664289739
+      },
+      "dependencies": [
+        "kopeninghours"
+      ]
     },
     "transmission": {
       "origin": "transmission",
@@ -96982,9 +96986,11 @@
         "22.04.0-r0": 1650731601,
         "22.04.0-r1": 1651386389,
         "22.04.1-r0": 1653372955,
-        "22.04.2-r0": 1654860265
+        "22.04.2-r0": 1654860265,
+        "22.04.2-r1": 1664289739
       },
       "dependencies": [
+        "kopeninghours",
         "so:libKF5I18n.so.5",
         "so:libKF5I18nLocaleData.so.5",
         "so:libKPublicTransport.so.1",
@@ -107145,7 +107151,8 @@
         "22.04.0-r0": 1650731601,
         "22.04.0-r1": 1651386389,
         "22.04.1-r0": 1653372955,
-        "22.04.2-r0": 1654860265
+        "22.04.2-r0": 1654860265,
+        "22.04.2-r1": 1664289739
       },
       "dependencies": [
         "ki18n-dev",
@@ -107154,7 +107161,7 @@
         "qt5-qtbase-dev",
         "qt5-qtdeclarative-dev",
         "zlib-dev",
-        "kosmindoormap=22.04.2-r0"
+        "kosmindoormap=22.04.2-r1"
       ]
     },
     "php7-gmp": {
@@ -122347,6 +122354,44 @@
         "0.6-r0": 1661462629,
         "0.6-r1": 1662625498
       }
+    },
+    "kopeninghours": {
+      "origin": "kopeninghours",
+      "versions": {
+        "22.04.2-r0": 1664289692
+      },
+      "dependencies": [
+        "so:libKF5Holidays.so.5",
+        "so:libKF5I18n.so.5",
+        "so:libQt5Core.so.5",
+        "so:libQt5Qml.so.5",
+        "so:libc.musl-s390x.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "so:libKOpeningHours.so.1=22.4.2"
+      ]
+    },
+    "kopeninghours-lang": {
+      "origin": "kopeninghours",
+      "versions": {
+        "22.04.2-r0": 1664289692
+      }
+    },
+    "kopeninghours-dev": {
+      "origin": "kopeninghours",
+      "versions": {
+        "22.04.2-r0": 1664289692
+      },
+      "dependencies": [
+        "kopeninghours=22.04.2-r0"
+      ]
+    },
+    "kopeninghours-doc": {
+      "origin": "kopeninghours",
+      "versions": {
+        "22.04.2-r0": 1664289692
+      }
     }
   },
   "provide": {
@@ -132682,6 +132727,10 @@
       "libkea-hooks.so.41": {
         "package": "kea-common",
         "version": "41.0.0"
+      },
+      "libKOpeningHours.so.1": {
+        "package": "kopeninghours",
+        "version": "22.4.2"
       }
     },
     "package": {
