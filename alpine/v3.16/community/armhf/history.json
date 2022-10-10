@@ -141245,24 +141245,26 @@
     "pgcli": {
       "origin": "pgcli",
       "versions": {
-        "3.4.1-r0": 1653301996
+        "3.4.1-r0": 1653301996,
+        "3.4.1-r1": 1665444259
       },
       "dependencies": [
         "python3",
-        "py3-pgspecial",
         "py3-click",
-        "py3-pygments",
-        "py3-prompt_toolkit>2.0.0",
-        "py3-psycopg2",
-        "py3-sqlparse<0.5.0",
+        "py3-cli_helpers>1.0.0",
         "py3-configobj",
         "py3-humanize",
-        "py3-wcwidth",
-        "py3-cli_helpers>1.0.0"
+        "py3-pendulum",
+        "py3-pgspecial",
+        "py3-prompt_toolkit>2.0.0",
+        "py3-psycopg2",
+        "py3-pygments",
+        "py3-sqlparse<0.5.0",
+        "py3-wcwidth"
       ],
       "provides": [
-        "cmd:pgcli=3.4.1-r0",
-        "py3.10:pgcli=3.4.1-r0"
+        "cmd:pgcli=3.4.1-r1",
+        "py3.10:pgcli=3.4.1-r1"
       ]
     },
     "py3-syndom": {
@@ -141463,6 +141465,45 @@
       ],
       "provides": [
         "py3.10:ceph=16.2.10-r1"
+      ]
+    },
+    "py3-tzdata": {
+      "origin": "py3-tzdata",
+      "versions": {
+        "2020.1-r0": 1665444094
+      },
+      "dependencies": [
+        "python3",
+        "tzdata"
+      ],
+      "provides": [
+        "py3.10:pytzdata=2020.1-r0"
+      ]
+    },
+    "py3-pendulum": {
+      "origin": "py3-pendulum",
+      "versions": {
+        "2.1.2-r0": 1665444259
+      },
+      "dependencies": [
+        "python3",
+        "py3-dateutil",
+        "py3-tzdata"
+      ]
+    },
+    "py3-gpep517": {
+      "origin": "py3-gpep517",
+      "versions": {
+        "9-r0": 1665438746
+      },
+      "dependencies": [
+        "py3-installer",
+        "py3-tomli",
+        "python3"
+      ],
+      "provides": [
+        "cmd:gpep517=9-r0",
+        "py3.10:gpep517=9-r0"
       ]
     }
   },
