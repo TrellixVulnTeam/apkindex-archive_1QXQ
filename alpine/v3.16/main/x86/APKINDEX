@@ -2432,6 +2432,20 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1632599292
 c:7434d71f9e832efba9c5524c3d5cf3a47c2439d0
 
+C:Q16uGH9mlKU8H41VqP6LmM+k3Wg0Y=
+P:mosquitto-dbg
+V:2.0.14-r2
+A:x86
+S:850219
+I:2326528
+T:open source MQTT broker (debug symbols)
+U:https://mosquitto.org/
+L:EPL-1.0
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1666362962
+c:a83466b9b284858cfa8e5b1d011a01f151a6ec55
+
 C:Q1nfO0dr4grJx26YvL5Xo1sLGkEE4=
 P:libnetfilter_cttimeout-dev
 V:1.0.1-r0
@@ -6934,6 +6948,22 @@ c:34b142f4b02dc2927a2675761a8a03ba563815d4
 D:so:libc.musl-x86.so.1
 p:so:libtasn1.so.6=6.6.2
 
+C:Q1+7/V08SUnh2R8i/8VxAyPEqBuwE=
+P:aports-build
+V:1.5.4-r0
+A:x86
+S:5592
+I:61440
+T:MQTT based build-on-git-push scripts for Alpine Linux
+U:https://alpinelinux.org
+L:GPL-2.0
+o:aports-build
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1666363179
+c:fa0f6c3878af3c71dfde329c7b01b74b429fede2
+D:abuild>2.20.0 build-base mosquitto-clients openssh-client mqtt-exec rsync lua-aports>1.0.0 lua5.2-cjson lua5.2-mqtt-publish pigz git /bin/sh
+p:cmd:aports-build=1.5.4-r0
+
 C:Q1cllCcgn1uRBk4Hl1ZvSkdZwWK+w=
 P:perl-io-socket-ssl
 V:2.074-r0
@@ -7192,6 +7222,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1666273198
 c:0b213e2795f801200b1be085045e5efbca61e7d2
 D:so:libc.musl-x86.so.1 so:libruby.so.3.1 so:libucontext.so.1
+
+C:Q1ZlvhLp3xrdBfMM3DtgA73fj9bew=
+P:mosquitto-dev
+V:2.0.14-r2
+A:x86
+S:32827
+I:208896
+T:open source MQTT broker (development files)
+U:https://mosquitto.org/
+L:EPL-1.0
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1666362962
+c:a83466b9b284858cfa8e5b1d011a01f151a6ec55
+D:mosquitto-libs++=2.0.14-r2 mosquitto-libs=2.0.14-r2 pkgconfig
+p:pc:libmosquitto=2.0.14 pc:libmosquittopp=2.0.14
 
 C:Q1i/auoAChovCVineqOUep4iXX/Dw=
 P:perl-test-number-delta-doc
@@ -8750,6 +8796,22 @@ t:1639595860
 c:42cba987f340efdf9d47b26d2f44cdabee334081
 D:freeradius=3.0.25-r2 so:libc.musl-x86.so.1 so:libpam.so.0
 p:freeradius3-pam=3.0.25-r2 so:rlm_pam.so=0
+
+C:Q1OJGYhJhovrbkW9dI8MCbk+3lRPM=
+P:mosquitto-clients
+V:2.0.14-r2
+A:x86
+S:46369
+I:139264
+T:Mosquitto command line MQTT clients
+U:https://mosquitto.org/
+L:EPL-1.0
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1666362962
+c:a83466b9b284858cfa8e5b1d011a01f151a6ec55
+D:so:libc.musl-x86.so.1 so:libcjson.so.1 so:libmosquitto.so.1
+p:cmd:mosquitto_pub=2.0.14-r2 cmd:mosquitto_sub=2.0.14-r2
 
 C:Q12XLPipQOZY12tfVHLxfSWPDvXBA=
 P:fribidi-doc
@@ -16733,6 +16795,22 @@ c:fd79dc08fe3fb5f0c0a491bea711c1821980893d
 D:so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1
 p:so:libc-client.so.1=1.0.0
 
+C:Q1nok5drMfrxRXXKJMDoJJpSVJOU8=
+P:lua5.1-mqtt-publish
+V:0.4-r0
+A:x86
+S:2389
+I:28672
+T:Lua module for simple MQTT connect, publish and disconnect for Lua 5.1
+U:https://github.com/ncopa/lua-mqtt-publish
+L:MIT
+o:lua-mqtt-publish
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1666363064
+c:f82be6bcf3dc3a9e8514029b009c72bd8b626487
+D:lua5.1-posix lua5.1-mosquitto
+i:lua5.1 lua-mqtt-publish=0.4-r0
+
 C:Q1fxWKrwwTbjpR+QlCwCXAwF8OeLY=
 P:libmaxminddb-doc
 V:1.6.0-r1
@@ -17068,22 +17146,6 @@ t:1563740005
 c:b4da96464eb0fb31be260e00ef340c31806ad654
 D:libpciaccess=0.16-r0 pkgconfig
 p:pc:pciaccess=0.16
-
-C:Q1LoyrJHJteAMjp01J0wsmPZAcMw8=
-P:mosquitto-dev
-V:2.0.14-r1
-A:x86
-S:32819
-I:208896
-T:open source MQTT broker (development files)
-U:https://mosquitto.org/
-L:EPL-1.0
-o:mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1658823808
-c:c24e53d8d8948ebbfd31942541c7d510648ba536
-D:mosquitto-libs++=2.0.14-r1 mosquitto-libs=2.0.14-r1 pkgconfig
-p:pc:libmosquitto=2.0.14 pc:libmosquittopp=2.0.14
 
 C:Q1YCtGH/S6NKN5KafKplHJv2rOy0k=
 P:perl-yaml-libyaml
@@ -23209,6 +23271,22 @@ c:09ba389608f576098e4f4ac1421396a5fd0c20a8
 D:bearssl=0.6-r2 pkgconfig
 p:pc:libbearssl=0.6
 
+C:Q1nM9HN4orKjjZRn8hB4QxxOX+ld0=
+P:mosquitto
+V:2.0.14-r2
+A:x86
+S:234065
+I:626688
+T:open source MQTT broker
+U:https://mosquitto.org/
+L:EPL-1.0
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1666362962
+c:a83466b9b284858cfa8e5b1d011a01f151a6ec55
+D:/bin/sh so:libc.musl-x86.so.1 so:libcjson.so.1 so:libcrypto.so.1.1 so:libmosquitto.so.1 so:libssl.so.1.1 so:libwebsockets.so.19
+p:so:mosquitto_dynamic_security.so=0 cmd:mosquitto=2.0.14-r2 cmd:mosquitto_ctrl=2.0.14-r2 cmd:mosquitto_passwd=2.0.14-r2 cmd:mosquitto_rr=2.0.14-r2
+
 C:Q1bT/+9DBO3+Ih7nrZqIgFYZhyn2w=
 P:ferm
 V:2.7-r0
@@ -23543,6 +23621,21 @@ c:b14866860b0cd0708f10f672f5348ba079dd64ac
 D:so:libc.musl-x86.so.1
 p:cmd:spawn-fcgi=1.6.4-r4
 
+C:Q1/moH1RGGD5SZQEbWxEHkEXahOQU=
+P:mosquitto-doc
+V:2.0.14-r2
+A:x86
+S:67438
+I:126976
+T:open source MQTT broker (documentation)
+U:https://mosquitto.org/
+L:EPL-1.0
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1666362962
+c:a83466b9b284858cfa8e5b1d011a01f151a6ec55
+i:docs mosquitto=2.0.14-r2
+
 C:Q1P/Lv40L4aZME0H+IAmDyngtbHeM=
 P:nagios-plugins-mrtg
 V:2.4.0-r0
@@ -23804,22 +23897,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1645090616
 c:255a8ffdfb9329b8afa227e576fa78ce398b8e4b
 i:docs rp-pppoe=3.15-r0
-
-C:Q1tqdGYFiE/ba9GCEUyvDiw7cNu3U=
-P:mosquitto
-V:2.0.14-r1
-A:x86
-S:234030
-I:626688
-T:open source MQTT broker
-U:https://mosquitto.org/
-L:EPL-1.0
-o:mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1658823808
-c:c24e53d8d8948ebbfd31942541c7d510648ba536
-D:/bin/sh so:libc.musl-x86.so.1 so:libcjson.so.1 so:libcrypto.so.1.1 so:libmosquitto.so.1 so:libssl.so.1.1 so:libwebsockets.so.19
-p:so:mosquitto_dynamic_security.so=0 cmd:mosquitto=2.0.14-r1 cmd:mosquitto_ctrl=2.0.14-r1 cmd:mosquitto_passwd=2.0.14-r1 cmd:mosquitto_rr=2.0.14-r1
 
 C:Q1Vxy+OHqjtqPG4SJuAv/PQlxENH8=
 P:lxc-lvm
@@ -26853,20 +26930,6 @@ t:1649073549
 c:a1c83a811863af213eb4b8388377f8cc63ed508c
 i:docs perl-html-parser=3.78-r0
 
-C:Q1OwbcmRDQDxKwv3o59L7S3vaVv70=
-P:lua-mqtt-publish
-V:0.3-r3
-A:x86
-S:1444
-I:16384
-T:Lua module for simple MQTT connect, publish and disconnect
-U:https://github.com/ncopa/lua-mqtt-publish
-L:MIT
-o:lua-mqtt-publish
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1658781346
-c:95c72f4cc52e26052298448a7a7ee8fb368999b7
-
 C:Q1zAHvAC/uaNIVSihGYrkZSPr8g98=
 P:ppp-winbind
 V:2.4.9-r3
@@ -28632,22 +28695,6 @@ t:1580415293
 c:63d6d77cb519d79e4647e592d68d9ce1dcb11036
 D:encodings font-alias mkfontscale mkfontdir fontconfig util-macros
 
-C:Q1p+oQ9lHRxuoJxU31qsGLPqNheRk=
-P:lua5.3-mqtt-publish
-V:0.3-r3
-A:x86
-S:2407
-I:28672
-T:Lua module for simple MQTT connect, publish and disconnect for Lua 5.3
-U:https://github.com/ncopa/lua-mqtt-publish
-L:MIT
-o:lua-mqtt-publish
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1658781346
-c:95c72f4cc52e26052298448a7a7ee8fb368999b7
-D:lua5.3-posix lua5.3-mosquitto
-i:lua5.3 lua-mqtt-publish=0.3-r3
-
 C:Q1mJmeJP7QuqRDqkhhxwqs8j9jVqA=
 P:nginx-openrc
 V:1.22.1-r0
@@ -29816,22 +29863,6 @@ t:1655431024
 c:499f98b5728c29890c92d248e4ccb604394e9f2f
 D:so:libEGL.so.1 so:libGL.so.1 so:libX11-xcb.so.1 so:libX11.so.6 so:libXext.so.6 so:libXv.so.1 so:libasound.so.2 so:libc.musl-x86.so.1 so:libcairo.so.2 so:libcdda_interface.so.0 so:libcdda_paranoia.so.0 so:libgio-2.0.so.0 so:libglib-2.0.so.0 so:libgmodule-2.0.so.0 so:libgobject-2.0.so.0 so:libgraphene-1.0.so.0 so:libgstbase-1.0.so.0 so:libgstcontroller-1.0.so.0 so:libgstnet-1.0.so.0 so:libgstreamer-1.0.so.0 so:libintl.so.8 so:libjpeg.so.8 so:libogg.so.0 so:libopus.so.0 so:liborc-0.4.so.0 so:libpango-1.0.so.0 so:libpangocairo-1.0.so.0 so:libpng16.so.16 so:libtheoradec.so.1 so:libtheoraenc.so.1 so:libvorbis.so.0 so:libvorbisenc.so.2 so:libwayland-client.so.0 so:libwayland-cursor.so.0 so:libwayland-egl.so.1 so:libxcb.so.1 so:libz.so.1
 p:so:libgstadder.so=0 so:libgstallocators-1.0.so.0=0.2003.0 so:libgstalsa.so=0 so:libgstapp-1.0.so.0=0.2003.0 so:libgstapp.so=0 so:libgstaudio-1.0.so.0=0.2003.0 so:libgstaudioconvert.so=0 so:libgstaudiomixer.so=0 so:libgstaudiorate.so=0 so:libgstaudioresample.so=0 so:libgstaudiotestsrc.so=0 so:libgstcdparanoia.so=0 so:libgstcompositor.so=0 so:libgstencoding.so=0 so:libgstfft-1.0.so.0=0.2003.0 so:libgstgio.so=0 so:libgstgl-1.0.so.0=0.2003.0 so:libgstogg.so=0 so:libgstopengl.so=0 so:libgstopus.so=0 so:libgstoverlaycomposition.so=0 so:libgstpango.so=0 so:libgstpbtypes.so=0 so:libgstpbutils-1.0.so.0=0.2003.0 so:libgstplayback.so=0 so:libgstrawparse.so=0 so:libgstriff-1.0.so.0=0.2003.0 so:libgstrtp-1.0.so.0=0.2003.0 so:libgstrtsp-1.0.so.0=0.2003.0 so:libgstsdp-1.0.so.0=0.2003.0 so:libgstsubparse.so=0 so:libgsttag-1.0.so.0=0.2003.0 so:libgsttcp.so=0 so:libgsttheora.so=0 so:libgsttypefindfunctions.so=0 so:libgstvideo-1.0.so.0=0.2003.0 so:libgstvideoconvert.so=0 so:libgstvideorate.so=0 so:libgstvideoscale.so=0 so:libgstvideotestsrc.so=0 so:libgstvolume.so=0 so:libgstvorbis.so=0 so:libgstximagesink.so=0 so:libgstxvimagesink.so=0 cmd:gst-device-monitor-1.0=1.20.3-r0 cmd:gst-discoverer-1.0=1.20.3-r0 cmd:gst-play-1.0=1.20.3-r0
-
-C:Q1rj8+AozNmBLeflpY18oQn8OGjxs=
-P:aports-build
-V:1.5.3-r0
-A:x86
-S:5347
-I:61440
-T:MQTT based build-on-git-push scripts for Alpine Linux
-U:https://alpinelinux.org
-L:GPL-2.0
-o:aports-build
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1609771681
-c:2ab88676af26314684dce3811fa5689fed3bcf1e
-D:abuild>2.20.0 build-base mosquitto-clients openssh-client mqtt-exec rsync lua-aports>1.0.0 lua5.2-cjson lua5.2-mqtt-publish pigz git /bin/sh
-p:cmd:aports-build=1.5.3-r0
 
 C:Q1/uVUT+J1BwxYgzMFJ2h7I3vgQJ8=
 P:libecpg-dev
@@ -34537,20 +34568,6 @@ t:1635117238
 c:2cf3fe063b1b9e308372af7e2c2348e9e494a135
 i:docs pgtcl=2.1.0-r1
 
-C:Q1fi/arjcV0aIStXPu3wVGfjX40VQ=
-P:mosquitto-dbg
-V:2.0.14-r1
-A:x86
-S:850220
-I:2326528
-T:open source MQTT broker (debug symbols)
-U:https://mosquitto.org/
-L:EPL-1.0
-o:mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1658823808
-c:c24e53d8d8948ebbfd31942541c7d510648ba536
-
 C:Q1j1wdeoqJDVgc1MOopUOOwwRP6Lg=
 P:ruby-rss
 V:0.2.9-r1
@@ -36460,6 +36477,21 @@ t:1661928422
 c:720eee024ae2221901cc607bedb5626ecb0c45d0
 D:ca-certificates so:libc.musl-x86.so.1 so:libcurl.so.4 so:libz.so.1
 p:cmd:curl=7.83.1-r3
+
+C:Q1YR+kBJIql04ZmAeWV0UcoaaMW7Q=
+P:mosquitto-openrc
+V:2.0.14-r2
+A:x86
+S:2070
+I:24576
+T:open source MQTT broker (OpenRC init scripts)
+U:https://mosquitto.org/
+L:EPL-1.0
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1666362962
+c:a83466b9b284858cfa8e5b1d011a01f151a6ec55
+i:openrc mosquitto=2.0.14-r2
 
 C:Q1024Af2rdZbnicyBD/xh/PzDfO9o=
 P:opensp-doc
@@ -44021,22 +44053,6 @@ t:1610956447
 c:6d61b748376d9edefe2ea601b0824790a835cbac
 i:docs zeromq=4.3.4-r0
 
-C:Q1GP00GF4b6Wxj4Ue4ZKCMzZrDoB4=
-P:lua5.1-mqtt-publish
-V:0.3-r3
-A:x86
-S:2409
-I:28672
-T:Lua module for simple MQTT connect, publish and disconnect for Lua 5.1
-U:https://github.com/ncopa/lua-mqtt-publish
-L:MIT
-o:lua-mqtt-publish
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1658781346
-c:95c72f4cc52e26052298448a7a7ee8fb368999b7
-D:lua5.1-posix lua5.1-mosquitto
-i:lua5.1 lua-mqtt-publish=0.3-r3
-
 C:Q1ivaIczgLmHaIPoweoSZv0bvMSrw=
 P:perl-list-someutils
 V:0.58-r1
@@ -45338,22 +45354,6 @@ t:1651163416
 c:c8d0916f61bc0e0e89e4916cf5e83e421e44f43d
 i:docs nano=6.3-r0
 
-C:Q1JWBDBxHLi7IXxcMShTgVgz5QCcg=
-P:mosquitto-libs++
-V:2.0.14-r1
-A:x86
-S:8086
-I:32768
-T:C++ wrapper for libmosquitto
-U:https://mosquitto.org/
-L:EPL-1.0
-o:mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1658823808
-c:c24e53d8d8948ebbfd31942541c7d510648ba536
-D:so:libmosquitto.so.1 so:libstdc++.so.6
-p:so:libmosquittopp.so.1=1
-
 C:Q1x63ZjNiFg/tjFJ1eNX9Gw+fcm3I=
 P:cgit
 V:1.2.3-r2
@@ -45554,6 +45554,22 @@ m:Jakub Jirutka <jakub@jirutka.cz>
 t:1649606273
 c:4bcaab026c64dee52b0053c51db5e794f86051c9
 i:docs haveged=1.9.18-r0
+
+C:Q1hNdXzYWsLrzra1ym4RTqbiHoAzI=
+P:lua5.4-mqtt-publish
+V:0.4-r0
+A:x86
+S:2386
+I:28672
+T:Lua module for simple MQTT connect, publish and disconnect for Lua 5.4
+U:https://github.com/ncopa/lua-mqtt-publish
+L:MIT
+o:lua-mqtt-publish
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1666363064
+c:f82be6bcf3dc3a9e8514029b009c72bd8b626487
+D:lua5.4-posix lua5.4-mosquitto
+i:lua5.4 lua-mqtt-publish=0.4-r0
 
 C:Q1B2PGP30OiUuLRnnl2dzDRfkN7lc=
 P:libbsd
@@ -45980,6 +45996,22 @@ o:liblockfile
 m:Natanael Copa <ncopa@alpinelinux.org>
 t:1611871299
 c:72ec48c9eb574e933462bae1c6c202fc64f28aa1
+
+C:Q1whAa9az1c7VUIQbRlcn12R8/Qhw=
+P:mosquitto-libs++
+V:2.0.14-r2
+A:x86
+S:8092
+I:32768
+T:C++ wrapper for libmosquitto
+U:https://mosquitto.org/
+L:EPL-1.0
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1666362962
+c:a83466b9b284858cfa8e5b1d011a01f151a6ec55
+D:so:libmosquitto.so.1 so:libstdc++.so.6
+p:so:libmosquittopp.so.1=1
 
 C:Q19QQkri2V2IcHCE7PwcvrBYb5oj0=
 P:libusb-compat-dev
@@ -49840,22 +49872,6 @@ c:4d99ba2c7862bdfab3113367752108a92125001a
 D:so:libaio.so.1 so:libc.musl-x86.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6
 p:cmd:cache_check=0.9.0-r2 cmd:cache_dump=0.9.0-r2 cmd:cache_metadata_size=0.9.0-r2 cmd:cache_repair=0.9.0-r2 cmd:cache_restore=0.9.0-r2 cmd:cache_writeback=0.9.0-r2 cmd:era_check=0.9.0-r2 cmd:era_dump=0.9.0-r2 cmd:era_invalidate=0.9.0-r2 cmd:era_restore=0.9.0-r2 cmd:pdata_tools=0.9.0-r2 cmd:thin_check=0.9.0-r2 cmd:thin_delta=0.9.0-r2 cmd:thin_dump=0.9.0-r2 cmd:thin_ls=0.9.0-r2 cmd:thin_metadata_size=0.9.0-r2 cmd:thin_repair=0.9.0-r2 cmd:thin_restore=0.9.0-r2 cmd:thin_rmap=0.9.0-r2 cmd:thin_trim=0.9.0-r2
 
-C:Q1duFDMwfFJnHmq/ZcxZU1Xvx1D8E=
-P:mosquitto-clients
-V:2.0.14-r1
-A:x86
-S:46369
-I:139264
-T:Mosquitto command line MQTT clients
-U:https://mosquitto.org/
-L:EPL-1.0
-o:mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1658823808
-c:c24e53d8d8948ebbfd31942541c7d510648ba536
-D:so:libc.musl-x86.so.1 so:libcjson.so.1 so:libmosquitto.so.1
-p:cmd:mosquitto_pub=2.0.14-r1 cmd:mosquitto_sub=2.0.14-r1
-
 C:Q1rhKz0Oh9ELQFCeJuT+ax+aDohH4=
 P:libxdmcp-dev
 V:1.1.3-r0
@@ -51760,6 +51776,20 @@ c:0c813d4276d2e36ead29ca22b6c01045d86db58b
 D:zsh
 i:zsh=5.8.1-r4 android-tools
 
+C:Q12h7fUfoXUwJP86yHed2rj/5XX38=
+P:lua-mqtt-publish
+V:0.4-r0
+A:x86
+S:1440
+I:16384
+T:Lua module for simple MQTT connect, publish and disconnect
+U:https://github.com/ncopa/lua-mqtt-publish
+L:MIT
+o:lua-mqtt-publish
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1666363064
+c:f82be6bcf3dc3a9e8514029b009c72bd8b626487
+
 C:Q1bDn0148cjchfmoz8AumGiYmfEDc=
 P:perl-file-copy-recursive
 V:0.45-r2
@@ -52172,22 +52202,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl perl-html-formattext-withlinks
-
-C:Q1BjuUI0lfwUvUerz75cb14XR62Co=
-P:lua5.2-mqtt-publish
-V:0.3-r3
-A:x86
-S:2409
-I:28672
-T:Lua module for simple MQTT connect, publish and disconnect for Lua 5.2
-U:https://github.com/ncopa/lua-mqtt-publish
-L:MIT
-o:lua-mqtt-publish
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1658781346
-c:95c72f4cc52e26052298448a7a7ee8fb368999b7
-D:lua5.2-posix lua5.2-mosquitto
-i:lua5.2 lua-mqtt-publish=0.3-r3
 
 C:Q169T9j0V1DTsUKTW4IpatP9ZA4MI=
 P:psmisc-lang
@@ -55735,6 +55749,22 @@ t:1630794986
 c:ef313fdde724961eed687f2305a7b27871b83d26
 i:docs linux-pam=1.5.2-r0
 
+C:Q1PPJUycOXQPqyWqkelZY2IFqTVzc=
+P:lua5.3-mqtt-publish
+V:0.4-r0
+A:x86
+S:2387
+I:28672
+T:Lua module for simple MQTT connect, publish and disconnect for Lua 5.3
+U:https://github.com/ncopa/lua-mqtt-publish
+L:MIT
+o:lua-mqtt-publish
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1666363064
+c:f82be6bcf3dc3a9e8514029b009c72bd8b626487
+D:lua5.3-posix lua5.3-mosquitto
+i:lua5.3 lua-mqtt-publish=0.4-r0
+
 C:Q1jd0k1/AFsmS6TIyxP+6+82l61Yk=
 P:perl-module-build-tiny
 V:0.039-r2
@@ -56906,21 +56936,6 @@ m:Jeff Bilyk <jbilyk@gmail.com>
 t:1652309352
 c:3c0e28e2e5a2f4cebac26fdc959a6e42c939aef1
 D:nagios-plugins so:libc.musl-x86.so.1 so:libcrypto.so.1.1
-
-C:Q1o9PRfwPuK32OG3xN9DfoOqRpqMk=
-P:mosquitto-openrc
-V:2.0.14-r1
-A:x86
-S:2067
-I:24576
-T:open source MQTT broker (OpenRC init scripts)
-U:https://mosquitto.org/
-L:EPL-1.0
-o:mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1658823808
-c:c24e53d8d8948ebbfd31942541c7d510648ba536
-i:openrc mosquitto=2.0.14-r1
 
 C:Q15FycjJZsFAZlMJgxxtdDEfPaCiM=
 P:apkbuild-pypi
@@ -59998,22 +60013,6 @@ t:1652519941
 c:2511ae89b7bf632904f8e5d96a818d1961c14d87
 D:/bin/sh so:libc.musl-x86.so.1 so:libcrypto.so.1.1 so:libevent-2.1.so.7 so:libssl.so.1.1
 p:cmd:nsd-checkconf=4.5.0-r0 cmd:nsd-checkzone=4.5.0-r0 cmd:nsd-control-setup=4.5.0-r0 cmd:nsd-control=4.5.0-r0 cmd:nsd=4.5.0-r0
-
-C:Q1aRH1UAHRl2gAq3/CgLxbY6X6Hcg=
-P:lua5.4-mqtt-publish
-V:0.3-r3
-A:x86
-S:2404
-I:28672
-T:Lua module for simple MQTT connect, publish and disconnect for Lua 5.4
-U:https://github.com/ncopa/lua-mqtt-publish
-L:MIT
-o:lua-mqtt-publish
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1658781346
-c:95c72f4cc52e26052298448a7a7ee8fb368999b7
-D:lua5.4-posix lua5.4-mosquitto
-i:lua5.4 lua-mqtt-publish=0.3-r3
 
 C:Q1LHNecC3SdjSFCKrMS0uSNJjTl+w=
 P:screen-doc
@@ -63219,21 +63218,6 @@ t:1658072640
 c:c8db01e1ce2cf2c8c0fd2f387ff666f9f49ba91b
 i:docs dhcpcd=9.4.1-r1
 
-C:Q1TQYUBeRGAZ92z3VJ8Avm/Y4cLIo=
-P:mosquitto-doc
-V:2.0.14-r1
-A:x86
-S:67434
-I:126976
-T:open source MQTT broker (documentation)
-U:https://mosquitto.org/
-L:EPL-1.0
-o:mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1658823808
-c:c24e53d8d8948ebbfd31942541c7d510648ba536
-i:docs mosquitto=2.0.14-r1
-
 C:Q1nhv6n8+hx84+kzTHkpAIna6hCCI=
 P:dnssec-root
 V:20190225-r1
@@ -64815,22 +64799,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-email-date-format=1.005-r2
-
-C:Q1QQ8mxON+xiTG2O5DqLPiftPYoLs=
-P:mosquitto-libs
-V:2.0.14-r1
-A:x86
-S:50919
-I:126976
-T:open source MQTT broker (libraries)
-U:https://mosquitto.org/
-L:EPL-1.0
-o:mosquitto
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1658823808
-c:c24e53d8d8948ebbfd31942541c7d510648ba536
-D:so:libc.musl-x86.so.1 so:libcares.so.2 so:libcrypto.so.1.1 so:libssl.so.1.1
-p:so:libmosquitto.so.1=1
 
 C:Q1U9lKtnvZWVdqI+9UV22OewJgChM=
 P:nagios-plugins-load
@@ -71054,6 +71022,22 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-html-formattext-withlinks-andtables=0.07-r2
 
+C:Q1xgsMANktqTVsuKoZNmGp9K891D0=
+P:mosquitto-libs
+V:2.0.14-r2
+A:x86
+S:50956
+I:126976
+T:open source MQTT broker (libraries)
+U:https://mosquitto.org/
+L:EPL-1.0
+o:mosquitto
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1666362962
+c:a83466b9b284858cfa8e5b1d011a01f151a6ec55
+D:so:libc.musl-x86.so.1 so:libcares.so.2 so:libcrypto.so.1.1 so:libssl.so.1.1
+p:so:libmosquitto.so.1=1
+
 C:Q1KFf6ebWNjgMwrPTgMK5zeD7vHB4=
 P:linux-firmware-nvidia
 V:20220509-r1
@@ -73590,6 +73574,22 @@ t:1634364270
 c:670bf5a8cc5bc605eede8ca2fd55b50a5c9f8660
 D:so:libc.musl-x86.so.1 so:libcares.so.2 so:libcrypto.so.1.1
 p:cmd:sipsak=0.9.7-r2
+
+C:Q1ulzItHZOPKPx3wHsCGTtOOA8B3Y=
+P:lua5.2-mqtt-publish
+V:0.4-r0
+A:x86
+S:2391
+I:28672
+T:Lua module for simple MQTT connect, publish and disconnect for Lua 5.2
+U:https://github.com/ncopa/lua-mqtt-publish
+L:MIT
+o:lua-mqtt-publish
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1666363064
+c:f82be6bcf3dc3a9e8514029b009c72bd8b626487
+D:lua5.2-posix lua5.2-mosquitto
+i:lua5.2 lua-mqtt-publish=0.4-r0
 
 C:Q1asq8sTuBc938sTQOK4vUH0Iiyjs=
 P:nagios-plugins-ntp
