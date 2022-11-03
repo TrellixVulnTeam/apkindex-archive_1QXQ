@@ -21915,25 +21915,27 @@
     "openimageio-tools": {
       "origin": "openimageio",
       "versions": {
-        "2.4.4.2-r0": 1665534750
+        "2.4.4.2-r0": 1665534750,
+        "2.4.5.0-r0": 1667501226
       },
       "dependencies": [
+        "so:libIlmThread-3_1.so.30",
         "so:libImath-3_1.so.29",
         "so:libOpenEXR-3_1.so.30",
-        "so:libOpenImageIO.so.2.4",
-        "so:libOpenImageIO_Util.so.2.4",
+        "so:libOpenImageIO.so.2.4.5",
+        "so:libOpenImageIO_Util.so.2.4.5",
         "so:libc.musl-armhf.so.1",
         "so:libgcc_s.so.1",
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:iconvert=2.4.4.2-r0",
-        "cmd:idiff=2.4.4.2-r0",
-        "cmd:igrep=2.4.4.2-r0",
-        "cmd:iinfo=2.4.4.2-r0",
-        "cmd:maketx=2.4.4.2-r0",
-        "cmd:oiiotool=2.4.4.2-r0",
-        "cmd:testtex=2.4.4.2-r0"
+        "cmd:iconvert=2.4.5.0-r0",
+        "cmd:idiff=2.4.5.0-r0",
+        "cmd:igrep=2.4.5.0-r0",
+        "cmd:iinfo=2.4.5.0-r0",
+        "cmd:maketx=2.4.5.0-r0",
+        "cmd:oiiotool=2.4.5.0-r0",
+        "cmd:testtex=2.4.5.0-r0"
       ]
     },
     "nbd-client": {
@@ -28226,25 +28228,33 @@
     "opencolorio-tools": {
       "origin": "opencolorio",
       "versions": {
-        "2.1.2-r1": 1667150030
+        "2.1.2-r1": 1667150030,
+        "2.2.0-r0": 1667501226
       },
       "dependencies": [
         "so:libGL.so.1",
         "so:libGLEW.so.2.2",
         "so:libGLU.so.1",
-        "so:libOpenColorIO.so.2.1",
+        "so:libOpenColorIO.so.2.2",
+        "so:libOpenEXR-3_1.so.30",
         "so:libc.musl-armhf.so.1",
         "so:libgcc_s.so.1",
         "so:libglut.so.3",
         "so:liblcms2.so.2",
-        "so:libstdc++.so.6"
+        "so:libstdc++.so.6",
+        "so:libz.so.1"
       ],
       "provides": [
-        "cmd:ociobakelut=2.1.2-r1",
-        "cmd:ociocheck=2.1.2-r1",
-        "cmd:ociochecklut=2.1.2-r1",
-        "cmd:ociomakeclf=2.1.2-r1",
-        "cmd:ociowrite=2.1.2-r1"
+        "cmd:ocioarchive=2.2.0-r0",
+        "cmd:ociobakelut=2.2.0-r0",
+        "cmd:ociocheck=2.2.0-r0",
+        "cmd:ociochecklut=2.2.0-r0",
+        "cmd:ocioconvert=2.2.0-r0",
+        "cmd:ociodisplay=2.2.0-r0",
+        "cmd:ociolutimage=2.2.0-r0",
+        "cmd:ociomakeclf=2.2.0-r0",
+        "cmd:ocioperf=2.2.0-r0",
+        "cmd:ociowrite=2.2.0-r0"
       ]
     },
     "cage": {
@@ -39845,7 +39855,8 @@
     "opencolorio": {
       "origin": "opencolorio",
       "versions": {
-        "2.1.2-r1": 1667150030
+        "2.1.2-r1": 1667150030,
+        "2.2.0-r0": 1667501226
       },
       "dependencies": [
         "so:libImath-3_1.so.29",
@@ -39853,10 +39864,11 @@
         "so:libexpat.so.1",
         "so:libgcc_s.so.1",
         "so:libstdc++.so.6",
-        "so:libyaml-cpp.so.0.7"
+        "so:libyaml-cpp.so.0.7",
+        "so:libz.so.1"
       ],
       "provides": [
-        "so:libOpenColorIO.so.2.1=2.1.2"
+        "so:libOpenColorIO.so.2.2=2.2.0"
       ]
     },
     "py3-telethon-session-sqlalchemy": {
@@ -45623,14 +45635,15 @@
     "openimageio-dev": {
       "origin": "openimageio",
       "versions": {
-        "2.4.4.2-r0": 1665534750
+        "2.4.4.2-r0": 1665534750,
+        "2.4.5.0-r0": 1667501226
       },
       "dependencies": [
-        "openimageio=2.4.4.2-r0",
+        "openimageio=2.4.5.0-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:OpenImageIO=2.4.4.2"
+        "pc:OpenImageIO=2.4.5.0"
       ]
     },
     "mrhlpr": {
@@ -46718,14 +46731,15 @@
     "opencolorio-dev": {
       "origin": "opencolorio",
       "versions": {
-        "2.1.2-r1": 1667150030
+        "2.1.2-r1": 1667150030,
+        "2.2.0-r0": 1667501226
       },
       "dependencies": [
-        "opencolorio=2.1.2-r1",
+        "opencolorio=2.2.0-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:OpenColorIO=2.1.2"
+        "pc:OpenColorIO=2.2.0"
       ]
     },
     "xvfb-run-doc": {
@@ -54542,7 +54556,8 @@
     "py3-matplotlib": {
       "origin": "py3-matplotlib",
       "versions": {
-        "3.6.1-r0": 1665266125
+        "3.6.1-r0": 1665266125,
+        "3.6.2-r0": 1667500580
       },
       "dependencies": [
         "py3-cairo",
@@ -54565,8 +54580,8 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "py-matplotlib=3.6.1-r0",
-        "py3.10:matplotlib=3.6.1-r0"
+        "py-matplotlib=3.6.2-r0",
+        "py3.10:matplotlib=3.6.2-r0"
       ]
     },
     "php81-gd": {
@@ -58454,7 +58469,8 @@
     "osl-doc": {
       "origin": "osl",
       "versions": {
-        "1.12.6.2-r0": 1665534750
+        "1.12.6.2-r0": 1665534750,
+        "1.12.7.0-r0": 1667501226
       }
     },
     "consolekit2-lang": {
@@ -58763,10 +58779,11 @@
     "osl-python": {
       "origin": "osl",
       "versions": {
-        "1.12.6.2-r0": 1665534750
+        "1.12.6.2-r0": 1665534750,
+        "1.12.7.0-r0": 1667501226
       },
       "dependencies": [
-        "so:libOpenImageIO_Util.so.2.4",
+        "so:libOpenImageIO_Util.so.2.4.5",
         "so:libc.musl-armhf.so.1",
         "so:libgcc_s.so.1",
         "so:liboslquery.so.1.12",
@@ -83258,11 +83275,12 @@
     "openimageio-plugin-osl": {
       "origin": "osl",
       "versions": {
-        "1.12.6.2-r0": 1665534750
+        "1.12.6.2-r0": 1665534750,
+        "1.12.7.0-r0": 1667501226
       },
       "dependencies": [
-        "so:libOpenImageIO.so.2.4",
-        "so:libOpenImageIO_Util.so.2.4",
+        "so:libOpenImageIO.so.2.4.5",
+        "so:libOpenImageIO_Util.so.2.4.5",
         "so:libc.musl-armhf.so.1",
         "so:libgcc_s.so.1",
         "so:liboslexec.so.1.12",
@@ -98017,7 +98035,8 @@
     "openimageio-doc": {
       "origin": "openimageio",
       "versions": {
-        "2.4.4.2-r0": 1665534750
+        "2.4.4.2-r0": 1665534750,
+        "2.4.5.0-r0": 1667501226
       }
     },
     "lua5.4-say": {
@@ -124687,16 +124706,17 @@
     "osl-dev": {
       "origin": "osl",
       "versions": {
-        "1.12.6.2-r0": 1665534750
+        "1.12.6.2-r0": 1665534750,
+        "1.12.7.0-r0": 1667501226
       },
       "dependencies": [
-        "osl-libs=1.12.6.2-r0",
+        "osl-libs=1.12.7.0-r0",
         "pkgconfig"
       ],
       "provides": [
-        "pc:oslcomp=1.12.6",
-        "pc:oslexec=1.12.6",
-        "pc:oslquery=1.12.6"
+        "pc:oslcomp=1.12.7",
+        "pc:oslexec=1.12.7",
+        "pc:oslquery=1.12.7"
       ]
     },
     "enigma-doc": {
@@ -129930,19 +129950,20 @@
     "py3-openimageio": {
       "origin": "openimageio",
       "versions": {
-        "2.4.4.2-r0": 1665534750
+        "2.4.4.2-r0": 1665534750,
+        "2.4.5.0-r0": 1667501226
       },
       "dependencies": [
         "python3",
         "so:libImath-3_1.so.29",
-        "so:libOpenImageIO.so.2.4",
-        "so:libOpenImageIO_Util.so.2.4",
+        "so:libOpenImageIO.so.2.4.5",
+        "so:libOpenImageIO_Util.so.2.4.5",
         "so:libc.musl-armhf.so.1",
         "so:libgcc_s.so.1",
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "py3.10:OpenImageIO=2.4.4.2-r0"
+        "py3.10:OpenImageIO=2.4.5.0-r0"
       ]
     },
     "vkd3d-static": {
@@ -134418,11 +134439,12 @@
     "osl": {
       "origin": "osl",
       "versions": {
-        "1.12.6.2-r0": 1665534750
+        "1.12.6.2-r0": 1665534750,
+        "1.12.7.0-r0": 1667501226
       },
       "dependencies": [
-        "so:libOpenImageIO.so.2.4",
-        "so:libOpenImageIO_Util.so.2.4",
+        "so:libOpenImageIO.so.2.4.5",
+        "so:libOpenImageIO_Util.so.2.4.5",
         "so:libQt5Core.so.5",
         "so:libQt5Gui.so.5",
         "so:libQt5Widgets.so.5",
@@ -134435,12 +134457,12 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:oslc=1.12.6.2-r0",
-        "cmd:oslinfo=1.12.6.2-r0",
-        "cmd:osltoy=1.12.6.2-r0",
-        "cmd:testrender=1.12.6.2-r0",
-        "cmd:testshade=1.12.6.2-r0",
-        "cmd:testshade_dso=1.12.6.2-r0"
+        "cmd:oslc=1.12.7.0-r0",
+        "cmd:oslinfo=1.12.7.0-r0",
+        "cmd:osltoy=1.12.7.0-r0",
+        "cmd:testrender=1.12.7.0-r0",
+        "cmd:testshade=1.12.7.0-r0",
+        "cmd:testshade_dso=1.12.7.0-r0"
       ]
     },
     "rofi-doc": {
@@ -134468,12 +134490,13 @@
     "openimageio": {
       "origin": "openimageio",
       "versions": {
-        "2.4.4.2-r0": 1665534750
+        "2.4.4.2-r0": 1665534750,
+        "2.4.5.0-r0": 1667501226
       },
       "dependencies": [
         "so:libIex-3_1.so.30",
         "so:libImath-3_1.so.29",
-        "so:libOpenColorIO.so.2.1",
+        "so:libOpenColorIO.so.2.2",
         "so:libOpenEXR-3_1.so.30",
         "so:libOpenEXRCore-3_1.so.30",
         "so:libPtex.so.2",
@@ -134500,8 +134523,8 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "so:libOpenImageIO.so.2.4=2.4.4",
-        "so:libOpenImageIO_Util.so.2.4=2.4.4"
+        "so:libOpenImageIO.so.2.4.5=2.4.5",
+        "so:libOpenImageIO_Util.so.2.4.5=2.4.5"
       ]
     },
     "sbcl": {
@@ -135038,11 +135061,12 @@
     "py3-opencolorio": {
       "origin": "opencolorio",
       "versions": {
-        "2.1.2-r1": 1667150030
+        "2.1.2-r1": 1667150030,
+        "2.2.0-r0": 1667501226
       },
       "dependencies": [
         "python3",
-        "so:libOpenColorIO.so.2.1",
+        "so:libOpenColorIO.so.2.2",
         "so:libc.musl-armhf.so.1",
         "so:libgcc_s.so.1",
         "so:libstdc++.so.6"
@@ -137412,12 +137436,13 @@
     "osl-libs": {
       "origin": "osl",
       "versions": {
-        "1.12.6.2-r0": 1665534750
+        "1.12.6.2-r0": 1665534750,
+        "1.12.7.0-r0": 1667501226
       },
       "dependencies": [
         "so:libLLVM-15.so",
-        "so:libOpenImageIO.so.2.4",
-        "so:libOpenImageIO_Util.so.2.4",
+        "so:libOpenImageIO.so.2.4.5",
+        "so:libOpenImageIO_Util.so.2.4.5",
         "so:libboost_thread.so.1.80.0",
         "so:libc.musl-armhf.so.1",
         "so:libclang-cpp.so.15",
@@ -137426,11 +137451,11 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "so:liboslcomp.so.1.12=1.12.6",
-        "so:liboslexec.so.1.12=1.12.6",
-        "so:liboslnoise.so.1.12=1.12.6",
-        "so:liboslquery.so.1.12=1.12.6",
-        "so:libtestshade.so.1.12=1.12.6"
+        "so:liboslcomp.so.1.12=1.12.7",
+        "so:liboslexec.so.1.12=1.12.7",
+        "so:liboslnoise.so.1.12=1.12.7",
+        "so:liboslquery.so.1.12=1.12.7",
+        "so:libtestshade.so.1.12=1.12.7"
       ]
     },
     "qemu-guest-agent": {
@@ -140379,7 +140404,7 @@
       },
       "py-matplotlib": {
         "package": "py3-matplotlib",
-        "version": "3.6.1-r0"
+        "version": "3.6.2-r0"
       },
       "php-gd": {
         "package": "php81-gd",
@@ -152573,23 +152598,23 @@
       },
       "liboslcomp.so.1.12": {
         "package": "osl-libs",
-        "version": "1.12.6"
+        "version": "1.12.7"
       },
       "liboslexec.so.1.12": {
         "package": "osl-libs",
-        "version": "1.12.6"
+        "version": "1.12.7"
       },
       "liboslnoise.so.1.12": {
         "package": "osl-libs",
-        "version": "1.12.6"
+        "version": "1.12.7"
       },
       "liboslquery.so.1.12": {
         "package": "osl-libs",
-        "version": "1.12.6"
+        "version": "1.12.7"
       },
       "libtestshade.so.1.12": {
         "package": "osl-libs",
-        "version": "1.12.6"
+        "version": "1.12.7"
       },
       "libsigc-3.0.so.0": {
         "package": "libsigc++3",
@@ -152742,6 +152767,18 @@
       "libssl.so.1.1": {
         "package": "libssl1.1",
         "version": "1.1"
+      },
+      "libOpenImageIO.so.2.4.5": {
+        "package": "openimageio",
+        "version": "2.4.5"
+      },
+      "libOpenImageIO_Util.so.2.4.5": {
+        "package": "openimageio",
+        "version": "2.4.5"
+      },
+      "libOpenColorIO.so.2.2": {
+        "package": "opencolorio",
+        "version": "2.2.0"
       }
     }
   }
