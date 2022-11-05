@@ -3613,7 +3613,8 @@
     "amtk": {
       "origin": "amtk",
       "versions": {
-        "5.5.2-r0": 1666725733
+        "5.5.2-r0": 1666725733,
+        "5.6.0-r0": 1667619800
       },
       "dependencies": [
         "so:libc.musl-ppc64le.so.1",
@@ -3624,7 +3625,7 @@
         "so:libintl.so.8"
       ],
       "provides": [
-        "so:libamtk-5.so.0=0.1.0"
+        "so:libamtk-5.so.1=1.0.1"
       ]
     },
     "micro-tetris": {
@@ -4665,18 +4666,20 @@
     "gedit-dev": {
       "origin": "gedit",
       "versions": {
-        "42.2-r2": 1666778343
+        "42.2-r2": 1666778343,
+        "43.1-r0": 1667619800
       },
       "dependencies": [
-        "gedit=42.2-r2",
-        "pc:gio-2.0>=2.64",
+        "gedit=43.1-r0",
+        "pc:amtk-5>=5.6",
+        "pc:gio-2.0>=2.70",
         "pc:gtk+-3.0>=3.7.10",
-        "pc:gtksourceview-4>=4.0",
-        "pc:libpeas-gtk-1.0>=1.14.1",
+        "pc:libpeas-gtk-1.0",
+        "pc:tepl-6>=6.2",
         "pkgconfig"
       ],
       "provides": [
-        "pc:gedit=42.2"
+        "pc:gedit=43.1"
       ]
     },
     "collectd-mqtt": {
@@ -6371,10 +6374,12 @@
     "gedit": {
       "origin": "gedit",
       "versions": {
-        "42.2-r2": 1666778343
+        "42.2-r2": 1666778343,
+        "43.1-r0": 1667619800
       },
       "dependencies": [
         "gsettings-desktop-schemas",
+        "so:libamtk-5.so.1",
         "so:libatk-1.0.so.0",
         "so:libc.musl-ppc64le.so.1",
         "so:libcairo.so.2",
@@ -6391,11 +6396,11 @@
         "so:libpango-1.0.so.0",
         "so:libpeas-1.0.so.0",
         "so:libpeas-gtk-1.0.so.0",
-        "so:libxml2.so.2"
+        "so:libtepl-6.so.1"
       ],
       "provides": [
-        "so:libgedit-41.so=0",
-        "cmd:gedit=42.2-r2"
+        "so:libgedit-3.38.so=0",
+        "cmd:gedit=43.1-r0"
       ]
     },
     "avrdude": {
@@ -7869,7 +7874,8 @@
     "github-cli-zsh-completion": {
       "origin": "github-cli",
       "versions": {
-        "2.18.1-r1": 1667325841
+        "2.18.1-r1": 1667325841,
+        "2.19.0-r0": 1667620095
       }
     },
     "liferea-lang": {
@@ -8796,7 +8802,8 @@
     "amtk-lang": {
       "origin": "amtk",
       "versions": {
-        "5.5.2-r0": 1666725733
+        "5.5.2-r0": 1666725733,
+        "5.6.0-r0": 1667619800
       }
     },
     "syncthing-openrc": {
@@ -11467,7 +11474,8 @@
     "github-cli-doc": {
       "origin": "github-cli",
       "versions": {
-        "2.18.1-r1": 1667325841
+        "2.18.1-r1": 1667325841,
+        "2.19.0-r0": 1667620095
       }
     },
     "execline-man-pages-doc": {
@@ -11629,13 +11637,14 @@
     "github-cli": {
       "origin": "github-cli",
       "versions": {
-        "2.18.1-r1": 1667325841
+        "2.18.1-r1": 1667325841,
+        "2.19.0-r0": 1667620095
       },
       "dependencies": [
         "git"
       ],
       "provides": [
-        "cmd:gh=2.18.1-r1"
+        "cmd:gh=2.19.0-r0"
       ]
     },
     "lastpass-cli-bash-completion": {
@@ -14823,7 +14832,8 @@
     "gedit-lang": {
       "origin": "gedit",
       "versions": {
-        "42.2-r2": 1666778343
+        "42.2-r2": 1666778343,
+        "43.1-r0": 1667619800
       },
       "dependencies": [
         "gsettings-desktop-schemas"
@@ -20307,7 +20317,8 @@
     "github-cli-bash-completion": {
       "origin": "github-cli",
       "versions": {
-        "2.18.1-r1": 1667325841
+        "2.18.1-r1": 1667325841,
+        "2.19.0-r0": 1667620095
       }
     },
     "libmcrypt": {
@@ -38168,7 +38179,8 @@
     "gedit-doc": {
       "origin": "gedit",
       "versions": {
-        "42.2-r2": 1666778343
+        "42.2-r2": 1666778343,
+        "43.1-r0": 1667619800
       }
     },
     "runc-doc": {
@@ -42728,7 +42740,8 @@
     "gedit-plugins-lang": {
       "origin": "gedit-plugins",
       "versions": {
-        "42.1-r1": 1666734428
+        "42.1-r1": 1666734428,
+        "43.1-r0": 1667619800
       },
       "dependencies": [
         "python3",
@@ -63868,7 +63881,8 @@
     "gedit-plugins": {
       "origin": "gedit-plugins",
       "versions": {
-        "42.1-r1": 1666734428
+        "42.1-r1": 1666734428,
+        "43.1-r0": 1667619800
       },
       "dependencies": [
         "python3",
@@ -63879,15 +63893,15 @@
         "libpeas-python3",
         "so:libc.musl-ppc64le.so.1",
         "so:libgdk-3.so.0",
-        "so:libgedit-41.so",
+        "so:libgedit-3.38.so",
         "so:libgio-2.0.so.0",
         "so:libglib-2.0.so.0",
         "so:libgobject-2.0.so.0",
         "so:libgtk-3.so.0",
         "so:libgtksourceview-4.so.0",
-        "so:libintl.so.8",
         "so:libpeas-1.0.so.0",
-        "so:libpeas-gtk-1.0.so.0"
+        "so:libpeas-gtk-1.0.so.0",
+        "so:libtepl-6.so.1"
       ]
     },
     "xgamma-doc": {
@@ -114844,16 +114858,17 @@
     "amtk-dev": {
       "origin": "amtk",
       "versions": {
-        "5.5.2-r0": 1666725733
+        "5.5.2-r0": 1666725733,
+        "5.6.0-r0": 1667619800
       },
       "dependencies": [
-        "amtk=5.5.2-r0",
+        "amtk=5.6.0-r0",
         "pc:gio-2.0>=2.56",
         "pc:gtk+-3.0>=3.22",
         "pkgconfig"
       ],
       "provides": [
-        "pc:amtk-5=5.5.2"
+        "pc:amtk-5=5.6.0"
       ]
     },
     "sleuthkit-dev": {
@@ -133178,7 +133193,8 @@
     "py3-keyring": {
       "origin": "py3-keyring",
       "versions": {
-        "23.9.3-r0": 1663469672
+        "23.9.3-r0": 1663469672,
+        "23.10.0-r0": 1667620094
       },
       "dependencies": [
         "py3-importlib-metadata",
@@ -133188,8 +133204,8 @@
         "python3"
       ],
       "provides": [
-        "cmd:keyring=23.9.3-r0",
-        "py3.10:keyring=23.9.3-r0"
+        "cmd:keyring=23.10.0-r0",
+        "py3.10:keyring=23.10.0-r0"
       ]
     },
     "nerd-fonts-stable": {
@@ -136129,7 +136145,8 @@
     "gedit-plugins-doc": {
       "origin": "gedit-plugins",
       "versions": {
-        "42.1-r1": 1666734428
+        "42.1-r1": 1666734428,
+        "43.1-r0": 1667619800
       }
     },
     "jsonnet-dev": {
@@ -153858,7 +153875,8 @@
     "amtk-doc": {
       "origin": "amtk",
       "versions": {
-        "5.5.2-r0": 1666725733
+        "5.5.2-r0": 1666725733,
+        "5.6.0-r0": 1667619800
       }
     },
     "binaryen": {
@@ -156918,6 +156936,709 @@
       ],
       "provides": [
         "cmd:deluge-gtk=2.1.1-r5"
+      ]
+    },
+    "ceph16": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      },
+      "dependencies": [
+        "ceph-osd",
+        "ceph-mds",
+        "ceph-mon",
+        "so:ceph16:so:libceph-common.so.2",
+        "so:ceph16:so:libcephfs.so.2",
+        "so:ceph16:so:librados.so.2",
+        "so:libboost_context.so.1.80.0",
+        "so:libboost_filesystem.so.1.80.0",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcrypto.so.3",
+        "so:libcurl.so.4",
+        "so:libexpat.so.1",
+        "so:libfmt.so.9",
+        "so:libgcc_s.so.1",
+        "so:libicuuc.so.72",
+        "so:libldap.so.2",
+        "so:liblua-5.3.so.0",
+        "so:librdkafka.so.1",
+        "so:libssl.so.3",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "ceph=16.2.10-r8",
+        "so:ceph16:so:libcephsqlite.so=0",
+        "so:ceph16:so:libradosgw.so.2=2.0.0",
+        "so:ceph16:so:librgw.so.2=2.0.0",
+        "cmd:ceph-immutable-object-cache=16.2.10-r8",
+        "cmd:cephfs-mirror=16.2.10-r8",
+        "cmd:cephfs-top=16.2.10-r8",
+        "cmd:rgw-gap-list-comparator=16.2.10-r8",
+        "cmd:rgw-gap-list=16.2.10-r8",
+        "cmd:rgw-orphan-list=16.2.10-r8"
+      ]
+    },
+    "ceph16-volume": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      },
+      "dependencies": [
+        "ceph16-common=16.2.10-r8",
+        "lvm2",
+        "py3-ceph16-common=16.2.10-r8"
+      ],
+      "provides": [
+        "ceph-volume=16.2.10-r8",
+        "cmd:ceph-volume=16.2.10-r8",
+        "py3.10:ceph_volume=16.2.10-r8"
+      ]
+    },
+    "ceph16-fuse": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      },
+      "dependencies": [
+        "so:ceph16:so:libceph-common.so.2",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libfmt.so.9",
+        "so:libfuse.so.2",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "ceph-fuse=16.2.10-r8",
+        "cmd:ceph-fuse=16.2.10-r8",
+        "cmd:mount.fuse.ceph=16.2.10-r8"
+      ]
+    },
+    "ceph16-common": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      },
+      "dependencies": [
+        "eudev",
+        "py3-rados16=16.2.10-r8",
+        "py3-rbd16=16.2.10-r8",
+        "py3-cephfs16=16.2.10-r8",
+        "py3-prettytable",
+        "so:ceph16:so:libceph-common.so.2",
+        "so:ceph16:so:librados.so.2",
+        "so:ceph16:so:libradosstriper.so.1",
+        "so:ceph16:so:librbd.so.1",
+        "so:libblkid.so.1",
+        "so:libboost_program_options.so.1.80.0",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcap-ng.so.0",
+        "so:libfmt.so.9",
+        "so:libgcc_s.so.1",
+        "so:libkeyutils.so.1",
+        "so:libncursesw.so.6",
+        "so:libstdc++.so.6",
+        "so:libudev.so.1"
+      ],
+      "provides": [
+        "ceph-common=16.2.10-r8",
+        "cmd:ceph-authtool=16.2.10-r8",
+        "cmd:ceph-conf=16.2.10-r8",
+        "cmd:ceph-rbdnamer=16.2.10-r8",
+        "cmd:ceph=16.2.10-r8",
+        "cmd:mount.ceph=16.2.10-r8",
+        "cmd:rados=16.2.10-r8",
+        "cmd:rbd=16.2.10-r8",
+        "cmd:rbdmap=16.2.10-r8"
+      ]
+    },
+    "tepl": {
+      "origin": "tepl",
+      "versions": {
+        "6.2.0-r0": 1667619800
+      },
+      "dependencies": [
+        "so:libamtk-5.so.1",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcairo.so.2",
+        "so:libgdk-3.so.0",
+        "so:libgio-2.0.so.0",
+        "so:libglib-2.0.so.0",
+        "so:libgobject-2.0.so.0",
+        "so:libgtk-3.so.0",
+        "so:libgtksourceview-4.so.0",
+        "so:libicui18n.so.72",
+        "so:libicuuc.so.72",
+        "so:libintl.so.8",
+        "so:libpango-1.0.so.0"
+      ],
+      "provides": [
+        "so:libtepl-6.so.1=1.0.0"
+      ]
+    },
+    "ceph16-osd-tools": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      },
+      "dependencies": [
+        "ceph16-base=16.2.10-r8",
+        "lz4-libs",
+        "so:ceph16:so:libceph-common.so.2",
+        "so:libaio.so.1",
+        "so:libboost_program_options.so.1.80.0",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcrypto.so.3",
+        "so:libfmt.so.9",
+        "so:libfuse.so.2",
+        "so:libgcc_s.so.1",
+        "so:liblz4.so.1",
+        "so:libsnappy.so.1",
+        "so:libstdc++.so.6",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "ceph-osd-tools=16.2.10-r8",
+        "cmd:ceph-bluestore-tool=16.2.10-r8",
+        "cmd:ceph-clsinfo=16.2.10-r8",
+        "cmd:ceph-erasure-code-tool=16.2.10-r8",
+        "cmd:ceph-objectstore-tool=16.2.10-r8",
+        "cmd:ceph-osdomap-tool=16.2.10-r8"
+      ]
+    },
+    "libcephfs16": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      },
+      "dependencies": [
+        "so:ceph16:so:libceph-common.so.2",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libfmt.so.9",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "libcephfs=16.2.10-r8",
+        "so:ceph16:so:libcephfs.so.2=2.0.0"
+      ]
+    },
+    "ceph16-mon-tools": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      },
+      "dependencies": [
+        "so:ceph16:so:libceph-common.so.2",
+        "so:libboost_program_options.so.1.80.0",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libgcc_s.so.1",
+        "so:liblz4.so.1",
+        "so:libsnappy.so.1",
+        "so:libstdc++.so.6",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "ceph-mon-tools=16.2.10-r8",
+        "cmd:ceph-monstore-tool=16.2.10-r8"
+      ]
+    },
+    "librbd16": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      },
+      "dependencies": [
+        "so:ceph16:so:libceph-common.so.2",
+        "so:ceph16:so:librados.so.2",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcrypto.so.3",
+        "so:libcryptsetup.so.12",
+        "so:libgcc_s.so.1",
+        "so:libssl.so.3",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "librbd=16.2.10-r8",
+        "so:ceph16:so:librbd.so.1=1.16.0"
+      ]
+    },
+    "rbd-mirror16": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      },
+      "dependencies": [
+        "ceph16-common=16.2.10-r8",
+        "so:ceph16:so:libceph-common.so.2",
+        "so:ceph16:so:librados.so.2",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcrypto.so.3",
+        "so:libcryptsetup.so.12",
+        "so:libgcc_s.so.1",
+        "so:libssl.so.3",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "rbd-mirror=16.2.10-r8",
+        "cmd:rbd-mirror=16.2.10-r8"
+      ]
+    },
+    "ceph16-mgr": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      },
+      "dependencies": [
+        "ceph16-base=16.2.10-r8",
+        "so:ceph16:so:libceph-common.so.2",
+        "so:libboost_python310.so.1.80.0",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libfmt.so.9",
+        "so:libgcc_s.so.1",
+        "so:libpython3.10.so.1.0",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "ceph-mgr=16.2.10-r8",
+        "cmd:ceph-mgr=16.2.10-r8"
+      ]
+    },
+    "tepl-lang": {
+      "origin": "tepl",
+      "versions": {
+        "6.2.0-r0": 1667619800
+      }
+    },
+    "ceph16-bash-completion": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      },
+      "provides": [
+        "ceph-bash-completion=16.2.10-r8"
+      ]
+    },
+    "py3-rados16": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      },
+      "dependencies": [
+        "py3-ceph16-common=16.2.10-r8",
+        "so:ceph16:so:librados.so.2",
+        "so:libc.musl-ppc64le.so.1"
+      ],
+      "provides": [
+        "py3-rados=16.2.10-r8"
+      ]
+    },
+    "ceph16-osd-daemon": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      },
+      "dependencies": [
+        "fuse",
+        "snappy",
+        "lz4-libs",
+        "ceph16-user=16.2.10-r8",
+        "so:libaio.so.1",
+        "so:libblkid.so.1",
+        "so:libboost_iostreams.so.1.80.0",
+        "so:libboost_thread.so.1.80.0",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcrypto.so.3",
+        "so:libfmt.so.9",
+        "so:libfuse.so.2",
+        "so:libgcc_s.so.1",
+        "so:liblz4.so.1",
+        "so:libsnappy.so.1",
+        "so:libstdc++.so.6",
+        "so:libudev.so.1",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "ceph-osd-daemon=16.2.10-r8",
+        "cmd:ceph-osd=16.2.10-r8"
+      ]
+    },
+    "ceph16-dev": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      },
+      "dependencies": [
+        "ceph16=16.2.10-r8",
+        "libcephfs16=16.2.10-r8",
+        "librados16=16.2.10-r8",
+        "libradosstriper16=16.2.10-r8",
+        "librbd16=16.2.10-r8",
+        "so:ceph16:so:librados.so.2",
+        "so:libboost_program_options.so.1.80.0",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "cmd:librados-config=16.2.10-r8"
+      ]
+    },
+    "tepl-dev": {
+      "origin": "tepl",
+      "versions": {
+        "6.2.0-r0": 1667619800
+      },
+      "dependencies": [
+        "amtk-dev",
+        "glib-dev",
+        "gtk+3.0-dev",
+        "gtksourceview4-dev",
+        "pc:amtk-5>=5.0",
+        "pc:gio-2.0>=2.62",
+        "pc:gsettings-desktop-schemas",
+        "pc:gtk+-3.0>=3.22",
+        "pc:gtksourceview-4",
+        "pc:icu-i18n",
+        "pc:icu-uc",
+        "pkgconfig",
+        "tepl=6.2.0-r0"
+      ],
+      "provides": [
+        "pc:tepl-6=6.2.0"
+      ]
+    },
+    "ceph16-mon": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      },
+      "dependencies": [
+        "ceph16-base=16.2.10-r8",
+        "ceph16-mon-daemon=16.2.10-r8",
+        "ceph16-mon-tools=16.2.10-r8"
+      ],
+      "provides": [
+        "ceph-mon=16.2.10-r8"
+      ]
+    },
+    "ceph16-mon-daemon": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      },
+      "dependencies": [
+        "ceph16-user=16.2.10-r8",
+        "so:ceph16:so:libceph-common.so.2",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libgcc_s.so.1",
+        "so:liblz4.so.1",
+        "so:libsnappy.so.1",
+        "so:libstdc++.so.6",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "ceph-mon-daemon=16.2.10-r8",
+        "cmd:ceph-mon=16.2.10-r8"
+      ]
+    },
+    "ceph16-utils": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      },
+      "dependencies": [
+        "ceph16-common=16.2.10-r8",
+        "so:ceph16:so:libceph-common.so.2",
+        "so:ceph16:so:libcephfs.so.2",
+        "so:ceph16:so:librados.so.2",
+        "so:ceph16:so:librbd.so.1",
+        "so:libaio.so.1",
+        "so:libboost_context.so.1.80.0",
+        "so:libboost_thread.so.1.80.0",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcrypto.so.3",
+        "so:libcurl.so.4",
+        "so:libexpat.so.1",
+        "so:libfmt.so.9",
+        "so:libgcc_s.so.1",
+        "so:libicuuc.so.72",
+        "so:libldap.so.2",
+        "so:liblua-5.3.so.0",
+        "so:liblz4.so.1",
+        "so:librdkafka.so.1",
+        "so:libsnappy.so.1",
+        "so:libstdc++.so.6",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "ceph-utils=16.2.10-r8",
+        "cmd:ceph-dencoder=16.2.10-r8",
+        "cmd:ceph-diff-sorted=16.2.10-r8",
+        "cmd:ceph-post-file=16.2.10-r8",
+        "cmd:ceph-syn=16.2.10-r8",
+        "cmd:cephfs-data-scan=16.2.10-r8",
+        "cmd:cephfs-journal-tool=16.2.10-r8",
+        "cmd:cephfs-table-tool=16.2.10-r8",
+        "cmd:rbd-replay-many=16.2.10-r8",
+        "cmd:rbd-replay=16.2.10-r8"
+      ]
+    },
+    "py3-rbd16": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      },
+      "dependencies": [
+        "py3-rados16=16.2.10-r8",
+        "so:ceph16:so:librbd.so.1",
+        "so:libc.musl-ppc64le.so.1"
+      ],
+      "provides": [
+        "py3-rbd=16.2.10-r8"
+      ]
+    },
+    "rbd-nbd16": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      },
+      "dependencies": [
+        "so:ceph16:so:libceph-common.so.2",
+        "so:ceph16:so:librados.so.2",
+        "so:ceph16:so:librbd.so.1",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libgcc_s.so.1",
+        "so:libnl-3.so.200",
+        "so:libnl-genl-3.so.200",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "rbd-nbd=16.2.10-r8",
+        "cmd:rbd-nbd=16.2.10-r8"
+      ]
+    },
+    "librados16": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      },
+      "dependencies": [
+        "so:libblkid.so.1",
+        "so:libboost_iostreams.so.1.80.0",
+        "so:libboost_thread.so.1.80.0",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcrypto.so.3",
+        "so:libfmt.so.9",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6",
+        "so:libudev.so.1"
+      ],
+      "provides": [
+        "librados=16.2.10-r8",
+        "so:ceph16:so:libceph-common.so.2=2",
+        "so:ceph16:so:librados.so.2=2.0.0"
+      ]
+    },
+    "py3-ceph16-common": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      },
+      "dependencies": [
+        "py3-setuptools",
+        "py3-yaml"
+      ],
+      "provides": [
+        "py3-ceph-common=16.2.10-r8",
+        "py3.10:ceph=16.2.10-r8"
+      ]
+    },
+    "rbd-fuse16": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      },
+      "dependencies": [
+        "so:ceph16:so:libceph-common.so.2",
+        "so:ceph16:so:librados.so.2",
+        "so:ceph16:so:librbd.so.1",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libfuse.so.2",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "rbd-fuse=16.2.10-r8",
+        "cmd:rbd-fuse=16.2.10-r8"
+      ]
+    },
+    "ceph16-osd": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      },
+      "dependencies": [
+        "ceph16-osd-daemon=16.2.10-r8",
+        "ceph16-osd-tools=16.2.10-r8",
+        "ceph16-volume=16.2.10-r8"
+      ],
+      "provides": [
+        "ceph-osd=16.2.10-r8"
+      ]
+    },
+    "tepl-doc": {
+      "origin": "tepl",
+      "versions": {
+        "6.2.0-r0": 1667619800
+      }
+    },
+    "ceph16-openrc": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      }
+    },
+    "ceph16-doc": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      }
+    },
+    "ceph16-user": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      },
+      "dependencies": [
+        "/bin/sh"
+      ],
+      "provides": [
+        "ceph-user=16.2.10-r8"
+      ]
+    },
+    "libradosstriper16": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      },
+      "dependencies": [
+        "so:ceph16:so:libceph-common.so.2",
+        "so:ceph16:so:librados.so.2",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libfmt.so.9",
+        "so:libgcc_s.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "libradosstriper=16.2.10-r8",
+        "so:ceph16:so:libradosstriper.so.1=1.0.0"
+      ]
+    },
+    "ceph16-mds": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      },
+      "dependencies": [
+        "ceph16-base=16.2.10-r8",
+        "so:ceph16:so:libceph-common.so.2",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libfmt.so.9",
+        "so:libgcc_s.so.1",
+        "so:liblua-5.3.so.0",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "ceph-mds=16.2.10-r8",
+        "cmd:ceph-mds=16.2.10-r8"
+      ]
+    },
+    "ceph16-base": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      },
+      "dependencies": [
+        "cryptsetup",
+        "e2fsprogs",
+        "logrotate",
+        "parted",
+        "util-linux",
+        "xfsprogs",
+        "ceph16-user=16.2.10-r8",
+        "ceph16-common=16.2.10-r8",
+        "librbd16=16.2.10-r8",
+        "librados16=16.2.10-r8",
+        "libcephfs16=16.2.10-r8",
+        "so:ceph16:so:libceph-common.so.2",
+        "so:libaio.so.1",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcrypto.so.3",
+        "so:libgcc_s.so.1",
+        "so:liblua-5.3.so.0",
+        "so:liblz4.so.1",
+        "so:liboath.so.0",
+        "so:libsnappy.so.1",
+        "so:libstdc++.so.6",
+        "so:libz.so.1"
+      ],
+      "provides": [
+        "ceph-base=16.2.10-r8",
+        "cmd:ceph-crash=16.2.10-r8",
+        "cmd:ceph-create-keys=16.2.10-r8",
+        "cmd:ceph-kvstore-tool=16.2.10-r8",
+        "cmd:ceph-run=16.2.10-r8",
+        "cmd:crushtool=16.2.10-r8",
+        "cmd:monmaptool=16.2.10-r8",
+        "cmd:osdmaptool=16.2.10-r8"
+      ]
+    },
+    "ceph16-radosgw": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      },
+      "dependencies": [
+        "ceph16-common=16.2.10-r8",
+        "oath-toolkit-liboath",
+        "so:ceph16:so:libceph-common.so.2",
+        "so:ceph16:so:librados.so.2",
+        "so:ceph16:so:libradosgw.so.2",
+        "so:libboost_context.so.1.80.0",
+        "so:libboost_filesystem.so.1.80.0",
+        "so:libc.musl-ppc64le.so.1",
+        "so:libcrypto.so.3",
+        "so:libcurl.so.4",
+        "so:libexpat.so.1",
+        "so:libgcc_s.so.1",
+        "so:libicuuc.so.72",
+        "so:libldap.so.2",
+        "so:liblua-5.3.so.0",
+        "so:liboath.so.0",
+        "so:librdkafka.so.1",
+        "so:libstdc++.so.6"
+      ],
+      "provides": [
+        "ceph-radosgw=16.2.10-r8",
+        "cmd:radosgw-admin=16.2.10-r8",
+        "cmd:radosgw-es=16.2.10-r8",
+        "cmd:radosgw-object-expirer=16.2.10-r8",
+        "cmd:radosgw-token=16.2.10-r8",
+        "cmd:radosgw=16.2.10-r8"
+      ]
+    },
+    "py3-cephfs16": {
+      "origin": "ceph16",
+      "versions": {
+        "16.2.10-r8": 1667614883
+      },
+      "dependencies": [
+        "py3-rados16=16.2.10-r8",
+        "so:ceph16:so:libcephfs.so.2",
+        "so:libc.musl-ppc64le.so.1"
+      ],
+      "provides": [
+        "py3-cephfs=16.2.10-r8"
       ]
     }
   },
@@ -170566,6 +171287,50 @@
       "libspdlog.so.1.11": {
         "package": "spdlog",
         "version": "1.11.0"
+      },
+      "ceph16:so:libcephsqlite.so": {
+        "package": "ceph16",
+        "version": "0"
+      },
+      "ceph16:so:libradosgw.so.2": {
+        "package": "ceph16",
+        "version": "2.0.0"
+      },
+      "ceph16:so:librgw.so.2": {
+        "package": "ceph16",
+        "version": "2.0.0"
+      },
+      "libtepl-6.so.1": {
+        "package": "tepl",
+        "version": "1.0.0"
+      },
+      "ceph16:so:libcephfs.so.2": {
+        "package": "libcephfs16",
+        "version": "2.0.0"
+      },
+      "ceph16:so:librbd.so.1": {
+        "package": "librbd16",
+        "version": "1.16.0"
+      },
+      "libgedit-3.38.so": {
+        "package": "gedit",
+        "version": "0"
+      },
+      "libamtk-5.so.1": {
+        "package": "amtk",
+        "version": "1.0.1"
+      },
+      "ceph16:so:libceph-common.so.2": {
+        "package": "librados16",
+        "version": "2"
+      },
+      "ceph16:so:librados.so.2": {
+        "package": "librados16",
+        "version": "2.0.0"
+      },
+      "ceph16:so:libradosstriper.so.1": {
+        "package": "libradosstriper16",
+        "version": "1.0.0"
       }
     },
     "package": {
@@ -172700,6 +173465,118 @@
       "jbuilder": {
         "package": "dune",
         "version": "3.5.0-r0"
+      },
+      "ceph": {
+        "package": "ceph16",
+        "version": "16.2.10-r8"
+      },
+      "ceph-volume": {
+        "package": "ceph16-volume",
+        "version": "16.2.10-r8"
+      },
+      "ceph-fuse": {
+        "package": "ceph16-fuse",
+        "version": "16.2.10-r8"
+      },
+      "ceph-common": {
+        "package": "ceph16-common",
+        "version": "16.2.10-r8"
+      },
+      "ceph-osd-tools": {
+        "package": "ceph16-osd-tools",
+        "version": "16.2.10-r8"
+      },
+      "libcephfs": {
+        "package": "libcephfs16",
+        "version": "16.2.10-r8"
+      },
+      "ceph-mon-tools": {
+        "package": "ceph16-mon-tools",
+        "version": "16.2.10-r8"
+      },
+      "librbd": {
+        "package": "librbd16",
+        "version": "16.2.10-r8"
+      },
+      "rbd-mirror": {
+        "package": "rbd-mirror16",
+        "version": "16.2.10-r8"
+      },
+      "ceph-mgr": {
+        "package": "ceph16-mgr",
+        "version": "16.2.10-r8"
+      },
+      "ceph-bash-completion": {
+        "package": "ceph16-bash-completion",
+        "version": "16.2.10-r8"
+      },
+      "py3-rados": {
+        "package": "py3-rados16",
+        "version": "16.2.10-r8"
+      },
+      "ceph-osd-daemon": {
+        "package": "ceph16-osd-daemon",
+        "version": "16.2.10-r8"
+      },
+      "ceph-mon": {
+        "package": "ceph16-mon",
+        "version": "16.2.10-r8"
+      },
+      "ceph-mon-daemon": {
+        "package": "ceph16-mon-daemon",
+        "version": "16.2.10-r8"
+      },
+      "ceph-utils": {
+        "package": "ceph16-utils",
+        "version": "16.2.10-r8"
+      },
+      "py3-rbd": {
+        "package": "py3-rbd16",
+        "version": "16.2.10-r8"
+      },
+      "rbd-nbd": {
+        "package": "rbd-nbd16",
+        "version": "16.2.10-r8"
+      },
+      "librados": {
+        "package": "librados16",
+        "version": "16.2.10-r8"
+      },
+      "py3-ceph-common": {
+        "package": "py3-ceph16-common",
+        "version": "16.2.10-r8"
+      },
+      "rbd-fuse": {
+        "package": "rbd-fuse16",
+        "version": "16.2.10-r8"
+      },
+      "ceph-osd": {
+        "package": "ceph16-osd",
+        "version": "16.2.10-r8"
+      },
+      "ceph-user": {
+        "package": "ceph16-user",
+        "version": "16.2.10-r8"
+      },
+      "libradosstriper": {
+        "package": "libradosstriper16",
+        "version": "16.2.10-r8"
+      },
+      "ceph-mds": {
+        "package": "ceph16-mds",
+        "version": "16.2.10-r8"
+      },
+      "ceph-base": {
+        "package": "ceph16-base",
+        "version": "16.2.10-r8"
+      },
+      "ceph-radosgw": {
+        "package": "ceph16-radosgw",
+        "version": "16.2.10-r8"
+      },
+      "py3-cephfs": {
+        "package": "py3-cephfs16",
+        "version": "16.2.10-r8"
       }
     }
   }
