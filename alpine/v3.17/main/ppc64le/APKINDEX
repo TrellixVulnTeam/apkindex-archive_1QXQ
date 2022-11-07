@@ -1328,22 +1328,6 @@ t:1667235684
 c:0176fd8a4a864da718ddcd6620e8f078b19fbfdc
 D:dovecot=2.3.19.1-r5 so:libc.musl-ppc64le.so.1 so:libdovecot-storage.so.0 so:libdovecot.so.0
 
-C:Q1+KTXCEfWD5kGPGzjpm3ESM/xiao=
-P:apparmor-lang
-V:3.1.1-r0
-A:ppc64le
-S:132081
-I:1179648
-T:Languages for package apparmor
-U:https://gitlab.com/apparmor/apparmor/wikis/home
-L:GPL-2.0-only
-o:apparmor
-m:Allan Garret <allan.garret@gmail.com>
-t:1666566627
-c:9ce8c7ff462c2cb809ebdbf3db35fbc548b40309
-D:bash
-i:apparmor=3.1.1-r0 lang
-
 C:Q1mQvuNvrFYjHBGEYl48+/pU2clvk=
 P:kamailio-openrc
 V:5.6.2-r1
@@ -1592,6 +1576,22 @@ c:8d4e2f1e25e841d2c87f669114f0cd098b0c0d0e
 D:so:libavahi-client.so.3 so:libavahi-common.so.3 so:libc.musl-ppc64le.so.1 so:libcups.so.2 so:libgcc_s.so.1 so:libstdc++.so.6
 p:cmd:cancel=2.4.2-r0 cmd:cupsaccept=2.4.2-r0 cmd:cupsctl=2.4.2-r0 cmd:cupsdisable=2.4.2-r0 cmd:cupsenable=2.4.2-r0 cmd:cupstestppd=2.4.2-r0 cmd:ippeveprinter=2.4.2-r0 cmd:ippfind=2.4.2-r0 cmd:lp=2.4.2-r0 cmd:lpadmin=2.4.2-r0 cmd:lpc=2.4.2-r0 cmd:lpinfo=2.4.2-r0 cmd:lpmove=2.4.2-r0 cmd:lpoptions=2.4.2-r0 cmd:lpq=2.4.2-r0 cmd:lpr=2.4.2-r0 cmd:lprm=2.4.2-r0 cmd:lpstat=2.4.2-r0 cmd:ppdc=2.4.2-r0 cmd:ppdhtml=2.4.2-r0 cmd:ppdi=2.4.2-r0 cmd:ppdmerge=2.4.2-r0 cmd:ppdpo=2.4.2-r0
 
+C:Q19fp9SseziwHZNqlWNwqbf61m350=
+P:apparmor-utils
+V:3.1.2-r0
+A:ppc64le
+S:294701
+I:1368064
+T:AppArmor userspace utilities
+U:https://gitlab.com/apparmor/apparmor/wikis/home
+L:GPL-2.0-only
+o:apparmor
+m:Allan Garret <allan.garret@gmail.com>
+t:1667859568
+c:7340d7b3375c24573c0eda8dfa4b8def076bdb4a
+D:py3-apparmor libapparmor=3.1.2-r0 perl python3 bash so:libc.musl-ppc64le.so.1 so:libintl.so.8
+p:cmd:aa-audit=3.1.2-r0 cmd:aa-autodep=3.1.2-r0 cmd:aa-cleanprof=3.1.2-r0 cmd:aa-complain=3.1.2-r0 cmd:aa-decode=3.1.2-r0 cmd:aa-disable=3.1.2-r0 cmd:aa-easyprof=3.1.2-r0 cmd:aa-enabled=3.1.2-r0 cmd:aa-enforce=3.1.2-r0 cmd:aa-exec=3.1.2-r0 cmd:aa-features-abi=3.1.2-r0 cmd:aa-genprof=3.1.2-r0 cmd:aa-logprof=3.1.2-r0 cmd:aa-mergeprof=3.1.2-r0 cmd:aa-notify=3.1.2-r0 cmd:aa-remove-unknown=3.1.2-r0 cmd:aa-status=3.1.2-r0 cmd:aa-unconfined=3.1.2-r0 cmd:apparmor_status=3.1.2-r0 py3.10:apparmor=3.1.2-r0
+
 C:Q1ZhiIXT1aUW4vWNib/aB2JlZIi6I=
 P:perl-devel-checklib
 V:1.16-r0
@@ -1778,20 +1778,21 @@ t:1655409612
 c:c1cd09cd57c5a96571d37de8dd57a7c71c67ee34
 D:s6-networking=2.5.1.1-r0
 
-C:Q163qTWBABsbr34p+FfBozm4/8p9U=
-P:apparmor-profiles
-V:3.1.1-r0
+C:Q1RykRrjeQPz539Z6ZZbnjiXzU2SM=
+P:mesa-egl
+V:22.2.3-r0
 A:ppc64le
-S:106525
-I:1536000
-T:AppArmor sample pre-made profiles
-U:https://gitlab.com/apparmor/apparmor/wikis/home
-L:GPL-2.0-only
-o:apparmor
-m:Allan Garret <allan.garret@gmail.com>
-t:1666566627
-c:9ce8c7ff462c2cb809ebdbf3db35fbc548b40309
-D:apparmor
+S:137290
+I:409600
+T:Mesa libEGL runtime libraries
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1667860810
+c:04097a83c9fcec3f0d301815b79cd3b1bd6eaea7
+D:mesa=22.2.3-r0 so:libX11-xcb.so.1 so:libc.musl-ppc64le.so.1 so:libdrm.so.2 so:libexpat.so.1 so:libgbm.so.1 so:libglapi.so.0 so:libwayland-client.so.0 so:libwayland-server.so.0 so:libxcb-dri2.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb.so.1 so:libxshmfence.so.1
+p:so:libEGL.so.1=1.0.0
 
 C:Q1vM3V/OW5UjD+sBXS3x45h4VOAr8=
 P:libecpg-dev
@@ -1942,22 +1943,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1663466703
 c:46f442f1e759781f338603570b643174856e6086
 i:docs popt=1.19-r0
-
-C:Q1jjVgRj1VtrZ5AsWrCw7tAmFMb3U=
-P:mesa-vulkan-ati
-V:22.2.2-r2
-A:ppc64le
-S:2709464
-I:8593408
-T:Mesa Vulkan API driver for ati
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667248325
-c:9fdf43676713e117fda7c87a757608ee855a01c4
-D:mesa=22.2.2-r2 so:libLLVM-15.so so:libX11-xcb.so.1 so:libc.musl-ppc64le.so.1 so:libdrm.so.2 so:libdrm_amdgpu.so.1 so:libelf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libudev.so.1 so:libwayland-client.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-randr.so.0 so:libxcb-shm.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb.so.1 so:libxshmfence.so.1 so:libz.so.1 so:libzstd.so.1
-p:so:libvulkan_radeon.so=0
 
 C:Q1frEFYg9eJ8VFdq9GEAg3N/Tt3ds=
 P:font-misc-ethiopic
@@ -2421,6 +2406,22 @@ t:1662215060
 c:72f38ece22272cb7bb278329c1ff67125cbefc77
 D:so:libc.musl-ppc64le.so.1 so:libcairo.so.2
 p:py-cairo=1.21.0-r1 py3.10:cairo=1.21.0-r1
+
+C:Q1x50AYd4QH0h/umF4hj4LsVHk7w4=
+P:mesa-osmesa
+V:22.2.3-r0
+A:ppc64le
+S:4403514
+I:14376960
+T:Mesa offscreen rendering libraries
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1667860810
+c:04097a83c9fcec3f0d301815b79cd3b1bd6eaea7
+D:mesa=22.2.3-r0 so:libLLVM-15.so so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libglapi.so.0 so:libstdc++.so.6 so:libz.so.1 so:libzstd.so.1
+p:so:libOSMesa.so.8=8.0.0
 
 C:Q1C+HEaSUzCwrRemHwbBUrEZnJjgU=
 P:acf-heimdal
@@ -3590,22 +3591,6 @@ t:1639595861
 c:76a633826dcdb5ad9efd870de55f13914779c4be
 D:python3
 p:py-funcsigs=1.0.2-r6 py3.10:funcsigs=1.0.2-r6
-
-C:Q1n/fEHNTlA474vi10KtHAA8rAxUQ=
-P:mesa-osmesa
-V:22.2.2-r2
-A:ppc64le
-S:4402943
-I:14376960
-T:Mesa offscreen rendering libraries
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667248325
-c:9fdf43676713e117fda7c87a757608ee855a01c4
-D:mesa=22.2.2-r2 so:libLLVM-15.so so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libglapi.so.0 so:libstdc++.so.6 so:libz.so.1 so:libzstd.so.1
-p:so:libOSMesa.so.8=8.0.0
 
 C:Q1wUpnrEwEYfkAU4P/5aEag4RfiMg=
 P:libdnet-dev
@@ -6157,6 +6142,22 @@ t:1654671542
 c:521abb84ed4181958bbd9cda2e756c31b9e87fb2
 i:docs perl-data-uuid=1.226-r3
 
+C:Q13hDT/JJETSD0QC5AAxqhmFqy66Q=
+P:apparmor-vim
+V:3.1.2-r0
+A:ppc64le
+S:6011
+I:53248
+T:AppArmor VIM support
+U:https://gitlab.com/apparmor/apparmor/wikis/home
+L:GPL-2.0-only
+o:apparmor
+m:Allan Garret <allan.garret@gmail.com>
+t:1667859568
+c:7340d7b3375c24573c0eda8dfa4b8def076bdb4a
+D:bash
+i:apparmor-vim=3.1.2-r0 vim
+
 C:Q179h0ea32hEqIrskba7vUimhMU7w=
 P:intltool-doc
 V:0.51.0-r5
@@ -6462,22 +6463,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1666619671
 c:c57128b0e49d551220aff88af0f1487d80cdccf8
 D:libpaper=1.1.28-r2
-
-C:Q154DxzwHdJdQ4cQQonokAJ1jZ4Pg=
-P:apparmor
-V:3.1.1-r0
-A:ppc64le
-S:571904
-I:1925120
-T:Linux application security framework - mandatory access control for programs
-U:https://gitlab.com/apparmor/apparmor/wikis/home
-L:GPL-2.0-only
-o:apparmor
-m:Allan Garret <allan.garret@gmail.com>
-t:1666566627
-c:9ce8c7ff462c2cb809ebdbf3db35fbc548b40309
-D:bash so:libc.musl-ppc64le.so.1 so:libintl.so.8
-p:cmd:apparmor_parser=3.1.1-r0
 
 C:Q1aBRG0WbTFGD/5VhAjH5hv6WydME=
 P:perl-net-openssh
@@ -7259,6 +7244,37 @@ m:Carlo Landmeter <clandmeter@alpinelinux.org>
 t:1610959559
 c:70431c686ab939c793546558eee747fed76150d6
 
+C:Q1GGosjJGoS3jDNupJ2EL2/TOnizA=
+P:mesa-xatracker
+V:22.2.3-r0
+A:ppc64le
+S:2296935
+I:7507968
+T:Mesa XA state tracker for vmware
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1667860810
+c:04097a83c9fcec3f0d301815b79cd3b1bd6eaea7
+D:mesa=22.2.3-r0 so:libLLVM-15.so so:libc.musl-ppc64le.so.1 so:libdrm.so.2 so:libdrm_nouveau.so.2 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libz.so.1 so:libzstd.so.1
+p:so:libxatracker.so.2=2.5.0
+
+C:Q14A9jBOHDxHqBYO+BoyfxFaxXDbE=
+P:mesa-vdpau-gallium
+V:22.2.3-r0
+A:ppc64le
+S:4668452
+I:13484032
+T:Mesa gallium VDPAU drivers
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1667860810
+c:04097a83c9fcec3f0d301815b79cd3b1bd6eaea7
+D:mesa=22.2.3-r0 libvdpau so:libLLVM-15.so so:libX11-xcb.so.1 so:libc.musl-ppc64le.so.1 so:libdrm.so.2 so:libdrm_amdgpu.so.1 so:libdrm_nouveau.so.2 so:libdrm_radeon.so.1 so:libelf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libxcb-dri2.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb.so.1 so:libxshmfence.so.1 so:libz.so.1 so:libzstd.so.1
+
 C:Q1Qb3anEI0G2H9n+hC1SB4mg6w3c0=
 P:lua-augeas
 V:0.1.2-r5
@@ -7287,22 +7303,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1600933831
 c:3767852e6d9c64c963d92dd11d41f1c7f6141861
 D:vanessa_logger-dev vanessa_adt=0.0.9-r1
-
-C:Q1Nhb8jJvoLpDjchcYK8Ra4cCK8gw=
-P:py3-apparmor
-V:3.1.1-r0
-A:ppc64le
-S:34594
-I:221184
-T:Python3 module for apparmor
-U:https://gitlab.com/apparmor/apparmor/wikis/home
-L:GPL-2.0-only
-o:apparmor
-m:Allan Garret <allan.garret@gmail.com>
-t:1666566627
-c:9ce8c7ff462c2cb809ebdbf3db35fbc548b40309
-D:libapparmor=3.1.1-r0 python3 so:libapparmor.so.1 so:libc.musl-ppc64le.so.1
-p:py3.10:LibAppArmor=3.1.1-r0
 
 C:Q1tnbz0ls9lBwtR4abNLy08mLArww=
 P:lua5.4-unit
@@ -7962,6 +7962,21 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl perl-list-moreutils perl-sub-install perl-params-util perl-test-fatal perl-test-requires perl-package-stash perl-test-warnings perl-sub-name
+
+C:Q1C0+XatLEGqfrzeJ9S5D4cjsrsoA=
+P:apparmor-doc
+V:3.1.2-r0
+A:ppc64le
+S:136647
+I:241664
+T:Linux application security framework - mandatory access control for programs (documentation)
+U:https://gitlab.com/apparmor/apparmor/wikis/home
+L:GPL-2.0-only
+o:apparmor
+m:Allan Garret <allan.garret@gmail.com>
+t:1667859568
+c:7340d7b3375c24573c0eda8dfa4b8def076bdb4a
+i:docs apparmor=3.1.2-r0
 
 C:Q17KcHbCya+dRO7NxPi9CHF0ie6Yg=
 P:inotify-tools-libs
@@ -10477,20 +10492,6 @@ t:1660225613
 c:1daee00317a10316c3ab678755f0bbd676165b9c
 i:docs thin-provisioning-tools=0.9.0-r4
 
-C:Q1TyvYoB0CuXxd9tHbpcB6e12u40E=
-P:mesa
-V:22.2.2-r2
-A:ppc64le
-S:11149
-I:110592
-T:Mesa DRI OpenGL library
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667248325
-c:9fdf43676713e117fda7c87a757608ee855a01c4
-
 C:Q1r8nnb2LsD7M32G6aYxo/Bi0iJ1g=
 P:perl-html-parser-doc
 V:3.80-r0
@@ -10977,6 +10978,22 @@ t:1634355078
 c:8dcf9c99bc1f08daa41fb0b2c1bd243b444281d5
 D:so:libc.musl-ppc64le.so.1 so:liblua.so.5
 p:cmd:tolua++=1.0.93-r4
+
+C:Q19uTzGgZKKLbaLiVIG9AZP63zx24=
+P:mesa-vulkan-layers
+V:22.2.3-r0
+A:ppc64le
+S:324591
+I:843776
+T:collection of vulkan layers from mesa
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1667860810
+c:04097a83c9fcec3f0d301815b79cd3b1bd6eaea7
+D:python3 so:libc.musl-ppc64le.so.1 so:libdrm.so.2 so:libgcc_s.so.1 so:libstdc++.so.6 so:libwayland-client.so.0 so:libxcb-dri3.so.0 so:libxcb.so.1
+p:mesa-vulkan-layer=22.2.3-r0 so:libVkLayer_MESA_device_select.so=0 so:libVkLayer_MESA_overlay.so=0 cmd:mesa-overlay-control.py=22.2.3-r0
 
 C:Q1+E1Ep5kH397EzS6Hb7hBgZ/Vjzg=
 P:perl-mail-spamassassin
@@ -13383,6 +13400,21 @@ c:f982ff4b66c6e55b1009accaf711cde71473e4cd
 D:rpcbind python3 so:libblkid.so.1 so:libc.musl-ppc64le.so.1 so:libcap.so.2 so:libcom_err.so.2 so:libdevmapper.so.1.02 so:libevent_core-2.1.so.7 so:libgssapi_krb5.so.2 so:libkeyutils.so.1 so:libkrb5.so.3 so:libmount.so.1 so:libnfsidmap.so.1 so:libsqlite3.so.0 so:libtirpc.so.3 so:libuuid.so.1
 p:cmd:blkmapd=2.6.2-r0 cmd:exportfs=2.6.2-r0 cmd:mount.nfs4=2.6.2-r0 cmd:mount.nfs=2.6.2-r0 cmd:mountstats=2.6.2-r0 cmd:nfsconf=2.6.2-r0 cmd:nfsdcld=2.6.2-r0 cmd:nfsdclddb=2.6.2-r0 cmd:nfsdclnts=2.6.2-r0 cmd:nfsdcltrack=2.6.2-r0 cmd:nfsidmap=2.6.2-r0 cmd:nfsiostat=2.6.2-r0 cmd:nfsstat=2.6.2-r0 cmd:rpc.gssd=2.6.2-r0 cmd:rpc.idmapd=2.6.2-r0 cmd:rpc.mountd=2.6.2-r0 cmd:rpc.nfsd=2.6.2-r0 cmd:rpc.statd=2.6.2-r0 cmd:rpc.svcgssd=2.6.2-r0 cmd:rpcctl=2.6.2-r0 cmd:rpcdebug=2.6.2-r0 cmd:showmount=2.6.2-r0 cmd:sm-notify=2.6.2-r0 cmd:start-statd=2.6.2-r0 cmd:umount.nfs4=2.6.2-r0 cmd:umount.nfs=2.6.2-r0
 
+C:Q1fqLpKzWF398Hc05POx3JA1+KbdE=
+P:mesa-dri-gallium
+V:22.2.3-r0
+A:ppc64le
+S:7999037
+I:23068672
+T:Mesa gallium DRI drivers
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1667860810
+c:04097a83c9fcec3f0d301815b79cd3b1bd6eaea7
+D:mesa=22.2.3-r0 so:libLLVM-15.so so:libc.musl-ppc64le.so.1 so:libdrm.so.2 so:libdrm_amdgpu.so.1 so:libdrm_nouveau.so.2 so:libdrm_radeon.so.1 so:libelf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libglapi.so.0 so:libstdc++.so.6 so:libxcb-dri3.so.0 so:libz.so.1 so:libzstd.so.1
+
 C:Q1EU83dKovDWy6pcKJBPF3TnQ4A78=
 P:mdevd
 V:0.1.6.0-r1
@@ -13810,6 +13842,21 @@ t:1661346489
 c:aaed9995acc1511d54d5d93e1ea3776caf4aa488
 D:so:libc.musl-ppc64le.so.1 so:libtasn1.so.6
 p:cmd:asn1Coding=4.19.0-r0 cmd:asn1Decoding=4.19.0-r0 cmd:asn1Parser=4.19.0-r0
+
+C:Q1gvbJx3yHkOcJy8ydOaBmjb8lVT8=
+P:apparmor-openrc
+V:3.1.2-r0
+A:ppc64le
+S:1995
+I:16384
+T:Linux application security framework - mandatory access control for programs (OpenRC init scripts)
+U:https://gitlab.com/apparmor/apparmor/wikis/home
+L:GPL-2.0-only
+o:apparmor
+m:Allan Garret <allan.garret@gmail.com>
+t:1667859568
+c:7340d7b3375c24573c0eda8dfa4b8def076bdb4a
+i:openrc apparmor=3.1.2-r0
 
 C:Q1ozy2Fvj4eeAlJFkRtfuAVj53uSA=
 P:spice-dev
@@ -16530,6 +16577,22 @@ t:1667712428
 c:7d2a169277bf37c9cf7a387d3d9516dac85afa89
 i:docs cyrus-sasl=2.1.28-r3
 
+C:Q1WFYoKGTw1WvstQd1Efpr1whqhGQ=
+P:apparmor-utils-lang
+V:3.1.2-r0
+A:ppc64le
+S:56540
+I:471040
+T:Languages for package apparmor-utils-lang
+U:https://gitlab.com/apparmor/apparmor/wikis/home
+L:GPL-2.0-only
+o:apparmor
+m:Allan Garret <allan.garret@gmail.com>
+t:1667859568
+c:7340d7b3375c24573c0eda8dfa4b8def076bdb4a
+D:bash
+i:apparmor-utils=3.1.2-r0 lang
+
 C:Q1O32Pm4xvQqe+dI89eOHOFbKNanw=
 P:libsasl
 V:2.1.28-r3
@@ -16773,22 +16836,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1663195706
 c:464871c4df066f8d4bee5a4e277fd6a7efe47524
 D:logrotate
-
-C:Q1n3Ds5/wmF9UcnwmyLjRvOdLtv88=
-P:apparmor-utils
-V:3.1.1-r0
-A:ppc64le
-S:294663
-I:1368064
-T:AppArmor userspace utilities
-U:https://gitlab.com/apparmor/apparmor/wikis/home
-L:GPL-2.0-only
-o:apparmor
-m:Allan Garret <allan.garret@gmail.com>
-t:1666566627
-c:9ce8c7ff462c2cb809ebdbf3db35fbc548b40309
-D:py3-apparmor libapparmor=3.1.1-r0 perl python3 bash so:libc.musl-ppc64le.so.1 so:libintl.so.8
-p:cmd:aa-audit=3.1.1-r0 cmd:aa-autodep=3.1.1-r0 cmd:aa-cleanprof=3.1.1-r0 cmd:aa-complain=3.1.1-r0 cmd:aa-decode=3.1.1-r0 cmd:aa-disable=3.1.1-r0 cmd:aa-easyprof=3.1.1-r0 cmd:aa-enabled=3.1.1-r0 cmd:aa-enforce=3.1.1-r0 cmd:aa-exec=3.1.1-r0 cmd:aa-features-abi=3.1.1-r0 cmd:aa-genprof=3.1.1-r0 cmd:aa-logprof=3.1.1-r0 cmd:aa-mergeprof=3.1.1-r0 cmd:aa-notify=3.1.1-r0 cmd:aa-remove-unknown=3.1.1-r0 cmd:aa-status=3.1.1-r0 cmd:aa-unconfined=3.1.1-r0 cmd:apparmor_status=3.1.1-r0 py3.10:apparmor=3.1.1-r0
 
 C:Q17yx3LuCYK5v3Y5XFJ9HrbspBh+s=
 P:libpri-dev
@@ -18145,22 +18192,6 @@ t:1651315351
 c:1dc9bef333301f55a36d9706c4f8afe56de4f3cf
 D:libmd=1.0.4-r0 pkgconfig
 p:pc:libmd=1.0.4
-
-C:Q1oxy9FqyqiFUmlZfmO/iCwNKGpAI=
-P:mesa-gbm
-V:22.2.2-r2
-A:ppc64le
-S:32500
-I:147456
-T:Mesa gbm library
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667248325
-c:9fdf43676713e117fda7c87a757608ee855a01c4
-D:mesa=22.2.2-r2 so:libc.musl-ppc64le.so.1 so:libdrm.so.2 so:libexpat.so.1 so:libwayland-server.so.0
-p:so:libgbm.so.1=1.0.0
 
 C:Q1A2vtPGgILH7HEUtYVnuiRwvGMRQ=
 P:git-gitk
@@ -21739,6 +21770,20 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1659792088
 c:0714a84b7f79009ae8b96aef50216ed72f54b885
 
+C:Q16BFM3EwvNpY1StBM+lhqCSv4GUQ=
+P:mesa-dbg
+V:22.2.3-r0
+A:ppc64le
+S:37656175
+I:111210496
+T:Mesa DRI OpenGL library (debug symbols)
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1667860810
+c:04097a83c9fcec3f0d301815b79cd3b1bd6eaea7
+
 C:Q1CTS3f5TOvlR1fm9jIIgyp2XtALY=
 P:perl-locale-maketext-lexicon
 V:1.00-r3
@@ -22948,6 +22993,22 @@ m:Timothy Legge <timlegge@gmail.com>
 t:1666448225
 c:82c2d87914cc142c07169ad94c19e4c0e12f2907
 D:perl so:libc.musl-ppc64le.so.1
+
+C:Q1PsU5hlpkb3YK9opPUVyzN3nzeIc=
+P:libapparmor-dev
+V:3.1.2-r0
+A:ppc64le
+S:48093
+I:196608
+T:Linux application security framework - mandatory access control for programs (development files)
+U:https://gitlab.com/apparmor/apparmor/wikis/home
+L:GPL-2.0-only
+o:apparmor
+m:Allan Garret <allan.garret@gmail.com>
+t:1667859568
+c:7340d7b3375c24573c0eda8dfa4b8def076bdb4a
+D:libapparmor=3.1.2-r0 pkgconfig
+p:pc:libapparmor=3.1.2
 
 C:Q10lRUQkdllx2Rntj0q8tcyHOdwVA=
 P:hunspell-doc
@@ -26272,6 +26333,20 @@ t:1649093063
 c:3679307172d226faa0e4265eb3c1ede46318b6f4
 D:ruby
 
+C:Q1kDezv5pMt/sp+oW15cfTO5aWyBY=
+P:mesa
+V:22.2.3-r0
+A:ppc64le
+S:11154
+I:110592
+T:Mesa DRI OpenGL library
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1667860810
+c:04097a83c9fcec3f0d301815b79cd3b1bd6eaea7
+
 C:Q19cVfmB4071pmzkWkn1/luqvr0dg=
 P:libmaxminddb-doc
 V:1.7.1-r0
@@ -29309,22 +29384,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1666626728
 c:3ae65f6dad3661ffd75af6122823c5f2e432bb73
 
-C:Q18S/iycamTIkT/vZscrMubVQWh1c=
-P:apparmor-utils-lang
-V:3.1.1-r0
-A:ppc64le
-S:56530
-I:471040
-T:Languages for package apparmor-utils-lang
-U:https://gitlab.com/apparmor/apparmor/wikis/home
-L:GPL-2.0-only
-o:apparmor
-m:Allan Garret <allan.garret@gmail.com>
-t:1666566627
-c:9ce8c7ff462c2cb809ebdbf3db35fbc548b40309
-D:bash
-i:apparmor-utils=3.1.1-r0 lang
-
 C:Q1M3XwlYRZjfNxmHshzkKDfgSeu/s=
 P:libmilter-dev
 V:1.0.2-r8
@@ -30985,22 +31044,6 @@ c:84d02e8c3abb163d4ca89e62e831c4116b9ea195
 D:so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libosp.so.5 so:libstdc++.so.6
 p:so:libogrove.so.0=0.0.1 so:libospgrove.so.0=0.0.1 so:libostyle.so.0=0.0.1
 
-C:Q18y4R9fsWFVfSP+C2nwBAwftVnBA=
-P:mesa-vulkan-layers
-V:22.2.2-r2
-A:ppc64le
-S:324582
-I:843776
-T:collection of vulkan layers from mesa
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667248325
-c:9fdf43676713e117fda7c87a757608ee855a01c4
-D:python3 so:libc.musl-ppc64le.so.1 so:libdrm.so.2 so:libgcc_s.so.1 so:libstdc++.so.6 so:libwayland-client.so.0 so:libxcb-dri3.so.0 so:libxcb.so.1
-p:mesa-vulkan-layer=22.2.2-r2 so:libVkLayer_MESA_device_select.so=0 so:libVkLayer_MESA_overlay.so=0 cmd:mesa-overlay-control.py=22.2.2-r2
-
 C:Q19LERYyqeePPrvlgvBz/zWruGjKg=
 P:perl-cgi-fast
 V:2.16-r0
@@ -31931,21 +31974,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1666359747
 c:67ab8204e8ceaa4243a19549dc03bcdcd5668680
 
-C:Q1JWddnRzColfeh2fz96Hv124krtA=
-P:apparmor-pam
-V:3.1.1-r0
-A:ppc64le
-S:5252
-I:81920
-T:AppArmor PAM library
-U:https://gitlab.com/apparmor/apparmor/wikis/home
-L:GPL-2.0-only
-o:apparmor
-m:Allan Garret <allan.garret@gmail.com>
-t:1666566627
-c:9ce8c7ff462c2cb809ebdbf3db35fbc548b40309
-D:libapparmor=3.1.1-r0 linux-pam so:libapparmor.so.1 so:libc.musl-ppc64le.so.1 so:libpam.so.0
-
 C:Q1uTTdAYBvhJ5Y/5Z+wbKrPn1uY7k=
 P:fido2
 V:1.12.0-r0
@@ -32504,22 +32532,6 @@ m:Leonardo Arena <rnalrd@alpinelinux.org>
 t:1629905362
 c:8018cdc529f052cd64be0a22446dc31aef53e28d
 D:perl
-
-C:Q1CPH8jRU4MJQoMoUuWq8D/3mZIHs=
-P:apparmor-vim
-V:3.1.1-r0
-A:ppc64le
-S:6009
-I:53248
-T:AppArmor VIM support
-U:https://gitlab.com/apparmor/apparmor/wikis/home
-L:GPL-2.0-only
-o:apparmor
-m:Allan Garret <allan.garret@gmail.com>
-t:1666566627
-c:9ce8c7ff462c2cb809ebdbf3db35fbc548b40309
-D:bash
-i:apparmor-vim=3.1.1-r0 vim
 
 C:Q1Os4xPam9yny9PLLfb4e/hsozVOg=
 P:perl-class-load-doc
@@ -33088,22 +33100,6 @@ m:ScrumpyJack <scrumpyjack@st.ilet.to>
 t:1658810585
 c:2b8e5c3e83711eb800c40bf2df72b2d3b2bc633b
 i:docs sc=7.16-r6
-
-C:Q1O8JpttJwXVeJpaefdoyEvLWpQJo=
-P:mesa-gl
-V:22.2.2-r2
-A:ppc64le
-S:221585
-I:868352
-T:Mesa libGL runtime libraries
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667248325
-c:9fdf43676713e117fda7c87a757608ee855a01c4
-D:mesa=22.2.2-r2 so:libX11-xcb.so.1 so:libX11.so.6 so:libXext.so.6 so:libXfixes.so.3 so:libXxf86vm.so.1 so:libc.musl-ppc64le.so.1 so:libdrm.so.2 so:libexpat.so.1 so:libglapi.so.0 so:libxcb-dri2.so.0 so:libxcb-dri3.so.0 so:libxcb-glx.so.0 so:libxcb-present.so.0 so:libxcb-shm.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb.so.1 so:libxshmfence.so.1
-p:so:libGL.so.1=1.2.0
 
 C:Q1XpM3a6VXn2pfwNddobMttcl6Hxc=
 P:perl-symbol-global-name-doc
@@ -34608,6 +34604,22 @@ c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.3 so:libc.musl-ppc64le.so.1
 i:lua-hashids=1.0.6-r3 lua5.3
 
+C:Q1zwB8psT3+5UPti0PwoedPDRIq3c=
+P:apparmor
+V:3.1.2-r0
+A:ppc64le
+S:571943
+I:1925120
+T:Linux application security framework - mandatory access control for programs
+U:https://gitlab.com/apparmor/apparmor/wikis/home
+L:GPL-2.0-only
+o:apparmor
+m:Allan Garret <allan.garret@gmail.com>
+t:1667859568
+c:7340d7b3375c24573c0eda8dfa4b8def076bdb4a
+D:bash so:libc.musl-ppc64le.so.1 so:libintl.so.8
+p:cmd:apparmor_parser=3.1.2-r0
+
 C:Q1YENMbWBCatJ82HyDRKf+euVegAI=
 P:hylafax-doc
 V:6.0.7-r4
@@ -34726,22 +34738,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1659919892
 c:54565cc2c465089fce8043755afff04cdeb21f33
 p:ca-certificates-cacert=20220614-r2
-
-C:Q1QK6ckXFfBFPnS9o3jqrJ75h8AuI=
-P:libapparmor
-V:3.1.1-r0
-A:ppc64le
-S:35703
-I:147456
-T:AppArmor library
-U:https://gitlab.com/apparmor/apparmor/wikis/home
-L:GPL-2.0-only
-o:apparmor
-m:Allan Garret <allan.garret@gmail.com>
-t:1666566627
-c:9ce8c7ff462c2cb809ebdbf3db35fbc548b40309
-D:bash sed so:libc.musl-ppc64le.so.1
-p:so:libapparmor.so.1=1.12.0
 
 C:Q1Im2LEznsvUzackSHLnd7fLSBg6A=
 P:perl-archive-zip-doc
@@ -37135,21 +37131,6 @@ t:1651315351
 c:1dc9bef333301f55a36d9706c4f8afe56de4f3cf
 D:so:libc.musl-ppc64le.so.1
 p:so:libmd.so.0=0.0.5
-
-C:Q1s19v2cWy3xFPnIJoRTNxKZYLLWc=
-P:mesa-vdpau-gallium
-V:22.2.2-r2
-A:ppc64le
-S:4668647
-I:13484032
-T:Mesa gallium VDPAU drivers
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667248325
-c:9fdf43676713e117fda7c87a757608ee855a01c4
-D:mesa=22.2.2-r2 libvdpau so:libLLVM-15.so so:libX11-xcb.so.1 so:libc.musl-ppc64le.so.1 so:libdrm.so.2 so:libdrm_amdgpu.so.1 so:libdrm_nouveau.so.2 so:libdrm_radeon.so.1 so:libelf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libxcb-dri2.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb.so.1 so:libxshmfence.so.1 so:libz.so.1 so:libzstd.so.1
 
 C:Q1FgwTDPa3eszYgAy6OZm3OLxJ2iY=
 P:xmlrpc-c-abyss
@@ -41424,6 +41405,21 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-config-inifiles=3.000003-r1
 
+C:Q1fOizufvnzAC5SRK3PsCjFzOMo18=
+P:mesa-libd3dadapter9
+V:22.2.3-r0
+A:ppc64le
+S:5559575
+I:15523840
+T:Mesa directx9 adapter
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1667860810
+c:04097a83c9fcec3f0d301815b79cd3b1bd6eaea7
+D:mesa=22.2.3-r0 so:libLLVM-15.so so:libc.musl-ppc64le.so.1 so:libdrm.so.2 so:libdrm_amdgpu.so.1 so:libdrm_nouveau.so.2 so:libdrm_radeon.so.1 so:libelf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libz.so.1 so:libzstd.so.1
+
 C:Q19SRMNEltkA9qunTdXEkqp9IizlM=
 P:datefudge
 V:1.24-r1
@@ -42089,21 +42085,6 @@ t:1659792088
 c:0714a84b7f79009ae8b96aef50216ed72f54b885
 D:lua5.1 so:libc.musl-ppc64le.so.1
 i:lua-evdev=2.2.1-r2 lua5.1
-
-C:Q11jOkxO8JrBDvH6iL+Jj9He2h3Zw=
-P:perl-apparmor
-V:3.1.1-r0
-A:ppc64le
-S:32285
-I:188416
-T:Perl module for apparmor
-U:https://gitlab.com/apparmor/apparmor/wikis/home
-L:GPL-2.0-only
-o:apparmor
-m:Allan Garret <allan.garret@gmail.com>
-t:1666566627
-c:9ce8c7ff462c2cb809ebdbf3db35fbc548b40309
-D:libapparmor=3.1.1-r0 perl so:libapparmor.so.1 so:libc.musl-ppc64le.so.1
 
 C:Q1mZhyIlcRucTb04C6ZqXxAF6A2Do=
 P:flock
@@ -44382,6 +44363,22 @@ t:1665665889
 c:5892c81f1fd8901025bd8d9a4b58b821c2ab1e2a
 i:docs perl-json-maybexs=1.004004-r0
 
+C:Q1TRyONQ3T9kiLPxKgjAiupX6USl0=
+P:mesa-vulkan-ati
+V:22.2.3-r0
+A:ppc64le
+S:2709716
+I:8593408
+T:Mesa Vulkan API driver for ati
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1667860810
+c:04097a83c9fcec3f0d301815b79cd3b1bd6eaea7
+D:mesa=22.2.3-r0 so:libLLVM-15.so so:libX11-xcb.so.1 so:libc.musl-ppc64le.so.1 so:libdrm.so.2 so:libdrm_amdgpu.so.1 so:libelf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libudev.so.1 so:libwayland-client.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-randr.so.0 so:libxcb-shm.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb.so.1 so:libxshmfence.so.1 so:libz.so.1 so:libzstd.so.1
+p:so:libvulkan_radeon.so=0
+
 C:Q1jkdZfKHMzcSk5KUyEZpK76PW3+8=
 P:nagios-plugins-nt
 V:2.4.1-r0
@@ -44489,6 +44486,22 @@ m:Przemyslaw Pawelczyk <przemoc@zoho.com>
 t:1659429320
 c:39cde24fb54a667a6730bdaec3233184227131f6
 D:rhash-libs=1.4.3-r1
+
+C:Q1egpDWXXWxAURTQLbjX3TySo3uzE=
+P:mesa-dev
+V:22.2.3-r0
+A:ppc64le
+S:352473
+I:2506752
+T:Mesa DRI OpenGL library (development files)
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1667860810
+c:04097a83c9fcec3f0d301815b79cd3b1bd6eaea7
+D:libdrm-dev libxext-dev libxdamage-dev libxcb-dev libxshmfence-dev mesa-egl=22.2.3-r0 mesa-gbm=22.2.3-r0 mesa-gl=22.2.3-r0 mesa-glapi=22.2.3-r0 mesa-gles=22.2.3-r0 mesa-osmesa=22.2.3-r0 mesa-xatracker=22.2.3-r0 pc:libdrm>=2.4.110 pc:libdrm>=2.4.114 pc:libdrm>=2.4.75 pc:x11 pc:x11-xcb pc:xcb pc:xcb-dri2>=1.8 pc:xcb-glx>=1.8.1 pc:xext pc:xfixes pc:xxf86vm pkgconfig
+p:pc:d3d=1.0.0 pc:dri=22.2.3 pc:egl=22.2.3 pc:gbm=22.2.3 pc:gl=22.2.3 pc:glesv1_cm=22.2.3 pc:glesv2=22.2.3 pc:osmesa=8.0.0 pc:xatracker=2.5.0
 
 C:Q1LG+eEYfSas7IIh484nuLAHtFQvA=
 P:rsyslog
@@ -45934,22 +45947,6 @@ t:1667441773
 c:3ecb85639dec3fa61d1a07d3623db03760501c0a
 D:perl
 
-C:Q1Ek5vdixF12YQNGBF5t4SMXk/f04=
-P:mesa-dev
-V:22.2.2-r2
-A:ppc64le
-S:352468
-I:2506752
-T:Mesa DRI OpenGL library (development files)
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667248325
-c:9fdf43676713e117fda7c87a757608ee855a01c4
-D:libdrm-dev libxext-dev libxdamage-dev libxcb-dev libxshmfence-dev mesa-egl=22.2.2-r2 mesa-gbm=22.2.2-r2 mesa-gl=22.2.2-r2 mesa-glapi=22.2.2-r2 mesa-gles=22.2.2-r2 mesa-osmesa=22.2.2-r2 mesa-xatracker=22.2.2-r2 pc:libdrm>=2.4.110 pc:libdrm>=2.4.113 pc:libdrm>=2.4.75 pc:x11 pc:x11-xcb pc:xcb pc:xcb-dri2>=1.8 pc:xcb-glx>=1.8.1 pc:xext pc:xfixes pc:xxf86vm pkgconfig
-p:pc:d3d=1.0.0 pc:dri=22.2.2 pc:egl=22.2.2 pc:gbm=22.2.2 pc:gl=22.2.2 pc:glesv1_cm=22.2.2 pc:glesv2=22.2.2 pc:osmesa=8.0.0 pc:xatracker=2.5.0
-
 C:Q10sT8B5s6FApDolpZ0sS+C9ijUig=
 P:openldap-back-mdb
 V:2.6.3-r6
@@ -46946,22 +46943,6 @@ t:1600709957
 c:f45e6f07f0513021033d0f3065dddf171699ca1a
 i:docs perl-data-page-pageset=1.02-r3
 
-C:Q18SZWsDyR4yglBHJsedPs/bsNQ1k=
-P:mesa-vulkan-swrast
-V:22.2.2-r2
-A:ppc64le
-S:2204374
-I:7512064
-T:Mesa Vulkan API driver for swrast
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667248325
-c:9fdf43676713e117fda7c87a757608ee855a01c4
-D:mesa=22.2.2-r2 so:libLLVM-15.so so:libX11-xcb.so.1 so:libc.musl-ppc64le.so.1 so:libdrm.so.2 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libudev.so.1 so:libwayland-client.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-randr.so.0 so:libxcb-shm.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb.so.1 so:libxshmfence.so.1 so:libz.so.1 so:libzstd.so.1
-p:so:libvulkan_lvp.so=0
-
 C:Q10f/HU8tQ6TfcrWqzjiT9/kTyENQ=
 P:py3-nftables
 V:1.0.5-r2
@@ -47084,6 +47065,22 @@ t:1643150280
 c:feb71f1a6023ee6d874ed0a62a46a205a92f5dfc
 D:so:libc.musl-ppc64le.so.1 so:libz.so.1
 p:cmd:pigz=2.7-r0 cmd:unpigz=2.7-r0
+
+C:Q1CMsmbtVraXrZ8u36NrxLHpsaE6Q=
+P:mesa-gles
+V:22.2.3-r0
+A:ppc64le
+S:29922
+I:217088
+T:Mesa libGLESv2 runtime libraries
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1667860810
+c:04097a83c9fcec3f0d301815b79cd3b1bd6eaea7
+D:mesa=22.2.3-r0 so:libc.musl-ppc64le.so.1 so:libglapi.so.0
+p:so:libGLESv1_CM.so.1=1.1.0 so:libGLESv2.so.2=2.0.0
 
 C:Q16iiorsQO6aEc0i8zVUx4wXraWuo=
 P:p11-kit-trust
@@ -48330,22 +48327,6 @@ t:1663740431
 c:27946fc2b38c3f0c56a07a18c502c6de0e858038
 D:mariadb-common mariadb-embedded=10.6.10-r0
 
-C:Q1DBN5FVaON3Qi8QZEL/5htzwzAHg=
-P:libapparmor-dev
-V:3.1.1-r0
-A:ppc64le
-S:48008
-I:196608
-T:Linux application security framework - mandatory access control for programs (development files)
-U:https://gitlab.com/apparmor/apparmor/wikis/home
-L:GPL-2.0-only
-o:apparmor
-m:Allan Garret <allan.garret@gmail.com>
-t:1666566627
-c:9ce8c7ff462c2cb809ebdbf3db35fbc548b40309
-D:libapparmor=3.1.1-r0 pkgconfig
-p:pc:libapparmor=3.1.1
-
 C:Q17YR7Obkn2B8VbYTi/m8ZlxFMVw0=
 P:lua5.3-microlight
 V:1.1.1-r4
@@ -48989,21 +48970,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1659270541
 c:75e42ce3cdd197eac241a9c100c0dc7f8b770fa1
 i:openrc openntpd=6.8_p1-r7
-
-C:Q1ZPP5rlqEhO3spGKn2+bbcX4vfpw=
-P:apparmor-openrc
-V:3.1.1-r0
-A:ppc64le
-S:1992
-I:16384
-T:Linux application security framework - mandatory access control for programs (OpenRC init scripts)
-U:https://gitlab.com/apparmor/apparmor/wikis/home
-L:GPL-2.0-only
-o:apparmor
-m:Allan Garret <allan.garret@gmail.com>
-t:1666566627
-c:9ce8c7ff462c2cb809ebdbf3db35fbc548b40309
-i:openrc apparmor=3.1.1-r0
 
 C:Q15PdJxnVCoeSqItlj7KKW6XW2L5c=
 P:libwebsockets-dev
@@ -52892,6 +52858,22 @@ c:84d02e8c3abb163d4ca89e62e831c4116b9ea195
 D:so:libImlib2.so.1 so:libX11.so.6 so:libXdamage.so.1 so:libXext.so.6 so:libXfixes.so.3 so:libXft.so.2 so:libXinerama.so.1 so:libc.musl-ppc64le.so.1 so:libcairo.so.2 so:libcurl.so.4 so:libgcc_s.so.1 so:liblua-5.3.so.0 so:libncursesw.so.6 so:libstdc++.so.6 so:libxml2.so.2
 p:cmd:conky=1.13.1-r1
 
+C:Q19a/ojRX6m9rk75ySaBpIHRyxM8w=
+P:apparmor-lang
+V:3.1.2-r0
+A:ppc64le
+S:132067
+I:1179648
+T:Languages for package apparmor
+U:https://gitlab.com/apparmor/apparmor/wikis/home
+L:GPL-2.0-only
+o:apparmor
+m:Allan Garret <allan.garret@gmail.com>
+t:1667859568
+c:7340d7b3375c24573c0eda8dfa4b8def076bdb4a
+D:bash
+i:apparmor=3.1.2-r0 lang
+
 C:Q1dkNGzLpI+3mPc21muwn9bRPczqM=
 P:attr
 V:2.5.1-r1
@@ -53766,6 +53748,22 @@ t:1666044759
 c:1dfa18bc1b20564bcd2e8433562cd68bea19f8aa
 i:docs libxmu=1.1.4-r0
 
+C:Q1dB9gjWgi4YgDOKRt2n7r2tz6a84=
+P:mesa-glapi
+V:22.2.3-r0
+A:ppc64le
+S:82855
+I:606208
+T:Mesa shared glapi
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1667860810
+c:04097a83c9fcec3f0d301815b79cd3b1bd6eaea7
+D:so:libc.musl-ppc64le.so.1
+p:so:libglapi.so.0=0.0.0
+
 C:Q15xzcAwHfN0IXt3JRmesdYyvk2n0=
 P:perl-digest-hmac-doc
 V:1.04-r1
@@ -54156,6 +54154,22 @@ t:1665633574
 c:9bc2bed71658adda8a2a6daf4efbd833d9917ae0
 D:python3 iptables ip6tables logrotate
 p:cmd:fail2ban-client=1.0.1-r0 cmd:fail2ban-python=1.0.1-r0 cmd:fail2ban-regex=1.0.1-r0 cmd:fail2ban-server=1.0.1-r0 py3.10:fail2ban=1.0.1-r0
+
+C:Q1isj7VL9RC6E9chkv3Z3ennftHjU=
+P:mesa-gbm
+V:22.2.3-r0
+A:ppc64le
+S:32510
+I:147456
+T:Mesa gbm library
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1667860810
+c:04097a83c9fcec3f0d301815b79cd3b1bd6eaea7
+D:mesa=22.2.3-r0 so:libc.musl-ppc64le.so.1 so:libdrm.so.2 so:libexpat.so.1 so:libwayland-server.so.0
+p:so:libgbm.so.1=1.0.0
 
 C:Q1bd1sNad/jNo4WeNbL6fO03qYMwk=
 P:lua5.3-discount
@@ -56848,20 +56862,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1659429264
 c:5979dfec693f5732dabf7b0f8aee24aa80650e2c
 i:docs libarchive=3.6.1-r1
-
-C:Q1QAfEaCNJaOpQkKDv2RzxpdmPj3Y=
-P:mesa-dbg
-V:22.2.2-r2
-A:ppc64le
-S:37658134
-I:111214592
-T:Mesa DRI OpenGL library (debug symbols)
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667248325
-c:9fdf43676713e117fda7c87a757608ee855a01c4
 
 C:Q1wJrFYvborPBTgvBST8IID/Kw90E=
 P:fish-lang
@@ -60203,21 +60203,6 @@ t:1663195706
 c:464871c4df066f8d4bee5a4e277fd6a7efe47524
 i:openrc logrotate=3.20.1-r3
 
-C:Q16uol/sDxRnD9tfVyHD3NxEOXFGY=
-P:mesa-va-gallium
-V:22.2.2-r2
-A:ppc64le
-S:4500425
-I:13156352
-T:Mesa gallium VAAPI drivers
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667248325
-c:9fdf43676713e117fda7c87a757608ee855a01c4
-D:mesa=22.2.2-r2 libva so:libLLVM-15.so so:libX11-xcb.so.1 so:libc.musl-ppc64le.so.1 so:libdrm.so.2 so:libdrm_amdgpu.so.1 so:libdrm_nouveau.so.2 so:libdrm_radeon.so.1 so:libelf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libxcb-dri2.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb.so.1 so:libxshmfence.so.1 so:libz.so.1 so:libzstd.so.1
-
 C:Q1ekk2/3X1uCQdUK7NJDsRAIzEsF0=
 P:wipe-doc
 V:2.3.1-r2
@@ -62108,21 +62093,6 @@ t:1659429320
 c:39cde24fb54a667a6730bdaec3233184227131f6
 D:libasr=1.0.4-r3
 
-C:Q1vOJMHVsl08aDxBXu+lV+aLX3IIQ=
-P:apparmor-doc
-V:3.1.1-r0
-A:ppc64le
-S:136867
-I:241664
-T:Linux application security framework - mandatory access control for programs (documentation)
-U:https://gitlab.com/apparmor/apparmor/wikis/home
-L:GPL-2.0-only
-o:apparmor
-m:Allan Garret <allan.garret@gmail.com>
-t:1666566627
-c:9ce8c7ff462c2cb809ebdbf3db35fbc548b40309
-i:docs apparmor=3.1.1-r0
-
 C:Q1HUmdPcu9Eqb4FRR6pF3xe6tHx+M=
 P:db-utils
 V:5.3.28-r2
@@ -62294,6 +62264,22 @@ t:1620818889
 c:d32e0b04b9e2cb99ad18a198ba8e625df15cbc44
 D:libxfixes=6.0.0-r0 pc:fixesproto>=6.0 pc:x11 pc:xproto pkgconfig
 p:pc:xfixes=6.0.0
+
+C:Q1sV5fRR1uRt4pMn45M6J5EI2cH9o=
+P:mesa-vulkan-swrast
+V:22.2.3-r0
+A:ppc64le
+S:2205389
+I:7512064
+T:Mesa Vulkan API driver for swrast
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1667860810
+c:04097a83c9fcec3f0d301815b79cd3b1bd6eaea7
+D:mesa=22.2.3-r0 so:libLLVM-15.so so:libX11-xcb.so.1 so:libc.musl-ppc64le.so.1 so:libdrm.so.2 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libudev.so.1 so:libwayland-client.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-randr.so.0 so:libxcb-shm.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb.so.1 so:libxshmfence.so.1 so:libz.so.1 so:libzstd.so.1
+p:so:libvulkan_lvp.so=0
 
 C:Q1+ahwfHaTbCgBEdFhnA3sBNCATiQ=
 P:aom-doc
@@ -62616,22 +62602,6 @@ c:39cde24fb54a667a6730bdaec3233184227131f6
 D:lua5.3-socket so:libc.musl-ppc64le.so.1 so:libcrypto.so.3 so:libssl.so.3
 i:lua5.3 lua-sec=1.2.0-r1
 
-C:Q11gAXVsvaa/X7Jwj0L4NWB154BOY=
-P:mesa-gles
-V:22.2.2-r2
-A:ppc64le
-S:29911
-I:217088
-T:Mesa libGLESv2 runtime libraries
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667248325
-c:9fdf43676713e117fda7c87a757608ee855a01c4
-D:mesa=22.2.2-r2 so:libc.musl-ppc64le.so.1 so:libglapi.so.0
-p:so:libGLESv1_CM.so.1=1.1.0 so:libGLESv2.so.2=2.0.0
-
 C:Q1jLY4iPhmxYJp2p8elwe6XnvEu30=
 P:asterisk-odbc
 V:18.13.0-r1
@@ -62876,6 +62846,21 @@ t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 D:lua5.3 so:libc.musl-ppc64le.so.1
 i:lua-b64=0.1-r4 lua5.3
+
+C:Q1tdoN7eDzwqrBvlHLtV7JlbXRr0Y=
+P:perl-apparmor
+V:3.1.2-r0
+A:ppc64le
+S:32386
+I:188416
+T:Perl module for apparmor
+U:https://gitlab.com/apparmor/apparmor/wikis/home
+L:GPL-2.0-only
+o:apparmor
+m:Allan Garret <allan.garret@gmail.com>
+t:1667859568
+c:7340d7b3375c24573c0eda8dfa4b8def076bdb4a
+D:libapparmor=3.1.2-r0 perl so:libapparmor.so.1 so:libc.musl-ppc64le.so.1
 
 C:Q1MKNPQed6fTcZ3grNlSSwmv5fyaM=
 P:open-iscsi
@@ -63149,21 +63134,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 i:docs perl-file-slurp-tiny=0.004-r2
-
-C:Q1xwHeFgIt4VogSjnR0QxkzDE+tDw=
-P:mesa-libd3dadapter9
-V:22.2.2-r2
-A:ppc64le
-S:5559403
-I:15523840
-T:Mesa directx9 adapter
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667248325
-c:9fdf43676713e117fda7c87a757608ee855a01c4
-D:mesa=22.2.2-r2 so:libLLVM-15.so so:libc.musl-ppc64le.so.1 so:libdrm.so.2 so:libdrm_amdgpu.so.1 so:libdrm_nouveau.so.2 so:libdrm_radeon.so.1 so:libelf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libz.so.1 so:libzstd.so.1
 
 C:Q1q9rUiWoeKg4Cgb15h7PoAG0YGgw=
 P:libnetfilter_acct
@@ -63545,21 +63515,6 @@ m:Jeff Bilyk <jbilyk@gmail.com>
 t:1666723312
 c:26836794238f2acf27bce34e9e7bf9ba17517798
 D:nagios-plugins so:libc.musl-ppc64le.so.1 so:libcrypto.so.3
-
-C:Q1dneh4BM+oQpb5xuk3968uj5B/rs=
-P:mesa-dri-gallium
-V:22.2.2-r2
-A:ppc64le
-S:7999769
-I:23068672
-T:Mesa gallium DRI drivers
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667248325
-c:9fdf43676713e117fda7c87a757608ee855a01c4
-D:mesa=22.2.2-r2 so:libLLVM-15.so so:libc.musl-ppc64le.so.1 so:libdrm.so.2 so:libdrm_amdgpu.so.1 so:libdrm_nouveau.so.2 so:libdrm_radeon.so.1 so:libelf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libglapi.so.0 so:libstdc++.so.6 so:libxcb-dri3.so.0 so:libz.so.1 so:libzstd.so.1
 
 C:Q1JzGs8+CqRzoWa8r3+OkLfdo5ZKE=
 P:autoconf
@@ -63979,22 +63934,6 @@ o:vulkan-headers
 m:Bart Ribbers <bribbers@disroot.org>
 t:1667620094
 c:cde1e3a2f6ae6bf547cea826163fe8c8dcde1c68
-
-C:Q11NLcf/VXvC9ZTSXM6+9yGgKiwAQ=
-P:mesa-xatracker
-V:22.2.2-r2
-A:ppc64le
-S:2297092
-I:7507968
-T:Mesa XA state tracker for vmware
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667248325
-c:9fdf43676713e117fda7c87a757608ee855a01c4
-D:mesa=22.2.2-r2 so:libLLVM-15.so so:libc.musl-ppc64le.so.1 so:libdrm.so.2 so:libdrm_nouveau.so.2 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libz.so.1 so:libzstd.so.1
-p:so:libxatracker.so.2=2.5.0
 
 C:Q19WNMffk9YZH3eKG1RDuVww/i8IY=
 P:zip
@@ -64597,6 +64536,22 @@ t:1659429264
 c:5979dfec693f5732dabf7b0f8aee24aa80650e2c
 D:libarchive=3.6.1-r1 pkgconfig
 p:pc:libarchive=3.6.1
+
+C:Q19ni7WahvzkA3VUn2ZJaIr9x3IJQ=
+P:libapparmor
+V:3.1.2-r0
+A:ppc64le
+S:35885
+I:147456
+T:AppArmor library
+U:https://gitlab.com/apparmor/apparmor/wikis/home
+L:GPL-2.0-only
+o:apparmor
+m:Allan Garret <allan.garret@gmail.com>
+t:1667859568
+c:7340d7b3375c24573c0eda8dfa4b8def076bdb4a
+D:bash sed so:libc.musl-ppc64le.so.1
+p:so:libapparmor.so.1=1.12.1
 
 C:Q1B//gKopuN40mc8nelj+ZO7RZBjU=
 P:lua5.1-ossl
@@ -65597,22 +65552,6 @@ k:13
 D:postgresql13-client postgresql-common tzdata /bin/sh so:libc.musl-ppc64le.so.1 so:libcrypto.so.3 so:libicui18n.so.72 so:libicuuc.so.72 so:libldap.so.2 so:libpq.so.5 so:libssl.so.3 so:libxml2.so.2
 p:postgresql cmd:initdb cmd:pg_test_fsync cmd:pg_test_timing cmd:pg_resetwal cmd:pg_waldump cmd:pg_upgrade cmd:postgres cmd:pg_rewind cmd:pg_archivecleanup cmd:pg_checksums cmd:pg_controldata cmd:pg_ctl cmd:postmaster
 
-C:Q1D2zDiJad6tSmrVlr7+ErNcAOnZI=
-P:mesa-glapi
-V:22.2.2-r2
-A:ppc64le
-S:82856
-I:606208
-T:Mesa shared glapi
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667248325
-c:9fdf43676713e117fda7c87a757608ee855a01c4
-D:so:libc.musl-ppc64le.so.1
-p:so:libglapi.so.0=0.0.0
-
 C:Q138ab+NqrIYyWSNWHFRBJd5iO67s=
 P:daq-dev
 V:2.0.7-r1
@@ -65783,22 +65722,6 @@ t:1631242372
 c:0d8bf88a57a123aac34cf6477f42c7ad08dd8e76
 D:jansson=2.14-r0 pkgconfig
 p:pc:jansson=2.14
-
-C:Q1zep2NAbwrj7rxIqw5MlbQUJwFr4=
-P:mesa-egl
-V:22.2.2-r2
-A:ppc64le
-S:137282
-I:409600
-T:Mesa libEGL runtime libraries
-U:https://www.mesa3d.org
-L:MIT SGI-B-2.0 BSL-1.0
-o:mesa
-m:Natanael Copa <ncopa@alpinelinux.org>
-t:1667248325
-c:9fdf43676713e117fda7c87a757608ee855a01c4
-D:mesa=22.2.2-r2 so:libX11-xcb.so.1 so:libc.musl-ppc64le.so.1 so:libdrm.so.2 so:libexpat.so.1 so:libgbm.so.1 so:libglapi.so.0 so:libwayland-client.so.0 so:libwayland-server.so.0 so:libxcb-dri2.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb.so.1 so:libxshmfence.so.1
-p:so:libEGL.so.1=1.0.0
 
 C:Q1AIqW/gYXuW7wNlD3sC07POQakNY=
 P:libmd-doc
@@ -68019,6 +67942,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1665753996
 c:84d02e8c3abb163d4ca89e62e831c4116b9ea195
 D:haserl-lua5.4 haserl-lua5.3 haserl-lua5.2 haserl-lua5.1 haserl-lua5.4=0.9.36-r2
+
+C:Q1nkEopQ/JLIuK9jmuaTSapJRIpag=
+P:py3-apparmor
+V:3.1.2-r0
+A:ppc64le
+S:34608
+I:221184
+T:Python3 module for apparmor
+U:https://gitlab.com/apparmor/apparmor/wikis/home
+L:GPL-2.0-only
+o:apparmor
+m:Allan Garret <allan.garret@gmail.com>
+t:1667859568
+c:7340d7b3375c24573c0eda8dfa4b8def076bdb4a
+D:libapparmor=3.1.2-r0 python3 so:libapparmor.so.1 so:libc.musl-ppc64le.so.1
+p:py3.10:LibAppArmor=3.1.2-r0
 
 C:Q1H3i9QGyTXRycBgr4uIadQZ+oW+M=
 P:fakeroot
@@ -70712,6 +70651,22 @@ c:6cb1cea145714394a2ea7e30c4e60885c5f70dc8
 D:so:libc.musl-ppc64le.so.1
 p:so:libfl.so.2=2.0.0
 
+C:Q17k+EMzb9rGEaQ7EvsRAabP5A3Wk=
+P:mesa-gl
+V:22.2.3-r0
+A:ppc64le
+S:221588
+I:868352
+T:Mesa libGL runtime libraries
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1667860810
+c:04097a83c9fcec3f0d301815b79cd3b1bd6eaea7
+D:mesa=22.2.3-r0 so:libX11-xcb.so.1 so:libX11.so.6 so:libXext.so.6 so:libXfixes.so.3 so:libXxf86vm.so.1 so:libc.musl-ppc64le.so.1 so:libdrm.so.2 so:libexpat.so.1 so:libglapi.so.0 so:libxcb-dri2.so.0 so:libxcb-dri3.so.0 so:libxcb-glx.so.0 so:libxcb-present.so.0 so:libxcb-shm.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb.so.1 so:libxshmfence.so.1
+p:so:libGL.so.1=1.2.0
+
 C:Q1kC+RxAUdKbQYRhUIwfjmLgxqYZo=
 P:ppp-dev
 V:2.4.9-r5
@@ -71374,6 +71329,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1610655264
 c:52b5be29ca2218565d0af8463f9d590d4d8601c4
 
+C:Q1xDI38Aoi0EhL7SS5eoORmmIHV6o=
+P:apparmor-pam
+V:3.1.2-r0
+A:ppc64le
+S:5253
+I:81920
+T:AppArmor PAM library
+U:https://gitlab.com/apparmor/apparmor/wikis/home
+L:GPL-2.0-only
+o:apparmor
+m:Allan Garret <allan.garret@gmail.com>
+t:1667859568
+c:7340d7b3375c24573c0eda8dfa4b8def076bdb4a
+D:libapparmor=3.1.2-r0 linux-pam so:libapparmor.so.1 so:libc.musl-ppc64le.so.1 so:libpam.so.0
+
 C:Q1F9s3FjA6lMReBA8mzC2PZuR7uTA=
 P:libprotobuf
 V:3.21.9-r0
@@ -71465,6 +71435,21 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1659792088
 c:0714a84b7f79009ae8b96aef50216ed72f54b885
 D:so:libc.musl-ppc64le.so.1
+
+C:Q1sR6jkCE+vjlov58eKdd7l4wD6l8=
+P:apparmor-profiles
+V:3.1.2-r0
+A:ppc64le
+S:106687
+I:1536000
+T:AppArmor sample pre-made profiles
+U:https://gitlab.com/apparmor/apparmor/wikis/home
+L:GPL-2.0-only
+o:apparmor
+m:Allan Garret <allan.garret@gmail.com>
+t:1667859568
+c:7340d7b3375c24573c0eda8dfa4b8def076bdb4a
+D:apparmor
 
 C:Q18gUO2/2UqJu7g14BpC1Vr0VQAi0=
 P:postgresql13-contrib
@@ -72620,6 +72605,21 @@ c:3ce9ec2c4d426262d5e70e56ef965e19a444769c
 k:10
 D:dhcp=4.4.3_p1-r1 so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libkrb5.so.3 so:liblber.so.2 so:libldap.so.2
 p:dhcp-server=4.4.3_p1-r1 cmd:dhcpd=4.4.3_p1-r1
+
+C:Q1eABuyRCFboMCFf067dEC7TWa7iA=
+P:mesa-va-gallium
+V:22.2.3-r0
+A:ppc64le
+S:4499822
+I:13156352
+T:Mesa gallium VAAPI drivers
+U:https://www.mesa3d.org
+L:MIT SGI-B-2.0 BSL-1.0
+o:mesa
+m:Natanael Copa <ncopa@alpinelinux.org>
+t:1667860810
+c:04097a83c9fcec3f0d301815b79cd3b1bd6eaea7
+D:mesa=22.2.3-r0 libva so:libLLVM-15.so so:libX11-xcb.so.1 so:libc.musl-ppc64le.so.1 so:libdrm.so.2 so:libdrm_amdgpu.so.1 so:libdrm_nouveau.so.2 so:libdrm_radeon.so.1 so:libelf.so.1 so:libexpat.so.1 so:libgcc_s.so.1 so:libstdc++.so.6 so:libxcb-dri2.so.0 so:libxcb-dri3.so.0 so:libxcb-present.so.0 so:libxcb-sync.so.1 so:libxcb-xfixes.so.0 so:libxcb.so.1 so:libxshmfence.so.1 so:libz.so.1 so:libzstd.so.1
 
 C:Q1yQnf5aRdF+cb+Yo6aGIptRKtEH0=
 P:py-unbound
