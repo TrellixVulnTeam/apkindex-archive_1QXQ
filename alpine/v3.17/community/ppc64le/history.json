@@ -30487,7 +30487,8 @@
     "xrdp": {
       "origin": "xrdp",
       "versions": {
-        "0.9.18.1-r2": 1662495900
+        "0.9.18.1-r2": 1662495900,
+        "0.9.20-r0": 1667941373
       },
       "dependencies": [
         "xinit",
@@ -30513,14 +30514,14 @@
         "so:libxrdp.so.0=0.0.0",
         "so:libxrdpapi.so.0=0.0.0",
         "so:libxup.so=0",
-        "cmd:xrdp-chansrv=0.9.18.1-r2",
-        "cmd:xrdp-dis=0.9.18.1-r2",
-        "cmd:xrdp-genkeymap=0.9.18.1-r2",
-        "cmd:xrdp-keygen=0.9.18.1-r2",
-        "cmd:xrdp-sesadmin=0.9.18.1-r2",
-        "cmd:xrdp-sesman=0.9.18.1-r2",
-        "cmd:xrdp-sesrun=0.9.18.1-r2",
-        "cmd:xrdp=0.9.18.1-r2"
+        "cmd:xrdp-chansrv=0.9.20-r0",
+        "cmd:xrdp-dis=0.9.20-r0",
+        "cmd:xrdp-genkeymap=0.9.20-r0",
+        "cmd:xrdp-keygen=0.9.20-r0",
+        "cmd:xrdp-sesadmin=0.9.20-r0",
+        "cmd:xrdp-sesman=0.9.20-r0",
+        "cmd:xrdp-sesrun=0.9.20-r0",
+        "cmd:xrdp=0.9.20-r0"
       ]
     },
     "py3-nose-doc": {
@@ -62476,7 +62477,8 @@
     "xrdp-doc": {
       "origin": "xrdp",
       "versions": {
-        "0.9.18.1-r2": 1662495900
+        "0.9.18.1-r2": 1662495900,
+        "0.9.20-r0": 1667941373
       }
     },
     "nftables-vim": {
@@ -91613,16 +91615,17 @@
     "xrdp-dev": {
       "origin": "xrdp",
       "versions": {
-        "0.9.18.1-r2": 1662495900
+        "0.9.18.1-r2": 1662495900,
+        "0.9.20-r0": 1667941373
       },
       "dependencies": [
         "pkgconfig",
-        "xrdp=0.9.18.1-r2"
+        "xrdp=0.9.20-r0"
       ],
       "provides": [
         "pc:libpainter=0.1.1",
-        "pc:rfxcodec=0.1.5",
-        "pc:xrdp=0.9.18.1"
+        "pc:rfxcodec=0.1.6",
+        "pc:xrdp=0.9.20"
       ]
     },
     "libe-book-doc": {
@@ -97362,7 +97365,8 @@
     "xrdp-openrc": {
       "origin": "xrdp",
       "versions": {
-        "0.9.18.1-r2": 1662495900
+        "0.9.18.1-r2": 1662495900,
+        "0.9.20-r0": 1667941373
       }
     },
     "qemu-hw-display-virtio-gpu-gl": {
@@ -110413,13 +110417,14 @@
     "mobile-broadband-provider-info": {
       "origin": "mobile-broadband-provider-info",
       "versions": {
-        "20220725-r0": 1661894039
+        "20220725-r0": 1661894039,
+        "20221107-r0": 1667941110
       },
       "dependencies": [
         "pkgconfig"
       ],
       "provides": [
-        "pc:mobile-broadband-provider-info=20220725"
+        "pc:mobile-broadband-provider-info=20221107"
       ]
     },
     "py3-listparser": {
@@ -158725,6 +158730,36 @@
         "cmd:gyp=20220714-r0",
         "py3.10:gyp=20220714-r0"
       ]
+    },
+    "py3-pep517": {
+      "origin": "py3-pep517",
+      "versions": {
+        "0.13.0-r0": 1667942706
+      },
+      "dependencies": [
+        "python3",
+        "py3-tomli"
+      ],
+      "provides": [
+        "py3.10:pep517=0.13.0-r0"
+      ]
+    },
+    "py3-build": {
+      "origin": "py3-build",
+      "versions": {
+        "0.8.0-r1": 1667942678
+      },
+      "dependencies": [
+        "python3",
+        "py3-packaging",
+        "py3-pep517",
+        "py3-tomli"
+      ],
+      "provides": [
+        "py-build=0.8.0-r1",
+        "cmd:pyproject-build=0.8.0-r1",
+        "py3.10:build=0.8.0-r1"
+      ]
     }
   },
   "provide": {
@@ -174714,6 +174749,10 @@
       "ceph-mgr-rook": {
         "package": "ceph17-mgr-rook",
         "version": "17.2.5-r3"
+      },
+      "py-build": {
+        "package": "py3-build",
+        "version": "0.8.0-r1"
       }
     }
   }
