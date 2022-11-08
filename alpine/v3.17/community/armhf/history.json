@@ -394,7 +394,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "/bin/sh",
@@ -1806,12 +1807,16 @@
     "ceph17-mgr-rook": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
-        "ceph17-mgr-r1",
+        "ceph17-mgr=17.2.5-r2",
         "py3-jsonpatch",
         "py3-kubernetes"
+      ],
+      "provides": [
+        "ceph-mgr-rook=17.2.5-r2"
       ]
     },
     "libu2f-server-dev": {
@@ -2330,11 +2335,12 @@
         "8.9.0-r0": 1667393472,
         "8.9.0-r1": 1667640275,
         "8.9.0-r2": 1667740922,
-        "8.9.0-r3": 1667838832
+        "8.9.0-r3": 1667838832,
+        "8.9.0-r4": 1667844704
       },
       "dependencies": [
-        "libvirt-daemon=8.9.0-r3",
-        "libvirt-common-drivers=8.9.0-r3"
+        "libvirt-daemon=8.9.0-r4",
+        "libvirt-common-drivers=8.9.0-r4"
       ]
     },
     "libxres-dev": {
@@ -2690,14 +2696,15 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "cmd:qemu-aarch64=7.1.0-r6"
+        "cmd:qemu-aarch64=7.1.0-r7"
       ]
     },
     "libmbim-tools": {
@@ -3407,14 +3414,15 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "cmd:qemu-microblaze=7.1.0-r6"
+        "cmd:qemu-microblaze=7.1.0-r7"
       ]
     },
     "perl-digest-jhash": {
@@ -3825,7 +3833,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu",
@@ -3853,7 +3862,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-system-cris=7.1.0-r6"
+        "cmd:qemu-system-cris=7.1.0-r7"
       ]
     },
     "libayatana-indicator": {
@@ -4077,17 +4086,19 @@
     "ceph17-volume": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
-        "ceph17-common",
-        "ceph17-osd-tools",
+        "ceph17-common=17.2.5-r2",
+        "ceph17-osd-tools=17.2.5-r2",
         "lvm2",
-        "py3-ceph17-common"
+        "py3-ceph17-common=17.2.5-r2"
       ],
       "provides": [
-        "cmd:ceph-volume=17.2.5-r1",
-        "py3.10:ceph_volume=17.2.5-r1"
+        "ceph-volume=17.2.5-r2",
+        "cmd:ceph-volume=17.2.5-r2",
+        "py3.10:ceph_volume=17.2.5-r2"
       ]
     },
     "perl-html-form": {
@@ -7455,7 +7466,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -7706,10 +7718,11 @@
     "ceph17-mds": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
-        "ceph17-base",
+        "ceph17-base=17.2.5-r2",
         "so:ceph17:so:libceph-common.so.2",
         "so:libc.musl-armhf.so.1",
         "so:libfmt.so.9",
@@ -7718,7 +7731,8 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:ceph-mds=17.2.5-r1"
+        "ceph-mds=17.2.5-r2",
+        "cmd:ceph-mds=17.2.5-r2"
       ]
     },
     "jreen-dev": {
@@ -7846,7 +7860,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       }
     },
     "py3-dicttoxml": {
@@ -8807,7 +8822,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu",
@@ -8835,7 +8851,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-system-riscv32=7.1.0-r6"
+        "cmd:qemu-system-riscv32=7.1.0-r7"
       ]
     },
     "lua5.2-busted": {
@@ -10515,7 +10531,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu",
@@ -10543,7 +10560,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-system-aarch64=7.1.0-r6"
+        "cmd:qemu-system-aarch64=7.1.0-r7"
       ]
     },
     "lxd-client": {
@@ -15345,7 +15362,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -18145,14 +18163,15 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "cmd:qemu-or1k=7.1.0-r6"
+        "cmd:qemu-or1k=7.1.0-r7"
       ]
     },
     "zeromq-gsl-doc": {
@@ -18263,7 +18282,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       }
     },
     "perl-data-validator": {
@@ -18616,7 +18636,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -18624,7 +18645,7 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:qemu-mips64el=7.1.0-r6"
+        "cmd:qemu-mips64el=7.1.0-r7"
       ]
     },
     "qbootctl": {
@@ -19722,7 +19743,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu",
@@ -19750,7 +19772,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-system-m68k=7.1.0-r6"
+        "cmd:qemu-system-m68k=7.1.0-r7"
       ]
     },
     "clifm-doc": {
@@ -19866,7 +19888,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu",
@@ -19894,7 +19917,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-system-sh4eb=7.1.0-r6"
+        "cmd:qemu-system-sh4eb=7.1.0-r7"
       ]
     },
     "py3-numpoly": {
@@ -20108,10 +20131,11 @@
     "ceph17-utils": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
-        "ceph17-common=17.2.5-r1",
+        "ceph17-common=17.2.5-r2",
         "so:ceph17:so:libceph-common.so.2",
         "so:ceph17:so:libcephfs.so.2",
         "so:ceph17:so:librados.so.2",
@@ -20137,16 +20161,17 @@
         "so:liburing.so.2"
       ],
       "provides": [
-        "cmd:ceph-dencoder=17.2.5-r1",
-        "cmd:ceph-diff-sorted=17.2.5-r1",
-        "cmd:ceph-post-file=17.2.5-r1",
-        "cmd:ceph-syn=17.2.5-r1",
-        "cmd:cephfs-data-scan=17.2.5-r1",
-        "cmd:cephfs-journal-tool=17.2.5-r1",
-        "cmd:cephfs-table-tool=17.2.5-r1",
-        "cmd:crushdiff=17.2.5-r1",
-        "cmd:rbd-replay-many=17.2.5-r1",
-        "cmd:rbd-replay=17.2.5-r1"
+        "ceph-utils=17.2.5-r2",
+        "cmd:ceph-dencoder=17.2.5-r2",
+        "cmd:ceph-diff-sorted=17.2.5-r2",
+        "cmd:ceph-post-file=17.2.5-r2",
+        "cmd:ceph-syn=17.2.5-r2",
+        "cmd:cephfs-data-scan=17.2.5-r2",
+        "cmd:cephfs-journal-tool=17.2.5-r2",
+        "cmd:cephfs-table-tool=17.2.5-r2",
+        "cmd:crushdiff=17.2.5-r2",
+        "cmd:rbd-replay-many=17.2.5-r2",
+        "cmd:rbd-replay=17.2.5-r2"
       ]
     },
     "gst-plugins-good-qt": {
@@ -22047,7 +22072,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu",
@@ -22075,7 +22101,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-system-sh4=7.1.0-r6"
+        "cmd:qemu-system-sh4=7.1.0-r7"
       ]
     },
     "perl-crypt-des_ede3-doc": {
@@ -22395,7 +22421,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu-hppa-firmware",
@@ -22423,7 +22450,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-system-hppa=7.1.0-r6"
+        "cmd:qemu-system-hppa=7.1.0-r7"
       ]
     },
     "colord-sane": {
@@ -23034,14 +23061,15 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "cmd:qemu-i386=7.1.0-r6"
+        "cmd:qemu-i386=7.1.0-r7"
       ]
     },
     "py3-decopatch": {
@@ -23268,7 +23296,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu",
@@ -23296,7 +23325,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-system-avr=7.1.0-r6"
+        "cmd:qemu-system-avr=7.1.0-r7"
       ]
     },
     "collectd-exec": {
@@ -25820,7 +25849,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       }
     },
     "salt-master": {
@@ -26196,14 +26226,15 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "cmd:qemu-hppa=7.1.0-r6"
+        "cmd:qemu-hppa=7.1.0-r7"
       ]
     },
     "wlroots-dbg": {
@@ -26415,14 +26446,15 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "cmd:qemu-xtensa=7.1.0-r6"
+        "cmd:qemu-xtensa=7.1.0-r7"
       ]
     },
     "cdrkit": {
@@ -28748,14 +28780,15 @@
     "ceph17-dev": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
-        "ceph17=17.2.5-r1",
-        "libcephfs17=17.2.5-r1",
-        "librados17=17.2.5-r1",
-        "libradosstriper17=17.2.5-r1",
-        "librbd17=17.2.5-r1",
+        "ceph17=17.2.5-r2",
+        "libcephfs17=17.2.5-r2",
+        "librados17=17.2.5-r2",
+        "libradosstriper17=17.2.5-r2",
+        "librbd17=17.2.5-r2",
         "so:ceph17:so:librados.so.2",
         "so:libboost_program_options.so.1.80.0",
         "so:libc.musl-armhf.so.1",
@@ -28763,7 +28796,7 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:librados-config=17.2.5-r1"
+        "cmd:librados-config=17.2.5-r2"
       ]
     },
     "libiptcdata-dev": {
@@ -28968,7 +29001,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu",
@@ -28996,7 +29030,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-system-microblaze=7.1.0-r6"
+        "cmd:qemu-system-microblaze=7.1.0-r7"
       ]
     },
     "stress-ng-bash-completion": {
@@ -30841,7 +30875,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu",
@@ -30869,7 +30904,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-system-arm=7.1.0-r6"
+        "cmd:qemu-system-arm=7.1.0-r7"
       ]
     },
     "gnome-autoar-doc": {
@@ -32734,7 +32769,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu",
@@ -32762,7 +32798,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-system-xtensa=7.1.0-r6"
+        "cmd:qemu-system-xtensa=7.1.0-r7"
       ]
     },
     "diffsitter-zsh-completion": {
@@ -33783,7 +33819,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -33791,7 +33828,7 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:qemu-mipsn32=7.1.0-r6"
+        "cmd:qemu-mipsn32=7.1.0-r7"
       ]
     },
     "py3-jaraco.collections": {
@@ -34234,7 +34271,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu-ui-opengl",
@@ -34639,14 +34677,15 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "cmd:qemu-sparc32plus=7.1.0-r6"
+        "cmd:qemu-sparc32plus=7.1.0-r7"
       ]
     },
     "opencl": {
@@ -35566,7 +35605,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1"
@@ -36457,11 +36497,12 @@
     "ceph17-mgr": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
-        "ceph17-base=17.2.5-r1",
-        "ceph17-mgr-modules-core=17.2.5-r1",
+        "ceph17-base=17.2.5-r2",
+        "ceph17-mgr-modules-core=17.2.5-r2",
         "so:ceph17:so:libceph-common.so.2",
         "so:ceph17:so:libcephsqlite.so",
         "so:libboost_python310.so.1.80.0",
@@ -36473,7 +36514,8 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:ceph-mgr=17.2.5-r1"
+        "ceph-mgr=17.2.5-r2",
+        "cmd:ceph-mgr=17.2.5-r2"
       ]
     },
     "lua-basexx": {
@@ -39202,7 +39244,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libSDL2-2.0.so.0",
@@ -39875,10 +39918,11 @@
     "ceph17-radosgw": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
-        "ceph17-common",
+        "ceph17-common=17.2.5-r2",
         "oath-toolkit-liboath",
         "so:ceph17:so:libceph-common.so.2",
         "so:ceph17:so:librados.so.2",
@@ -39902,14 +39946,15 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:radosgw-admin=17.2.5-r1",
-        "cmd:radosgw-es=17.2.5-r1",
-        "cmd:radosgw-object-expirer=17.2.5-r1",
-        "cmd:radosgw-token=17.2.5-r1",
-        "cmd:radosgw=17.2.5-r1",
-        "cmd:rgw-gap-list-comparator=17.2.5-r1",
-        "cmd:rgw-gap-list=17.2.5-r1",
-        "cmd:rgw-orphan-list=17.2.5-r1"
+        "ceph-radosgw=17.2.5-r2",
+        "cmd:radosgw-admin=17.2.5-r2",
+        "cmd:radosgw-es=17.2.5-r2",
+        "cmd:radosgw-object-expirer=17.2.5-r2",
+        "cmd:radosgw-token=17.2.5-r2",
+        "cmd:radosgw=17.2.5-r2",
+        "cmd:rgw-gap-list-comparator=17.2.5-r2",
+        "cmd:rgw-gap-list=17.2.5-r2",
+        "cmd:rgw-orphan-list=17.2.5-r2"
       ]
     },
     "template-glib-dev": {
@@ -40704,7 +40749,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu",
@@ -40732,7 +40778,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-system-riscv64=7.1.0-r6"
+        "cmd:qemu-system-riscv64=7.1.0-r7"
       ]
     },
     "jimtcl-dbg": {
@@ -41422,12 +41468,16 @@
     "py3-rbd17": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
-        "py3-rados17",
+        "py3-rados17=17.2.5-r2",
         "so:ceph17:so:librbd.so.1",
         "so:libc.musl-armhf.so.1"
+      ],
+      "provides": [
+        "py3-rbd=17.2.5-r2"
       ]
     },
     "connman": {
@@ -41492,7 +41542,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -41500,7 +41551,7 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:qemu-mipsn32el=7.1.0-r6"
+        "cmd:qemu-mipsn32el=7.1.0-r7"
       ]
     },
     "astyle": {
@@ -41934,7 +41985,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu",
@@ -41962,7 +42014,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-system-ppc64=7.1.0-r6"
+        "cmd:qemu-system-ppc64=7.1.0-r7"
       ]
     },
     "spi-tools-doc": {
@@ -42148,7 +42200,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu-hw-display-virtio-gpu"
@@ -42854,7 +42907,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu",
@@ -42883,7 +42937,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-system-mips=7.1.0-r6"
+        "cmd:qemu-system-mips=7.1.0-r7"
       ]
     },
     "libpagemaker": {
@@ -43757,14 +43811,15 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "cmd:qemu-sparc64=7.1.0-r6"
+        "cmd:qemu-sparc64=7.1.0-r7"
       ]
     },
     "font-hack-nerd": {
@@ -43825,13 +43880,14 @@
         "8.9.0-r0": 1667393472,
         "8.9.0-r1": 1667640275,
         "8.9.0-r2": 1667740922,
-        "8.9.0-r3": 1667838832
+        "8.9.0-r3": 1667838832,
+        "8.9.0-r4": 1667844704
       },
       "dependencies": [
         "lvm2",
         "/bin/sh",
-        "librados16",
-        "librbd16",
+        "librados17",
+        "librbd17",
         "so:libc.musl-armhf.so.1",
         "so:libdevmapper.so.1.02",
         "so:libgcc_s.so.1",
@@ -43846,18 +43902,18 @@
         "so:libvirt.so.0"
       ],
       "provides": [
-        "cmd:virtinterfaced=8.9.0-r3",
-        "cmd:virtlockd=8.9.0-r3",
-        "cmd:virtlogd=8.9.0-r3",
-        "cmd:virtlxcd=8.9.0-r3",
-        "cmd:virtnetworkd=8.9.0-r3",
-        "cmd:virtnodedevd=8.9.0-r3",
-        "cmd:virtnwfilterd=8.9.0-r3",
-        "cmd:virtproxyd=8.9.0-r3",
-        "cmd:virtqemud=8.9.0-r3",
-        "cmd:virtsecretd=8.9.0-r3",
-        "cmd:virtstoraged=8.9.0-r3",
-        "cmd:virtvboxd=8.9.0-r3"
+        "cmd:virtinterfaced=8.9.0-r4",
+        "cmd:virtlockd=8.9.0-r4",
+        "cmd:virtlogd=8.9.0-r4",
+        "cmd:virtlxcd=8.9.0-r4",
+        "cmd:virtnetworkd=8.9.0-r4",
+        "cmd:virtnodedevd=8.9.0-r4",
+        "cmd:virtnwfilterd=8.9.0-r4",
+        "cmd:virtproxyd=8.9.0-r4",
+        "cmd:virtqemud=8.9.0-r4",
+        "cmd:virtsecretd=8.9.0-r4",
+        "cmd:virtstoraged=8.9.0-r4",
+        "cmd:virtvboxd=8.9.0-r4"
       ]
     },
     "libxcvt-doc": {
@@ -44217,11 +44273,12 @@
         "8.9.0-r0": 1667393472,
         "8.9.0-r1": 1667640275,
         "8.9.0-r2": 1667740922,
-        "8.9.0-r3": 1667838832
+        "8.9.0-r3": 1667838832,
+        "8.9.0-r4": 1667844704
       },
       "dependencies": [
-        "libvirt-daemon=8.9.0-r3",
-        "libvirt-common-drivers=8.9.0-r3",
+        "libvirt-daemon=8.9.0-r4",
+        "libvirt-common-drivers=8.9.0-r4",
         "so:libc.musl-armhf.so.1",
         "so:libgcc_s.so.1",
         "so:libglib-2.0.so.0",
@@ -45265,11 +45322,12 @@
         "8.9.0-r0": 1667393472,
         "8.9.0-r1": 1667640275,
         "8.9.0-r2": 1667740922,
-        "8.9.0-r3": 1667838832
+        "8.9.0-r3": 1667838832,
+        "8.9.0-r4": 1667844704
       },
       "dependencies": [
         "libtirpc-dev",
-        "libvirt-libs=8.9.0-r3",
+        "libvirt-libs=8.9.0-r4",
         "pkgconfig"
       ],
       "provides": [
@@ -45754,7 +45812,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -46138,7 +46197,8 @@
         "8.9.0-r0": 1667393472,
         "8.9.0-r1": 1667640275,
         "8.9.0-r2": 1667740922,
-        "8.9.0-r3": 1667838832
+        "8.9.0-r3": 1667838832,
+        "8.9.0-r4": 1667844704
       }
     },
     "lua5.1-busted": {
@@ -46604,7 +46664,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu",
@@ -46633,7 +46694,7 @@
       ],
       "provides": [
         "qemu-accel-tcg-x86_64",
-        "cmd:qemu-system-x86_64=7.1.0-r6"
+        "cmd:qemu-system-x86_64=7.1.0-r7"
       ]
     },
     "libressl": {
@@ -47023,7 +47084,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu",
@@ -47051,7 +47113,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-system-or1k=7.1.0-r6"
+        "cmd:qemu-system-or1k=7.1.0-r7"
       ]
     },
     "moarvm-doc": {
@@ -47473,7 +47535,8 @@
     "ceph17": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
         "ceph17-mds",
@@ -47502,10 +47565,11 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
+        "ceph=17.2.5-r2",
         "so:ceph17:so:libradosgw.so.2=2.0.0",
         "so:ceph17:so:librgw.so.2=2.0.0",
-        "cmd:ceph-exporter=17.2.5-r1",
-        "cmd:ceph-immutable-object-cache=17.2.5-r1"
+        "cmd:ceph-exporter=17.2.5-r2",
+        "cmd:ceph-immutable-object-cache=17.2.5-r2"
       ]
     },
     "py3-intelhex": {
@@ -49268,7 +49332,8 @@
     "ceph17-fuse": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
         "so:ceph17:so:libceph-common.so.2",
@@ -49279,8 +49344,9 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:ceph-fuse=17.2.5-r1",
-        "cmd:mount.fuse.ceph=17.2.5-r1"
+        "ceph-fuse=17.2.5-r2",
+        "cmd:ceph-fuse=17.2.5-r2",
+        "cmd:mount.fuse.ceph=17.2.5-r2"
       ]
     },
     "httpry-doc": {
@@ -49482,14 +49548,15 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "cmd:qemu-sh4eb=7.1.0-r6"
+        "cmd:qemu-sh4eb=7.1.0-r7"
       ]
     },
     "filezilla": {
@@ -50103,7 +50170,8 @@
     "librados17": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
         "so:libblkid.so.1",
@@ -50117,6 +50185,7 @@
         "so:libudev.so.1"
       ],
       "provides": [
+        "librados=17.2.5-r2",
         "so:ceph17:so:libceph-common.so.2=2",
         "so:ceph17:so:librados.so.2=2.0.0"
       ]
@@ -50317,7 +50386,8 @@
     "libcephsqlite17": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
         "so:ceph17:so:libceph-common.so.2",
@@ -50328,6 +50398,7 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
+        "libcephsqlite=17.2.5-r2",
         "so:ceph17:so:libcephsqlite.so=0"
       ]
     },
@@ -50337,7 +50408,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -50345,7 +50417,7 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:qemu-mips=7.1.0-r6"
+        "cmd:qemu-mips=7.1.0-r7"
       ]
     },
     "fontforge-dev": {
@@ -54231,8 +54303,12 @@
     "ceph17-bash-completion": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
-      }
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
+      },
+      "provides": [
+        "ceph-bash-completion=17.2.5-r2"
+      ]
     },
     "obfuscate-lang": {
       "origin": "obfuscate",
@@ -54723,14 +54799,15 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "cmd:qemu-loongarch64=7.1.0-r6"
+        "cmd:qemu-loongarch64=7.1.0-r7"
       ]
     },
     "qscintilla": {
@@ -54948,7 +55025,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -54959,7 +55037,7 @@
         "so:liburing.so.2"
       ],
       "provides": [
-        "cmd:qemu-pr-helper=7.1.0-r6"
+        "cmd:qemu-pr-helper=7.1.0-r7"
       ]
     },
     "appstream-glib-dbg": {
@@ -55059,7 +55137,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu-ui-opengl",
@@ -55384,12 +55463,16 @@
     "py3-cephfs17": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
-        "py3-rados17",
+        "py3-rados17=17.2.5-r2",
         "so:ceph17:so:libcephfs.so.2",
         "so:libc.musl-armhf.so.1"
+      ],
+      "provides": [
+        "py3-cephfs=17.2.5-r2"
       ]
     },
     "opensmtpd-filter-rspamd": {
@@ -56135,10 +56218,14 @@
     "ceph17-user": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
         "/bin/sh"
+      ],
+      "provides": [
+        "ceph-user=17.2.5-r2"
       ]
     },
     "liborcus": {
@@ -57407,7 +57494,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -58173,7 +58261,8 @@
         "8.9.0-r0": 1667393472,
         "8.9.0-r1": 1667640275,
         "8.9.0-r2": 1667740922,
-        "8.9.0-r3": 1667838832
+        "8.9.0-r3": 1667838832,
+        "8.9.0-r4": 1667844704
       }
     },
     "py3-wordcloud": {
@@ -60082,10 +60171,11 @@
         "8.9.0-r0": 1667393472,
         "8.9.0-r1": 1667640275,
         "8.9.0-r2": 1667740922,
-        "8.9.0-r3": 1667838832
+        "8.9.0-r3": 1667838832,
+        "8.9.0-r4": 1667844704
       },
       "dependencies": [
-        "libvirt-client=8.9.0-r3",
+        "libvirt-client=8.9.0-r4",
         "bridge-utils",
         "dmidecode",
         "dnsmasq",
@@ -60103,7 +60193,7 @@
         "so:libvirt.so.0"
       ],
       "provides": [
-        "cmd:libvirtd=8.9.0-r3"
+        "cmd:libvirtd=8.9.0-r4"
       ]
     },
     "ruby-liquid": {
@@ -61836,14 +61926,15 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "cmd:qemu-hexagon=7.1.0-r6"
+        "cmd:qemu-hexagon=7.1.0-r7"
       ]
     },
     "ndctl": {
@@ -65578,12 +65669,16 @@
     "ceph17-mgr-k8events": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
-        "ceph17-mgr-r1",
+        "ceph17-mgr=17.2.5-r2",
         "py3-kubernetes",
         "py3-yaml"
+      ],
+      "provides": [
+        "ceph-mgr-k8events=17.2.5-r2"
       ]
     },
     "jwm-lang": {
@@ -66260,7 +66355,8 @@
     "ceph17-openrc": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       }
     },
     "inetutils-telnet": {
@@ -66477,14 +66573,15 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "cmd:qemu-sparc=7.1.0-r6"
+        "cmd:qemu-sparc=7.1.0-r7"
       ]
     },
     "perl-spreadsheet-parseexcel-doc": {
@@ -66721,7 +66818,8 @@
         "8.9.0-r0": 1667393472,
         "8.9.0-r1": 1667640275,
         "8.9.0-r2": 1667740922,
-        "8.9.0-r3": 1667838832
+        "8.9.0-r3": 1667838832,
+        "8.9.0-r4": 1667844704
       },
       "dependencies": [
         "lvm2",
@@ -66862,7 +66960,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu",
@@ -66891,7 +66990,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-system-mips64=7.1.0-r6"
+        "cmd:qemu-system-mips64=7.1.0-r7"
       ]
     },
     "arandr-doc": {
@@ -68209,12 +68308,16 @@
     "ceph17-mon": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
-        "ceph17-base",
-        "ceph17-mon-daemon=17.2.5-r1",
-        "ceph17-mon-tools=17.2.5-r1"
+        "ceph17-base=17.2.5-r2",
+        "ceph17-mon-daemon=17.2.5-r2",
+        "ceph17-mon-tools=17.2.5-r2"
+      ],
+      "provides": [
+        "ceph-mon=17.2.5-r2"
       ]
     },
     "libewf": {
@@ -69058,7 +69161,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -72206,14 +72310,15 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "cmd:qemu-microblazeel=7.1.0-r6"
+        "cmd:qemu-microblazeel=7.1.0-r7"
       ]
     },
     "fgt": {
@@ -72304,14 +72409,15 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "cmd:qemu-riscv64=7.1.0-r6"
+        "cmd:qemu-riscv64=7.1.0-r7"
       ]
     },
     "notmuch": {
@@ -73169,7 +73275,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -73711,12 +73818,16 @@
     "py3-rados17": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
-        "py3-ceph17-common",
+        "py3-ceph17-common=17.2.5-r2",
         "so:ceph17:so:librados.so.2",
         "so:libc.musl-armhf.so.1"
+      ],
+      "provides": [
+        "py3-rados=17.2.5-r2"
       ]
     },
     "flexget": {
@@ -74121,7 +74232,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu-s390x-firmware",
@@ -74149,7 +74261,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-system-s390x=7.1.0-r6"
+        "cmd:qemu-system-s390x=7.1.0-r7"
       ]
     },
     "imagemagick-c++": {
@@ -74731,7 +74843,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -74904,14 +75017,15 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "cmd:qemu-riscv32=7.1.0-r6"
+        "cmd:qemu-riscv32=7.1.0-r7"
       ]
     },
     "tinycompress": {
@@ -75322,7 +75436,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -76095,14 +76210,15 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "cmd:qemu-x86_64=7.1.0-r6"
+        "cmd:qemu-x86_64=7.1.0-r7"
       ]
     },
     "geany-plugins-geanyminiscript": {
@@ -76486,14 +76602,15 @@
       }
     },
     "ceph-dev": {
-      "origin": "ceph16",
+      "origin": "ceph17",
       "versions": {
         "16.2.10-r7": 1666284937,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
-        "ceph16-dev=16.2.10-r10"
+        "ceph17-dev=17.2.5-r2"
       ],
       "provides": [
         "cmd:librados-config=16.2.10-r7"
@@ -76977,7 +77094,8 @@
         "8.9.0-r0": 1667393472,
         "8.9.0-r1": 1667640275,
         "8.9.0-r2": 1667740922,
-        "8.9.0-r3": 1667838832
+        "8.9.0-r3": 1667838832,
+        "8.9.0-r4": 1667844704
       },
       "dependencies": [
         "lvm2"
@@ -77001,7 +77119,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -79003,14 +79122,15 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "cmd:qemu-sh4=7.1.0-r6"
+        "cmd:qemu-sh4=7.1.0-r7"
       ]
     },
     "spice-gtk": {
@@ -79475,14 +79595,15 @@
     "ceph17-common": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
         "eudev",
-        "py3-rados17",
-        "py3-rbd17",
-        "py3-cephfs17",
+        "py3-cephfs17=17.2.5-r2",
         "py3-prettytable",
+        "py3-rados17=17.2.5-r2",
+        "py3-rbd17=17.2.5-r2",
         "so:ceph17:so:libceph-common.so.2",
         "so:ceph17:so:librados.so.2",
         "so:ceph17:so:libradosstriper.so.1",
@@ -79499,14 +79620,15 @@
         "so:libudev.so.1"
       ],
       "provides": [
-        "cmd:ceph-authtool=17.2.5-r1",
-        "cmd:ceph-conf=17.2.5-r1",
-        "cmd:ceph-rbdnamer=17.2.5-r1",
-        "cmd:ceph=17.2.5-r1",
-        "cmd:mount.ceph=17.2.5-r1",
-        "cmd:rados=17.2.5-r1",
-        "cmd:rbd=17.2.5-r1",
-        "cmd:rbdmap=17.2.5-r1"
+        "ceph-common=17.2.5-r2",
+        "cmd:ceph-authtool=17.2.5-r2",
+        "cmd:ceph-conf=17.2.5-r2",
+        "cmd:ceph-rbdnamer=17.2.5-r2",
+        "cmd:ceph=17.2.5-r2",
+        "cmd:mount.ceph=17.2.5-r2",
+        "cmd:rados=17.2.5-r2",
+        "cmd:rbd=17.2.5-r2",
+        "cmd:rbdmap=17.2.5-r2"
       ]
     },
     "booster-doc": {
@@ -80298,7 +80420,8 @@
     "libcephfs17": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
         "so:ceph17:so:libceph-common.so.2",
@@ -80308,6 +80431,7 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
+        "libcephfs=17.2.5-r2",
         "so:ceph17:so:libcephfs.so.2=2.0.0"
       ]
     },
@@ -80633,14 +80757,15 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "cmd:qemu-cris=7.1.0-r6"
+        "cmd:qemu-cris=7.1.0-r7"
       ]
     },
     "py3-zope-component": {
@@ -80729,10 +80854,11 @@
     "ceph17-osd-tools": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
-        "ceph17-base=17.2.5-r1",
+        "ceph17-base=17.2.5-r2",
         "lz4-libs",
         "so:ceph17:so:libceph-common.so.2",
         "so:libaio.so.1",
@@ -80747,11 +80873,12 @@
         "so:liburing.so.2"
       ],
       "provides": [
-        "cmd:ceph-bluestore-tool=17.2.5-r1",
-        "cmd:ceph-clsinfo=17.2.5-r1",
-        "cmd:ceph-erasure-code-tool=17.2.5-r1",
-        "cmd:ceph-objectstore-tool=17.2.5-r1",
-        "cmd:ceph-osdomap-tool=17.2.5-r1"
+        "ceph-osd-tools=17.2.5-r2",
+        "cmd:ceph-bluestore-tool=17.2.5-r2",
+        "cmd:ceph-clsinfo=17.2.5-r2",
+        "cmd:ceph-erasure-code-tool=17.2.5-r2",
+        "cmd:ceph-objectstore-tool=17.2.5-r2",
+        "cmd:ceph-osdomap-tool=17.2.5-r2"
       ]
     },
     "jbig2enc": {
@@ -83347,14 +83474,15 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "cmd:qemu-aarch64_be=7.1.0-r6"
+        "cmd:qemu-aarch64_be=7.1.0-r7"
       ]
     },
     "buildkit-doc": {
@@ -83995,7 +84123,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       }
     },
     "gnome-shortwave-lang": {
@@ -84794,7 +84923,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -84920,10 +85050,11 @@
     "ceph17-mon-daemon": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
-        "ceph17-user=17.2.5-r1",
+        "ceph17-user=17.2.5-r2",
         "so:ceph17:so:libceph-common.so.2",
         "so:libc.musl-armhf.so.1",
         "so:libfmt.so.9",
@@ -84932,7 +85063,8 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:ceph-mon=17.2.5-r1"
+        "ceph-mon-daemon=17.2.5-r2",
+        "cmd:ceph-mon=17.2.5-r2"
       ]
     },
     "py3-requests-cache": {
@@ -85845,7 +85977,8 @@
     "libradosstriper17": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
         "so:ceph17:so:libceph-common.so.2",
@@ -85856,6 +85989,7 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
+        "libradosstriper=17.2.5-r2",
         "so:ceph17:so:libradosstriper.so.1=1.0.0"
       ]
     },
@@ -85872,7 +86006,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu-hw-display-virtio-gpu",
@@ -86099,10 +86234,11 @@
     "rbd-mirror17": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
-        "ceph17-common=17.2.5-r1",
+        "ceph17-common=17.2.5-r2",
         "so:ceph17:so:libceph-common.so.2",
         "so:ceph17:so:librados.so.2",
         "so:libc.musl-armhf.so.1",
@@ -86113,7 +86249,8 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:rbd-mirror=17.2.5-r1"
+        "rbd-mirror=17.2.5-r2",
+        "cmd:rbd-mirror=17.2.5-r2"
       ]
     },
     "xmessage": {
@@ -86734,14 +86871,15 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "cmd:qemu-armeb=7.1.0-r6"
+        "cmd:qemu-armeb=7.1.0-r7"
       ]
     },
     "R-mathlib": {
@@ -89989,7 +90127,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       }
     },
     "fluidsynth-doc": {
@@ -91497,7 +91636,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu",
@@ -91525,7 +91665,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-system-loongarch64=7.1.0-r6"
+        "cmd:qemu-system-loongarch64=7.1.0-r7"
       ]
     },
     "sget-fish-completion": {
@@ -92181,7 +92321,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -92366,14 +92507,16 @@
     "cephfs17-top": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
         "python3",
-        "py3-rados17"
+        "py3-rados17=17.2.5-r2"
       ],
       "provides": [
-        "cmd:cephfs-top=17.2.5-r1"
+        "cephfs-top=17.2.5-r2",
+        "cmd:cephfs-top=17.2.5-r2"
       ]
     },
     "filezilla-doc": {
@@ -92616,7 +92759,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu-ui-spice-core",
@@ -92834,7 +92978,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu-ui-opengl",
@@ -94112,7 +94257,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu-ppc-firmware",
@@ -94140,7 +94286,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-system-ppc=7.1.0-r6"
+        "cmd:qemu-system-ppc=7.1.0-r7"
       ]
     },
     "collectd-write_redis": {
@@ -94172,7 +94318,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -95026,7 +95173,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libaio.so.1",
@@ -95039,10 +95187,10 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-img=7.1.0-r6",
-        "cmd:qemu-io=7.1.0-r6",
-        "cmd:qemu-nbd=7.1.0-r6",
-        "cmd:qemu-storage-daemon=7.1.0-r6"
+        "cmd:qemu-img=7.1.0-r7",
+        "cmd:qemu-io=7.1.0-r7",
+        "cmd:qemu-nbd=7.1.0-r7",
+        "cmd:qemu-storage-daemon=7.1.0-r7"
       ]
     },
     "websocketd": {
@@ -96456,10 +96604,11 @@
         "8.9.0-r0": 1667393472,
         "8.9.0-r1": 1667640275,
         "8.9.0-r2": 1667740922,
-        "8.9.0-r3": 1667838832
+        "8.9.0-r3": 1667838832,
+        "8.9.0-r4": 1667844704
       },
       "dependencies": [
-        "libvirt=8.9.0-r3",
+        "libvirt=8.9.0-r4",
         "pm-utils",
         "gnutls-utils",
         "netcat-openbsd",
@@ -96476,16 +96625,16 @@
         "so:libxml2.so.2"
       ],
       "provides": [
-        "cmd:virsh=8.9.0-r3",
-        "cmd:virt-admin=8.9.0-r3",
-        "cmd:virt-host-validate=8.9.0-r3",
-        "cmd:virt-login-shell=8.9.0-r3",
-        "cmd:virt-pki-query-dn=8.9.0-r3",
-        "cmd:virt-pki-validate=8.9.0-r3",
-        "cmd:virt-qemu-qmp-proxy=8.9.0-r3",
-        "cmd:virt-qemu-run=8.9.0-r3",
-        "cmd:virt-ssh-helper=8.9.0-r3",
-        "cmd:virt-xml-validate=8.9.0-r3"
+        "cmd:virsh=8.9.0-r4",
+        "cmd:virt-admin=8.9.0-r4",
+        "cmd:virt-host-validate=8.9.0-r4",
+        "cmd:virt-login-shell=8.9.0-r4",
+        "cmd:virt-pki-query-dn=8.9.0-r4",
+        "cmd:virt-pki-validate=8.9.0-r4",
+        "cmd:virt-qemu-qmp-proxy=8.9.0-r4",
+        "cmd:virt-qemu-run=8.9.0-r4",
+        "cmd:virt-ssh-helper=8.9.0-r4",
+        "cmd:virt-xml-validate=8.9.0-r4"
       ]
     },
     "py3-opytimizer": {
@@ -96856,14 +97005,15 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "cmd:qemu-ppc64le=7.1.0-r6"
+        "cmd:qemu-ppc64le=7.1.0-r7"
       ]
     },
     "animatch": {
@@ -97771,13 +97921,17 @@
     "ceph17-mgr-diskprediction-local": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
-        "ceph17-mgr-r1",
+        "ceph17-mgr=17.2.5-r2",
         "py3-numpy",
         "py3-scikit-learn",
         "py3-scipy"
+      ],
+      "provides": [
+        "ceph-mgr-diskprediction-local=17.2.5-r2"
       ]
     },
     "libinput": {
@@ -98715,7 +98869,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu",
@@ -98743,7 +98898,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-system-tricore=7.1.0-r6"
+        "cmd:qemu-system-tricore=7.1.0-r7"
       ]
     },
     "libphonenumber": {
@@ -99173,7 +99328,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libbz2.so.1",
@@ -99536,7 +99692,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu-audio-alsa",
@@ -99722,7 +99879,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -101374,7 +101532,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu",
@@ -101403,7 +101562,7 @@
       ],
       "provides": [
         "qemu-accel-tcg-i386",
-        "cmd:qemu-system-i386=7.1.0-r6"
+        "cmd:qemu-system-i386=7.1.0-r7"
       ]
     },
     "zabbix-pgsql": {
@@ -101607,7 +101766,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu",
@@ -101635,7 +101795,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-system-microblazeel=7.1.0-r6"
+        "cmd:qemu-system-microblazeel=7.1.0-r7"
       ]
     },
     "irtt-openrc": {
@@ -102156,7 +102316,8 @@
     "ceph17-base": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
         "cryptsetup",
@@ -102165,11 +102326,11 @@
         "parted",
         "psmisc",
         "xfsprogs",
-        "ceph17-user=17.2.5-r1",
-        "ceph17-common=17.2.5-r1",
-        "librbd17=17.2.5-r1",
-        "librados17=17.2.5-r1",
-        "libcephfs17=17.2.5-r1",
+        "ceph17-user=17.2.5-r2",
+        "ceph17-common=17.2.5-r2",
+        "librbd17=17.2.5-r2",
+        "librados17=17.2.5-r2",
+        "libcephfs17=17.2.5-r2",
         "so:ceph17:so:libceph-common.so.2",
         "so:libaio.so.1",
         "so:libc.musl-armhf.so.1",
@@ -102186,13 +102347,14 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:ceph-crash=17.2.5-r1",
-        "cmd:ceph-create-keys=17.2.5-r1",
-        "cmd:ceph-kvstore-tool=17.2.5-r1",
-        "cmd:ceph-run=17.2.5-r1",
-        "cmd:crushtool=17.2.5-r1",
-        "cmd:monmaptool=17.2.5-r1",
-        "cmd:osdmaptool=17.2.5-r1"
+        "ceph-base=17.2.5-r2",
+        "cmd:ceph-crash=17.2.5-r2",
+        "cmd:ceph-create-keys=17.2.5-r2",
+        "cmd:ceph-kvstore-tool=17.2.5-r2",
+        "cmd:ceph-run=17.2.5-r2",
+        "cmd:crushtool=17.2.5-r2",
+        "cmd:monmaptool=17.2.5-r2",
+        "cmd:osdmaptool=17.2.5-r2"
       ]
     },
     "mate-settings-daemon-lang": {
@@ -103423,7 +103585,8 @@
     "ceph17-mon-tools": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
         "so:ceph17:so:libceph-common.so.2",
@@ -103434,7 +103597,8 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:ceph-monstore-tool=17.2.5-r1"
+        "ceph-mon-tools=17.2.5-r2",
+        "cmd:ceph-monstore-tool=17.2.5-r2"
       ]
     },
     "liblzf-dev": {
@@ -104906,7 +105070,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -106028,7 +106193,8 @@
         "8.9.0-r0": 1667393472,
         "8.9.0-r1": 1667640275,
         "8.9.0-r2": 1667740922,
-        "8.9.0-r3": 1667838832
+        "8.9.0-r3": 1667838832,
+        "8.9.0-r4": 1667844704
       },
       "dependencies": [
         "lvm2"
@@ -107332,7 +107498,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       }
     },
     "accounts-qml-module": {
@@ -109289,7 +109456,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu",
@@ -109318,7 +109486,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-system-mipsel=7.1.0-r6"
+        "cmd:qemu-system-mipsel=7.1.0-r7"
       ]
     },
     "ocaml-findlib-dev": {
@@ -109832,7 +110000,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu",
@@ -109860,7 +110029,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-system-sparc64=7.1.0-r6"
+        "cmd:qemu-system-sparc64=7.1.0-r7"
       ]
     },
     "php81-dom": {
@@ -110022,14 +110191,15 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "cmd:qemu-alpha=7.1.0-r6"
+        "cmd:qemu-alpha=7.1.0-r7"
       ]
     },
     "faenza-icon-theme-lxterminal": {
@@ -110089,14 +110259,15 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "cmd:qemu-ppc64=7.1.0-r6"
+        "cmd:qemu-ppc64=7.1.0-r7"
       ]
     },
     "ceph-volume": {
@@ -112128,7 +112299,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -112136,7 +112308,7 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:qemu-mipsel=7.1.0-r6"
+        "cmd:qemu-mipsel=7.1.0-r7"
       ]
     },
     "grpc-dev": {
@@ -113183,14 +113355,15 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "cmd:qemu-s390x=7.1.0-r6"
+        "cmd:qemu-s390x=7.1.0-r7"
       ]
     },
     "cpupower-openrc": {
@@ -113544,7 +113717,8 @@
     "ceph17-doc": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       }
     },
     "vte3-dev": {
@@ -115084,7 +115258,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       }
     },
     "ansible-core": {
@@ -115399,7 +115574,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu",
@@ -115427,7 +115603,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-system-xtensaeb=7.1.0-r6"
+        "cmd:qemu-system-xtensaeb=7.1.0-r7"
       ]
     },
     "exempi-doc": {
@@ -115635,13 +115811,14 @@
     "ceph17-osd-daemon": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
         "fuse",
         "snappy",
         "lz4-libs",
-        "ceph17-user=17.2.5-r1",
+        "ceph17-user=17.2.5-r2",
         "so:libaio.so.1",
         "so:libblkid.so.1",
         "so:libboost_iostreams.so.1.80.0",
@@ -115657,7 +115834,8 @@
         "so:liburing.so.2"
       ],
       "provides": [
-        "cmd:ceph-osd=17.2.5-r1"
+        "ceph-osd-daemon=17.2.5-r2",
+        "cmd:ceph-osd=17.2.5-r2"
       ]
     },
     "maplibre-gl-native": {
@@ -115693,7 +115871,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu",
@@ -115721,7 +115900,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-system-alpha=7.1.0-r6"
+        "cmd:qemu-system-alpha=7.1.0-r7"
       ]
     },
     "jsoncpp": {
@@ -116754,14 +116933,15 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "cmd:qemu-m68k=7.1.0-r6"
+        "cmd:qemu-m68k=7.1.0-r7"
       ]
     },
     "xterm": {
@@ -116959,12 +117139,16 @@
     "ceph17-osd": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
-        "ceph17-osd-daemon=17.2.5-r1",
-        "ceph17-osd-tools=17.2.5-r1",
-        "ceph17-volume=17.2.5-r1"
+        "ceph17-osd-daemon=17.2.5-r2",
+        "ceph17-osd-tools=17.2.5-r2",
+        "ceph17-volume=17.2.5-r2"
+      ],
+      "provides": [
+        "ceph-osd=17.2.5-r2"
       ]
     },
     "sget-bash-completion": {
@@ -117142,14 +117326,15 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "cmd:qemu-xtensaeb=7.1.0-r6"
+        "cmd:qemu-xtensaeb=7.1.0-r7"
       ]
     },
     "units-cur-update": {
@@ -117732,14 +117917,16 @@
     "py3-ceph17-common": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
         "py3-setuptools",
         "py3-yaml"
       ],
       "provides": [
-        "py3.10:ceph=17.2.5-r1"
+        "py3-ceph-common=17.2.5-r2",
+        "py3.10:ceph=17.2.5-r2"
       ]
     },
     "feedbackd-dev": {
@@ -118589,7 +118776,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu",
@@ -118617,7 +118805,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-system-nios2=7.1.0-r6"
+        "cmd:qemu-system-nios2=7.1.0-r7"
       ]
     },
     "perl-business-isbn-data": {
@@ -119935,14 +120123,15 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "cmd:qemu-ppc=7.1.0-r6"
+        "cmd:qemu-ppc=7.1.0-r7"
       ]
     },
     "py3-pydocstyle": {
@@ -120114,7 +120303,8 @@
     "rbd-fuse17": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
         "so:ceph17:so:libceph-common.so.2",
@@ -120126,7 +120316,8 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:rbd-fuse=17.2.5-r1"
+        "rbd-fuse=17.2.5-r2",
+        "cmd:rbd-fuse=17.2.5-r2"
       ]
     },
     "perl-crypt-cbc-doc": {
@@ -120760,7 +120951,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       }
     },
     "webkit2gtk-4.1-dev": {
@@ -127369,14 +127561,15 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "cmd:qemu-arm=7.1.0-r6"
+        "cmd:qemu-arm=7.1.0-r7"
       ]
     },
     "wev": {
@@ -127578,7 +127771,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu-ui-opengl",
@@ -127711,11 +127905,12 @@
         "8.9.0-r0": 1667393472,
         "8.9.0-r1": 1667640275,
         "8.9.0-r2": 1667740922,
-        "8.9.0-r3": 1667838832
+        "8.9.0-r3": 1667838832,
+        "8.9.0-r4": 1667844704
       },
       "dependencies": [
-        "libvirt-daemon=8.9.0-r3",
-        "libvirt-common-drivers=8.9.0-r3",
+        "libvirt-daemon=8.9.0-r4",
+        "libvirt-common-drivers=8.9.0-r4",
         "so:libc.musl-armhf.so.1",
         "so:libgcc_s.so.1",
         "so:libgio-2.0.so.0",
@@ -127883,7 +128078,8 @@
     "librbd17": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
         "so:ceph17:so:libceph-common.so.2",
@@ -127896,6 +128092,7 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
+        "librbd=17.2.5-r2",
         "so:ceph17:so:librbd.so.1=1.17.0"
       ]
     },
@@ -130067,7 +130264,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -130075,7 +130273,7 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:qemu-mips64=7.1.0-r6"
+        "cmd:qemu-mips64=7.1.0-r7"
       ]
     },
     "containerd": {
@@ -130283,7 +130481,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu",
@@ -130311,7 +130510,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-system-sparc=7.1.0-r6"
+        "cmd:qemu-system-sparc=7.1.0-r7"
       ]
     },
     "hwinfo-doc": {
@@ -130476,7 +130675,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -130686,7 +130886,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libasound.so.2",
@@ -130818,7 +131019,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -131031,7 +131233,8 @@
     "cephfs17-mirror": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
         "so:ceph17:so:libceph-common.so.2",
@@ -131042,7 +131245,8 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:cephfs-mirror=17.2.5-r1"
+        "cephfs-mirror=17.2.5-r2",
+        "cmd:cephfs-mirror=17.2.5-r2"
       ]
     },
     "fuse-overlayfs": {
@@ -131128,11 +131332,12 @@
     "ceph17-mgr-dashboard": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
-        "ceph17-ceph-common-r1",
-        "ceph17-mgr-r1",
+        "ceph17-ceph-common=17.2.5-r2",
+        "ceph17-mgr=17.2.5-r2",
         "py3-bcrypt",
         "py3-cherrypy",
         "py3-jwt",
@@ -131142,6 +131347,9 @@
         "py3-requests",
         "py3-routes",
         "py3-yaml"
+      ],
+      "provides": [
+        "ceph-mgr-dashboard=17.2.5-r2"
       ]
     },
     "py3-genty": {
@@ -131641,11 +131849,12 @@
         "8.9.0-r0": 1667393472,
         "8.9.0-r1": 1667640275,
         "8.9.0-r2": 1667740922,
-        "8.9.0-r3": 1667838832
+        "8.9.0-r3": 1667838832,
+        "8.9.0-r4": 1667844704
       },
       "dependencies": [
-        "libvirt-daemon=8.9.0-r3",
-        "libvirt-common-drivers=8.9.0-r3",
+        "libvirt-daemon=8.9.0-r4",
+        "libvirt-common-drivers=8.9.0-r4",
         "so:libblkid.so.1",
         "so:libc.musl-armhf.so.1",
         "so:libcap-ng.so.0",
@@ -131897,7 +132106,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       }
     },
     "xdg-desktop-portal-gtk-lang": {
@@ -133622,7 +133832,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu",
@@ -133651,7 +133862,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-system-mips64el=7.1.0-r6"
+        "cmd:qemu-system-mips64el=7.1.0-r7"
       ]
     },
     "py3-protobuf": {
@@ -134346,11 +134557,12 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
-        "librados16",
-        "librbd16",
+        "librados17",
+        "librbd17",
         "so:libc.musl-armhf.so.1"
       ]
     },
@@ -135175,7 +135387,8 @@
     "rbd-nbd17": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
         "so:ceph17:so:libceph-common.so.2",
@@ -135188,7 +135401,8 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:rbd-nbd=17.2.5-r1"
+        "rbd-nbd=17.2.5-r2",
+        "cmd:rbd-nbd=17.2.5-r2"
       ]
     },
     "desktop-file-utils-emacs": {
@@ -136953,14 +137167,15 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
         "so:libglib-2.0.so.0"
       ],
       "provides": [
-        "cmd:qemu-nios2=7.1.0-r6"
+        "cmd:qemu-nios2=7.1.0-r7"
       ]
     },
     "libdc1394": {
@@ -137102,7 +137317,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "qemu",
@@ -137130,7 +137346,7 @@
         "so:libzstd.so.1"
       ],
       "provides": [
-        "cmd:qemu-system-rx=7.1.0-r6"
+        "cmd:qemu-system-rx=7.1.0-r7"
       ]
     },
     "xcb-util-keysyms": {
@@ -137387,7 +137603,8 @@
         "8.9.0-r0": 1667393472,
         "8.9.0-r1": 1667640275,
         "8.9.0-r2": 1667740922,
-        "8.9.0-r3": 1667838832
+        "8.9.0-r3": 1667838832,
+        "8.9.0-r4": 1667844704
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -138001,7 +138218,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -138010,7 +138228,7 @@
         "so:liburing.so.2"
       ],
       "provides": [
-        "cmd:qemu-ga=7.1.0-r6"
+        "cmd:qemu-ga=7.1.0-r7"
       ]
     },
     "alsa-tools-dev": {
@@ -138983,7 +139201,8 @@
     "ceph17-mgr-modules-core": {
       "origin": "ceph17",
       "versions": {
-        "17.2.5-r1": 1667092168
+        "17.2.5-r1": 1667092168,
+        "17.2.5-r2": 1667844811
       },
       "dependencies": [
         "py3-cherrypy",
@@ -138992,6 +139211,9 @@
         "py3-pecan",
         "py3-requests",
         "py3-werkzeug"
+      ],
+      "provides": [
+        "ceph-mgr-modules-core=17.2.5-r2"
       ]
     },
     "gnome-boxes": {
@@ -139628,7 +139850,8 @@
         "7.1.0-r3": 1665535868,
         "7.1.0-r4": 1667246867,
         "7.1.0-r5": 1667640275,
-        "7.1.0-r6": 1667838832
+        "7.1.0-r6": 1667838832,
+        "7.1.0-r7": 1667844836
       },
       "dependencies": [
         "so:libc.musl-armhf.so.1",
@@ -139638,9 +139861,9 @@
         "so:libxkbcommon.so.0"
       ],
       "provides": [
-        "cmd:elf2dmp=7.1.0-r6",
-        "cmd:qemu-edid=7.1.0-r6",
-        "cmd:qemu-keymap=7.1.0-r6"
+        "cmd:elf2dmp=7.1.0-r7",
+        "cmd:qemu-edid=7.1.0-r7",
+        "cmd:qemu-keymap=7.1.0-r7"
       ]
     },
     "xdg-user-dirs-doc": {
@@ -140108,14 +140331,15 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       },
       "dependencies": [
-        "ceph16=16.2.10-r10",
-        "libcephfs16=16.2.10-r10",
-        "librados16=16.2.10-r10",
-        "libradosstriper16=16.2.10-r10",
-        "librbd16=16.2.10-r10",
+        "ceph16=16.2.10-r11",
+        "libcephfs16=16.2.10-r11",
+        "librados16=16.2.10-r11",
+        "libradosstriper16=16.2.10-r11",
+        "librbd16=16.2.10-r11",
         "so:ceph16:so:librados.so.2",
         "so:libboost_program_options.so.1.80.0",
         "so:libc.musl-armhf.so.1",
@@ -140123,7 +140347,7 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "cmd:librados-config=16.2.10-r10"
+        "cmd:librados-config=16.2.10-r11"
       ]
     },
     "ceph16-base": {
@@ -140131,7 +140355,8 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       },
       "dependencies": [
         "cryptsetup",
@@ -140140,11 +140365,11 @@
         "parted",
         "util-linux",
         "xfsprogs",
-        "ceph16-user=16.2.10-r10",
-        "ceph16-common=16.2.10-r10",
-        "librbd16=16.2.10-r10",
-        "librados16=16.2.10-r10",
-        "libcephfs16=16.2.10-r10",
+        "ceph16-user=16.2.10-r11",
+        "ceph16-common=16.2.10-r11",
+        "librbd16=16.2.10-r11",
+        "librados16=16.2.10-r11",
+        "libcephfs16=16.2.10-r11",
         "so:ceph16:so:libceph-common.so.2",
         "so:libaio.so.1",
         "so:libc.musl-armhf.so.1",
@@ -140158,14 +140383,13 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "ceph-base=16.2.10-r10",
-        "cmd:ceph-crash=16.2.10-r10",
-        "cmd:ceph-create-keys=16.2.10-r10",
-        "cmd:ceph-kvstore-tool=16.2.10-r10",
-        "cmd:ceph-run=16.2.10-r10",
-        "cmd:crushtool=16.2.10-r10",
-        "cmd:monmaptool=16.2.10-r10",
-        "cmd:osdmaptool=16.2.10-r10"
+        "cmd:ceph-crash=16.2.10-r11",
+        "cmd:ceph-create-keys=16.2.10-r11",
+        "cmd:ceph-kvstore-tool=16.2.10-r11",
+        "cmd:ceph-run=16.2.10-r11",
+        "cmd:crushtool=16.2.10-r11",
+        "cmd:monmaptool=16.2.10-r11",
+        "cmd:osdmaptool=16.2.10-r11"
       ]
     },
     "ceph16-radosgw": {
@@ -140173,10 +140397,11 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       },
       "dependencies": [
-        "ceph16-common=16.2.10-r10",
+        "ceph16-common=16.2.10-r11",
         "oath-toolkit-liboath",
         "so:ceph16:so:libceph-common.so.2",
         "so:ceph16:so:librados.so.2",
@@ -140196,12 +140421,11 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "ceph-radosgw=16.2.10-r10",
-        "cmd:radosgw-admin=16.2.10-r10",
-        "cmd:radosgw-es=16.2.10-r10",
-        "cmd:radosgw-object-expirer=16.2.10-r10",
-        "cmd:radosgw-token=16.2.10-r10",
-        "cmd:radosgw=16.2.10-r10"
+        "cmd:radosgw-admin=16.2.10-r11",
+        "cmd:radosgw-es=16.2.10-r11",
+        "cmd:radosgw-object-expirer=16.2.10-r11",
+        "cmd:radosgw-token=16.2.10-r11",
+        "cmd:radosgw=16.2.10-r11"
       ]
     },
     "librados16": {
@@ -140209,7 +140433,8 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       },
       "dependencies": [
         "so:libblkid.so.1",
@@ -140223,7 +140448,6 @@
         "so:libudev.so.1"
       ],
       "provides": [
-        "librados=16.2.10-r10",
         "so:ceph16:so:libceph-common.so.2=2",
         "so:ceph16:so:librados.so.2=2.0.0"
       ]
@@ -140233,7 +140457,8 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       },
       "dependencies": [
         "so:ceph16:so:libceph-common.so.2",
@@ -140246,7 +140471,6 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "librbd=16.2.10-r10",
         "so:ceph16:so:librbd.so.1=1.16.0"
       ]
     },
@@ -140255,7 +140479,8 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       },
       "dependencies": [
         "so:ceph16:so:libceph-common.so.2",
@@ -140267,8 +140492,7 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "rbd-fuse=16.2.10-r10",
-        "cmd:rbd-fuse=16.2.10-r10"
+        "cmd:rbd-fuse=16.2.10-r11"
       ]
     },
     "rbd-nbd16": {
@@ -140276,7 +140500,8 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       },
       "dependencies": [
         "so:ceph16:so:libceph-common.so.2",
@@ -140289,8 +140514,7 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "rbd-nbd=16.2.10-r10",
-        "cmd:rbd-nbd=16.2.10-r10"
+        "cmd:rbd-nbd=16.2.10-r11"
       ]
     },
     "ceph16-common": {
@@ -140298,13 +140522,14 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       },
       "dependencies": [
         "eudev",
-        "py3-rados16=16.2.10-r10",
-        "py3-rbd16=16.2.10-r10",
-        "py3-cephfs16=16.2.10-r10",
+        "py3-rados16=16.2.10-r11",
+        "py3-rbd16=16.2.10-r11",
+        "py3-cephfs16=16.2.10-r11",
         "py3-prettytable",
         "so:ceph16:so:libceph-common.so.2",
         "so:ceph16:so:librados.so.2",
@@ -140322,15 +140547,14 @@
         "so:libudev.so.1"
       ],
       "provides": [
-        "ceph-common=16.2.10-r10",
-        "cmd:ceph-authtool=16.2.10-r10",
-        "cmd:ceph-conf=16.2.10-r10",
-        "cmd:ceph-rbdnamer=16.2.10-r10",
-        "cmd:ceph=16.2.10-r10",
-        "cmd:mount.ceph=16.2.10-r10",
-        "cmd:rados=16.2.10-r10",
-        "cmd:rbd=16.2.10-r10",
-        "cmd:rbdmap=16.2.10-r10"
+        "cmd:ceph-authtool=16.2.10-r11",
+        "cmd:ceph-conf=16.2.10-r11",
+        "cmd:ceph-rbdnamer=16.2.10-r11",
+        "cmd:ceph=16.2.10-r11",
+        "cmd:mount.ceph=16.2.10-r11",
+        "cmd:rados=16.2.10-r11",
+        "cmd:rbd=16.2.10-r11",
+        "cmd:rbdmap=16.2.10-r11"
       ]
     },
     "ceph16": {
@@ -140338,7 +140562,8 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       },
       "dependencies": [
         "ceph-osd",
@@ -140363,16 +140588,15 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "ceph=16.2.10-r10",
         "so:ceph16:so:libcephsqlite.so=0",
         "so:ceph16:so:libradosgw.so.2=2.0.0",
         "so:ceph16:so:librgw.so.2=2.0.0",
-        "cmd:ceph-immutable-object-cache=16.2.10-r10",
-        "cmd:cephfs-mirror=16.2.10-r10",
-        "cmd:cephfs-top=16.2.10-r10",
-        "cmd:rgw-gap-list-comparator=16.2.10-r10",
-        "cmd:rgw-gap-list=16.2.10-r10",
-        "cmd:rgw-orphan-list=16.2.10-r10"
+        "cmd:ceph-immutable-object-cache=16.2.10-r11",
+        "cmd:cephfs-mirror=16.2.10-r11",
+        "cmd:cephfs-top=16.2.10-r11",
+        "cmd:rgw-gap-list-comparator=16.2.10-r11",
+        "cmd:rgw-gap-list=16.2.10-r11",
+        "cmd:rgw-orphan-list=16.2.10-r11"
       ]
     },
     "ceph16-osd-tools": {
@@ -140380,10 +140604,11 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       },
       "dependencies": [
-        "ceph16-base=16.2.10-r10",
+        "ceph16-base=16.2.10-r11",
         "lz4-libs",
         "so:ceph16:so:libceph-common.so.2",
         "so:libaio.so.1",
@@ -140399,12 +140624,11 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "ceph-osd-tools=16.2.10-r10",
-        "cmd:ceph-bluestore-tool=16.2.10-r10",
-        "cmd:ceph-clsinfo=16.2.10-r10",
-        "cmd:ceph-erasure-code-tool=16.2.10-r10",
-        "cmd:ceph-objectstore-tool=16.2.10-r10",
-        "cmd:ceph-osdomap-tool=16.2.10-r10"
+        "cmd:ceph-bluestore-tool=16.2.10-r11",
+        "cmd:ceph-clsinfo=16.2.10-r11",
+        "cmd:ceph-erasure-code-tool=16.2.10-r11",
+        "cmd:ceph-objectstore-tool=16.2.10-r11",
+        "cmd:ceph-osdomap-tool=16.2.10-r11"
       ]
     },
     "ceph16-mds": {
@@ -140412,10 +140636,11 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       },
       "dependencies": [
-        "ceph16-base=16.2.10-r10",
+        "ceph16-base=16.2.10-r11",
         "so:ceph16:so:libceph-common.so.2",
         "so:libc.musl-armhf.so.1",
         "so:libfmt.so.9",
@@ -140424,8 +140649,7 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "ceph-mds=16.2.10-r10",
-        "cmd:ceph-mds=16.2.10-r10"
+        "cmd:ceph-mds=16.2.10-r11"
       ]
     },
     "rbd-mirror16": {
@@ -140433,10 +140657,11 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       },
       "dependencies": [
-        "ceph16-common=16.2.10-r10",
+        "ceph16-common=16.2.10-r11",
         "so:ceph16:so:libceph-common.so.2",
         "so:ceph16:so:librados.so.2",
         "so:libc.musl-armhf.so.1",
@@ -140447,8 +140672,7 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "rbd-mirror=16.2.10-r10",
-        "cmd:rbd-mirror=16.2.10-r10"
+        "cmd:rbd-mirror=16.2.10-r11"
       ]
     },
     "py3-ceph16-common": {
@@ -140456,15 +140680,15 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       },
       "dependencies": [
         "py3-setuptools",
         "py3-yaml"
       ],
       "provides": [
-        "py3-ceph-common=16.2.10-r10",
-        "py3.10:ceph=16.2.10-r10"
+        "py3.10:ceph=16.2.10-r11"
       ]
     },
     "ceph16-utils": {
@@ -140472,10 +140696,11 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       },
       "dependencies": [
-        "ceph16-common=16.2.10-r10",
+        "ceph16-common=16.2.10-r11",
         "so:ceph16:so:libceph-common.so.2",
         "so:ceph16:so:libcephfs.so.2",
         "so:ceph16:so:librados.so.2",
@@ -140499,16 +140724,15 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "ceph-utils=16.2.10-r10",
-        "cmd:ceph-dencoder=16.2.10-r10",
-        "cmd:ceph-diff-sorted=16.2.10-r10",
-        "cmd:ceph-post-file=16.2.10-r10",
-        "cmd:ceph-syn=16.2.10-r10",
-        "cmd:cephfs-data-scan=16.2.10-r10",
-        "cmd:cephfs-journal-tool=16.2.10-r10",
-        "cmd:cephfs-table-tool=16.2.10-r10",
-        "cmd:rbd-replay-many=16.2.10-r10",
-        "cmd:rbd-replay=16.2.10-r10"
+        "cmd:ceph-dencoder=16.2.10-r11",
+        "cmd:ceph-diff-sorted=16.2.10-r11",
+        "cmd:ceph-post-file=16.2.10-r11",
+        "cmd:ceph-syn=16.2.10-r11",
+        "cmd:cephfs-data-scan=16.2.10-r11",
+        "cmd:cephfs-journal-tool=16.2.10-r11",
+        "cmd:cephfs-table-tool=16.2.10-r11",
+        "cmd:rbd-replay-many=16.2.10-r11",
+        "cmd:rbd-replay=16.2.10-r11"
       ]
     },
     "tepl-lang": {
@@ -140546,13 +140770,14 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       },
       "dependencies": [
         "fuse",
         "snappy",
         "lz4-libs",
-        "ceph16-user=16.2.10-r10",
+        "ceph16-user=16.2.10-r11",
         "so:libaio.so.1",
         "so:libblkid.so.1",
         "so:libboost_iostreams.so.1.80.0",
@@ -140569,8 +140794,7 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "ceph-osd-daemon=16.2.10-r10",
-        "cmd:ceph-osd=16.2.10-r10"
+        "cmd:ceph-osd=16.2.10-r11"
       ]
     },
     "libcephfs16": {
@@ -140578,7 +140802,8 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       },
       "dependencies": [
         "so:ceph16:so:libceph-common.so.2",
@@ -140588,7 +140813,6 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "libcephfs=16.2.10-r10",
         "so:ceph16:so:libcephfs.so.2=2.0.0"
       ]
     },
@@ -140597,12 +140821,13 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       },
       "dependencies": [
-        "ceph16-base=16.2.10-r10",
-        "ceph16-mon-daemon=16.2.10-r10",
-        "ceph16-mon-tools=16.2.10-r10"
+        "ceph16-base=16.2.10-r11",
+        "ceph16-mon-daemon=16.2.10-r11",
+        "ceph16-mon-tools=16.2.10-r11"
       ],
       "provides": [
         "ceph-mon=16.2.10-r10"
@@ -140613,10 +140838,11 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       },
       "dependencies": [
-        "py3-rados16=16.2.10-r10",
+        "py3-rados16=16.2.10-r11",
         "so:ceph16:so:librbd.so.1",
         "so:libc.musl-armhf.so.1"
       ],
@@ -140629,7 +140855,8 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       }
     },
     "ceph16-openrc": {
@@ -140637,7 +140864,8 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       }
     },
     "ceph16-volume": {
@@ -140645,17 +140873,17 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       },
       "dependencies": [
-        "ceph16-common=16.2.10-r10",
+        "ceph16-common=16.2.10-r11",
         "lvm2",
-        "py3-ceph16-common=16.2.10-r10"
+        "py3-ceph16-common=16.2.10-r11"
       ],
       "provides": [
-        "ceph-volume=16.2.10-r10",
-        "cmd:ceph-volume=16.2.10-r10",
-        "py3.10:ceph_volume=16.2.10-r10"
+        "cmd:ceph-volume=16.2.10-r11",
+        "py3.10:ceph_volume=16.2.10-r11"
       ]
     },
     "tepl": {
@@ -140687,7 +140915,8 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       },
       "dependencies": [
         "so:ceph16:so:libceph-common.so.2",
@@ -140698,9 +140927,8 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "ceph-fuse=16.2.10-r10",
-        "cmd:ceph-fuse=16.2.10-r10",
-        "cmd:mount.fuse.ceph=16.2.10-r10"
+        "cmd:ceph-fuse=16.2.10-r11",
+        "cmd:mount.fuse.ceph=16.2.10-r11"
       ]
     },
     "py3-rados16": {
@@ -140708,10 +140936,11 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       },
       "dependencies": [
-        "py3-ceph16-common=16.2.10-r10",
+        "py3-ceph16-common=16.2.10-r11",
         "so:ceph16:so:librados.so.2",
         "so:libc.musl-armhf.so.1"
       ],
@@ -140724,7 +140953,8 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       },
       "provides": [
         "ceph-bash-completion=16.2.10-r10"
@@ -140735,12 +140965,13 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       },
       "dependencies": [
-        "ceph16-osd-daemon=16.2.10-r10",
-        "ceph16-osd-tools=16.2.10-r10",
-        "ceph16-volume=16.2.10-r10"
+        "ceph16-osd-daemon=16.2.10-r11",
+        "ceph16-osd-tools=16.2.10-r11",
+        "ceph16-volume=16.2.10-r11"
       ],
       "provides": [
         "ceph-osd=16.2.10-r10"
@@ -140751,7 +140982,8 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       },
       "dependencies": [
         "so:ceph16:so:libceph-common.so.2",
@@ -140764,8 +140996,7 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "ceph-mon-tools=16.2.10-r10",
-        "cmd:ceph-monstore-tool=16.2.10-r10"
+        "cmd:ceph-monstore-tool=16.2.10-r11"
       ]
     },
     "ceph16-mon-daemon": {
@@ -140773,10 +141004,11 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       },
       "dependencies": [
-        "ceph16-user=16.2.10-r10",
+        "ceph16-user=16.2.10-r11",
         "so:ceph16:so:libceph-common.so.2",
         "so:libc.musl-armhf.so.1",
         "so:libgcc_s.so.1",
@@ -140786,8 +141018,7 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "ceph-mon-daemon=16.2.10-r10",
-        "cmd:ceph-mon=16.2.10-r10"
+        "cmd:ceph-mon=16.2.10-r11"
       ]
     },
     "ceph16-mgr": {
@@ -140795,10 +141026,11 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       },
       "dependencies": [
-        "ceph16-base=16.2.10-r10",
+        "ceph16-base=16.2.10-r11",
         "so:ceph16:so:libceph-common.so.2",
         "so:libboost_python310.so.1.80.0",
         "so:libc.musl-armhf.so.1",
@@ -140808,8 +141040,7 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "ceph-mgr=16.2.10-r10",
-        "cmd:ceph-mgr=16.2.10-r10"
+        "cmd:ceph-mgr=16.2.10-r11"
       ]
     },
     "py3-cephfs16": {
@@ -140817,10 +141048,11 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       },
       "dependencies": [
-        "py3-rados16=16.2.10-r10",
+        "py3-rados16=16.2.10-r11",
         "so:ceph16:so:libcephfs.so.2",
         "so:libc.musl-armhf.so.1"
       ],
@@ -140839,7 +141071,8 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       },
       "dependencies": [
         "so:ceph16:so:libceph-common.so.2",
@@ -140850,7 +141083,6 @@
         "so:libstdc++.so.6"
       ],
       "provides": [
-        "libradosstriper=16.2.10-r10",
         "so:ceph16:so:libradosstriper.so.1=1.0.0"
       ]
     },
@@ -140859,7 +141091,8 @@
       "versions": {
         "16.2.10-r8": 1667614883,
         "16.2.10-r9": 1667647191,
-        "16.2.10-r10": 1667648144
+        "16.2.10-r10": 1667648144,
+        "16.2.10-r11": 1667844670
       },
       "dependencies": [
         "/bin/sh"
@@ -143180,120 +143413,152 @@
         "version": "1.2.2-r1"
       },
       "ceph-base": {
-        "package": "ceph16-base",
-        "version": "16.2.10-r10"
+        "package": "ceph17-base",
+        "version": "17.2.5-r2"
       },
       "ceph-radosgw": {
-        "package": "ceph16-radosgw",
-        "version": "16.2.10-r10"
+        "package": "ceph17-radosgw",
+        "version": "17.2.5-r2"
       },
       "librados": {
-        "package": "librados16",
-        "version": "16.2.10-r10"
+        "package": "librados17",
+        "version": "17.2.5-r2"
       },
       "librbd": {
-        "package": "librbd16",
-        "version": "16.2.10-r10"
+        "package": "librbd17",
+        "version": "17.2.5-r2"
       },
       "rbd-fuse": {
-        "package": "rbd-fuse16",
-        "version": "16.2.10-r10"
+        "package": "rbd-fuse17",
+        "version": "17.2.5-r2"
       },
       "rbd-nbd": {
-        "package": "rbd-nbd16",
-        "version": "16.2.10-r10"
+        "package": "rbd-nbd17",
+        "version": "17.2.5-r2"
       },
       "ceph-common": {
-        "package": "ceph16-common",
-        "version": "16.2.10-r10"
+        "package": "ceph17-common",
+        "version": "17.2.5-r2"
       },
       "ceph": {
-        "package": "ceph16",
-        "version": "16.2.10-r10"
+        "package": "ceph17",
+        "version": "17.2.5-r2"
       },
       "ceph-osd-tools": {
-        "package": "ceph16-osd-tools",
-        "version": "16.2.10-r10"
+        "package": "ceph17-osd-tools",
+        "version": "17.2.5-r2"
       },
       "ceph-mds": {
-        "package": "ceph16-mds",
-        "version": "16.2.10-r10"
+        "package": "ceph17-mds",
+        "version": "17.2.5-r2"
       },
       "rbd-mirror": {
-        "package": "rbd-mirror16",
-        "version": "16.2.10-r10"
+        "package": "rbd-mirror17",
+        "version": "17.2.5-r2"
       },
       "py3-ceph-common": {
-        "package": "py3-ceph16-common",
-        "version": "16.2.10-r10"
+        "package": "py3-ceph17-common",
+        "version": "17.2.5-r2"
       },
       "ceph-utils": {
-        "package": "ceph16-utils",
-        "version": "16.2.10-r10"
+        "package": "ceph17-utils",
+        "version": "17.2.5-r2"
       },
       "ceph-osd-daemon": {
-        "package": "ceph16-osd-daemon",
-        "version": "16.2.10-r10"
+        "package": "ceph17-osd-daemon",
+        "version": "17.2.5-r2"
       },
       "libcephfs": {
-        "package": "libcephfs16",
-        "version": "16.2.10-r10"
+        "package": "libcephfs17",
+        "version": "17.2.5-r2"
       },
       "ceph-mon": {
-        "package": "ceph16-mon",
-        "version": "16.2.10-r10"
+        "package": "ceph17-mon",
+        "version": "17.2.5-r2"
       },
       "py3-rbd": {
-        "package": "py3-rbd16",
-        "version": "16.2.10-r10"
+        "package": "py3-rbd17",
+        "version": "17.2.5-r2"
       },
       "ceph-volume": {
-        "package": "ceph16-volume",
-        "version": "16.2.10-r10"
+        "package": "ceph17-volume",
+        "version": "17.2.5-r2"
       },
       "ceph-fuse": {
-        "package": "ceph16-fuse",
-        "version": "16.2.10-r10"
+        "package": "ceph17-fuse",
+        "version": "17.2.5-r2"
       },
       "py3-rados": {
-        "package": "py3-rados16",
-        "version": "16.2.10-r10"
+        "package": "py3-rados17",
+        "version": "17.2.5-r2"
       },
       "ceph-bash-completion": {
-        "package": "ceph16-bash-completion",
-        "version": "16.2.10-r10"
+        "package": "ceph17-bash-completion",
+        "version": "17.2.5-r2"
       },
       "ceph-osd": {
-        "package": "ceph16-osd",
-        "version": "16.2.10-r10"
+        "package": "ceph17-osd",
+        "version": "17.2.5-r2"
       },
       "ceph-mon-tools": {
-        "package": "ceph16-mon-tools",
-        "version": "16.2.10-r10"
+        "package": "ceph17-mon-tools",
+        "version": "17.2.5-r2"
       },
       "ceph-mon-daemon": {
-        "package": "ceph16-mon-daemon",
-        "version": "16.2.10-r10"
+        "package": "ceph17-mon-daemon",
+        "version": "17.2.5-r2"
       },
       "ceph-mgr": {
-        "package": "ceph16-mgr",
-        "version": "16.2.10-r10"
+        "package": "ceph17-mgr",
+        "version": "17.2.5-r2"
       },
       "py3-cephfs": {
-        "package": "py3-cephfs16",
-        "version": "16.2.10-r10"
+        "package": "py3-cephfs17",
+        "version": "17.2.5-r2"
       },
       "libradosstriper": {
-        "package": "libradosstriper16",
-        "version": "16.2.10-r10"
+        "package": "libradosstriper17",
+        "version": "17.2.5-r2"
       },
       "ceph-user": {
-        "package": "ceph16-user",
-        "version": "16.2.10-r10"
+        "package": "ceph17-user",
+        "version": "17.2.5-r2"
       },
       "ceph-dev": {
         "package": "ceph16-dev",
         "version": "16.2.10-r9"
+      },
+      "libcephsqlite": {
+        "package": "libcephsqlite17",
+        "version": "17.2.5-r2"
+      },
+      "ceph-mgr-k8events": {
+        "package": "ceph17-mgr-k8events",
+        "version": "17.2.5-r2"
+      },
+      "ceph-mgr-dashboard": {
+        "package": "ceph17-mgr-dashboard",
+        "version": "17.2.5-r2"
+      },
+      "ceph-mgr-modules-core": {
+        "package": "ceph17-mgr-modules-core",
+        "version": "17.2.5-r2"
+      },
+      "cephfs-mirror": {
+        "package": "cephfs17-mirror",
+        "version": "17.2.5-r2"
+      },
+      "ceph-mgr-rook": {
+        "package": "ceph17-mgr-rook",
+        "version": "17.2.5-r2"
+      },
+      "cephfs-top": {
+        "package": "cephfs17-top",
+        "version": "17.2.5-r2"
+      },
+      "ceph-mgr-diskprediction-local": {
+        "package": "ceph17-mgr-diskprediction-local",
+        "version": "17.2.5-r2"
       }
     },
     "so": {
