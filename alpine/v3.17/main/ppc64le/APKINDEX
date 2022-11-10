@@ -274,6 +274,23 @@ c:39cde24fb54a667a6730bdaec3233184227131f6
 D:/bin/sh so:libc.musl-ppc64le.so.1 so:libcrypto.so.3 so:liblzma.so.5 so:libz.so.1 so:libzstd.so.1
 p:cmd:depmod=30-r1 cmd:insmod=30-r1 cmd:kmod=30-r1 cmd:lsmod=30-r1 cmd:modinfo=30-r1 cmd:modprobe=30-r1 cmd:rmmod=30-r1
 
+C:Q1fPAuvSavKvfFco1FS7XAfqRW6gk=
+P:eudev-libs
+V:3.2.11-r3
+A:ppc64le
+S:63443
+I:208896
+T:Dynamic library to access udev device information
+U:https://github.com/eudev-project/eudev
+L:GPL-2.0-only
+o:eudev
+m:Ariadne Conill <ariadne@dereferenced.org>
+t:1668101632
+c:b738419cf3554910459c99c900db83fccf72f864
+k:100
+D:so:libc.musl-ppc64le.so.1
+p:so:libudev.so.1=1.6.3
+
 C:Q1vZX00BYEAXe+BOQGtojulyRDhzc=
 P:log4cplus
 V:2.0.8-r0
@@ -9882,23 +9899,6 @@ c:84d02e8c3abb163d4ca89e62e831c4116b9ea195
 D:libcmph=2.0.2-r2 pkgconfig
 p:pc:cmph=2.0.2
 
-C:Q1LJoQtoGbzd4GLywIcMn1pXi67ek=
-P:eudev
-V:3.2.11-r2
-A:ppc64le
-S:498488
-I:1617920
-T:init system agnostic fork of systemd-udev
-U:https://github.com/eudev-project/eudev
-L:GPL-2.0-only
-o:eudev
-m:Ariadne Conill <ariadne@dereferenced.org>
-t:1664552089
-c:f7d8f25bacf7d40d6f4667b2a5c7c19a05bfdc44
-k:100
-D:udev-init-scripts /bin/sh eudev-libs=3.2.11-r2 so:libblkid.so.1 so:libc.musl-ppc64le.so.1 so:libkmod.so.2
-p:udev=176 cmd:udevadm=3.2.11-r2 cmd:udevd=3.2.11-r2
-
 C:Q1XKv68zSm+TW+hJinx3e+BEeHj0o=
 P:xcb-util-dev
 V:0.4.0-r3
@@ -10007,6 +10007,23 @@ m:psykose <alice@ayaya.dev>
 t:1667429894
 c:e60d3077cc8be5fac1394e53976a8a0f5429bffe
 i:docs lld=15.0.4-r0
+
+C:Q1k/CYXjSnfIREhXKuYxAjoyEqu1k=
+P:eudev
+V:3.2.11-r3
+A:ppc64le
+S:498450
+I:1617920
+T:init system agnostic fork of systemd-udev
+U:https://github.com/eudev-project/eudev
+L:GPL-2.0-only
+o:eudev
+m:Ariadne Conill <ariadne@dereferenced.org>
+t:1668101632
+c:b738419cf3554910459c99c900db83fccf72f864
+k:100
+D:udev-init-scripts /bin/sh eudev-libs=3.2.11-r3 so:libblkid.so.1 so:libc.musl-ppc64le.so.1 so:libkmod.so.2
+p:udev=176 cmd:udevadm=3.2.11-r3 cmd:udevd=3.2.11-r3
 
 C:Q1J9XhS5MTASu8yeaNWCAgN3FSr1I=
 P:perl-test-deep
@@ -15482,22 +15499,6 @@ m:Francesco Colista <fcolista@alpinelinux.org>
 t:1662908333
 c:7863c43c6c98dd78411d2b6908949ff33789255e
 
-C:Q1T4vi5CCEEsAgpd382hN7br3m9BI=
-P:eudev-rule-generator
-V:3.2.11-r2
-A:ppc64le
-S:5350
-I:36864
-T:generate udev net persistance rules
-U:https://github.com/eudev-project/eudev
-L:GPL-2.0-only
-o:eudev
-m:Ariadne Conill <ariadne@dereferenced.org>
-t:1664552089
-c:f7d8f25bacf7d40d6f4667b2a5c7c19a05bfdc44
-k:100
-D:!eudev-netifnames
-
 C:Q1yA2WIaWaqlF5/sk4gmy3XLkbyQk=
 P:memcached
 V:1.6.17-r0
@@ -20232,6 +20233,22 @@ c:25a7ab00249d112833f916b3b1376811c1e50cbf
 D:so:libc.musl-ppc64le.so.1 so:libgcc_s.so.1 so:libprotobuf.so.32 so:libstdc++.so.6
 p:so:libprotoc.so.32=32.0.9
 
+C:Q1xAqJdn2EqVdt40qJ6OcRTvBL5M8=
+P:eudev-doc
+V:3.2.11-r3
+A:ppc64le
+S:13795
+I:49152
+T:init system agnostic fork of systemd-udev (documentation)
+U:https://github.com/eudev-project/eudev
+L:GPL-2.0-only
+o:eudev
+m:Ariadne Conill <ariadne@dereferenced.org>
+t:1668101632
+c:b738419cf3554910459c99c900db83fccf72f864
+k:100
+i:docs eudev=3.2.11-r3
+
 C:Q1VZVDklWLjEhzsWmsB1EvCsSeamM=
 P:lua5.4-optarg
 V:0.3-r0
@@ -23339,6 +23356,24 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1662215060
 c:72f38ece22272cb7bb278329c1ff67125cbefc77
 i:docs fribidi=1.0.12-r0
+
+C:Q1OyIfwfneX2PniH4la4LChXzb8oc=
+P:eudev-hwids
+V:3.2.11-r3
+A:ppc64le
+S:1201196
+I:7720960
+T:Hardware identification databases (from eudev)
+U:https://github.com/eudev-project/eudev
+L:GPL-2.0-only
+o:eudev
+m:Ariadne Conill <ariadne@dereferenced.org>
+t:1668101632
+c:b738419cf3554910459c99c900db83fccf72f864
+k:100
+D:udev-init-scripts /bin/sh
+p:hwids-udev=3.2.11-r3
+i:hwdata eudev=3.2.11-r3
 
 C:Q1n5k02UCGHKfODL9XPiP511qH/Bg=
 P:lynx
@@ -28421,6 +28456,23 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1666013143
 c:8bee4a313ac52f2d90504162c96577ea1d49b5ff
 i:docs guile=3.0.8-r3
+
+C:Q18qqnELCXr9yc11MkwSFtZlZ7Qzs=
+P:eudev-dev
+V:3.2.11-r3
+A:ppc64le
+S:102130
+I:434176
+T:init system agnostic fork of systemd-udev (development files)
+U:https://github.com/eudev-project/eudev
+L:GPL-2.0-only
+o:eudev
+m:Ariadne Conill <ariadne@dereferenced.org>
+t:1668101632
+c:b738419cf3554910459c99c900db83fccf72f864
+k:100
+D:eudev=3.2.11-r3 pkgconfig
+p:pc:libudev=243 pc:udev=243
 
 C:Q1E3gWS8kA8tpJOADlzmBYEd4lFnA=
 P:botan-libs
@@ -34155,22 +34207,6 @@ o:dejagnu
 t:1659792088
 c:0714a84b7f79009ae8b96aef50216ed72f54b885
 
-C:Q1lBD+OFJJmDaTp2VWVJ7IaYMm7ik=
-P:eudev-netifnames
-V:3.2.11-r2
-A:ppc64le
-S:1607
-I:20480
-T:udev rules for systemd-style interface names
-U:https://github.com/eudev-project/eudev
-L:GPL-2.0-only
-o:eudev
-m:Ariadne Conill <ariadne@dereferenced.org>
-t:1664552089
-c:f7d8f25bacf7d40d6f4667b2a5c7c19a05bfdc44
-k:100
-D:!eudev-rule-generator
-
 C:Q1dnpH/24Yi7ouSNFBZXkpxDIdU8c=
 P:py3-docutils
 V:0.19-r1
@@ -36214,23 +36250,6 @@ t:1666427034
 c:22bc3426e7140927ab6544e508e1992b2aa0dfb4
 D:rsyslog=8.2210.0-r0 so:libc.musl-ppc64le.so.1 so:libgssapi_krb5.so.2
 p:rsyslog-lmgssutil=8.2210.0-r0 rsyslog-imgssapi=8.2210.0-r0 rsyslog-omgssapi=8.2210.0-r0
-
-C:Q1JlfSwvQuKqkCM1ap7ZOqoRxBx5g=
-P:eudev-dev
-V:3.2.11-r2
-A:ppc64le
-S:102144
-I:434176
-T:init system agnostic fork of systemd-udev (development files)
-U:https://github.com/eudev-project/eudev
-L:GPL-2.0-only
-o:eudev
-m:Ariadne Conill <ariadne@dereferenced.org>
-t:1664552089
-c:f7d8f25bacf7d40d6f4667b2a5c7c19a05bfdc44
-k:100
-D:eudev=3.2.11-r2 pkgconfig
-p:pc:libudev=243 pc:udev=243
 
 C:Q1lmNM6kPQrkHXw3+RHN7lcqWp2cM=
 P:lua5.1-sec
@@ -44956,22 +44975,6 @@ t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl perl-sub-uplevel
 
-C:Q1eOGwvSb/1koVRxJEAe/YHdzhalE=
-P:eudev-doc
-V:3.2.11-r2
-A:ppc64le
-S:13801
-I:49152
-T:init system agnostic fork of systemd-udev (documentation)
-U:https://github.com/eudev-project/eudev
-L:GPL-2.0-only
-o:eudev
-m:Ariadne Conill <ariadne@dereferenced.org>
-t:1664552089
-c:f7d8f25bacf7d40d6f4667b2a5c7c19a05bfdc44
-k:100
-i:docs eudev=3.2.11-r2
-
 C:Q1GaOlREAB7DkzULQJRhsyrBcuscg=
 P:freeswitch-snmp
 V:1.10.8-r0
@@ -51732,24 +51735,6 @@ t:1666194150
 c:04c2ecb1b3013c4c0ada5c521ab041b235996f3f
 D:nginx so:libc.musl-ppc64le.so.1
 
-C:Q1kCjDmKWBJHy7KuZPSuzRJNLRhmI=
-P:eudev-hwids
-V:3.2.11-r2
-A:ppc64le
-S:1201100
-I:7720960
-T:Hardware identification databases (from eudev)
-U:https://github.com/eudev-project/eudev
-L:GPL-2.0-only
-o:eudev
-m:Ariadne Conill <ariadne@dereferenced.org>
-t:1664552089
-c:f7d8f25bacf7d40d6f4667b2a5c7c19a05bfdc44
-k:100
-D:udev-init-scripts
-p:hwids-udev=3.2.11-r2
-i:hwdata eudev
-
 C:Q1s3JQUR9Ma6WmLZgGdI2VMB7RZS4=
 P:tcl
 V:8.6.12-r1
@@ -55092,23 +55077,6 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1627487151
 c:7f2e44278879a51d63a05f7a4ef6ea111d4c65de
 D:perl
-
-C:Q1TAubo64B0996C43Qyop7jz/mNVE=
-P:eudev-libs
-V:3.2.11-r2
-A:ppc64le
-S:63440
-I:208896
-T:Dynamic library to access udev device information
-U:https://github.com/eudev-project/eudev
-L:GPL-2.0-only
-o:eudev
-m:Ariadne Conill <ariadne@dereferenced.org>
-t:1664552089
-c:f7d8f25bacf7d40d6f4667b2a5c7c19a05bfdc44
-k:100
-D:so:libc.musl-ppc64le.so.1
-p:so:libudev.so.1=1.6.3
 
 C:Q1naaCywFXsdjhSjX1vpKCzi1ymZ8=
 P:sysklogd
@@ -62000,6 +61968,22 @@ t:1667998048
 c:0184fab176769150408a920c29f8dfe4f22bf483
 D:uwsgi
 
+C:Q1vT7nGARiQFaT9LvESVr1n6NMHLw=
+P:eudev-netifnames
+V:3.2.11-r3
+A:ppc64le
+S:1602
+I:20480
+T:udev rules for systemd-style interface names
+U:https://github.com/eudev-project/eudev
+L:GPL-2.0-only
+o:eudev
+m:Ariadne Conill <ariadne@dereferenced.org>
+t:1668101632
+c:b738419cf3554910459c99c900db83fccf72f864
+k:100
+D:!eudev-rule-generator
+
 C:Q1L1zhBE/SPsGrWPn+Y9qD/F6Xbus=
 P:libxfixes-dev
 V:6.0.0-r0
@@ -67939,6 +67923,22 @@ t:1666619671
 c:c57128b0e49d551220aff88af0f1487d80cdccf8
 i:openrc aconf=0.8.1-r2
 
+C:Q1ivo4Ldm2HYhU4xv02W2TS2fIFAY=
+P:eudev-openrc
+V:3.2.11-r3
+A:ppc64le
+S:1963
+I:16384
+T:init system agnostic fork of systemd-udev (OpenRC init scripts)
+U:https://github.com/eudev-project/eudev
+L:GPL-2.0-only
+o:eudev
+m:Ariadne Conill <ariadne@dereferenced.org>
+t:1668101632
+c:b738419cf3554910459c99c900db83fccf72f864
+k:100
+i:openrc eudev=3.2.11-r3
+
 C:Q1flCJc+Bl5W5ap9e12DG5UGASB9w=
 P:haserl
 V:0.9.36-r2
@@ -72327,22 +72327,6 @@ c:6595647fba5573fd976af4010ad4de82a23d5313
 D:so:libasound.so.2 so:libc.musl-ppc64le.so.1 so:libjack.so.0
 p:so:libportaudio.so.2=2.0.0
 
-C:Q1t6d5WyXSRwL6HpDO7Enye18JG7Q=
-P:eudev-openrc
-V:3.2.11-r2
-A:ppc64le
-S:1972
-I:16384
-T:init system agnostic fork of systemd-udev (OpenRC init scripts)
-U:https://github.com/eudev-project/eudev
-L:GPL-2.0-only
-o:eudev
-m:Ariadne Conill <ariadne@dereferenced.org>
-t:1664552089
-c:f7d8f25bacf7d40d6f4667b2a5c7c19a05bfdc44
-k:100
-i:openrc eudev=3.2.11-r2
-
 C:Q1R2+oIMONGtCYjUBkTvOT4mHZnBg=
 P:orc-compiler
 V:0.4.33-r0
@@ -75821,6 +75805,22 @@ m:Natanael Copa <ncopa@alpinelinux.org>
 t:1666276967
 c:c4d4bb90d2f16fd7d690f2c8a00e7e929ef1e20a
 i:docs perl-clone=0.46-r0
+
+C:Q1b+QYKJ5g/7JBwNy42UPWVM0NFPs=
+P:eudev-rule-generator
+V:3.2.11-r3
+A:ppc64le
+S:5343
+I:36864
+T:generate udev net persistance rules
+U:https://github.com/eudev-project/eudev
+L:GPL-2.0-only
+o:eudev
+m:Ariadne Conill <ariadne@dereferenced.org>
+t:1668101632
+c:b738419cf3554910459c99c900db83fccf72f864
+k:100
+D:!eudev-netifnames
 
 C:Q1sJzRTl0gdbh/MFl7g/gW/9kR74M=
 P:libbsd
