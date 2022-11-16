@@ -1644,7 +1644,8 @@
     "bind-plugins": {
       "origin": "bind",
       "versions": {
-        "9.18.8-r0": 1666176992
+        "9.18.8-r0": 1666176992,
+        "9.18.9-r0": 1668600699
       },
       "dependencies": [
         "bind",
@@ -1654,10 +1655,14 @@
     "lvm2-static": {
       "origin": "lvm2",
       "versions": {
-        "2.02.188-r0": 1661173817
+        "2.02.188-r0": 1661173817,
+        "2.03.17-r1": 1668607008
       },
       "dependencies": [
-        "lvm2-libs=2.02.188-r0"
+        "lvm2-libs=2.03.17-r1"
+      ],
+      "provides": [
+        "cmd:lvm.static=2.03.17-r1"
       ]
     },
     "perl-stream-buffered": {
@@ -2499,7 +2504,8 @@
       "origin": "samba",
       "versions": {
         "4.16.4-r0": 1663939707,
-        "4.16.6-r0": 1667235630
+        "4.16.6-r0": 1667235630,
+        "4.16.7-r0": 1668604382
       },
       "dependencies": [
         "so:libCHARSET3-samba4.so",
@@ -2570,12 +2576,12 @@
       "provides": [
         "so:libgpext-samba4.so=0",
         "so:libnet-keytab-samba4.so=0",
-        "cmd:net=4.16.6-r0",
-        "cmd:pdbedit=4.16.6-r0",
-        "cmd:profiles=4.16.6-r0",
-        "cmd:smbcontrol=4.16.6-r0",
-        "cmd:smbpasswd=4.16.6-r0",
-        "cmd:testparm=4.16.6-r0"
+        "cmd:net=4.16.7-r0",
+        "cmd:pdbedit=4.16.7-r0",
+        "cmd:profiles=4.16.7-r0",
+        "cmd:smbcontrol=4.16.7-r0",
+        "cmd:smbpasswd=4.16.7-r0",
+        "cmd:testparm=4.16.7-r0"
       ]
     },
     "ldapvi": {
@@ -2765,7 +2771,8 @@
       "origin": "samba",
       "versions": {
         "4.16.4-r0": 1663939707,
-        "4.16.6-r0": 1667235630
+        "4.16.6-r0": 1667235630,
+        "4.16.7-r0": 1668604382
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1"
@@ -2810,7 +2817,8 @@
       "origin": "samba",
       "versions": {
         "4.16.4-r0": 1663939707,
-        "4.16.6-r0": 1667235630
+        "4.16.6-r0": 1667235630,
+        "4.16.7-r0": 1668604382
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1"
@@ -3336,20 +3344,19 @@
     "lvm2-dev": {
       "origin": "lvm2",
       "versions": {
-        "2.02.188-r0": 1661173817
+        "2.02.188-r0": 1661173817,
+        "2.03.17-r1": 1668607008
       },
       "dependencies": [
         "linux-headers",
-        "device-mapper-event-libs=2.02.188-r0",
-        "device-mapper-libs=2.02.188-r0",
-        "lvm2-libs=2.02.188-r0",
-        "pc:blkid",
+        "device-mapper-event-libs=2.03.17-r1",
+        "device-mapper-libs=2.03.17-r1",
+        "lvm2-libs=2.03.17-r1",
         "pkgconfig"
       ],
       "provides": [
-        "pc:devmapper-event=1.02.172",
-        "pc:devmapper=1.02.172",
-        "pc:lvm2app=2.2"
+        "pc:devmapper-event=1.02.187",
+        "pc:devmapper=1.02.187"
       ]
     },
     "akms-doc": {
@@ -3768,7 +3775,8 @@
       "origin": "samba",
       "versions": {
         "4.16.4-r0": 1663939707,
-        "4.16.6-r0": 1667235630
+        "4.16.6-r0": 1667235630,
+        "4.16.7-r0": 1668604382
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1",
@@ -4115,10 +4123,11 @@
       "origin": "samba",
       "versions": {
         "4.16.4-r0": 1663939707,
-        "4.16.6-r0": 1667235630
+        "4.16.6-r0": 1667235630,
+        "4.16.7-r0": 1668604382
       },
       "dependencies": [
-        "samba-common=4.16.6-r0",
+        "samba-common=4.16.7-r0",
         "so:libCHARSET3-samba4.so",
         "so:libaddns-samba4.so",
         "so:libarchive.so.13",
@@ -4182,28 +4191,28 @@
         "so:libutil-tdb-samba4.so"
       ],
       "provides": [
-        "cmd:cifsdd=4.16.6-r0",
-        "cmd:dbwrap_tool=4.16.6-r0",
-        "cmd:dumpmscat=4.16.6-r0",
-        "cmd:mdsearch=4.16.6-r0",
-        "cmd:mvxattr=4.16.6-r0",
-        "cmd:nmblookup=4.16.6-r0",
-        "cmd:oLschema2ldif=4.16.6-r0",
-        "cmd:regdiff=4.16.6-r0",
-        "cmd:regpatch=4.16.6-r0",
-        "cmd:regshell=4.16.6-r0",
-        "cmd:regtree=4.16.6-r0",
-        "cmd:rpcclient=4.16.6-r0",
-        "cmd:samba-regedit=4.16.6-r0",
-        "cmd:sharesec=4.16.6-r0",
-        "cmd:smbcacls=4.16.6-r0",
-        "cmd:smbclient=4.16.6-r0",
-        "cmd:smbcquotas=4.16.6-r0",
-        "cmd:smbget=4.16.6-r0",
-        "cmd:smbprint=4.16.6-r0",
-        "cmd:smbspool=4.16.6-r0",
-        "cmd:smbtar=4.16.6-r0",
-        "cmd:smbtree=4.16.6-r0"
+        "cmd:cifsdd=4.16.7-r0",
+        "cmd:dbwrap_tool=4.16.7-r0",
+        "cmd:dumpmscat=4.16.7-r0",
+        "cmd:mdsearch=4.16.7-r0",
+        "cmd:mvxattr=4.16.7-r0",
+        "cmd:nmblookup=4.16.7-r0",
+        "cmd:oLschema2ldif=4.16.7-r0",
+        "cmd:regdiff=4.16.7-r0",
+        "cmd:regpatch=4.16.7-r0",
+        "cmd:regshell=4.16.7-r0",
+        "cmd:regtree=4.16.7-r0",
+        "cmd:rpcclient=4.16.7-r0",
+        "cmd:samba-regedit=4.16.7-r0",
+        "cmd:sharesec=4.16.7-r0",
+        "cmd:smbcacls=4.16.7-r0",
+        "cmd:smbclient=4.16.7-r0",
+        "cmd:smbcquotas=4.16.7-r0",
+        "cmd:smbget=4.16.7-r0",
+        "cmd:smbprint=4.16.7-r0",
+        "cmd:smbspool=4.16.7-r0",
+        "cmd:smbtar=4.16.7-r0",
+        "cmd:smbtree=4.16.7-r0"
       ]
     },
     "pcre2-tools": {
@@ -4323,13 +4332,14 @@
     "bind-dev": {
       "origin": "bind",
       "versions": {
-        "9.18.8-r0": 1666176992
+        "9.18.8-r0": 1666176992,
+        "9.18.9-r0": 1668600699
       },
       "dependencies": [
         "bind",
         "bind-plugins",
         "bind-tools",
-        "bind-libs=9.18.8-r0"
+        "bind-libs=9.18.9-r0"
       ]
     },
     "ulogd-sqlite3": {
@@ -4718,17 +4728,18 @@
     "lvm2-extra": {
       "origin": "lvm2",
       "versions": {
-        "2.02.188-r0": 1661173817
+        "2.02.188-r0": 1661173817,
+        "2.03.17-r1": 1668607008
       },
       "dependencies": [
         "bash",
         "coreutils"
       ],
       "provides": [
-        "cmd:blkdeactivate=2.02.188-r0",
-        "cmd:fsadm=2.02.188-r0",
-        "cmd:lvmconf=2.02.188-r0",
-        "cmd:lvmdump=2.02.188-r0"
+        "cmd:blkdeactivate=2.03.17-r1",
+        "cmd:fsadm=2.03.17-r1",
+        "cmd:lvm_import_vdo=2.03.17-r1",
+        "cmd:lvmdump=2.03.17-r1"
       ]
     },
     "openjpeg-tools": {
@@ -5026,7 +5037,8 @@
     "lvm2-libs": {
       "origin": "lvm2",
       "versions": {
-        "2.02.188-r0": 1661173817
+        "2.02.188-r0": 1661173817,
+        "2.03.17-r1": 1668607008
       },
       "dependencies": [
         "so:libaio.so.1",
@@ -5036,9 +5048,8 @@
         "so:libdevmapper.so.1.02"
       ],
       "provides": [
-        "so:libdevmapper-event-lvm2.so.2.02=2.02",
-        "so:liblvm2app.so.2.2=2.2",
-        "so:liblvm2cmd.so.2.02=2.02"
+        "so:libdevmapper-event-lvm2.so.2.03=2.03",
+        "so:liblvm2cmd.so.2.03=2.03"
       ]
     },
     "lsyncd-openrc": {
@@ -6169,7 +6180,8 @@
       "origin": "samba",
       "versions": {
         "4.16.4-r0": 1663939707,
-        "4.16.6-r0": 1667235630
+        "4.16.6-r0": 1667235630,
+        "4.16.7-r0": 1668604382
       },
       "dependencies": [
         "so:libaddns-samba4.so",
@@ -6389,7 +6401,8 @@
       "origin": "samba",
       "versions": {
         "4.16.4-r0": 1663939707,
-        "4.16.6-r0": 1667235630
+        "4.16.6-r0": 1667235630,
+        "4.16.7-r0": 1668604382
       }
     },
     "perl-file-remove-doc": {
@@ -8307,10 +8320,11 @@
       "origin": "samba",
       "versions": {
         "4.16.4-r0": 1663939707,
-        "4.16.6-r0": 1667235630
+        "4.16.6-r0": 1667235630,
+        "4.16.7-r0": 1668604382
       },
       "dependencies": [
-        "samba-common=4.16.6-r0",
+        "samba-common=4.16.7-r0",
         "so:libMESSAGING-samba4.so",
         "so:libRPC-SERVER-LOOP-samba4.so",
         "so:libads-samba4.so",
@@ -8373,7 +8387,7 @@
         "so:libutil-tdb-samba4.so"
       ],
       "provides": [
-        "cmd:winbindd=4.16.6-r0"
+        "cmd:winbindd=4.16.7-r0"
       ]
     },
     "libnl3-doc": {
@@ -9017,7 +9031,8 @@
       "origin": "samba",
       "versions": {
         "4.16.4-r0": 1663939707,
-        "4.16.6-r0": 1667235630
+        "4.16.6-r0": 1667235630,
+        "4.16.7-r0": 1668604382
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1",
@@ -10265,7 +10280,8 @@
       "origin": "samba",
       "versions": {
         "4.16.4-r0": 1663939707,
-        "4.16.6-r0": 1667235630
+        "4.16.6-r0": 1667235630,
+        "4.16.7-r0": 1668604382
       },
       "dependencies": [
         "so:libauthkrb5-samba4.so",
@@ -10293,8 +10309,8 @@
         "so:libwbclient.so.0"
       ],
       "provides": [
-        "cmd:ntlm_auth=4.16.6-r0",
-        "cmd:wbinfo=4.16.6-r0"
+        "cmd:ntlm_auth=4.16.7-r0",
+        "cmd:wbinfo=4.16.7-r0"
       ]
     },
     "libssl1.1": {
@@ -11371,7 +11387,8 @@
     "bind-doc": {
       "origin": "bind",
       "versions": {
-        "9.18.8-r0": 1666176992
+        "9.18.8-r0": 1666176992,
+        "9.18.9-r0": 1668600699
       }
     },
     "lxc-templates": {
@@ -12210,62 +12227,63 @@
     "lvm2": {
       "origin": "lvm2",
       "versions": {
-        "2.02.188-r0": 1661173817
+        "2.02.188-r0": 1661173817,
+        "2.03.17-r1": 1668607008
       },
       "dependencies": [
-        "lvm2-libs=2.02.188-r0",
+        "lvm2-libs=2.03.17-r1",
         "so:libaio.so.1",
         "so:libblkid.so.1",
         "so:libc.musl-s390x.so.1",
-        "so:libdevmapper-event.so.1.02",
-        "so:libdevmapper.so.1.02"
+        "so:libdevmapper-event.so.1.02"
       ],
       "provides": [
-        "cmd:lvchange=2.02.188-r0",
-        "cmd:lvconvert=2.02.188-r0",
-        "cmd:lvcreate=2.02.188-r0",
-        "cmd:lvdisplay=2.02.188-r0",
-        "cmd:lvextend=2.02.188-r0",
-        "cmd:lvm.static=2.02.188-r0",
-        "cmd:lvm=2.02.188-r0",
-        "cmd:lvmconfig=2.02.188-r0",
-        "cmd:lvmdiskscan=2.02.188-r0",
-        "cmd:lvmsadc=2.02.188-r0",
-        "cmd:lvmsar=2.02.188-r0",
-        "cmd:lvreduce=2.02.188-r0",
-        "cmd:lvremove=2.02.188-r0",
-        "cmd:lvrename=2.02.188-r0",
-        "cmd:lvresize=2.02.188-r0",
-        "cmd:lvs=2.02.188-r0",
-        "cmd:lvscan=2.02.188-r0",
-        "cmd:pvchange=2.02.188-r0",
-        "cmd:pvck=2.02.188-r0",
-        "cmd:pvcreate=2.02.188-r0",
-        "cmd:pvdisplay=2.02.188-r0",
-        "cmd:pvmove=2.02.188-r0",
-        "cmd:pvremove=2.02.188-r0",
-        "cmd:pvresize=2.02.188-r0",
-        "cmd:pvs=2.02.188-r0",
-        "cmd:pvscan=2.02.188-r0",
-        "cmd:vgcfgbackup=2.02.188-r0",
-        "cmd:vgcfgrestore=2.02.188-r0",
-        "cmd:vgchange=2.02.188-r0",
-        "cmd:vgck=2.02.188-r0",
-        "cmd:vgconvert=2.02.188-r0",
-        "cmd:vgcreate=2.02.188-r0",
-        "cmd:vgdisplay=2.02.188-r0",
-        "cmd:vgexport=2.02.188-r0",
-        "cmd:vgextend=2.02.188-r0",
-        "cmd:vgimport=2.02.188-r0",
-        "cmd:vgimportclone=2.02.188-r0",
-        "cmd:vgmerge=2.02.188-r0",
-        "cmd:vgmknodes=2.02.188-r0",
-        "cmd:vgreduce=2.02.188-r0",
-        "cmd:vgremove=2.02.188-r0",
-        "cmd:vgrename=2.02.188-r0",
-        "cmd:vgs=2.02.188-r0",
-        "cmd:vgscan=2.02.188-r0",
-        "cmd:vgsplit=2.02.188-r0"
+        "cmd:lvchange=2.03.17-r1",
+        "cmd:lvconvert=2.03.17-r1",
+        "cmd:lvcreate=2.03.17-r1",
+        "cmd:lvdisplay=2.03.17-r1",
+        "cmd:lvextend=2.03.17-r1",
+        "cmd:lvm=2.03.17-r1",
+        "cmd:lvmconfig=2.03.17-r1",
+        "cmd:lvmdevices=2.03.17-r1",
+        "cmd:lvmdiskscan=2.03.17-r1",
+        "cmd:lvmsadc=2.03.17-r1",
+        "cmd:lvmsar=2.03.17-r1",
+        "cmd:lvreduce=2.03.17-r1",
+        "cmd:lvremove=2.03.17-r1",
+        "cmd:lvrename=2.03.17-r1",
+        "cmd:lvresize=2.03.17-r1",
+        "cmd:lvs=2.03.17-r1",
+        "cmd:lvscan=2.03.17-r1",
+        "cmd:pvchange=2.03.17-r1",
+        "cmd:pvck=2.03.17-r1",
+        "cmd:pvcreate=2.03.17-r1",
+        "cmd:pvdisplay=2.03.17-r1",
+        "cmd:pvmove=2.03.17-r1",
+        "cmd:pvremove=2.03.17-r1",
+        "cmd:pvresize=2.03.17-r1",
+        "cmd:pvs=2.03.17-r1",
+        "cmd:pvscan=2.03.17-r1",
+        "cmd:vgcfgbackup=2.03.17-r1",
+        "cmd:vgcfgrestore=2.03.17-r1",
+        "cmd:vgchange=2.03.17-r1",
+        "cmd:vgck=2.03.17-r1",
+        "cmd:vgconvert=2.03.17-r1",
+        "cmd:vgcreate=2.03.17-r1",
+        "cmd:vgdisplay=2.03.17-r1",
+        "cmd:vgexport=2.03.17-r1",
+        "cmd:vgextend=2.03.17-r1",
+        "cmd:vgimport=2.03.17-r1",
+        "cmd:vgimportclone=2.03.17-r1",
+        "cmd:vgimportdevices=2.03.17-r1",
+        "cmd:vgmerge=2.03.17-r1",
+        "cmd:vgmknodes=2.03.17-r1",
+        "cmd:vgreduce=2.03.17-r1",
+        "cmd:vgremove=2.03.17-r1",
+        "cmd:vgrename=2.03.17-r1",
+        "cmd:vgs=2.03.17-r1",
+        "cmd:vgscan=2.03.17-r1",
+        "cmd:vgsplit=2.03.17-r1"
       ]
     },
     "perl-switch-doc": {
@@ -12797,10 +12815,11 @@
     "device-mapper-udev": {
       "origin": "lvm2",
       "versions": {
-        "2.02.188-r0": 1661173817
+        "2.02.188-r0": 1661173817,
+        "2.03.17-r1": 1668607008
       },
       "dependencies": [
-        "lvm2-libs=2.02.188-r0",
+        "lvm2-libs=2.03.17-r1",
         "/bin/sh"
       ]
     },
@@ -13075,12 +13094,13 @@
       "origin": "samba",
       "versions": {
         "4.16.4-r0": 1663939707,
-        "4.16.6-r0": 1667235630
+        "4.16.6-r0": 1667235630,
+        "4.16.7-r0": 1668604382
       },
       "dependencies": [
-        "samba-server=4.16.6-r0",
-        "samba-client=4.16.6-r0",
-        "samba-common-tools=4.16.6-r0"
+        "samba-server=4.16.7-r0",
+        "samba-client=4.16.7-r0",
+        "samba-common-tools=4.16.7-r0"
       ]
     },
     "perl-crypt-x509-doc": {
@@ -14389,18 +14409,17 @@
     "device-mapper": {
       "origin": "lvm2",
       "versions": {
-        "2.02.188-r0": 1661173817
+        "2.02.188-r0": 1661173817,
+        "2.03.17-r1": 1668607008
       },
       "dependencies": [
-        "lvm2-libs=2.02.188-r0",
+        "lvm2-libs=2.03.17-r1",
         "so:libc.musl-s390x.so.1",
         "so:libdevmapper.so.1.02"
       ],
       "provides": [
-        "cmd:dmeventd.static=2.02.188-r0",
-        "cmd:dmsetup.static=2.02.188-r0",
-        "cmd:dmsetup=2.02.188-r0",
-        "cmd:dmstats=2.02.188-r0"
+        "cmd:dmsetup=2.03.17-r1",
+        "cmd:dmstats=2.03.17-r1"
       ]
     },
     "kamailio-json": {
@@ -14595,7 +14614,8 @@
       "origin": "samba",
       "versions": {
         "4.16.4-r0": 1663939707,
-        "4.16.6-r0": 1667235630
+        "4.16.6-r0": 1667235630,
+        "4.16.7-r0": 1668604382
       },
       "dependencies": [
         "so:libCHARSET3-samba4.so",
@@ -16488,7 +16508,8 @@
     "device-mapper-event-libs": {
       "origin": "lvm2",
       "versions": {
-        "2.02.188-r0": 1661173817
+        "2.02.188-r0": 1661173817,
+        "2.03.17-r1": 1668607008
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1",
@@ -16658,7 +16679,8 @@
       "origin": "samba",
       "versions": {
         "4.16.4-r0": 1663939707,
-        "4.16.6-r0": 1667235630
+        "4.16.6-r0": 1667235630,
+        "4.16.7-r0": 1668604382
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1",
@@ -20470,7 +20492,8 @@
       "origin": "samba",
       "versions": {
         "4.16.4-r0": 1663939707,
-        "4.16.6-r0": 1667235630
+        "4.16.6-r0": 1667235630,
+        "4.16.7-r0": 1668604382
       }
     },
     "lua5.3-apk": {
@@ -26478,7 +26501,8 @@
     "lvm2-doc": {
       "origin": "lvm2",
       "versions": {
-        "2.02.188-r0": 1661173817
+        "2.02.188-r0": 1661173817,
+        "2.03.17-r1": 1668607008
       }
     },
     "openobex": {
@@ -29782,7 +29806,8 @@
       "origin": "samba",
       "versions": {
         "4.16.4-r0": 1663939707,
-        "4.16.6-r0": 1667235630
+        "4.16.6-r0": 1667235630,
+        "4.16.7-r0": 1668604382
       }
     },
     "source-highlight-dev": {
@@ -31179,27 +31204,28 @@
     "bind-dnssec-tools": {
       "origin": "bind",
       "versions": {
-        "9.18.8-r0": 1666176992
+        "9.18.8-r0": 1666176992,
+        "9.18.9-r0": 1668600699
       },
       "dependencies": [
         "dns-root-hints",
         "bind-tools",
         "so:libc.musl-s390x.so.1",
-        "so:libdns-9.18.8.so",
-        "so:libisc-9.18.8.so",
-        "so:libisccfg-9.18.8.so"
+        "so:libdns-9.18.9.so",
+        "so:libisc-9.18.9.so",
+        "so:libisccfg-9.18.9.so"
       ],
       "provides": [
-        "cmd:dnssec-cds=9.18.8-r0",
-        "cmd:dnssec-dsfromkey=9.18.8-r0",
-        "cmd:dnssec-importkey=9.18.8-r0",
-        "cmd:dnssec-keyfromlabel=9.18.8-r0",
-        "cmd:dnssec-keygen=9.18.8-r0",
-        "cmd:dnssec-revoke=9.18.8-r0",
-        "cmd:dnssec-settime=9.18.8-r0",
-        "cmd:dnssec-signzone=9.18.8-r0",
-        "cmd:dnssec-verify=9.18.8-r0",
-        "cmd:nsec3hash=9.18.8-r0"
+        "cmd:dnssec-cds=9.18.9-r0",
+        "cmd:dnssec-dsfromkey=9.18.9-r0",
+        "cmd:dnssec-importkey=9.18.9-r0",
+        "cmd:dnssec-keyfromlabel=9.18.9-r0",
+        "cmd:dnssec-keygen=9.18.9-r0",
+        "cmd:dnssec-revoke=9.18.9-r0",
+        "cmd:dnssec-settime=9.18.9-r0",
+        "cmd:dnssec-signzone=9.18.9-r0",
+        "cmd:dnssec-verify=9.18.9-r0",
+        "cmd:nsec3hash=9.18.9-r0"
       ]
     },
     "cvs": {
@@ -31303,7 +31329,8 @@
     "bind-dbg": {
       "origin": "bind",
       "versions": {
-        "9.18.8-r0": 1666176992
+        "9.18.8-r0": 1666176992,
+        "9.18.9-r0": 1668600699
       },
       "dependencies": [
         "dns-root-hints",
@@ -33435,7 +33462,8 @@
     "bind-openrc": {
       "origin": "bind",
       "versions": {
-        "9.18.8-r0": 1666176992
+        "9.18.8-r0": 1666176992,
+        "9.18.9-r0": 1668600699
       }
     },
     "mosquitto-doc": {
@@ -34527,13 +34555,14 @@
       "origin": "samba",
       "versions": {
         "4.16.4-r0": 1663939707,
-        "4.16.6-r0": 1667235630
+        "4.16.6-r0": 1667235630,
+        "4.16.7-r0": 1668604382
       },
       "dependencies": [
-        "samba-common=4.16.6-r0",
-        "samba-server=4.16.6-r0",
-        "samba-winbind=4.16.6-r0",
-        "py3-samba=4.16.6-r0",
+        "samba-common=4.16.7-r0",
+        "samba-server=4.16.7-r0",
+        "samba-winbind=4.16.7-r0",
+        "py3-samba=4.16.7-r0",
         "py3-dnspython",
         "py3-markdown",
         "tdb",
@@ -34596,14 +34625,14 @@
       ],
       "provides": [
         "so:libsmbpasswdparser-samba4.so=0",
-        "cmd:samba-gpupdate=4.16.6-r0",
-        "cmd:samba-tool=4.16.6-r0",
-        "cmd:samba=4.16.6-r0",
-        "cmd:samba_dnsupdate=4.16.6-r0",
-        "cmd:samba_downgrade_db=4.16.6-r0",
-        "cmd:samba_kcc=4.16.6-r0",
-        "cmd:samba_spnupdate=4.16.6-r0",
-        "cmd:samba_upgradedns=4.16.6-r0"
+        "cmd:samba-gpupdate=4.16.7-r0",
+        "cmd:samba-tool=4.16.7-r0",
+        "cmd:samba=4.16.7-r0",
+        "cmd:samba_dnsupdate=4.16.7-r0",
+        "cmd:samba_downgrade_db=4.16.7-r0",
+        "cmd:samba_kcc=4.16.7-r0",
+        "cmd:samba_spnupdate=4.16.7-r0",
+        "cmd:samba_upgradedns=4.16.7-r0"
       ]
     },
     "acf-apk-tools": {
@@ -34620,7 +34649,8 @@
     "lvm2-openrc": {
       "origin": "lvm2",
       "versions": {
-        "2.02.188-r0": 1661173817
+        "2.02.188-r0": 1661173817,
+        "2.03.17-r1": 1668607008
       }
     },
     "libxinerama-dev": {
@@ -37590,7 +37620,8 @@
       "origin": "samba",
       "versions": {
         "4.16.4-r0": 1663939707,
-        "4.16.6-r0": 1667235630
+        "4.16.6-r0": 1667235630,
+        "4.16.7-r0": 1668604382
       },
       "dependencies": [
         "py3-tdb",
@@ -37674,7 +37705,7 @@
         "so:libxattr-tdb-samba4.so"
       ],
       "provides": [
-        "py3.10:samba=4.16.6-r0"
+        "py3.10:samba=4.16.7-r0"
       ]
     },
     "mariadb-server-utils": {
@@ -38340,35 +38371,36 @@
     "bind-tools": {
       "origin": "bind",
       "versions": {
-        "9.18.8-r0": 1666176992
+        "9.18.8-r0": 1666176992,
+        "9.18.9-r0": 1668600699
       },
       "dependencies": [
-        "so:libbind9-9.18.8.so",
+        "so:libbind9-9.18.9.so",
         "so:libc.musl-s390x.so.1",
-        "so:libdns-9.18.8.so",
-        "so:libirs-9.18.8.so",
-        "so:libisc-9.18.8.so",
-        "so:libisccfg-9.18.8.so",
+        "so:libdns-9.18.9.so",
+        "so:libirs-9.18.9.so",
+        "so:libisc-9.18.9.so",
+        "so:libisccfg-9.18.9.so",
         "so:libkrb5.so.3",
-        "so:libns-9.18.8.so",
+        "so:libns-9.18.9.so",
         "so:libprotobuf-c.so.1"
       ],
       "provides": [
-        "cmd:arpaname=9.18.8-r0",
-        "cmd:ddns-confgen=9.18.8-r0",
-        "cmd:delv=9.18.8-r0",
-        "cmd:dig=9.18.8-r0",
-        "cmd:dnstap-read=9.18.8-r0",
-        "cmd:host=9.18.8-r0",
-        "cmd:mdig=9.18.8-r0",
-        "cmd:named-checkzone=9.18.8-r0",
-        "cmd:named-compilezone=9.18.8-r0",
-        "cmd:named-journalprint=9.18.8-r0",
-        "cmd:named-rrchecker=9.18.8-r0",
-        "cmd:nslookup=9.18.8-r0",
-        "cmd:nsupdate=9.18.8-r0",
-        "cmd:rndc-confgen=9.18.8-r0",
-        "cmd:tsig-keygen=9.18.8-r0"
+        "cmd:arpaname=9.18.9-r0",
+        "cmd:ddns-confgen=9.18.9-r0",
+        "cmd:delv=9.18.9-r0",
+        "cmd:dig=9.18.9-r0",
+        "cmd:dnstap-read=9.18.9-r0",
+        "cmd:host=9.18.9-r0",
+        "cmd:mdig=9.18.9-r0",
+        "cmd:named-checkzone=9.18.9-r0",
+        "cmd:named-compilezone=9.18.9-r0",
+        "cmd:named-journalprint=9.18.9-r0",
+        "cmd:named-rrchecker=9.18.9-r0",
+        "cmd:nslookup=9.18.9-r0",
+        "cmd:nsupdate=9.18.9-r0",
+        "cmd:rndc-confgen=9.18.9-r0",
+        "cmd:tsig-keygen=9.18.9-r0"
       ]
     },
     "clang15-extra-tools": {
@@ -39050,16 +39082,17 @@
     "lvm2-dmeventd": {
       "origin": "lvm2",
       "versions": {
-        "2.02.188-r0": 1661173817
+        "2.02.188-r0": 1661173817,
+        "2.03.17-r1": 1668607008
       },
       "dependencies": [
-        "lvm2-libs=2.02.188-r0",
+        "lvm2-libs=2.03.17-r1",
         "so:libc.musl-s390x.so.1",
         "so:libdevmapper-event.so.1.02",
         "so:libdevmapper.so.1.02"
       ],
       "provides": [
-        "cmd:dmeventd=2.02.188-r0"
+        "cmd:dmeventd=2.03.17-r1"
       ]
     },
     "libid3tag": {
@@ -39585,7 +39618,8 @@
       "origin": "samba",
       "versions": {
         "4.16.4-r0": 1663939707,
-        "4.16.6-r0": 1667235630
+        "4.16.6-r0": 1667235630,
+        "4.16.7-r0": 1668604382
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1",
@@ -40191,7 +40225,8 @@
     "device-mapper-libs": {
       "origin": "lvm2",
       "versions": {
-        "2.02.188-r0": 1661173817
+        "2.02.188-r0": 1661173817,
+        "2.03.17-r1": 1668607008
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1"
@@ -40548,7 +40583,8 @@
     "bind-libs": {
       "origin": "bind",
       "versions": {
-        "9.18.8-r0": 1666176992
+        "9.18.8-r0": 1666176992,
+        "9.18.9-r0": 1668600699
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1",
@@ -40564,13 +40600,13 @@
         "so:libz.so.1"
       ],
       "provides": [
-        "so:libbind9-9.18.8.so=0",
-        "so:libdns-9.18.8.so=0",
-        "so:libirs-9.18.8.so=0",
-        "so:libisc-9.18.8.so=0",
-        "so:libisccc-9.18.8.so=0",
-        "so:libisccfg-9.18.8.so=0",
-        "so:libns-9.18.8.so=0"
+        "so:libbind9-9.18.9.so=0",
+        "so:libdns-9.18.9.so=0",
+        "so:libirs-9.18.9.so=0",
+        "so:libisc-9.18.9.so=0",
+        "so:libisccc-9.18.9.so=0",
+        "so:libisccfg-9.18.9.so=0",
+        "so:libns-9.18.9.so=0"
       ]
     },
     "ethtool-doc": {
@@ -41026,7 +41062,8 @@
       "origin": "samba",
       "versions": {
         "4.16.4-r0": 1663939707,
-        "4.16.6-r0": 1667235630
+        "4.16.6-r0": 1667235630,
+        "4.16.7-r0": 1668604382
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1",
@@ -42846,10 +42883,11 @@
       "origin": "samba",
       "versions": {
         "4.16.4-r0": 1663939707,
-        "4.16.6-r0": 1667235630
+        "4.16.6-r0": 1667235630,
+        "4.16.7-r0": 1668604382
       },
       "dependencies": [
-        "samba-common=4.16.6-r0",
+        "samba-common=4.16.7-r0",
         "so:libCHARSET3-samba4.so",
         "so:libRPC-SERVER-LOOP-samba4.so",
         "so:libads-samba4.so",
@@ -42922,10 +42960,10 @@
         "so:libREG-FULL-samba4.so=0",
         "so:libRPC-WORKER-samba4.so=0",
         "so:libxattr-tdb-samba4.so=0",
-        "cmd:eventlogadm=4.16.6-r0",
-        "cmd:nmbd=4.16.6-r0",
-        "cmd:smbd=4.16.6-r0",
-        "cmd:smbstatus=4.16.6-r0"
+        "cmd:eventlogadm=4.16.7-r0",
+        "cmd:nmbd=4.16.7-r0",
+        "cmd:smbd=4.16.7-r0",
+        "cmd:smbstatus=4.16.7-r0"
       ]
     },
     "perl-net-cidr-lite-doc": {
@@ -43507,20 +43545,21 @@
       "origin": "samba",
       "versions": {
         "4.16.4-r0": 1663939707,
-        "4.16.6-r0": 1667235630
+        "4.16.6-r0": 1667235630,
+        "4.16.7-r0": 1668604382
       },
       "dependencies": [
-        "libsmbclient=4.16.6-r0",
-        "libwbclient=4.16.6-r0",
+        "libsmbclient=4.16.7-r0",
+        "libwbclient=4.16.7-r0",
         "pc:ldb",
         "pc:talloc",
         "pc:tevent",
         "pkgconfig",
-        "samba-client-libs=4.16.6-r0",
-        "samba-common-server-libs=4.16.6-r0",
-        "samba-dc-libs=4.16.6-r0",
-        "samba-libs=4.16.6-r0",
-        "samba-util-libs=4.16.6-r0"
+        "samba-client-libs=4.16.7-r0",
+        "samba-common-server-libs=4.16.7-r0",
+        "samba-dc-libs=4.16.7-r0",
+        "samba-libs=4.16.7-r0",
+        "samba-util-libs=4.16.7-r0"
       ],
       "provides": [
         "pc:dcerpc=0.0.1",
@@ -44783,7 +44822,8 @@
       "origin": "samba",
       "versions": {
         "4.16.4-r0": 1663939707,
-        "4.16.6-r0": 1667235630
+        "4.16.6-r0": 1667235630,
+        "4.16.7-r0": 1668604382
       },
       "dependencies": [
         "so:libMESSAGING-samba4.so",
@@ -44990,12 +45030,13 @@
       "origin": "samba",
       "versions": {
         "4.16.4-r0": 1663939707,
-        "4.16.6-r0": 1667235630
+        "4.16.6-r0": 1667235630,
+        "4.16.7-r0": 1668604382
       },
       "dependencies": [
-        "samba-server=4.16.6-r0",
-        "samba-client=4.16.6-r0",
-        "samba-common-tools=4.16.6-r0",
+        "samba-server=4.16.7-r0",
+        "samba-client=4.16.7-r0",
+        "samba-common-tools=4.16.7-r0",
         "so:libMESSAGING-SEND-samba4.so",
         "so:libMESSAGING-samba4.so",
         "so:libasn1-samba4.so",
@@ -47622,7 +47663,8 @@
     "bind-dnssec-root": {
       "origin": "bind",
       "versions": {
-        "9.18.8-r0": 1666176992
+        "9.18.8-r0": 1666176992,
+        "9.18.9-r0": 1668600699
       }
     },
     "lxc-dev": {
@@ -47718,33 +47760,34 @@
     "bind": {
       "origin": "bind",
       "versions": {
-        "9.18.8-r0": 1666176992
+        "9.18.8-r0": 1666176992,
+        "9.18.9-r0": 1668600699
       },
       "dependencies": [
         "dns-root-hints",
         "bind-tools",
         "/bin/sh",
-        "bind-dnssec-root=9.18.8-r0",
-        "so:libbind9-9.18.8.so",
+        "bind-dnssec-root=9.18.9-r0",
+        "so:libbind9-9.18.9.so",
         "so:libc.musl-s390x.so.1",
         "so:libcap.so.2",
         "so:libcrypto.so.3",
-        "so:libdns-9.18.8.so",
+        "so:libdns-9.18.9.so",
         "so:libfstrm.so.0",
-        "so:libisc-9.18.8.so",
-        "so:libisccc-9.18.8.so",
-        "so:libisccfg-9.18.8.so",
+        "so:libisc-9.18.9.so",
+        "so:libisccc-9.18.9.so",
+        "so:libisccfg-9.18.9.so",
         "so:libnghttp2.so.14",
-        "so:libns-9.18.8.so",
+        "so:libns-9.18.9.so",
         "so:libprotobuf-c.so.1",
         "so:libuv.so.1",
         "so:libxml2.so.2",
         "so:libz.so.1"
       ],
       "provides": [
-        "cmd:named-checkconf=9.18.8-r0",
-        "cmd:named=9.18.8-r0",
-        "cmd:rndc=9.18.8-r0"
+        "cmd:named-checkconf=9.18.9-r0",
+        "cmd:named=9.18.9-r0",
+        "cmd:rndc=9.18.9-r0"
       ]
     },
     "linux-firmware-sun": {
@@ -55092,13 +55135,14 @@
       "origin": "samba",
       "versions": {
         "4.16.4-r0": 1663939707,
-        "4.16.6-r0": 1667235630
+        "4.16.6-r0": 1667235630,
+        "4.16.7-r0": 1668604382
       },
       "dependencies": [
         "perl"
       ],
       "provides": [
-        "cmd:pidl=4.16.6-r0"
+        "cmd:pidl=4.16.7-r0"
       ]
     },
     "ruby-rake": {
@@ -55636,7 +55680,8 @@
       "origin": "samba",
       "versions": {
         "4.16.4-r0": 1663939707,
-        "4.16.6-r0": 1667235630
+        "4.16.6-r0": 1667235630,
+        "4.16.7-r0": 1668604382
       },
       "dependencies": [
         "so:libMESSAGING-SEND-samba4.so",
@@ -55714,11 +55759,11 @@
       "provides": [
         "so:libdlz-bind9-for-torture-samba4.so=0",
         "so:libtorture-samba4.so=0",
-        "cmd:gentest=4.16.6-r0",
-        "cmd:locktest=4.16.6-r0",
-        "cmd:masktest=4.16.6-r0",
-        "cmd:ndrdump=4.16.6-r0",
-        "cmd:smbtorture=4.16.6-r0"
+        "cmd:gentest=4.16.7-r0",
+        "cmd:locktest=4.16.7-r0",
+        "cmd:masktest=4.16.7-r0",
+        "cmd:ndrdump=4.16.7-r0",
+        "cmd:smbtorture=4.16.7-r0"
       ]
     },
     "perl-datetime": {
@@ -56448,10 +56493,17 @@
     "device-mapper-static": {
       "origin": "lvm2",
       "versions": {
-        "2.02.188-r0": 1661173817
+        "2.02.188-r0": 1661173817,
+        "2.03.17-r1": 1668607008
       },
       "dependencies": [
-        "lvm2-libs=2.02.188-r0"
+        "lvm2-libs=2.03.17-r1"
+      ],
+      "provides": [
+        "device-mapper-event-static=2.03.17-r1",
+        "cmd:dmeventd.static=2.03.17-r1",
+        "cmd:dmsetup.static=2.03.17-r1",
+        "cmd:dmstats.static=2.03.17-r1"
       ]
     },
     "busybox-static": {
@@ -58520,7 +58572,8 @@
       "origin": "samba",
       "versions": {
         "4.16.4-r0": 1663939707,
-        "4.16.6-r0": 1667235630
+        "4.16.6-r0": 1667235630,
+        "4.16.7-r0": 1668604382
       },
       "dependencies": [
         "so:libc.musl-s390x.so.1",
@@ -64894,6 +64947,42 @@
       "libpaper.so.2": {
         "package": "libpaper",
         "version": "2.0.4"
+      },
+      "libbind9-9.18.9.so": {
+        "package": "bind-libs",
+        "version": "0"
+      },
+      "libdns-9.18.9.so": {
+        "package": "bind-libs",
+        "version": "0"
+      },
+      "libirs-9.18.9.so": {
+        "package": "bind-libs",
+        "version": "0"
+      },
+      "libisc-9.18.9.so": {
+        "package": "bind-libs",
+        "version": "0"
+      },
+      "libisccc-9.18.9.so": {
+        "package": "bind-libs",
+        "version": "0"
+      },
+      "libisccfg-9.18.9.so": {
+        "package": "bind-libs",
+        "version": "0"
+      },
+      "libns-9.18.9.so": {
+        "package": "bind-libs",
+        "version": "0"
+      },
+      "libdevmapper-event-lvm2.so.2.03": {
+        "package": "lvm2-libs",
+        "version": "2.03"
+      },
+      "liblvm2cmd.so.2.03": {
+        "package": "lvm2-libs",
+        "version": "2.03"
       }
     },
     "package": {
@@ -66036,6 +66125,10 @@
       "kea-http": {
         "package": "kea-common",
         "version": "2.2.0-r1"
+      },
+      "device-mapper-event-static": {
+        "package": "device-mapper-static",
+        "version": "2.03.17-r1"
       }
     }
   }
