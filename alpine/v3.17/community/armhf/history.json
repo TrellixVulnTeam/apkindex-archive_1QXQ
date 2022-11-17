@@ -71033,7 +71033,8 @@
     "corrosion": {
       "origin": "corrosion",
       "versions": {
-        "0.2.2-r0": 1663350296
+        "0.2.2-r0": 1663350296,
+        "0.3.0-r0": 1668697549
       },
       "dependencies": [
         "cargo",
@@ -99466,13 +99467,14 @@
     "cldr-emoji-annotation": {
       "origin": "cldr-emoji-annotation",
       "versions": {
-        "41-r0": 1651647645
+        "41-r0": 1651647645,
+        "42-r0": 1668696567
       },
       "dependencies": [
         "pkgconfig"
       ],
       "provides": [
-        "pc:cldr-emoji-annotation=41"
+        "pc:cldr-emoji-annotation=42"
       ]
     },
     "shadow-dbg": {
@@ -143044,6 +143046,40 @@
       "versions": {
         "0.14.0-r2": 1668607008
       }
+    },
+    "jasper": {
+      "origin": "jasper",
+      "versions": {
+        "3.0.6-r0": 1668699494
+      },
+      "dependencies": [
+        "so:libc.musl-armhf.so.1"
+      ],
+      "provides": [
+        "so:libjasper.so.6=6.0.0",
+        "cmd:imgcmp=3.0.6-r0",
+        "cmd:imginfo=3.0.6-r0",
+        "cmd:jasper=3.0.6-r0"
+      ]
+    },
+    "jasper-doc": {
+      "origin": "jasper",
+      "versions": {
+        "3.0.6-r0": 1668699494
+      }
+    },
+    "jasper-dev": {
+      "origin": "jasper",
+      "versions": {
+        "3.0.6-r0": 1668699494
+      },
+      "dependencies": [
+        "jasper=3.0.6-r0",
+        "pkgconfig"
+      ],
+      "provides": [
+        "pc:jasper=3.0.6"
+      ]
     }
   },
   "provide": {
@@ -156625,6 +156661,10 @@
       "librubberband.so.2": {
         "package": "rubberband-libs",
         "version": "2.2.1"
+      },
+      "libjasper.so.6": {
+        "package": "jasper",
+        "version": "6.0.0"
       }
     }
   }
